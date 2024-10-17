@@ -1,0 +1,39 @@
+{
+  "name": "Service Console",
+  "icon": "standard:case",
+  "entries": {
+    "Home": "sfe.notebooks",
+    "Data": {
+      "Accounts": {
+        "name": "sfe.soql",
+        "icon": "standard:account",
+        "params": {
+          "title": "Search for an Account",
+          "hideExtendedOptions": true,
+          "initialTooling": false,
+          "initialQuery": "select Name, OwnerId, BillingPostalCode  from Account order by LastModifiedDate desc limit 10"
+        }
+      },
+      "Contacts": {
+        "name": "sfe.soql",
+        "icon": "standard:contact",
+        "params": {
+          "title": "Search for a Contact",
+          "hideExtendedOptions": true,
+          "initialTooling": false,
+          "initialQuery": "select Name from Contact order by LastModifiedDate desc limit 10"
+        }
+      },
+      "Cases": {
+        "name": "sfe.soql",
+        "icon": "standard:case",
+        "params": {
+          "title": "Search for a Case",
+          "hideExtendedOptions": true,
+          "initialTooling": false,
+          "initialQuery": "select CaseNumber, ContactId, ContactEmail from Case order by LastModifiedDate desc limit 10"
+        }
+      }
+    }
+  }
+}
