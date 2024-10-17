@@ -1,0 +1,78 @@
+{
+  "name": "My Explorer",
+  "description": "Add or remove entry points via the setup",
+  "icon": "standard:custom_notification",
+  "entries": {
+    "Home": "sfe.home",
+    "Object Manager": "sfe.objectmanager",
+    "Search": "sfe.search",
+    "Security": {
+      "Security Overview": "sfe.securityoverview",
+      "Permission Sets": "sfe.permissionsets",
+      "Profiles": "sfe.profiles",
+      "Users": {
+        "name": "sfe.users",
+        "icon_": "standard:user"
+      },
+      "Sharing Rules": "sfe.sharingrules",
+      "Custom Permissions": "sfe.custompermissions",
+      "Access Checker": "sfe.accesschecker"
+    },
+    "Click": {
+      "Flow": "sfe.flow",
+      "Custom fields": "sfe.customfields",
+      "Validation Rules": "sfe.validationrules",
+      "Custom Labels": "sfe.customlabels",
+      "Buttons": "sfe.buttons",
+      "Apps": "sfe.apps",
+      "Layouts": "sfe.layouts"
+    },
+    "Code": {
+      "LWC": "sfe.lwc",
+      "Apex": "sfe.apex",
+      "Aura": {
+        "name": "sfe.soql",
+        "params": {
+          "title": "Search for an Aura Component",
+          "hideExtendedOptions": true,
+          "initialTooling": true,
+          "initialQuery": "Select DeveloperName, MasterLabel, LastModifiedDate, LastModifiedBy.Name, Description, NamespacePrefix from AuraDefinitionBundle where NamespacePrefix='' order by LastModifiedDate desc"
+        }
+      },
+      "VFP": {
+        "name": "sfe.soql",
+        "params": {
+          "title": "Search for a VFP",
+          "hideExtendedOptions": true,
+          "initialTooling": true,
+          "initialQuery": "select MasterLabel, Name, LastModifiedDate, Description, Markup from ApexPage where NamespacePrefix='' order by LastModifiedDate desc"
+        }
+      },
+      "Triggers": "sfe.triggers",
+      "Custom Metadata": "sfe.custommetadata",
+      "GraphQL": "sfe.graphql",
+      "APIs": "sfe.apis",
+      "All Metadata": "sfe.allmetadata",
+      "Compare Tools": "sfe.comparetools"
+    },
+    "Dev Ops": {
+      "Best Practices": "sfe.bestpractices",
+      "Org Details": "sfe.orgdetails",
+      "Limits": "sfe.limits",
+      "Timeline": "sfe.timeline",
+      "Anonymous Apex": "sfe.anonymousapex",
+      "Deployments": "sfe.deployments",
+      "Apex Logs": "sfe.apexlogs",
+      "Async Apex Jobs": "sfe.asyncapexjobs",
+      "Licenses": "sfe.licenses"
+    },
+    "Industries": {
+      "Insurance Products": "sfe.insuranceproducts",
+      "Omniscripts": "sfe.omniscripts",
+      "FlexCards": "sfe.flexcards",
+      "DataRaptors": "sfe.dataraptors",
+      "ARC": "sfe.arc"
+    },
+    "Notebooks": "sfe.notebooks"
+  }
+}
