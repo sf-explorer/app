@@ -3,8 +3,8 @@
 ## Reference documentation
 
 All relevant documentation:
-* Salesforce Well Architected - Secure
-* <Organization security guidelines and standards>
+* Salesforce Well Architected - Secure (https://architect.salesforce.com/well-architected/trusted/secure)
+* **Organization security guidelines and standards**
 * <Organization privacy principles>
 
 ## Well Architected Framework (Secure)
@@ -107,19 +107,22 @@ types:
 ### Users based on individuals, not personas
 
  Profiles used for base-level permissions.
-Check if your profiles give access to object, fields through : 
+Check if your profiles give access to objects or fields through : 
 
-Identify profiles that are not following the best practice
+
 ```soql
-SELECT Field, PermissionsRead, PermissionsEdit FROM FieldPermissions
-  WHERE Parent.Profile.Name = 'Profile Name'
+SELECT Field, PermissionsRead, PermissionsEdit, SobjectType FROM FieldPermissions
+  WHERE Parent.Profile.Name = 'System Administrator'
 ```
+> Info: Change `System Administrator` with your profile name
 
-### User with PermissionsModifyAll
+### Permission with with PermissionsModifyAll
 
 ```soql
-SELECT SObjectType, PermissionsRead, PermissionsCreate, PermissionsEdit, PermissionsDelete, PermissionsViewAll,
- PermissionsModifyAll,Parent.Profile.Name FROM ObjectPermissions WHERE PermissionsModifyAll=true 
+SELECT SObjecttype, Parent.Profile.Name, Parent.Type, Parent.Name,
+       Parent.Description, Parent.Profile.Description
+  FROM ObjectPermissions
+  where PermissionsModifyAllRecords=true
 ```
 
 
@@ -134,6 +137,6 @@ Select Name, Profile.Name,LastLoginDate, UserRole.Name from User
 User not connected in the last 180 days
 ```soql
 Select Name, Profile.Name,LastLoginDate, UserRole.Name from User
- where LastLoginDate != null order by LastLoginDate desc limit 5 
+ where LastLoginDate > LAST_N_DAYS:180
 ```
 
