@@ -28,7 +28,7 @@ mindmap
         Session Mgt
         Device Access
         Threat Detection
-      3.📌Data
+      3.Data
         Sharing/visibility
         Encryption
 ```
