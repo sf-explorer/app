@@ -3,20 +3,20 @@
 Productivity tool for Salesforce admins and devs
 Share or collaborate on Explorer resources:
 
-## Boards
+## Diagrams
 
-We are providing free templates exploring various Salesforce clouds and capabilities. Each template is self-contained and can be shared.
+This repository provides templates exploring various Salesforce clouds and capabilities. Each template is self-contained and can be shared.
 
 **Key Capabilities:**
-- **Open and read boards** without needing to be connected to an org
+- **Open and read diagrams** without needing to be connected to an org
 - **View custom attributes** when opened in context to your org
 - **Select a user** and analyze the associated security model
 - **Add your own objects** and customize templates
 - **Share your own specific templates** with others
 
-These boards serve as comprehensive data models and relationship diagrams for different Salesforce use cases, helping you understand the object structure and relationships within each domain.
+These diagrams serve as comprehensive data models and relationship diagrams for different Salesforce use cases, helping you understand the object structure and relationships within each domain.
 
-**Collaboration:** This repository is designed for collaboration - feel free to share concepts, contribute new boards, or suggest other Salesforce clouds not yet covered here.
+**Collaboration:** This repository is designed for collaboration - feel free to share concepts, contribute new diagrams, or suggest other Salesforce clouds not yet covered here.
 | Board | Description | Objects | File | Open Board |
 |-------|-------------|---------|------|------------|
 | 🤖 Agentforce | Agent productivity and management tools | 21 | [agentForce.json](./Boards/agentForce.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentForce) |
