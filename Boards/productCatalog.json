@@ -1,0 +1,3607 @@
+{
+  "nodes": [
+    {
+      "id": "group_5588b581-bb82-431f-a5ab-4d65c807f0eb",
+      "type": "groupZone",
+      "position": {
+        "x": 2081.381122658967,
+        "y": -60.24405200651245
+      },
+      "data": {
+        "label": "Connect APIs",
+        "content": "Move nodes inside this zone to group them",
+        "icon": "standard:apps_admin",
+        "color": "rgba(107, 99, 123, 0.4)"
+      },
+      "width": 830,
+      "height": 504
+    },
+    {
+      "id": "erd.ProductClassification",
+      "data": {
+        "id": "erd.ProductClassification",
+        "table": {
+          "name": "ProductClassification",
+          "label": "65",
+          "id": 5,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "ProductClassification",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "ProductClassification",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "ProductClassification",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [],
+        "color": "#8c564b",
+        "Id": "EntityDefinition/ProductClassification",
+        "label": "ProductClassification",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Classification ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Product Classification Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 66.05195243213916,
+        "y": 848.0263890838273
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.AttributePicklist",
+      "data": {
+        "id": "erd.AttributePicklist",
+        "table": {
+          "name": "AttributePicklist",
+          "label": "19",
+          "id": 11,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "AttributePicklist",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "AttributePicklist",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [],
+        "color": "#f28e2c",
+        "Id": "EntityDefinition/AttributePicklist",
+        "label": "AttributePicklist",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Attribute Picklist ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": ""
+            },
+            "DataType": {
+              "type": "string",
+              "title": "Data Type",
+              "enum": [
+                "Boolean",
+                "Date",
+                "Datetime",
+                "Number",
+                "Text",
+                "Currency",
+                "Percent",
+                null
+              ],
+              "enumNames": [
+                "Boolean",
+                "Date",
+                "Datetime",
+                "Number",
+                "Text",
+                "Currency",
+                "Percent",
+                null
+              ],
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": -357.5803648916812,
+        "y": -286.02059786287157
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.Product2",
+      "data": {
+        "id": "erd.Product2",
+        "table": {
+          "name": "Product2",
+          "label": "271",
+          "id": 0,
+          "description": "Represents a product that your company sells.",
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "Product2",
+              "fromTableId": 0,
+              "fromCol": "BasedOnId",
+              "toTable": "ProductClassification",
+              "fromColId": 2,
+              "toTableId": 5
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "Product2",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [
+          "erd.ProductClassification"
+        ],
+        "color": "#1f77b4",
+        "Id": "EntityDefinition/Product2",
+        "label": "Product2",
+        "schema": {
+          "type": "object",
+          "description": "Represents a product that your company sells.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Product Name",
+              "description": "Required. Default name of this record. Label is Product Name."
+            },
+            "ProductCode": {
+              "type": "string",
+              "title": "Product Code",
+              "description": "Default product code for this record. Your org defines the product’s code-naming pattern."
+            },
+            "Description": {
+              "type": "string",
+              "title": "Product Description",
+              "description": "A text description of this record. Label is Product Description."
+            },
+            "QuantityScheduleType": {
+              "type": "string",
+              "title": "Quantity Schedule Type",
+              "enum": [
+                "Divide",
+                "Repeat",
+                null
+              ],
+              "enumNames": [
+                "Divide Amount into multiple installments",
+                "Repeat Amount for each installment",
+                null
+              ],
+              "description": ""
+            },
+            "QuantityInstallmentPeriod": {
+              "type": "string",
+              "title": "Quantity Installment Period",
+              "enum": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly",
+                "Yearly",
+                null
+              ],
+              "enumNames": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly",
+                "Yearly",
+                null
+              ],
+              "description": ""
+            },
+            "NumberOfQuantityInstallments": {
+              "type": "integer",
+              "title": "Number Of Quantity Installments",
+              "description": ""
+            },
+            "RevenueScheduleType": {
+              "type": "string",
+              "title": "Revenue Schedule Type",
+              "enum": [
+                "Divide",
+                "Repeat",
+                null
+              ],
+              "enumNames": [
+                "Divide Amount into multiple installments",
+                "Repeat Amount for each installment",
+                null
+              ],
+              "description": ""
+            },
+            "RevenueInstallmentPeriod": {
+              "type": "string",
+              "title": "Revenue Installment Period",
+              "enum": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly",
+                "Yearly",
+                null
+              ],
+              "enumNames": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly",
+                "Yearly",
+                null
+              ],
+              "description": ""
+            },
+            "NumberOfRevenueInstallments": {
+              "type": "integer",
+              "title": "Number Of Revenue Installments",
+              "description": ""
+            },
+            "CanUseQuantitySchedule": {
+              "type": "boolean",
+              "title": "Quantity Scheduling Enabled",
+              "description": "Indicates whether the product can have a quantity schedule (true) or not (false). Label is Quantity Scheduling Enabled."
+            },
+            "CanUseRevenueSchedule": {
+              "type": "boolean",
+              "title": "Revenue Scheduling Enabled",
+              "description": "Indicates whether the product can have a revenue schedule (true) or not (false). Label is Revenue Scheduling Enabled."
+            },
+            "IsActive": {
+              "type": "boolean",
+              "title": "Active",
+              "description": "Indicates whether this record is active (true) or not (false). Inactive Product2 records are hidden in many areas in the user interface. You can change the IsActive flag on a Product2 object as often as necessary. Label is Active."
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "Family": {
+              "type": "string",
+              "title": "Product Family",
+              "enum": [
+                "None",
+                "Miscellaneous",
+                "Support",
+                "Hardware",
+                "Software",
+                "Product",
+                "Kits",
+                "Battery Tools",
+                "Batteries",
+                "Turbines",
+                "Service",
+                "Software Licenses",
+                "Solar Panels",
+                "Home Solutions",
+                "Services",
+                "Lifestyle",
+                "Merchandise",
+                null
+              ],
+              "enumNames": [
+                "None",
+                "Miscellaneous",
+                "Support",
+                "Hardware",
+                "Software",
+                "Product",
+                "Kits",
+                "Battery Tools",
+                "Batteries",
+                "Turbines",
+                "Service",
+                "Software Licenses",
+                "Solar Panels",
+                "Home Solutions",
+                "Services",
+                "Lifestyle",
+                "Merchandise",
+                null
+              ],
+              "description": "Name of the product family associated with this record. Product families are configured as picklists in the user interface. To obtain a list of valid values, call describeSObjects() and process the result for the values associated with the Family field. Label is Product Family."
+            },
+            "IsSerialized": {
+              "type": "boolean",
+              "title": "Serialized",
+              "description": "Indicates if a product is a serialized product (true) or not (false). Label is Serialized."
+            },
+            "TaxPolicyId": {
+              "type": "string",
+              "title": "Tax Policy ID",
+              "x-target": "TaxPolicy",
+              "description": ""
+            },
+            "BillingPolicyId": {
+              "type": "string",
+              "title": "Billing Policy ID",
+              "x-target": "BillingPolicy",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": "Available only for orgs with the multicurrency feature enabled. Contains the ISO code for any currency allowed by the org."
+            },
+            "RecordTypeId": {
+              "type": "string",
+              "title": "Record Type ID",
+              "x-target": "RecordType",
+              "description": "Type of record"
+            },
+            "ExternalDataSourceId": {
+              "type": "string",
+              "title": "External Data Source ID",
+              "x-target": "ExternalDataSource",
+              "description": ""
+            },
+            "ExternalId": {
+              "type": "string",
+              "title": "External ID",
+              "description": "The unique identifier of a record in the linked external data source. For example, ID #123."
+            },
+            "DisplayUrl": {
+              "type": "string",
+              "title": "Display URL",
+              "description": "URL leading to a specific version of a record in the linked external data source."
+            },
+            "QuantityUnitOfMeasure": {
+              "type": "string",
+              "title": "Quantity Unit Of Measure",
+              "enum": [
+                "Each",
+                null
+              ],
+              "enumNames": [
+                "Each",
+                null
+              ],
+              "description": "Unit of the product; for example, kilograms, liters, or cases. This field comes with only one value, Each, so consider creating your own. The QuantityUnitOfMeasure field on ProductItem inherits this field’s values."
+            },
+            "IsArchived": {
+              "type": "boolean",
+              "title": "Archived",
+              "readOnly": true,
+              "description": "Describes whether the product is archived. The default value is false."
+            },
+            "StockKeepingUnit": {
+              "type": "string",
+              "title": "Product SKU",
+              "description": "The SKU for the product. Use in tandem with or instead of the ProductCode field. For example, you can track the manufacturer’s identifying code in the Product Code field and assign the product a SKU when you resell it."
+            },
+            "Type": {
+              "type": "string",
+              "title": "Product Type",
+              "enum": [
+                "Base",
+                "Bundle",
+                "Set",
+                null
+              ],
+              "enumNames": [
+                "Base",
+                "Bundle",
+                "Set",
+                null
+              ],
+              "readOnly": true,
+              "description": "The type of product. This field's value affects the read-only value of the ProductClassfield on the Product2 object. field. Base—When Type = Base, then ProductClass = VariationParent. Null—When Type = Null, then ProductClass = Simple. This field is available when B2B or B2C Commerce is enabled. This field is available in API version 50.0 and later."
+            },
+            "ProductClass": {
+              "type": "string",
+              "title": "Product Class",
+              "enum": [
+                "Simple",
+                "VariationParent",
+                "Variation",
+                "Bundle",
+                "Set",
+                null
+              ],
+              "enumNames": [
+                "Simple",
+                "Variation Parent",
+                "Variation",
+                "Bundle",
+                "Set",
+                null
+              ],
+              "readOnly": true,
+              "description": "This field is read-only. Its value is determined by the value of the Type field and whether the product is associated with a ProductAttribute record. It describes whether a product is a simple product, a variation parent, or a product variation. Possible values are: Simple—This product has no variations VariationParent—This product is a variation parent. It’s the base product for one or more product variations and, though it has its own stock-keeping unit (SKU), isn’t a sellable entity. Instead, it’s the parent of sellable entities—its variations. Variation—This product is a variation of a parent product. Each variation has its own SKU. When the value of ProductClass = VariationParent, it never changes. The value of ProductClass changes between Simple and Variation when you attach or detach a ProductAttribute record to the product. If you attach a ProductAttribute record to a product, then the product’s ProductClass value changes to Variation. Conversely, when you detach all ProductAttribute records from a product, the ProductClass value changes to Simple. The default value is Simple. This field is available in API version 50.0 and later. It was introduced to support of B2B and B2C Commerce implementations."
+            },
+            "TransferRecordMode": {
+              "type": "string",
+              "title": "Transfer Record Mode",
+              "enum": [
+                "SendAndReceive",
+                "ReceiveOnly",
+                null
+              ],
+              "enumNames": [
+                "Send And Receive",
+                "Receive Only",
+                null
+              ],
+              "description": "If serialized, indicates when the serial number is recorded. This field is visible based on field-level security."
+            },
+            "ProductPurpose": {
+              "type": "string",
+              "title": "Product Purpose",
+              "enum": [
+                "Sell",
+                "Plan",
+                "Purchase",
+                "GiftWrap",
+                null
+              ],
+              "enumNames": [
+                "Sell",
+                "Plan",
+                "Purchase",
+                "GiftWrap",
+                null
+              ],
+              "description": ""
+            },
+            "UniversalProductCode": {
+              "type": "string",
+              "title": "Universal Product Code",
+              "description": ""
+            },
+            "AvailabilityDate": {
+              "type": "string",
+              "title": "Availability Date",
+              "format": "date-time",
+              "description": ""
+            },
+            "DiscontinuedDate": {
+              "type": "string",
+              "title": "Discontinued Date",
+              "format": "date-time",
+              "description": ""
+            },
+            "BasedOnId": {
+              "type": "string",
+              "title": "Product Classification ID",
+              "x-target": "ProductClassification",
+              "description": ""
+            },
+            "EndOfLifeDate": {
+              "type": "string",
+              "title": "End Of Life Date",
+              "format": "date-time",
+              "description": ""
+            },
+            "HelpText": {
+              "type": "string",
+              "title": "Help Text",
+              "description": ""
+            },
+            "IsAssetizable": {
+              "type": "boolean",
+              "title": "Is Assetizable",
+              "description": ""
+            },
+            "ConfigureDuringSale": {
+              "type": "string",
+              "title": "Configure During Sale",
+              "enum": [
+                "Allowed",
+                "NotAllowed",
+                null
+              ],
+              "enumNames": [
+                "Allowed",
+                "Not Allowed",
+                null
+              ],
+              "description": "Determines whether a user can edit a configuration when creating a bundle order or quote."
+            },
+            "IsSoldOnlyWithOtherProds": {
+              "type": "boolean",
+              "title": "Sell only with other products",
+              "description": "Determines whether the product can be sold independently or only as part of a bundle."
+            },
+            "SpecificationType": {
+              "type": "string",
+              "title": "Specification Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "DecompositionScope": {
+              "type": "string",
+              "title": "Decomposition Scope",
+              "enum": [
+                "OrderLineItem",
+                "Order",
+                "Bundle",
+                "Account",
+                null
+              ],
+              "enumNames": [
+                "Order Line Item",
+                "Order",
+                "Bundle",
+                "Account",
+                null
+              ],
+              "description": ""
+            },
+            "FulfillmentQtyCalcMethod": {
+              "type": "string",
+              "title": "Fulfillment Quantity Calculation Method",
+              "enum": [
+                "Aggregate",
+                "AlwaysOne",
+                null
+              ],
+              "enumNames": [
+                "Aggregate",
+                "Always One",
+                null
+              ],
+              "description": ""
+            },
+            "IsShippingChargeNotApplicable": {
+              "type": "boolean",
+              "title": "Shipping Charge Not Applicable",
+              "description": ""
+            },
+            "ShippingWeight": {
+              "type": "number",
+              "title": "Shipping Weight",
+              "description": ""
+            },
+            "ShippingWeightUnitOfMeasure": {
+              "type": "string",
+              "title": "Shipping Weight Unit Of Measure",
+              "enum": [
+                null
+              ],
+              "enumNames": [
+                null
+              ],
+              "description": ""
+            },
+            "CanRamp": {
+              "type": "boolean",
+              "title": "Ramp",
+              "readOnly": true,
+              "description": ""
+            },
+            "StockCheckMethod": {
+              "type": "string",
+              "title": "Stock Check Method",
+              "enum": [
+                "ParentProduct",
+                "ChildProducts",
+                null
+              ],
+              "enumNames": [
+                "Parent Product",
+                "Child Products",
+                null
+              ],
+              "description": ""
+            },
+            "UsageModelType": {
+              "type": "string",
+              "title": "Usage Model Type",
+              "enum": [
+                "Anchor",
+                "Pack",
+                "Commit",
+                null
+              ],
+              "enumNames": [
+                "Anchor",
+                "Pack",
+                "Commit",
+                null
+              ],
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "readOnly": true,
+              "description": ""
+            },
+            "UsedFor": {
+              "type": "string",
+              "title": "Used for",
+              "enum": [
+                "ServiceProcess",
+                null
+              ],
+              "enumNames": [
+                "Service Process",
+                null
+              ],
+              "description": ""
+            },
+            "External_ID__c": {
+              "type": "string",
+              "title": "External ID",
+              "description": ""
+            },
+            "Product_Catalog__c": {
+              "type": "string",
+              "title": "Product Group",
+              "enum": [
+                "Basic",
+                "Premium",
+                null
+              ],
+              "enumNames": [
+                "Basic",
+                "Premium",
+                null
+              ],
+              "description": ""
+            },
+            "analyticsdemo_batch_id__c": {
+              "type": "string",
+              "title": "analyticsdemo_batch_id__c",
+              "description": ""
+            },
+            "Image_URL__c": {
+              "type": "string",
+              "title": "Image URL",
+              "description": ""
+            },
+            "Image__c": {
+              "type": "string",
+              "title": "Image ID",
+              "description": ""
+            },
+            "ProductImageRelatedList__c": {
+              "type": "string",
+              "title": "Image",
+              "readOnly": true,
+              "description": ""
+            },
+            "purl__c": {
+              "type": "string",
+              "title": "purl",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 524.0891214300448,
+        "y": 386.9070042569474
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.AttributeDefinition",
+      "data": {
+        "id": "erd.AttributeDefinition",
+        "table": {
+          "name": "AttributeDefinition",
+          "label": "94",
+          "id": 3,
+          "description": "Represents a product, asset, or object attribute, for example, a hardward specification or software detail.",
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "AttributeDefinition",
+              "fromTableId": 3,
+              "fromCol": "PicklistId",
+              "toTable": "AttributePicklist",
+              "fromColId": 1,
+              "toTableId": 11
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "AttributeDefinition",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "AttributeDefinition",
+            "foreignColumnName": "Id"
+          },
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "AttributeDefinition",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [
+          "erd.AttributePicklist"
+        ],
+        "color": "#d62728",
+        "Id": "EntityDefinition/AttributeDefinition",
+        "label": "AttributeDefinition",
+        "schema": {
+          "type": "object",
+          "description": "Represents a product, asset, or object attribute, for example, a hardward specification or software detail.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Attribute Definition ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The name of the attribute."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "description": ""
+            },
+            "Label": {
+              "type": "string",
+              "title": "Label",
+              "description": "The label for the attribute."
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": "Description of this attribute."
+            },
+            "DataType": {
+              "type": "string",
+              "title": "Data Type",
+              "enum": [
+                "Checkbox",
+                "Date",
+                "Datetime",
+                "Number",
+                "Text",
+                "Currency",
+                "Percent",
+                "Picklist",
+                null
+              ],
+              "enumNames": [
+                "Checkbox",
+                "Date",
+                "Datetime",
+                "Number",
+                "Text",
+                "Currency",
+                "Percent",
+                "Picklist",
+                null
+              ],
+              "readOnly": true,
+              "description": "The data type of the attribute definition."
+            },
+            "IsActive": {
+              "type": "boolean",
+              "title": "Active",
+              "description": "Indicates that the attribute definition is active. Active attributes definitions can be selected for assets."
+            },
+            "IsRequired": {
+              "type": "boolean",
+              "title": "Required",
+              "description": "Indicates whether the attribute definition is required for an asset."
+            },
+            "DefaultValue": {
+              "type": "string",
+              "title": "Default Value",
+              "description": "The default value for this attribute."
+            },
+            "SourceSystemIdentifier": {
+              "type": "string",
+              "title": "Source System ID",
+              "description": "The identifier of the attribute definition in an external system."
+            },
+            "ValueDescription": {
+              "type": "string",
+              "title": "Value Description",
+              "description": ""
+            },
+            "PicklistId": {
+              "type": "string",
+              "title": "Attribute Picklist ID",
+              "x-target": "AttributePicklist",
+              "readOnly": true,
+              "description": ""
+            },
+            "DefaultHelpText": {
+              "type": "string",
+              "title": "Default Help Text",
+              "description": ""
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": ""
+            },
+            "DeveloperName": {
+              "type": "string",
+              "title": "API Name",
+              "readOnly": true,
+              "description": "The unique name of the attribute definition record."
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 299.39500215342264,
+        "y": 240.25097800467015
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.ProductComponentGroup",
+      "data": {
+        "id": "erd.ProductComponentGroup",
+        "table": {
+          "name": "ProductComponentGroup",
+          "label": "46",
+          "id": 7,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "ProductComponentGroup",
+              "fromTableId": 7,
+              "fromCol": "ParentProductId",
+              "toTable": "Product2",
+              "fromColId": 1,
+              "toTableId": 0
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "ProductComponentGroup",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [
+          "erd.Product2"
+        ],
+        "color": "#7f7f7f",
+        "Id": "EntityDefinition/ProductComponentGroup",
+        "label": "ProductComponentGroup",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Component Group ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Group Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ParentProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "ParentGroupId": {
+              "type": "string",
+              "title": "Product Component Group ID",
+              "x-target": "ProductComponentGroup",
+              "description": ""
+            },
+            "MinBundleComponents": {
+              "type": "integer",
+              "title": "Min Number of Components",
+              "description": ""
+            },
+            "MaxBundleComponents": {
+              "type": "integer",
+              "title": "Max Number of Components",
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "description": ""
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 924.0982407890854,
+        "y": 721.8269579255598
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.UnderwritingRuleGroup",
+      "data": {
+        "id": "erd.UnderwritingRuleGroup",
+        "table": {
+          "name": "UnderwritingRuleGroup",
+          "label": "5",
+          "id": 14,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "UnderwritingRuleGroup",
+              "fromTableId": 14,
+              "fromCol": "ProductId",
+              "toTable": "Product2",
+              "fromColId": 1,
+              "toTableId": 0
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [
+          {
+            "foreignSchemaName": "erd",
+            "foreignTableName": "UnderwritingRuleGroup",
+            "foreignColumnName": "Id"
+          }
+        ],
+        "foreignKeysReferencedTables": [
+          "erd.Product2"
+        ],
+        "color": "#59a14f",
+        "Id": "EntityDefinition/UnderwritingRuleGroup",
+        "label": "UnderwritingRuleGroup",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Underwriting Rule Group ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "StageTransitionName": {
+              "type": "string",
+              "title": "Stage Transition Name",
+              "description": ""
+            },
+            "EvaluationCriteria": {
+              "type": "string",
+              "title": "Evaluation Criteria",
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "enum": [
+                "Quote",
+                "InsurancePolicy",
+                null
+              ],
+              "enumNames": [
+                "Quote",
+                "InsurancePolicy",
+                null
+              ],
+              "description": ""
+            },
+            "ProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "description": ""
+            },
+            "StageTransition": {
+              "type": "string",
+              "title": "Stage Transition",
+              "description": ""
+            },
+            "RuleSetApiName": {
+              "type": "string",
+              "title": "Rule Set Api Name",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 1381.8763762195479,
+        "y": 363.9150713355132
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.ProductRelatedComponent",
+      "data": {
+        "id": "erd.ProductRelatedComponent",
+        "table": {
+          "name": "ProductRelatedComponent",
+          "label": "110",
+          "id": 2,
+          "description": "Represents a product that is included in a product bundle, a set, or a product and an add-on.",
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "ProductRelatedComponent",
+              "fromTableId": 2,
+              "fromCol": "ChildProductId",
+              "toTable": "Product2",
+              "fromColId": 1,
+              "toTableId": 0
+            },
+            {
+              "fromTable": "ProductRelatedComponent",
+              "fromTableId": 2,
+              "fromCol": "ChildProductClassificationId",
+              "toTable": "ProductClassification",
+              "fromColId": 2,
+              "toTableId": 5
+            },
+            {
+              "fromTable": "ProductRelatedComponent",
+              "fromTableId": 2,
+              "fromCol": "ParentProductId",
+              "toTable": "Product2",
+              "fromColId": 3,
+              "toTableId": 0
+            },
+            {
+              "fromTable": "ProductRelatedComponent",
+              "fromTableId": 2,
+              "fromCol": "ProductComponentGroupId",
+              "toTable": "ProductComponentGroup",
+              "fromColId": 6,
+              "toTableId": 7
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [],
+        "foreignKeysReferencedTables": [
+          "erd.Product2",
+          "erd.ProductClassification",
+          "erd.Product2",
+          "erd.ProductComponentGroup"
+        ],
+        "color": "#2ca02c",
+        "Id": "EntityDefinition/ProductRelatedComponent",
+        "label": "ProductRelatedComponent",
+        "schema": {
+          "type": "object",
+          "description": "Represents a product that is included in a product bundle, a set, or a product and an add-on.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Related Component ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Product Related Component Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ChildProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildProductClassificationId": {
+              "type": "string",
+              "title": "Product Classification ID",
+              "x-target": "ProductClassification",
+              "readOnly": true,
+              "description": ""
+            },
+            "ParentProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "Quantity": {
+              "type": "number",
+              "title": "Quantity",
+              "description": ""
+            },
+            "ParentSellingModelId": {
+              "type": "string",
+              "title": "Product Selling Model ID",
+              "x-target": "ProductSellingModel",
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildSellingModelId": {
+              "type": "string",
+              "title": "Product Selling Model ID",
+              "x-target": "ProductSellingModel",
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "description": ""
+            },
+            "DoesBundlePriceIncludeChild": {
+              "type": "boolean",
+              "title": "Price includes component",
+              "description": ""
+            },
+            "QuantityScaleMethod": {
+              "type": "string",
+              "title": "Quantity Scaling Method",
+              "enum": [
+                "Constant",
+                "Proportional",
+                null
+              ],
+              "enumNames": [
+                "Constant",
+                "Proportional",
+                null
+              ],
+              "description": ""
+            },
+            "MaxQuantity": {
+              "type": "number",
+              "title": "Max Quantity",
+              "description": ""
+            },
+            "MinQuantity": {
+              "type": "number",
+              "title": "Min Quantity",
+              "description": ""
+            },
+            "ProductComponentGroupId": {
+              "type": "string",
+              "title": "Product Component Group ID",
+              "x-target": "ProductComponentGroup",
+              "description": ""
+            },
+            "IsComponentRequired": {
+              "type": "boolean",
+              "title": "Require this component",
+              "description": ""
+            },
+            "IsQuantityEditable": {
+              "type": "boolean",
+              "title": "Allow quantity changes",
+              "description": ""
+            },
+            "IsDefaultComponent": {
+              "type": "boolean",
+              "title": "Include component by default",
+              "description": ""
+            },
+            "ProductRelationshipTypeId": {
+              "type": "string",
+              "title": "Product Relationship Type ID",
+              "x-target": "ProductRelationshipType",
+              "description": ""
+            },
+            "ParentProductRole": {
+              "type": "string",
+              "title": "Parent Product Role",
+              "enum": [
+                "Bundle",
+                "Set",
+                "AddOn",
+                "ProductRequest",
+                null
+              ],
+              "enumNames": [
+                "Bundle Parent",
+                "Set Parent",
+                "Addon Parent",
+                "Product Request",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildProductRole": {
+              "type": "string",
+              "title": "Child Product Role",
+              "enum": [
+                "BundleComponent",
+                "SetComponent",
+                "AddOnComponent",
+                "ClassificationComponent",
+                "ProductRequestComponent",
+                null
+              ],
+              "enumNames": [
+                "Bundle Component",
+                "Set Component",
+                "Addon Component",
+                "Product Classification Component",
+                "Product Request Component",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "ProductInstanceReuse": {
+              "type": "string",
+              "title": "Product Instance Reuse",
+              "enum": [
+                "Not Allowed",
+                "Allowed",
+                null
+              ],
+              "enumNames": [
+                "N",
+                "A",
+                null
+              ],
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "readOnly": true,
+              "description": ""
+            },
+            "QuoteVisibility": {
+              "type": "string",
+              "title": "Quote Visibility",
+              "enum": [
+                "Always",
+                "Transaction Line Editor Only",
+                "Quote Document Only",
+                "Never",
+                null
+              ],
+              "enumNames": [
+                "Always",
+                "Transaction Line Editor Only",
+                "Quote Document Only",
+                "Never",
+                null
+              ],
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 1631.4480394600662,
+        "y": 797.38538591942
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.AttributePicklistValue",
+      "data": {
+        "id": "erd.AttributePicklistValue",
+        "table": {
+          "name": "AttributePicklistValue",
+          "label": "58",
+          "id": 6,
+          "description": "Represents the values of an asset attribute picklist.",
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "AttributePicklistValue",
+              "fromTableId": 6,
+              "fromCol": "PicklistId",
+              "toTable": "AttributePicklist",
+              "fromColId": 1,
+              "toTableId": 11
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [],
+        "foreignKeysReferencedTables": [
+          "erd.AttributePicklist"
+        ],
+        "color": "#e377c2",
+        "Id": "EntityDefinition/AttributePicklistValue",
+        "label": "AttributePicklistValue",
+        "schema": {
+          "type": "object",
+          "description": "Represents the values of an asset attribute picklist.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Attribute Picklist Value ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The name of the attribute picklist value."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "PicklistId": {
+              "type": "string",
+              "title": "Attribute Picklist ID",
+              "x-target": "AttributePicklist",
+              "readOnly": true,
+              "description": ""
+            },
+            "Abbreviation": {
+              "type": "string",
+              "title": "Abbreviation",
+              "description": "A short name of the picklist value that's displayed at run time. Use up to 255 alphanumeric characters. Can include the following special characters: @ ! - < > * ? + = % # ( ) / \\ & ‘ £ € $ ”."
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": "The status of the attribute picklist value."
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": "A picklist value code unique to the picklist. Maximum size is 80 alphanumeric characters. Can include the following special characters: @ ! - < > * ? + = % # ( ) / \\ & ‘ £ € $ ”."
+            },
+            "DisplayValue": {
+              "type": "string",
+              "title": "Display Value",
+              "description": "The displayed picklist value if it’s different from the Name field. For example, the Name ‘5’ could have a DisplayValue ‘Five’."
+            },
+            "IsDefault": {
+              "type": "boolean",
+              "title": "Default",
+              "description": "Indicates whether the picklist value is the default for the associated picklist. Only one value can be the default for a picklist."
+            },
+            "Sequence": {
+              "type": "number",
+              "title": "Sequence",
+              "description": "The order in which the picklist value appears in the picklist."
+            },
+            "Value": {
+              "type": "string",
+              "title": "Value",
+              "description": "The text value for a picklist item if the picklist data type is text. This value must be unique within a picklist. Maximum size is 255 alphanumeric characters. Can include the following special characters: @ ! - < > * ? + = % # ( ) / \\ & ‘ £ € $ ”."
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 648.9442498568947,
+        "y": -314.8268761674058
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.AttributeCategoryAttribute",
+      "data": {
+        "id": "erd.AttributeCategoryAttribute",
+        "table": {
+          "name": "AttributeCategoryAttribute",
+          "label": "29",
+          "id": 8,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "AttributeCategoryAttribute",
+              "fromTableId": 8,
+              "fromCol": "AttributeCategoryId",
+              "toTable": "AttributeCategory",
+              "fromColId": 1,
+              "toTableId": 4
+            },
+            {
+              "fromTable": "AttributeCategoryAttribute",
+              "fromTableId": 8,
+              "fromCol": "AttributeDefinitionId",
+              "toTable": "AttributeDefinition",
+              "fromColId": 2,
+              "toTableId": 3
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [],
+        "foreignKeysReferencedTables": [
+          "erd.AttributeCategory",
+          "erd.AttributeDefinition"
+        ],
+        "color": "#bcbd22",
+        "Id": "EntityDefinition/AttributeCategoryAttribute",
+        "label": "AttributeCategoryAttribute",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Attribute Category Attribute ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "AttributeCategoryId": {
+              "type": "string",
+              "title": "Attribute Category ID",
+              "x-target": "AttributeCategory",
+              "description": ""
+            },
+            "AttributeDefinitionId": {
+              "type": "string",
+              "title": "Attribute Definition ID",
+              "x-target": "AttributeDefinition",
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 875.2513499734688,
+        "y": -30.205024637577154
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "id": "erd.UnderwritingRule",
+      "data": {
+        "id": "erd.UnderwritingRule",
+        "table": {
+          "name": "UnderwritingRule",
+          "label": "5",
+          "id": 13,
+          "description": null,
+          "primaryKey": "Id",
+          "relations": [
+            {
+              "fromTable": "UnderwritingRule",
+              "fromTableId": 13,
+              "fromCol": "UnderwritingRuleGroupId",
+              "toTable": "UnderwritingRuleGroup",
+              "fromColId": 1,
+              "toTableId": 14
+            }
+          ],
+          "schemaName": "erd"
+        },
+        "foreignKeysReferencingTable": [],
+        "foreignKeysReferencedTables": [
+          "erd.UnderwritingRuleGroup"
+        ],
+        "color": "#76b7b2",
+        "Id": "EntityDefinition/UnderwritingRule",
+        "label": "UnderwritingRule",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Underwriting Rule ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ApiName": {
+              "type": "string",
+              "title": "Api Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "UnderwritingRuleGroupId": {
+              "type": "string",
+              "title": "Underwriting Rule Group ID",
+              "x-target": "UnderwritingRuleGroup",
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Active",
+                "Inactive",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "readOnly": true,
+              "description": ""
+            },
+            "EvaluationSuccessTaskGroupId": {
+              "type": "string",
+              "title": "Fulfillment Step Definition Group ID",
+              "x-target": "FulfillmentStepDefinitionGroup",
+              "description": ""
+            },
+            "EvaluationFailureTaskGroupId": {
+              "type": "string",
+              "title": "Fulfillment Step Definition Group ID",
+              "x-target": "FulfillmentStepDefinitionGroup",
+              "description": ""
+            },
+            "ProductPath": {
+              "type": "string",
+              "title": "Product Path",
+              "description": ""
+            },
+            "DynamicRuleDefinition": {
+              "type": "string",
+              "title": "Dynamic Rule Definition",
+              "description": ""
+            },
+            "EffectiveFromDateTime": {
+              "type": "string",
+              "title": "Effective From Date Time",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "EffectiveToDateTime": {
+              "type": "string",
+              "title": "Effective To Date Time",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 1717.2366389463866,
+        "y": 347.79002381856077
+      },
+      "sourcePosition": "left",
+      "targetPosition": "right",
+      "type": "table"
+    },
+    {
+      "position": {
+        "x": -498.48955122564513,
+        "y": 180.8813330639423
+      },
+      "id": "d1835ff9-3df7-4070-bcad-f791bc706042",
+      "type": "input",
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "filter": {
+              "title": "Filter",
+              "type": "string"
+            },
+            "onlyRef": {
+              "title": "Reference only",
+              "type": "boolean",
+              "default": true
+            },
+            "onlyCustom": {
+              "title": "Custom only",
+              "type": "boolean",
+              "default": false
+            },
+            "showLabel": {
+              "title": "Show Label",
+              "type": "boolean",
+              "default": true
+            },
+            "showData": {
+              "title": "Show Data",
+              "type": "boolean",
+              "default": false
+            },
+            "showChildRelation": {
+              "title": "Child Relations",
+              "type": "boolean",
+              "default": false
+            },
+            "nbFields": {
+              "title": "Nb Fields",
+              "type": "integer",
+              "default": 20
+            }
+          }
+        }
+      },
+      "width": 250,
+      "height": 308
+    },
+    {
+      "id": "group_a0423b3e-ac0b-44f4-8298-3dbae33593b3",
+      "type": "input",
+      "position": {
+        "x": 34.541130462642286,
+        "y": 95.0524420986089
+      },
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "product": {
+              "title": "Product",
+              "objectName": "Product2"
+            },
+            "account": {
+              "title": "Account",
+              "objectName": "Account"
+            }
+          }
+        }
+      },
+      "width": 280,
+      "height": 205,
+      "parentId": "group_5588b581-bb82-431f-a5ab-4d65c807f0eb",
+      "extent": "parent"
+    },
+    {
+      "id": "group_d22ce2b8-a9c3-4cb2-8463-ff9ee2ae3221",
+      "type": "callout",
+      "position": {
+        "x": 409.6681967367376,
+        "y": 222.53912805460988
+      },
+      "data": {
+        "label": "Get product details",
+        "method": "POST",
+        "url": "/connect/cpq/products/{{product.Id}}",
+        "icon": "standard:hierarchy",
+        "color": "rgba(207, 182, 255, 0.4)",
+        "body": "{\n  \n  \"userContext\": {\n    \"accountId\": \"{{account.Id}}\"\n  }\n}"
+      },
+      "width": 330,
+      "height": 220,
+      "parentId": "group_5588b581-bb82-431f-a5ab-4d65c807f0eb",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/ProductAttributeDefinition",
+      "type": "table",
+      "position": {
+        "x": 847.1137776487467,
+        "y": 121.62218019525534
+      },
+      "data": {
+        "Id": "EntityDefinition/ProductAttributeDefinition",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Attribute Definition ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "AttributeNameOverride": {
+              "type": "string",
+              "title": "Attribute Name Override",
+              "description": ""
+            },
+            "DefaultValue": {
+              "type": "string",
+              "title": "Default Value",
+              "description": ""
+            },
+            "ValueDescription": {
+              "type": "string",
+              "title": "Value Description",
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "HelpText": {
+              "type": "string",
+              "title": "Help Text",
+              "description": ""
+            },
+            "IsHidden": {
+              "type": "boolean",
+              "title": "Is Hidden",
+              "description": ""
+            },
+            "IsReadOnly": {
+              "type": "boolean",
+              "title": "Is Read Only",
+              "description": ""
+            },
+            "IsRequired": {
+              "type": "boolean",
+              "title": "Is Required",
+              "description": ""
+            },
+            "Product2Id": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "AttributeDefinitionId": {
+              "type": "string",
+              "title": "Attribute Definition ID",
+              "x-target": "AttributeDefinition",
+              "readOnly": true,
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": ""
+            },
+            "OverrideContextId": {
+              "type": "string",
+              "title": "Override Context ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "OverriddenProductAttributeDefinitionId": {
+              "type": "string",
+              "title": "Product Attribute Definition ID",
+              "x-target": "ProductAttributeDefinition",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsPriceImpacting": {
+              "type": "boolean",
+              "title": "Is Price Impacting",
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "description": ""
+            },
+            "AttributeCategoryId": {
+              "type": "string",
+              "title": "Attribute Category ID",
+              "x-target": "AttributeCategory",
+              "readOnly": true,
+              "description": ""
+            },
+            "ProductClassificationAttributeId": {
+              "type": "string",
+              "title": "Product Classification Attribute ID",
+              "x-target": "ProductClassificationAttr",
+              "readOnly": true,
+              "description": ""
+            },
+            "MinimumValue": {
+              "type": "string",
+              "title": "Minimum Value",
+              "description": ""
+            },
+            "MaximumValue": {
+              "type": "string",
+              "title": "Maximum Value",
+              "description": ""
+            },
+            "MinimumCharacterCount": {
+              "type": "integer",
+              "title": "Minimum Character Count",
+              "description": ""
+            },
+            "MaximumCharacterCount": {
+              "type": "integer",
+              "title": "Maximum Character Count",
+              "description": ""
+            },
+            "DisplayType": {
+              "type": "string",
+              "title": "Display Type",
+              "enum": [
+                "ComboBox",
+                "Text",
+                "RadioButton",
+                "CheckBox",
+                "Toggle",
+                "Number",
+                "Date",
+                "Datetime",
+                "Slider",
+                "MultiValueComboBox",
+                null
+              ],
+              "enumNames": [
+                "Combobox",
+                "Text",
+                "Radio Button",
+                "Checkbox",
+                "Toggle",
+                "Number",
+                "Date",
+                "Date Time",
+                "Slider",
+                "Multivalue Combobox",
+                null
+              ],
+              "description": ""
+            },
+            "StepValue": {
+              "type": "string",
+              "title": "Step Value",
+              "description": ""
+            },
+            "ValueDecoder": {
+              "type": "string",
+              "title": "Value Decoder",
+              "description": ""
+            },
+            "ReferenceObject": {
+              "type": "string",
+              "title": "Reference Object",
+              "enum": [
+                "Contact",
+                "Account",
+                "Vehicle",
+                null
+              ],
+              "enumNames": [
+                "Contact",
+                "Account",
+                "Vehicle",
+                null
+              ],
+              "description": ""
+            },
+            "ReferenceFieldApiName": {
+              "type": "string",
+              "title": "Reference Field API Name",
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "readOnly": true,
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/ProductRelatedComponent",
+      "type": "table",
+      "position": {
+        "x": 1278.5824396847256,
+        "y": 555.6610984550662
+      },
+      "data": {
+        "Id": "EntityDefinition/ProductRelatedComponent",
+        "schema": {
+          "type": "object",
+          "description": "Represents a product that is included in a product bundle, a set, or a product and an add-on.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Related Component ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Product Related Component Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ChildProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildProductClassificationId": {
+              "type": "string",
+              "title": "Product Classification ID",
+              "x-target": "ProductClassification",
+              "readOnly": true,
+              "description": ""
+            },
+            "ParentProductId": {
+              "type": "string",
+              "title": "Product ID",
+              "x-target": "Product2",
+              "readOnly": true,
+              "description": ""
+            },
+            "Quantity": {
+              "type": "number",
+              "title": "Quantity",
+              "description": ""
+            },
+            "ParentSellingModelId": {
+              "type": "string",
+              "title": "Product Selling Model ID",
+              "x-target": "ProductSellingModel",
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildSellingModelId": {
+              "type": "string",
+              "title": "Product Selling Model ID",
+              "x-target": "ProductSellingModel",
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "description": ""
+            },
+            "DoesBundlePriceIncludeChild": {
+              "type": "boolean",
+              "title": "Price includes component",
+              "description": ""
+            },
+            "QuantityScaleMethod": {
+              "type": "string",
+              "title": "Quantity Scaling Method",
+              "enum": [
+                "Constant",
+                "Proportional",
+                null
+              ],
+              "enumNames": [
+                "Constant",
+                "Proportional",
+                null
+              ],
+              "description": ""
+            },
+            "MaxQuantity": {
+              "type": "number",
+              "title": "Max Quantity",
+              "description": ""
+            },
+            "MinQuantity": {
+              "type": "number",
+              "title": "Min Quantity",
+              "description": ""
+            },
+            "ProductComponentGroupId": {
+              "type": "string",
+              "title": "Product Component Group ID",
+              "x-target": "ProductComponentGroup",
+              "description": ""
+            },
+            "IsComponentRequired": {
+              "type": "boolean",
+              "title": "Require this component",
+              "description": ""
+            },
+            "IsQuantityEditable": {
+              "type": "boolean",
+              "title": "Allow quantity changes",
+              "description": ""
+            },
+            "IsDefaultComponent": {
+              "type": "boolean",
+              "title": "Include component by default",
+              "description": ""
+            },
+            "ProductRelationshipTypeId": {
+              "type": "string",
+              "title": "Product Relationship Type ID",
+              "x-target": "ProductRelationshipType",
+              "description": ""
+            },
+            "ParentProductRole": {
+              "type": "string",
+              "title": "Parent Product Role",
+              "enum": [
+                "Bundle",
+                "Set",
+                "AddOn",
+                "ProductRequest",
+                null
+              ],
+              "enumNames": [
+                "Bundle Parent",
+                "Set Parent",
+                "Addon Parent",
+                "Product Request",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "ChildProductRole": {
+              "type": "string",
+              "title": "Child Product Role",
+              "enum": [
+                "BundleComponent",
+                "SetComponent",
+                "AddOnComponent",
+                "ClassificationComponent",
+                "ProductRequestComponent",
+                null
+              ],
+              "enumNames": [
+                "Bundle Component",
+                "Set Component",
+                "Addon Component",
+                "Product Classification Component",
+                "Product Request Component",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "ProductInstanceReuse": {
+              "type": "string",
+              "title": "Product Instance Reuse",
+              "enum": [
+                "Not Allowed",
+                "Allowed",
+                null
+              ],
+              "enumNames": [
+                "N",
+                "A",
+                null
+              ],
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "readOnly": true,
+              "description": ""
+            },
+            "QuoteVisibility": {
+              "type": "string",
+              "title": "Quote Visibility",
+              "enum": [
+                "Always",
+                "Transaction Line Editor Only",
+                "Quote Document Only",
+                "Never",
+                null
+              ],
+              "enumNames": [
+                "Always",
+                "Transaction Line Editor Only",
+                "Quote Document Only",
+                "Never",
+                null
+              ],
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/AttributeCategory",
+      "type": "table",
+      "position": {
+        "x": 447.7531680710881,
+        "y": -166.25160470244873
+      },
+      "data": {
+        "Id": "EntityDefinition/AttributeCategory",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Attribute Category ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "Code": {
+              "type": "string",
+              "title": "Code",
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/ProductClassificationAttr",
+      "type": "table",
+      "position": {
+        "x": 206.27654550987432,
+        "y": 69.20648129585386
+      },
+      "data": {
+        "Id": "EntityDefinition/ProductClassificationAttr",
+        "schema": {
+          "type": "object",
+          "description": "",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Product Classification Attribute ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ProductClassificationId": {
+              "type": "string",
+              "title": "Product Classification ID",
+              "x-target": "ProductClassification",
+              "readOnly": true,
+              "description": ""
+            },
+            "AttributeDefinitionId": {
+              "type": "string",
+              "title": "Attribute Definition ID",
+              "x-target": "AttributeDefinition",
+              "readOnly": true,
+              "description": ""
+            },
+            "AttributeCategoryId": {
+              "type": "string",
+              "title": "Attribute Category ID",
+              "x-target": "AttributeCategory",
+              "readOnly": true,
+              "description": ""
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": ""
+            },
+            "ValueDescription": {
+              "type": "string",
+              "title": "Value Description",
+              "description": ""
+            },
+            "HelpText": {
+              "type": "string",
+              "title": "Help Text",
+              "description": ""
+            },
+            "IsHidden": {
+              "type": "boolean",
+              "title": "Is Hidden",
+              "description": ""
+            },
+            "IsReadOnly": {
+              "type": "boolean",
+              "title": "Is Read Only",
+              "description": ""
+            },
+            "IsRequired": {
+              "type": "boolean",
+              "title": "Is Required",
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": ""
+            },
+            "Sequence": {
+              "type": "integer",
+              "title": "Sequence",
+              "description": ""
+            },
+            "AttributeNameOverride": {
+              "type": "string",
+              "title": "Attribute Name Override",
+              "description": ""
+            },
+            "DefaultValue": {
+              "type": "string",
+              "title": "Default Value",
+              "description": ""
+            },
+            "DisplayType": {
+              "type": "string",
+              "title": "Display Type",
+              "enum": [
+                "ComboBox",
+                "Text",
+                "RadioButton",
+                "CheckBox",
+                "Toggle",
+                "Number",
+                "Date",
+                "Datetime",
+                "Slider",
+                "MultiValueComboBox",
+                null
+              ],
+              "enumNames": [
+                "Combobox",
+                "Text",
+                "Radio Button",
+                "Checkbox",
+                "Toggle",
+                "Number",
+                "Date",
+                "Date Time",
+                "Slider",
+                "Multivalue Combobox",
+                null
+              ],
+              "description": ""
+            },
+            "IsPriceImpacting": {
+              "type": "boolean",
+              "title": "Is Price Impacting",
+              "description": ""
+            },
+            "MinimumValue": {
+              "type": "string",
+              "title": "Minimum Value",
+              "description": ""
+            },
+            "MaximumValue": {
+              "type": "string",
+              "title": "Maximum Value",
+              "description": ""
+            },
+            "MinimumCharacterCount": {
+              "type": "integer",
+              "title": "Minimum Character Count",
+              "description": ""
+            },
+            "MaximumCharacterCount": {
+              "type": "integer",
+              "title": "Maximum Character Count",
+              "description": ""
+            },
+            "StepValue": {
+              "type": "string",
+              "title": "Step Value",
+              "description": ""
+            },
+            "ValueDecoder": {
+              "type": "string",
+              "title": "Value Decoder",
+              "description": ""
+            },
+            "ReferenceObject": {
+              "type": "string",
+              "title": "Reference Object",
+              "enum": [
+                "Contact",
+                "Account",
+                "Vehicle",
+                null
+              ],
+              "enumNames": [
+                "Contact",
+                "Account",
+                "Vehicle",
+                null
+              ],
+              "description": ""
+            },
+            "ReferenceFieldApiName": {
+              "type": "string",
+              "title": "Reference Field API Name",
+              "description": ""
+            },
+            "UnitOfMeasureId": {
+              "type": "string",
+              "title": "Unit of Measure ID",
+              "x-target": "UnitOfMeasure",
+              "readOnly": true,
+              "description": ""
+            },
+            "External_Id__c": {
+              "type": "string",
+              "title": "External Id",
+              "description": ""
+            }
+          }
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "AttributePicklist.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "erd.AttributePicklist",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.RecordTypeId.RecordType.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "RecordTypeId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.BasedOnId.ProductClassification.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "BasedOnId",
+      "target": "erd.ProductClassification",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.TaxPolicyId.TaxPolicy.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "TaxPolicyId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.BillingPolicyId.BillingPolicy.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "BillingPolicyId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.ExternalDataSourceId.ExternalDataSource.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "ExternalDataSourceId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Product2.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "erd.Product2",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.ProductClassificationId.ProductClassification.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "ProductClassificationId",
+      "target": "erd.ProductClassification",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.AttributeDefinitionId.AttributeDefinition.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "AttributeDefinitionId",
+      "target": "erd.AttributeDefinition",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.AttributeCategoryId.AttributeCategory.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "AttributeCategoryId",
+      "target": "EntityDefinition/AttributeCategory",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "AttributeDefinition.PicklistId.AttributePicklist.Id",
+      "source": "erd.AttributeDefinition",
+      "sourceHandle": "PicklistId",
+      "target": "erd.AttributePicklist",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "AttributeDefinition.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "erd.AttributeDefinition",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductComponentGroup.ParentProductId.Product2.Id",
+      "source": "erd.ProductComponentGroup",
+      "sourceHandle": "ParentProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnderwritingRuleGroup.ProductId.Product2.Id",
+      "source": "erd.UnderwritingRuleGroup",
+      "sourceHandle": "ProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildProductId.Product2.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildProductClassificationId.ProductClassification.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildProductClassificationId",
+      "target": "erd.ProductClassification",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ParentProductId.Product2.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ParentProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ParentSellingModelId.ProductSellingModel.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ParentSellingModelId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildSellingModelId.ProductSellingModel.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildSellingModelId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ProductComponentGroupId.ProductComponentGroup.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ProductComponentGroupId",
+      "target": "erd.ProductComponentGroup",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ProductRelationshipTypeId.ProductRelationshipType.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ProductRelationshipTypeId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "AttributePicklistValue.PicklistId.AttributePicklist.Id",
+      "source": "erd.AttributePicklistValue",
+      "sourceHandle": "PicklistId",
+      "target": "erd.AttributePicklist",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "AttributeCategoryAttribute.AttributeCategoryId.AttributeCategory.Id",
+      "source": "erd.AttributeCategoryAttribute",
+      "sourceHandle": "AttributeCategoryId",
+      "target": "EntityDefinition/AttributeCategory",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "AttributeCategoryAttribute.AttributeDefinitionId.AttributeDefinition.Id",
+      "source": "erd.AttributeCategoryAttribute",
+      "sourceHandle": "AttributeDefinitionId",
+      "target": "erd.AttributeDefinition",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.Product2Id.Product2.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "Product2Id",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.AttributeDefinitionId.AttributeDefinition.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "AttributeDefinitionId",
+      "target": "erd.AttributeDefinition",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.ProductClassificationAttributeId.ProductClassificationAttr.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "ProductClassificationAttributeId",
+      "target": "EntityDefinition/ProductClassificationAttr",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.AttributeCategoryId.AttributeCategory.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "AttributeCategoryId",
+      "target": "EntityDefinition/AttributeCategory",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.OverrideContextId.Product2.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "OverrideContextId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnderwritingRule.UnderwritingRuleGroupId.UnderwritingRuleGroup.Id",
+      "source": "erd.UnderwritingRule",
+      "sourceHandle": "UnderwritingRuleGroupId",
+      "target": "erd.UnderwritingRuleGroup",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnderwritingRule.EvaluationSuccessTaskGroupId.FulfillmentStepDefinitionGroup.Id",
+      "source": "erd.UnderwritingRule",
+      "sourceHandle": "EvaluationSuccessTaskGroupId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnderwritingRule.EvaluationFailureTaskGroupId.FulfillmentStepDefinitionGroup.Id",
+      "source": "erd.UnderwritingRule",
+      "sourceHandle": "EvaluationFailureTaskGroupId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.Product2Id.Product2.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "Product2Id",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.AttributeDefinitionId.AttributeDefinition.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "AttributeDefinitionId",
+      "target": "erd.AttributeDefinition",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.ProductClassificationAttributeId.ProductClassificationAttr.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "ProductClassificationAttributeId",
+      "target": "EntityDefinition/ProductClassificationAttr",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.AttributeCategoryId.AttributeCategory.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "AttributeCategoryId",
+      "target": "EntityDefinition/AttributeCategory",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.OverrideContextId.Product2.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "OverrideContextId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductAttributeDefinition.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductAttributeDefinition",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildProductId.Product2.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildProductClassificationId.ProductClassification.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildProductClassificationId",
+      "target": "erd.ProductClassification",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ParentProductId.Product2.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ParentProductId",
+      "target": "erd.Product2",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ParentSellingModelId.ProductSellingModel.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ParentSellingModelId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ChildSellingModelId.ProductSellingModel.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ChildSellingModelId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ProductComponentGroupId.ProductComponentGroup.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ProductComponentGroupId",
+      "target": "erd.ProductComponentGroup",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.ProductRelationshipTypeId.ProductRelationshipType.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "ProductRelationshipTypeId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductRelatedComponent.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductRelatedComponent",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.ProductClassificationId.ProductClassification.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "ProductClassificationId",
+      "target": "erd.ProductClassification",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.AttributeDefinitionId.AttributeDefinition.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "AttributeDefinitionId",
+      "target": "erd.AttributeDefinition",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.AttributeCategoryId.AttributeCategory.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "AttributeCategoryId",
+      "target": "EntityDefinition/AttributeCategory",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ProductClassificationAttr.UnitOfMeasureId.UnitOfMeasure.Id",
+      "source": "EntityDefinition/ProductClassificationAttr",
+      "sourceHandle": "UnitOfMeasureId",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    }
+  ]
+}

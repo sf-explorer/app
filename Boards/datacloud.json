@@ -1,0 +1,514 @@
+{
+  "nodes": [
+    {
+      "position": {
+        "x": -650,
+        "y": 50
+      },
+      "id": "filter",
+      "type": "input",
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "filter": {
+              "title": "Filter",
+              "type": "string"
+            },
+            "onlyRef": {
+              "title": "Reference only",
+              "type": "boolean",
+              "default": false
+            },
+            "onlyCustom": {
+              "title": "Custom only",
+              "type": "boolean",
+              "default": false
+            },
+            "showLabel": {
+              "title": "Show Label",
+              "type": "boolean",
+              "default": true
+            },
+            "showData": {
+              "title": "Show Data",
+              "type": "boolean",
+              "default": false
+            },
+            "showChildRelation": {
+              "title": "Child Relations",
+              "type": "boolean",
+              "default": false
+            },
+            "nbFields": {
+              "title": "Nb Fields",
+              "type": "integer",
+              "default": 20
+            },
+            "user": {
+              "title": "User",
+              "objectName": "User",
+              "description": "Analyze the given access right to a given user",
+              "fields": [
+                "Name",
+                "Profile.Name"
+              ],
+              "loadingOptions": {
+                "loadPermissions": true
+              }
+            }
+          }
+        }
+      },
+      "width": 250,
+      "height": 388
+    },
+    {
+      "id": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
+      "type": "table",
+      "data": {
+        "label": "New Card",
+        "icon": "standard:hierarchy",
+        "color": "#9467bd",
+        "Id": "EntityDefinition/ssot__Individual__dlm",
+        "table": {
+          "name": "ssot__Individual__dlm",
+          "label": "Individual",
+          "description": "[Data Cloud DMO] "
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__FirstName__c": {
+              "type": "string",
+              "title": "First Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "Individual Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__LastName__c": {
+              "type": "string",
+              "title": "Last Name",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      },
+      "position": {
+        "x": 11.127851259955747,
+        "y": 65.01007626038317
+      }
+    },
+    {
+      "id": "EntityDefinition/ssot__ContactPointEmail__dlm",
+      "type": "table",
+      "position": {
+        "x": 379.4669592077588,
+        "y": 89.38783008643342
+      },
+      "data": {
+        "Id": "EntityDefinition/ssot__ContactPointEmail__dlm",
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_PartyId__c": {
+              "type": "string",
+              "title": "Key Qualifier Party",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EmailAddress__c": {
+              "type": "string",
+              "title": "Email Address",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "Contact Point Email Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IsActive__c": {
+              "type": "string",
+              "title": "Is Active",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PartyId__c": {
+              "type": "string",
+              "title": "Party",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/Individual_SM_1751967396013__dlm",
+      "type": "table",
+      "position": {
+        "x": 377.4693182393593,
+        "y": 311.05714200030906
+      },
+      "data": {
+        "Id": "EntityDefinition/Individual_SM_1751967396013__dlm",
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "Delta_Type__c": {
+              "type": "string",
+              "title": "Delta Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "Parent_Segment_Id__c": {
+              "type": "string",
+              "title": "Parent Segment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "Segment_Id__c": {
+              "type": "string",
+              "title": "Segment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "Snapshot_Type__c": {
+              "type": "string",
+              "title": "Snapshot Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Version_Stamp__c": {
+              "type": "string",
+              "title": "Version Stamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
+      "type": "table",
+      "position": {
+        "x": -333.33065388142074,
+        "y": 82.3427969040294
+      },
+      "data": {
+        "Id": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_SourceRecordId__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "MatchKeys__c": {
+              "type": "string",
+              "title": "Match Keys",
+              "readOnly": true,
+              "description": ""
+            },
+            "PriorityBucket__c": {
+              "type": "string",
+              "title": "Priority Bucket",
+              "readOnly": true,
+              "description": ""
+            },
+            "SourceRecordId__c": {
+              "type": "string",
+              "title": "Individual Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "UnifiedRecordId__c": {
+              "type": "string",
+              "title": "Unified Individual Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
+      "type": "table",
+      "position": {
+        "x": 533.0630920409177,
+        "y": -168.20438728713447
+      },
+      "data": {
+        "Id": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_SourceRecordId__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "PriorityBucket__c": {
+              "type": "string",
+              "title": "Priority Bucket",
+              "readOnly": true,
+              "description": ""
+            },
+            "SourceRecordId__c": {
+              "type": "string",
+              "title": "Contact Point Email Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "UnifiedRecordId__c": {
+              "type": "string",
+              "title": "Unified Contact Point Email Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
+      "type": "table",
+      "position": {
+        "x": 135.15114592545706,
+        "y": -194.56180252127822
+      },
+      "data": {
+        "Id": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EmailAddress__c": {
+              "type": "string",
+              "title": "Email Address",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "Unified Contact Point Email Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IsActive__c": {
+              "type": "string",
+              "title": "Is Active",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PartyId__c": {
+              "type": "string",
+              "title": "Party",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "ssot__Individual__dlm.ssot__Id__c.UnifiedLinkssotIndividualR1__dlm.Id",
+      "source": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
+      "sourceHandle": "ssot__Id__c",
+      "target": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__ContactPointEmail__dlm.ssot__Id__c.ssot__Individual__dlm.Id",
+      "source": "EntityDefinition/ssot__ContactPointEmail__dlm",
+      "sourceHandle": "ssot__Id__c",
+      "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__ContactPointEmail__dlm.ssot__PartyId__c.ssot__Individual__dlm.Id",
+      "source": "EntityDefinition/ssot__ContactPointEmail__dlm",
+      "sourceHandle": "ssot__PartyId__c",
+      "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "Individual_SM_1751967396013__dlm.Id__c.ssot__Individual__dlm.Id",
+      "source": "EntityDefinition/Individual_SM_1751967396013__dlm",
+      "sourceHandle": "Id__c",
+      "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnifiedLinkssotIndividualR1__dlm.UnifiedRecordId__c.UnifiedssotIndividualR1__dlm.Id",
+      "source": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
+      "sourceHandle": "UnifiedRecordId__c",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnifiedLinkssotContactPointEmailR1__dlm.UnifiedRecordId__c.UnifiedssotContactPointEmailR1__dlm.Id",
+      "source": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
+      "sourceHandle": "UnifiedRecordId__c",
+      "target": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "UnifiedssotContactPointEmailR1__dlm.ssot__PartyId__c.UnifiedssotIndividualR1__dlm.Id",
+      "source": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
+      "sourceHandle": "ssot__PartyId__c",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    }
+  ]
+}

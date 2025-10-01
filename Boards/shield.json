@@ -1,0 +1,5714 @@
+{
+  "nodes": [
+    {
+      "position": {
+        "x": -650,
+        "y": 48.18489357682941
+      },
+      "id": "filter",
+      "type": "input",
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "filter": {
+              "title": "Filter",
+              "type": "string"
+            },
+            "onlyRef": {
+              "title": "Reference only",
+              "type": "boolean",
+              "default": false
+            },
+            "onlyCustom": {
+              "title": "Custom only",
+              "type": "boolean",
+              "default": false
+            },
+            "showLabel": {
+              "title": "Show Label",
+              "type": "boolean",
+              "default": true
+            },
+            "showData": {
+              "title": "Show Data",
+              "type": "boolean",
+              "default": false
+            },
+            "showChildRelation": {
+              "title": "Child Relations",
+              "type": "boolean",
+              "default": false
+            },
+            "nbFields": {
+              "title": "Nb Fields",
+              "type": "integer",
+              "default": 20
+            },
+            "user": {
+              "title": "User",
+              "objectName": "User",
+              "description": "Analyze the given access right to a given user",
+              "fields": [
+                "Name",
+                "Profile.Name"
+              ],
+              "loadingOptions": {
+                "loadPermissions": true
+              }
+            }
+          }
+        }
+      },
+      "width": 250,
+      "height": 388
+    },
+    {
+      "id": "SearchEventLog",
+      "data": {
+        "Id": "EntityDefinition/SearchEventLog",
+        "table": {
+          "name": "SearchEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryIdentifier": {
+              "type": "string",
+              "title": "Query Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResultCount": {
+              "type": "integer",
+              "title": "Result Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "SearchQuery": {
+              "type": "string",
+              "title": "Search Query",
+              "readOnly": true,
+              "description": ""
+            },
+            "PrefixesSearched": {
+              "type": "string",
+              "title": "Prefixes Searched",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Search Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#ff7f0e"
+      },
+      "type": "table",
+      "position": {
+        "x": -300,
+        "y": 500
+      }
+    },
+    {
+      "id": "AnalyticsChangeEventLog",
+      "data": {
+        "Id": "EntityDefinition/AnalyticsChangeEventLog",
+        "table": {
+          "name": "AnalyticsChangeEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsSessionIdentifier": {
+              "type": "string",
+              "title": "Analytics Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsTimestamp": {
+              "type": "string",
+              "title": "Analytics Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Type": {
+              "type": "string",
+              "title": "Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RecordIdentifier": {
+              "type": "string",
+              "title": "Record Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ViewMode": {
+              "type": "string",
+              "title": "View Mode",
+              "readOnly": true,
+              "description": ""
+            },
+            "TabIdentifier": {
+              "type": "string",
+              "title": "Tab Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageIdentifier": {
+              "type": "string",
+              "title": "Page Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SavedViewIdentifier": {
+              "type": "string",
+              "title": "Saved View Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsNew": {
+              "type": "boolean",
+              "title": "Is New",
+              "readOnly": true,
+              "description": ""
+            },
+            "ReopenCount": {
+              "type": "integer",
+              "title": "Reopen Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsMode": {
+              "type": "string",
+              "title": "Analytics Mode",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageContext": {
+              "type": "string",
+              "title": "Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsMobile": {
+              "type": "boolean",
+              "title": "Is Mobile",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Analytics Change Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#2ca02c"
+      },
+      "type": "table",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ApexExecutionEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexExecutionEventLog",
+        "table": {
+          "name": "ApexExecutionEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExecutionTime": {
+              "type": "number",
+              "title": "Execution Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CalloutTime": {
+              "type": "number",
+              "title": "Callout Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "SoqlQueryCount": {
+              "type": "integer",
+              "title": "Soql Query Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "EntryPoint": {
+              "type": "string",
+              "title": "Entry Point",
+              "readOnly": true,
+              "description": ""
+            },
+            "Quiddity": {
+              "type": "string",
+              "title": "Quiddity",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsLongRunningRequest": {
+              "type": "boolean",
+              "title": "Is Long Running Request",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex Execution Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#d62728"
+      },
+      "type": "table",
+      "position": {
+        "x": 0,
+        "y": 500
+      }
+    },
+    {
+      "id": "InvocableActionEventLog",
+      "data": {
+        "Id": "EntityDefinition/InvocableActionEventLog",
+        "table": {
+          "name": "InvocableActionEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionType": {
+              "type": "string",
+              "title": "Action Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionName": {
+              "type": "string",
+              "title": "Action Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionVersion": {
+              "type": "string",
+              "title": "Action Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestCount": {
+              "type": "integer",
+              "title": "Request Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "FlowProcessType": {
+              "type": "string",
+              "title": "Flow Process Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "FlowVersionIdentifier": {
+              "type": "string",
+              "title": "Flow Version Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiCaller": {
+              "type": "string",
+              "title": "API Caller",
+              "readOnly": true,
+              "description": ""
+            },
+            "Duration": {
+              "type": "number",
+              "title": "Duration",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Invocable Action Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#9467bd"
+      },
+      "type": "table",
+      "position": {
+        "x": 300,
+        "y": 0
+      }
+    },
+    {
+      "id": "ApexTriggerEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexTriggerEventLog",
+        "table": {
+          "name": "ApexTriggerEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "TriggerIdentifier": {
+              "type": "string",
+              "title": "Trigger Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "TriggerName": {
+              "type": "string",
+              "title": "Trigger Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "TriggerType": {
+              "type": "string",
+              "title": "Trigger Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExecutionTime": {
+              "type": "number",
+              "title": "Execution Time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex Trigger Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#8c564b"
+      },
+      "type": "table",
+      "position": {
+        "x": 300,
+        "y": 500
+      }
+    },
+    {
+      "id": "ApexRestApiEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexRestApiEventLog",
+        "table": {
+          "name": "ApexRestApiEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Method": {
+              "type": "string",
+              "title": "Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "MediaType": {
+              "type": "string",
+              "title": "Media Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "StatusCode": {
+              "type": "integer",
+              "title": "Status Code",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowsProcessed": {
+              "type": "integer",
+              "title": "Rows Processed",
+              "readOnly": true,
+              "description": ""
+            },
+            "FieldCount": {
+              "type": "integer",
+              "title": "Field Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestSize": {
+              "type": "number",
+              "title": "Request Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseSize": {
+              "type": "number",
+              "title": "Response Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExceptionMessage": {
+              "type": "string",
+              "title": "Exception Message",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex Rest Api Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#e377c2"
+      },
+      "type": "table",
+      "position": {
+        "x": 600,
+        "y": 0
+      }
+    },
+    {
+      "id": "AnalyticsPerfEventLog",
+      "data": {
+        "Id": "EntityDefinition/AnalyticsPerfEventLog",
+        "table": {
+          "name": "AnalyticsPerfEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsSessionIdentifier": {
+              "type": "string",
+              "title": "Analytics Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsTimestamp": {
+              "type": "string",
+              "title": "Analytics Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RecordIdentifier": {
+              "type": "string",
+              "title": "Record Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ViewMode": {
+              "type": "string",
+              "title": "View Mode",
+              "readOnly": true,
+              "description": ""
+            },
+            "TabIdentifier": {
+              "type": "string",
+              "title": "Tab Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueriedName": {
+              "type": "string",
+              "title": "Queried Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "EffectivePageTime": {
+              "type": "number",
+              "title": "Effective Page Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsInitialLoad": {
+              "type": "boolean",
+              "title": "Is Initial Load",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Analytics Performance Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#7f7f7f"
+      },
+      "type": "table",
+      "position": {
+        "x": 600,
+        "y": 500
+      }
+    },
+    {
+      "id": "UriEventLog",
+      "data": {
+        "Id": "EntityDefinition/UriEventLog",
+        "table": {
+          "name": "UriEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ReferrerUri": {
+              "type": "string",
+              "title": "Referrer URI",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "URI Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#bcbd22"
+      },
+      "type": "table",
+      "position": {
+        "x": 900,
+        "y": 0
+      }
+    },
+    {
+      "id": "TransactionSecurityEventLog",
+      "data": {
+        "Id": "EntityDefinition/TransactionSecurityEventLog",
+        "table": {
+          "name": "TransactionSecurityEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "PolicyIdentifier": {
+              "type": "string",
+              "title": "Policy Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "TriggeredTimestamp": {
+              "type": "string",
+              "title": "Triggered Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "EvaluationTime": {
+              "type": "number",
+              "title": "Evaluation Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "PolicyType": {
+              "type": "string",
+              "title": "Policy Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "EventName": {
+              "type": "string",
+              "title": "Event Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApexIdentifier": {
+              "type": "string",
+              "title": "Apex Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "FlowIdentifier": {
+              "type": "string",
+              "title": "Flow Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PolicyOutcome": {
+              "type": "string",
+              "title": "Policy Outcome",
+              "readOnly": true,
+              "description": ""
+            },
+            "SendInAppNotification": {
+              "type": "boolean",
+              "title": "Send In App Notification",
+              "readOnly": true,
+              "description": ""
+            },
+            "SendEmailNotification": {
+              "type": "boolean",
+              "title": "Send Email Notification",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Transaction Security Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 900,
+        "y": 500
+      }
+    },
+    {
+      "id": "LightningErrorEventLog",
+      "data": {
+        "Id": "EntityDefinition/LightningErrorEventLog",
+        "table": {
+          "name": "LightningErrorEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIdentifier": {
+              "type": "string",
+              "title": "Client Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "AppName": {
+              "type": "string",
+              "title": "App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "DevicePlatform": {
+              "type": "string",
+              "title": "Device Platform",
+              "readOnly": true,
+              "description": ""
+            },
+            "SdkAppVersion": {
+              "type": "string",
+              "title": "SDK App Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemName": {
+              "type": "string",
+              "title": "Operating System Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemVersion": {
+              "type": "string",
+              "title": "Operating System Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserAgent": {
+              "type": "string",
+              "title": "User Agent",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserName": {
+              "type": "string",
+              "title": "Browser Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserVersion": {
+              "type": "string",
+              "title": "Browser Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkVersion": {
+              "type": "string",
+              "title": "Mobile SDK Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceModel": {
+              "type": "string",
+              "title": "Device Model",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceIdentifier": {
+              "type": "string",
+              "title": "Device Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkAppType": {
+              "type": "string",
+              "title": "Mobile SDK App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientGeolocation": {
+              "type": "string",
+              "title": "Client Geolocation",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectionType": {
+              "type": "string",
+              "title": "Connection Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageUrl": {
+              "type": "string",
+              "title": "Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageUrl": {
+              "type": "string",
+              "title": "Previous Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventIdentifier": {
+              "type": "string",
+              "title": "UI Event Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventType": {
+              "type": "string",
+              "title": "UI Event Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventSource": {
+              "type": "string",
+              "title": "UI Event Source",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventTimestamp": {
+              "type": "string",
+              "title": "UI Event Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageStartTime": {
+              "type": "string",
+              "title": "Page Start Time",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceSessionIdentifier": {
+              "type": "string",
+              "title": "Device Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventSequenceNumber": {
+              "type": "number",
+              "title": "UI Event Sequence Number",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectIdentifier": {
+              "type": "string",
+              "title": "Page Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectType": {
+              "type": "string",
+              "title": "Page Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageContext": {
+              "type": "string",
+              "title": "Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageAppName": {
+              "type": "string",
+              "title": "Page App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ComponentName": {
+              "type": "string",
+              "title": "Component Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ErrorMessage": {
+              "type": "string",
+              "title": "Error Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "StackTrace": {
+              "type": "string",
+              "title": "Stack Trace",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Lightning Error Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#4e79a7"
+      },
+      "type": "table",
+      "position": {
+        "x": 1200,
+        "y": 0
+      }
+    },
+    {
+      "id": "RestApiEventLog",
+      "data": {
+        "Id": "EntityDefinition/RestApiEventLog",
+        "table": {
+          "name": "RestApiEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Method": {
+              "type": "string",
+              "title": "Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "MediaType": {
+              "type": "string",
+              "title": "Media Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "StatusCode": {
+              "type": "integer",
+              "title": "Status Code",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowsProcessed": {
+              "type": "integer",
+              "title": "Rows Processed",
+              "readOnly": true,
+              "description": ""
+            },
+            "FieldCount": {
+              "type": "integer",
+              "title": "Field Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestSize": {
+              "type": "number",
+              "title": "Request Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseSize": {
+              "type": "number",
+              "title": "Response Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExceptionMessage": {
+              "type": "string",
+              "title": "Exception Message",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Rest API Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#f28e2c"
+      },
+      "type": "table",
+      "position": {
+        "x": 1200,
+        "y": 500
+      }
+    },
+    {
+      "id": "ApiTotalUsageEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApiTotalUsageEventLog",
+        "table": {
+          "name": "ApiTotalUsageEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiFamily": {
+              "type": "string",
+              "title": "API Family",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiResource": {
+              "type": "string",
+              "title": "API Resource",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientName": {
+              "type": "string",
+              "title": "Client Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "HttpMethod": {
+              "type": "string",
+              "title": "Http Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsApiLimitCounted": {
+              "type": "boolean",
+              "title": "Is API Limit Counted",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectedAppIdentifier": {
+              "type": "string",
+              "title": "Connected App Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "StatusCode": {
+              "type": "integer",
+              "title": "Status Code",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "API Total Usage Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#e15759"
+      },
+      "type": "table",
+      "position": {
+        "x": 1500,
+        "y": 0
+      }
+    },
+    {
+      "id": "VisualforceRequestEventLog",
+      "data": {
+        "Id": "EntityDefinition/VisualforceRequestEventLog",
+        "table": {
+          "name": "VisualforceRequestEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageName": {
+              "type": "string",
+              "title": "Page Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestType": {
+              "type": "string",
+              "title": "Request Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsFirstRequest": {
+              "type": "boolean",
+              "title": "Is First Request",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryString": {
+              "type": "string",
+              "title": "Query String",
+              "readOnly": true,
+              "description": ""
+            },
+            "HttpMethod": {
+              "type": "string",
+              "title": "Http Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestSize": {
+              "type": "number",
+              "title": "Request Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseSize": {
+              "type": "number",
+              "title": "Response Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ViewStateSize": {
+              "type": "number",
+              "title": "View State Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ControllerType": {
+              "type": "string",
+              "title": "Controller Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ManagedPackageNamespace": {
+              "type": "string",
+              "title": "Managed Package Namespace",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsAjaxRequest": {
+              "type": "boolean",
+              "title": "Is Ajax Request",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Visualforce Request Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#76b7b2"
+      },
+      "type": "table",
+      "position": {
+        "x": 1500,
+        "y": 500
+      }
+    },
+    {
+      "id": "LoginEventLog",
+      "data": {
+        "Id": "EntityDefinition/LoginEventLog",
+        "table": {
+          "name": "LoginEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginType": {
+              "type": "string",
+              "title": "Login Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginStatus": {
+              "type": "string",
+              "title": "Login Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "SourceIp": {
+              "type": "string",
+              "title": "Source IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserType": {
+              "type": "string",
+              "title": "Browser Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiType": {
+              "type": "string",
+              "title": "API Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiVersion": {
+              "type": "integer",
+              "title": "API Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "Username": {
+              "type": "string",
+              "title": "Username",
+              "readOnly": true,
+              "description": ""
+            },
+            "TransportLayerSecurityProtocol": {
+              "type": "string",
+              "title": "Transport Layer Security Protocol",
+              "readOnly": true,
+              "description": ""
+            },
+            "CipherSuite": {
+              "type": "string",
+              "title": "Cipher Suite",
+              "readOnly": true,
+              "description": ""
+            },
+            "AuthenticatedMethodReference": {
+              "type": "string",
+              "title": "Authenticated Method Reference",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginSubType": {
+              "type": "string",
+              "title": "Login Sub Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ForwardedForIp": {
+              "type": "string",
+              "title": "Forwarded For IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "AuthenticationServiceIdentifier": {
+              "type": "string",
+              "title": "Authentication Service Identifier",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Login Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#59a14f"
+      },
+      "type": "table",
+      "position": {
+        "x": 1800,
+        "y": 0
+      }
+    },
+    {
+      "id": "UiTelemetryRsrcTmEventLog",
+      "data": {
+        "Id": "EntityDefinition/UiTelemetryRsrcTmEventLog",
+        "table": {
+          "name": "UiTelemetryRsrcTmEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceSessionIdentifier": {
+              "type": "string",
+              "title": "Device Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventTimestamp": {
+              "type": "string",
+              "title": "UI Event Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventElapsedTime": {
+              "type": "number",
+              "title": "UI Event Elapsed Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiRootActivityIdentifier": {
+              "type": "string",
+              "title": "UI Root Activity Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIdentifier": {
+              "type": "string",
+              "title": "Client Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientGeolocation": {
+              "type": "string",
+              "title": "Client Geolocation",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectionType": {
+              "type": "string",
+              "title": "Connection Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "AppName": {
+              "type": "string",
+              "title": "App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "SdkAppVersion": {
+              "type": "string",
+              "title": "SDK App Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "DevicePlatform": {
+              "type": "string",
+              "title": "Device Platform",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceModel": {
+              "type": "string",
+              "title": "Device Model",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkVersion": {
+              "type": "string",
+              "title": "Mobile SDK Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserName": {
+              "type": "string",
+              "title": "Browser Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserVersion": {
+              "type": "string",
+              "title": "Browser Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemName": {
+              "type": "string",
+              "title": "Operating System Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemVersion": {
+              "type": "string",
+              "title": "Operating System Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageUrl": {
+              "type": "string",
+              "title": "Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectType": {
+              "type": "string",
+              "title": "Page Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageContext": {
+              "type": "string",
+              "title": "Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectIdentifier": {
+              "type": "string",
+              "title": "Page Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkAppType": {
+              "type": "string",
+              "title": "Mobile SDK App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Duration": {
+              "type": "number",
+              "title": "Duration",
+              "readOnly": true,
+              "description": ""
+            },
+            "Url": {
+              "type": "string",
+              "title": "URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "StartTime": {
+              "type": "number",
+              "title": "Start Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "InitiatorType": {
+              "type": "string",
+              "title": "Initiator Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "NextHopProtocol": {
+              "type": "string",
+              "title": "Next Hop Protocol",
+              "readOnly": true,
+              "description": ""
+            },
+            "RenderBlockingStatus": {
+              "type": "string",
+              "title": "Render Blocking Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "WorkerStart": {
+              "type": "number",
+              "title": "Worker Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "RedirectStart": {
+              "type": "number",
+              "title": "Redirect Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "RedirectEnd": {
+              "type": "number",
+              "title": "Redirect End",
+              "readOnly": true,
+              "description": ""
+            },
+            "FetchStart": {
+              "type": "number",
+              "title": "Fetch Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomainLookupStart": {
+              "type": "number",
+              "title": "Domain Lookup Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomainLookupEnd": {
+              "type": "number",
+              "title": "Domain Lookup End",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectStart": {
+              "type": "number",
+              "title": "Connect Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "SecureConnectionStart": {
+              "type": "number",
+              "title": "Secure Connection Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectEnd": {
+              "type": "number",
+              "title": "Connect End",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStart": {
+              "type": "number",
+              "title": "Request Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseStart": {
+              "type": "number",
+              "title": "Response Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "FirstInterimResponseStart": {
+              "type": "number",
+              "title": "First Interim Response Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseEnd": {
+              "type": "number",
+              "title": "Response End",
+              "readOnly": true,
+              "description": ""
+            },
+            "TransferSize": {
+              "type": "number",
+              "title": "Transfer Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "EncodedBodySize": {
+              "type": "number",
+              "title": "Encoded Body Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "DecodedBodySize": {
+              "type": "number",
+              "title": "Decoded Body Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseStatus": {
+              "type": "number",
+              "title": "Response Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "ServerRequestIdentifier": {
+              "type": "string",
+              "title": "Server Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiThreadResponseDelay": {
+              "type": "number",
+              "title": "UI Thread Response Delay",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Ui Telemetry Resource Timing Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#edc949"
+      },
+      "type": "table",
+      "position": {
+        "x": 1800,
+        "y": 500
+      }
+    },
+    {
+      "id": "DatabaseSaveEventLog",
+      "data": {
+        "Id": "EntityDefinition/DatabaseSaveEventLog",
+        "table": {
+          "name": "DatabaseSaveEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "KeyPrefix": {
+              "type": "string",
+              "title": "Key Prefix",
+              "readOnly": true,
+              "description": ""
+            },
+            "DmlType": {
+              "type": "string",
+              "title": "Dml Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowCount": {
+              "type": "integer",
+              "title": "Row Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "SampleFactor": {
+              "type": "number",
+              "title": "Sample Factor",
+              "readOnly": true,
+              "description": ""
+            },
+            "FirstObjectIdentifier": {
+              "type": "string",
+              "title": "First Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Database Save Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#af7aa1"
+      },
+      "type": "table",
+      "position": {
+        "x": 2100,
+        "y": 0
+      }
+    },
+    {
+      "id": "ApexCalloutEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexCalloutEventLog",
+        "table": {
+          "name": "ApexCalloutEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "Type": {
+              "type": "string",
+              "title": "Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Method": {
+              "type": "string",
+              "title": "Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsSuccess": {
+              "type": "boolean",
+              "title": "Is Success",
+              "readOnly": true,
+              "description": ""
+            },
+            "StatusCode": {
+              "type": "integer",
+              "title": "Status Code",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestTime": {
+              "type": "number",
+              "title": "Request Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestSize": {
+              "type": "number",
+              "title": "Request Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseSize": {
+              "type": "number",
+              "title": "Response Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "Url": {
+              "type": "string",
+              "title": "URL",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex Callout Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#ff9da7"
+      },
+      "type": "table",
+      "position": {
+        "x": 2100,
+        "y": 500
+      }
+    },
+    {
+      "id": "SoapApiEventLog",
+      "data": {
+        "Id": "EntityDefinition/SoapApiEventLog",
+        "table": {
+          "name": "SoapApiEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ApiType": {
+              "type": "string",
+              "title": "API Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientName": {
+              "type": "string",
+              "title": "Client Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "MethodName": {
+              "type": "string",
+              "title": "Method Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowsProcessed": {
+              "type": "integer",
+              "title": "Rows Processed",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestSize": {
+              "type": "number",
+              "title": "Request Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseSize": {
+              "type": "number",
+              "title": "Response Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExceptionMessage": {
+              "type": "string",
+              "title": "Exception Message",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Soap API Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#9c755f"
+      },
+      "type": "table",
+      "position": {
+        "x": 2400,
+        "y": 0
+      }
+    },
+    {
+      "id": "SearchClickEventLog",
+      "data": {
+        "Id": "EntityDefinition/SearchClickEventLog",
+        "table": {
+          "name": "SearchClickEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryIdentifier": {
+              "type": "string",
+              "title": "Query Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClickedRecordIdentifier": {
+              "type": "string",
+              "title": "Clicked Record Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "Rank": {
+              "type": "integer",
+              "title": "Rank",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Search Click Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#bab0ab"
+      },
+      "type": "table",
+      "position": {
+        "x": 2099.483230224524,
+        "y": 978.6007814942764
+      }
+    },
+    {
+      "id": "BulkApiEventLog",
+      "data": {
+        "Id": "EntityDefinition/BulkApiEventLog",
+        "table": {
+          "name": "BulkApiEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "JobIdentifier": {
+              "type": "string",
+              "title": "Job Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "BatchIdentifier": {
+              "type": "string",
+              "title": "Batch Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "FailureCount": {
+              "type": "integer",
+              "title": "Failure Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsSuccess": {
+              "type": "boolean",
+              "title": "Is Success",
+              "readOnly": true,
+              "description": ""
+            },
+            "Message": {
+              "type": "string",
+              "title": "Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectType": {
+              "type": "string",
+              "title": "Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperationType": {
+              "type": "string",
+              "title": "Operation Type",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Bulk API Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#1f77b4"
+      },
+      "type": "table",
+      "position": {
+        "x": 2092.6063171733767,
+        "y": 1478.7333115936112
+      }
+    },
+    {
+      "id": "KnowledgeArticleEventLog",
+      "data": {
+        "Id": "EntityDefinition/KnowledgeArticleEventLog",
+        "table": {
+          "name": "KnowledgeArticleEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionIdentifier": {
+              "type": "string",
+              "title": "Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Context": {
+              "type": "string",
+              "title": "Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectType": {
+              "type": "string",
+              "title": "Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Language": {
+              "type": "string",
+              "title": "Language",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsLastVersion": {
+              "type": "boolean",
+              "title": "Is Last Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "ArticleStatus": {
+              "type": "string",
+              "title": "Article Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "ArticleIdentifier": {
+              "type": "string",
+              "title": "Article Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ArticleVersionIdentifier": {
+              "type": "string",
+              "title": "Article Version Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ArticleVersion": {
+              "type": "number",
+              "title": "Article Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsLargeLanguageModel": {
+              "type": "string",
+              "title": "Is Large Language Model",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Knowledge Article Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#ff7f0e"
+      },
+      "type": "table",
+      "position": {
+        "x": -300.26195250390253,
+        "y": 1.3890229747868261
+      }
+    },
+    {
+      "id": "AnalyticsDownloadEventLog",
+      "data": {
+        "Id": "EntityDefinition/AnalyticsDownloadEventLog",
+        "table": {
+          "name": "AnalyticsDownloadEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsSessionIdentifier": {
+              "type": "string",
+              "title": "Analytics Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsTimestamp": {
+              "type": "string",
+              "title": "Analytics Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "AssetIdentifier": {
+              "type": "string",
+              "title": "Asset Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "AssetType": {
+              "type": "string",
+              "title": "Asset Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatasetIdentifiers": {
+              "type": "string",
+              "title": "Dataset Identifiers",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "DownloadFormat": {
+              "type": "string",
+              "title": "Download Format",
+              "readOnly": true,
+              "description": ""
+            },
+            "RecordCount": {
+              "type": "integer",
+              "title": "Record Count",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Analytics Download Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#2ca02c"
+      },
+      "type": "table",
+      "position": {
+        "x": -304.09097331349597,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "UiTelemetryNavTmEventLog",
+      "data": {
+        "Id": "EntityDefinition/UiTelemetryNavTmEventLog",
+        "table": {
+          "name": "UiTelemetryNavTmEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceSessionIdentifier": {
+              "type": "string",
+              "title": "Device Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventTimestamp": {
+              "type": "string",
+              "title": "UI Event Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventElapsedTime": {
+              "type": "number",
+              "title": "UI Event Elapsed Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiRootActivityIdentifier": {
+              "type": "string",
+              "title": "UI Root Activity Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIdentifier": {
+              "type": "string",
+              "title": "Client Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientGeolocation": {
+              "type": "string",
+              "title": "Client Geolocation",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectionType": {
+              "type": "string",
+              "title": "Connection Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "AppName": {
+              "type": "string",
+              "title": "App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "SdkAppVersion": {
+              "type": "string",
+              "title": "SDK App Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "DevicePlatform": {
+              "type": "string",
+              "title": "Device Platform",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceModel": {
+              "type": "string",
+              "title": "Device Model",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkVersion": {
+              "type": "string",
+              "title": "Mobile SDK Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserName": {
+              "type": "string",
+              "title": "Browser Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserVersion": {
+              "type": "string",
+              "title": "Browser Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemName": {
+              "type": "string",
+              "title": "Operating System Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemVersion": {
+              "type": "string",
+              "title": "Operating System Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageUrl": {
+              "type": "string",
+              "title": "Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectType": {
+              "type": "string",
+              "title": "Page Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageContext": {
+              "type": "string",
+              "title": "Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectIdentifier": {
+              "type": "string",
+              "title": "Page Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkAppType": {
+              "type": "string",
+              "title": "Mobile SDK App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "Duration": {
+              "type": "number",
+              "title": "Duration",
+              "readOnly": true,
+              "description": ""
+            },
+            "Url": {
+              "type": "string",
+              "title": "URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "StartTime": {
+              "type": "number",
+              "title": "Start Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "InitiatorType": {
+              "type": "string",
+              "title": "Initiator Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "NextHopProtocol": {
+              "type": "string",
+              "title": "Next Hop Protocol",
+              "readOnly": true,
+              "description": ""
+            },
+            "RenderBlockingStatus": {
+              "type": "string",
+              "title": "Render Blocking Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "WorkerStart": {
+              "type": "number",
+              "title": "Worker Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "RedirectStart": {
+              "type": "number",
+              "title": "Redirect Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "RedirectEnd": {
+              "type": "number",
+              "title": "Redirect End",
+              "readOnly": true,
+              "description": ""
+            },
+            "FetchStart": {
+              "type": "number",
+              "title": "Fetch Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomainLookupStart": {
+              "type": "number",
+              "title": "Domain Lookup Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomainLookupEnd": {
+              "type": "number",
+              "title": "Domain Lookup End",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectStart": {
+              "type": "number",
+              "title": "Connect Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "SecureConnectionStart": {
+              "type": "number",
+              "title": "Secure Connection Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectEnd": {
+              "type": "number",
+              "title": "Connect End",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStart": {
+              "type": "number",
+              "title": "Request Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseStart": {
+              "type": "number",
+              "title": "Response Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "FirstInterimResponseStart": {
+              "type": "number",
+              "title": "First Interim Response Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseEnd": {
+              "type": "number",
+              "title": "Response End",
+              "readOnly": true,
+              "description": ""
+            },
+            "TransferSize": {
+              "type": "number",
+              "title": "Transfer Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "EncodedBodySize": {
+              "type": "number",
+              "title": "Encoded Body Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "DecodedBodySize": {
+              "type": "number",
+              "title": "Decoded Body Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "ResponseStatus": {
+              "type": "number",
+              "title": "Response Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "ServerRequestIdentifier": {
+              "type": "string",
+              "title": "Server Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiThreadResponseDelay": {
+              "type": "number",
+              "title": "UI Thread Response Delay",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomComplete": {
+              "type": "number",
+              "title": "Dom Complete",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomContentLoadedEventStart": {
+              "type": "number",
+              "title": "Dom Content Loaded Event Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomContentLoadedEventEnd": {
+              "type": "number",
+              "title": "Dom Content Loaded Event End",
+              "readOnly": true,
+              "description": ""
+            },
+            "DomInteractive": {
+              "type": "number",
+              "title": "Dom Interactive",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoadEventStart": {
+              "type": "number",
+              "title": "Load Event Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoadEventEnd": {
+              "type": "number",
+              "title": "Load Event End",
+              "readOnly": true,
+              "description": ""
+            },
+            "RedirectCount": {
+              "type": "integer",
+              "title": "Redirect Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "NavigationType": {
+              "type": "string",
+              "title": "Navigation Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "UnloadEventStart": {
+              "type": "number",
+              "title": "Unload Event Start",
+              "readOnly": true,
+              "description": ""
+            },
+            "UnloadEventEnd": {
+              "type": "number",
+              "title": "Unload Event End",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Ui Telemetry Navigation Timing Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#d62728"
+      },
+      "type": "table",
+      "position": {
+        "x": -304.09097331349597,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "ApexExtlCalloutEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexExtlCalloutEventLog",
+        "table": {
+          "name": "ApexExtlCalloutEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectType": {
+              "type": "string",
+              "title": "Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryOffset": {
+              "type": "number",
+              "title": "Query Offset",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryLimit": {
+              "type": "number",
+              "title": "Query Limit",
+              "readOnly": true,
+              "description": ""
+            },
+            "QuerySelect": {
+              "type": "string",
+              "title": "Query Select",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryFilter": {
+              "type": "string",
+              "title": "Query Filter",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryOrderBy": {
+              "type": "string",
+              "title": "Query Order By",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsSuccess": {
+              "type": "boolean",
+              "title": "Is Success",
+              "readOnly": true,
+              "description": ""
+            },
+            "TotalTime": {
+              "type": "number",
+              "title": "Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExecuteTime": {
+              "type": "number",
+              "title": "Execute Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "FetchTime": {
+              "type": "number",
+              "title": "Fetch Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowCount": {
+              "type": "integer",
+              "title": "Row Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowsFetched": {
+              "type": "number",
+              "title": "Rows Fetched",
+              "readOnly": true,
+              "description": ""
+            },
+            "Throughput": {
+              "type": "number",
+              "title": "Throughput",
+              "readOnly": true,
+              "description": ""
+            },
+            "Message": {
+              "type": "string",
+              "title": "Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "Subqueries": {
+              "type": "number",
+              "title": "Subqueries",
+              "readOnly": true,
+              "description": ""
+            },
+            "Action": {
+              "type": "string",
+              "title": "Action",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex External Callout Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#9467bd"
+      },
+      "type": "table",
+      "position": {
+        "x": -4.090973313495937,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "AsyncReportRunEventLog",
+      "data": {
+        "Id": "EntityDefinition/AsyncReportRunEventLog",
+        "table": {
+          "name": "AsyncReportRunEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "DisplayType": {
+              "type": "string",
+              "title": "Display Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RenderingType": {
+              "type": "string",
+              "title": "Rendering Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ReportIdentifier": {
+              "type": "string",
+              "title": "Report Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowCount": {
+              "type": "integer",
+              "title": "Row Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsPreview": {
+              "type": "boolean",
+              "title": "Is Preview",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExceptionFilterCount": {
+              "type": "integer",
+              "title": "Exception Filter Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "ColumnCount": {
+              "type": "integer",
+              "title": "Column Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "AverageRowSize": {
+              "type": "number",
+              "title": "Average Row Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "SortOrder": {
+              "type": "string",
+              "title": "Sort Order",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "BucketCount": {
+              "type": "integer",
+              "title": "Bucket Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "Origin": {
+              "type": "string",
+              "title": "Origin",
+              "readOnly": true,
+              "description": ""
+            },
+            "DashboardIdentifier": {
+              "type": "string",
+              "title": "Dashboard Identifier",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Asynchronous Report Run Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#8c564b"
+      },
+      "type": "table",
+      "position": {
+        "x": -4.090973313495937,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "MetadataApiOpEventLog",
+      "data": {
+        "Id": "EntityDefinition/MetadataApiOpEventLog",
+        "table": {
+          "name": "MetadataApiOpEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIdentifier": {
+              "type": "string",
+              "title": "Client Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperationType": {
+              "type": "string",
+              "title": "Operation Type",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Metadata Api Operation Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#e377c2"
+      },
+      "type": "table",
+      "position": {
+        "x": 295.90902668650403,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "AnalyticsInteractEventLog",
+      "data": {
+        "Id": "EntityDefinition/AnalyticsInteractEventLog",
+        "table": {
+          "name": "AnalyticsInteractEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsSessionIdentifier": {
+              "type": "string",
+              "title": "Analytics Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "AnalyticsTimestamp": {
+              "type": "string",
+              "title": "Analytics Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Type": {
+              "type": "string",
+              "title": "Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RecordIdentifier": {
+              "type": "string",
+              "title": "Record Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ViewMode": {
+              "type": "string",
+              "title": "View Mode",
+              "readOnly": true,
+              "description": ""
+            },
+            "TabIdentifier": {
+              "type": "string",
+              "title": "Tab Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "TotalTime": {
+              "type": "number",
+              "title": "Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ReadTime": {
+              "type": "number",
+              "title": "Read Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionCount": {
+              "type": "integer",
+              "title": "Session Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClickCount": {
+              "type": "integer",
+              "title": "Click Count",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Analytics Interaction Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#7f7f7f"
+      },
+      "type": "table",
+      "position": {
+        "x": 295.90902668650403,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "LightningPageViewEventLog",
+      "data": {
+        "Id": "EntityDefinition/LightningPageViewEventLog",
+        "table": {
+          "name": "LightningPageViewEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIdentifier": {
+              "type": "string",
+              "title": "Client Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "AppName": {
+              "type": "string",
+              "title": "App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "DevicePlatform": {
+              "type": "string",
+              "title": "Device Platform",
+              "readOnly": true,
+              "description": ""
+            },
+            "SdkAppVersion": {
+              "type": "string",
+              "title": "SDK App Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemName": {
+              "type": "string",
+              "title": "Operating System Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperatingSystemVersion": {
+              "type": "string",
+              "title": "Operating System Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserAgent": {
+              "type": "string",
+              "title": "User Agent",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserName": {
+              "type": "string",
+              "title": "Browser Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "BrowserVersion": {
+              "type": "string",
+              "title": "Browser Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkVersion": {
+              "type": "string",
+              "title": "Mobile SDK Version",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceModel": {
+              "type": "string",
+              "title": "Device Model",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceIdentifier": {
+              "type": "string",
+              "title": "Device Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "MobileSdkAppType": {
+              "type": "string",
+              "title": "Mobile SDK App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientGeolocation": {
+              "type": "string",
+              "title": "Client Geolocation",
+              "readOnly": true,
+              "description": ""
+            },
+            "ConnectionType": {
+              "type": "string",
+              "title": "Connection Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageUrl": {
+              "type": "string",
+              "title": "Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageUrl": {
+              "type": "string",
+              "title": "Previous Page URL",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventTimestamp": {
+              "type": "string",
+              "title": "UI Event Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageStartTime": {
+              "type": "string",
+              "title": "Page Start Time",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "Duration": {
+              "type": "number",
+              "title": "Duration",
+              "readOnly": true,
+              "description": ""
+            },
+            "EffectivePageTime": {
+              "type": "number",
+              "title": "Effective Page Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "DoesEffectivePageTimeDeviate": {
+              "type": "boolean",
+              "title": "Does Effective Page Time Deviate",
+              "readOnly": true,
+              "description": ""
+            },
+            "EffectivePageTimeReason": {
+              "type": "string",
+              "title": "Effective Page Time Reason",
+              "readOnly": true,
+              "description": ""
+            },
+            "EffectivePageTimeErrorType": {
+              "type": "string",
+              "title": "Effective Page Time Error Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "DeviceSessionIdentifier": {
+              "type": "string",
+              "title": "Device Session Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UiEventSequenceNumber": {
+              "type": "number",
+              "title": "UI Event Sequence Number",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectIdentifier": {
+              "type": "string",
+              "title": "Page Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageObjectType": {
+              "type": "string",
+              "title": "Page Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageContext": {
+              "type": "string",
+              "title": "Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageAppName": {
+              "type": "string",
+              "title": "Page App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageObjectIdentifier": {
+              "type": "string",
+              "title": "Previous Page Object Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageObjectType": {
+              "type": "string",
+              "title": "Previous Page Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageContext": {
+              "type": "string",
+              "title": "Previous Page Context",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousPageAppName": {
+              "type": "string",
+              "title": "Previous Page App Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "TargetUiElement": {
+              "type": "string",
+              "title": "Target UI Element",
+              "readOnly": true,
+              "description": ""
+            },
+            "ParentUiElement": {
+              "type": "string",
+              "title": "Parent UI Element",
+              "readOnly": true,
+              "description": ""
+            },
+            "GrandparentUiElement": {
+              "type": "string",
+              "title": "Grandparent UI Element",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Lightning Page View Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#bcbd22"
+      },
+      "type": "table",
+      "position": {
+        "x": 595.909026686504,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "PackageInstallEventLog",
+      "data": {
+        "Id": "EntityDefinition/PackageInstallEventLog",
+        "table": {
+          "name": "PackageInstallEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "OperationType": {
+              "type": "string",
+              "title": "Operation Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsSuccessful": {
+              "type": "boolean",
+              "title": "Is Successful",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsPush": {
+              "type": "boolean",
+              "title": "Is Push",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsManaged": {
+              "type": "boolean",
+              "title": "Is Managed",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsReleased": {
+              "type": "boolean",
+              "title": "Is Released",
+              "readOnly": true,
+              "description": ""
+            },
+            "PackageName": {
+              "type": "string",
+              "title": "Package Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ErrorType": {
+              "type": "string",
+              "title": "Error Type",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Package Install Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 595.909026686504,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "ConcurApexLimitEventLog",
+      "data": {
+        "Id": "EntityDefinition/ConcurApexLimitEventLog",
+        "table": {
+          "name": "ConcurApexLimitEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestCount": {
+              "type": "integer",
+              "title": "Request Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestLimit": {
+              "type": "number",
+              "title": "Request Limit",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestUri": {
+              "type": "string",
+              "title": "Request URI",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Concurrent Apex Limit Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#4e79a7"
+      },
+      "type": "table",
+      "position": {
+        "x": 895.909026686504,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "AuraRequestEventLog",
+      "data": {
+        "Id": "EntityDefinition/AuraRequestEventLog",
+        "table": {
+          "name": "AuraRequestEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserAgent": {
+              "type": "string",
+              "title": "User Agent",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestMethod": {
+              "type": "string",
+              "title": "Request Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionMessage": {
+              "type": "string",
+              "title": "Action Message",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Aura Request Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#f28e2c"
+      },
+      "type": "table",
+      "position": {
+        "x": 895.909026686504,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "InsufficientAccessEventLog",
+      "data": {
+        "Id": "EntityDefinition/InsufficientAccessEventLog",
+        "table": {
+          "name": "InsufficientAccessEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RecordIdentifier": {
+              "type": "string",
+              "title": "Record Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectType": {
+              "type": "string",
+              "title": "Object Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "AccessError": {
+              "type": "string",
+              "title": "Access Error",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestedAccessLevel": {
+              "type": "string",
+              "title": "Requested Access Level",
+              "readOnly": true,
+              "description": ""
+            },
+            "ErrorDescription": {
+              "type": "string",
+              "title": "Error Description",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActualLoggedInUserIdentifier": {
+              "type": "string",
+              "title": "Actual Logged In User Identifier",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Insufficient Access Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#e15759"
+      },
+      "type": "table",
+      "position": {
+        "x": 1195.9090266865041,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "ReportEventLog",
+      "data": {
+        "Id": "EntityDefinition/ReportEventLog",
+        "table": {
+          "name": "ReportEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ObjectName": {
+              "type": "string",
+              "title": "Object Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "DisplayType": {
+              "type": "string",
+              "title": "Display Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RenderingType": {
+              "type": "string",
+              "title": "Rendering Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ReportIdentifier": {
+              "type": "string",
+              "title": "Report Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RowCount": {
+              "type": "integer",
+              "title": "Row Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "ExceptionFilterCount": {
+              "type": "integer",
+              "title": "Exception Filter Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "ColumnCount": {
+              "type": "integer",
+              "title": "Column Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "AverageRowSize": {
+              "type": "number",
+              "title": "Average Row Size",
+              "readOnly": true,
+              "description": ""
+            },
+            "SortOrder": {
+              "type": "string",
+              "title": "Sort Order",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseBlocks": {
+              "type": "number",
+              "title": "Database Blocks",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseCpuTime": {
+              "type": "number",
+              "title": "Database CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "BucketCount": {
+              "type": "integer",
+              "title": "Bucket Count",
+              "readOnly": true,
+              "description": ""
+            },
+            "Origin": {
+              "type": "string",
+              "title": "Origin",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Report Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#76b7b2"
+      },
+      "type": "table",
+      "position": {
+        "x": 1195.9090266865041,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "LoginAsEventLog",
+      "data": {
+        "Id": "EntityDefinition/LoginAsEventLog",
+        "table": {
+          "name": "LoginAsEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "DelegatedUsername": {
+              "type": "string",
+              "title": "Delegated Username",
+              "readOnly": true,
+              "description": ""
+            },
+            "DelegatedUserIdentifier": {
+              "type": "string",
+              "title": "Delegated User Identifier",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Login As Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#59a14f"
+      },
+      "type": "table",
+      "position": {
+        "x": 1495.9090266865041,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "ApexSoapApiEventLog",
+      "data": {
+        "Id": "EntityDefinition/ApexSoapApiEventLog",
+        "table": {
+          "name": "ApexSoapApiEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientName": {
+              "type": "string",
+              "title": "Client Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClassName": {
+              "type": "string",
+              "title": "Class Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "MethodName": {
+              "type": "string",
+              "title": "Method Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "RateLimitUsage": {
+              "type": "number",
+              "title": "Rate Limit Usage",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryString": {
+              "type": "string",
+              "title": "Query String",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Apex Soap API Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#edc949"
+      },
+      "type": "table",
+      "position": {
+        "x": 1495.9090266865041,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "SiteEventLog",
+      "data": {
+        "Id": "EntityDefinition/SiteEventLog",
+        "table": {
+          "name": "SiteEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "RunTime": {
+              "type": "number",
+              "title": "Run Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "CpuTime": {
+              "type": "number",
+              "title": "CPU Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ClientIp": {
+              "type": "string",
+              "title": "Client IP",
+              "readOnly": true,
+              "description": ""
+            },
+            "Uri": {
+              "type": "string",
+              "title": "URI",
+              "readOnly": true,
+              "description": ""
+            },
+            "SessionKey": {
+              "type": "string",
+              "title": "Session Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "LoginKey": {
+              "type": "string",
+              "title": "Login Key",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserType": {
+              "type": "string",
+              "title": "User Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestStatus": {
+              "type": "string",
+              "title": "Request Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "DatabaseTotalTime": {
+              "type": "number",
+              "title": "Database Total Time",
+              "readOnly": true,
+              "description": ""
+            },
+            "PageName": {
+              "type": "string",
+              "title": "Page Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestType": {
+              "type": "string",
+              "title": "Request Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsFirstRequest": {
+              "type": "boolean",
+              "title": "Is First Request",
+              "readOnly": true,
+              "description": ""
+            },
+            "QueryString": {
+              "type": "string",
+              "title": "Query String",
+              "readOnly": true,
+              "description": ""
+            },
+            "SiteIdentifier": {
+              "type": "string",
+              "title": "Site Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsSecure": {
+              "type": "boolean",
+              "title": "Is Secure",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsGuest": {
+              "type": "boolean",
+              "title": "Is Guest",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsApi": {
+              "type": "boolean",
+              "title": "Is API",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsError": {
+              "type": "boolean",
+              "title": "Is Error",
+              "readOnly": true,
+              "description": ""
+            },
+            "HttpMethod": {
+              "type": "string",
+              "title": "HTTP Method",
+              "readOnly": true,
+              "description": ""
+            },
+            "HttpHeaders": {
+              "type": "string",
+              "title": "HTTP Headers",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Site Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#af7aa1"
+      },
+      "type": "table",
+      "position": {
+        "x": 1795.9090266865041,
+        "y": 978.6653192396295
+      }
+    },
+    {
+      "id": "SandboxStatusEventLog",
+      "data": {
+        "Id": "EntityDefinition/SandboxStatusEventLog",
+        "table": {
+          "name": "SandboxStatusEventLog"
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Event Log Object ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "RequestIdentifier": {
+              "type": "string",
+              "title": "Request Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "SandboxOrganizationIdentifier": {
+              "type": "string",
+              "title": "Sandbox Organization Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "PendingSandboxOrganizationIdentifier": {
+              "type": "string",
+              "title": "Pending Sandbox Organization Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "CurrentSandboxOrganizationIdentifier": {
+              "type": "string",
+              "title": "Current Sandbox Organization Identifier",
+              "readOnly": true,
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "UserIdentifier": {
+              "type": "string",
+              "title": "User Identifier",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "Sandbox Status Event Log",
+        "icon": "custom:custom73",
+        "description": "[Core] ",
+        "color": "#ff9da7"
+      },
+      "type": "table",
+      "position": {
+        "x": 1795.9090266865041,
+        "y": 1478.6653192396295
+      }
+    },
+    {
+      "id": "group_5600097b-b429-4c3c-a975-ca335725c388",
+      "type": "markdown",
+      "position": {
+        "x": 897.2885544347987,
+        "y": -125.67259496414856
+      },
+      "data": {
+        "label": "Shied available events",
+        "content": "",
+        "icon": "bi:shield-lock-fill",
+        "color": "rgba(207, 182, 255, 0.4)"
+      },
+      "width": 589,
+      "height": 68
+    },
+    {
+      "id": "group_68900082-5783-4c62-8f01-243bbf4afcf2",
+      "type": "group",
+      "data": {
+        "label": "API usage over time",
+        "icon": "standard:actions_and_buttons",
+        "color": "rgba(207, 182, 255, 0.4)",
+        "description": "",
+        "query": "SELECT CALENDAR_YEAR(Timestamp) year_Timestamp, ApiFamily, \nCALENDAR_MONTH(Timestamp) month_Timestamp, DAY_IN_MONTH(Timestamp) day_Timestamp,\n HOUR_IN_DAY(Timestamp) hour_Timestamp, COUNT(Id) \n FROM ApiTotalUsageEventLog \n GROUP BY CALENDAR_YEAR(Timestamp), ApiFamily, CALENDAR_MONTH(Timestamp), \n DAY_IN_MONTH(Timestamp), HOUR_IN_DAY(Timestamp) ORDER BY CALENDAR_YEAR(Timestamp) ASC, \n ApiFamily ASC, CALENDAR_MONTH(Timestamp) ASC, DAY_IN_MONTH(Timestamp) ASC, \n HOUR_IN_DAY(Timestamp) ASC LIMIT 250"
+      },
+      "position": {
+        "x": 2380.1160508283365,
+        "y": 490.79085881728435
+      },
+      "width": 830,
+      "height": 439
+    },
+    {
+      "id": "59b01202-635f-4940-b044-30c56a7defc1",
+      "type": "group",
+      "data": {
+        "label": "Failed API Calls",
+        "icon": "standard:actions_and_buttons",
+        "color": "rgba(207, 182, 255, 0.4)",
+        "description": "",
+        "query": "SELECT CALENDAR_YEAR(Timestamp) year_Timestamp, ApiFamily, CALENDAR_MONTH(Timestamp) month_Timestamp, DAY_IN_MONTH(Timestamp) day_Timestamp, HOUR_IN_DAY(Timestamp) hour_Timestamp, COUNT(Id) FROM ApiTotalUsageEventLog WHERE StatusCode >= 400 AND StatusCode <= 500 GROUP BY CALENDAR_YEAR(Timestamp), ApiFamily, CALENDAR_MONTH(Timestamp), DAY_IN_MONTH(Timestamp), HOUR_IN_DAY(Timestamp) ORDER BY CALENDAR_YEAR(Timestamp) DESC LIMIT 250 "
+      },
+      "position": {
+        "x": 2380.7475607244423,
+        "y": 954.4707999353817
+      },
+      "width": 827,
+      "height": 461
+    },
+    {
+      "id": "group_38b2b04c-99cc-4f4f-bc50-d4990331ecd6",
+      "type": "group",
+      "position": {
+        "x": 2746.007842222191,
+        "y": 16.900361390829858
+      },
+      "data": {
+        "label": "Apex Errors per hour",
+        "query": "SELECT CALENDAR_YEAR(Timestamp) year_Timestamp, CALENDAR_MONTH(Timestamp) month_Timestamp, DAY_IN_MONTH(Timestamp) day_Timestamp, HOUR_IN_DAY(Timestamp) hour_Timestamp, COUNT(Id) FROM ApexUnexpectedExcpEventLog GROUP BY CALENDAR_YEAR(Timestamp), CALENDAR_MONTH(Timestamp), DAY_IN_MONTH(Timestamp), HOUR_IN_DAY(Timestamp) ORDER BY CALENDAR_YEAR(Timestamp) ASC, CALENDAR_MONTH(Timestamp) ASC, DAY_IN_MONTH(Timestamp) ASC, HOUR_IN_DAY(Timestamp) ASC LIMIT 250",
+        "icon": "standard:account",
+        "color": "rgba(207, 182, 255, 0.4)"
+      },
+      "width": 593,
+      "height": 354
+    }
+  ],
+  "edges": []
+}
