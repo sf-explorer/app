@@ -1,0 +1,1455 @@
+{
+  "nodes": [
+    {
+      "position": {
+        "x": -650,
+        "y": 50
+      },
+      "id": "filter",
+      "type": "input",
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "filter": {
+              "title": "Filter",
+              "type": "string"
+            },
+            "onlyRef": {
+              "title": "Reference only",
+              "type": "boolean",
+              "default": false
+            },
+            "onlyCustom": {
+              "title": "Custom only",
+              "type": "boolean",
+              "default": false
+            },
+            "showLabel": {
+              "title": "Show Label",
+              "type": "boolean",
+              "default": true
+            },
+            "showData": {
+              "title": "Show Data",
+              "type": "boolean",
+              "default": false
+            },
+            "showChildRelation": {
+              "title": "Child Relations",
+              "type": "boolean",
+              "default": false
+            },
+            "nbFields": {
+              "title": "Nb Fields",
+              "type": "integer",
+              "default": 20
+            },
+            "user": {
+              "title": "User",
+              "objectName": "User",
+              "description": "Analyze the given access right to a given user",
+              "fields": [
+                "Name",
+                "Profile.Name"
+              ],
+              "loadingOptions": {
+                "loadPermissions": true
+              }
+            }
+          }
+        }
+      },
+      "width": 250,
+      "height": 388
+    },
+    {
+      "id": "ssot__AiAgentInteractionStep__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentInteractionStep__dlm",
+        "table": {
+          "name": "ssot__AiAgentInteractionStep__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__TelemetryTraceSpanId__c": {
+              "type": "string",
+              "title": "Telemetry Trace Span",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Interaction",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_PrevStepId__c": {
+              "type": "string",
+              "title": "Key Qualifier Previous Step",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionStepType__c": {
+              "type": "string",
+              "title": "Ai Agent Interaction Step Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AttributeText__c": {
+              "type": "string",
+              "title": "Attribute",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EndTimestamp__c": {
+              "type": "string",
+              "title": "End Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ErrorMessageText__c": {
+              "type": "string",
+              "title": "Error Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__GenAiGatewayRequestId__c": {
+              "type": "string",
+              "title": "Gen AI Gateway Request",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__GenAiGatewayResponseId__c": {
+              "type": "string",
+              "title": "Gen AI Gateway Response",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__GenerationId__c": {
+              "type": "string",
+              "title": "Generation",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Interaction Step Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InputValueText__c": {
+              "type": "string",
+              "title": "Input Value",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Name__c": {
+              "type": "string",
+              "title": "Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__OutputValueText__c": {
+              "type": "string",
+              "title": "Output Value",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PostStepVariableText__c": {
+              "type": "string",
+              "title": "Post-step Variable",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PreStepVariableText__c": {
+              "type": "string",
+              "title": "Pre-step Variable",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "AI Agent Interaction",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PrevStepId__c": {
+              "type": "string",
+              "title": "Previous Step",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Interaction Step",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": -34.91974108962971,
+        "y": -954.8913872112203
+      }
+    },
+    {
+      "id": "ssot__AiAgentSession__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentSession__dlm",
+        "table": {
+          "name": "ssot__AiAgentSession__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentChannelType__c": {
+              "type": "string",
+              "title": "AI Agent Channel Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionEndType__c": {
+              "type": "string",
+              "title": "AI Agent Session End Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EndTimestamp__c": {
+              "type": "string",
+              "title": "End Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Session Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IndividualId__c": {
+              "type": "string",
+              "title": "Individual",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__RelatedMessagingSessionId__c": {
+              "type": "string",
+              "title": "Related Messaging Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__RelatedVoiceCallId__c": {
+              "type": "string",
+              "title": "Related Voice Call",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerId__c": {
+              "type": "string",
+              "title": "Session Owner",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerObject__c": {
+              "type": "string",
+              "title": "Session Owner Object",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__VariableText__c": {
+              "type": "string",
+              "title": "Variable",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_PreviousSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier Previous Session Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PreviousSessionId__c": {
+              "type": "string",
+              "title": "Previous Session Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Session",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": -562.0814791939897,
+        "y": 514.4964478300407
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteraction__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentInteraction__dlm",
+        "table": {
+          "name": "ssot__AiAgentInteraction__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IndividualId__c": {
+              "type": "string",
+              "title": "Individual",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionType__c": {
+              "type": "string",
+              "title": "Ai Agent Interaction Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AttributeText__c": {
+              "type": "string",
+              "title": "Attribute",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EndTimestamp__c": {
+              "type": "string",
+              "title": "End Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Interaction Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerId__c": {
+              "type": "string",
+              "title": "Session Owner",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerObject__c": {
+              "type": "string",
+              "title": "Session Owner Object",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__TelemetryTraceId__c": {
+              "type": "string",
+              "title": "Telemetry Trace",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__TelemetryTraceSpanId__c": {
+              "type": "string",
+              "title": "Telemetry Trace Span",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__TopicApiName__c": {
+              "type": "string",
+              "title": "Topic API Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_PrevInteractionId__c": {
+              "type": "string",
+              "title": "Key Qualifier Previous Interaction",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionId__c": {
+              "type": "string",
+              "title": "AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__PrevInteractionId__c": {
+              "type": "string",
+              "title": "Previous Interaction",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Interaction",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": -252.9034325081375,
+        "y": -356.32478197110356
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteractionMessage__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentInteractionMessage__dlm",
+        "table": {
+          "name": "ssot__AiAgentInteractionMessage__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "AI Agent Interaction",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionMessageType__c": {
+              "type": "string",
+              "title": "AI Agent Interaction Message Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionMsgContentType__c": {
+              "type": "string",
+              "title": "Ai Agent Interaction Msg Content Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ContentText__c": {
+              "type": "string",
+              "title": "Content",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Interaction Message Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IndividualId__c": {
+              "type": "string",
+              "title": "Individual",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__MessageSentTimestamp__c": {
+              "type": "string",
+              "title": "Message Sent Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerId__c": {
+              "type": "string",
+              "title": "Session Owner",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SessionOwnerObject__c": {
+              "type": "string",
+              "title": "Session Owner Object",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Interaction",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_ParentMessageId__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionId__c": {
+              "type": "string",
+              "title": "AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ParentMessageId__c": {
+              "type": "string",
+              "title": "Parent Message",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionParticipantId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session Participant",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionParticipantId__c": {
+              "type": "string",
+              "title": "AI Agent Session Participant",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Interaction Message",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 723.6680674401073,
+        "y": -662.6034733024371
+      }
+    },
+    {
+      "id": "ssot__AiAgentMoment__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentMoment__dlm",
+        "table": {
+          "name": "ssot__AiAgentMoment__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionId__c": {
+              "type": "string",
+              "title": "AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentApiName__c": {
+              "type": "string",
+              "title": "AI Agent API Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentVersionApiName__c": {
+              "type": "string",
+              "title": "AI Agent Version API Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EndTimestamp__c": {
+              "type": "string",
+              "title": "End Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Moment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__RequestSummaryText__c": {
+              "type": "string",
+              "title": "Request Summary Text",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ResponseSummaryText__c": {
+              "type": "string",
+              "title": "Response Summary Text",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Moment",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": -151.9293659647956,
+        "y": 690.7311128969444
+      }
+    },
+    {
+      "id": "ssot__AiAgentMomentInteraction__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentMomentInteraction__dlm",
+        "table": {
+          "name": "ssot__AiAgentMomentInteraction__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "Key Qualifier Interaction Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentMomentId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Moment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentInteractionId__c": {
+              "type": "string",
+              "title": "Interaction Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentMomentId__c": {
+              "type": "string",
+              "title": "AI Agent Moment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Moment Interaction Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Moment Interaction",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 281.11181832582434,
+        "y": -158.18846322210038
+      }
+    },
+    {
+      "id": "ssot__AiAgentSessionParticipant__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentSessionParticipant__dlm",
+        "table": {
+          "name": "ssot__AiAgentSessionParticipant__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentApiName__c": {
+              "type": "string",
+              "title": "AI Agent Api Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionId__c": {
+              "type": "string",
+              "title": "AI Agent Session",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionParticipantRole__c": {
+              "type": "string",
+              "title": "AI Agent Session Participant Role",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentTemplateApiName__c": {
+              "type": "string",
+              "title": "AI Agent Template Api Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentType__c": {
+              "type": "string",
+              "title": "AI Agent Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentVersionApiName__c": {
+              "type": "string",
+              "title": "AI Agent Version Api Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__EndTimestamp__c": {
+              "type": "string",
+              "title": "End Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Session Participant Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IndividualId__c": {
+              "type": "string",
+              "title": "Individual",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ParticipantAttributeText__c": {
+              "type": "string",
+              "title": "Participant Attribute",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ParticipantId__c": {
+              "type": "string",
+              "title": "Participant",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__ParticipantObject__c": {
+              "type": "string",
+              "title": "Participant Object",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__StartTimestamp__c": {
+              "type": "string",
+              "title": "Start Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Session Participant",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 780.1896716008524,
+        "y": 16.873465894219123
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagAssociation__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentTagAssociation__dlm",
+        "table": {
+          "name": "ssot__AiAgentTagAssociation__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentMomentId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Moment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentSessionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Session Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentTagDefinitionAssociationId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Tag Definition Association Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentTagId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Tag Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentMomentId__c": {
+              "type": "string",
+              "title": "AI Agent Moment Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentSessionId__c": {
+              "type": "string",
+              "title": "AI Agent Session Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentTagDefinitionAssociationId__c": {
+              "type": "string",
+              "title": "AI Agent Tag Definition Association Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentTagId__c": {
+              "type": "string",
+              "title": "AI Agent Tag Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AssociationReasonText__c": {
+              "type": "string",
+              "title": "Association Reason",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Tag Association Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Tag Association",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 2251.1036013096227,
+        "y": 171.66195203147328
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagDefinitionAssociation__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentTagDefinitionAssociation__dlm",
+        "table": {
+          "name": "ssot__AiAgentTagDefinitionAssociation__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentApiName__c": {
+              "type": "string",
+              "title": "AI Agent Api Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentTagDefinitionId__c": {
+              "type": "string",
+              "title": "AI Agent Tag Definition Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiPromptTemplateId__c": {
+              "type": "string",
+              "title": "AI Prompt Template Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Tag Definition Association Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentTagDefinitionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Tag Definition Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Tag Definition Association",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 1507.3392036248833,
+        "y": 466.13695827278127
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagDefinition__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentTagDefinition__dlm",
+        "table": {
+          "name": "ssot__AiAgentTagDefinition__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__DataType__c": {
+              "type": "string",
+              "title": "Data Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Description__c": {
+              "type": "string",
+              "title": "Description",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__DeveloperName__c": {
+              "type": "string",
+              "title": "Developer Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Tag Definition Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Name__c": {
+              "type": "string",
+              "title": "Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__SourceType__c": {
+              "type": "string",
+              "title": "Source Type",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Tag Definition",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 711.7327706602483,
+        "y": 838.8810128115529
+      }
+    },
+    {
+      "id": "ssot__AiAgentTag__dlm",
+      "data": {
+        "Id": "EntityDefinition/ssot__AiAgentTag__dlm",
+        "table": {
+          "name": "ssot__AiAgentTag__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__CreatedDate__c": {
+              "type": "string",
+              "title": "Created Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Description__c": {
+              "type": "string",
+              "title": "Description",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "AI Agent Tag Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__InternalOrganizationId__c": {
+              "type": "string",
+              "title": "Internal Organization",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__IsActive__c": {
+              "type": "boolean",
+              "title": "Is Active",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Value__c": {
+              "type": "string",
+              "title": "Value",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_AiAgentTagDefinitionId__c": {
+              "type": "string",
+              "title": "Key Qualifier AI Agent Tag Definition Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__AiAgentTagDefinitionId__c": {
+              "type": "string",
+              "title": "AI Agent Tag Definition Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "AI Agent Tag",
+        "icon": "standard:data_model",
+        "description": "",
+        "color": "#17becf"
+      },
+      "type": "table",
+      "position": {
+        "x": 1200,
+        "y": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "ssot__AiAgentInteractionStep__dlm.ssot__AiAgentInteractionId__c.ssot__AiAgentInteraction__dlm.Id",
+      "source": "ssot__AiAgentInteractionStep__dlm",
+      "sourceHandle": "ssot__AiAgentInteractionId__c",
+      "target": "ssot__AiAgentInteraction__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteraction__dlm.ssot__AiAgentSessionId__c.ssot__AiAgentSession__dlm.Id",
+      "source": "ssot__AiAgentInteraction__dlm",
+      "sourceHandle": "ssot__AiAgentSessionId__c",
+      "target": "ssot__AiAgentSession__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteractionMessage__dlm.ssot__AiAgentInteractionId__c.ssot__AiAgentInteraction__dlm.Id",
+      "source": "ssot__AiAgentInteractionMessage__dlm",
+      "sourceHandle": "ssot__AiAgentInteractionId__c",
+      "target": "ssot__AiAgentInteraction__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteractionMessage__dlm.ssot__AiAgentSessionId__c.ssot__AiAgentSession__dlm.Id",
+      "source": "ssot__AiAgentInteractionMessage__dlm",
+      "sourceHandle": "ssot__AiAgentSessionId__c",
+      "target": "ssot__AiAgentSession__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentInteractionMessage__dlm.ssot__AiAgentSessionParticipantId__c.ssot__AiAgentSessionParticipant__dlm.Id",
+      "source": "ssot__AiAgentInteractionMessage__dlm",
+      "sourceHandle": "ssot__AiAgentSessionParticipantId__c",
+      "target": "ssot__AiAgentSessionParticipant__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentMoment__dlm.ssot__AiAgentSessionId__c.ssot__AiAgentSession__dlm.Id",
+      "source": "ssot__AiAgentMoment__dlm",
+      "sourceHandle": "ssot__AiAgentSessionId__c",
+      "target": "ssot__AiAgentSession__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentMomentInteraction__dlm.ssot__AiAgentInteractionId__c.ssot__AiAgentInteraction__dlm.Id",
+      "source": "ssot__AiAgentMomentInteraction__dlm",
+      "sourceHandle": "ssot__AiAgentInteractionId__c",
+      "target": "ssot__AiAgentInteraction__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentMomentInteraction__dlm.ssot__AiAgentMomentId__c.ssot__AiAgentMoment__dlm.Id",
+      "source": "ssot__AiAgentMomentInteraction__dlm",
+      "sourceHandle": "ssot__AiAgentMomentId__c",
+      "target": "ssot__AiAgentMoment__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentSessionParticipant__dlm.ssot__AiAgentSessionId__c.ssot__AiAgentSession__dlm.Id",
+      "source": "ssot__AiAgentSessionParticipant__dlm",
+      "sourceHandle": "ssot__AiAgentSessionId__c",
+      "target": "ssot__AiAgentSession__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagAssociation__dlm.ssot__AiAgentMomentId__c.ssot__AiAgentMoment__dlm.Id",
+      "source": "ssot__AiAgentTagAssociation__dlm",
+      "sourceHandle": "ssot__AiAgentMomentId__c",
+      "target": "ssot__AiAgentMoment__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagAssociation__dlm.ssot__AiAgentSessionId__c.ssot__AiAgentSession__dlm.Id",
+      "source": "ssot__AiAgentTagAssociation__dlm",
+      "sourceHandle": "ssot__AiAgentSessionId__c",
+      "target": "ssot__AiAgentSession__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagAssociation__dlm.ssot__AiAgentTagDefinitionAssociationId__c.ssot__AiAgentTagDefinitionAssociation__dlm.Id",
+      "source": "ssot__AiAgentTagAssociation__dlm",
+      "sourceHandle": "ssot__AiAgentTagDefinitionAssociationId__c",
+      "target": "ssot__AiAgentTagDefinitionAssociation__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagAssociation__dlm.ssot__AiAgentTagId__c.ssot__AiAgentTag__dlm.Id",
+      "source": "ssot__AiAgentTagAssociation__dlm",
+      "sourceHandle": "ssot__AiAgentTagId__c",
+      "target": "ssot__AiAgentTag__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTagDefinitionAssociation__dlm.ssot__AiAgentTagDefinitionId__c.ssot__AiAgentTagDefinition__dlm.Id",
+      "source": "ssot__AiAgentTagDefinitionAssociation__dlm",
+      "sourceHandle": "ssot__AiAgentTagDefinitionId__c",
+      "target": "ssot__AiAgentTagDefinition__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ssot__AiAgentTag__dlm.ssot__AiAgentTagDefinitionId__c.ssot__AiAgentTagDefinition__dlm.Id",
+      "source": "ssot__AiAgentTag__dlm",
+      "sourceHandle": "ssot__AiAgentTagDefinitionId__c",
+      "target": "ssot__AiAgentTagDefinition__dlm",
+      "label": "",
+      "targetHandle": "Id",
+      "type": "betweenTables",
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    }
+  ]
+}

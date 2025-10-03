@@ -50,12 +50,12 @@
           }
         ],
         "foreignKeysReferencedTables": [],
-        "color": "#1f77b4",
+        "color": "#76b7b2",
         "Id": "EntityDefinition/Contact",
         "label": "Contact",
         "schema": {
           "type": "object",
-          "description": "Represents a contact, which is a person associated with an account.",
+          "description": "[Core] Represents a contact, which is a person associated with an account.",
           "properties": {
             "Id": {
               "type": "string",
@@ -3152,7 +3152,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a contact, which is a person associated with an account.",
+        "icon": "standard:contact"
       },
       "position": {
         "x": -522.5721477402781,
@@ -3177,12 +3179,12 @@
         },
         "foreignKeysReferencingTable": [],
         "foreignKeysReferencedTables": [],
-        "color": "#59a14f",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceContract",
-        "label": "InsuranceContract",
+        "label": "Insurance Contract",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -3270,7 +3272,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:contract"
       },
       "position": {
         "x": -547.9738672773054,
@@ -3332,12 +3336,12 @@
         "foreignKeysReferencedTables": [
           "erd.Contact"
         ],
-        "color": "#ff7f0e",
+        "color": "#76b7b2",
         "Id": "EntityDefinition/Account",
         "label": "Account",
         "schema": {
           "type": "object",
-          "description": "Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners).",
+          "description": "[Core] Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners).",
           "properties": {
             "Id": {
               "type": "string",
@@ -5119,7 +5123,7 @@
               "description": "An industry associated with this account. For example, Biotechnology. Maximum size is 40 characters."
             },
             "AnnualRevenue": {
-              "type": "string",
+              "type": "number",
               "title": "Annual Revenue",
               "description": "Estimated annual revenue of the account."
             },
@@ -7330,7 +7334,7 @@
               "description": ""
             },
             "SDO_Sales_Current_Year_Revenue_Goal__c": {
-              "type": "string",
+              "type": "number",
               "title": "Current Year Revenue Goal",
               "description": ""
             },
@@ -7355,7 +7359,7 @@
               "description": ""
             },
             "SDO_Sales_Value_Closed_Won_Opportunties__c": {
-              "type": "string",
+              "type": "number",
               "title": "Value Closed Won Opportunities",
               "description": ""
             },
@@ -7381,12 +7385,12 @@
               "description": ""
             },
             "SDO_Value_Open_Opportunties__c": {
-              "type": "string",
+              "type": "number",
               "title": "Value of Open Opportunities",
               "description": ""
             },
             "SDO_YTD_Revenue_Generated__c": {
-              "type": "string",
+              "type": "number",
               "title": "YTD Revenue Generated",
               "description": ""
             },
@@ -7408,13 +7412,13 @@
               "description": ""
             },
             "SDO_Sales_Closed_Won_Value__c": {
-              "type": "string",
+              "type": "number",
               "title": "Total Sales",
               "readOnly": true,
               "description": ""
             },
             "SDO_Sales_Open_Oppty_Value__c": {
-              "type": "string",
+              "type": "number",
               "title": "Open Oppty Value",
               "readOnly": true,
               "description": ""
@@ -7517,7 +7521,7 @@
               "description": ""
             },
             "FINS_Loss_Runs__c": {
-              "type": "string",
+              "type": "number",
               "title": "Loss Runs",
               "description": ""
             },
@@ -7735,7 +7739,7 @@
               "description": ""
             },
             "FINS_DM_Total_Premium__c": {
-              "type": "string",
+              "type": "number",
               "title": "Total Premium",
               "description": ""
             },
@@ -8817,11 +8821,13 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners).",
+        "icon": "standard:account"
       },
       "position": {
-        "x": -228.38611988437003,
-        "y": 581.0132512664862
+        "x": -189.647753904534,
+        "y": 526.3237934126
       },
       "sourcePosition": "left",
       "targetPosition": "right",
@@ -8887,12 +8893,12 @@
           "erd.InsurancePolicyAsset",
           "erd.InsurancePolicyParticipant"
         ],
-        "color": "#2ca02c",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyCoverage",
-        "label": "InsurancePolicyCoverage",
+        "label": "Insurance Policy Coverage",
         "schema": {
           "type": "object",
-          "description": "A junction object that associates the InsurancePolicy object with the ProductCoverage object.",
+          "description": "[Financial Service Cloud] A junction object that associates the InsurancePolicy object with the ProductCoverage object.",
           "properties": {
             "Id": {
               "type": "string",
@@ -8959,7 +8965,7 @@
               "description": "The range of the coverage limit. For example, bodily injury coverage with limits as USD 100,000 per person and USD 300,000 per accident."
             },
             "LimitAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Limit Amount",
               "description": "The limit of the fixed coverage amount. For example, uninsured motorist coverage of USD 1000."
             },
@@ -8975,12 +8981,12 @@
               "description": "The percentage of the actuals covered by this coverage."
             },
             "PremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Premium Amount",
               "description": "The premium paid by the customer for this coverage."
             },
             "DeductibleAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Deductible Amount",
               "description": "The deductible amount that the customer must pay."
             },
@@ -9070,7 +9076,7 @@
               "description": "The type of the category group."
             },
             "Discount": {
-              "type": "string",
+              "type": "number",
               "title": "Discount",
               "description": "The discount that was given on the coverage or the benefit."
             },
@@ -9178,12 +9184,12 @@
               "description": ""
             },
             "StandardPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Premium",
               "description": "The expected premium for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "StandardTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Tax",
               "description": "The expected tax on the policy over the policy period. This field is available from API version 51.0 and later."
             },
@@ -9206,27 +9212,27 @@
               "description": ""
             },
             "StandardFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Fee",
               "description": "The expected fee for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "TermFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Fee",
               "description": "The expected fee for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Premium",
               "description": "The expected premium for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Tax",
               "description": "The expected tax on the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TotalStandardAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Standard Amount",
               "readOnly": true,
               "description": "The sum of the expected premium, fee, and tax for the policy over the policy period. This field is available from API version 51.0 and later."
@@ -9243,7 +9249,7 @@
               "description": "The unique code of the insurance policy coverage across all the policy versions."
             },
             "ExpectedRevenueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Expected Revenue Amount",
               "description": ""
             },
@@ -9253,7 +9259,7 @@
               "description": ""
             },
             "TotalTermAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Amount",
               "readOnly": true,
               "description": ""
@@ -9264,7 +9270,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "A junction object that associates the InsurancePolicy object with the ProductCoverage object.",
+        "icon": "standard:product"
       },
       "position": {
         "x": 487.33530542580274,
@@ -9369,12 +9377,12 @@
           "erd.Account",
           "erd.Contact"
         ],
-        "color": "#9467bd",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicy",
-        "label": "InsurancePolicy",
+        "label": "Insurance Policy",
         "schema": {
           "type": "object",
-          "description": "Represents the type of insurance policy, such as auto, home, life, or annuity.",
+          "description": "[Financial Service Cloud] Represents the type of insurance policy, such as auto, home, life, or annuity.",
           "properties": {
             "Id": {
               "type": "string",
@@ -9442,7 +9450,7 @@
               "description": "The date the policy expires."
             },
             "PremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Premium Amount",
               "description": "The premium paid by the policy owner for the current billing period."
             },
@@ -9761,7 +9769,7 @@
               "description": ""
             },
             "ExpectedRevenueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Expected Revenue Amount",
               "description": ""
             },
@@ -10690,12 +10698,12 @@
               "description": "Indicates whether a loan can be requested against the insurance policy. The default value is False."
             },
             "TaxesSurcharges": {
-              "type": "string",
+              "type": "number",
               "title": "Taxes and Surcharges",
               "description": "The taxes and surcharges levied on the premium for the insurance policy."
             },
             "CashSurrenderValue": {
-              "type": "string",
+              "type": "number",
               "title": "Cash Surrender Value",
               "description": "The cash surrender value of the insurance policy."
             },
@@ -10711,7 +10719,7 @@
               "description": ""
             },
             "GrossWrittenPremium": {
-              "type": "string",
+              "type": "number",
               "title": "Gross Written Premium",
               "description": "The total expected premium amount for the insurance policy over the policy period."
             },
@@ -10778,7 +10786,7 @@
               "description": "The discount that was given on the policy."
             },
             "PreviousPremium": {
-              "type": "string",
+              "type": "number",
               "title": "Previous Premium",
               "description": "The premium of the policy before it was renewed."
             },
@@ -10880,42 +10888,42 @@
               "description": "The date up to which the policy is paid for. This field is available from API version 51.0 and later."
             },
             "TotalSumInsured": {
-              "type": "string",
+              "type": "number",
               "title": "Sum Insured",
               "description": "The total insured amount. This field is available from API version 51.0 and later."
             },
             "TermPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Premium",
               "description": "The expected premium for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Fee",
               "description": "The expected fee for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Tax",
               "description": "The expected tax on the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "StandardPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Premium",
               "description": "The expected premium for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "StandardFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Fee",
               "description": "The expected fee for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "StandardTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Tax",
               "description": "The expected tax on the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "TotalStandardAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Standard Amount",
               "readOnly": true,
               "description": "The sum of the expected premium, fee, and tax for the policy over the policy period. This field is available from API version 51.0 and later."
@@ -10927,7 +10935,7 @@
               "description": ""
             },
             "TotalCommissionAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Commission Amount",
               "description": ""
             },
@@ -10967,32 +10975,32 @@
               "description": ""
             },
             "PastDueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Past Due Amount",
               "description": "The amount past due for the policy."
             },
             "CurrentDueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Current Due Amount",
               "description": "The current due amount for the policy."
             },
             "TotalTermPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Premium Amount",
               "description": "The current total term premium of all policy versions."
             },
             "TotalTermTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Tax Amount",
               "description": "The current total term taxes of all policy versions."
             },
             "TotalTermFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Fee Amount",
               "description": "The current total term fees of all policy versions."
             },
             "EmployerContribution": {
-              "type": "string",
+              "type": "number",
               "title": "Employer Contribution",
               "description": "The employer's contribution towards the insurance premium value."
             },
@@ -11008,7 +11016,7 @@
               "description": "The date to determine the rating details on a mid-term adjustment, endorsement, or out-of-sequence endorsement to a policy."
             },
             "EmployeeContribution": {
-              "type": "string",
+              "type": "number",
               "title": "Employee Contribution",
               "description": "The employee's contribution towards the insurance premium value."
             },
@@ -11095,7 +11103,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents the type of insurance policy, such as auto, home, life, or annuity.",
+        "icon": "standard:contract"
       },
       "position": {
         "x": 219.45813473566432,
@@ -11151,12 +11161,12 @@
           "erd.InsurancePolicy",
           "erd.InsurancePolicyCoverage"
         ],
-        "color": "#e377c2",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceRatePlan",
-        "label": "InsuranceRatePlan",
+        "label": "Insurance Rate Plan",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -11209,7 +11219,7 @@
               "description": ""
             },
             "TotalPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Premium Amount",
               "description": ""
             },
@@ -11258,17 +11268,17 @@
               "description": ""
             },
             "TotalPremiumEqvAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Premium Equivalent Amount",
               "description": ""
             },
             "TotalFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Fee Amount",
               "description": ""
             },
             "ExpectedRevenueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Expected Revenue Amount",
               "description": ""
             },
@@ -11278,7 +11288,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1083.0610839948738,
@@ -11344,12 +11356,12 @@
           "erd.InsurancePolicy",
           "erd.InsurancePolicyParticipant"
         ],
-        "color": "#7f7f7f",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyAsset",
-        "label": "InsurancePolicyAsset",
+        "label": "Insurance Policy Asset",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -11417,43 +11429,43 @@
               "description": ""
             },
             "TermPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Premium",
               "description": ""
             },
             "TermFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Fee",
               "description": ""
             },
             "TermTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Tax",
               "description": ""
             },
             "TotalTermAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Amount",
               "readOnly": true,
               "description": ""
             },
             "StandardPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Premium",
               "description": ""
             },
             "StandardFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Fee",
               "description": ""
             },
             "StandardTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Tax",
               "description": ""
             },
             "TotalStandardAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Standard Amount",
               "readOnly": true,
               "description": ""
@@ -11493,7 +11505,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:asset"
       },
       "position": {
         "x": 1078.9943995663248,
@@ -11597,10 +11611,10 @@
         ],
         "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyParticipant",
-        "label": "InsurancePolicyParticipant",
+        "label": "Insurance Policy Participant",
         "schema": {
           "type": "object",
-          "description": "A junction object that associates the InsurancePolicy object with the Account object. This object represents the participants of an insurance policy. Insurance policy participants include policy owners and beneficiaries.",
+          "description": "[Financial Service Cloud] A junction object that associates the InsurancePolicy object with the Account object. This object represents the participants of an insurance policy. Insurance policy participants include policy owners and beneficiaries.",
           "properties": {
             "Id": {
               "type": "string",
@@ -11802,32 +11816,32 @@
               "description": ""
             },
             "StandardPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Premium",
               "description": "The expected premium for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "StandardTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Tax",
               "description": "The expected tax on the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "StandardFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Standard Fee",
               "description": "The expected fee for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "TermFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Fee",
               "description": "The expected fee for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermPremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Premium",
               "description": "The expected premium for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
             "TermTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Tax",
               "description": "The expected tax on the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
             },
@@ -11837,13 +11851,13 @@
               "description": "The unique code of the insurance policy participant across all the policy versions."
             },
             "TotalStandardAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Standard Amount",
               "readOnly": true,
               "description": "The sum of the expected premium, fee, and tax for the policy over the policy period. This field is available from API version 51.0 and later."
             },
             "TotalTermAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Term Amount",
               "readOnly": true,
               "description": "The sum of the expected premium, tax, and fee for the policy over the policy period, prorated based on the policy's effective dates. This field is available from API version 51.0 and later."
@@ -11872,7 +11886,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "A junction object that associates the InsurancePolicy object with the Account object. This object represents the participants of an insurance policy. Insurance policy participants include policy owners and beneficiaries.",
+        "icon": "standard:team_member"
       },
       "position": {
         "x": 177.91896969442269,
@@ -11923,12 +11939,12 @@
           "erd.InsurancePolicy",
           "erd.InsurancePolicy"
         ],
-        "color": "#4e79a7",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyTransaction",
-        "label": "InsurancePolicyTransaction",
+        "label": "Insurance Policy Transaction",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -11980,12 +11996,12 @@
               "description": ""
             },
             "TransactionAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Transaction Amount",
               "description": ""
             },
             "TransactionFeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Transaction Fee",
               "description": ""
             },
@@ -11996,12 +12012,12 @@
               "description": ""
             },
             "TransactionTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Transaction Tax",
               "description": ""
             },
             "TotalTransactionAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Transaction Amount",
               "readOnly": true,
               "description": ""
@@ -12101,7 +12117,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1046.4579307894583,
@@ -12137,12 +12155,12 @@
         "foreignKeysReferencedTables": [
           "erd.InsuranceRatePlan"
         ],
-        "color": "#d62728",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceRatePlanLineItem",
-        "label": "InsuranceRatePlanLineItem",
+        "label": "Insurance Rate Plan Line Item",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12201,22 +12219,22 @@
               "description": ""
             },
             "RateQualifierAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Rate Qualifier Amount",
               "description": ""
             },
             "RateBasisAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Rate Basis Amount",
               "description": ""
             },
             "Rate": {
-              "type": "string",
+              "type": "number",
               "title": "Rate",
               "description": ""
             },
             "PremiumAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Premium Amount",
               "description": ""
             },
@@ -12226,17 +12244,19 @@
               "description": ""
             },
             "FeeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Fee Amount",
               "description": ""
             },
             "PremiumEqvAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Premium Equivalent Amount",
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1597.3758525971407,
@@ -12308,12 +12328,12 @@
           "erd.InsurancePolicyParticipant",
           "erd.InsurancePolicyTransaction"
         ],
-        "color": "#8c564b",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicySurcharge",
-        "label": "InsurancePolicySurcharge",
+        "label": "Insurance Policy Surcharge",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12377,7 +12397,7 @@
               "description": ""
             },
             "SurchargeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Surcharge Amount",
               "description": ""
             },
@@ -12409,7 +12429,7 @@
               "description": ""
             },
             "TermSurchargeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Term Surcharge Amount",
               "description": ""
             },
@@ -12445,7 +12465,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:pricebook"
       },
       "position": {
         "x": 1410.822306278764,
@@ -12499,12 +12521,12 @@
           "erd.InsurancePolicyParticipant",
           "erd.InsurancePolicy"
         ],
-        "color": "#bcbd22",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyMemberAsset",
-        "label": "InsurancePolicyMemberAsset",
+        "label": "Insurance Policy Member Asset",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12573,7 +12595,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1388.3471891381278,
@@ -12618,12 +12642,12 @@
           "erd.InsurancePolicy",
           "erd.InsurancePolicyCoverage"
         ],
-        "color": "#f28e2c",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceContributionPlan",
-        "label": "InsuranceContributionPlan",
+        "label": "Insurance Contribution Plan",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12707,7 +12731,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1392.837959132981,
@@ -12743,12 +12769,12 @@
         "foreignKeysReferencedTables": [
           "erd.InsuranceRatePlan"
         ],
-        "color": "#e15759",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceRatePlanCommission",
-        "label": "InsuranceRatePlanCommission",
+        "label": "Insurance Rate Plan Commission",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12820,7 +12846,7 @@
               "description": ""
             },
             "Fee": {
-              "type": "string",
+              "type": "number",
               "title": "Fee",
               "description": ""
             },
@@ -12835,12 +12861,12 @@
               "description": ""
             },
             "AmountStartRange": {
-              "type": "string",
+              "type": "number",
               "title": "Amount Start Range",
               "description": ""
             },
             "AmountEndRange": {
-              "type": "string",
+              "type": "number",
               "title": "Amount End Range",
               "description": ""
             },
@@ -12850,7 +12876,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1719.4092874220407,
@@ -12886,12 +12914,12 @@
         "foreignKeysReferencedTables": [
           "erd.InsurancePolicyAsset"
         ],
-        "color": "#76b7b2",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceClaimAsset",
-        "label": "InsuranceClaimAsset",
+        "label": "Insurance Claim Asset",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -12948,7 +12976,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:asset"
       },
       "position": {
         "x": 1752.924246373163,
@@ -12984,12 +13014,12 @@
         "foreignKeysReferencedTables": [
           "erd.InsurancePolicy"
         ],
-        "color": "#edc949",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsurancePolicyTeamMember",
-        "label": "InsurancePolicyTeamMember",
+        "label": "Insurance Policy Team Member",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -13052,7 +13082,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": 1750,
@@ -13088,12 +13120,12 @@
         "foreignKeysReferencedTables": [
           "erd.Contact"
         ],
-        "color": "#af7aa1",
+        "color": "#17becf",
         "Id": "EntityDefinition/InsuranceProfile",
-        "label": "InsuranceProfile",
+        "label": "Insurance Profile",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -13199,7 +13231,9 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account"
       },
       "position": {
         "x": -208.49322940135949,
@@ -13276,9 +13310,9 @@
       "id": "group_4f739d0a-2e10-4c7c-aa55-f505e697fe6a",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Claim",
+        "icon": "standard:buyer_account",
+        "color": "#17becf",
         "Id": "EntityDefinition/Claim",
         "table": {
           "name": "Claim",
@@ -13287,7 +13321,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -13454,17 +13488,17 @@
               "description": ""
             },
             "EstimatedAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Estimated Amount",
               "description": ""
             },
             "ActualAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Actual Amount",
               "description": ""
             },
             "ApprovedAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Approved Amount",
               "description": ""
             },
@@ -14471,13 +14505,13 @@
               "description": ""
             },
             "TotalClaimedAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Claimed Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalAdjustedAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Adjusted Amount",
               "readOnly": true,
               "description": ""
@@ -14559,7 +14593,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 1424.530052537186,
@@ -15036,16 +15071,20 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "An Incident is any unplanned business interruption that has wide-sweeping impacts and requires an urgent fix. This object contains the details of the incident, documenting the history of the incident from registration to closure.",
+        "icon": "custom:custom1",
+        "color": "#af7aa1",
+        "label": "Incident"
       }
     },
     {
       "id": "group_c6db2ba4-e167-4bcc-a1d4-299546f5bd25",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Claim Participant",
+        "icon": "standard:buyer_account",
+        "color": "#17becf",
         "Id": "EntityDefinition/ClaimParticipant",
         "table": {
           "name": "ClaimParticipant",
@@ -15054,7 +15093,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -15138,7 +15177,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 1935.880977343234,
@@ -15149,9 +15189,9 @@
       "id": "group_95fc15a0-014c-414b-b37a-543c07564932",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Person Life Event",
+        "icon": "utility:standard_objects",
+        "color": "#76b7b2",
         "Id": "EntityDefinition/PersonLifeEvent",
         "table": {
           "name": "PersonLifeEvent",
@@ -16081,7 +16121,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": -228.62619815565847,
@@ -16092,15 +16133,10 @@
       "id": "group_122e043b-f46b-4de0-8ed5-c95070e1d705",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Identity Document",
+        "icon": "utility:standard_objects",
+        "color": "#76b7b2",
         "Id": "EntityDefinition/IdentityDocument",
-        "table": {
-          "name": "IdentityDocument",
-          "label": "Identity Document",
-          "description": "[Core] "
-        },
         "schema": {
           "type": "object",
           "description": "[Core] ",
@@ -16193,7 +16229,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 205.22091943126225,

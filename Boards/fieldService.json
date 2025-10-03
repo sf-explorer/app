@@ -60,7 +60,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Field Service Lightning] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -101,9 +101,9 @@
           }
         },
         "label": "Service Crew",
-        "icon": "utility:standard_objects",
-        "description": null,
-        "color": "#1f77b4"
+        "icon": "standard:service_crew_member",
+        "description": "",
+        "color": "#ff7f0e"
       },
       "type": "table",
       "position": {
@@ -122,7 +122,7 @@
         "Id": "EntityDefinition/AssignedResource",
         "schema": {
           "type": "object",
-          "description": "Represents a service resource who is assigned to a service appointment in Field Service and Lightning Scheduler. Assigned resources appear in the Assigned Resources related list on service appointments.",
+          "description": "[Core] Represents a service resource who is assigned to a service appointment in Field Service and Lightning Scheduler. Assigned resources appear in the Assigned Resources related list on service appointments.",
           "properties": {
             "Id": {
               "type": "string",
@@ -226,7 +226,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a service resource who is assigned to a service appointment in Field Service and Lightning Scheduler. Assigned resources appear in the Assigned Resources related list on service appointments.",
+        "icon": "utility:standard_objects",
+        "label": "Assigned Resource",
+        "color": "#76b7b2"
       }
     },
     {
@@ -240,7 +244,7 @@
         "Id": "EntityDefinition/ServiceResource",
         "schema": {
           "type": "object",
-          "description": "Represents a service technician or service crew in Field Service and Salesforce Scheduler, or an agent in Workforce Engagement.",
+          "description": "[Field Service Lightning] Represents a service technician or service crew in Field Service and Salesforce Scheduler, or an agent in Workforce Engagement.",
           "properties": {
             "Id": {
               "type": "string",
@@ -380,7 +384,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a service technician or service crew in Field Service and Salesforce Scheduler, or an agent in Workforce Engagement.",
+        "icon": "standard:service_crew_member",
+        "label": "Service Resource",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -394,7 +402,7 @@
         "Id": "EntityDefinition/ServiceAppointment",
         "schema": {
           "type": "object",
-          "description": "Represents an appointment to complete work for a customer in Field Service, Lightning Scheduler,Intelligent Appointment Management, and Virtual Care.",
+          "description": "[Field Service Lightning] Represents an appointment to complete work for a customer in Field Service, Lightning Scheduler,Intelligent Appointment Management, and Virtual Care.",
           "properties": {
             "Id": {
               "type": "string",
@@ -2471,7 +2479,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents an appointment to complete work for a customer in Field Service, Lightning Scheduler,Intelligent Appointment Management, and Virtual Care.",
+        "icon": "standard:service_appointment",
+        "label": "Service Appointment",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -2485,7 +2497,7 @@
         "Id": "EntityDefinition/Order",
         "schema": {
           "type": "object",
-          "description": "Represents an order associated with a contract or an account.",
+          "description": "[Core] Represents an order associated with a contract or an account.",
           "properties": {
             "Id": {
               "type": "string",
@@ -4309,19 +4321,19 @@
               "description": "Order number assigned to this order (not the unique, system-generated ID assigned during creation). Maximum size is 30 characters."
             },
             "TotalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Order Amount",
               "readOnly": true,
               "description": "The net total amount for the order products associated with this order."
             },
             "TotalTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Tax",
               "readOnly": true,
               "description": "Roll up of all tax on the order. Includes delivery taxes, price adjustment taxes, and product taxes."
             },
             "GrandTotalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total with Tax",
               "readOnly": true,
               "description": "Sum of TotalAmount and TotalTaxAmount."
@@ -4488,7 +4500,7 @@
               "description": "Date and time when a user last modified this record."
             },
             "TotalRoundedLineAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Product Subtotal",
               "readOnly": true,
               "description": ""
@@ -4510,7 +4522,7 @@
               "description": ""
             },
             "Shipping__c": {
-              "type": "string",
+              "type": "number",
               "title": "Shipping",
               "description": ""
             },
@@ -4526,7 +4538,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents an order associated with a contract or an account.",
+        "icon": "standard:fulfillment_order",
+        "label": "Order",
+        "color": "#76b7b2"
       }
     },
     {
@@ -4540,7 +4556,7 @@
         "Id": "EntityDefinition/WorkType",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Field Service Lightning] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -4745,7 +4761,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:service_crew_member",
+        "label": "Work Type",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -4759,7 +4779,7 @@
         "Id": "EntityDefinition/ServiceTerritory",
         "schema": {
           "type": "object",
-          "description": "Represents a geographic or functional region in which work can be performed in Field Service, Salesforce Scheduler, or Workforce Engagement.",
+          "description": "[Field Service Lightning] Represents a geographic or functional region in which work can be performed in Field Service, Salesforce Scheduler, or Workforce Engagement.",
           "properties": {
             "Id": {
               "type": "string",
@@ -5673,7 +5693,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a geographic or functional region in which work can be performed in Field Service, Salesforce Scheduler, or Workforce Engagement.",
+        "icon": "standard:service_crew_member",
+        "label": "Service Territory",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -5687,7 +5711,7 @@
         "Id": "EntityDefinition/Contract",
         "schema": {
           "type": "object",
-          "description": "Represents a contract (a business agreement) associated with an Account.",
+          "description": "[Core] Represents a contract (a business agreement) associated with an Account.",
           "properties": {
             "Id": {
               "type": "string",
@@ -7622,7 +7646,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a contract (a business agreement) associated with an Account.",
+        "icon": "standard:contract",
+        "label": "Contract",
+        "color": "#76b7b2"
       }
     },
     {
@@ -7636,7 +7664,7 @@
         "Id": "EntityDefinition/WorkOrderLineItem",
         "schema": {
           "type": "object",
-          "description": "Represents a subtask on a work order in field service.",
+          "description": "[Field Service Lightning] Represents a subtask on a work order in field service.",
           "properties": {
             "Id": {
               "type": "string",
@@ -7763,7 +7791,7 @@
               "description": "Number of units of the line item included in the associated work order."
             },
             "UnitPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Unit Price",
               "description": "Initially, the unit price for a work order line item is the line item’s list price from the price book, but you can change it."
             },
@@ -7773,19 +7801,19 @@
               "description": "The percent discount to apply to the line item. You can enter a number with or without the percent symbol, and you can use up to two decimal places."
             },
             "ListPrice": {
-              "type": "string",
+              "type": "number",
               "title": "List Price",
               "readOnly": true,
               "description": "The price of the line item (product) as listed in its corresponding price book entry. If a price book entry isn’t specified, the list price defaults to zero."
             },
             "Subtotal": {
-              "type": "string",
+              "type": "number",
               "title": "Subtotal",
               "readOnly": true,
               "description": "(Read only) The line item’s unit price multiplied by the quantity."
             },
             "TotalPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Total Price",
               "readOnly": true,
               "description": "Read only. The line item’s subtotal with discounts applied."
@@ -8784,7 +8812,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a subtask on a work order in field service.",
+        "icon": "standard:service_crew_member",
+        "label": "Work Order Line Item",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -8798,7 +8830,7 @@
         "Id": "EntityDefinition/Location",
         "schema": {
           "type": "object",
-          "description": "Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders.",
+          "description": "[Core] Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders.",
           "properties": {
             "Id": {
               "type": "string",
@@ -9916,7 +9948,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders.",
+        "icon": "standard:location",
+        "label": "Location",
+        "color": "#76b7b2"
       }
     },
     {
@@ -9930,7 +9966,7 @@
         "Id": "EntityDefinition/ServiceCrewMember",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Field Service Lightning] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -9996,7 +10032,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:service_crew_member",
+        "label": "Service Crew Member",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -10010,7 +10050,7 @@
         "Id": "EntityDefinition/ServiceResourceCapacity",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Field Service Lightning] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -10091,7 +10131,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:service_crew_member",
+        "label": "Resource Capacity",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -10105,7 +10149,7 @@
         "Id": "EntityDefinition/ServiceResourcePreference",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Field Service Lightning] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -10151,7 +10195,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:service_crew_member",
+        "label": "Service Resource Preference",
+        "color": "#ff7f0e"
       }
     },
     {
@@ -10165,7 +10213,7 @@
         "Id": "EntityDefinition/Entitlement",
         "schema": {
           "type": "object",
-          "description": "Represents the customer support an account or contact is eligible to receive.",
+          "description": "[Service Cloud] Represents the customer support an account or contact is eligible to receive.",
           "properties": {
             "Id": {
               "type": "string",
@@ -10333,7 +10381,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents the customer support an account or contact is eligible to receive.",
+        "icon": "custom:custom1",
+        "label": "Entitlement",
+        "color": "#af7aa1"
       }
     },
     {
@@ -10347,7 +10399,7 @@
         "Id": "EntityDefinition/EntitlementContact",
         "schema": {
           "type": "object",
-          "description": "",
+          "description": "[Core] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -10397,7 +10449,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "utility:standard_objects",
+        "label": "Entitlement Contact",
+        "color": "#76b7b2"
       }
     }
   ],

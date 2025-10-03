@@ -129,8 +129,8 @@
         },
         "label": "Billing Policy",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#1f77b4"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -233,8 +233,8 @@
         },
         "label": "Billing Treatment",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#ff7f0e"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -335,7 +335,7 @@
               "description": ""
             },
             "FlatAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Flat Amount",
               "description": ""
             },
@@ -402,8 +402,8 @@
         },
         "label": "Billing Treatment Item",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#2ca02c"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -484,7 +484,7 @@
               "description": ""
             },
             "Amount": {
-              "type": "string",
+              "type": "number",
               "title": "Amount",
               "readOnly": true,
               "description": ""
@@ -569,8 +569,8 @@
         },
         "label": "Billing Period Item",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#d62728"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -644,7 +644,7 @@
               "description": ""
             },
             "TotalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Amount",
               "readOnly": true,
               "description": ""
@@ -656,13 +656,13 @@
               "description": ""
             },
             "UnitPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Unit Price",
               "readOnly": true,
               "description": ""
             },
             "LineAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Line Amount",
               "readOnly": true,
               "description": ""
@@ -675,7 +675,7 @@
               "description": ""
             },
             "NetUnitPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Net Unit Price",
               "readOnly": true,
               "description": ""
@@ -733,7 +733,7 @@
               "description": ""
             },
             "BillingPeriodAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Billing Period Amount",
               "readOnly": true,
               "description": ""
@@ -771,13 +771,13 @@
               "description": ""
             },
             "BilledAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Billed Amount",
               "readOnly": true,
               "description": ""
             },
             "PendingAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Pending Amount",
               "readOnly": true,
               "description": ""
@@ -997,8 +997,8 @@
         },
         "label": "Billing Schedule",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#9467bd"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -1149,13 +1149,13 @@
               "description": ""
             },
             "TotalBilledAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Billed Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalPendingAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Pending Amount",
               "readOnly": true,
               "description": ""
@@ -3724,8 +3724,8 @@
         },
         "label": "Billing Schedule Group",
         "icon": "standard:checkout",
-        "description": "[Billing/Invoicing] ",
-        "color": "#8c564b"
+        "description": "",
+        "color": "#e377c2"
       },
       "type": "table",
       "position": {
@@ -4596,7 +4596,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:checkout",
+        "label": "Billing Account",
+        "color": "#e377c2"
       }
     },
     {
@@ -7707,7 +7711,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a contact, which is a person associated with an account.",
+        "icon": "standard:contact",
+        "label": "Contact",
+        "color": "#76b7b2"
       }
     },
     {
@@ -7769,16 +7777,20 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:checkout",
+        "label": "Payment Term",
+        "color": "#e377c2"
       }
     },
     {
       "id": "group_135c5719-be16-4302-a935-e536450b0e13",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Invoice",
+        "icon": "standard:checkout",
+        "color": "#e377c2",
         "Id": "EntityDefinition/Invoice",
         "table": {
           "name": "Invoice",
@@ -7839,31 +7851,31 @@
               "description": ""
             },
             "TotalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalAmountWithTax": {
-              "type": "string",
+              "type": "number",
               "title": "Total with Tax",
               "readOnly": true,
               "description": ""
             },
             "TotalChargeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Charges",
               "readOnly": true,
               "description": ""
             },
             "TotalAdjustmentAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Adjustment Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Tax",
               "readOnly": true,
               "description": ""
@@ -7922,7 +7934,7 @@
               "description": ""
             },
             "Balance": {
-              "type": "string",
+              "type": "number",
               "title": "Balance",
               "readOnly": true,
               "description": ""
@@ -7945,37 +7957,37 @@
               "description": ""
             },
             "TotalChargeTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Charge Tax Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalChargeAmountWithTax": {
-              "type": "string",
+              "type": "number",
               "title": "Total Charge Amount with Tax",
               "readOnly": true,
               "description": ""
             },
             "TotalAdjustmentTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Adjustment Tax Amount",
               "readOnly": true,
               "description": ""
             },
             "TotalAdjustmentAmountWithTax": {
-              "type": "string",
+              "type": "number",
               "title": "Total Adjustment Amount with Tax",
               "readOnly": true,
               "description": ""
             },
             "NetCreditsApplied": {
-              "type": "string",
+              "type": "number",
               "title": "Net Credits Applied",
               "readOnly": true,
               "description": ""
             },
             "NetPaymentsApplied": {
-              "type": "string",
+              "type": "number",
               "title": "Net Payments Applied",
               "readOnly": true,
               "description": ""
@@ -8067,7 +8079,7 @@
               "description": ""
             },
             "TotalConvertedNegAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Converted Negative Amount",
               "readOnly": true,
               "description": ""
@@ -8166,13 +8178,13 @@
               "description": ""
             },
             "WriteOffTotalChargeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Write Off Total Charge Amount",
               "readOnly": true,
               "description": ""
             },
             "WriteOffTotalTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Write Off Total Tax Amount",
               "readOnly": true,
               "description": ""
@@ -8183,7 +8195,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": -148.0371666556704,
@@ -8194,9 +8207,9 @@
       "id": "group_9bac16f5-fb06-4ef4-9f59-3c1fdd94b490",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Invoice Line",
+        "icon": "standard:checkout",
+        "color": "#e377c2",
         "Id": "EntityDefinition/InvoiceLine",
         "table": {
           "name": "InvoiceLine",
@@ -8276,7 +8289,7 @@
               "description": ""
             },
             "LineAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Line Amount",
               "readOnly": true,
               "description": ""
@@ -8287,33 +8300,33 @@
               "description": ""
             },
             "UnitPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Unit Price",
               "description": ""
             },
             "ChargeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Charge Amount",
               "description": ""
             },
             "TaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Tax Amount",
               "description": ""
             },
             "AdjustmentAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Adjustment Amount",
               "description": ""
             },
             "Balance": {
-              "type": "string",
+              "type": "number",
               "title": "Balance",
               "readOnly": true,
               "description": ""
             },
             "NetCreditsApplied": {
-              "type": "string",
+              "type": "number",
               "title": "Net Credits Applied",
               "readOnly": true,
               "description": ""
@@ -8432,30 +8445,30 @@
               "description": ""
             },
             "GrossUnitPrice": {
-              "type": "string",
+              "type": "number",
               "title": "Gross Unit Price",
               "description": ""
             },
             "ChargeTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Charge Tax Amount",
               "readOnly": true,
               "description": ""
             },
             "ChargeAmountWithTax": {
-              "type": "string",
+              "type": "number",
               "title": "Charge Amount with Tax",
               "readOnly": true,
               "description": ""
             },
             "AdjustmentTaxAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Adjustment Tax Amount",
               "readOnly": true,
               "description": ""
             },
             "AdjustmentAmountWithTax": {
-              "type": "string",
+              "type": "number",
               "title": "Adjustment Amount with Tax",
               "readOnly": true,
               "description": ""
@@ -8518,7 +8531,7 @@
               "description": ""
             },
             "ConvertedNegAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Converted Negative Amount",
               "readOnly": true,
               "description": ""
@@ -8536,7 +8549,7 @@
               "description": ""
             },
             "ChargeConvertedNegAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Charge Converted Negative Amount",
               "readOnly": true,
               "description": ""
@@ -8575,7 +8588,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 464.8557530225467,
@@ -8586,9 +8600,9 @@
       "id": "group_25d49cc3-8382-4359-9ac4-2e06435e3fb8",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Account Billing Account",
+        "icon": "standard:checkout",
+        "color": "#e377c2",
         "Id": "EntityDefinition/AccountBillingAccount",
         "table": {
           "name": "AccountBillingAccount",
@@ -8650,7 +8664,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 48.67146544287601,
@@ -10450,7 +10465,7 @@
               "description": "An industry associated with this account. For example, Biotechnology. Maximum size is 40 characters."
             },
             "AnnualRevenue": {
-              "type": "string",
+              "type": "number",
               "title": "Annual Revenue",
               "description": "Estimated annual revenue of the account."
             },
@@ -12661,7 +12676,7 @@
               "description": ""
             },
             "SDO_Sales_Current_Year_Revenue_Goal__c": {
-              "type": "string",
+              "type": "number",
               "title": "Current Year Revenue Goal",
               "description": ""
             },
@@ -12686,7 +12701,7 @@
               "description": ""
             },
             "SDO_Sales_Value_Closed_Won_Opportunties__c": {
-              "type": "string",
+              "type": "number",
               "title": "Value Closed Won Opportunities",
               "description": ""
             },
@@ -12712,12 +12727,12 @@
               "description": ""
             },
             "SDO_Value_Open_Opportunties__c": {
-              "type": "string",
+              "type": "number",
               "title": "Value of Open Opportunities",
               "description": ""
             },
             "SDO_YTD_Revenue_Generated__c": {
-              "type": "string",
+              "type": "number",
               "title": "YTD Revenue Generated",
               "description": ""
             },
@@ -12739,13 +12754,13 @@
               "description": ""
             },
             "SDO_Sales_Closed_Won_Value__c": {
-              "type": "string",
+              "type": "number",
               "title": "Total Sales",
               "readOnly": true,
               "description": ""
             },
             "SDO_Sales_Open_Oppty_Value__c": {
-              "type": "string",
+              "type": "number",
               "title": "Open Oppty Value",
               "readOnly": true,
               "description": ""
@@ -12848,7 +12863,7 @@
               "description": ""
             },
             "FINS_Loss_Runs__c": {
-              "type": "string",
+              "type": "number",
               "title": "Loss Runs",
               "description": ""
             },
@@ -13066,7 +13081,7 @@
               "description": ""
             },
             "FINS_DM_Total_Premium__c": {
-              "type": "string",
+              "type": "number",
               "title": "Total Premium",
               "description": ""
             },
@@ -14148,16 +14163,20 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners).",
+        "icon": "standard:account",
+        "label": "Account",
+        "color": "#76b7b2"
       }
     },
     {
       "id": "group_1c31ed9a-5a64-44c4-be64-65f6764fc8ce",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Payment Mandate",
+        "icon": "standard:checkout",
+        "color": "#e377c2",
         "Id": "EntityDefinition/PaymentMandate",
         "table": {
           "name": "PaymentMandate",
@@ -14319,7 +14338,7 @@
               "description": ""
             },
             "MandateAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Mandate Amount",
               "description": ""
             },
@@ -15984,7 +16003,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": -605.9933862375024,
@@ -16002,7 +16022,7 @@
         "Id": "EntityDefinition/FinancialAccount",
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -16088,7 +16108,7 @@
               "description": ""
             },
             "CreditLimit": {
-              "type": "string",
+              "type": "number",
               "title": "Credit Limit",
               "description": ""
             },
@@ -16103,7 +16123,7 @@
               "description": ""
             },
             "PrincipalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Principal Amount",
               "description": ""
             },
@@ -16132,12 +16152,12 @@
               "description": ""
             },
             "DownPaymentAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Down Payment Amount",
               "description": ""
             },
             "TotalOutstandingAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Outstanding Amount",
               "description": ""
             },
@@ -16183,27 +16203,27 @@
               "description": ""
             },
             "AmountDue": {
-              "type": "string",
+              "type": "number",
               "title": "Amount Due",
               "description": ""
             },
             "PrincipalPaidYearToDate": {
-              "type": "string",
+              "type": "number",
               "title": "Principal Paid Year To Date",
               "description": ""
             },
             "InterestPaidYearToDate": {
-              "type": "string",
+              "type": "number",
               "title": "Interest Paid Year To Date",
               "description": ""
             },
             "InsurancePaidYearToDate": {
-              "type": "string",
+              "type": "number",
               "title": "Insurance Paid Year To Date",
               "description": ""
             },
             "PropertyTaxPaidYearToDate": {
-              "type": "string",
+              "type": "number",
               "title": "Property Tax Paid Year To Date",
               "description": ""
             },
@@ -16233,7 +16253,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:buyer_account",
+        "label": "Financial Account",
+        "color": "#17becf"
       }
     }
   ],

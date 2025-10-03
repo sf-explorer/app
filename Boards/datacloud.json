@@ -67,9 +67,9 @@
       "id": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Individual",
+        "icon": "standard:data_model",
+        "color": "#17becf",
         "Id": "EntityDefinition/ssot__Individual__dlm",
         "table": {
           "name": "ssot__Individual__dlm",
@@ -105,7 +105,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 11.127851259955747,
@@ -146,6 +147,7 @@
             "ssot__Id__c": {
               "type": "string",
               "title": "Contact Point Email Id",
+              "x-target": "ssot__Individual__dlm",
               "readOnly": true,
               "description": ""
             },
@@ -158,11 +160,16 @@
             "ssot__PartyId__c": {
               "type": "string",
               "title": "Party",
+              "x-target": "ssot__Individual__dlm",
               "readOnly": true,
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:data_model",
+        "label": "Contact Point Email",
+        "color": "#17becf"
       }
     },
     {
@@ -193,6 +200,7 @@
             "Id__c": {
               "type": "string",
               "title": "Id",
+              "x-target": "ssot__Individual__dlm",
               "readOnly": true,
               "description": ""
             },
@@ -229,7 +237,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:data_model",
+        "label": "Individual - Latest",
+        "color": "#17becf"
       }
     },
     {
@@ -291,11 +303,16 @@
             "UnifiedRecordId__c": {
               "type": "string",
               "title": "Unified Individual Id",
+              "x-target": "UnifiedssotIndividualR1__dlm",
               "readOnly": true,
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:data_model",
+        "label": "Unified Link Individual R1",
+        "color": "#17becf"
       }
     },
     {
@@ -355,7 +372,11 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:data_model",
+        "label": "Unified Link Contact Point Email R1",
+        "color": "#17becf"
       }
     },
     {
@@ -398,11 +419,55 @@
             "ssot__PartyId__c": {
               "type": "string",
               "title": "Party",
+              "x-target": "UnifiedssotIndividualR1__dlm",
               "readOnly": true,
               "description": ""
             }
           }
-        }
+        },
+        "description": "",
+        "icon": "standard:data_model",
+        "label": "Unified Indv Contact Point Email R1",
+        "color": "#17becf"
+      }
+    },
+    {
+      "id": "group_4e08b33d-267a-4b6e-bd1b-e7a9eab0b96b",
+      "type": "table",
+      "data": {
+        "label": "Party",
+        "icon": "standard:data_model",
+        "color": "#17becf",
+        "Id": "EntityDefinition/ssot__Party__dlm",
+        "table": {
+          "name": "ssot__Party__dlm",
+          "label": "Party",
+          "description": "[Data Cloud DMO] ",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Data Cloud DMO] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "Party Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "description": ""
+      },
+      "position": {
+        "x": -345.02015661164614,
+        "y": -149.38012974279476
       }
     }
   ],

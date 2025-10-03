@@ -19,15 +19,18 @@ These diagrams serve as comprehensive data models and relationship diagrams for 
 **Collaboration:** This repository is designed for collaboration - feel free to share concepts, contribute new diagrams, or suggest other Salesforce clouds not yet covered here.
 | Board | Description | Objects | File | Open Board |
 |-------|-------------|---------|------|------------|
-| 🤖 Agentforce | Agent productivity and management tools | 21 | [agentForce.json](./Boards/agentForce.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentForce) |
-| 💰 Billing & Accounting | Financial management and billing systems | 25 | [billingAccounting.json](./Boards/billingAccounting.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=billingAccounting) |
-| ☁️ Data Cloud | SSOT Data Model | 6 | [datacloud.json](./Boards/datacloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=datacloud) |
-| ⚡ Energy&Utility | EUC Core model | 15 | [euc.json](./Boards/euc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=euc) |
-| 🔧 Field Service | Field service management and operations | 16 | [fieldService.json](./Boards/fieldService.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=fieldService) |
-| 🛡️ Insurance Policy | Insurance policy management | 47 | [insurancePolicy.json](./Boards/insurancePolicy.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=insurancePolicy) |
-| 🔍 KYC (Know Your Customer) | Customer verification and compliance | 17 | [kyc.json](./Boards/kyc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=kyc) |
-| 📦 Product Catalog | Product management and catalog systems | 26 | [productCatalog.json](./Boards/productCatalog.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=productCatalog) |
-| 🔒 Shield | Security and compliance tools | 37 | [shield.json](./Boards/shield.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=shield) |
+| ☁️ Service Cloud | From case to entitlements | 19 | [serviceCloud.json](./Boards/serviceCloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=serviceCloud) |
+| 📦 RCA: Product Catalog | Product management and catalog systems | 14 | [productCatalog.json](./Boards/productCatalog.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=cpq) |
+| 💰 RCA: Invoicing Data Model | Financial management and billing systems | 15 | [billingAccounting.json](./Boards/billingAccounting.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=billingAccounting) |
+| 🛡️ FSC: Insurance Data Model | Insurance policy management | 22 | [insurancePolicy.json](./Boards/insurancePolicy.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=insurancePolicy) |
+| 🔍 FSC: Know Your Customer | Customer verification and compliance | 9 | [kyc.json](./Boards/kyc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=kyc) |
+| 🔧 FSL: Core Data Model | Field service management and operations | 15 | [fieldService.json](./Boards/fieldService.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=fieldService) |
+| ⚡ EUC: Core Data Model | Energy&Utility Cloud now on Core | 10 | [euc.json](./Boards/euc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=euc) |
+| 🔒 Shield: Available Events | Discover the 40 available event and examples of how to leverage them | 37 | [shield.json](./Boards/shield.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=shield) |
+| ☁️ Data Cloud: SSOT Model | SSOT Data Model | 7 | [datacloud.json](./Boards/datacloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=datacloud) |
+| ⚙️ Business Rule Engine | Business rule management | 13 | [businessRuleEngine.json](./Boards/businessRuleEngine.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=businessRuleEngine) |
+| 🤖 Agentforce | Agent productivity and management tools | 14 | [agentForce.json](./Boards/agentForce.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentForce) |
+| 🤖 Agentforce feedback | Understand and analyze your Einstein generative AI audit and feedback data | 13 | [agentfeedback.json](./Boards/agentfeedback.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentfeedback) |
 
 
 ### Other Resources

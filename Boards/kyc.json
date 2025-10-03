@@ -72,7 +72,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -574,9 +574,9 @@
           }
         },
         "label": "Party Profile",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#1f77b4"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -593,7 +593,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -679,7 +679,7 @@
               "description": ""
             },
             "Value": {
-              "type": "string",
+              "type": "number",
               "title": "Value",
               "description": ""
             },
@@ -746,7 +746,7 @@
               "description": ""
             },
             "EstimatedMonthlyPayment": {
-              "type": "string",
+              "type": "number",
               "title": "Estimated Monthly Payment",
               "description": ""
             },
@@ -782,7 +782,7 @@
               "description": ""
             },
             "OutstandingBalance": {
-              "type": "string",
+              "type": "number",
               "title": "Outstanding Balance",
               "description": ""
             },
@@ -821,9 +821,9 @@
           }
         },
         "label": "Party Financial Liability",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#2ca02c"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -840,7 +840,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -894,7 +894,7 @@
               "description": ""
             },
             "IncomeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Income Amount",
               "description": ""
             },
@@ -1053,9 +1053,9 @@
           }
         },
         "label": "Party Income",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#8c564b"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -1072,7 +1072,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -1186,7 +1186,7 @@
               "description": ""
             },
             "TotalAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Amount",
               "description": ""
             },
@@ -1294,9 +1294,9 @@
           }
         },
         "label": "Party Expense",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#e377c2"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -1313,7 +1313,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -1409,7 +1409,7 @@
               "description": ""
             },
             "ValuationAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Valuation Amount",
               "description": ""
             },
@@ -1478,17 +1478,17 @@
               "description": ""
             },
             "PayoffDueAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Payoff Due Amount",
               "description": ""
             },
             "PurchaseAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Purchase Amount",
               "description": ""
             },
             "PledgeAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Pledge Amount",
               "description": ""
             },
@@ -1535,9 +1535,9 @@
           }
         },
         "label": "Party Financial Asset",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#7f7f7f"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -1554,7 +1554,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -1628,7 +1628,7 @@
               "description": ""
             },
             "TotalExposureAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Total Exposure Amount",
               "description": ""
             },
@@ -1658,9 +1658,9 @@
           }
         },
         "label": "Party Credit Profile",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#bcbd22"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -1677,7 +1677,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Core] ",
+          "description": "[Financial Service Cloud] ",
           "properties": {
             "Id": {
               "type": "string",
@@ -1724,7 +1724,7 @@
               "description": ""
             },
             "LienAmount": {
-              "type": "string",
+              "type": "number",
               "title": "Lien Amount",
               "description": ""
             },
@@ -1787,9 +1787,9 @@
           }
         },
         "label": "Party Financial Asset Lien",
-        "icon": "utility:standard_objects",
-        "description": "[Core] ",
-        "color": "#4e79a7"
+        "icon": "standard:buyer_account",
+        "description": "",
+        "color": "#17becf"
       },
       "type": "table",
       "position": {
@@ -4905,16 +4905,20 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": "Represents a contact, which is a person associated with an account.",
+        "icon": "standard:contact",
+        "label": "Contact",
+        "color": "#76b7b2"
       }
     },
     {
       "id": "group_99ce103f-1b51-434e-8902-5acd50627940",
       "type": "table",
       "data": {
-        "label": "New Card",
-        "icon": "standard:hierarchy",
-        "color": "#9467bd",
+        "label": "Identity Document",
+        "icon": "utility:standard_objects",
+        "color": "#76b7b2",
         "Id": "EntityDefinition/IdentityDocument",
         "table": {
           "name": "IdentityDocument",
@@ -5013,7 +5017,8 @@
               "description": ""
             }
           }
-        }
+        },
+        "description": ""
       },
       "position": {
         "x": 81.04095964686334,
