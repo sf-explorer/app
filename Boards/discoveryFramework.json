@@ -1,0 +1,4464 @@
+{
+   "nodes": [
+     {
+       "id": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "type": "groupZone",
+       "position": {
+         "x": -815.8348227511257,
+         "y": -827.7774544547807
+       },
+       "data": {
+         "label": "Setup",
+         "content": "",
+         "icon": "standard:apps_admin",
+         "color": "#f5f5f5"
+       },
+       "width": 1429,
+       "height": 1606
+     },
+     {
+       "id": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "type": "groupZone",
+       "position": {
+         "x": 648.0354609803314,
+         "y": -817.1755245446393
+       },
+       "data": {
+         "label": "Execution",
+         "content": "",
+         "icon": "standard:apps_admin",
+         "color": "#fcfcfc"
+       },
+       "width": 1561,
+       "height": 1569
+     },
+     {
+       "position": {
+         "x": -1231.49066147257,
+         "y": 1.1833313100894083
+       },
+       "id": "filter",
+       "type": "input",
+       "data": {
+         "label": "",
+         "schema": {
+           "properties": {
+             "filter": {
+               "title": "Filter",
+               "type": "string"
+             },
+             "onlyRef": {
+               "title": "Reference only",
+               "type": "boolean",
+               "default": false
+             },
+             "onlyCustom": {
+               "title": "Custom only",
+               "type": "boolean",
+               "default": false
+             },
+             "showLabel": {
+               "title": "Show Label",
+               "type": "boolean",
+               "default": true
+             },
+             "showData": {
+               "title": "Show Data",
+               "type": "boolean",
+               "default": false
+             },
+             "showChildRelation": {
+               "title": "Child Relations",
+               "type": "boolean",
+               "default": false
+             },
+             "nbFields": {
+               "title": "Nb Fields",
+               "type": "integer",
+               "default": 20
+             },
+             "user": {
+               "title": "User",
+               "objectName": "User",
+               "description": "Analyze the given access right to a given user",
+               "fields": [
+                 "Name",
+                 "Profile.Name"
+               ],
+               "loadingOptions": {
+                 "loadPermissions": true
+               }
+             }
+           }
+         }
+       },
+       "width": 250,
+       "height": 388
+     },
+     {
+       "id": "Assessment",
+       "data": {
+         "Id": "EntityDefinition/Assessment",
+         "table": {
+           "name": "Assessment",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AccountId": {
+               "type": "string",
+               "title": "Account ID",
+               "x-target": "Account",
+               "description": ""
+             },
+             "AssessmentRating": {
+               "type": "string",
+               "title": "Assessment Rating",
+               "enum": [
+                 "High",
+                 "Medium",
+                 "Low",
+                 null
+               ],
+               "enumNames": [
+                 "High",
+                 "Medium",
+                 "Low",
+                 null
+               ],
+               "description": ""
+             },
+             "EffectiveDateTime": {
+               "type": "string",
+               "title": "Effective Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "ExpirationDateTime": {
+               "type": "string",
+               "title": "Expiration Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "CaseId": {
+               "type": "string",
+               "title": "Case ID",
+               "x-target": "Case",
+               "description": ""
+             },
+             "ParentId": {
+               "type": "string",
+               "title": "Assessment ID",
+               "x-target": "Assessment",
+               "description": "Parent Record Reference"
+             },
+             "ContactId": {
+               "type": "string",
+               "title": "Contact ID",
+               "x-target": "Contact",
+               "description": ""
+             },
+             "AssessmentStatus": {
+               "type": "string",
+               "title": "Assessment Status",
+               "enum": [
+                 "In Progress",
+                 "Completed",
+                 "Canceled",
+                 null
+               ],
+               "enumNames": [
+                 "In Progress",
+                 "Completed",
+                 "Canceled",
+                 null
+               ],
+               "description": ""
+             },
+             "ResponseContextId": {
+               "type": "string",
+               "title": "Response Context ID",
+               "x-target": "AI_Agent_Conversation_Entry__c",
+               "description": ""
+             },
+             "OmniProcessId": {
+               "type": "string",
+               "title": "Omni Process ID",
+               "x-target": "OmniProcess",
+               "description": ""
+             },
+             "Type": {
+               "type": "string",
+               "title": "Type",
+               "enum": [
+                 null
+               ],
+               "enumNames": [
+                 null
+               ],
+               "description": ""
+             },
+             "ApplicantId": {
+               "type": "string",
+               "title": "Applicant ID",
+               "x-target": "Applicant",
+               "description": ""
+             },
+             "IsSavedForLater": {
+               "type": "boolean",
+               "title": "Saved For Later",
+               "readOnly": true,
+               "description": ""
+             },
+             "IsSuggestedAssessment": {
+               "type": "boolean",
+               "title": "Suggested Assessment",
+               "description": ""
+             },
+             "ExternalAssessmentDefId": {
+               "type": "string",
+               "title": "External Assessment Definition ID",
+               "x-target": "ExternalAssessmentDefinition",
+               "description": ""
+             },
+             "CompletedDateTime": {
+               "type": "string",
+               "title": "Completed Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "AssessorId": {
+               "type": "string",
+               "title": "Assessor ID",
+               "x-target": "Account",
+               "description": ""
+             },
+             "Identifier": {
+               "type": "string",
+               "title": "Identifier",
+               "description": ""
+             },
+             "AssessmentStagedDataId": {
+               "type": "string",
+               "title": "Assessment Staged Data ID",
+               "x-target": "AssessmentStagedData",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework",
+         "hiddenFields": [],
+         "fieldOrder": [
+           "Id",
+           "DefaultCompactLayoutId",
+           "DefaultImplementation",
+           "DeveloperName",
+           "DurableId",
+           "ExtendedBy",
+           "ExtendsInterfaces",
+           "HelpSettingPageName",
+           "ImplementedBy",
+           "ImplementsInterfaces",
+           "KeyPrefix",
+           "Label",
+           "MasterLabel",
+           "NamespacePrefix",
+           "PluralLabel",
+           "PublisherId",
+           "QualifiedApiName",
+           "RecordTypesSupported",
+           "RunningUserEntityAccessId",
+           "DeploymentStatus",
+           "ExternalSharingModel",
+           "InternalSharingModel",
+           "HasSubtypes",
+           "IsApexTriggerable",
+           "IsAutoActivityCaptureEnabled",
+           "IsCompactLayoutable",
+           "IsCustomizable",
+           "IsCustomSetting",
+           "IsDeprecatedAndHidden",
+           "IsEverCreatable",
+           "IsEverDeletable",
+           "IsEverUpdatable",
+           "IsFeedEnabled",
+           "IsIdEnabled",
+           "IsInterface",
+           "IsLayoutable",
+           "IsMruEnabled",
+           "IsProcessEnabled",
+           "IsQueryable",
+           "IsReplicateable",
+           "IsRetrieveable",
+           "IsSearchable",
+           "IsSearchLayoutable",
+           "IsSubtype",
+           "IsTriggerable",
+           "IsWorkflowEnabled",
+           "LastModifiedDate",
+           "DetailUrl",
+           "EditDefinitionUrl",
+           "EditUrl",
+           "HelpSettingPageUrl",
+           "NewUrl"
+         ],
+         "values": {
+           "Id": "Assessment",
+           "DurableId": "Assessment",
+           "QualifiedApiName": "Assessment",
+           "Label": "Assessment",
+           "IsCustomizable": true,
+           "KeyPrefix": "0U3",
+           "IsSearchable": true,
+           "IsQueryable": true,
+           "InternalSharingModel": "Private"
+         }
+       },
+       "type": "table",
+       "position": {
+         "x": 60.038342795076005,
+         "y": 685.5260788924675
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentDefinition",
+       "data": {
+         "Id": "EntityDefinition/AssessmentDefinition",
+         "table": {
+           "name": "AssessmentDefinition",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Definition ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "OmniProcessId": {
+               "type": "string",
+               "title": "Omni Process ID",
+               "x-target": "OmniProcess",
+               "description": ""
+             },
+             "EffectiveFromDate": {
+               "type": "string",
+               "title": "Effective From",
+               "format": "date-time",
+               "description": ""
+             },
+             "EffectiveToDate": {
+               "type": "string",
+               "title": "Effective To",
+               "format": "date-time",
+               "description": ""
+             },
+             "PerformerType": {
+               "type": "string",
+               "title": "Performer Type",
+               "description": ""
+             },
+             "DisplayType": {
+               "type": "string",
+               "title": "Display Type",
+               "enum": [
+                 null
+               ],
+               "enumNames": [
+                 null
+               ],
+               "description": ""
+             },
+             "LastRevisedDateTime": {
+               "type": "string",
+               "title": "Last Revised Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "PublisherId": {
+               "type": "string",
+               "title": "Publisher ID",
+               "x-target": "Account",
+               "description": ""
+             },
+             "Purpose": {
+               "type": "string",
+               "title": "Purpose",
+               "description": ""
+             },
+             "ApprovalDateTime": {
+               "type": "string",
+               "title": "Approval Date",
+               "format": "date-time",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Definition",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 1081.7778769548815,
+         "y": 1229.940125762509
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentEnvelope",
+       "data": {
+         "Id": "EntityDefinition/AssessmentEnvelope",
+         "table": {
+           "name": "AssessmentEnvelope",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Envelope ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Envelope Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AccountId": {
+               "type": "string",
+               "title": "Account ID",
+               "x-target": "Account",
+               "description": ""
+             },
+             "ExpirationDateTime": {
+               "type": "string",
+               "title": "Envelope Expiration Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Envelope Status",
+               "enum": [
+                 "NotStarted",
+                 "InProgress",
+                 "Completed",
+                 null
+               ],
+               "enumNames": [
+                 "Not Started",
+                 "In Progress",
+                 "Completed",
+                 null
+               ],
+               "description": ""
+             },
+             "RequestReferenceId": {
+               "type": "string",
+               "title": "Request Reference ID",
+               "x-target": "Case",
+               "description": ""
+             },
+             "ContactId": {
+               "type": "string",
+               "title": "Contact ID",
+               "x-target": "Contact",
+               "description": ""
+             },
+             "NotificationStatus": {
+               "type": "string",
+               "title": "Notification Status",
+               "enum": [
+                 "NotSent",
+                 "Sent",
+                 null
+               ],
+               "enumNames": [
+                 "Not Sent",
+                 "Sent",
+                 null
+               ],
+               "description": ""
+             },
+             "UsageType": {
+               "type": "string",
+               "title": "Usage Type",
+               "enum": [
+                 "Default",
+                 "PulseCheck",
+                 null
+               ],
+               "enumNames": [
+                 "Default",
+                 "PulseCheck",
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Envelope",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 858.0815104689049,
+         "y": 1150.260791150929
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentEnvelopeItem",
+       "data": {
+         "Id": "EntityDefinition/AssessmentEnvelopeItem",
+         "table": {
+           "name": "AssessmentEnvelopeItem",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Envelope Item ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Assessment Envelope Item Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentEnvelopeId": {
+               "type": "string",
+               "title": "Assessment Envelope ID",
+               "x-target": "AssessmentEnvelope",
+               "readOnly": true,
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Status",
+               "enum": [
+                 "NotStarted",
+                 "Completed",
+                 "InProgress",
+                 null
+               ],
+               "enumNames": [
+                 "Not Started",
+                 "Completed",
+                 "In Progress",
+                 null
+               ],
+               "description": ""
+             },
+             "AssessmentId": {
+               "type": "string",
+               "title": "Assessment ID",
+               "x-target": "Assessment",
+               "description": ""
+             },
+             "OmniProcessId": {
+               "type": "string",
+               "title": "Omni Process ID",
+               "x-target": "OmniProcess",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Envelope Item",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 485.34511395675474,
+         "y": 1176.3050982900354
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentQuestion",
+       "data": {
+         "Id": "EntityDefinition/AssessmentQuestion",
+         "table": {
+           "name": "AssessmentQuestion",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Question ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "QuestionText": {
+               "type": "string",
+               "title": "Question Text",
+               "readOnly": true,
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "readOnly": true,
+               "description": ""
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "Developer Name",
+               "description": ""
+             },
+             "DataType": {
+               "type": "string",
+               "title": "Data Type",
+               "enum": [
+                 "Checkbox",
+                 "Currency",
+                 "Date",
+                 "DateTime",
+                 "Disclosure",
+                 "EditBlock",
+                 "Email",
+                 "File",
+                 "Formula",
+                 "Multiselect",
+                 "Integer",
+                 "Decimal",
+                 "Radio",
+                 "RadioGroup",
+                 "Select",
+                 "Telephone",
+                 "Text",
+                 "TextArea",
+                 "TextBlock",
+                 "Time",
+                 "URL",
+                 null
+               ],
+               "enumNames": [
+                 "Checkbox",
+                 "Currency",
+                 "Date",
+                 "DateTime",
+                 "Disclosure",
+                 "Edit Block",
+                 "Email",
+                 "File",
+                 "Formula",
+                 "Multi-select",
+                 "Integer",
+                 "Decimal",
+                 "Radio",
+                 "Radio Group",
+                 "Select",
+                 "Telephone",
+                 "Text",
+                 "Text Area",
+                 "Text Block",
+                 "Time",
+                 "URL",
+                 null
+               ],
+               "description": ""
+             },
+             "QuestionCategory": {
+               "type": "string",
+               "title": "Category",
+               "enum": [
+                 "Demographic",
+                 "Financial",
+                 null
+               ],
+               "enumNames": [
+                 "Demographic",
+                 "Financial",
+                 null
+               ],
+               "description": ""
+             },
+             "RelatedQuestionId": {
+               "type": "string",
+               "title": "Assessment Question ID",
+               "x-target": "AssessmentQuestion",
+               "description": ""
+             },
+             "ActiveVersionId": {
+               "type": "string",
+               "title": "Assessment Question Version ID",
+               "x-target": "AssessmentQuestionVersion",
+               "readOnly": true,
+               "description": ""
+             },
+             "FormulaResponseDataType": {
+               "type": "string",
+               "title": "Formula Response Data Type",
+               "enum": [
+                 "Boolean",
+                 "Currency",
+                 "Date",
+                 "Decimal",
+                 "Integer",
+                 "Text",
+                 null
+               ],
+               "enumNames": [
+                 "Boolean",
+                 "Currency",
+                 "Date",
+                 "Decimal",
+                 "Integer",
+                 "Text",
+                 null
+               ],
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "readOnly": true,
+               "description": ""
+             },
+             "SourceSystemName": {
+               "type": "string",
+               "title": "Source System Name",
+               "enum": [
+                 "MCG",
+                 null
+               ],
+               "enumNames": [
+                 "MCG",
+                 null
+               ],
+               "description": ""
+             },
+             "ShouldExcludeFromMetadata": {
+               "type": "boolean",
+               "title": "Exclude From Metadata",
+               "readOnly": true,
+               "description": ""
+             },
+             "ShouldHideInDesigner": {
+               "type": "boolean",
+               "title": "Hide In Designer",
+               "readOnly": true,
+               "description": ""
+             },
+             "UniqueIndex": {
+               "type": "string",
+               "title": "Unique Index",
+               "readOnly": true,
+               "description": ""
+             },
+             "DisclosureDefinitionVer": {
+               "type": "string",
+               "title": "Disclosure Definition Version",
+               "enum": [
+                 null
+               ],
+               "enumNames": [
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "DisclosureDefinitionVerRefId": {
+               "type": "string",
+               "title": "Disclosure Definition Version ID",
+               "x-target": "DisclosureDefinitionVersion",
+               "readOnly": true,
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Question",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 740.6203493733396,
+         "y": 371.8559176167066
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentQuestionAssignment",
+       "data": {
+         "Id": "EntityDefinition/AssessmentQuestionAssignment",
+         "table": {
+           "name": "AssessmentQuestionAssignment",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Question Assignment ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentQuestionId": {
+               "type": "string",
+               "title": "Assessment Question ID",
+               "x-target": "AssessmentQuestion",
+               "description": ""
+             },
+             "AssessmentQuestionSetId": {
+               "type": "string",
+               "title": "Assessment Question Set ID",
+               "x-target": "AssessmentQuestionSet",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Question Assignment",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 402.7406326494478,
+         "y": 400.5560215517873
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentQuestionResponse",
+       "data": {
+         "Id": "EntityDefinition/AssessmentQuestionResponse",
+         "table": {
+           "name": "AssessmentQuestionResponse",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Question Response ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentId": {
+               "type": "string",
+               "title": "Assessment ID",
+               "x-target": "Assessment",
+               "readOnly": true,
+               "description": ""
+             },
+             "AssessmentQuestionId": {
+               "type": "string",
+               "title": "Assessment Question Version ID",
+               "x-target": "AssessmentQuestionVersion",
+               "description": ""
+             },
+             "ParentAsmtQuestionVersionId": {
+               "type": "string",
+               "title": "Assessment Question Version ID",
+               "x-target": "AssessmentQuestionVersion",
+               "description": ""
+             },
+             "TimeValue": {
+               "type": "string",
+               "title": "Time Value",
+               "description": ""
+             },
+             "DateValue": {
+               "type": "string",
+               "title": "Date Value",
+               "format": "date",
+               "description": ""
+             },
+             "DateTimeValue": {
+               "type": "string",
+               "title": "Date Time Value",
+               "format": "date-time",
+               "description": ""
+             },
+             "IntegerResponseValue": {
+               "type": "integer",
+               "title": "Integer Response Value",
+               "description": ""
+             },
+             "CurrencyValue": {
+               "type": "number",
+               "title": "Currency Value",
+               "description": ""
+             },
+             "IsTrueOrFalseValue": {
+               "type": "boolean",
+               "title": "Boolean Value",
+               "description": ""
+             },
+             "ResponseText": {
+               "type": "string",
+               "title": "Response Text",
+               "description": ""
+             },
+             "DecimalResponseValue": {
+               "type": "number",
+               "title": "Decimal Response Value",
+               "description": ""
+             },
+             "ChoiceValue": {
+               "type": "string",
+               "title": "Choice Value",
+               "description": ""
+             },
+             "ResponseValue": {
+               "type": "string",
+               "title": "Response Value",
+               "readOnly": true,
+               "description": ""
+             },
+             "ResponseType": {
+               "type": "string",
+               "title": "Response Type",
+               "readOnly": true,
+               "description": ""
+             },
+             "ComplianceStatus": {
+               "type": "string",
+               "title": "Compliance Status",
+               "enum": [
+                 "Pass",
+                 "Fail",
+                 "NA",
+                 "Issue",
+                 null
+               ],
+               "enumNames": [
+                 "Pass",
+                 "Fail",
+                 "NA",
+                 "Issue",
+                 null
+               ],
+               "description": ""
+             },
+             "RespondentTimezone": {
+               "type": "string",
+               "title": "Respondent Timezone",
+               "description": ""
+             },
+             "ResponseValueScore": {
+               "type": "number",
+               "title": "Response Value Score",
+               "description": ""
+             },
+             "ExtlAssessmentQuestionText": {
+               "type": "string",
+               "title": "External Assessment Question Text",
+               "description": ""
+             },
+             "ExtlResponseValueIdentifier": {
+               "type": "string",
+               "title": "External Response Value Identifier",
+               "description": ""
+             },
+             "OriginType": {
+               "type": "string",
+               "title": "Origin Type",
+               "enum": [
+                 "Auto",
+                 "Override",
+                 "Manual",
+                 null
+               ],
+               "enumNames": [
+                 "Auto",
+                 "Override",
+                 "Manual",
+                 null
+               ],
+               "description": ""
+             },
+             "ReviewerRoleId": {
+               "type": "string",
+               "title": "Reviewer Role ID",
+               "x-target": "CodeSet",
+               "description": ""
+             },
+             "ReviewerId": {
+               "type": "string",
+               "title": "Reviewer ID",
+               "x-target": "Account",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Question Response",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 489.3616562712043,
+         "y": 99.28570102098888
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentQuestionSet",
+       "data": {
+         "Id": "EntityDefinition/AssessmentQuestionSet",
+         "table": {
+           "name": "AssessmentQuestionSet",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Question Set ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "Developer Name",
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "readOnly": true,
+               "description": ""
+             },
+             "UniqueIndex": {
+               "type": "string",
+               "title": "Unique Index",
+               "readOnly": true,
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Question Set",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 37.73924186383579,
+         "y": 408.1811864845677
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentSavedSession",
+       "data": {
+         "Id": "EntityDefinition/AssessmentSavedSession",
+         "table": {
+           "name": "AssessmentSavedSession",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Saved Session ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentId": {
+               "type": "string",
+               "title": "Assessment ID",
+               "x-target": "Assessment",
+               "description": ""
+             },
+             "UsageType": {
+               "type": "string",
+               "title": "Usage Type",
+               "enum": [
+                 "HealthCloud",
+                 null
+               ],
+               "enumNames": [
+                 "Health cloud",
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Saved Session",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 499.7270849954258,
+         "y": 640.4871362429151
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentSignature",
+       "data": {
+         "Id": "EntityDefinition/AssessmentSignature",
+         "table": {
+           "name": "AssessmentSignature",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Signature ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentId": {
+               "type": "string",
+               "title": "Assessment ID",
+               "x-target": "Assessment",
+               "readOnly": true,
+               "description": ""
+             },
+             "DigitalSignatureId": {
+               "type": "string",
+               "title": "Digital Signature ID",
+               "x-target": "DigitalSignature",
+               "description": ""
+             },
+             "SigneeId": {
+               "type": "string",
+               "title": "Signee ID",
+               "x-target": "Contact",
+               "description": ""
+             },
+             "SignedBy": {
+               "type": "string",
+               "title": "Signed By",
+               "description": ""
+             },
+             "SignedInitial": {
+               "type": "string",
+               "title": "Signed Initial",
+               "description": ""
+             },
+             "Place": {
+               "type": "string",
+               "title": "Place",
+               "description": ""
+             },
+             "DateTime": {
+               "type": "string",
+               "title": "Date Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "OmniscriptIdentifier": {
+               "type": "string",
+               "title": "Omniscript Identifier",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Signature",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 484.6177322386844,
+         "y": 851.129231822853
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "AssessmentTask",
+       "data": {
+         "Id": "EntityDefinition/AssessmentTask",
+         "table": {
+           "name": "AssessmentTask",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Task ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "ParentId": {
+               "type": "string",
+               "title": "Visit ID",
+               "x-target": "Visit",
+               "description": "Parent Record Reference"
+             },
+             "AssessmentTaskDefinitionId": {
+               "type": "string",
+               "title": "Assessment Task Definition ID",
+               "x-target": "AssessmentTaskDefinition",
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "TaskType": {
+               "type": "string",
+               "title": "Task Type",
+               "enum": [
+                 "RecordAction",
+                 "Other",
+                 "SignatureTask",
+                 "DeliveryTask",
+                 "ComponentTask",
+                 null
+               ],
+               "enumNames": [
+                 "Record Action",
+                 "Other",
+                 "Signature Task",
+                 "Delivery Task",
+                 "Component Task",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Status",
+               "enum": [
+                 "NotStarted",
+                 "InProgress",
+                 "Completed",
+                 null
+               ],
+               "enumNames": [
+                 "Not Started",
+                 "In Progress",
+                 "Completed",
+                 null
+               ],
+               "description": ""
+             },
+             "IsRequired": {
+               "type": "boolean",
+               "title": "Required",
+               "description": ""
+             },
+             "SequenceNumber": {
+               "type": "integer",
+               "title": "Sequence",
+               "description": ""
+             },
+             "StartTime": {
+               "type": "string",
+               "title": "Start Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "EndTime": {
+               "type": "string",
+               "title": "End Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "TaskDefinitionId": {
+               "type": "string",
+               "title": "TaskDefinition ID",
+               "x-target": "OtherComponentTask",
+               "description": ""
+             },
+             "AssignedToId": {
+               "type": "string",
+               "title": "AssignedTo ID",
+               "x-target": "Group",
+               "description": ""
+             },
+             "ReferenceRecordId": {
+               "type": "string",
+               "title": "ReferenceRecord ID",
+               "x-target": "ActionPlan",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Task",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 434.5850070754734,
+         "y": 917.5742996885796
+       }
+     },
+     {
+       "id": "AssessmentTaskContentDocument",
+       "data": {
+         "Id": "EntityDefinition/AssessmentTaskContentDocument",
+         "table": {
+           "name": "AssessmentTaskContentDocument",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Task Content Document ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentTaskId": {
+               "type": "string",
+               "title": "Assessment Task ID",
+               "x-target": "AssessmentTask",
+               "readOnly": true,
+               "description": ""
+             },
+             "ContentDocumentId": {
+               "type": "string",
+               "title": "ContentDocument ID",
+               "x-target": "ContentDocument",
+               "description": ""
+             },
+             "ContentContextId": {
+               "type": "string",
+               "title": "ContentContext ID",
+               "x-target": "AI_Agent_Conversation_Entry__c",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Task Content Document",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 1295.1008401649037,
+         "y": 873.1017269882839
+       }
+     },
+     {
+       "id": "AssessmentTaskDefinition",
+       "data": {
+         "Id": "EntityDefinition/AssessmentTaskDefinition",
+         "table": {
+           "name": "AssessmentTaskDefinition",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Task Definition ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "Description": {
+               "type": "string",
+               "title": "Assessment Task Definition Description",
+               "description": ""
+             },
+             "TaskType": {
+               "type": "string",
+               "title": "Assessment Task Definition Task Type",
+               "enum": [
+                 "Other",
+                 null
+               ],
+               "enumNames": [
+                 "Other",
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Task Definition",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 889.8898487879571,
+         "y": 1087.0700209164452
+       }
+     },
+     {
+       "id": "AssessmentTaskIndDefinition",
+       "data": {
+         "Id": "EntityDefinition/AssessmentTaskIndDefinition",
+         "table": {
+           "name": "AssessmentTaskIndDefinition",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Task Indicator Definition ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "readOnly": true,
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentIndDefinitionId": {
+               "type": "string",
+               "title": "Assessment Indicator Definition ID",
+               "x-target": "AssessmentIndicatorDefinition",
+               "readOnly": true,
+               "description": ""
+             },
+             "AssessmentTaskDefinitionId": {
+               "type": "string",
+               "title": "Assessment Task Definition ID",
+               "x-target": "AssessmentTaskDefinition",
+               "readOnly": true,
+               "description": ""
+             },
+             "DisplayOrder": {
+               "type": "integer",
+               "title": "Display Order",
+               "description": ""
+             }
+           }
+         },
+         "label": "Assessment Task Indicator Definition",
+         "icon": "standard:learner_program",
+         "description": "[Discovery Framework] ",
+         "color": "#34C759",
+         "category": "Discovery Framework"
+       },
+       "type": "table",
+       "position": {
+         "x": 1346.7024496559034,
+         "y": 1147.4200537406875
+       }
+     },
+     {
+       "id": "EntityDefinition/AssessmentQuestionVersion_26b0f0a5-625d-43df-abdc-df67d665a3cc",
+       "type": "table",
+       "position": {
+         "x": 1120.5019420282115,
+         "y": 370.9353454129845
+       },
+       "data": {
+         "Id": "EntityDefinition/AssessmentQuestionVersion",
+         "description": "[Discovery Framework] ",
+         "schema": {
+           "type": "object",
+           "description": "[Discovery Framework] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Assessment Question Version ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "AssessmentQuestionId": {
+               "type": "string",
+               "title": "Assessment Question ID",
+               "x-target": "AssessmentQuestion",
+               "readOnly": true,
+               "description": ""
+             },
+             "QuestionText": {
+               "type": "string",
+               "title": "Question Text",
+               "description": ""
+             },
+             "DataType": {
+               "type": "string",
+               "title": "Data Type",
+               "enum": [
+                 "Checkbox",
+                 "Currency",
+                 "Date",
+                 "DateTime",
+                 "Disclosure",
+                 "EditBlock",
+                 "Email",
+                 "File",
+                 "Formula",
+                 "Multiselect",
+                 "Integer",
+                 "Decimal",
+                 "Radio",
+                 "RadioGroup",
+                 "Select",
+                 "Telephone",
+                 "Text",
+                 "TextArea",
+                 "TextBlock",
+                 "Time",
+                 "URL",
+                 null
+               ],
+               "enumNames": [
+                 "Checkbox",
+                 "Currency",
+                 "Date",
+                 "DateTime",
+                 "Disclosure",
+                 "Edit Block",
+                 "Email",
+                 "File",
+                 "Formula",
+                 "Multi-select",
+                 "Integer",
+                 "Decimal",
+                 "Radio",
+                 "Radio Group",
+                 "Select",
+                 "Telephone",
+                 "Text",
+                 "Text Area",
+                 "Text Block",
+                 "Time",
+                 "URL",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "VersionNumber": {
+               "type": "integer",
+               "title": "Version Number",
+               "readOnly": true,
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Status",
+               "readOnly": true,
+               "description": ""
+             },
+             "ResponseValues": {
+               "type": "string",
+               "title": "Response Values",
+               "description": ""
+             },
+             "IsActive": {
+               "type": "boolean",
+               "title": "Active",
+               "description": ""
+             },
+             "ActivationDateTime": {
+               "type": "string",
+               "title": "Activation Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": ""
+             },
+             "DeactivationDateTime": {
+               "type": "string",
+               "title": "Deactivation Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": ""
+             },
+             "IsOptionSourceResponseValue": {
+               "type": "boolean",
+               "title": "Option Source Response Value",
+               "description": ""
+             },
+             "HelpText": {
+               "type": "string",
+               "title": "Help Text",
+               "description": ""
+             },
+             "AdditionalInformation": {
+               "type": "string",
+               "title": "Additional Information",
+               "description": ""
+             },
+             "ExternalAsmtContentVersion": {
+               "type": "string",
+               "title": "External Assessment Content Version",
+               "description": ""
+             },
+             "GuidanceInformation": {
+               "type": "string",
+               "title": "Guidance Information",
+               "description": ""
+             }
+           }
+         },
+         "icon": "standard:learner_program",
+         "label": "Assessment Question Version",
+         "category": "Discovery Framework",
+         "color": "#34C759"
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "EntityDefinition/OmniProcess_78376815-804b-4a74-9dff-42b113f425fc",
+       "type": "table",
+       "position": {
+         "x": 719.9732257235949,
+         "y": 1121.506919717039
+       },
+       "data": {
+         "Id": "EntityDefinition/OmniProcess",
+         "description": "[omnistudio] ",
+         "schema": {
+           "type": "object",
+           "description": "[omnistudio] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Omni Process ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "RequiredPermission": {
+               "type": "string",
+               "title": "Required Permission",
+               "description": ""
+             },
+             "ElementTypeComponentMapping": {
+               "type": "string",
+               "title": "Element Type Component Mapping",
+               "description": ""
+             },
+             "CustomJavaScript": {
+               "type": "string",
+               "title": "Custom JavaScript",
+               "description": ""
+             },
+             "IsActive": {
+               "type": "boolean",
+               "title": "Active",
+               "description": ""
+             },
+             "IsMetadataCacheDisabled": {
+               "type": "boolean",
+               "title": "Disable Metadata Cache",
+               "description": ""
+             },
+             "ResponseCacheType": {
+               "type": "string",
+               "title": "Response Cache Type",
+               "enum": [
+                 "Org Cache",
+                 "Session Cache",
+                 null
+               ],
+               "enumNames": [
+                 "Org Cache",
+                 "Session Cache",
+                 null
+               ],
+               "description": ""
+             },
+             "IsIntegrationProcedure": {
+               "type": "boolean",
+               "title": "Integration Procedure",
+               "description": ""
+             },
+             "IsOmniScriptEmbeddable": {
+               "type": "boolean",
+               "title": "OmniScript Embeddable",
+               "description": ""
+             },
+             "IsWebCompEnabled": {
+               "type": "boolean",
+               "title": "Web Component Enabled",
+               "description": ""
+             },
+             "Language": {
+               "type": "string",
+               "title": "Language",
+               "enum": [
+                 "Multi-Language",
+                 "Thai",
+                 "Swedish",
+                 "Spanish (Mexico)",
+                 "Spanish",
+                 "Russian",
+                 "Portuguese (Brazil)",
+                 "Norwegian",
+                 "Korean",
+                 "Japanese",
+                 "Italian",
+                 "German",
+                 "French",
+                 "Finnish",
+                 "English",
+                 "Dutch",
+                 "Danish",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 null
+               ],
+               "enumNames": [
+                 "Multi-Language",
+                 "Thai",
+                 "Swedish",
+                 "Spanish (Mexico)",
+                 "Spanish",
+                 "Russian",
+                 "Portuguese (Brazil)",
+                 "Norwegian",
+                 "Korean",
+                 "Japanese",
+                 "Italian",
+                 "German",
+                 "French",
+                 "Finnish",
+                 "English",
+                 "Dutch",
+                 "Danish",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 null
+               ],
+               "description": ""
+             },
+             "OmniProcessKey": {
+               "type": "string",
+               "title": "Omni Process Key",
+               "description": ""
+             },
+             "PropertySetConfig": {
+               "type": "string",
+               "title": "Property Set Configuration",
+               "description": ""
+             },
+             "SubType": {
+               "type": "string",
+               "title": "Sub Type",
+               "enum": [
+                 "Amend",
+                 "Terminate",
+                 "Renew",
+                 "Mental Health",
+                 "Gun Permit",
+                 "Building Permit",
+                 "Birth Certificate",
+                 "Marriage License",
+                 null
+               ],
+               "enumNames": [
+                 "Amend",
+                 "Terminate",
+                 "Renew",
+                 "Mental Health",
+                 "Gun Permit",
+                 "Building Permit",
+                 "Birth Certificate",
+                 "Marriage License",
+                 null
+               ],
+               "description": ""
+             },
+             "CustomHtmlTemplates": {
+               "type": "string",
+               "title": "Custom HTML Templates",
+               "description": ""
+             },
+             "Type": {
+               "type": "string",
+               "title": "Type",
+               "enum": [
+                 "Contract",
+                 "Licensing & Permitting",
+                 null
+               ],
+               "enumNames": [
+                 "Contract",
+                 "Licensing & Permitting",
+                 null
+               ],
+               "description": ""
+             },
+             "VersionNumber": {
+               "type": "number",
+               "title": "Version Number",
+               "description": ""
+             },
+             "LastPreviewPage": {
+               "type": "string",
+               "title": "Last Preview Page",
+               "description": ""
+             },
+             "WebComponentKey": {
+               "type": "string",
+               "title": "Web Component Key",
+               "description": ""
+             },
+             "IsTestProcedure": {
+               "type": "boolean",
+               "title": "Test Procedure",
+               "description": ""
+             },
+             "OmniProcessType": {
+               "type": "string",
+               "title": "Omni Process Type",
+               "enum": [
+                 "OmniScript",
+                 "Integration Procedure",
+                 "Test Procedure",
+                 null
+               ],
+               "enumNames": [
+                 "OmniScript",
+                 "Integration Procedure",
+                 "Test Procedure",
+                 null
+               ],
+               "description": ""
+             },
+             "DesignerCustomizationType": {
+               "type": "string",
+               "title": "Designer Customization Type",
+               "description": ""
+             },
+             "UniqueName": {
+               "type": "string",
+               "title": "Unique Name",
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "description": ""
+             },
+             "OverrideKey": {
+               "type": "string",
+               "title": "Override Key",
+               "description": ""
+             },
+             "DiscoveryFrameworkUsageType": {
+               "type": "string",
+               "title": "Discovery Framework Usage Type",
+               "enum": [
+                 "Default",
+                 "HcUsageType",
+                 "LsCommercialUsageType",
+                 null
+               ],
+               "enumNames": [
+                 "Base Discovery Framework",
+                 "Health Cloud",
+                 "Ls Commercial",
+                 null
+               ],
+               "description": ""
+             },
+             "IsManagedUsingStdDesigner": {
+               "type": "boolean",
+               "title": "Managed Using Standard Designer",
+               "description": ""
+             },
+             "IsIntegProcdSignatureAvl": {
+               "type": "boolean",
+               "title": "Integration Procedure Signature Available",
+               "description": ""
+             },
+             "IntegrationProcedureInput": {
+               "type": "string",
+               "title": "Integration Procedure Input",
+               "description": ""
+             },
+             "IntegrationProcedureOutput": {
+               "type": "string",
+               "title": "Integration Procedure Output",
+               "description": ""
+             }
+           }
+         },
+         "icon": "standard:sales_path",
+         "label": "Omni Process",
+         "category": "omnistudio",
+         "color": "#9B59B6"
+       },
+       "parentId": "group_9a20590c-f7ab-46f5-9b7b-d13b03a50cc6",
+       "extent": "parent"
+     },
+     {
+       "id": "EntityDefinition/Contact_edb5807c-c9af-4f24-a901-346c401e11f2",
+       "type": "table",
+       "position": {
+         "x": 1272.7701767223368,
+         "y": 818.6559592301926
+       },
+       "data": {
+         "Id": "EntityDefinition/Contact",
+         "description": "[Core] Represents a contact, which is a person associated with an account.",
+         "schema": {
+           "type": "object",
+           "description": "[Core] Represents a contact, which is a person associated with an account.",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Contact ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "AccountId": {
+               "type": "string",
+               "title": "Account ID",
+               "x-target": "Account",
+               "description": ""
+             },
+             "IsPersonAccount": {
+               "type": "boolean",
+               "title": "Is Person Account",
+               "readOnly": true,
+               "description": "Read only. Indicates whether this account has a record type of Person Account (true) or not (false). Label is Is Person Account."
+             },
+             "LastName": {
+               "type": "string",
+               "title": "Last Name",
+               "description": "Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces."
+             },
+             "FirstName": {
+               "type": "string",
+               "title": "First Name",
+               "description": "Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces."
+             },
+             "Salutation": {
+               "type": "string",
+               "title": "Salutation",
+               "enum": [
+                 "Mr.",
+                 "Ms.",
+                 "Mrs.",
+                 "Dr.",
+                 "Prof.",
+                 "Mx.",
+                 null
+               ],
+               "enumNames": [
+                 "Mr.",
+                 "Ms.",
+                 "Mrs.",
+                 "Dr.",
+                 "Prof.",
+                 "Mx.",
+                 null
+               ],
+               "description": "Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Full Name",
+               "readOnly": true,
+               "description": "Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces."
+             },
+             "RecordTypeId": {
+               "type": "string",
+               "title": "Record Type ID",
+               "x-target": "RecordType",
+               "description": "Type of record"
+             },
+             "OtherStreet": {
+               "type": "string",
+               "title": "Other Street",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherCity": {
+               "type": "string",
+               "title": "Other City",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherState": {
+               "type": "string",
+               "title": "Other State/Province",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherPostalCode": {
+               "type": "string",
+               "title": "Other Zip/Postal Code",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherCountry": {
+               "type": "string",
+               "title": "Other Country",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherLatitude": {
+               "type": "number",
+               "title": "Other Latitude",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherLongitude": {
+               "type": "number",
+               "title": "Other Longitude",
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherGeocodeAccuracy": {
+               "type": "string",
+               "title": "Other Geocode Accuracy",
+               "enum": [
+                 "Address",
+                 "NearAddress",
+                 "Block",
+                 "Street",
+                 "ExtendedZip",
+                 "Zip",
+                 "Neighborhood",
+                 "City",
+                 "County",
+                 "State",
+                 "Unknown",
+                 null
+               ],
+               "enumNames": [
+                 "Address",
+                 "Near Address",
+                 "Block",
+                 "Street",
+                 "Extended Zip",
+                 "Zip",
+                 "Neighborhood",
+                 "City",
+                 "County",
+                 "State",
+                 "Unknown",
+                 null
+               ],
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "OtherAddress": {
+               "type": "string",
+               "title": "Other Address",
+               "readOnly": true,
+               "description": "The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingStreet": {
+               "type": "string",
+               "title": "Mailing Street",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingCity": {
+               "type": "string",
+               "title": "Mailing City",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingState": {
+               "type": "string",
+               "title": "Mailing State/Province",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingPostalCode": {
+               "type": "string",
+               "title": "Mailing Zip/Postal Code",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingCountry": {
+               "type": "string",
+               "title": "Mailing Country",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingLatitude": {
+               "type": "number",
+               "title": "Mailing Latitude",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingLongitude": {
+               "type": "number",
+               "title": "Mailing Longitude",
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingGeocodeAccuracy": {
+               "type": "string",
+               "title": "Mailing Geocode Accuracy",
+               "enum": [
+                 "Address",
+                 "NearAddress",
+                 "Block",
+                 "Street",
+                 "ExtendedZip",
+                 "Zip",
+                 "Neighborhood",
+                 "City",
+                 "County",
+                 "State",
+                 "Unknown",
+                 null
+               ],
+               "enumNames": [
+                 "Address",
+                 "Near Address",
+                 "Block",
+                 "Street",
+                 "Extended Zip",
+                 "Zip",
+                 "Neighborhood",
+                 "City",
+                 "County",
+                 "State",
+                 "Unknown",
+                 null
+               ],
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "MailingAddress": {
+               "type": "string",
+               "title": "Mailing Address",
+               "readOnly": true,
+               "description": "The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields."
+             },
+             "Phone": {
+               "type": "string",
+               "title": "Business Phone",
+               "description": "Phone number for the contact. Label is Business Phone."
+             },
+             "Fax": {
+               "type": "string",
+               "title": "Business Fax",
+               "description": "The contact’s fax number. Label is Business Fax."
+             },
+             "MobilePhone": {
+               "type": "string",
+               "title": "Mobile Phone",
+               "description": "Contact’s mobile phone number. Label is Mobile Phone."
+             },
+             "HomePhone": {
+               "type": "string",
+               "title": "Home Phone",
+               "description": "The contact’s home phone number. Label is Home Phone."
+             },
+             "OtherPhone": {
+               "type": "string",
+               "title": "Other Phone",
+               "description": "Phone for alternate address."
+             },
+             "AssistantPhone": {
+               "type": "string",
+               "title": "Asst. Phone",
+               "description": "The assistant’s phone number. Label is Asst. Phone."
+             },
+             "ReportsToId": {
+               "type": "string",
+               "title": "Reports To ID",
+               "x-target": "Contact",
+               "description": ""
+             },
+             "Email": {
+               "type": "string",
+               "title": "Email",
+               "format": "email",
+               "description": "The contact’s email address."
+             },
+             "Title": {
+               "type": "string",
+               "title": "Title",
+               "description": "Title of the contact, such as CEO or Vice President."
+             },
+             "Department": {
+               "type": "string",
+               "title": "Department",
+               "description": "The contact’s department."
+             },
+             "AssistantName": {
+               "type": "string",
+               "title": "Assistant's Name",
+               "description": "The assistant’s name."
+             },
+             "LeadSource": {
+               "type": "string",
+               "title": "Lead Source",
+               "enum": [
+                 "Website",
+                 "Social Media",
+                 "Marketing Event",
+                 "Referral",
+                 "Cold Call",
+                 "Data.com",
+                 "Partner",
+                 "Community",
+                 "Inbound Call",
+                 "Salesforce IoT",
+                 null
+               ],
+               "enumNames": [
+                 "Website",
+                 "Social Media",
+                 "Marketing Event",
+                 "Referral",
+                 "Cold Call",
+                 "Data.com",
+                 "Partner",
+                 "Community",
+                 "Inbound Call",
+                 "Salesforce IoT",
+                 null
+               ],
+               "description": "The source of the lead that was converted to this contact."
+             },
+             "Birthdate": {
+               "type": "string",
+               "title": "Birthdate",
+               "format": "date",
+               "description": "The contact’s birthdate.Filter criteria for report filters, list view filters, and SOQL queries ignore the year portion of the Birthdate field. For example, this SOQL query returns contacts with birthdays later in the year than today:SELECT Name, Birthdate FROM Contact WHERE Birthdate > TODAY"
+             },
+             "Description": {
+               "type": "string",
+               "title": "Contact Description",
+               "description": "A description of the contact. Label is Contact Description up to 32 KB."
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Contact Currency",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "HasOptedOutOfEmail": {
+               "type": "boolean",
+               "title": "Email Opt Out",
+               "description": "Indicates whether the contact doesn’t want to receive email from Salesforce (true) or does (false). Label is Email Opt Out."
+             },
+             "HasOptedOutOfFax": {
+               "type": "boolean",
+               "title": "Fax Opt Out",
+               "description": "Indicates whether the contact prohibits receiving faxes."
+             },
+             "DoNotCall": {
+               "type": "boolean",
+               "title": "Do Not Call",
+               "description": "Indicates that the contact doesn’t want to receive calls."
+             },
+             "CanAllowPortalSelfReg": {
+               "type": "boolean",
+               "title": "Allow Customer Portal Self-Registration",
+               "description": "Indicates whether this contact can self-register for your Customer Portal (true) or not (false)."
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "LastActivityDate": {
+               "type": "string",
+               "title": "Last Activity",
+               "format": "date",
+               "readOnly": true,
+               "description": "Value is the most recent of either: Due date of the most recent event logged against the record. Due date of the most recently closed task associated with the record."
+             },
+             "LastCURequestDate": {
+               "type": "string",
+               "title": "Last Stay-in-Touch Request Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": ""
+             },
+             "LastCUUpdateDate": {
+               "type": "string",
+               "title": "Last Stay-in-Touch Save Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": ""
+             },
+             "EmailBouncedReason": {
+               "type": "string",
+               "title": "Email Bounced Reason",
+               "description": "If bounce management is activated and an email sent to the contact bounces, the reason for the bounce."
+             },
+             "EmailBouncedDate": {
+               "type": "string",
+               "title": "Email Bounced Date",
+               "format": "date-time",
+               "description": "If bounce management is activated and an email sent to the contact bounces, the date and time of the bounce."
+             },
+             "IsEmailBounced": {
+               "type": "boolean",
+               "title": "Is Email Bounced",
+               "readOnly": true,
+               "description": "If bounce management is activated and an email is sent to a contact, indicates whether the email bounced (true) or not (false)."
+             },
+             "PhotoUrl": {
+               "type": "string",
+               "title": "Photo URL",
+               "readOnly": true,
+               "description": ""
+             },
+             "Jigsaw": {
+               "type": "string",
+               "title": "Data.com Key",
+               "description": "References the company’s ID in Data.com. If an account has a value in this field, it means that the account was imported from Data.com. If the field value is null, the account wasn’t imported from Data.com. Maximum size is 20 characters. Available in API version 22.0 and later. Label is Data.com Key. Important The Jigsaw field is exposed in the API to support troubleshooting for import errors and reimporting of corrected data. Do not modify this value."
+             },
+             "JigsawContactId": {
+               "type": "string",
+               "title": "Jigsaw Contact ID",
+               "readOnly": true,
+               "description": ""
+             },
+             "IndividualId": {
+               "type": "string",
+               "title": "Individual ID",
+               "x-target": "Individual",
+               "description": ""
+             },
+             "MaritalStatus": {
+               "type": "string",
+               "title": "Marital Status",
+               "enum": [
+                 "Married",
+                 "Single",
+                 "Divorced",
+                 "Widowed",
+                 "Separated",
+                 null
+               ],
+               "enumNames": [
+                 "Married",
+                 "Single",
+                 "Divorced",
+                 "Widowed",
+                 "Separated",
+                 null
+               ],
+               "description": ""
+             },
+             "Gender": {
+               "type": "string",
+               "title": "Gender",
+               "enum": [
+                 "Male",
+                 "Female",
+                 "Other",
+                 "Unknown",
+                 null
+               ],
+               "enumNames": [
+                 "Male",
+                 "Female",
+                 "Other",
+                 "Unknown",
+                 null
+               ],
+               "description": ""
+             },
+             "DeceasedDate": {
+               "type": "string",
+               "title": "Deceased Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "SequenceInMultipleBirth": {
+               "type": "integer",
+               "title": "Multiple Birth Sequence",
+               "description": ""
+             },
+             "Pronouns": {
+               "type": "string",
+               "title": "Pronouns",
+               "enum": [
+                 "He/Him",
+                 "She/Her",
+                 "They/Them",
+                 "He/They",
+                 "She/They",
+                 "Not Listed",
+                 null
+               ],
+               "enumNames": [
+                 "He/Him",
+                 "She/Her",
+                 "They/Them",
+                 "He/They",
+                 "She/They",
+                 "Not Listed",
+                 null
+               ],
+               "description": "The contact’s personal pronouns, reflecting their gender identity. Others can use these pronouns to refer to the contact in the third person. The entry is selected from a picklist of available values, which the administrator sets. Maximum 40 characters."
+             },
+             "GenderIdentity": {
+               "type": "string",
+               "title": "Gender Identity",
+               "enum": [
+                 "Male",
+                 "Female",
+                 "Nonbinary",
+                 "Not Listed",
+                 null
+               ],
+               "enumNames": [
+                 "Male",
+                 "Female",
+                 "Nonbinary",
+                 "Not Listed",
+                 null
+               ],
+               "description": "The contact’s internal experience of their gender, which may or may not correspond to their designated sex at birth."
+             },
+             "HasPrivacyHold": {
+               "type": "boolean",
+               "title": "Privacy Hold",
+               "readOnly": true,
+               "description": ""
+             },
+             "EngagementScoreId": {
+               "type": "string",
+               "title": "Behavior Score ID",
+               "x-target": "EngagementScore",
+               "readOnly": true,
+               "description": ""
+             },
+             "IsPriorityRecord": {
+               "type": "boolean",
+               "title": "Important",
+               "readOnly": true,
+               "description": ""
+             },
+             "ContactSource": {
+               "type": "string",
+               "title": "Creation Source",
+               "enum": [
+                 "Auto Create",
+                 null
+               ],
+               "enumNames": [
+                 "Auto Create",
+                 null
+               ],
+               "description": ""
+             },
+             "TitleType": {
+               "type": "string",
+               "title": "Seniority Level",
+               "enum": [
+                 "ceo",
+                 "executive",
+                 "vp",
+                 "directorOrManager",
+                 "individualContributor",
+                 null
+               ],
+               "enumNames": [
+                 "CEO",
+                 "Executive",
+                 "VP",
+                 "Director or Manager",
+                 "Individual Contributor",
+                 null
+               ],
+               "description": ""
+             },
+             "DepartmentGroup": {
+               "type": "string",
+               "title": "Department Group",
+               "enum": [
+                 "chiefExecutive",
+                 "sales",
+                 "finance",
+                 "tech",
+                 "support",
+                 "legal",
+                 "humanResources",
+                 "customerSuccess",
+                 "marketing",
+                 "other",
+                 null
+               ],
+               "enumNames": [
+                 "Chief Executive",
+                 "Sales",
+                 "Finance",
+                 "Tech",
+                 "Support",
+                 "Legal",
+                 "Human Resources",
+                 "Customer Success",
+                 "Marketing",
+                 "Other",
+                 null
+               ],
+               "description": ""
+             },
+             "BuyerAttributes": {
+               "type": "string",
+               "title": "Buyer Attributes",
+               "description": ""
+             },
+             "EDY_ORGCUSTOM__DB__c": {
+               "type": "boolean",
+               "title": "DB",
+               "description": ""
+             },
+             "EDY_ORGCUSTOM__Old_Title__c": {
+               "type": "string",
+               "title": "Old Title",
+               "description": ""
+             },
+             "External_ID__c": {
+               "type": "string",
+               "title": "External ID",
+               "description": ""
+             },
+             "SDO_PA_Inclusive_Preferred_Name__c": {
+               "type": "string",
+               "title": "Preferred Name",
+               "description": ""
+             },
+             "SDO_PA_Inclusive_Pronouns__c": {
+               "type": "string",
+               "title": "Preferred Pronoun",
+               "enum": [
+                 "He/Him/His",
+                 "She/Her/Hers",
+                 "They/Them/Theirs",
+                 "Other",
+                 null
+               ],
+               "enumNames": [
+                 "He/Him/His",
+                 "She/Her/Hers",
+                 "They/Them/Theirs",
+                 "Other/Ask Me",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_PA_Inclusive_TDD_TTY__c": {
+               "type": "boolean",
+               "title": "TDD / TTY Required",
+               "description": ""
+             },
+             "SDO_PA_Preferred_Contact_Channel__c": {
+               "type": "string",
+               "title": "Preferred Contact Channel",
+               "enum": [
+                 "Email",
+                 "Facebook Messenger",
+                 "Home Phone",
+                 "Mobile Phone",
+                 "SMS",
+                 "WhatsApp",
+                 null
+               ],
+               "enumNames": [
+                 "Email",
+                 "Facebook Messenger",
+                 "Home Phone",
+                 "Mobile Phone",
+                 "SMS",
+                 "WhatsApp",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_Cust360_CSAT__c": {
+               "type": "number",
+               "title": "Cust360 CSAT",
+               "description": ""
+             },
+             "SDO_Cust360_ChurnRisk__c": {
+               "type": "number",
+               "title": "Risk of Churn",
+               "description": ""
+             },
+             "SDO_Cust360_Contact_Picture_URL__c": {
+               "type": "string",
+               "title": "Cust360 Contact Picture URL",
+               "description": ""
+             },
+             "SDO_Cust360_Id__c": {
+               "type": "string",
+               "title": "Cust360 Id",
+               "description": ""
+             },
+             "SDO_Cust360_Metric1__c": {
+               "type": "string",
+               "title": "Cust360 Metric 1",
+               "description": ""
+             },
+             "SDO_Cust360_Metric2__c": {
+               "type": "string",
+               "title": "Cust360 Metric 2",
+               "description": ""
+             },
+             "SDO_PA_Year_of_Birth__c": {
+               "type": "string",
+               "title": "Year of Birth",
+               "enum": [
+                 "2012",
+                 "2011",
+                 "2010",
+                 "2009",
+                 "2008",
+                 "2007",
+                 "2006",
+                 "2005",
+                 "2004",
+                 "2003",
+                 "2002",
+                 "2001",
+                 "2000",
+                 "1999",
+                 "1998",
+                 "1997",
+                 "1996",
+                 "1995",
+                 "1994",
+                 "1993",
+                 "1992",
+                 "1991",
+                 "1990",
+                 "1989",
+                 "1988",
+                 "1987",
+                 "1986",
+                 "1985",
+                 "1984",
+                 "1983",
+                 "1982",
+                 "1981",
+                 "1980",
+                 "1979",
+                 "1978",
+                 "1977",
+                 "1976",
+                 "1975",
+                 "1974",
+                 "1973",
+                 "1972",
+                 "1971",
+                 "1970",
+                 "1969",
+                 "1968",
+                 "1967",
+                 "1966",
+                 "1965",
+                 "1964",
+                 "1963",
+                 "1962",
+                 "1961",
+                 "1960",
+                 "1959",
+                 "1958",
+                 "1957",
+                 "1956",
+                 "1955",
+                 "1954",
+                 "1953",
+                 "1952",
+                 "1951",
+                 "1950",
+                 "1949",
+                 "1948",
+                 "1947",
+                 "1946",
+                 "1945",
+                 "1944",
+                 "1943",
+                 "1942",
+                 "1941",
+                 "1940",
+                 "1939",
+                 "1938",
+                 "1937",
+                 "1936",
+                 "1935",
+                 "1934",
+                 "1933",
+                 "1932",
+                 "1931",
+                 "1930",
+                 "1929",
+                 "1928",
+                 "1927",
+                 "1926",
+                 "1925",
+                 "1924",
+                 "1923",
+                 "1922",
+                 "1921",
+                 "1920",
+                 null
+               ],
+               "enumNames": [
+                 "2012",
+                 "2011",
+                 "2010",
+                 "2009",
+                 "2008",
+                 "2007",
+                 "2006",
+                 "2005",
+                 "2004",
+                 "2003",
+                 "2002",
+                 "2001",
+                 "2000",
+                 "1999",
+                 "1998",
+                 "1997",
+                 "1996",
+                 "1995",
+                 "1994",
+                 "1993",
+                 "1992",
+                 "1991",
+                 "1990",
+                 "1989",
+                 "1988",
+                 "1987",
+                 "1986",
+                 "1985",
+                 "1984",
+                 "1983",
+                 "1982",
+                 "1981",
+                 "1980",
+                 "1979",
+                 "1978",
+                 "1977",
+                 "1976",
+                 "1975",
+                 "1974",
+                 "1973",
+                 "1972",
+                 "1971",
+                 "1970",
+                 "1969",
+                 "1968",
+                 "1967",
+                 "1966",
+                 "1965",
+                 "1964",
+                 "1963",
+                 "1962",
+                 "1961",
+                 "1960",
+                 "1959",
+                 "1958",
+                 "1957",
+                 "1956",
+                 "1955",
+                 "1954",
+                 "1953",
+                 "1952",
+                 "1951",
+                 "1950",
+                 "1949",
+                 "1948",
+                 "1947",
+                 "1946",
+                 "1945",
+                 "1944",
+                 "1943",
+                 "1942",
+                 "1941",
+                 "1940",
+                 "1939",
+                 "1938",
+                 "1937",
+                 "1936",
+                 "1935",
+                 "1934",
+                 "1933",
+                 "1932",
+                 "1931",
+                 "1930",
+                 "1929",
+                 "1928",
+                 "1927",
+                 "1926",
+                 "1925",
+                 "1924",
+                 "1923",
+                 "1922",
+                 "1921",
+                 "1920",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_Service_Month_of_Birth__c": {
+               "type": "string",
+               "title": "Month of Birth",
+               "enum": [
+                 "January",
+                 "February",
+                 "March",
+                 "April",
+                 "May",
+                 "June",
+                 "July",
+                 "August",
+                 "September",
+                 "October",
+                 "November",
+                 "December",
+                 null
+               ],
+               "enumNames": [
+                 "January",
+                 "February",
+                 "March",
+                 "April",
+                 "May",
+                 "June",
+                 "July",
+                 "August",
+                 "September",
+                 "October",
+                 "November",
+                 "December",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_Service_Primary_Messaging_User__c": {
+               "type": "string",
+               "title": "Primary Messaging User",
+               "x-target": "MessagingEndUser",
+               "description": ""
+             },
+             "SDO_Service_SMS_Message__c": {
+               "type": "string",
+               "title": "SMS Message",
+               "description": ""
+             },
+             "Notes__c": {
+               "type": "string",
+               "title": "Notes",
+               "description": ""
+             },
+             "SDO_SFS_Rider_BotContext__c": {
+               "type": "string",
+               "title": "Rider Context",
+               "x-target": "ServiceAppointment",
+               "description": ""
+             },
+             "SDO_SFS_Rider_Enabled__c": {
+               "type": "boolean",
+               "title": "Rider Enabled",
+               "description": ""
+             },
+             "SDO_SFS_Rider_ServiceTerritory__c": {
+               "type": "string",
+               "title": "Rider Service Territory",
+               "x-target": "ServiceTerritory",
+               "description": ""
+             },
+             "et4ae5__HasOptedOutOfMobile__c": {
+               "type": "boolean",
+               "title": "Mobile Opt Out",
+               "description": ""
+             },
+             "et4ae5__Mobile_Country_Code__c": {
+               "type": "string",
+               "title": "Mobile Country Code",
+               "enum": [
+                 "US",
+                 "AC",
+                 "AD",
+                 "AE",
+                 "AF",
+                 "AG",
+                 "AI",
+                 "AL",
+                 "AM",
+                 "AO",
+                 "AQ",
+                 "AR",
+                 "AS",
+                 "AT",
+                 "AU",
+                 "AW",
+                 "AX",
+                 "AZ",
+                 "BA",
+                 "BB",
+                 "BD",
+                 "BE",
+                 "BF",
+                 "BG",
+                 "BH",
+                 "BI",
+                 "BJ",
+                 "BL",
+                 "BM",
+                 "BN",
+                 "BO",
+                 "BQ",
+                 "BR",
+                 "BS",
+                 "BT",
+                 "BV",
+                 "BW",
+                 "BY",
+                 "BZ",
+                 "CA",
+                 "CC",
+                 "CD",
+                 "CF",
+                 "CG",
+                 "CH",
+                 "CI",
+                 "CK",
+                 "CL",
+                 "CM",
+                 "CN",
+                 "CO",
+                 "CR",
+                 "CU",
+                 "CV",
+                 "CW",
+                 "CX",
+                 "CY",
+                 "CZ",
+                 "DE",
+                 "DJ",
+                 "DK",
+                 "DM",
+                 "DO",
+                 "DZ",
+                 "EC",
+                 "EE",
+                 "EG",
+                 "ER",
+                 "ES",
+                 "ET",
+                 "FI",
+                 "FJ",
+                 "FK",
+                 "FM",
+                 "FO",
+                 "FR",
+                 "GA",
+                 "GB",
+                 "GD",
+                 "GE",
+                 "GF",
+                 "GG",
+                 "GH",
+                 "GI",
+                 "GL",
+                 "GM",
+                 "GN",
+                 "GP",
+                 "GQ",
+                 "GR",
+                 "GS",
+                 "GT",
+                 "GU",
+                 "GW",
+                 "GY",
+                 "HK",
+                 "HM",
+                 "HN",
+                 "HR",
+                 "HT",
+                 "HU",
+                 "ID",
+                 "IE",
+                 "IL",
+                 "IM",
+                 "IN",
+                 "IO",
+                 "IQ",
+                 "IR",
+                 "IS",
+                 "IT",
+                 "JE",
+                 "JM",
+                 "JO",
+                 "JP",
+                 "KE",
+                 "KG",
+                 "KH",
+                 "KI",
+                 "KM",
+                 "KN",
+                 "KP",
+                 "KR",
+                 "KW",
+                 "KY",
+                 "KZ",
+                 "LA",
+                 "LB",
+                 "LC",
+                 "LI",
+                 "LK",
+                 "LR",
+                 "LS",
+                 "LT",
+                 "LU",
+                 "LV",
+                 "LY",
+                 "MA",
+                 "MC",
+                 "MD",
+                 "ME",
+                 "MF",
+                 "MG",
+                 "MH",
+                 "MK",
+                 "ML",
+                 "MM",
+                 "MN",
+                 "MO",
+                 "MP",
+                 "MQ",
+                 "MR",
+                 "MS",
+                 "MT",
+                 "MU",
+                 "MV",
+                 "MW",
+                 "MX",
+                 "MY",
+                 "MZ",
+                 "NA",
+                 "NC",
+                 "NE",
+                 "NF",
+                 "NG",
+                 "NI",
+                 "NL",
+                 "NO",
+                 "NP",
+                 "NR",
+                 "NU",
+                 "NZ",
+                 "OM",
+                 "PA",
+                 "PE",
+                 "PF",
+                 "PG",
+                 "PH",
+                 "PK",
+                 "PL",
+                 "PM",
+                 "PN",
+                 "PR",
+                 "PS",
+                 "PT",
+                 "PW",
+                 "PY",
+                 "QA",
+                 "RE",
+                 "RO",
+                 "RS",
+                 "RU",
+                 "RW",
+                 "SA",
+                 "SB",
+                 "SC",
+                 "SD",
+                 "SE",
+                 "SG",
+                 "SH",
+                 "SI",
+                 "SJ",
+                 "SK",
+                 "SL",
+                 "SM",
+                 "SN",
+                 "SO",
+                 "SR",
+                 "SS",
+                 "ST",
+                 "SV",
+                 "SX",
+                 "SY",
+                 "SZ",
+                 "TA",
+                 "TC",
+                 "TD",
+                 "TG",
+                 "TH",
+                 "TJ",
+                 "TK",
+                 "TL",
+                 "TM",
+                 "TN",
+                 "TO",
+                 "TR",
+                 "TT",
+                 "TV",
+                 "TW",
+                 "TZ",
+                 "UA",
+                 "UG",
+                 "UY",
+                 "UZ",
+                 "VA",
+                 "VC",
+                 "VE",
+                 "VG",
+                 "VI",
+                 "VN",
+                 "VU",
+                 "WF",
+                 "WS",
+                 "YE",
+                 "YT",
+                 "ZA",
+                 "ZM",
+                 "ZW",
+                 null
+               ],
+               "enumNames": [
+                 "US",
+                 "AC",
+                 "AD",
+                 "AE",
+                 "AF",
+                 "AG",
+                 "AI",
+                 "AL",
+                 "AM",
+                 "AO",
+                 "AQ",
+                 "AR",
+                 "AS",
+                 "AT",
+                 "AU",
+                 "AW",
+                 "AX",
+                 "AZ",
+                 "BA",
+                 "BB",
+                 "BD",
+                 "BE",
+                 "BF",
+                 "BG",
+                 "BH",
+                 "BI",
+                 "BJ",
+                 "BL",
+                 "BM",
+                 "BN",
+                 "BO",
+                 "BQ",
+                 "BR",
+                 "BS",
+                 "BT",
+                 "BV",
+                 "BW",
+                 "BY",
+                 "BZ",
+                 "CA",
+                 "CC",
+                 "CD",
+                 "CF",
+                 "CG",
+                 "CH",
+                 "CI",
+                 "CK",
+                 "CL",
+                 "CM",
+                 "CN",
+                 "CO",
+                 "CR",
+                 "CU",
+                 "CV",
+                 "CW",
+                 "CX",
+                 "CY",
+                 "CZ",
+                 "DE",
+                 "DJ",
+                 "DK",
+                 "DM",
+                 "DO",
+                 "DZ",
+                 "EC",
+                 "EE",
+                 "EG",
+                 "ER",
+                 "ES",
+                 "ET",
+                 "FI",
+                 "FJ",
+                 "FK",
+                 "FM",
+                 "FO",
+                 "FR",
+                 "GA",
+                 "GB",
+                 "GD",
+                 "GE",
+                 "GF",
+                 "GG",
+                 "GH",
+                 "GI",
+                 "GL",
+                 "GM",
+                 "GN",
+                 "GP",
+                 "GQ",
+                 "GR",
+                 "GS",
+                 "GT",
+                 "GU",
+                 "GW",
+                 "GY",
+                 "HK",
+                 "HM",
+                 "HN",
+                 "HR",
+                 "HT",
+                 "HU",
+                 "ID",
+                 "IE",
+                 "IL",
+                 "IM",
+                 "IN",
+                 "IO",
+                 "IQ",
+                 "IR",
+                 "IS",
+                 "IT",
+                 "JE",
+                 "JM",
+                 "JO",
+                 "JP",
+                 "KE",
+                 "KG",
+                 "KH",
+                 "KI",
+                 "KM",
+                 "KN",
+                 "KP",
+                 "KR",
+                 "KW",
+                 "KY",
+                 "KZ",
+                 "LA",
+                 "LB",
+                 "LC",
+                 "LI",
+                 "LK",
+                 "LR",
+                 "LS",
+                 "LT",
+                 "LU",
+                 "LV",
+                 "LY",
+                 "MA",
+                 "MC",
+                 "MD",
+                 "ME",
+                 "MF",
+                 "MG",
+                 "MH",
+                 "MK",
+                 "ML",
+                 "MM",
+                 "MN",
+                 "MO",
+                 "MP",
+                 "MQ",
+                 "MR",
+                 "MS",
+                 "MT",
+                 "MU",
+                 "MV",
+                 "MW",
+                 "MX",
+                 "MY",
+                 "MZ",
+                 "NA",
+                 "NC",
+                 "NE",
+                 "NF",
+                 "NG",
+                 "NI",
+                 "NL",
+                 "NO",
+                 "NP",
+                 "NR",
+                 "NU",
+                 "NZ",
+                 "OM",
+                 "PA",
+                 "PE",
+                 "PF",
+                 "PG",
+                 "PH",
+                 "PK",
+                 "PL",
+                 "PM",
+                 "PN",
+                 "PR",
+                 "PS",
+                 "PT",
+                 "PW",
+                 "PY",
+                 "QA",
+                 "RE",
+                 "RO",
+                 "RS",
+                 "RU",
+                 "RW",
+                 "SA",
+                 "SB",
+                 "SC",
+                 "SD",
+                 "SE",
+                 "SG",
+                 "SH",
+                 "SI",
+                 "SJ",
+                 "SK",
+                 "SL",
+                 "SM",
+                 "SN",
+                 "SO",
+                 "SR",
+                 "SS",
+                 "ST",
+                 "SV",
+                 "SX",
+                 "SY",
+                 "SZ",
+                 "TA",
+                 "TC",
+                 "TD",
+                 "TG",
+                 "TH",
+                 "TJ",
+                 "TK",
+                 "TL",
+                 "TM",
+                 "TN",
+                 "TO",
+                 "TR",
+                 "TT",
+                 "TV",
+                 "TW",
+                 "TZ",
+                 "UA",
+                 "UG",
+                 "UY",
+                 "UZ",
+                 "VA",
+                 "VC",
+                 "VE",
+                 "VG",
+                 "VI",
+                 "VN",
+                 "VU",
+                 "WF",
+                 "WS",
+                 "YE",
+                 "YT",
+                 "ZA",
+                 "ZM",
+                 "ZW",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_Certification_Level_c__c": {
+               "type": "string",
+               "title": "Certification Level",
+               "enum": [
+                 "Associate",
+                 "Professional",
+                 "Expert",
+                 "Architect",
+                 null
+               ],
+               "enumNames": [
+                 "Associate",
+                 "Professional",
+                 "Expert",
+                 "Architect",
+                 null
+               ],
+               "description": ""
+             },
+             "pi__Needs_Score_Synced__c": {
+               "type": "boolean",
+               "title": "Needs Score Synced",
+               "description": ""
+             },
+             "pi__Pardot_Last_Scored_At__c": {
+               "type": "string",
+               "title": "Account Engagement Last Scored At",
+               "format": "date-time",
+               "description": ""
+             },
+             "pi__campaign__c": {
+               "type": "string",
+               "title": "Account Engagement Campaign",
+               "description": ""
+             },
+             "pi__comments__c": {
+               "type": "string",
+               "title": "Account Engagement Comments",
+               "description": ""
+             },
+             "pi__conversion_date__c": {
+               "type": "string",
+               "title": "Account Engagement Conversion Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "pi__conversion_object_name__c": {
+               "type": "string",
+               "title": "Conversion Object Name",
+               "description": ""
+             },
+             "pi__conversion_object_type__c": {
+               "type": "string",
+               "title": "Conversion Object Type",
+               "description": ""
+             },
+             "pi__created_date__c": {
+               "type": "string",
+               "title": "Account Engagement Created Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "pi__first_activity__c": {
+               "type": "string",
+               "title": "Account Engagement First Activity",
+               "format": "date-time",
+               "description": ""
+             },
+             "pi__first_search_term__c": {
+               "type": "string",
+               "title": "Account Engagement First Referrer Query",
+               "description": ""
+             },
+             "pi__first_search_type__c": {
+               "type": "string",
+               "title": "Account Engagement First Referrer Type",
+               "description": ""
+             },
+             "pi__first_touch_url__c": {
+               "type": "string",
+               "title": "Account Engagement First Referrer",
+               "description": ""
+             },
+             "pi__grade__c": {
+               "type": "string",
+               "title": "Account Engagement Grade",
+               "description": ""
+             },
+             "pi__last_activity__c": {
+               "type": "string",
+               "title": "Account Engagement Last Activity",
+               "format": "date-time",
+               "description": ""
+             },
+             "pi__notes__c": {
+               "type": "string",
+               "title": "Account Engagement Notes",
+               "description": ""
+             },
+             "pi__pardot_hard_bounced__c": {
+               "type": "boolean",
+               "title": "Account Engagement Hard Bounced",
+               "description": ""
+             },
+             "pi__score__c": {
+               "type": "number",
+               "title": "Account Engagement Score",
+               "description": ""
+             },
+             "pi__url__c": {
+               "type": "string",
+               "title": "Account Engagement URL",
+               "description": ""
+             },
+             "pi__utm_campaign__c": {
+               "type": "string",
+               "title": "Google Analytics Campaign",
+               "description": ""
+             },
+             "pi__utm_content__c": {
+               "type": "string",
+               "title": "Google Analytics Content",
+               "description": ""
+             },
+             "pi__utm_medium__c": {
+               "type": "string",
+               "title": "Google Analytics Medium",
+               "description": ""
+             },
+             "pi__utm_source__c": {
+               "type": "string",
+               "title": "Google Analytics Source",
+               "description": ""
+             },
+             "pi__utm_term__c": {
+               "type": "string",
+               "title": "Google Analytics Term",
+               "description": ""
+             },
+             "Ptnr_Onbd_Fmwk__Onboarding_Plan__c": {
+               "type": "string",
+               "title": "Onboarding Template",
+               "x-target": "Ptnr_Onbd_Fmwk__Onboarding__c",
+               "description": ""
+             },
+             "Ptnr_Onbd_Fmwk__Onboarding_Start_Date__c": {
+               "type": "string",
+               "title": "Onboarding Start Date",
+               "format": "date",
+               "description": ""
+             },
+             "Ptnr_Onbd_Fmwk__Onboarding_Status__c": {
+               "type": "string",
+               "title": "Onboarding Status",
+               "enum": [
+                 "Not Started",
+                 "In Progress",
+                 "Completed",
+                 null
+               ],
+               "enumNames": [
+                 "Not Started",
+                 "In Progress",
+                 "Completed",
+                 null
+               ],
+               "description": ""
+             },
+             "Ptnr_Onbd_Fmwk__Role_Function__c": {
+               "type": "string",
+               "title": "Role Function",
+               "enum": [
+                 "Manager",
+                 "Marketing",
+                 "Sales",
+                 "Service",
+                 "All",
+                 "Technical",
+                 null
+               ],
+               "enumNames": [
+                 "Manager",
+                 "Marketing",
+                 "Sales",
+                 "Service",
+                 "All",
+                 "Technical",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_MAPS_Dataset_Split__c": {
+               "type": "number",
+               "title": "Contact Dataset Split",
+               "description": ""
+             },
+             "SDO_MAPS_Days_Since_Last_Visit__c": {
+               "type": "number",
+               "title": "Days Since Last Visit",
+               "description": ""
+             },
+             "SDO_MAPS_Tag_Contact__c": {
+               "type": "string",
+               "title": "Tag Contact",
+               "description": ""
+             },
+             "SDO_MAPS_Value_Tier__c": {
+               "type": "string",
+               "title": "Value Tier",
+               "description": ""
+             },
+             "SDO_SFS_Tracker_BotContext__c": {
+               "type": "string",
+               "title": "Tracker BotContext",
+               "x-target": "ServiceAppointment",
+               "description": ""
+             },
+             "SDO_SCOM_OOA_Access__c": {
+               "type": "string",
+               "title": "B2B Access",
+               "enum": [
+                 "Admin",
+                 "Finance",
+                 "Buyer",
+                 "Viewer",
+                 null
+               ],
+               "enumNames": [
+                 "Admin",
+                 "Finance",
+                 "Buyer",
+                 "Viewer",
+                 null
+               ],
+               "description": ""
+             },
+             "SDO_SCOM_OOA_Approver__c": {
+               "type": "string",
+               "title": "B2B Approver",
+               "x-target": "Contact",
+               "description": ""
+             },
+             "SDO_SCOM_OOA_Budget_Limit__c": {
+               "type": "number",
+               "title": "B2B Budget Limit",
+               "description": ""
+             }
+           }
+         },
+         "icon": "standard:contact",
+         "label": "Contact",
+         "category": "Core",
+         "color": "#0070D2"
+       },
+       "parentId": "group_06e78098-b5a9-45ec-816f-f52a95679bcc",
+       "extent": "parent"
+     },
+     {
+       "id": "annotation_52982e50-919e-4569-85e3-44e67ddcae99",
+       "type": "annotation",
+       "position": {
+         "x": 734.4316666455163,
+         "y": -954.0028114097116
+       },
+       "data": {
+         "label": "Client Data",
+         "level": "2",
+         "icon": "standard:note",
+         "color": "transparent"
+       },
+       "width": 200,
+       "height": 120
+     },
+     {
+       "id": "legend_75d7789f-4332-4de3-bd89-425dd0edfa9e",
+       "type": "legend",
+       "position": {
+         "x": -1231.8071512086358,
+         "y": -275.45204396355984
+       },
+       "data": {
+         "label": "Legend",
+         "icon": "standard:record",
+         "color": "rgba(255, 255, 255, 0.95)",
+         "showCount": true
+       },
+       "width": 280
+     }
+   ],
+   "edges": [
+     {
+       "id": "Assessment.ContactId.Contact.Id",
+       "source": "Assessment",
+       "sourceHandle": "ContactId-source",
+       "target": "EntityDefinition/Contact_edb5807c-c9af-4f24-a901-346c401e11f2",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "Assessment.OmniProcessId.OmniProcess.Id",
+       "source": "Assessment",
+       "sourceHandle": "OmniProcessId-source-inv",
+       "target": "EntityDefinition/OmniProcess_78376815-804b-4a74-9dff-42b113f425fc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentDefinition.OmniProcessId.OmniProcess.Id",
+       "source": "AssessmentDefinition",
+       "sourceHandle": "OmniProcessId-source-inv",
+       "target": "EntityDefinition/OmniProcess_78376815-804b-4a74-9dff-42b113f425fc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentEnvelope.ContactId.Contact.Id",
+       "source": "AssessmentEnvelope",
+       "sourceHandle": "ContactId-source",
+       "target": "EntityDefinition/Contact_edb5807c-c9af-4f24-a901-346c401e11f2",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentEnvelopeItem.AssessmentEnvelopeId.AssessmentEnvelope.Id",
+       "source": "AssessmentEnvelopeItem",
+       "sourceHandle": "AssessmentEnvelopeId-source",
+       "target": "AssessmentEnvelope",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentEnvelopeItem.AssessmentId.Assessment.Id",
+       "source": "AssessmentEnvelopeItem",
+       "sourceHandle": "AssessmentId-source-inv",
+       "target": "Assessment",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentEnvelopeItem.OmniProcessId.OmniProcess.Id",
+       "source": "AssessmentEnvelopeItem",
+       "sourceHandle": "OmniProcessId-source-inv",
+       "target": "EntityDefinition/OmniProcess_78376815-804b-4a74-9dff-42b113f425fc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestion.ActiveVersionId.AssessmentQuestionVersion.Id",
+       "source": "AssessmentQuestion",
+       "sourceHandle": "ActiveVersionId-source",
+       "target": "EntityDefinition/AssessmentQuestionVersion_26b0f0a5-625d-43df-abdc-df67d665a3cc",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionAssignment.AssessmentQuestionId.AssessmentQuestion.Id",
+       "source": "AssessmentQuestionAssignment",
+       "sourceHandle": "AssessmentQuestionId-source",
+       "target": "AssessmentQuestion",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionAssignment.AssessmentQuestionSetId.AssessmentQuestionSet.Id",
+       "source": "AssessmentQuestionAssignment",
+       "sourceHandle": "AssessmentQuestionSetId-source-inv",
+       "target": "AssessmentQuestionSet",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionResponse.AssessmentId.Assessment.Id",
+       "source": "AssessmentQuestionResponse",
+       "sourceHandle": "AssessmentId-source-inv",
+       "target": "Assessment",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionResponse.AssessmentQuestionId.AssessmentQuestionVersion.Id",
+       "source": "AssessmentQuestionResponse",
+       "sourceHandle": "AssessmentQuestionId-source-inv",
+       "target": "EntityDefinition/AssessmentQuestionVersion_26b0f0a5-625d-43df-abdc-df67d665a3cc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionResponse.ParentAsmtQuestionVersionId.AssessmentQuestionVersion.Id",
+       "source": "AssessmentQuestionResponse",
+       "sourceHandle": "ParentAsmtQuestionVersionId-source-inv",
+       "target": "EntityDefinition/AssessmentQuestionVersion_26b0f0a5-625d-43df-abdc-df67d665a3cc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentSavedSession.AssessmentId.Assessment.Id",
+       "source": "AssessmentSavedSession",
+       "sourceHandle": "AssessmentId-source-inv",
+       "target": "Assessment",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentSignature.AssessmentId.Assessment.Id",
+       "source": "AssessmentSignature",
+       "sourceHandle": "AssessmentId-source-inv",
+       "target": "Assessment",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentSignature.SigneeId.Contact.Id",
+       "source": "AssessmentSignature",
+       "sourceHandle": "SigneeId-source",
+       "target": "EntityDefinition/Contact_edb5807c-c9af-4f24-a901-346c401e11f2",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentTask.AssessmentTaskDefinitionId.AssessmentTaskDefinition.Id",
+       "source": "AssessmentTask",
+       "sourceHandle": "AssessmentTaskDefinitionId-source",
+       "target": "AssessmentTaskDefinition",
+       "label": "",
+       "targetHandle": "Id-target",
+       "type": "betweenTables",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentTaskContentDocument.AssessmentTaskId.AssessmentTask.Id",
+       "source": "AssessmentTaskContentDocument",
+       "sourceHandle": "AssessmentTaskId-source-inv",
+       "target": "AssessmentTask",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentTaskIndDefinition.AssessmentTaskDefinitionId.AssessmentTaskDefinition.Id",
+       "source": "AssessmentTaskIndDefinition",
+       "sourceHandle": "AssessmentTaskDefinitionId-source-inv",
+       "target": "AssessmentTaskDefinition",
+       "label": "Secondary",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "AssessmentQuestionVersion.AssessmentQuestionId.AssessmentQuestion.Id",
+       "source": "EntityDefinition/AssessmentQuestionVersion_26b0f0a5-625d-43df-abdc-df67d665a3cc",
+       "sourceHandle": "AssessmentQuestionId-source-inv",
+       "target": "AssessmentQuestion",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "source": "AssessmentQuestionAssignment",
+       "sourceHandle": "AssessmentQuestionAssignment-top-1-source-inv",
+       "target": "AssessmentQuestionAssignment",
+       "targetHandle": "AssessmentQuestionAssignment-top-3-target-inv",
+       "type": "betweenTablesInverted",
+       "markerEnd": {
+         "type": "arrowclosed"
+       },
+       "id": "xy-edge__AssessmentQuestionAssignmentAssessmentQuestionAssignment-top-1-source-inv-AssessmentQuestionAssignmentAssessmentQuestionAssignment-top-3-target-inv"
+     }
+   ]
+ }

@@ -69,7 +69,7 @@
       "data": {
         "label": "Individual",
         "icon": "standard:data_model",
-        "color": "#17becf",
+        "color": "#E91E63",
         "Id": "EntityDefinition/ssot__Individual__dlm",
         "table": {
           "name": "ssot__Individual__dlm",
@@ -78,7 +78,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -106,25 +106,26 @@
             }
           }
         },
-        "description": ""
+        "description": "(Data Cloud Data Model Object)",
+        "category": "Data Cloud DMO"
       },
       "position": {
-        "x": 11.127851259955747,
-        "y": 65.01007626038317
+        "x": 135.91532845767196,
+        "y": 122.02504429037417
       }
     },
     {
       "id": "EntityDefinition/ssot__ContactPointEmail__dlm",
       "type": "table",
       "position": {
-        "x": 379.4669592077588,
-        "y": 89.38783008643342
+        "x": 573.1026996869737,
+        "y": 74.3272724936056
       },
       "data": {
         "Id": "EntityDefinition/ssot__ContactPointEmail__dlm",
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -166,24 +167,25 @@
             }
           }
         },
-        "description": "",
+        "description": "(Data Cloud Data Model Object)",
         "icon": "standard:data_model",
         "label": "Contact Point Email",
-        "color": "#17becf"
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
       }
     },
     {
       "id": "EntityDefinition/Individual_SM_1751967396013__dlm",
       "type": "table",
       "position": {
-        "x": 377.4693182393593,
-        "y": 311.05714200030906
+        "x": 442.01456506576426,
+        "y": 298.1480926350281
       },
       "data": {
         "Id": "EntityDefinition/Individual_SM_1751967396013__dlm",
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -238,24 +240,25 @@
             }
           }
         },
-        "description": "",
+        "description": "(Data Cloud Data Model Object)",
         "icon": "standard:data_model",
         "label": "Individual - Latest",
-        "color": "#17becf"
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
       }
     },
     {
       "id": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
       "type": "table",
       "position": {
-        "x": -333.33065388142074,
-        "y": 82.3427969040294
+        "x": -351.6184738155688,
+        "y": 93.10033804176355
       },
       "data": {
         "Id": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -309,24 +312,25 @@
             }
           }
         },
-        "description": "",
+        "description": "(Data Cloud Data Model Object)",
         "icon": "standard:data_model",
         "label": "Unified Link Individual R1",
-        "color": "#17becf"
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
       }
     },
     {
       "id": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
       "type": "table",
       "position": {
-        "x": 533.0630920409177,
-        "y": -168.20438728713447
+        "x": 692.2747008793832,
+        "y": -315.58270087409244
       },
       "data": {
         "Id": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -373,24 +377,25 @@
             }
           }
         },
-        "description": "",
+        "description": "(Data Cloud Data Model Object)",
         "icon": "standard:data_model",
         "label": "Unified Link Contact Point Email R1",
-        "color": "#17becf"
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
       }
     },
     {
       "id": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
       "type": "table",
       "position": {
-        "x": 135.15114592545706,
-        "y": -194.56180252127822
+        "x": 301.8930335603365,
+        "y": -185.14895402576082
       },
       "data": {
         "Id": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -425,10 +430,11 @@
             }
           }
         },
-        "description": "",
+        "description": "(Data Cloud Data Model Object)",
         "icon": "standard:data_model",
         "label": "Unified Indv Contact Point Email R1",
-        "color": "#17becf"
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
       }
     },
     {
@@ -437,7 +443,7 @@
       "data": {
         "label": "Party",
         "icon": "standard:data_model",
-        "color": "#17becf",
+        "color": "#E91E63",
         "Id": "EntityDefinition/ssot__Party__dlm",
         "table": {
           "name": "ssot__Party__dlm",
@@ -447,7 +453,7 @@
         },
         "schema": {
           "type": "object",
-          "description": "[Data Cloud DMO] ",
+          "description": "(Data Cloud Data Model Object)",
           "properties": {
             "Id": {
               "type": "string",
@@ -463,11 +469,58 @@
             }
           }
         },
-        "description": ""
+        "description": "(Data Cloud Data Model Object)",
+        "category": "Data Cloud DMO"
       },
       "position": {
-        "x": -345.02015661164614,
-        "y": -149.38012974279476
+        "x": 116.88739612163883,
+        "y": 265.8465911410811
+      }
+    },
+    {
+      "id": "EntityDefinition/UnifiedssotIndividualR1__dlm",
+      "type": "table",
+      "position": {
+        "x": -9.38487311434045,
+        "y": -32.66080839837916
+      },
+      "data": {
+        "Id": "EntityDefinition/UnifiedssotIndividualR1__dlm",
+        "description": "(Data Cloud Data Model Object)",
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__FirstName__c": {
+              "type": "string",
+              "title": "First Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__Id__c": {
+              "type": "string",
+              "title": "Unified Individual Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "ssot__LastName__c": {
+              "type": "string",
+              "title": "Last Name",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "icon": "standard:data_model",
+        "label": "Unified Individual R1",
+        "category": "Data Cloud DMO",
+        "color": "#E91E63"
       }
     }
   ],
@@ -475,11 +528,12 @@
     {
       "id": "ssot__Individual__dlm.ssot__Id__c.UnifiedLinkssotIndividualR1__dlm.Id",
       "source": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
-      "sourceHandle": "ssot__Id__c",
+      "sourceHandle": "ssot__Id__c-source-inv",
       "target": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -490,11 +544,12 @@
     {
       "id": "ssot__ContactPointEmail__dlm.ssot__Id__c.ssot__Individual__dlm.Id",
       "source": "EntityDefinition/ssot__ContactPointEmail__dlm",
-      "sourceHandle": "ssot__Id__c",
+      "sourceHandle": "ssot__Id__c-source-inv",
       "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -505,11 +560,12 @@
     {
       "id": "ssot__ContactPointEmail__dlm.ssot__PartyId__c.ssot__Individual__dlm.Id",
       "source": "EntityDefinition/ssot__ContactPointEmail__dlm",
-      "sourceHandle": "ssot__PartyId__c",
+      "sourceHandle": "ssot__PartyId__c-source-inv",
       "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -520,11 +576,12 @@
     {
       "id": "Individual_SM_1751967396013__dlm.Id__c.ssot__Individual__dlm.Id",
       "source": "EntityDefinition/Individual_SM_1751967396013__dlm",
-      "sourceHandle": "Id__c",
+      "sourceHandle": "Id__c-source-inv",
       "target": "group_8dbf120b-5ac8-472a-b561-c78089fca87a",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -535,10 +592,12 @@
     {
       "id": "UnifiedLinkssotIndividualR1__dlm.UnifiedRecordId__c.UnifiedssotIndividualR1__dlm.Id",
       "source": "EntityDefinition/UnifiedLinkssotIndividualR1__dlm",
-      "sourceHandle": "UnifiedRecordId__c",
+      "sourceHandle": "UnifiedRecordId__c-source",
+      "target": "EntityDefinition/UnifiedssotIndividualR1__dlm",
       "label": "",
-      "targetHandle": "Id",
+      "targetHandle": "Id-target",
       "type": "betweenTables",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -549,11 +608,12 @@
     {
       "id": "UnifiedLinkssotContactPointEmailR1__dlm.UnifiedRecordId__c.UnifiedssotContactPointEmailR1__dlm.Id",
       "source": "EntityDefinition/UnifiedLinkssotContactPointEmailR1__dlm",
-      "sourceHandle": "UnifiedRecordId__c",
+      "sourceHandle": "UnifiedRecordId__c-source-inv",
       "target": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,
@@ -564,10 +624,12 @@
     {
       "id": "UnifiedssotContactPointEmailR1__dlm.ssot__PartyId__c.UnifiedssotIndividualR1__dlm.Id",
       "source": "EntityDefinition/UnifiedssotContactPointEmailR1__dlm",
-      "sourceHandle": "ssot__PartyId__c",
+      "sourceHandle": "ssot__PartyId__c-source-inv",
+      "target": "EntityDefinition/UnifiedssotIndividualR1__dlm",
       "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
       "style": {
         "strokeWidth": 1,
         "zIndex": 500,

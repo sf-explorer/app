@@ -1,2055 +1,3713 @@
 {
-  "nodes": [
-    {
-      "position": {
-        "x": -650,
-        "y": 50
-      },
-      "id": "filter",
-      "type": "input",
-      "data": {
-        "label": "",
-        "schema": {
-          "properties": {
-            "filter": {
-              "title": "Filter",
-              "type": "string"
-            },
-            "onlyRef": {
-              "title": "Reference only",
-              "type": "boolean",
-              "default": true
-            },
-            "onlyCustom": {
-              "title": "Custom only",
-              "type": "boolean",
-              "default": false
-            },
-            "showLabel": {
-              "title": "Show Label",
-              "type": "boolean",
-              "default": true
-            },
-            "showData": {
-              "title": "Show Data",
-              "type": "boolean",
-              "default": false
-            },
-            "showChildRelation": {
-              "title": "Child Relations",
-              "type": "boolean",
-              "default": false
-            },
-            "nbFields": {
-              "title": "Nb Fields",
-              "type": "integer",
-              "default": 20
-            },
-            "user": {
-              "title": "User",
-              "objectName": "User",
-              "description": "Analyze the given access right to a given user",
-              "fields": [
-                "Name",
-                "Profile.Name"
-              ],
-              "loadingOptions": {
-                "loadPermissions": true
-              }
-            }
-          }
-        }
-      },
-      "width": 250,
-      "height": 388
-    },
-    {
-      "id": "DecisionTableParameter",
-      "data": {
-        "Id": "EntityDefinition/DecisionTableParameter",
-        "table": {
-          "name": "DecisionTableParameter",
-          "columns": []
-        },
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Table Parameter ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "DecisionTableId": {
-              "type": "string",
-              "title": "Decision Table ID",
-              "x-target": "DecisionTable",
-              "readOnly": true,
-              "description": ""
-            },
-            "FieldName": {
-              "type": "string",
-              "title": "Attribute",
-              "description": ""
-            },
-            "Operator": {
-              "type": "string",
-              "title": "Operator",
-              "enum": [
-                "Equals",
-                "NotEquals",
-                "LessThan",
-                "LessOrEqual",
-                "GreaterThan",
-                "GreaterOrEqual",
-                "Matches",
-                "ExistsIn",
-                "DoesNotExistIn",
-                "DoesNotMatch",
-                "Contains",
-                "IsNotNull",
-                "IsNull",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "Usage": {
-              "type": "string",
-              "title": "Type",
-              "enum": [
-                "INPUT",
-                "ROWCRITERIA",
-                "OUTPUT",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "Sequence": {
-              "type": "integer",
-              "title": "Sequence",
-              "description": ""
-            },
-            "IsGroupByField": {
-              "type": "boolean",
-              "title": "Group By Field",
-              "description": ""
-            },
-            "SortType": {
-              "type": "string",
-              "title": "Sort Type",
-              "enum": [
-                "None",
-                "AscNullFirst",
-                "AscNullLast",
-                "DescNullFirst",
-                "DescNullLast",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "DataType": {
-              "type": "string",
-              "title": "Data Type",
-              "enum": [
-                "String",
-                "Number",
-                "Date",
-                "Boolean",
-                "Percent",
-                "Currency",
-                "DateTime",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "FieldPath": {
-              "type": "string",
-              "title": "Field Path",
-              "description": ""
-            },
-            "DomainObject": {
-              "type": "string",
-              "title": "Domain Object",
-              "description": ""
-            },
-            "IsRequired": {
-              "type": "boolean",
-              "title": "Is Required",
-              "description": ""
-            }
-          }
-        },
-        "label": "Decision Table Parameter",
-        "icon": "utility:standard_objects",
-        "description": "",
-        "color": "#76b7b2"
-      },
-      "type": "table",
-      "position": {
-        "x": 328.64075516964994,
-        "y": 96.03076733353252
-      }
-    },
-    {
-      "id": "DecisionTable",
-      "data": {
-        "Id": "EntityDefinition/DecisionTable",
-        "table": {
-          "name": "DecisionTable",
-          "columns": []
-        },
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Table ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "DeveloperName": {
-              "type": "string",
-              "title": "API Name",
-              "description": ""
-            },
-            "Language": {
-              "type": "string",
-              "title": "Master Language",
-              "enum": [
-                "en_US",
-                "de",
-                "es",
-                "fr",
-                "it",
-                "ja",
-                "sv",
-                "ko",
-                "zh_TW",
-                "zh_CN",
-                "pt_BR",
-                "nl_NL",
-                "da",
-                "th",
-                "fi",
-                "ru",
-                "es_MX",
-                "no",
-                null
-              ],
-              "enumNames": [
-                "English",
-                "German",
-                "Spanish",
-                "French",
-                "Italian",
-                "Japanese",
-                "Swedish",
-                "Korean",
-                "Chinese (Traditional)",
-                "Chinese (Simplified)",
-                "Portuguese (Brazil)",
-                "Dutch",
-                "Danish",
-                "Thai",
-                "Finnish",
-                "Russian",
-                "Spanish (Mexico)",
-                "Norwegian",
-                null
-              ],
-              "description": ""
-            },
-            "MasterLabel": {
-              "type": "string",
-              "title": "Label",
-              "description": ""
-            },
-            "NamespacePrefix": {
-              "type": "string",
-              "title": "Namespace Prefix",
-              "readOnly": true,
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "SetupName": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "Description": {
-              "type": "string",
-              "title": "Description",
-              "description": ""
-            },
-            "LastSyncDate": {
-              "type": "string",
-              "title": "Last Refreshed Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": ""
-            },
-            "SourceObject": {
-              "type": "string",
-              "title": "Source Object",
-              "description": ""
-            },
-            "Status": {
-              "type": "string",
-              "title": "Status",
-              "enum": [
-                "Draft",
-                "Inactive",
-                "Active",
-                "ActivationInProgress",
-                null
-              ],
-              "enumNames": [
-                "Draft",
-                "Inactive",
-                "Active",
-                "Activation In Progress",
-                null
-              ],
-              "description": ""
-            },
-            "Type": {
-              "type": "string",
-              "title": "Type",
-              "enum": [
-                "LowVolume",
-                "HighVolume",
-                "Advanced",
-                "MediumVolume",
-                "HighScaleExecution",
-                "RealTime",
-                null
-              ],
-              "enumNames": [
-                "Standard",
-                "High Volume",
-                "Advanced",
-                "Advanced",
-                "High-Scale Execution",
-                "RealTime",
-                null
-              ],
-              "description": ""
-            },
-            "ConditionCriteria": {
-              "type": "string",
-              "title": "Condition Criteria",
-              "description": ""
-            },
-            "ConditionType": {
-              "type": "string",
-              "title": "Condition Type",
-              "enum": [
-                "All",
-                "Any",
-                "Custom",
-                null
-              ],
-              "enumNames": [
-                "All conditions are met (AND)",
-                "Any condition is met (OR)",
-                "Custom Logic",
-                null
-              ],
-              "description": ""
-            },
-            "DataSourceType": {
-              "type": "string",
-              "title": "Data Source Type",
-              "enum": [
-                "SingleSobject",
-                "MultipleSobjects",
-                "CsvUpload",
-                "ContextDefinition",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "FilterResultBy": {
-              "type": "string",
-              "title": "Filter Result By",
-              "enum": [
-                "UniqueValues",
-                "AnyValue",
-                "Priority",
-                "FirstMatch",
-                "CollectOperator",
-                "OutputOrder",
-                "RuleOrder",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "CollectOperator": {
-              "type": "string",
-              "title": "Collect Operator",
-              "enum": [
-                "None",
-                "Sum",
-                "Minimum",
-                "Maximum",
-                "Count",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "SourceConditionLogic": {
-              "type": "string",
-              "title": "Source Condition Logic",
-              "description": ""
-            },
-            "UsageType": {
-              "type": "string",
-              "title": "Usage Type",
-              "enum": [
-                "Bre",
-                "RecordAlert",
-                "ProductQualification",
-                "ProductCategoryQualification",
-                "FinancialServicesCloud",
-                "FulfillmentCondition",
-                null
-              ],
-              "enumNames": [
-                "Default",
-                "Record Alert",
-                "Product Qualification",
-                "Product Category Qualification",
-                "Financial Services Cloud",
-                "Fulfillment Condition",
-                null
-              ],
-              "description": ""
-            },
-            "RefreshStatus": {
-              "type": "string",
-              "title": "Refresh Status",
-              "enum": [
-                "Initiated",
-                "Failed",
-                "Completed",
-                "InProgress",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "RefreshFailureReason": {
-              "type": "string",
-              "title": "Refresh Failure Reason",
-              "description": ""
-            },
-            "DoesConsiderNullValue": {
-              "type": "boolean",
-              "title": "Consider Null Value",
-              "description": ""
-            },
-            "ExecutionType": {
-              "type": "string",
-              "title": "Execution Type",
-              "enum": [
-                "Soql",
-                "Hbpo",
-                "Dmo",
-                "Solr",
-                "Hbase",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "UploadStatus": {
-              "type": "string",
-              "title": "Upload Status",
-              "enum": [
-                "UploadInProgress",
-                "Completed",
-                "CompletedWithErrors",
-                "Failed",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            },
-            "IsIncrementalSyncEnabled": {
-              "type": "boolean",
-              "title": "Incremental Refresh Enabled",
-              "description": ""
-            },
-            "HasIncrementalSyncFailed": {
-              "type": "boolean",
-              "title": "Incremental Refresh Failed",
-              "description": ""
-            },
-            "LastIncrementalSyncDate": {
-              "type": "string",
-              "title": "Last Incremental Refresh Date",
-              "format": "date-time",
-              "description": ""
-            },
-            "DownloadStatus": {
-              "type": "string",
-              "title": "Download Status",
-              "enum": [
-                "DownloadInProgress",
-                "Completed",
-                "Failed",
-                null
-              ],
-              "enumNames": [
-                null,
-                null,
-                null,
-                null
-              ],
-              "description": ""
-            }
-          }
-        },
-        "label": "Decision Table",
-        "icon": "utility:standard_objects",
-        "description": "",
-        "color": "#76b7b2"
-      },
-      "type": "table",
-      "position": {
-        "x": -234.60346012012988,
-        "y": 114.7529185537567
-      }
-    },
-    {
-      "id": "DecisionTableDatasetLink",
-      "data": {
-        "Id": "EntityDefinition/DecisionTableDatasetLink",
-        "table": {
-          "name": "DecisionTableDatasetLink",
-          "columns": []
-        },
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Table Payload ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "DeveloperName": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "Language": {
-              "type": "string",
-              "title": "Master Language",
-              "enum": [
-                "en_US",
-                "de",
-                "es",
-                "fr",
-                "it",
-                "ja",
-                "sv",
-                "ko",
-                "zh_TW",
-                "zh_CN",
-                "pt_BR",
-                "nl_NL",
-                "da",
-                "th",
-                "fi",
-                "ru",
-                "es_MX",
-                "no",
-                null
-              ],
-              "enumNames": [
-                "English",
-                "German",
-                "Spanish",
-                "French",
-                "Italian",
-                "Japanese",
-                "Swedish",
-                "Korean",
-                "Chinese (Traditional)",
-                "Chinese (Simplified)",
-                "Portuguese (Brazil)",
-                "Dutch",
-                "Danish",
-                "Thai",
-                "Finnish",
-                "Russian",
-                "Spanish (Mexico)",
-                "Norwegian",
-                null
-              ],
-              "description": ""
-            },
-            "MasterLabel": {
-              "type": "string",
-              "title": "Label",
-              "description": ""
-            },
-            "NamespacePrefix": {
-              "type": "string",
-              "title": "Namespace Prefix",
-              "readOnly": true,
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "SetupName": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "DecisionTableId": {
-              "type": "string",
-              "title": "Decision Table ID",
-              "x-target": "DecisionTable",
-              "description": ""
-            },
-            "Description": {
-              "type": "string",
-              "title": "Description",
-              "description": ""
-            },
-            "IsDefault": {
-              "type": "boolean",
-              "title": "Is Default",
-              "description": ""
-            },
-            "SourceObject": {
-              "type": "string",
-              "title": "Source Object",
-              "description": ""
-            }
-          }
-        },
-        "label": "Decision Table Dataset Link",
-        "icon": "utility:standard_objects",
-        "description": "",
-        "color": "#76b7b2"
-      },
-      "type": "table",
-      "position": {
-        "x": 329.74091170036775,
-        "y": 262.0976099414736
-      }
-    },
-    {
-      "id": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
-      "type": "table",
-      "data": {
-        "label": "Expression Set",
-        "icon": "utility:standard_objects",
-        "color": "#ff9da7",
-        "Id": "EntityDefinition/ExpressionSet",
-        "table": {
-          "name": "ExpressionSet",
-          "label": "Expression Set",
-          "description": "[BRE] ",
-          "columns": []
-        },
-        "schema": {
-          "type": "object",
-          "description": "[BRE] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Expression Set ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "Description": {
-              "type": "string",
-              "title": "Description",
-              "description": ""
-            },
-            "ApiName": {
-              "type": "string",
-              "title": "API Name",
-              "description": ""
-            },
-            "ExpressionSetDefinitionId": {
-              "type": "string",
-              "title": "ExpressionSetDefinition ID",
-              "x-target": "ExpressionSetDefinition",
-              "description": ""
-            },
-            "UsageType": {
-              "type": "string",
-              "title": "Usage Type",
-              "enum": [
-                "Bre",
-                "RecordAlert",
-                "ProductQualification",
-                "ProductCategoryQualification",
-                "FinancialServicesCloud",
-                "FulfillmentCondition",
-                null
-              ],
-              "enumNames": [
-                "Default",
-                "Record Alert",
-                "Product Qualification",
-                "Product Category Qualification",
-                "Financial Services Cloud",
-                "Fulfillment Condition",
-                null
-              ],
-              "description": ""
-            },
-            "InterfaceSourceType": {
-              "type": "string",
-              "title": "Interface Source Type",
-              "enum": [
-                "PricingProcedure",
-                "QualificationProcedure",
-                "Sample",
-                "EventOrchestration",
-                "RatingProcedure",
-                "DiscoveryProcedure",
-                "Constraint",
-                "RatingDiscoveryProcedure",
-                "GpaCalculationProcedure",
-                "Bre",
-                "ItServiceManagement",
-                null
-              ],
-              "enumNames": [
-                "Pricing Procedure",
-                "Qualification Procedure",
-                "Sample",
-                "Event Orchestration",
-                "Rating Procedure",
-                "Discovery Procedure",
-                "Constraint",
-                "Rating Discovery Procedure",
-                "GPA Calculation Procedure",
-                "Bre",
-                "IT Service Management",
-                null
-              ],
-              "description": ""
-            },
-            "ExecutionScale": {
-              "type": "string",
-              "title": "Execution Scale",
-              "enum": [
-                "Low",
-                "High",
-                null
-              ],
-              "enumNames": [
-                "Low",
-                "High",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            },
-            "ResourceInitializationType": {
-              "type": "string",
-              "title": "Resource Initialization Type",
-              "enum": [
-                "Default",
-                "Off",
-                null
-              ],
-              "enumNames": [
-                "Default",
-                "Off",
-                null
-              ],
-              "description": ""
-            }
-          }
-        },
-        "description": ""
-      },
-      "position": {
-        "x": -236.97102719922148,
-        "y": 358.6851175183745
-      }
-    },
-    {
-      "id": "EntityDefinition/ExpressionSetVersion",
-      "type": "table",
-      "position": {
-        "x": 329.0135944307827,
-        "y": 455.74868750975656
-      },
-      "data": {
-        "Id": "EntityDefinition/ExpressionSetVersion",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Expression Set Version ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Version Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "ExpressionSetId": {
-              "type": "string",
-              "title": "Expression Set ID",
-              "x-target": "ExpressionSet",
-              "readOnly": true,
-              "description": ""
-            },
-            "Description": {
-              "type": "string",
-              "title": "Description",
-              "description": ""
-            },
-            "StartDateTime": {
-              "type": "string",
-              "title": "Start Date Time",
-              "format": "date-time",
-              "description": ""
-            },
-            "EndDateTime": {
-              "type": "string",
-              "title": "End Date Time",
-              "format": "date-time",
-              "description": ""
-            },
-            "VersionNumber": {
-              "type": "integer",
-              "title": "Version Number",
-              "description": ""
-            },
-            "Rank": {
-              "type": "integer",
-              "title": "Rank",
-              "description": ""
-            },
-            "IsActive": {
-              "type": "boolean",
-              "title": "Active",
-              "description": ""
-            },
-            "IsLoopingEnabled": {
-              "type": "boolean",
-              "title": "Looping Enabled",
-              "description": ""
-            },
-            "LoopStartVariableName": {
-              "type": "string",
-              "title": "Loop Start Variable Name",
-              "description": ""
-            },
-            "LoopIncrementVariableName": {
-              "type": "string",
-              "title": "Loop Increment Variable Name",
-              "description": ""
-            },
-            "LoopEndVariableName": {
-              "type": "string",
-              "title": "Loop End Variable Name",
-              "description": ""
-            },
-            "LatestSimulationResult": {
-              "type": "string",
-              "title": "Latest Simulation Result",
-              "description": ""
-            },
-            "ApiName": {
-              "type": "string",
-              "title": "API Name",
-              "description": ""
-            },
-            "ExpressionSetDefinitionVerId": {
-              "type": "string",
-              "title": "ExpressionSetDefinitionVersion ID",
-              "x-target": "ExpressionSetDefinitionVersion",
-              "description": ""
-            },
-            "ShouldShowExplExternally": {
-              "type": "boolean",
-              "title": "Show Explanation Externally",
-              "description": ""
-            },
-            "DecimalScale": {
-              "type": "integer",
-              "title": "Decimal Scale",
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Expression Set Version",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/ExpressionSetDefinitionVersion",
-      "type": "table",
-      "position": {
-        "x": 83.32211150276578,
-        "y": 606.9257956739831
-      },
-      "data": {
-        "Id": "EntityDefinition/ExpressionSetDefinitionVersion",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "ExpressionSetDefinitionVersion ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "DeveloperName": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "Language": {
-              "type": "string",
-              "title": "Master Language",
-              "enum": [
-                "en_US",
-                "de",
-                "es",
-                "fr",
-                "it",
-                "ja",
-                "sv",
-                "ko",
-                "zh_TW",
-                "zh_CN",
-                "pt_BR",
-                "nl_NL",
-                "da",
-                "th",
-                "fi",
-                "ru",
-                "es_MX",
-                "no",
-                null
-              ],
-              "enumNames": [
-                "English",
-                "German",
-                "Spanish",
-                "French",
-                "Italian",
-                "Japanese",
-                "Swedish",
-                "Korean",
-                "Chinese (Traditional)",
-                "Chinese (Simplified)",
-                "Portuguese (Brazil)",
-                "Dutch",
-                "Danish",
-                "Thai",
-                "Finnish",
-                "Russian",
-                "Spanish (Mexico)",
-                "Norwegian",
-                null
-              ],
-              "description": ""
-            },
-            "MasterLabel": {
-              "type": "string",
-              "title": "Label",
-              "description": ""
-            },
-            "NamespacePrefix": {
-              "type": "string",
-              "title": "Namespace Prefix",
-              "readOnly": true,
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "ExpressionSetDefinitionId": {
-              "type": "string",
-              "title": "ExpressionSetDefinition ID",
-              "x-target": "ExpressionSetDefinition",
-              "description": ""
-            },
-            "VersionNumber": {
-              "type": "integer",
-              "title": "Version Number",
-              "description": ""
-            },
-            "Status": {
-              "type": "string",
-              "title": "Status",
-              "enum": [
-                "Draft",
-                "Active",
-                "Inactive",
-                "InvalidDraft",
-                "Obsolete",
-                null
-              ],
-              "enumNames": [
-                "Draft",
-                "Active",
-                "Inactive",
-                "Invalid Draft",
-                "Obsolete",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Expression Set Definition Version",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/ExpressionSetVersion",
-      "type": "table",
-      "position": {
-        "x": 329.0135944307827,
-        "y": 455.74868750975656
-      },
-      "data": {
-        "Id": "EntityDefinition/ExpressionSetVersion"
-      }
-    },
-    {
-      "id": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
-      "type": "table",
-      "data": {
-        "label": "Decision Matrix",
-        "icon": "utility:standard_objects",
-        "color": "#ff9da7",
-        "Id": "EntityDefinition/CalculationMatrix",
-        "table": {
-          "name": "CalculationMatrix",
-          "label": "Decision Matrix",
-          "description": "[BRE] ",
-          "columns": []
-        },
-        "schema": {
-          "type": "object",
-          "description": "[BRE] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Matrix ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "Description": {
-              "type": "string",
-              "title": "Description",
-              "description": ""
-            },
-            "GroupKey": {
-              "type": "string",
-              "title": "Group Key",
-              "description": ""
-            },
-            "SubGroupKey": {
-              "type": "string",
-              "title": "Sub Group Key",
-              "description": ""
-            },
-            "Type": {
-              "type": "string",
-              "title": "Type",
-              "enum": [
-                "Standard",
-                "Grouped",
-                null
-              ],
-              "enumNames": [
-                "Standard",
-                "Grouped",
-                null
-              ],
-              "description": ""
-            },
-            "UniqueName": {
-              "type": "string",
-              "title": "Unique Name",
-              "description": ""
-            },
-            "Namespace": {
-              "type": "string",
-              "title": "Namespace",
-              "description": ""
-            },
-            "DecisionMatrixDefinitionId": {
-              "type": "string",
-              "title": "Decision Matrix Definition ID",
-              "x-target": "DecisionMatrixDefinition",
-              "readOnly": true,
-              "description": ""
-            },
-            "DecisionMatrixType": {
-              "type": "string",
-              "title": "Decision Matrix Type",
-              "enum": [
-                "DecisionMatrix",
-                "DecisionTable",
-                null
-              ],
-              "enumNames": [
-                "Decision Matrix",
-                "Decision Table",
-                null
-              ],
-              "description": ""
-            },
-            "MigrationStatus": {
-              "type": "string",
-              "title": "Migration Status",
-              "readOnly": true,
-              "description": ""
-            },
-            "UsageType": {
-              "type": "string",
-              "title": "Usage Type",
-              "enum": [
-                "Bre",
-                "RecordAlert",
-                "ProductQualification",
-                "ProductCategoryQualification",
-                "FinancialServicesCloud",
-                "FulfillmentCondition",
-                null
-              ],
-              "enumNames": [
-                "Default",
-                "Record Alert",
-                "Product Qualification",
-                "Product Category Qualification",
-                "Financial Services Cloud",
-                "Fulfillment Condition",
-                null
-              ],
-              "description": ""
-            }
-          }
-        },
-        "description": ""
-      },
-      "position": {
-        "x": 330.27852838812885,
-        "y": -70.2966806248103
-      }
-    },
-    {
-      "id": "EntityDefinition/DecisionMatrixDefinition",
-      "type": "table",
-      "position": {
-        "x": -243.11996885108485,
-        "y": -49.29207975821176
-      },
-      "data": {
-        "Id": "EntityDefinition/DecisionMatrixDefinition",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "DecisionMatrixDefinition ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "DeveloperName": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "Language": {
-              "type": "string",
-              "title": "Master Language",
-              "enum": [
-                "en_US",
-                "de",
-                "es",
-                "fr",
-                "it",
-                "ja",
-                "sv",
-                "ko",
-                "zh_TW",
-                "zh_CN",
-                "pt_BR",
-                "nl_NL",
-                "da",
-                "th",
-                "fi",
-                "ru",
-                "es_MX",
-                "no",
-                null
-              ],
-              "enumNames": [
-                "English",
-                "German",
-                "Spanish",
-                "French",
-                "Italian",
-                "Japanese",
-                "Swedish",
-                "Korean",
-                "Chinese (Traditional)",
-                "Chinese (Simplified)",
-                "Portuguese (Brazil)",
-                "Dutch",
-                "Danish",
-                "Thai",
-                "Finnish",
-                "Russian",
-                "Spanish (Mexico)",
-                "Norwegian",
-                null
-              ],
-              "description": ""
-            },
-            "MasterLabel": {
-              "type": "string",
-              "title": "Label",
-              "description": ""
-            },
-            "NamespacePrefix": {
-              "type": "string",
-              "title": "Namespace Prefix",
-              "readOnly": true,
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Decision Matrix Definition",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/CalculationMatrixColumn",
-      "type": "table",
-      "position": {
-        "x": 856.4555751851323,
-        "y": -244.31894699777737
-      },
-      "data": {
-        "Id": "EntityDefinition/CalculationMatrixColumn",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Matrix Column ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "CalculationMatrixId": {
-              "type": "string",
-              "title": "Decision Matrix ID",
-              "x-target": "CalculationMatrix",
-              "readOnly": true,
-              "description": ""
-            },
-            "ApiName": {
-              "type": "string",
-              "title": "API Name",
-              "description": ""
-            },
-            "ColumnType": {
-              "type": "string",
-              "title": "Column Type",
-              "enum": [
-                "Input",
-                "Output",
-                null
-              ],
-              "enumNames": [
-                "Input",
-                "Output",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            },
-            "DataType": {
-              "type": "string",
-              "title": "Data Type",
-              "enum": [
-                "Text",
-                "Number",
-                "NumberRange",
-                "TextRange",
-                "Currency",
-                "Percent",
-                "Boolean",
-                null
-              ],
-              "enumNames": [
-                "Text",
-                "Number",
-                "Number Range",
-                "Text Range",
-                "Currency",
-                "Percent",
-                "Boolean",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            },
-            "DisplaySequence": {
-              "type": "integer",
-              "title": "Display Sequence",
-              "description": ""
-            },
-            "RangeValues": {
-              "type": "string",
-              "title": "Range Values",
-              "description": ""
-            },
-            "IsWildcardColumn": {
-              "type": "boolean",
-              "title": "Wildcard Column",
-              "description": ""
-            },
-            "WildcardColumnValue": {
-              "type": "string",
-              "title": "Wildcard Column Value",
-              "description": ""
-            },
-            "Namespace": {
-              "type": "string",
-              "title": "Namespace",
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Decision Matrix Column",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/CalcMatrixColumnRange",
-      "type": "table",
-      "position": {
-        "x": 1496.9675168756276,
-        "y": -242.07924046496197
-      },
-      "data": {
-        "Id": "EntityDefinition/CalcMatrixColumnRange",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Matrix Column Range ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "CalculationMatrixColumnId": {
-              "type": "string",
-              "title": "Decision Matrix Column ID",
-              "x-target": "CalculationMatrixColumn",
-              "readOnly": true,
-              "description": ""
-            },
-            "CalculationMatrixVersionId": {
-              "type": "string",
-              "title": "Decision Matrix Version ID",
-              "x-target": "CalculationMatrixVersion",
-              "description": ""
-            },
-            "RangeStartValue": {
-              "type": "string",
-              "title": "Range Start Value",
-              "description": ""
-            },
-            "Occurrence": {
-              "type": "integer",
-              "title": "Occurrence",
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Decision Matrix Column Range",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/CalculationMatrixVersion",
-      "type": "table",
-      "position": {
-        "x": 861.6886577106151,
-        "y": -22.235275679711386
-      },
-      "data": {
-        "Id": "EntityDefinition/CalculationMatrixVersion",
-        "description": "",
-        "schema": {
-          "type": "object",
-          "description": "[Core] ",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Matrix Version ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "CalculationMatrixId": {
-              "type": "string",
-              "title": "Decision Matrix ID",
-              "x-target": "CalculationMatrix",
-              "readOnly": true,
-              "description": ""
-            },
-            "EndDateTime": {
-              "type": "string",
-              "title": "End Date Time",
-              "format": "date-time",
-              "description": ""
-            },
-            "GroupKey": {
-              "type": "string",
-              "title": "Group Key",
-              "readOnly": true,
-              "description": ""
-            },
-            "GroupKeyValue": {
-              "type": "string",
-              "title": "Group Key Value",
-              "description": ""
-            },
-            "IsEnabled": {
-              "type": "boolean",
-              "title": "Active",
-              "description": ""
-            },
-            "MatrixType": {
-              "type": "string",
-              "title": "Matrix Type",
-              "readOnly": true,
-              "description": ""
-            },
-            "Rank": {
-              "type": "integer",
-              "title": "Rank",
-              "description": ""
-            },
-            "StartDateTime": {
-              "type": "string",
-              "title": "Start Date Time",
-              "format": "date-time",
-              "description": ""
-            },
-            "SubGroupKey": {
-              "type": "string",
-              "title": "Sub Group Key",
-              "readOnly": true,
-              "description": ""
-            },
-            "SubGroupKeyValue": {
-              "type": "string",
-              "title": "Sub Group Key Value",
-              "description": ""
-            },
-            "VersionNumber": {
-              "type": "integer",
-              "title": "Version Number",
-              "description": ""
-            },
-            "LoadProcessStatus": {
-              "type": "string",
-              "title": "Load Process Status",
-              "enum": [
-                "Pending",
-                "InProgress",
-                "CompletedWithErrors",
-                "Completed",
-                "Failed",
-                null
-              ],
-              "enumNames": [
-                "Pending",
-                "In Progress",
-                "Completed With Errors",
-                "Completed",
-                "Failed",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            },
-            "Namespace": {
-              "type": "string",
-              "title": "Namespace",
-              "description": ""
-            },
-            "DecisionMatrixDefinitionVerId": {
-              "type": "string",
-              "title": "Decision Matrix Definition Version ID",
-              "x-target": "DecisionMatrixDefinitionVersion",
-              "readOnly": true,
-              "description": ""
-            },
-            "ApiName": {
-              "type": "string",
-              "title": "API Name",
-              "description": ""
-            },
-            "DscnModelNoteExportStatus": {
-              "type": "string",
-              "title": "Decision Model and Notation Export Status",
-              "enum": [
-                "Initiated",
-                "InProgress",
-                "Complete",
-                "Failed",
-                null
-              ],
-              "enumNames": [
-                "Initiated",
-                "In Progress",
-                "Complete",
-                "Failed",
-                null
-              ],
-              "readOnly": true,
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Decision Matrix Version",
-        "color": "#76b7b2"
-      }
-    },
-    {
-      "id": "EntityDefinition/CalculationMatrixRow",
-      "type": "table",
-      "position": {
-        "x": 1475.891367505666,
-        "y": -15.563506757610673
-      },
-      "data": {
-        "Id": "EntityDefinition/CalculationMatrixRow",
-        "description": "Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row.",
-        "schema": {
-          "type": "object",
-          "description": "[Tech] Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row.",
-          "properties": {
-            "Id": {
-              "type": "string",
-              "title": "Decision Matrix Row ID",
-              "readOnly": true,
-              "description": "Globally unique string that identifies a record."
-            },
-            "Name": {
-              "type": "string",
-              "title": "HashKey",
-              "description": "The row name."
-            },
-            "LastModifiedDate": {
-              "type": "string",
-              "title": "Last Modified Date",
-              "format": "date-time",
-              "readOnly": true,
-              "description": "Date and time when a user last modified this record."
-            },
-            "CalculationMatrixVersionId": {
-              "type": "string",
-              "title": "Decision Matrix Version ID",
-              "x-target": "CalculationMatrixVersion",
-              "description": ""
-            },
-            "IsVersionEnabled": {
-              "type": "boolean",
-              "title": "Version Enabled",
-              "readOnly": true,
-              "description": "Specifies whether the associated matrix version is active. Derived from the associated Decision Matrix Version (CalculationMatrixVersion object)."
-            },
-            "StartDateTime": {
-              "type": "string",
-              "title": "Start Date Time",
-              "format": "date-time",
-              "description": "The first date on which this row version is active. Applicable if IsVersionEnabled is true."
-            },
-            "EndDateTime": {
-              "type": "string",
-              "title": "End Date Time",
-              "format": "date-time",
-              "description": "The last date on which this row version is active. Applicable if IsVersionEnabled is true."
-            },
-            "InputData": {
-              "type": "string",
-              "title": "Input Data",
-              "description": "The input columns and associated values for this row of the matrix."
-            },
-            "OutputData": {
-              "type": "string",
-              "title": "Output Data",
-              "description": "The output columns and associated values for this row of the matrix."
-            },
-            "Namespace": {
-              "type": "string",
-              "title": "Namespace",
-              "description": ""
-            }
-          }
-        },
-        "icon": "utility:standard_objects",
-        "label": "Decision Matrix Row",
-        "color": "#bcbd22"
-      }
-    },
-    {
-      "id": "group_3c863250-bb3a-4498-a330-4d4c685849da",
-      "type": "markdown",
-      "data": {
-        "label": "Business Rule Engine",
-        "icon": "standard:budget_allocation",
-        "color": "rgba(207, 182, 255, 0.4)",
-        "content": ""
-      },
-      "position": {
-        "x": 293.3558904990128,
-        "y": -362.4485095501821
-      },
-      "width": 390,
-      "height": 72
-    }
-  ],
-  "edges": [
-    {
-      "id": "DecisionTableParameter.DecisionTableId.DecisionTable.Id",
-      "source": "DecisionTableParameter",
-      "sourceHandle": "DecisionTableId",
-      "target": "DecisionTable",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "DecisionTableDatasetLink.DecisionTableId.DecisionTable.Id",
-      "source": "DecisionTableDatasetLink",
-      "sourceHandle": "DecisionTableId",
-      "target": "DecisionTable",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSet.ExpressionSetDefinitionId.ExpressionSetDefinition.Id",
-      "source": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
-      "sourceHandle": "ExpressionSetDefinitionId",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSetVersion.ExpressionSetId.ExpressionSet.Id",
-      "source": "EntityDefinition/ExpressionSetVersion",
-      "sourceHandle": "ExpressionSetId",
-      "target": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSetVersion.ExpressionSetDefinitionVerId.ExpressionSetDefinitionVersion.Id",
-      "source": "EntityDefinition/ExpressionSetVersion",
-      "sourceHandle": "ExpressionSetDefinitionVerId",
-      "target": "EntityDefinition/ExpressionSetDefinitionVersion",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSetDefinitionVersion.ExpressionSetDefinitionId.ExpressionSetDefinition.Id",
-      "source": "EntityDefinition/ExpressionSetDefinitionVersion",
-      "sourceHandle": "ExpressionSetDefinitionId",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSetVersion.ExpressionSetId.ExpressionSet.Id",
-      "source": "EntityDefinition/ExpressionSetVersion",
-      "sourceHandle": "ExpressionSetId",
-      "target": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "ExpressionSetVersion.ExpressionSetDefinitionVerId.ExpressionSetDefinitionVersion.Id",
-      "source": "EntityDefinition/ExpressionSetVersion",
-      "sourceHandle": "ExpressionSetDefinitionVerId",
-      "target": "EntityDefinition/ExpressionSetDefinitionVersion",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalculationMatrix.DecisionMatrixDefinitionId.DecisionMatrixDefinition.Id",
-      "source": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
-      "sourceHandle": "DecisionMatrixDefinitionId",
-      "target": "EntityDefinition/DecisionMatrixDefinition",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalculationMatrixColumn.CalculationMatrixId.CalculationMatrix.Id",
-      "source": "EntityDefinition/CalculationMatrixColumn",
-      "sourceHandle": "CalculationMatrixId",
-      "target": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalcMatrixColumnRange.CalculationMatrixColumnId.CalculationMatrixColumn.Id",
-      "source": "EntityDefinition/CalcMatrixColumnRange",
-      "sourceHandle": "CalculationMatrixColumnId",
-      "target": "EntityDefinition/CalculationMatrixColumn",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalcMatrixColumnRange.CalculationMatrixVersionId.CalculationMatrixVersion.Id",
-      "source": "EntityDefinition/CalcMatrixColumnRange",
-      "sourceHandle": "CalculationMatrixVersionId",
-      "target": "EntityDefinition/CalculationMatrixVersion",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalculationMatrixVersion.CalculationMatrixId.CalculationMatrix.Id",
-      "source": "EntityDefinition/CalculationMatrixVersion",
-      "sourceHandle": "CalculationMatrixId",
-      "target": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalculationMatrixVersion.DecisionMatrixDefinitionVerId.DecisionMatrixDefinitionVersion.Id",
-      "source": "EntityDefinition/CalculationMatrixVersion",
-      "sourceHandle": "DecisionMatrixDefinitionVerId",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 1,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    },
-    {
-      "id": "CalculationMatrixRow.CalculationMatrixVersionId.CalculationMatrixVersion.Id",
-      "source": "EntityDefinition/CalculationMatrixRow",
-      "sourceHandle": "CalculationMatrixVersionId",
-      "target": "EntityDefinition/CalculationMatrixVersion",
-      "label": "",
-      "targetHandle": "Id",
-      "type": "betweenTables",
-      "style": {
-        "strokeWidth": 3,
-        "zIndex": 500,
-        "stroke": "rgb(var(--react-erd__secondary-color))",
-        "transition": "stroke 0.3s"
-      }
-    }
-  ]
-}
+   "nodes": [
+     {
+       "position": {
+         "x": -650,
+         "y": 50
+       },
+       "id": "filter",
+       "type": "input",
+       "data": {
+         "label": "",
+         "schema": {
+           "properties": {
+             "filter": {
+               "title": "Filter",
+               "type": "string"
+             },
+             "onlyRef": {
+               "title": "Reference only",
+               "type": "boolean",
+               "default": true
+             },
+             "onlyCustom": {
+               "title": "Custom only",
+               "type": "boolean",
+               "default": false
+             },
+             "showLabel": {
+               "title": "Show Label",
+               "type": "boolean",
+               "default": true
+             },
+             "showData": {
+               "title": "Show Data",
+               "type": "boolean",
+               "default": false
+             },
+             "showChildRelation": {
+               "title": "Child Relations",
+               "type": "boolean",
+               "default": false
+             },
+             "nbFields": {
+               "title": "Nb Fields",
+               "type": "integer",
+               "default": 20
+             },
+             "user": {
+               "title": "User",
+               "objectName": "User",
+               "description": "Analyze the given access right to a given user",
+               "fields": [
+                 "Name",
+                 "Profile.Name"
+               ],
+               "loadingOptions": {
+                 "loadPermissions": true
+               }
+             }
+           }
+         }
+       },
+       "width": 250,
+       "height": 388
+     },
+     {
+       "id": "DecisionTableParameter",
+       "data": {
+         "Id": "EntityDefinition/DecisionTableParameter",
+         "table": {
+           "name": "DecisionTableParameter",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Table Parameter ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "DecisionTableId": {
+               "type": "string",
+               "title": "Decision Table ID",
+               "x-target": "DecisionTable",
+               "readOnly": true,
+               "description": ""
+             },
+             "FieldName": {
+               "type": "string",
+               "title": "Attribute",
+               "description": ""
+             },
+             "Operator": {
+               "type": "string",
+               "title": "Operator",
+               "enum": [
+                 "Equals",
+                 "NotEquals",
+                 "LessThan",
+                 "LessOrEqual",
+                 "GreaterThan",
+                 "GreaterOrEqual",
+                 "Matches",
+                 "ExistsIn",
+                 "DoesNotExistIn",
+                 "DoesNotMatch",
+                 "Contains",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "Usage": {
+               "type": "string",
+               "title": "Type",
+               "enum": [
+                 "INPUT",
+                 "OUTPUT",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "Sequence": {
+               "type": "integer",
+               "title": "Sequence",
+               "description": ""
+             },
+             "IsGroupByField": {
+               "type": "boolean",
+               "title": "Group By Field",
+               "description": ""
+             },
+             "SortType": {
+               "type": "string",
+               "title": "Sort Type",
+               "enum": [
+                 "None",
+                 "AscNullFirst",
+                 "AscNullLast",
+                 "DescNullFirst",
+                 "DescNullLast",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "DataType": {
+               "type": "string",
+               "title": "Data Type",
+               "enum": [
+                 "String",
+                 "Number",
+                 "Date",
+                 "Boolean",
+                 "Percent",
+                 "Currency",
+                 "DateTime",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "FieldPath": {
+               "type": "string",
+               "title": "Field Path",
+               "description": ""
+             },
+             "DomainObject": {
+               "type": "string",
+               "title": "Domain Object",
+               "description": ""
+             },
+             "IsRequired": {
+               "type": "boolean",
+               "title": "Is Required",
+               "description": ""
+             }
+           }
+         },
+         "label": "Decision Table Parameter",
+         "icon": "utility:standard_objects",
+         "description": "[Core] ",
+         "color": "#0070D2",
+         "category": "Core"
+       },
+       "type": "table",
+       "position": {
+         "x": 328.64075516964994,
+         "y": 96.03076733353252
+       }
+     },
+     {
+       "id": "DecisionTableDatasetLink",
+       "data": {
+         "Id": "EntityDefinition/DecisionTableDatasetLink",
+         "table": {
+           "name": "DecisionTableDatasetLink",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Table Payload ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "Language": {
+               "type": "string",
+               "title": "Master Language",
+               "enum": [
+                 "en_US",
+                 "de",
+                 "es",
+                 "fr",
+                 "it",
+                 "ja",
+                 "sv",
+                 "ko",
+                 "zh_TW",
+                 "zh_CN",
+                 "pt_BR",
+                 "nl_NL",
+                 "da",
+                 "th",
+                 "fi",
+                 "ru",
+                 "es_MX",
+                 "no",
+                 "hu",
+                 "pl",
+                 "cs",
+                 "tr",
+                 "in",
+                 "ro",
+                 "vi",
+                 "uk",
+                 "iw",
+                 "el",
+                 "bg",
+                 "en_GB",
+                 "ar",
+                 "sk",
+                 "pt_PT",
+                 "hr",
+                 "sl",
+                 "fr_CA",
+                 "ka",
+                 "sr",
+                 "sh",
+                 "en_AU",
+                 "en_MY",
+                 "en_IN",
+                 "en_PH",
+                 "en_CA",
+                 "ro_MD",
+                 "bs",
+                 "mk",
+                 "lv",
+                 "lt",
+                 "et",
+                 "sq",
+                 "sh_ME",
+                 "mt",
+                 "ga",
+                 "eu",
+                 "cy",
+                 "is",
+                 "cac",
+                 "quc",
+                 "cak",
+                 "ms",
+                 "tl",
+                 "lb",
+                 "rm",
+                 "hy",
+                 "hi",
+                 "ur",
+                 "bn",
+                 "de_AT",
+                 "de_CH",
+                 "ta",
+                 "ar_DZ",
+                 "ar_BH",
+                 "ar_EG",
+                 "ar_IQ",
+                 "ar_JO",
+                 "ar_KW",
+                 "ar_LB",
+                 "ar_LY",
+                 "ar_MA",
+                 "ar_OM",
+                 "ar_QA",
+                 "ar_SA",
+                 "ar_SD",
+                 "ar_SY",
+                 "ar_TN",
+                 "ar_AE",
+                 "ar_YE",
+                 "zh_SG",
+                 "zh_HK",
+                 "en_HK",
+                 "en_IE",
+                 "en_SG",
+                 "en_ZA",
+                 "fr_BE",
+                 "fr_LU",
+                 "fr_CH",
+                 "de_BE",
+                 "de_LU",
+                 "it_CH",
+                 "nl_BE",
+                 "es_AR",
+                 "es_BO",
+                 "es_CL",
+                 "es_CO",
+                 "es_CR",
+                 "es_DO",
+                 "es_EC",
+                 "es_SV",
+                 "es_GT",
+                 "es_HN",
+                 "es_NI",
+                 "es_PA",
+                 "es_PY",
+                 "es_PE",
+                 "es_PR",
+                 "es_US",
+                 "es_UY",
+                 "es_VE",
+                 "ca",
+                 "af",
+                 "sw",
+                 "zu",
+                 "xh",
+                 "te",
+                 "ml",
+                 "kn",
+                 "mr",
+                 "gu",
+                 "pa",
+                 "en_NZ",
+                 "mi",
+                 "my",
+                 "fa",
+                 "km",
+                 "am",
+                 "kk",
+                 "ht",
+                 "sm",
+                 "haw",
+                 "zh_MY",
+                 "ru_LT",
+                 "ru_PL",
+                 "ru_AM",
+                 "ru_KZ",
+                 "ru_KG",
+                 "ru_BY",
+                 "ru_MD",
+                 "ru_UA",
+                 "en_AE",
+                 "en_BE",
+                 "en_CY",
+                 "en_DE",
+                 "en_IL",
+                 "en_IT",
+                 "en_NL",
+                 "en_MT",
+                 "en_ES",
+                 "en_PL",
+                 "en_DK",
+                 "en_SE",
+                 "en_NO",
+                 "en_FR",
+                 "en_HU",
+                 "en_CZ",
+                 "en_SK",
+                 "en_RO",
+                 "en_CH",
+                 "en_AL",
+                 "en_AD",
+                 "en_AG",
+                 "en_AT",
+                 "en_BS",
+                 "en_BB",
+                 "en_BZ",
+                 "en_BA",
+                 "en_BG",
+                 "en_HR",
+                 "en_DM",
+                 "en_EE",
+                 "en_FI",
+                 "en_GI",
+                 "en_GR",
+                 "en_GD",
+                 "en_GY",
+                 "en_IS",
+                 "en_JM",
+                 "en_JP",
+                 "en_LV",
+                 "en_LI",
+                 "en_LT",
+                 "en_LU",
+                 "en_MC",
+                 "en_ME",
+                 "en_MK",
+                 "en_PT",
+                 "en_RS",
+                 "en_SI",
+                 "en_KR",
+                 "en_KN",
+                 "en_LC",
+                 "en_VC",
+                 "en_TW",
+                 "en_TH",
+                 "en_TT",
+                 "en_TR",
+                 "nl_SR",
+                 "fr_HT",
+                 "de_LI",
+                 "es_AD",
+                 "sv_FI",
+                 "el_CY",
+                 "fr_MA",
+                 "kl",
+                 "ji",
+                 "hmn",
+                 null
+               ],
+               "enumNames": [
+                 "English",
+                 "German",
+                 "Spanish",
+                 "French",
+                 "Italian",
+                 "Japanese",
+                 "Swedish",
+                 "Korean",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 "Portuguese (Brazil)",
+                 "Dutch",
+                 "Danish",
+                 "Thai",
+                 "Finnish",
+                 "Russian",
+                 "Spanish (Mexico)",
+                 "Norwegian",
+                 "Hungarian",
+                 "Polish",
+                 "Czech",
+                 "Turkish",
+                 "Indonesian",
+                 "Romanian",
+                 "Vietnamese",
+                 "Ukrainian",
+                 "Hebrew",
+                 "Greek",
+                 "Bulgarian",
+                 "English (UK)",
+                 "Arabic",
+                 "Slovak",
+                 "Portuguese (European)",
+                 "Croatian",
+                 "Slovene",
+                 "French (Canadian)",
+                 "Georgian",
+                 "Serbian (Cyrillic)",
+                 "Serbian (Latin)",
+                 "English (Australian)",
+                 "English (Malaysian)",
+                 "English (Indian)",
+                 "English (Phillipines)",
+                 "English (Canadian)",
+                 "Romanian (Moldova)",
+                 "Bosnian",
+                 "Macedonian",
+                 "Latvian",
+                 "Lithuanian",
+                 "Estonian",
+                 "Albanian",
+                 "Montenegrin",
+                 "Maltese",
+                 "Irish",
+                 "Basque",
+                 "Welsh",
+                 "Icelandic",
+                 "Chuj",
+                 "Kiche",
+                 "Kaqchikel",
+                 "Malay",
+                 "Tagalog",
+                 "Luxembourgish",
+                 "Romansh",
+                 "Armenian",
+                 "Hindi",
+                 "Urdu",
+                 "Bengali",
+                 "German (Austria)",
+                 "German (Switzerland)",
+                 "Tamil",
+                 "Arabic (Algeria)",
+                 "Arabic (Bahrain)",
+                 "Arabic (Egypt)",
+                 "Arabic (Iraq)",
+                 "Arabic (Jordan)",
+                 "Arabic (Kuwait)",
+                 "Arabic (Lebanon)",
+                 "Arabic (Libya)",
+                 "Arabic (Morocco)",
+                 "Arabic (Oman)",
+                 "Arabic (Qatar)",
+                 "Arabic (Saudi Arabia)",
+                 "Arabic (Sudan)",
+                 "Arabic (Syria)",
+                 "Arabic (Tunisia)",
+                 "Arabic (United Arab Emirates)",
+                 "Arabic (Yemen)",
+                 "Chinese (Singapore)",
+                 "Chinese (Hong Kong)",
+                 "English (Hong Kong)",
+                 "English (Ireland)",
+                 "English (Singapore)",
+                 "English (South Africa)",
+                 "French (Belgium)",
+                 "French (Luxembourg)",
+                 "French (Switzerland)",
+                 "German (Belgium)",
+                 "German (Luxembourg)",
+                 "Italian (Switzerland)",
+                 "Dutch (Belgium)",
+                 "Spanish (Argentina)",
+                 "Spanish (Bolivia)",
+                 "Spanish (Chile)",
+                 "Spanish (Colombia)",
+                 "Spanish (Costa Rica)",
+                 "Spanish (Dominican Republic)",
+                 "Spanish (Ecuador)",
+                 "Spanish (El Salvador)",
+                 "Spanish (Guatemala)",
+                 "Spanish (Honduras)",
+                 "Spanish (Nicaragua)",
+                 "Spanish (Panama)",
+                 "Spanish (Paraguay)",
+                 "Spanish (Peru)",
+                 "Spanish (Puerto Rico)",
+                 "Spanish (United States)",
+                 "Spanish (Uruguay)",
+                 "Spanish (Venezuela)",
+                 "Catalan",
+                 "Afrikaans",
+                 "Swahili",
+                 "Zulu",
+                 "Xhosa",
+                 "Telugu",
+                 "Malayalam",
+                 "Kannada",
+                 "Marathi",
+                 "Gujarati",
+                 "Punjabi",
+                 "English (New Zealand)",
+                 "Te reo",
+                 "Burmese",
+                 "Farsi",
+                 "Khmer",
+                 "Amharic",
+                 "Kazakh",
+                 "Haitian Creole",
+                 "Samoan",
+                 "Hawaiian",
+                 "Chinese (Malaysia)",
+                 "Russian (Lithuania)",
+                 "Russian (Poland)",
+                 "Russian (Armenia)",
+                 "Russian (Kazakhstan)",
+                 "Russian (Kyrgyzstan)",
+                 "Russian (Belarus)",
+                 "Russian (Moldova)",
+                 "Russian (Ukraine)",
+                 "English (United Arab Emirates)",
+                 "English (Belgium)",
+                 "English (Cyprus)",
+                 "English (Germany)",
+                 "English (Israel)",
+                 "English (Italy)",
+                 "English (Netherlands)",
+                 "English (Malta)",
+                 "English (Spain)",
+                 "English (Poland)",
+                 "English (Denmark)",
+                 "English (Sweden)",
+                 "English (Norway)",
+                 "English (France)",
+                 "English (Hungary)",
+                 "English (Czechia)",
+                 "English (Slovakia)",
+                 "English (Romania)",
+                 "English (Switzerland)",
+                 "English (Albania)",
+                 "English (Andorra)",
+                 "English (Antigua and Barbuda)",
+                 "English (Austria)",
+                 "English (Bahamas)",
+                 "English (Barbados)",
+                 "English (Belize)",
+                 "English (Bosnia and Herzegovina)",
+                 "English (Bulgaria)",
+                 "English (Croatia)",
+                 "English (Dominica)",
+                 "English (Estonia)",
+                 "English (Finland)",
+                 "English (Gibraltar)",
+                 "English (Greece)",
+                 "English (Grenada)",
+                 "English (Guyana)",
+                 "English (Iceland)",
+                 "English (Jamaica)",
+                 "English (Japan)",
+                 "English (Latvia)",
+                 "English (Liechtenstein)",
+                 "English (Lithuania)",
+                 "English (Luxembourg)",
+                 "English (Monaco)",
+                 "English (Montenegro)",
+                 "English (North Macedonia)",
+                 "English (Portugal)",
+                 "English (Serbia)",
+                 "English (Slovenia)",
+                 "English (South Korea)",
+                 "English (St. Kitts and Nevis)",
+                 "English (St. Lucia)",
+                 "English (St. Vincent and the Grenadines)",
+                 "English (Taiwan)",
+                 "English (Thailand)",
+                 "English (Trinidad and Tobago)",
+                 "English (Turkey)",
+                 "Dutch (Suriname)",
+                 "French (Haiti)",
+                 "German (Liechtenstein)",
+                 "Spanish (Andorra)",
+                 "Swedish (Finland)",
+                 "Greek (Cyprus)",
+                 "French (Morocco)",
+                 "Greenlandic",
+                 "Yiddish",
+                 "Hmong",
+                 null
+               ],
+               "description": ""
+             },
+             "MasterLabel": {
+               "type": "string",
+               "title": "Label",
+               "description": ""
+             },
+             "NamespacePrefix": {
+               "type": "string",
+               "title": "Namespace Prefix",
+               "readOnly": true,
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "SetupName": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "DecisionTableId": {
+               "type": "string",
+               "title": "Decision Table ID",
+               "x-target": "DecisionTable",
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "IsDefault": {
+               "type": "boolean",
+               "title": "Is Default",
+               "description": ""
+             },
+             "SourceObject": {
+               "type": "string",
+               "title": "Source Object",
+               "description": ""
+             }
+           }
+         },
+         "label": "Decision Table Dataset Link",
+         "icon": "utility:standard_objects",
+         "description": "[Core] ",
+         "color": "#0070D2",
+         "category": "Core"
+       },
+       "type": "table",
+       "position": {
+         "x": 329.74091170036775,
+         "y": 262.0976099414736
+       }
+     },
+     {
+       "id": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
+       "type": "table",
+       "data": {
+         "label": "Expression Set",
+         "icon": "standard:decision",
+         "color": "#8E44AD",
+         "Id": "EntityDefinition/ExpressionSet",
+         "table": {
+           "name": "ExpressionSet",
+           "label": "Expression Set",
+           "description": "[BRE] ",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[BRE] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Expression Set ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "ApiName": {
+               "type": "string",
+               "title": "API Name",
+               "description": ""
+             },
+             "ExpressionSetDefinitionId": {
+               "type": "string",
+               "title": "ExpressionSetDefinition ID",
+               "x-target": "ExpressionSetDefinition",
+               "description": ""
+             },
+             "UsageType": {
+               "type": "string",
+               "title": "Usage Type",
+               "enum": [
+                 "Bre",
+                 "TransactionJournal",
+                 "DefaultPricing",
+                 "RecordAlert",
+                 "WarrantyClaim",
+                 "ProductQualification",
+                 "ProductCategoryQualification",
+                 "ComplianceControl",
+                 "FinancialServicesCloud",
+                 "DefaultRating",
+                 "PricingDiscovery",
+                 "RatingDiscovery",
+                 "PlanCostCalculation",
+                 "Timesheet",
+                 "FulfillmentCondition",
+                 "DecompositionEnrichmentMapping",
+                 null
+               ],
+               "enumNames": [
+                 "Default",
+                 "Transaction Journal",
+                 "Pricing",
+                 "Record Alert",
+                 "Warranty Claim",
+                 "Product Qualification",
+                 "Product Category Qualification",
+                 "Compliance",
+                 "Financial Services Cloud",
+                 "Rating",
+                 "Pricing Discovery",
+                 "Rating Discovery",
+                 " Plan Cost Calculation",
+                 "Timesheet",
+                 "Fulfillment Condition",
+                 "Decomposition Enrichment Mapping",
+                 null
+               ],
+               "description": ""
+             },
+             "InterfaceSourceType": {
+               "type": "string",
+               "title": "Interface Source Type",
+               "enum": [
+                 "PricingProcedure",
+                 "QualificationProcedure",
+                 "Sample",
+                 "EventOrchestration",
+                 "RatingProcedure",
+                 "DiscoveryProcedure",
+                 "Constraint",
+                 "RatingDiscoveryProcedure",
+                 "GpaCalculationProcedure",
+                 "Bre",
+                 null
+               ],
+               "enumNames": [
+                 "Pricing Procedure",
+                 "Qualification Procedure",
+                 "Sample",
+                 "Event Orchestration",
+                 "Rating Procedure",
+                 "Discovery Procedure",
+                 "Constraint",
+                 "Rating Discovery Procedure",
+                 "GPA Calculation Procedure",
+                 "Bre",
+                 null
+               ],
+               "description": ""
+             },
+             "ExecutionScale": {
+               "type": "string",
+               "title": "Execution Scale",
+               "enum": [
+                 "Low",
+                 "High",
+                 null
+               ],
+               "enumNames": [
+                 "Low",
+                 "High",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "ResourceInitializationType": {
+               "type": "string",
+               "title": "Resource Initialization Type",
+               "enum": [
+                 "Default",
+                 "Off",
+                 null
+               ],
+               "enumNames": [
+                 "Default",
+                 "Off",
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "description": "[BRE] ",
+         "category": "BRE"
+       },
+       "position": {
+         "x": -236.97102719922148,
+         "y": 358.6851175183745
+       }
+     },
+     {
+       "id": "EntityDefinition/ExpressionSetVersion",
+       "type": "table",
+       "position": {
+         "x": 329.0135944307827,
+         "y": 455.74868750975656
+       },
+       "data": {
+         "Id": "EntityDefinition/ExpressionSetVersion",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Expression Set Version ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Version Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "ExpressionSetId": {
+               "type": "string",
+               "title": "Expression Set ID",
+               "x-target": "ExpressionSet",
+               "readOnly": true,
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "StartDateTime": {
+               "type": "string",
+               "title": "Start Date Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "EndDateTime": {
+               "type": "string",
+               "title": "End Date Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "VersionNumber": {
+               "type": "integer",
+               "title": "Version Number",
+               "description": ""
+             },
+             "Rank": {
+               "type": "integer",
+               "title": "Rank",
+               "description": ""
+             },
+             "IsActive": {
+               "type": "boolean",
+               "title": "Active",
+               "description": ""
+             },
+             "IsLoopingEnabled": {
+               "type": "boolean",
+               "title": "Looping Enabled",
+               "description": ""
+             },
+             "LoopStartVariableName": {
+               "type": "string",
+               "title": "Loop Start Variable Name",
+               "description": ""
+             },
+             "LoopIncrementVariableName": {
+               "type": "string",
+               "title": "Loop Increment Variable Name",
+               "description": ""
+             },
+             "LoopEndVariableName": {
+               "type": "string",
+               "title": "Loop End Variable Name",
+               "description": ""
+             },
+             "LatestSimulationResult": {
+               "type": "string",
+               "title": "Latest Simulation Result",
+               "description": ""
+             },
+             "ApiName": {
+               "type": "string",
+               "title": "API Name",
+               "description": ""
+             },
+             "ExpressionSetDefinitionVerId": {
+               "type": "string",
+               "title": "ExpressionSetDefinitionVersion ID",
+               "x-target": "ExpressionSetDefinitionVersion",
+               "description": ""
+             },
+             "ShouldShowExplExternally": {
+               "type": "boolean",
+               "title": "Show Explanation Externally",
+               "description": ""
+             },
+             "DecimalScale": {
+               "type": "integer",
+               "title": "Decimal Scale",
+               "description": ""
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Expression Set Version",
+         "color": "#0070D2",
+         "category": "Core"
+       }
+     },
+     {
+       "id": "EntityDefinition/ExpressionSetDefinitionVersion",
+       "type": "table",
+       "position": {
+         "x": 83.32211150276578,
+         "y": 606.9257956739831
+       },
+       "data": {
+         "Id": "EntityDefinition/ExpressionSetDefinitionVersion",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "ExpressionSetDefinitionVersion ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "Language": {
+               "type": "string",
+               "title": "Master Language",
+               "enum": [
+                 "en_US",
+                 "de",
+                 "es",
+                 "fr",
+                 "it",
+                 "ja",
+                 "sv",
+                 "ko",
+                 "zh_TW",
+                 "zh_CN",
+                 "pt_BR",
+                 "nl_NL",
+                 "da",
+                 "th",
+                 "fi",
+                 "ru",
+                 "es_MX",
+                 "no",
+                 "hu",
+                 "pl",
+                 "cs",
+                 "tr",
+                 "in",
+                 "ro",
+                 "vi",
+                 "uk",
+                 "iw",
+                 "el",
+                 "bg",
+                 "en_GB",
+                 "ar",
+                 "sk",
+                 "pt_PT",
+                 "hr",
+                 "sl",
+                 "fr_CA",
+                 "ka",
+                 "sr",
+                 "sh",
+                 "en_AU",
+                 "en_MY",
+                 "en_IN",
+                 "en_PH",
+                 "en_CA",
+                 "ro_MD",
+                 "bs",
+                 "mk",
+                 "lv",
+                 "lt",
+                 "et",
+                 "sq",
+                 "sh_ME",
+                 "mt",
+                 "ga",
+                 "eu",
+                 "cy",
+                 "is",
+                 "cac",
+                 "quc",
+                 "cak",
+                 "ms",
+                 "tl",
+                 "lb",
+                 "rm",
+                 "hy",
+                 "hi",
+                 "ur",
+                 "bn",
+                 "de_AT",
+                 "de_CH",
+                 "ta",
+                 "ar_DZ",
+                 "ar_BH",
+                 "ar_EG",
+                 "ar_IQ",
+                 "ar_JO",
+                 "ar_KW",
+                 "ar_LB",
+                 "ar_LY",
+                 "ar_MA",
+                 "ar_OM",
+                 "ar_QA",
+                 "ar_SA",
+                 "ar_SD",
+                 "ar_SY",
+                 "ar_TN",
+                 "ar_AE",
+                 "ar_YE",
+                 "zh_SG",
+                 "zh_HK",
+                 "en_HK",
+                 "en_IE",
+                 "en_SG",
+                 "en_ZA",
+                 "fr_BE",
+                 "fr_LU",
+                 "fr_CH",
+                 "de_BE",
+                 "de_LU",
+                 "it_CH",
+                 "nl_BE",
+                 "es_AR",
+                 "es_BO",
+                 "es_CL",
+                 "es_CO",
+                 "es_CR",
+                 "es_DO",
+                 "es_EC",
+                 "es_SV",
+                 "es_GT",
+                 "es_HN",
+                 "es_NI",
+                 "es_PA",
+                 "es_PY",
+                 "es_PE",
+                 "es_PR",
+                 "es_US",
+                 "es_UY",
+                 "es_VE",
+                 "ca",
+                 "af",
+                 "sw",
+                 "zu",
+                 "xh",
+                 "te",
+                 "ml",
+                 "kn",
+                 "mr",
+                 "gu",
+                 "pa",
+                 "en_NZ",
+                 "mi",
+                 "my",
+                 "fa",
+                 "km",
+                 "am",
+                 "kk",
+                 "ht",
+                 "sm",
+                 "haw",
+                 "zh_MY",
+                 "ru_LT",
+                 "ru_PL",
+                 "ru_AM",
+                 "ru_KZ",
+                 "ru_KG",
+                 "ru_BY",
+                 "ru_MD",
+                 "ru_UA",
+                 "en_AE",
+                 "en_BE",
+                 "en_CY",
+                 "en_DE",
+                 "en_IL",
+                 "en_IT",
+                 "en_NL",
+                 "en_MT",
+                 "en_ES",
+                 "en_PL",
+                 "en_DK",
+                 "en_SE",
+                 "en_NO",
+                 "en_FR",
+                 "en_HU",
+                 "en_CZ",
+                 "en_SK",
+                 "en_RO",
+                 "en_CH",
+                 "en_AL",
+                 "en_AD",
+                 "en_AG",
+                 "en_AT",
+                 "en_BS",
+                 "en_BB",
+                 "en_BZ",
+                 "en_BA",
+                 "en_BG",
+                 "en_HR",
+                 "en_DM",
+                 "en_EE",
+                 "en_FI",
+                 "en_GI",
+                 "en_GR",
+                 "en_GD",
+                 "en_GY",
+                 "en_IS",
+                 "en_JM",
+                 "en_JP",
+                 "en_LV",
+                 "en_LI",
+                 "en_LT",
+                 "en_LU",
+                 "en_MC",
+                 "en_ME",
+                 "en_MK",
+                 "en_PT",
+                 "en_RS",
+                 "en_SI",
+                 "en_KR",
+                 "en_KN",
+                 "en_LC",
+                 "en_VC",
+                 "en_TW",
+                 "en_TH",
+                 "en_TT",
+                 "en_TR",
+                 "nl_SR",
+                 "fr_HT",
+                 "de_LI",
+                 "es_AD",
+                 "sv_FI",
+                 "el_CY",
+                 "fr_MA",
+                 "kl",
+                 "ji",
+                 "hmn",
+                 null
+               ],
+               "enumNames": [
+                 "English",
+                 "German",
+                 "Spanish",
+                 "French",
+                 "Italian",
+                 "Japanese",
+                 "Swedish",
+                 "Korean",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 "Portuguese (Brazil)",
+                 "Dutch",
+                 "Danish",
+                 "Thai",
+                 "Finnish",
+                 "Russian",
+                 "Spanish (Mexico)",
+                 "Norwegian",
+                 "Hungarian",
+                 "Polish",
+                 "Czech",
+                 "Turkish",
+                 "Indonesian",
+                 "Romanian",
+                 "Vietnamese",
+                 "Ukrainian",
+                 "Hebrew",
+                 "Greek",
+                 "Bulgarian",
+                 "English (UK)",
+                 "Arabic",
+                 "Slovak",
+                 "Portuguese (European)",
+                 "Croatian",
+                 "Slovene",
+                 "French (Canadian)",
+                 "Georgian",
+                 "Serbian (Cyrillic)",
+                 "Serbian (Latin)",
+                 "English (Australian)",
+                 "English (Malaysian)",
+                 "English (Indian)",
+                 "English (Phillipines)",
+                 "English (Canadian)",
+                 "Romanian (Moldova)",
+                 "Bosnian",
+                 "Macedonian",
+                 "Latvian",
+                 "Lithuanian",
+                 "Estonian",
+                 "Albanian",
+                 "Montenegrin",
+                 "Maltese",
+                 "Irish",
+                 "Basque",
+                 "Welsh",
+                 "Icelandic",
+                 "Chuj",
+                 "Kiche",
+                 "Kaqchikel",
+                 "Malay",
+                 "Tagalog",
+                 "Luxembourgish",
+                 "Romansh",
+                 "Armenian",
+                 "Hindi",
+                 "Urdu",
+                 "Bengali",
+                 "German (Austria)",
+                 "German (Switzerland)",
+                 "Tamil",
+                 "Arabic (Algeria)",
+                 "Arabic (Bahrain)",
+                 "Arabic (Egypt)",
+                 "Arabic (Iraq)",
+                 "Arabic (Jordan)",
+                 "Arabic (Kuwait)",
+                 "Arabic (Lebanon)",
+                 "Arabic (Libya)",
+                 "Arabic (Morocco)",
+                 "Arabic (Oman)",
+                 "Arabic (Qatar)",
+                 "Arabic (Saudi Arabia)",
+                 "Arabic (Sudan)",
+                 "Arabic (Syria)",
+                 "Arabic (Tunisia)",
+                 "Arabic (United Arab Emirates)",
+                 "Arabic (Yemen)",
+                 "Chinese (Singapore)",
+                 "Chinese (Hong Kong)",
+                 "English (Hong Kong)",
+                 "English (Ireland)",
+                 "English (Singapore)",
+                 "English (South Africa)",
+                 "French (Belgium)",
+                 "French (Luxembourg)",
+                 "French (Switzerland)",
+                 "German (Belgium)",
+                 "German (Luxembourg)",
+                 "Italian (Switzerland)",
+                 "Dutch (Belgium)",
+                 "Spanish (Argentina)",
+                 "Spanish (Bolivia)",
+                 "Spanish (Chile)",
+                 "Spanish (Colombia)",
+                 "Spanish (Costa Rica)",
+                 "Spanish (Dominican Republic)",
+                 "Spanish (Ecuador)",
+                 "Spanish (El Salvador)",
+                 "Spanish (Guatemala)",
+                 "Spanish (Honduras)",
+                 "Spanish (Nicaragua)",
+                 "Spanish (Panama)",
+                 "Spanish (Paraguay)",
+                 "Spanish (Peru)",
+                 "Spanish (Puerto Rico)",
+                 "Spanish (United States)",
+                 "Spanish (Uruguay)",
+                 "Spanish (Venezuela)",
+                 "Catalan",
+                 "Afrikaans",
+                 "Swahili",
+                 "Zulu",
+                 "Xhosa",
+                 "Telugu",
+                 "Malayalam",
+                 "Kannada",
+                 "Marathi",
+                 "Gujarati",
+                 "Punjabi",
+                 "English (New Zealand)",
+                 "Te reo",
+                 "Burmese",
+                 "Farsi",
+                 "Khmer",
+                 "Amharic",
+                 "Kazakh",
+                 "Haitian Creole",
+                 "Samoan",
+                 "Hawaiian",
+                 "Chinese (Malaysia)",
+                 "Russian (Lithuania)",
+                 "Russian (Poland)",
+                 "Russian (Armenia)",
+                 "Russian (Kazakhstan)",
+                 "Russian (Kyrgyzstan)",
+                 "Russian (Belarus)",
+                 "Russian (Moldova)",
+                 "Russian (Ukraine)",
+                 "English (United Arab Emirates)",
+                 "English (Belgium)",
+                 "English (Cyprus)",
+                 "English (Germany)",
+                 "English (Israel)",
+                 "English (Italy)",
+                 "English (Netherlands)",
+                 "English (Malta)",
+                 "English (Spain)",
+                 "English (Poland)",
+                 "English (Denmark)",
+                 "English (Sweden)",
+                 "English (Norway)",
+                 "English (France)",
+                 "English (Hungary)",
+                 "English (Czechia)",
+                 "English (Slovakia)",
+                 "English (Romania)",
+                 "English (Switzerland)",
+                 "English (Albania)",
+                 "English (Andorra)",
+                 "English (Antigua and Barbuda)",
+                 "English (Austria)",
+                 "English (Bahamas)",
+                 "English (Barbados)",
+                 "English (Belize)",
+                 "English (Bosnia and Herzegovina)",
+                 "English (Bulgaria)",
+                 "English (Croatia)",
+                 "English (Dominica)",
+                 "English (Estonia)",
+                 "English (Finland)",
+                 "English (Gibraltar)",
+                 "English (Greece)",
+                 "English (Grenada)",
+                 "English (Guyana)",
+                 "English (Iceland)",
+                 "English (Jamaica)",
+                 "English (Japan)",
+                 "English (Latvia)",
+                 "English (Liechtenstein)",
+                 "English (Lithuania)",
+                 "English (Luxembourg)",
+                 "English (Monaco)",
+                 "English (Montenegro)",
+                 "English (North Macedonia)",
+                 "English (Portugal)",
+                 "English (Serbia)",
+                 "English (Slovenia)",
+                 "English (South Korea)",
+                 "English (St. Kitts and Nevis)",
+                 "English (St. Lucia)",
+                 "English (St. Vincent and the Grenadines)",
+                 "English (Taiwan)",
+                 "English (Thailand)",
+                 "English (Trinidad and Tobago)",
+                 "English (Turkey)",
+                 "Dutch (Suriname)",
+                 "French (Haiti)",
+                 "German (Liechtenstein)",
+                 "Spanish (Andorra)",
+                 "Swedish (Finland)",
+                 "Greek (Cyprus)",
+                 "French (Morocco)",
+                 "Greenlandic",
+                 "Yiddish",
+                 "Hmong",
+                 null
+               ],
+               "description": ""
+             },
+             "MasterLabel": {
+               "type": "string",
+               "title": "Label",
+               "description": ""
+             },
+             "NamespacePrefix": {
+               "type": "string",
+               "title": "Namespace Prefix",
+               "readOnly": true,
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "ExpressionSetDefinitionId": {
+               "type": "string",
+               "title": "ExpressionSetDefinition ID",
+               "x-target": "ExpressionSetDefinition",
+               "description": ""
+             },
+             "VersionNumber": {
+               "type": "integer",
+               "title": "Version Number",
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Status",
+               "enum": [
+                 "Draft",
+                 "Active",
+                 "Inactive",
+                 "InvalidDraft",
+                 "Obsolete",
+                 null
+               ],
+               "enumNames": [
+                 "Draft",
+                 "Active",
+                 "Inactive",
+                 "Invalid Draft",
+                 "Obsolete",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Expression Set Definition Version",
+         "color": "#0070D2",
+         "category": "Core"
+       }
+     },
+     {
+       "id": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
+       "type": "table",
+       "data": {
+         "label": "Decision Matrix",
+         "icon": "standard:decision",
+         "color": "#8E44AD",
+         "Id": "EntityDefinition/CalculationMatrix",
+         "table": {
+           "name": "CalculationMatrix",
+           "label": "Decision Matrix",
+           "description": "[BRE] ",
+           "columns": []
+         },
+         "schema": {
+           "type": "object",
+           "description": "[BRE] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Matrix ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "GroupKey": {
+               "type": "string",
+               "title": "Group Key",
+               "description": ""
+             },
+             "SubGroupKey": {
+               "type": "string",
+               "title": "Sub Group Key",
+               "description": ""
+             },
+             "Type": {
+               "type": "string",
+               "title": "Type",
+               "enum": [
+                 "Standard",
+                 "Grouped",
+                 null
+               ],
+               "enumNames": [
+                 "Standard",
+                 "Grouped",
+                 null
+               ],
+               "description": ""
+             },
+             "UniqueName": {
+               "type": "string",
+               "title": "Unique Name",
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "description": ""
+             },
+             "DecisionMatrixDefinitionId": {
+               "type": "string",
+               "title": "Decision Matrix Definition ID",
+               "x-target": "DecisionMatrixDefinition",
+               "readOnly": true,
+               "description": ""
+             },
+             "DecisionMatrixType": {
+               "type": "string",
+               "title": "Decision Matrix Type",
+               "enum": [
+                 "DecisionMatrix",
+                 "DecisionTable",
+                 null
+               ],
+               "enumNames": [
+                 "Decision Matrix",
+                 "Decision Table",
+                 null
+               ],
+               "description": ""
+             },
+             "MigrationStatus": {
+               "type": "string",
+               "title": "Migration Status",
+               "readOnly": true,
+               "description": ""
+             },
+             "UsageType": {
+               "type": "string",
+               "title": "Usage Type",
+               "enum": [
+                 "Bre",
+                 "TransactionJournal",
+                 "DefaultPricing",
+                 "RecordAlert",
+                 "WarrantyClaim",
+                 "ProductQualification",
+                 "ProductCategoryQualification",
+                 "ComplianceControl",
+                 "FinancialServicesCloud",
+                 "DefaultRating",
+                 "PricingDiscovery",
+                 "RatingDiscovery",
+                 "PlanCostCalculation",
+                 "Timesheet",
+                 "FulfillmentCondition",
+                 "DecompositionEnrichmentMapping",
+                 null
+               ],
+               "enumNames": [
+                 "Default",
+                 "Transaction Journal",
+                 "Pricing",
+                 "Record Alert",
+                 "Warranty Claim",
+                 "Product Qualification",
+                 "Product Category Qualification",
+                 "Compliance",
+                 "Financial Services Cloud",
+                 "Rating",
+                 "Pricing Discovery",
+                 "Rating Discovery",
+                 " Plan Cost Calculation",
+                 "Timesheet",
+                 "Fulfillment Condition",
+                 "Decomposition Enrichment Mapping",
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "description": "[BRE] ",
+         "category": "BRE"
+       },
+       "position": {
+         "x": 330.27852838812885,
+         "y": -70.2966806248103
+       }
+     },
+     {
+       "id": "EntityDefinition/DecisionMatrixDefinition",
+       "type": "table",
+       "position": {
+         "x": -243.11996885108485,
+         "y": -49.29207975821176
+       },
+       "data": {
+         "Id": "EntityDefinition/DecisionMatrixDefinition",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "DecisionMatrixDefinition ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "Language": {
+               "type": "string",
+               "title": "Master Language",
+               "enum": [
+                 "en_US",
+                 "de",
+                 "es",
+                 "fr",
+                 "it",
+                 "ja",
+                 "sv",
+                 "ko",
+                 "zh_TW",
+                 "zh_CN",
+                 "pt_BR",
+                 "nl_NL",
+                 "da",
+                 "th",
+                 "fi",
+                 "ru",
+                 "es_MX",
+                 "no",
+                 "hu",
+                 "pl",
+                 "cs",
+                 "tr",
+                 "in",
+                 "ro",
+                 "vi",
+                 "uk",
+                 "iw",
+                 "el",
+                 "bg",
+                 "en_GB",
+                 "ar",
+                 "sk",
+                 "pt_PT",
+                 "hr",
+                 "sl",
+                 "fr_CA",
+                 "ka",
+                 "sr",
+                 "sh",
+                 "en_AU",
+                 "en_MY",
+                 "en_IN",
+                 "en_PH",
+                 "en_CA",
+                 "ro_MD",
+                 "bs",
+                 "mk",
+                 "lv",
+                 "lt",
+                 "et",
+                 "sq",
+                 "sh_ME",
+                 "mt",
+                 "ga",
+                 "eu",
+                 "cy",
+                 "is",
+                 "cac",
+                 "quc",
+                 "cak",
+                 "ms",
+                 "tl",
+                 "lb",
+                 "rm",
+                 "hy",
+                 "hi",
+                 "ur",
+                 "bn",
+                 "de_AT",
+                 "de_CH",
+                 "ta",
+                 "ar_DZ",
+                 "ar_BH",
+                 "ar_EG",
+                 "ar_IQ",
+                 "ar_JO",
+                 "ar_KW",
+                 "ar_LB",
+                 "ar_LY",
+                 "ar_MA",
+                 "ar_OM",
+                 "ar_QA",
+                 "ar_SA",
+                 "ar_SD",
+                 "ar_SY",
+                 "ar_TN",
+                 "ar_AE",
+                 "ar_YE",
+                 "zh_SG",
+                 "zh_HK",
+                 "en_HK",
+                 "en_IE",
+                 "en_SG",
+                 "en_ZA",
+                 "fr_BE",
+                 "fr_LU",
+                 "fr_CH",
+                 "de_BE",
+                 "de_LU",
+                 "it_CH",
+                 "nl_BE",
+                 "es_AR",
+                 "es_BO",
+                 "es_CL",
+                 "es_CO",
+                 "es_CR",
+                 "es_DO",
+                 "es_EC",
+                 "es_SV",
+                 "es_GT",
+                 "es_HN",
+                 "es_NI",
+                 "es_PA",
+                 "es_PY",
+                 "es_PE",
+                 "es_PR",
+                 "es_US",
+                 "es_UY",
+                 "es_VE",
+                 "ca",
+                 "af",
+                 "sw",
+                 "zu",
+                 "xh",
+                 "te",
+                 "ml",
+                 "kn",
+                 "mr",
+                 "gu",
+                 "pa",
+                 "en_NZ",
+                 "mi",
+                 "my",
+                 "fa",
+                 "km",
+                 "am",
+                 "kk",
+                 "ht",
+                 "sm",
+                 "haw",
+                 "zh_MY",
+                 "ru_LT",
+                 "ru_PL",
+                 "ru_AM",
+                 "ru_KZ",
+                 "ru_KG",
+                 "ru_BY",
+                 "ru_MD",
+                 "ru_UA",
+                 "en_AE",
+                 "en_BE",
+                 "en_CY",
+                 "en_DE",
+                 "en_IL",
+                 "en_IT",
+                 "en_NL",
+                 "en_MT",
+                 "en_ES",
+                 "en_PL",
+                 "en_DK",
+                 "en_SE",
+                 "en_NO",
+                 "en_FR",
+                 "en_HU",
+                 "en_CZ",
+                 "en_SK",
+                 "en_RO",
+                 "en_CH",
+                 "en_AL",
+                 "en_AD",
+                 "en_AG",
+                 "en_AT",
+                 "en_BS",
+                 "en_BB",
+                 "en_BZ",
+                 "en_BA",
+                 "en_BG",
+                 "en_HR",
+                 "en_DM",
+                 "en_EE",
+                 "en_FI",
+                 "en_GI",
+                 "en_GR",
+                 "en_GD",
+                 "en_GY",
+                 "en_IS",
+                 "en_JM",
+                 "en_JP",
+                 "en_LV",
+                 "en_LI",
+                 "en_LT",
+                 "en_LU",
+                 "en_MC",
+                 "en_ME",
+                 "en_MK",
+                 "en_PT",
+                 "en_RS",
+                 "en_SI",
+                 "en_KR",
+                 "en_KN",
+                 "en_LC",
+                 "en_VC",
+                 "en_TW",
+                 "en_TH",
+                 "en_TT",
+                 "en_TR",
+                 "nl_SR",
+                 "fr_HT",
+                 "de_LI",
+                 "es_AD",
+                 "sv_FI",
+                 "el_CY",
+                 "fr_MA",
+                 "kl",
+                 "ji",
+                 "hmn",
+                 null
+               ],
+               "enumNames": [
+                 "English",
+                 "German",
+                 "Spanish",
+                 "French",
+                 "Italian",
+                 "Japanese",
+                 "Swedish",
+                 "Korean",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 "Portuguese (Brazil)",
+                 "Dutch",
+                 "Danish",
+                 "Thai",
+                 "Finnish",
+                 "Russian",
+                 "Spanish (Mexico)",
+                 "Norwegian",
+                 "Hungarian",
+                 "Polish",
+                 "Czech",
+                 "Turkish",
+                 "Indonesian",
+                 "Romanian",
+                 "Vietnamese",
+                 "Ukrainian",
+                 "Hebrew",
+                 "Greek",
+                 "Bulgarian",
+                 "English (UK)",
+                 "Arabic",
+                 "Slovak",
+                 "Portuguese (European)",
+                 "Croatian",
+                 "Slovene",
+                 "French (Canadian)",
+                 "Georgian",
+                 "Serbian (Cyrillic)",
+                 "Serbian (Latin)",
+                 "English (Australian)",
+                 "English (Malaysian)",
+                 "English (Indian)",
+                 "English (Phillipines)",
+                 "English (Canadian)",
+                 "Romanian (Moldova)",
+                 "Bosnian",
+                 "Macedonian",
+                 "Latvian",
+                 "Lithuanian",
+                 "Estonian",
+                 "Albanian",
+                 "Montenegrin",
+                 "Maltese",
+                 "Irish",
+                 "Basque",
+                 "Welsh",
+                 "Icelandic",
+                 "Chuj",
+                 "Kiche",
+                 "Kaqchikel",
+                 "Malay",
+                 "Tagalog",
+                 "Luxembourgish",
+                 "Romansh",
+                 "Armenian",
+                 "Hindi",
+                 "Urdu",
+                 "Bengali",
+                 "German (Austria)",
+                 "German (Switzerland)",
+                 "Tamil",
+                 "Arabic (Algeria)",
+                 "Arabic (Bahrain)",
+                 "Arabic (Egypt)",
+                 "Arabic (Iraq)",
+                 "Arabic (Jordan)",
+                 "Arabic (Kuwait)",
+                 "Arabic (Lebanon)",
+                 "Arabic (Libya)",
+                 "Arabic (Morocco)",
+                 "Arabic (Oman)",
+                 "Arabic (Qatar)",
+                 "Arabic (Saudi Arabia)",
+                 "Arabic (Sudan)",
+                 "Arabic (Syria)",
+                 "Arabic (Tunisia)",
+                 "Arabic (United Arab Emirates)",
+                 "Arabic (Yemen)",
+                 "Chinese (Singapore)",
+                 "Chinese (Hong Kong)",
+                 "English (Hong Kong)",
+                 "English (Ireland)",
+                 "English (Singapore)",
+                 "English (South Africa)",
+                 "French (Belgium)",
+                 "French (Luxembourg)",
+                 "French (Switzerland)",
+                 "German (Belgium)",
+                 "German (Luxembourg)",
+                 "Italian (Switzerland)",
+                 "Dutch (Belgium)",
+                 "Spanish (Argentina)",
+                 "Spanish (Bolivia)",
+                 "Spanish (Chile)",
+                 "Spanish (Colombia)",
+                 "Spanish (Costa Rica)",
+                 "Spanish (Dominican Republic)",
+                 "Spanish (Ecuador)",
+                 "Spanish (El Salvador)",
+                 "Spanish (Guatemala)",
+                 "Spanish (Honduras)",
+                 "Spanish (Nicaragua)",
+                 "Spanish (Panama)",
+                 "Spanish (Paraguay)",
+                 "Spanish (Peru)",
+                 "Spanish (Puerto Rico)",
+                 "Spanish (United States)",
+                 "Spanish (Uruguay)",
+                 "Spanish (Venezuela)",
+                 "Catalan",
+                 "Afrikaans",
+                 "Swahili",
+                 "Zulu",
+                 "Xhosa",
+                 "Telugu",
+                 "Malayalam",
+                 "Kannada",
+                 "Marathi",
+                 "Gujarati",
+                 "Punjabi",
+                 "English (New Zealand)",
+                 "Te reo",
+                 "Burmese",
+                 "Farsi",
+                 "Khmer",
+                 "Amharic",
+                 "Kazakh",
+                 "Haitian Creole",
+                 "Samoan",
+                 "Hawaiian",
+                 "Chinese (Malaysia)",
+                 "Russian (Lithuania)",
+                 "Russian (Poland)",
+                 "Russian (Armenia)",
+                 "Russian (Kazakhstan)",
+                 "Russian (Kyrgyzstan)",
+                 "Russian (Belarus)",
+                 "Russian (Moldova)",
+                 "Russian (Ukraine)",
+                 "English (United Arab Emirates)",
+                 "English (Belgium)",
+                 "English (Cyprus)",
+                 "English (Germany)",
+                 "English (Israel)",
+                 "English (Italy)",
+                 "English (Netherlands)",
+                 "English (Malta)",
+                 "English (Spain)",
+                 "English (Poland)",
+                 "English (Denmark)",
+                 "English (Sweden)",
+                 "English (Norway)",
+                 "English (France)",
+                 "English (Hungary)",
+                 "English (Czechia)",
+                 "English (Slovakia)",
+                 "English (Romania)",
+                 "English (Switzerland)",
+                 "English (Albania)",
+                 "English (Andorra)",
+                 "English (Antigua and Barbuda)",
+                 "English (Austria)",
+                 "English (Bahamas)",
+                 "English (Barbados)",
+                 "English (Belize)",
+                 "English (Bosnia and Herzegovina)",
+                 "English (Bulgaria)",
+                 "English (Croatia)",
+                 "English (Dominica)",
+                 "English (Estonia)",
+                 "English (Finland)",
+                 "English (Gibraltar)",
+                 "English (Greece)",
+                 "English (Grenada)",
+                 "English (Guyana)",
+                 "English (Iceland)",
+                 "English (Jamaica)",
+                 "English (Japan)",
+                 "English (Latvia)",
+                 "English (Liechtenstein)",
+                 "English (Lithuania)",
+                 "English (Luxembourg)",
+                 "English (Monaco)",
+                 "English (Montenegro)",
+                 "English (North Macedonia)",
+                 "English (Portugal)",
+                 "English (Serbia)",
+                 "English (Slovenia)",
+                 "English (South Korea)",
+                 "English (St. Kitts and Nevis)",
+                 "English (St. Lucia)",
+                 "English (St. Vincent and the Grenadines)",
+                 "English (Taiwan)",
+                 "English (Thailand)",
+                 "English (Trinidad and Tobago)",
+                 "English (Turkey)",
+                 "Dutch (Suriname)",
+                 "French (Haiti)",
+                 "German (Liechtenstein)",
+                 "Spanish (Andorra)",
+                 "Swedish (Finland)",
+                 "Greek (Cyprus)",
+                 "French (Morocco)",
+                 "Greenlandic",
+                 "Yiddish",
+                 "Hmong",
+                 null
+               ],
+               "description": ""
+             },
+             "MasterLabel": {
+               "type": "string",
+               "title": "Label",
+               "description": ""
+             },
+             "NamespacePrefix": {
+               "type": "string",
+               "title": "Namespace Prefix",
+               "readOnly": true,
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Decision Matrix Definition",
+         "color": "#0070D2",
+         "category": "Core"
+       }
+     },
+     {
+       "id": "EntityDefinition/CalculationMatrixColumn",
+       "type": "table",
+       "position": {
+         "x": 856.4555751851323,
+         "y": -244.31894699777737
+       },
+       "data": {
+         "Id": "EntityDefinition/CalculationMatrixColumn",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Matrix Column ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "CalculationMatrixId": {
+               "type": "string",
+               "title": "Decision Matrix ID",
+               "x-target": "CalculationMatrix",
+               "readOnly": true,
+               "description": ""
+             },
+             "ApiName": {
+               "type": "string",
+               "title": "API Name",
+               "description": ""
+             },
+             "ColumnType": {
+               "type": "string",
+               "title": "Column Type",
+               "enum": [
+                 "Input",
+                 "Output",
+                 null
+               ],
+               "enumNames": [
+                 "Input",
+                 "Output",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "DataType": {
+               "type": "string",
+               "title": "Data Type",
+               "enum": [
+                 "Text",
+                 "Number",
+                 "NumberRange",
+                 "TextRange",
+                 "Currency",
+                 "Percent",
+                 "Boolean",
+                 null
+               ],
+               "enumNames": [
+                 "Text",
+                 "Number",
+                 "Number Range",
+                 "Text Range",
+                 "Currency",
+                 "Percent",
+                 "Boolean",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "DisplaySequence": {
+               "type": "integer",
+               "title": "Display Sequence",
+               "description": ""
+             },
+             "RangeValues": {
+               "type": "string",
+               "title": "Range Values",
+               "description": ""
+             },
+             "IsWildcardColumn": {
+               "type": "boolean",
+               "title": "Wildcard Column",
+               "description": ""
+             },
+             "WildcardColumnValue": {
+               "type": "string",
+               "title": "Wildcard Column Value",
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "description": ""
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Decision Matrix Column",
+         "color": "#0070D2",
+         "category": "Core"
+       }
+     },
+     {
+       "id": "EntityDefinition/CalcMatrixColumnRange",
+       "type": "table",
+       "position": {
+         "x": 1496.9675168756276,
+         "y": -242.07924046496197
+       },
+       "data": {
+         "Id": "EntityDefinition/CalcMatrixColumnRange",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Matrix Column Range ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "CalculationMatrixColumnId": {
+               "type": "string",
+               "title": "Decision Matrix Column ID",
+               "x-target": "CalculationMatrixColumn",
+               "readOnly": true,
+               "description": ""
+             },
+             "CalculationMatrixVersionId": {
+               "type": "string",
+               "title": "Decision Matrix Version ID",
+               "x-target": "CalculationMatrixVersion",
+               "description": ""
+             },
+             "RangeStartValue": {
+               "type": "string",
+               "title": "Range Start Value",
+               "description": ""
+             },
+             "Occurrence": {
+               "type": "integer",
+               "title": "Occurrence",
+               "description": ""
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Decision Matrix Column Range",
+         "color": "#0070D2",
+         "category": "Core"
+       }
+     },
+     {
+       "id": "EntityDefinition/CalculationMatrixVersion",
+       "type": "table",
+       "position": {
+         "x": 861.6886577106151,
+         "y": -22.235275679711386
+       },
+       "data": {
+         "Id": "EntityDefinition/CalculationMatrixVersion",
+         "description": "[BRE] ",
+         "schema": {
+           "type": "object",
+           "description": "[BRE] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Matrix Version ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "CalculationMatrixId": {
+               "type": "string",
+               "title": "Decision Matrix ID",
+               "x-target": "CalculationMatrix",
+               "readOnly": true,
+               "description": ""
+             },
+             "EndDateTime": {
+               "type": "string",
+               "title": "End Date Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "GroupKey": {
+               "type": "string",
+               "title": "Group Key",
+               "readOnly": true,
+               "description": ""
+             },
+             "GroupKeyValue": {
+               "type": "string",
+               "title": "Group Key Value",
+               "description": ""
+             },
+             "IsEnabled": {
+               "type": "boolean",
+               "title": "Active",
+               "description": ""
+             },
+             "MatrixType": {
+               "type": "string",
+               "title": "Matrix Type",
+               "readOnly": true,
+               "description": ""
+             },
+             "Rank": {
+               "type": "integer",
+               "title": "Rank",
+               "description": ""
+             },
+             "StartDateTime": {
+               "type": "string",
+               "title": "Start Date Time",
+               "format": "date-time",
+               "description": ""
+             },
+             "SubGroupKey": {
+               "type": "string",
+               "title": "Sub Group Key",
+               "readOnly": true,
+               "description": ""
+             },
+             "SubGroupKeyValue": {
+               "type": "string",
+               "title": "Sub Group Key Value",
+               "description": ""
+             },
+             "VersionNumber": {
+               "type": "integer",
+               "title": "Version Number",
+               "description": ""
+             },
+             "LoadProcessStatus": {
+               "type": "string",
+               "title": "Load Process Status",
+               "enum": [
+                 "Pending",
+                 "InProgress",
+                 "CompletedWithErrors",
+                 "Completed",
+                 "Failed",
+                 null
+               ],
+               "enumNames": [
+                 "Pending",
+                 "In Progress",
+                 "Completed With Errors",
+                 "Completed",
+                 "Failed",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "description": ""
+             },
+             "DecisionMatrixDefinitionVerId": {
+               "type": "string",
+               "title": "Decision Matrix Definition Version ID",
+               "x-target": "DecisionMatrixDefinitionVersion",
+               "readOnly": true,
+               "description": ""
+             },
+             "ApiName": {
+               "type": "string",
+               "title": "API Name",
+               "description": ""
+             },
+             "DscnModelNoteExportStatus": {
+               "type": "string",
+               "title": "Decision Model and Notation Export Status",
+               "enum": [
+                 "Initiated",
+                 "InProgress",
+                 "Complete",
+                 "Failed",
+                 null
+               ],
+               "enumNames": [
+                 "Initiated",
+                 "In Progress",
+                 "Complete",
+                 "Failed",
+                 null
+               ],
+               "readOnly": true,
+               "description": ""
+             }
+           }
+         },
+         "icon": "standard:decision",
+         "label": "Decision Matrix Version",
+         "color": "#8E44AD",
+         "category": "BRE"
+       }
+     },
+     {
+       "id": "EntityDefinition/CalculationMatrixRow",
+       "type": "table",
+       "position": {
+         "x": 1475.891367505666,
+         "y": -15.563506757610673
+       },
+       "data": {
+         "Id": "EntityDefinition/CalculationMatrixRow",
+         "description": "[BRE] Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row.",
+         "schema": {
+           "type": "object",
+           "description": "[BRE] Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row.",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Matrix Row ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "Name": {
+               "type": "string",
+               "title": "HashKey",
+               "description": "The row name."
+             },
+             "CurrencyIsoCode": {
+               "type": "string",
+               "title": "Currency ISO Code",
+               "enum": [
+                 "USD",
+                 null
+               ],
+               "enumNames": [
+                 "U.S. Dollar",
+                 null
+               ],
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "CalculationMatrixVersionId": {
+               "type": "string",
+               "title": "Decision Matrix Version ID",
+               "x-target": "CalculationMatrixVersion",
+               "description": ""
+             },
+             "IsVersionEnabled": {
+               "type": "boolean",
+               "title": "Version Enabled",
+               "readOnly": true,
+               "description": "Specifies whether the associated matrix version is active. Derived from the associated Decision Matrix Version (CalculationMatrixVersion object)."
+             },
+             "StartDateTime": {
+               "type": "string",
+               "title": "Start Date Time",
+               "format": "date-time",
+               "description": "The first date on which this row version is active. Applicable if IsVersionEnabled is true."
+             },
+             "EndDateTime": {
+               "type": "string",
+               "title": "End Date Time",
+               "format": "date-time",
+               "description": "The last date on which this row version is active. Applicable if IsVersionEnabled is true."
+             },
+             "InputData": {
+               "type": "string",
+               "title": "Input Data",
+               "description": "The input columns and associated values for this row of the matrix."
+             },
+             "OutputData": {
+               "type": "string",
+               "title": "Output Data",
+               "description": "The output columns and associated values for this row of the matrix."
+             },
+             "Namespace": {
+               "type": "string",
+               "title": "Namespace",
+               "description": ""
+             }
+           }
+         },
+         "icon": "standard:decision",
+         "label": "Decision Matrix Row",
+         "color": "#8E44AD",
+         "category": "BRE"
+       }
+     },
+     {
+       "id": "group_3c863250-bb3a-4498-a330-4d4c685849da",
+       "type": "markdown",
+       "data": {
+         "label": "Business Rule Engine",
+         "icon": "standard:budget_allocation",
+         "color": "rgba(207, 182, 255, 0.4)",
+         "content": ""
+       },
+       "position": {
+         "x": 293.3558904990128,
+         "y": -362.4485095501821
+       },
+       "width": 390,
+       "height": 72
+     },
+     {
+       "id": "EntityDefinition/DecisionTable_58f44fd1-35ec-4b01-96f8-bd3d0885179c",
+       "type": "table",
+       "position": {
+         "x": -238.7437305964953,
+         "y": 151.17796484318072
+       },
+       "data": {
+         "Id": "EntityDefinition/DecisionTable",
+         "description": "[Core] ",
+         "schema": {
+           "type": "object",
+           "description": "[Core] ",
+           "properties": {
+             "Id": {
+               "type": "string",
+               "title": "Decision Table ID",
+               "readOnly": true,
+               "description": "Globally unique string that identifies a record."
+             },
+             "DeveloperName": {
+               "type": "string",
+               "title": "API Name",
+               "description": ""
+             },
+             "Language": {
+               "type": "string",
+               "title": "Master Language",
+               "enum": [
+                 "en_US",
+                 "de",
+                 "es",
+                 "fr",
+                 "it",
+                 "ja",
+                 "sv",
+                 "ko",
+                 "zh_TW",
+                 "zh_CN",
+                 "pt_BR",
+                 "nl_NL",
+                 "da",
+                 "th",
+                 "fi",
+                 "ru",
+                 "es_MX",
+                 "no",
+                 "hu",
+                 "pl",
+                 "cs",
+                 "tr",
+                 "in",
+                 "ro",
+                 "vi",
+                 "uk",
+                 "iw",
+                 "el",
+                 "bg",
+                 "en_GB",
+                 "ar",
+                 "sk",
+                 "pt_PT",
+                 "hr",
+                 "sl",
+                 "fr_CA",
+                 "ka",
+                 "sr",
+                 "sh",
+                 "en_AU",
+                 "en_MY",
+                 "en_IN",
+                 "en_PH",
+                 "en_CA",
+                 "ro_MD",
+                 "bs",
+                 "mk",
+                 "lv",
+                 "lt",
+                 "et",
+                 "sq",
+                 "sh_ME",
+                 "mt",
+                 "ga",
+                 "eu",
+                 "cy",
+                 "is",
+                 "cac",
+                 "quc",
+                 "cak",
+                 "ms",
+                 "tl",
+                 "lb",
+                 "rm",
+                 "hy",
+                 "hi",
+                 "ur",
+                 "bn",
+                 "de_AT",
+                 "de_CH",
+                 "ta",
+                 "ar_DZ",
+                 "ar_BH",
+                 "ar_EG",
+                 "ar_IQ",
+                 "ar_JO",
+                 "ar_KW",
+                 "ar_LB",
+                 "ar_LY",
+                 "ar_MA",
+                 "ar_OM",
+                 "ar_QA",
+                 "ar_SA",
+                 "ar_SD",
+                 "ar_SY",
+                 "ar_TN",
+                 "ar_AE",
+                 "ar_YE",
+                 "zh_SG",
+                 "zh_HK",
+                 "en_HK",
+                 "en_IE",
+                 "en_SG",
+                 "en_ZA",
+                 "fr_BE",
+                 "fr_LU",
+                 "fr_CH",
+                 "de_BE",
+                 "de_LU",
+                 "it_CH",
+                 "nl_BE",
+                 "es_AR",
+                 "es_BO",
+                 "es_CL",
+                 "es_CO",
+                 "es_CR",
+                 "es_DO",
+                 "es_EC",
+                 "es_SV",
+                 "es_GT",
+                 "es_HN",
+                 "es_NI",
+                 "es_PA",
+                 "es_PY",
+                 "es_PE",
+                 "es_PR",
+                 "es_US",
+                 "es_UY",
+                 "es_VE",
+                 "ca",
+                 "af",
+                 "sw",
+                 "zu",
+                 "xh",
+                 "te",
+                 "ml",
+                 "kn",
+                 "mr",
+                 "gu",
+                 "pa",
+                 "en_NZ",
+                 "mi",
+                 "my",
+                 "fa",
+                 "km",
+                 "am",
+                 "kk",
+                 "ht",
+                 "sm",
+                 "haw",
+                 "zh_MY",
+                 "ru_LT",
+                 "ru_PL",
+                 "ru_AM",
+                 "ru_KZ",
+                 "ru_KG",
+                 "ru_BY",
+                 "ru_MD",
+                 "ru_UA",
+                 "en_AE",
+                 "en_BE",
+                 "en_CY",
+                 "en_DE",
+                 "en_IL",
+                 "en_IT",
+                 "en_NL",
+                 "en_MT",
+                 "en_ES",
+                 "en_PL",
+                 "en_DK",
+                 "en_SE",
+                 "en_NO",
+                 "en_FR",
+                 "en_HU",
+                 "en_CZ",
+                 "en_SK",
+                 "en_RO",
+                 "en_CH",
+                 "en_AL",
+                 "en_AD",
+                 "en_AG",
+                 "en_AT",
+                 "en_BS",
+                 "en_BB",
+                 "en_BZ",
+                 "en_BA",
+                 "en_BG",
+                 "en_HR",
+                 "en_DM",
+                 "en_EE",
+                 "en_FI",
+                 "en_GI",
+                 "en_GR",
+                 "en_GD",
+                 "en_GY",
+                 "en_IS",
+                 "en_JM",
+                 "en_JP",
+                 "en_LV",
+                 "en_LI",
+                 "en_LT",
+                 "en_LU",
+                 "en_MC",
+                 "en_ME",
+                 "en_MK",
+                 "en_PT",
+                 "en_RS",
+                 "en_SI",
+                 "en_KR",
+                 "en_KN",
+                 "en_LC",
+                 "en_VC",
+                 "en_TW",
+                 "en_TH",
+                 "en_TT",
+                 "en_TR",
+                 "nl_SR",
+                 "fr_HT",
+                 "de_LI",
+                 "es_AD",
+                 "sv_FI",
+                 "el_CY",
+                 "fr_MA",
+                 "kl",
+                 "ji",
+                 "hmn",
+                 null
+               ],
+               "enumNames": [
+                 "English",
+                 "German",
+                 "Spanish",
+                 "French",
+                 "Italian",
+                 "Japanese",
+                 "Swedish",
+                 "Korean",
+                 "Chinese (Traditional)",
+                 "Chinese (Simplified)",
+                 "Portuguese (Brazil)",
+                 "Dutch",
+                 "Danish",
+                 "Thai",
+                 "Finnish",
+                 "Russian",
+                 "Spanish (Mexico)",
+                 "Norwegian",
+                 "Hungarian",
+                 "Polish",
+                 "Czech",
+                 "Turkish",
+                 "Indonesian",
+                 "Romanian",
+                 "Vietnamese",
+                 "Ukrainian",
+                 "Hebrew",
+                 "Greek",
+                 "Bulgarian",
+                 "English (UK)",
+                 "Arabic",
+                 "Slovak",
+                 "Portuguese (European)",
+                 "Croatian",
+                 "Slovene",
+                 "French (Canadian)",
+                 "Georgian",
+                 "Serbian (Cyrillic)",
+                 "Serbian (Latin)",
+                 "English (Australian)",
+                 "English (Malaysian)",
+                 "English (Indian)",
+                 "English (Phillipines)",
+                 "English (Canadian)",
+                 "Romanian (Moldova)",
+                 "Bosnian",
+                 "Macedonian",
+                 "Latvian",
+                 "Lithuanian",
+                 "Estonian",
+                 "Albanian",
+                 "Montenegrin",
+                 "Maltese",
+                 "Irish",
+                 "Basque",
+                 "Welsh",
+                 "Icelandic",
+                 "Chuj",
+                 "Kiche",
+                 "Kaqchikel",
+                 "Malay",
+                 "Tagalog",
+                 "Luxembourgish",
+                 "Romansh",
+                 "Armenian",
+                 "Hindi",
+                 "Urdu",
+                 "Bengali",
+                 "German (Austria)",
+                 "German (Switzerland)",
+                 "Tamil",
+                 "Arabic (Algeria)",
+                 "Arabic (Bahrain)",
+                 "Arabic (Egypt)",
+                 "Arabic (Iraq)",
+                 "Arabic (Jordan)",
+                 "Arabic (Kuwait)",
+                 "Arabic (Lebanon)",
+                 "Arabic (Libya)",
+                 "Arabic (Morocco)",
+                 "Arabic (Oman)",
+                 "Arabic (Qatar)",
+                 "Arabic (Saudi Arabia)",
+                 "Arabic (Sudan)",
+                 "Arabic (Syria)",
+                 "Arabic (Tunisia)",
+                 "Arabic (United Arab Emirates)",
+                 "Arabic (Yemen)",
+                 "Chinese (Singapore)",
+                 "Chinese (Hong Kong)",
+                 "English (Hong Kong)",
+                 "English (Ireland)",
+                 "English (Singapore)",
+                 "English (South Africa)",
+                 "French (Belgium)",
+                 "French (Luxembourg)",
+                 "French (Switzerland)",
+                 "German (Belgium)",
+                 "German (Luxembourg)",
+                 "Italian (Switzerland)",
+                 "Dutch (Belgium)",
+                 "Spanish (Argentina)",
+                 "Spanish (Bolivia)",
+                 "Spanish (Chile)",
+                 "Spanish (Colombia)",
+                 "Spanish (Costa Rica)",
+                 "Spanish (Dominican Republic)",
+                 "Spanish (Ecuador)",
+                 "Spanish (El Salvador)",
+                 "Spanish (Guatemala)",
+                 "Spanish (Honduras)",
+                 "Spanish (Nicaragua)",
+                 "Spanish (Panama)",
+                 "Spanish (Paraguay)",
+                 "Spanish (Peru)",
+                 "Spanish (Puerto Rico)",
+                 "Spanish (United States)",
+                 "Spanish (Uruguay)",
+                 "Spanish (Venezuela)",
+                 "Catalan",
+                 "Afrikaans",
+                 "Swahili",
+                 "Zulu",
+                 "Xhosa",
+                 "Telugu",
+                 "Malayalam",
+                 "Kannada",
+                 "Marathi",
+                 "Gujarati",
+                 "Punjabi",
+                 "English (New Zealand)",
+                 "Te reo",
+                 "Burmese",
+                 "Farsi",
+                 "Khmer",
+                 "Amharic",
+                 "Kazakh",
+                 "Haitian Creole",
+                 "Samoan",
+                 "Hawaiian",
+                 "Chinese (Malaysia)",
+                 "Russian (Lithuania)",
+                 "Russian (Poland)",
+                 "Russian (Armenia)",
+                 "Russian (Kazakhstan)",
+                 "Russian (Kyrgyzstan)",
+                 "Russian (Belarus)",
+                 "Russian (Moldova)",
+                 "Russian (Ukraine)",
+                 "English (United Arab Emirates)",
+                 "English (Belgium)",
+                 "English (Cyprus)",
+                 "English (Germany)",
+                 "English (Israel)",
+                 "English (Italy)",
+                 "English (Netherlands)",
+                 "English (Malta)",
+                 "English (Spain)",
+                 "English (Poland)",
+                 "English (Denmark)",
+                 "English (Sweden)",
+                 "English (Norway)",
+                 "English (France)",
+                 "English (Hungary)",
+                 "English (Czechia)",
+                 "English (Slovakia)",
+                 "English (Romania)",
+                 "English (Switzerland)",
+                 "English (Albania)",
+                 "English (Andorra)",
+                 "English (Antigua and Barbuda)",
+                 "English (Austria)",
+                 "English (Bahamas)",
+                 "English (Barbados)",
+                 "English (Belize)",
+                 "English (Bosnia and Herzegovina)",
+                 "English (Bulgaria)",
+                 "English (Croatia)",
+                 "English (Dominica)",
+                 "English (Estonia)",
+                 "English (Finland)",
+                 "English (Gibraltar)",
+                 "English (Greece)",
+                 "English (Grenada)",
+                 "English (Guyana)",
+                 "English (Iceland)",
+                 "English (Jamaica)",
+                 "English (Japan)",
+                 "English (Latvia)",
+                 "English (Liechtenstein)",
+                 "English (Lithuania)",
+                 "English (Luxembourg)",
+                 "English (Monaco)",
+                 "English (Montenegro)",
+                 "English (North Macedonia)",
+                 "English (Portugal)",
+                 "English (Serbia)",
+                 "English (Slovenia)",
+                 "English (South Korea)",
+                 "English (St. Kitts and Nevis)",
+                 "English (St. Lucia)",
+                 "English (St. Vincent and the Grenadines)",
+                 "English (Taiwan)",
+                 "English (Thailand)",
+                 "English (Trinidad and Tobago)",
+                 "English (Turkey)",
+                 "Dutch (Suriname)",
+                 "French (Haiti)",
+                 "German (Liechtenstein)",
+                 "Spanish (Andorra)",
+                 "Swedish (Finland)",
+                 "Greek (Cyprus)",
+                 "French (Morocco)",
+                 "Greenlandic",
+                 "Yiddish",
+                 "Hmong",
+                 null
+               ],
+               "description": ""
+             },
+             "MasterLabel": {
+               "type": "string",
+               "title": "Label",
+               "description": ""
+             },
+             "NamespacePrefix": {
+               "type": "string",
+               "title": "Namespace Prefix",
+               "readOnly": true,
+               "description": ""
+             },
+             "LastModifiedDate": {
+               "type": "string",
+               "title": "Last Modified Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": "Date and time when a user last modified this record."
+             },
+             "SetupName": {
+               "type": "string",
+               "title": "Name",
+               "description": ""
+             },
+             "Description": {
+               "type": "string",
+               "title": "Description",
+               "description": ""
+             },
+             "LastSyncDate": {
+               "type": "string",
+               "title": "Last Refreshed Date",
+               "format": "date-time",
+               "readOnly": true,
+               "description": ""
+             },
+             "SourceObject": {
+               "type": "string",
+               "title": "Source Object",
+               "description": ""
+             },
+             "Status": {
+               "type": "string",
+               "title": "Status",
+               "enum": [
+                 "Draft",
+                 "Inactive",
+                 "Active",
+                 "ActivationInProgress",
+                 null
+               ],
+               "enumNames": [
+                 "Draft",
+                 "Inactive",
+                 "Active",
+                 "Activation In Progress",
+                 null
+               ],
+               "description": ""
+             },
+             "Type": {
+               "type": "string",
+               "title": "Type",
+               "enum": [
+                 "LowVolume",
+                 "HighVolume",
+                 "Advanced",
+                 "MediumVolume",
+                 "HighScaleExecution",
+                 null
+               ],
+               "enumNames": [
+                 "Standard",
+                 "High Volume",
+                 "Advanced",
+                 "Advanced",
+                 "High-Scale Execution",
+                 null
+               ],
+               "description": ""
+             },
+             "ConditionCriteria": {
+               "type": "string",
+               "title": "Condition Criteria",
+               "description": ""
+             },
+             "ConditionType": {
+               "type": "string",
+               "title": "Condition Type",
+               "enum": [
+                 "All",
+                 "Any",
+                 "Custom",
+                 null
+               ],
+               "enumNames": [
+                 "All conditions are met (AND)",
+                 "Any condition is met (OR)",
+                 "Custom Logic",
+                 null
+               ],
+               "description": ""
+             },
+             "DataSourceType": {
+               "type": "string",
+               "title": "Data Source Type",
+               "enum": [
+                 "SingleSobject",
+                 "MultipleSobjects",
+                 "CsvUpload",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "FilterResultBy": {
+               "type": "string",
+               "title": "Filter Result By",
+               "enum": [
+                 "UniqueValues",
+                 "AnyValue",
+                 "Priority",
+                 "FirstMatch",
+                 "CollectOperator",
+                 "OutputOrder",
+                 "RuleOrder",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "CollectOperator": {
+               "type": "string",
+               "title": "Collect Operator",
+               "enum": [
+                 "None",
+                 "Sum",
+                 "Minimum",
+                 "Maximum",
+                 "Count",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "SourceConditionLogic": {
+               "type": "string",
+               "title": "Source Condition Logic",
+               "description": ""
+             },
+             "UsageType": {
+               "type": "string",
+               "title": "Usage Type",
+               "enum": [
+                 "Bre",
+                 "TransactionJournal",
+                 "DefaultPricing",
+                 "RecordAlert",
+                 "WarrantyClaim",
+                 "ProductQualification",
+                 "ProductCategoryQualification",
+                 "ComplianceControl",
+                 "FinancialServicesCloud",
+                 "DefaultRating",
+                 "PricingDiscovery",
+                 "RatingDiscovery",
+                 "PlanCostCalculation",
+                 "Timesheet",
+                 "FulfillmentCondition",
+                 "DecompositionEnrichmentMapping",
+                 null
+               ],
+               "enumNames": [
+                 "Default",
+                 "Transaction Journal",
+                 "Pricing",
+                 "Record Alert",
+                 "Warranty Claim",
+                 "Product Qualification",
+                 "Product Category Qualification",
+                 "Compliance",
+                 "Financial Services Cloud",
+                 "Rating",
+                 "Pricing Discovery",
+                 "Rating Discovery",
+                 " Plan Cost Calculation",
+                 "Timesheet",
+                 "Fulfillment Condition",
+                 "Decomposition Enrichment Mapping",
+                 null
+               ],
+               "description": ""
+             },
+             "RefreshStatus": {
+               "type": "string",
+               "title": "Refresh Status",
+               "enum": [
+                 "Initiated",
+                 "Failed",
+                 "Completed",
+                 "InProgress",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "RefreshFailureReason": {
+               "type": "string",
+               "title": "Refresh Failure Reason",
+               "description": ""
+             },
+             "DoesConsiderNullValue": {
+               "type": "boolean",
+               "title": "Consider Null Value",
+               "description": ""
+             },
+             "ExecutionType": {
+               "type": "string",
+               "title": "Execution Type",
+               "enum": [
+                 "Soql",
+                 "Hbpo",
+                 "Dmo",
+                 "Solr",
+                 "Hbase",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "UploadStatus": {
+               "type": "string",
+               "title": "Upload Status",
+               "enum": [
+                 "UploadInProgress",
+                 "Completed",
+                 "CompletedWithErrors",
+                 "Failed",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             },
+             "IsIncrementalSyncEnabled": {
+               "type": "boolean",
+               "title": "Incremental Refresh Enabled",
+               "description": ""
+             },
+             "HasIncrementalSyncFailed": {
+               "type": "boolean",
+               "title": "Incremental Refresh Failed",
+               "description": ""
+             },
+             "LastIncrementalSyncDate": {
+               "type": "string",
+               "title": "Last Incremental Refresh Date",
+               "format": "date-time",
+               "description": ""
+             },
+             "DownloadStatus": {
+               "type": "string",
+               "title": "Download Status",
+               "enum": [
+                 "DownloadInProgress",
+                 "Completed",
+                 "Failed",
+                 null
+               ],
+               "enumNames": [
+                 null,
+                 null,
+                 null,
+                 null
+               ],
+               "description": ""
+             }
+           }
+         },
+         "icon": "utility:standard_objects",
+         "label": "Decision Table",
+         "category": "Core",
+         "color": "#0070D2"
+       }
+     }
+   ],
+   "edges": [
+     {
+       "id": "DecisionTableParameter.DecisionTableId.DecisionTable.Id",
+       "source": "DecisionTableParameter",
+       "sourceHandle": "DecisionTableId-source-inv",
+       "target": "EntityDefinition/DecisionTable_58f44fd1-35ec-4b01-96f8-bd3d0885179c",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "DecisionTableDatasetLink.DecisionTableId.DecisionTable.Id",
+       "source": "DecisionTableDatasetLink",
+       "sourceHandle": "DecisionTableId-source-inv",
+       "target": "EntityDefinition/DecisionTable_58f44fd1-35ec-4b01-96f8-bd3d0885179c",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "ExpressionSetVersion.ExpressionSetId.ExpressionSet.Id",
+       "source": "EntityDefinition/ExpressionSetVersion",
+       "sourceHandle": "ExpressionSetId-source-inv",
+       "target": "group_2aecdde5-07a5-45f0-a3dc-f9afc77e0337",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "ExpressionSetVersion.ExpressionSetDefinitionVerId.ExpressionSetDefinitionVersion.Id",
+       "source": "EntityDefinition/ExpressionSetVersion",
+       "sourceHandle": "ExpressionSetDefinitionVerId-source-inv",
+       "target": "EntityDefinition/ExpressionSetDefinitionVersion",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalculationMatrix.DecisionMatrixDefinitionId.DecisionMatrixDefinition.Id",
+       "source": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
+       "sourceHandle": "DecisionMatrixDefinitionId-source-inv",
+       "target": "EntityDefinition/DecisionMatrixDefinition",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalculationMatrixColumn.CalculationMatrixId.CalculationMatrix.Id",
+       "source": "EntityDefinition/CalculationMatrixColumn",
+       "sourceHandle": "CalculationMatrixId-source-inv",
+       "target": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalcMatrixColumnRange.CalculationMatrixColumnId.CalculationMatrixColumn.Id",
+       "source": "EntityDefinition/CalcMatrixColumnRange",
+       "sourceHandle": "CalculationMatrixColumnId-source-inv",
+       "target": "EntityDefinition/CalculationMatrixColumn",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalcMatrixColumnRange.CalculationMatrixVersionId.CalculationMatrixVersion.Id",
+       "source": "EntityDefinition/CalcMatrixColumnRange",
+       "sourceHandle": "CalculationMatrixVersionId-source-inv",
+       "target": "EntityDefinition/CalculationMatrixVersion",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 1,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalculationMatrixVersion.CalculationMatrixId.CalculationMatrix.Id",
+       "source": "EntityDefinition/CalculationMatrixVersion",
+       "sourceHandle": "CalculationMatrixId-source-inv",
+       "target": "group_b36d80a1-81d7-48b8-8000-99d47c4cb5fc",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     },
+     {
+       "id": "CalculationMatrixRow.CalculationMatrixVersionId.CalculationMatrixVersion.Id",
+       "source": "EntityDefinition/CalculationMatrixRow",
+       "sourceHandle": "CalculationMatrixVersionId-source-inv",
+       "target": "EntityDefinition/CalculationMatrixVersion",
+       "label": "",
+       "targetHandle": "Id-target-inv",
+       "type": "betweenTablesInverted",
+       "selectable": true,
+       "style": {
+         "strokeWidth": 3,
+         "zIndex": 500,
+         "stroke": "rgb(var(--react-erd__secondary-color))",
+         "transition": "stroke 0.3s"
+       }
+     }
+   ]
+ }
