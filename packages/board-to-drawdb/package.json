@@ -12,13 +12,28 @@
     "salesforce",
     "erd",
     "drawdb",
-    "converter"
+    "converter",
+    "schema",
+    "database",
+    "visualization"
   ],
-  "author": "",
+  "author": "SF Explorer",
   "license": "MIT",
+  "homepage": "https://github.com/sf-explorer/app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-explorer/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sf-explorer/app/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "typescript": "^5.3.0",
     "@types/node": "^20.0.0"
   }
 }
+
 
