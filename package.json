@@ -1,0 +1,16 @@
+{
+  "name": "@sf-explorer/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:board-to-drawdb": "npm run build --workspace=@sf-explorer/board-to-drawdb"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
+

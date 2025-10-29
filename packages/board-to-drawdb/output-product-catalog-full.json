@@ -1,0 +1,430 @@
+{
+  "title": "SF Explorer Board",
+  "database": "generic",
+  "tables": [
+    {
+      "id": 0,
+      "name": "ProductClassification",
+      "comment": "[Product Catalog] ",
+      "color": "#F39C12",
+      "x": 227,
+      "y": 487,
+      "fields": [
+        {
+          "id": 0,
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "comment": "Globally unique string that identifies a record.",
+          "primary": true,
+          "unique": true,
+          "notNull": true
+        },
+        {
+          "id": 1,
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "comment": "Product Classification Name",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 2,
+          "name": "CurrencyIsoCode",
+          "type": "VARCHAR(255)",
+          "comment": "Currency ISO Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "USD"
+        },
+        {
+          "id": 3,
+          "name": "LastModifiedDate",
+          "type": "TIMESTAMP",
+          "comment": "Date and time when a user last modified this record.",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 4,
+          "name": "Code",
+          "type": "VARCHAR(255)",
+          "comment": "Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 5,
+          "name": "Status",
+          "type": "VARCHAR(255)",
+          "comment": "Status",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "Draft"
+        },
+        {
+          "id": 6,
+          "name": "External_Id__c",
+          "type": "VARCHAR(255)",
+          "comment": "External Id",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        }
+      ],
+      "indices": [
+        {
+          "id": 0,
+          "name": "pk_productclassification",
+          "unique": true,
+          "fields": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "AttributePicklist",
+      "comment": "[Product Catalog] ",
+      "color": "#F39C12",
+      "x": 1750,
+      "y": 252,
+      "fields": [
+        {
+          "id": 0,
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "comment": "Globally unique string that identifies a record.",
+          "primary": true,
+          "unique": true,
+          "notNull": true
+        },
+        {
+          "id": 1,
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "comment": "Name",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 2,
+          "name": "CurrencyIsoCode",
+          "type": "VARCHAR(255)",
+          "comment": "Currency ISO Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "USD"
+        },
+        {
+          "id": 3,
+          "name": "LastModifiedDate",
+          "type": "TIMESTAMP",
+          "comment": "Date and time when a user last modified this record.",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 4,
+          "name": "Code",
+          "type": "VARCHAR(255)",
+          "comment": "Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 5,
+          "name": "Description",
+          "type": "VARCHAR(255)",
+          "comment": "Description",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 6,
+          "name": "Status",
+          "type": "VARCHAR(255)",
+          "comment": "Status",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "Draft"
+        },
+        {
+          "id": 7,
+          "name": "DataType",
+          "type": "VARCHAR(255)",
+          "comment": "Data Type",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "Boolean"
+        },
+        {
+          "id": 8,
+          "name": "UnitOfMeasureId",
+          "type": "VARCHAR(255)",
+          "comment": "Unit of Measure ID",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        }
+      ],
+      "indices": [
+        {
+          "id": 0,
+          "name": "pk_attributepicklist",
+          "unique": true,
+          "fields": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ProductComponentGroup",
+      "comment": "[Product Catalog] ",
+      "color": "#F39C12",
+      "x": 1277,
+      "y": 519,
+      "fields": [
+        {
+          "id": 0,
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "comment": "Globally unique string that identifies a record.",
+          "primary": true,
+          "unique": true,
+          "notNull": true
+        },
+        {
+          "id": 1,
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "comment": "Group Name",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 2,
+          "name": "CurrencyIsoCode",
+          "type": "VARCHAR(255)",
+          "comment": "Currency ISO Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "USD"
+        },
+        {
+          "id": 3,
+          "name": "LastModifiedDate",
+          "type": "TIMESTAMP",
+          "comment": "Date and time when a user last modified this record.",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 4,
+          "name": "ParentProductId",
+          "type": "VARCHAR(255)",
+          "comment": "Product ID",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 5,
+          "name": "ParentGroupId",
+          "type": "VARCHAR(255)",
+          "comment": "Product Component Group ID",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 6,
+          "name": "MinBundleComponents",
+          "type": "INTEGER",
+          "comment": "Min Number of Components",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 7,
+          "name": "MaxBundleComponents",
+          "type": "INTEGER",
+          "comment": "Max Number of Components",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 8,
+          "name": "Description",
+          "type": "VARCHAR(255)",
+          "comment": "Description",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 9,
+          "name": "Sequence",
+          "type": "INTEGER",
+          "comment": "Sequence",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 10,
+          "name": "Code",
+          "type": "VARCHAR(255)",
+          "comment": "Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 11,
+          "name": "External_Id__c",
+          "type": "VARCHAR(255)",
+          "comment": "External Id",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        }
+      ],
+      "indices": [
+        {
+          "id": 0,
+          "name": "pk_productcomponentgroup",
+          "unique": true,
+          "fields": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "AttributeCategoryAttribute",
+      "comment": "[Product Catalog] ",
+      "color": "#F39C12",
+      "x": 1115,
+      "y": -81,
+      "fields": [
+        {
+          "id": 0,
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "comment": "Globally unique string that identifies a record.",
+          "primary": true,
+          "unique": true,
+          "notNull": true
+        },
+        {
+          "id": 1,
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "comment": "Name",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 2,
+          "name": "CurrencyIsoCode",
+          "type": "VARCHAR(255)",
+          "comment": "Currency ISO Code",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "default": "USD"
+        },
+        {
+          "id": 3,
+          "name": "LastModifiedDate",
+          "type": "TIMESTAMP",
+          "comment": "Date and time when a user last modified this record.",
+          "primary": false,
+          "unique": false,
+          "notNull": false
+        },
+        {
+          "id": 4,
+          "name": "AttributeCategoryId",
+          "type": "VARCHAR(255)",
+          "comment": "Attribute Category ID",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 5,
+          "name": "AttributeDefinitionId",
+          "type": "VARCHAR(255)",
+          "comment": "Attribute Definition ID",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        },
+        {
+          "id": 6,
+          "name": "External_Id__c",
+          "type": "VARCHAR(255)",
+          "comment": "External Id",
+          "primary": false,
+          "unique": false,
+          "notNull": true
+        }
+      ],
+      "indices": [
+        {
+          "id": 0,
+          "name": "pk_attributecategoryattribute",
+          "unique": true,
+          "fields": [
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "notes": [
+    {
+      "id": 0,
+      "content": "Connect APIs\\nMove nodes inside this zone to group them",
+      "color": "rgba(107, 99, 123, 0.4)",
+      "x": 2081.381122658967,
+      "y": -60.24405200651245
+    }
+  ],
+  "subjectAreas": [
+    {
+      "id": 0,
+      "name": "Connect APIs",
+      "color": "rgba(107, 99, 123, 0.4)",
+      "x": 2081,
+      "y": -60,
+      "width": 830,
+      "height": 504
+    }
+  ],
+  "types": []
+}

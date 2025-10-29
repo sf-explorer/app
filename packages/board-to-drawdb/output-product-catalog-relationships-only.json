@@ -1,0 +1,223 @@
+{
+  "tables": [
+    {
+      "id": 0,
+      "name": "ProductClassification",
+      "x": 227,
+      "y": 487,
+      "color": "#F39C12",
+      "comment": "[Product Catalog] ",
+      "indices": [],
+      "fields": [
+        {
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Globally unique string that identifies a record.",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "AttributePicklist",
+      "x": 1750,
+      "y": 252,
+      "color": "#F39C12",
+      "comment": "[Product Catalog] ",
+      "indices": [],
+      "fields": [
+        {
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Globally unique string that identifies a record.",
+          "id": 0
+        },
+        {
+          "name": "UnitOfMeasureId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Unit of Measure ID",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ProductComponentGroup",
+      "x": 1277,
+      "y": 519,
+      "color": "#F39C12",
+      "comment": "[Product Catalog] ",
+      "indices": [],
+      "fields": [
+        {
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Globally unique string that identifies a record.",
+          "id": 0
+        },
+        {
+          "name": "ParentProductId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "Product ID",
+          "id": 1
+        },
+        {
+          "name": "ParentGroupId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Product Component Group ID",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "AttributeCategoryAttribute",
+      "x": 1115,
+      "y": -81,
+      "color": "#F39C12",
+      "comment": "[Product Catalog] ",
+      "indices": [],
+      "fields": [
+        {
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Globally unique string that identifies a record.",
+          "id": 0
+        },
+        {
+          "name": "AttributeCategoryId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Attribute Category ID",
+          "id": 1
+        },
+        {
+          "name": "AttributeDefinitionId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Attribute Definition ID",
+          "id": 2
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "notes": [
+    {
+      "id": 0,
+      "x": 2081.381122658967,
+      "y": -60.24405200651245,
+      "title": "Connect APIs",
+      "content": "Move nodes inside this zone to group them",
+      "locked": false,
+      "color": "rgba(107, 99, 123, 0.4)",
+      "height": 504,
+      "width": 830
+    }
+  ],
+  "subjectAreas": [
+    {
+      "id": 0,
+      "name": "Connect APIs",
+      "x": 2081,
+      "y": -60,
+      "width": 830,
+      "height": 504,
+      "color": "rgba(107, 99, 123, 0.4)",
+      "locked": false
+    }
+  ],
+  "database": "generic",
+  "types": [
+    {
+      "name": "LOOKUP",
+      "fields": [
+        {
+          "name": "Id",
+          "type": "TEXT",
+          "size": 18
+        }
+      ],
+      "comment": "Salesforce Lookup Relationship (Foreign Key)"
+    },
+    {
+      "name": "CURRENCY",
+      "fields": [
+        {
+          "name": "amount",
+          "type": "DECIMAL",
+          "size": 18
+        },
+        {
+          "name": "currency_code",
+          "type": "TEXT",
+          "size": 3
+        }
+      ],
+      "comment": "Salesforce Currency with ISO code"
+    },
+    {
+      "name": "PERCENT",
+      "fields": [
+        {
+          "name": "value",
+          "type": "DECIMAL"
+        }
+      ],
+      "comment": "Salesforce Percentage field"
+    }
+  ],
+  "title": "Product Catalog - Relationships Only"
+}

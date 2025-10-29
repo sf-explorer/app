@@ -1,0 +1,77 @@
+{
+  "title": "Minimal Test",
+  "database": "generic",
+  "tables": [
+    {
+      "id": 0,
+      "name": "Account",
+      "x": 400,
+      "y": 300,
+      "color": "#2196F3",
+      "comment": "Test table",
+      "fields": [
+        {
+          "id": 0,
+          "name": "Id",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Primary Key"
+        },
+        {
+          "id": 1,
+          "name": "Name",
+          "type": "TEXT",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Account Name"
+        },
+        {
+          "id": 2,
+          "name": "ParentId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "Parent Account"
+        }
+      ],
+      "indices": [
+        {
+          "id": 0,
+          "name": "pk_account",
+          "unique": true,
+          "fields": [0]
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "notes": [],
+  "subjectAreas": [],
+  "types": [
+    {
+      "name": "LOOKUP",
+      "fields": [
+        {
+          "name": "Id",
+          "type": "TEXT",
+          "size": 18
+        }
+      ],
+      "comment": "Salesforce Lookup"
+    }
+  ]
+}
+

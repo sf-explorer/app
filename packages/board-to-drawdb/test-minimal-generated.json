@@ -1,0 +1,96 @@
+{
+ 
+  "tables": [
+    {
+      "id": 0,
+      "name": "Account",
+      "x": 400,
+      "y": 300,
+      "color": "#2196F3",
+      "comment": "Test account table",
+      "indices": [],
+      "fields": [
+        {
+          "name": "Id",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "notNull": true,
+          "increment": false,
+          "comment": "Primary Key",
+          "id": 0
+        },
+        {
+          "name": "Name",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Account Name",
+          "id": 1
+        },
+        {
+          "name": "ParentId",
+          "type": "LOOKUP",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "notNull": true,
+          "increment": false,
+          "comment": "Parent Account",
+          "id": 2
+        }
+      ]
+    }
+  ],
+  "relationships": [],
+  "notes": [],
+  "subjectAreas": [],
+  "types": [
+    {
+      "name": "LOOKUP",
+      "fields": [
+        {
+          "name": "Id",
+          "type": "TEXT",
+          "size": 18
+        }
+      ],
+      "comment": "Salesforce Lookup Relationship (Foreign Key)"
+    },
+    {
+      "name": "CURRENCY",
+      "fields": [
+        {
+          "name": "amount",
+          "type": "DECIMAL",
+          "size": 18
+        },
+        {
+          "name": "currency_code",
+          "type": "TEXT",
+          "size": 3
+        }
+      ],
+      "comment": "Salesforce Currency with ISO code"
+    },
+    {
+      "name": "PERCENT",
+      "fields": [
+        {
+          "name": "value",
+          "type": "DECIMAL"
+        }
+      ],
+      "comment": "Salesforce Percentage field"
+    }
+  ],
+  "title": "Minimal Test",
+  "database": "generic"
+}

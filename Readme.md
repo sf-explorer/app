@@ -37,6 +37,26 @@ These diagrams serve as comprehensive data models and relationship diagrams for 
 | 🤖 Agentforce feedback | Understand and analyze your Einstein generative AI audit and feedback data | 13 | [agentfeedback.json](./Boards/agentfeedback.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentfeedback) |
 
 
+### Packages
+
+This repository includes utility packages for working with SF Explorer board templates:
+
+#### [@sf-explorer/board-to-drawdb](./packages/board-to-drawdb)
+
+Transform SF Explorer board templates into drawDB compatible format. This package allows you to:
+- Convert board templates to drawDB schema format
+- Export diagrams for use in other database design tools
+- Customize conversion options (exclude read-only fields, target different databases, etc.)
+
+```typescript
+import { transformBoardToDrawDB } from '@sf-explorer/board-to-drawdb';
+import boardTemplate from './Boards/salescloud.json';
+
+const drawDBSchema = transformBoardToDrawDB(boardTemplate);
+```
+
+See the [package README](./packages/board-to-drawdb/README.md) for full documentation.
+
 ### Other Resources
 
 * [Notebooks](./Notebooks/)
