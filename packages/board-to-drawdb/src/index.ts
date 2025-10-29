@@ -251,8 +251,8 @@ function convertPropertyToField(
 }
 
 /**
- * Converts RGBA color to hex format
- * e.g., "rgba(107, 99, 123, 0.4)" -> "#6b637b66"
+ * Converts RGBA color to hex format (without alpha)
+ * e.g., "rgba(107, 99, 123, 0.4)" -> "#6b637b"
  */
 function rgbaToHex(color: string): string {
   // If already hex, return as is
@@ -267,7 +267,6 @@ function rgbaToHex(color: string): string {
     const r = parseInt(rgbaMatch[1]);
     const g = parseInt(rgbaMatch[2]);
     const b = parseInt(rgbaMatch[3]);
-    const a = rgbaMatch[4] ? parseFloat(rgbaMatch[4]) : 1;
     
     // Convert to hex
     const toHex = (n: number) => {
@@ -275,14 +274,7 @@ function rgbaToHex(color: string): string {
       return hex.length === 1 ? '0' + hex : hex;
     };
     
-    const hexColor = '#' + toHex(r) + toHex(g) + toHex(b);
-    
-    // Add alpha channel if not fully opaque
-    if (a < 1) {
-      return hexColor + toHex(a * 255);
-    }
-    
-    return hexColor;
+    return '#' + toHex(r) + toHex(g) + toHex(b);
   }
   
   // Return as is if not recognized format
