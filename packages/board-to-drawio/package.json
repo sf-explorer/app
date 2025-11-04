@@ -1,0 +1,48 @@
+{
+  "name": "@sf-explorer/board-to-drawio",
+  "version": "1.1.0",
+  "description": "Transform SF Explorer board templates to draw.io XML format",
+  "main": "dist/index.js",
+  "browser": "browser/board-to-drawio.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:browser": "npm run build && webpack",
+    "watch": "tsc --watch",
+    "test": "node test.js",
+    "demo": "npm run build:browser && open demo.html"
+  },
+  "keywords": [
+    "salesforce",
+    "erd",
+    "drawio",
+    "diagrams.net",
+    "converter",
+    "schema",
+    "database",
+    "visualization"
+  ],
+  "author": "SF Explorer",
+  "license": "MIT",
+  "homepage": "https://github.com/sf-explorer/app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-explorer/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sf-explorer/app/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/pako": "^2.0.4",
+    "pako": "^2.1.0"
+  }
+}

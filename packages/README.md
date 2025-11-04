@@ -24,6 +24,31 @@ const drawDBSchema = transformBoardToDrawDB(boardTemplate);
 
 See the [full documentation](./board-to-drawdb/README.md) for more details.
 
+### [@sf-explorer/board-to-drawio](./board-to-drawio)
+
+Transform SF Explorer board templates into draw.io (diagrams.net) XML format for easy visualization and editing.
+
+**Features:**
+- Convert board templates to draw.io XML
+- Full visual fidelity with colors and relationships
+- Primary key and foreign key indicators
+- Support for tables, group zones, and other node types
+- ER diagram relationship arrows
+- Customizable output options
+
+**Quick Start:**
+```typescript
+import { transformBoardToDrawIO } from '@sf-explorer/board-to-drawio';
+import boardTemplate from './Boards/salescloud.json';
+
+const drawioXml = transformBoardToDrawIO(boardTemplate, {
+  showFieldTypes: true,
+  includeGroupZones: true
+});
+```
+
+See the [full documentation](./board-to-drawio/README.md) for more details.
+
 ## Monorepo Structure
 
 This repository uses npm workspaces for monorepo management. Each package:
