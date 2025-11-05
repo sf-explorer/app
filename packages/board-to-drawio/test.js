@@ -1,6 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const { transformBoardToDrawIO } = require('./dist/index');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { transformBoardToDrawIO } from './dist/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Test with productCatalog board
 console.log('Testing board-to-drawio transformer...\n');
@@ -76,6 +80,3 @@ try {
   console.error(error.stack);
   process.exit(1);
 }
-
-
-

@@ -6,7 +6,7 @@ import {
   SchemaProperty,
   DrawioCell,
   DrawioStyle
-} from './types';
+} from './types.js';
 
 /**
  * Transforms a Salesforce Explorer board template into draw.io XML format
@@ -866,5 +866,5 @@ export function transformBoardWithViewerUrl(
 }
 
 // Export types for consumers
-export * from './types';
+export * from './types.js';
 

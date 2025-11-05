@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2025-11-04
+
+### Changed
+- **BREAKING**: Migrated from CommonJS to ES Modules (ESM)
+  - Updated `tsconfig.json`: `"module": "ES2022"` and `"target": "ES2022"`
+  - Added `"type": "module"` to `package.json`
+  - Generated code now uses `export`/`import` instead of `module.exports`/`require()`
+  - Consumers must use ES module syntax: `import { transformBoardToDrawIO } from '@sf-explorer/board-to-drawio'`
+  - Module resolution changed to `"bundler"` for better compatibility with modern tools
+
+### Removed
+- **Dependency cleanup**: Removed `pako` and `@types/pako` dependencies
+  - Viewer URLs now use direct URL encoding with `encodeURIComponent()`
+  - No compression needed - URLs work perfectly without it
+  - Zero runtime dependencies
+- **Webpack build removed**: No longer need browser bundle
+  - Removed `webpack` and `webpack-cli` from devDependencies
+  - Removed `build:browser` npm script
+  - Removed `browser/` output directory
+  - Removed `src/browser.ts` entry point
+  - Modern browsers can directly import `dist/index.js` as ES modules
+  - Simplified `package.json` with modern `exports` field
+
+### Migration Guide
+If you were using CommonJS:
+```javascript
+// Old (CommonJS)
+const { transformBoardToDrawIO } = require('@sf-explorer/board-to-drawio');
+
+// New (ES Modules)
+import { transformBoardToDrawIO } from '@sf-explorer/board-to-drawio';
+```
+
 ## [1.1.0] - 2025-11-04
 
 ### Added

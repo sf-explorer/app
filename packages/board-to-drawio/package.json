@@ -1,16 +1,20 @@
 {
   "name": "@sf-explorer/board-to-drawio",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Transform SF Explorer board templates to draw.io XML format",
+  "type": "module",
   "main": "dist/index.js",
-  "browser": "browser/board-to-drawio.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
-    "build:browser": "npm run build && webpack",
     "watch": "tsc --watch",
-    "test": "node test.js",
-    "demo": "npm run build:browser && open demo.html"
+    "test": "node test.js"
   },
   "keywords": [
     "salesforce",
@@ -37,12 +41,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.3.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "typescript": "^5.3.0"
   },
   "dependencies": {
-    "@types/pako": "^2.0.4",
-    "pako": "^2.1.0"
   }
 }

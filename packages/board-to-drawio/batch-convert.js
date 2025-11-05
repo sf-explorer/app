@@ -5,9 +5,13 @@
  * Usage: node batch-convert.js
  */
 
-const fs = require('fs');
-const path = require('path');
-const { transformBoardToDrawIO } = require('./dist/index');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { transformBoardToDrawIO } from './dist/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const boardsDir = path.join(__dirname, '../../Boards');
 const outputDir = path.join(__dirname, 'output');
@@ -83,4 +87,3 @@ console.log('\n💡 Open the .drawio files with:');
 console.log('   • draw.io desktop app');
 console.log('   • https://app.diagrams.net');
 console.log('   • VS Code with Draw.io Integration extension');
-

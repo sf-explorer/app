@@ -58,14 +58,14 @@
     
     <div id="output"></div>
 
-    <!-- Load the browser bundle -->
-    <script src="./browser/board-to-drawio.js"></script>
-    
-    <script>
+    <!-- Load the ES module -->
+    <script type="module">
+        import { transformBoardToDrawIO } from './dist/index.js';
+        
         let convertedXml = null;
         let fileName = 'diagram';
 
-        function convert() {
+        window.convert = function convert() {
             const fileInput = document.getElementById('fileInput');
             const file = fileInput.files[0];
             const output = document.getElementById('output');
@@ -89,8 +89,8 @@
                         throw new Error('Invalid board format: missing nodes or edges arrays');
                     }
                     
-                    // Convert to draw.io XML using the global BoardToDrawIO object
-                    convertedXml = BoardToDrawIO.transformBoardToDrawIO(boardData, {
+                    // Convert to draw.io XML using the imported function
+                    convertedXml = transformBoardToDrawIO(boardData, {
                         showFieldTypes: false,
                         includeReadOnlyFields: false,
                         includeGroupZones: true,
@@ -122,9 +122,9 @@
             };
             
             reader.readAsText(file);
-        }
+        };
         
-        function download() {
+        window.download = function download() {
             if (!convertedXml) {
                 alert('Please convert a file first!');
                 return;
@@ -143,10 +143,11 @@
             
             const output = document.getElementById('output');
             output.textContent += '\n\n📥 Downloaded: ' + fileName + '.drawio';
-        }
+        };
     </script>
 </body>
 </html>
+
 
 
 

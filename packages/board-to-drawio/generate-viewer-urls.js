@@ -5,9 +5,13 @@
  * Usage: node generate-viewer-urls.js
  */
 
-const fs = require('fs');
-const path = require('path');
-const { transformBoardWithViewerUrl } = require('./dist/index');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { transformBoardWithViewerUrl } from './dist/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const boardsDir = path.join(__dirname, '../../Boards');
 const outputFile = path.join(__dirname, 'viewer-urls.md');
@@ -94,4 +98,3 @@ console.log(`✅ Generated viewer URLs: ${urls.length}`);
 console.log('='.repeat(50));
 console.log('\n📄 Output file:', outputFile);
 console.log('\n💡 Open viewer-urls.md to see clickable links');
-

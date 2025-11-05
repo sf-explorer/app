@@ -36,15 +36,17 @@ This converts all 17 board templates to draw.io format!
 ### Option 3: Programmatic Usage
 
 ```javascript
-const { transformBoardToDrawIO } = require('./dist/index');
-const board = require('../../Boards/salescloud.json');
+import { transformBoardToDrawIO } from './dist/index.js';
+import { readFileSync, writeFileSync } from 'fs';
+
+const board = JSON.parse(readFileSync('../../Boards/salescloud.json', 'utf8'));
 
 const xml = transformBoardToDrawIO(board, {
   showFieldTypes: true,
   includeGroupZones: true
 });
 
-require('fs').writeFileSync('output.drawio', xml);
+writeFileSync('output.drawio', xml);
 ```
 
 ## Configuration Options

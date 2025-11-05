@@ -4,9 +4,13 @@
  * Test viewer URL generation with a real board
  */
 
-const fs = require('fs');
-const path = require('path');
-const { transformBoardWithViewerUrl } = require('./dist/index');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { transformBoardWithViewerUrl } from './dist/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 console.log('\n🧪 Testing viewer URL generation...\n');
 
