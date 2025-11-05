@@ -55,14 +55,14 @@ This package works in **both Node.js and browsers**!
 
 ### Quick Start (Browser)
 
-1. Build the browser bundle:
+1. Build the package:
 ```bash
-npm run build:browser
+npm run build
 ```
 
-2. Open `demo.html` in your browser for a full-featured UI, or use `browser-example.html` for a minimal example.
+2. Open `browser-example.html` in your browser for a minimal working example.
 
-See [BROWSER_SUPPORT.md](./BROWSER_SUPPORT.md) for complete browser usage guide.
+The package uses ES modules, so modern browsers can directly import `dist/index.js` without any bundling.
 
 ## Usage
 
