@@ -13,7 +13,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const boardsDir = path.join(__dirname, '../../../Boards');
-const outputFile = path.join(__dirname, 'ALL_DIAGRAM_LINKS.md');
+const outputFile = path.join(__dirname, '../docs/ALL_DIAGRAM_LINKS.md');
+const diagramsDir = path.join(__dirname, '../docs/diagrams');
 
 // Get all JSON board files
 const boardFiles = fs.readdirSync(boardsDir)

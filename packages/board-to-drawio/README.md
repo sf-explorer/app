@@ -2,6 +2,13 @@
 
 Transform SF Explorer board templates into draw.io (diagrams.net) XML format for easy visualization and editing in the popular diagramming tool.
 
+## 📊 Quick Links
+
+- **[📁 Generated Diagrams](./output/)** - All `.drawio` files ready to use
+- **[🔗 Diagram Viewer Links](./docs/ALL_DIAGRAM_LINKS.md)** - Browse and open diagrams online
+- **[📚 Documentation](./docs/)** - Full documentation and guides
+- **[🚀 Quick Start](./docs/QUICK_START.md)** - Get started in 5 minutes
+
 ## Usage
 
 ### Generate Viewer URLs
