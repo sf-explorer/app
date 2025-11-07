@@ -34,13 +34,16 @@ const viewerUrl = generateViewerUrl(xml);
 ## Features
 
 - 🎨 **Full Visual Fidelity**: Preserves colors, positions, and relationships from your board templates
-- 📊 **Table Support**: Converts Salesforce schema tables with fields, types, and relationships
+- 📊 **Dual Diagram Styles**: Choose between ERD (database) or UML (object-oriented) styles
+- 🎯 **UML Class Diagrams**: Uses draw.io's dedicated `shape=umlClass` with visibility markers (+/-)
+- 📦 **ERD Diagrams**: Traditional entity-relationship diagrams with collapsible swimlanes
 - 🖼️ **Salesforce Icons**: Displays SLDS icons in table headers (standard, utility, custom, etc.)
-- 🔗 **Relationship Mapping**: Automatically converts edges to proper ER diagram relationships with correct cardinality
+- 🏷️ **Annotation Badges**: Display metadata badges (e.g., "20k" for record limits) above tables
+- 🔗 **Smart Relationships**: Auto-converts to ER notation (ERone/ERmany) or UML (composition/association)
 - 📦 **Group Zones**: Supports grouping and subject areas
 - 🎯 **Customizable Output**: Multiple options to control what gets included
 - 📝 **Multiple Node Types**: Supports tables, markdown, input nodes, and callouts
-- 🔄 **Collapsible Tables**: Tables can be collapsed/expanded in draw.io for better diagram management
+- 🔄 **Collapsible Tables**: Tables can be collapsed/expanded in draw.io for better diagram management (ERD style)
 - 💬 **Tooltips**: Hover tooltips on tables and fields with descriptions and metadata
 
 ## Installation
@@ -66,7 +69,7 @@ The package uses ES modules, so modern browsers can directly import `dist/index.
 
 ## Usage
 
-### Basic Example
+### Basic Example (ERD Style)
 
 ```typescript
 import { transformBoardToDrawIO } from '@sf-explorer/board-to-drawio';
@@ -75,12 +78,41 @@ import fs from 'fs';
 // Load your board template
 const board = JSON.parse(fs.readFileSync('myBoard.json', 'utf-8'));
 
-// Transform to draw.io XML
+// Transform to draw.io XML (default: ERD style)
 const drawioXml = transformBoardToDrawIO(board);
 
 // Save to file
 fs.writeFileSync('output.drawio', drawioXml, 'utf-8');
 ```
+
+### UML Class Diagram Style 🆕
+
+Generate UML class diagrams using draw.io's dedicated UML shapes:
+
+```typescript
+// Transform to UML class diagram
+const umlXml = transformBoardToDrawIO(board, {
+  diagramStyle: 'uml',  // 👈 Use UML class diagram style
+  title: 'My UML Class Diagram',
+  showFieldTypes: true,
+  umlOptions: {
+    showVisibilityMarkers: true,   // + for public, - for private
+    groupByVisibility: true,        // Group PK, regular fields, FK
+    relationshipStyle: 'smart',     // Auto-detect composition/association
+  },
+});
+```
+
+**ERD vs UML Comparison:**
+
+| Feature | ERD Style (default) | UML Style |
+|---------|---------------------|-----------|
+| **Shape** | Swimlane containers | `shape=umlClass` (dedicated UML) |
+| **Fields** | Separate rows with PK/FK prefixes | Single text block with visibility markers |
+| **Field Format** | `PK: Id : Text`<br>`FK: AccountId : Account` | `+ Id : Text`<br>`- AccountId : Account` |
+| **Relationships** | ER notation (ERone ⊳, ERmany ⊲⊳) | UML notation (◆ composition, → association) |
+| **Collapsible** | Yes (expand/collapse tables) | No (fixed height) |
+| **Best For** | Database schemas, ERDs | Object-oriented models, class diagrams |
 
 ### With Options
 
@@ -101,6 +133,7 @@ const drawioXml = transformBoardToDrawIO(board, {
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
+| `diagramStyle` | `'erd'` \| `'uml'` | `'erd'` | Diagram style: ERD (swimlane) or UML (class) |
 | `includeReadOnlyFields` | boolean | `true` | Include read-only fields in tables |
 | `includeGroupZones` | boolean | `true` | Convert group zones to containers |
 | `title` | string | `'SF Explorer Board'` | Title for the diagram |
@@ -109,7 +142,18 @@ const drawioXml = transformBoardToDrawIO(board, {
 | `tableWidth` | number | `200` | Width of table boxes in pixels |
 | `fieldHeight` | number | `26` | Height of each field row in pixels |
 | `maxFields` | number | `20` | Maximum fields to show per table. Shows "... N more fields" for truncated tables |
-| `collapseTables` | boolean | `true` | Collapse tables by default (click **+** to expand) |
+| `collapseTables` | boolean | `true` | *(ERD only)* Collapse tables by default (click **+** to expand) |
+| `umlOptions` | object | `{}` | *(UML only)* UML-specific configuration (see below) |
+
+### UML Options
+
+When `diagramStyle: 'uml'`, you can configure:
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `showVisibilityMarkers` | boolean | `true` | Show visibility: `+` (public), `-` (private) |
+| `groupByVisibility` | boolean | `false` | Group fields: PK first, then regular, then FK |
+| `relationshipStyle` | `'association'` \| `'smart'` | `'smart'` | Relationship arrows: simple (→) or smart (◆ for FK) |
 
 ## Output Format
 
@@ -131,6 +175,36 @@ The transformer generates standard draw.io XML that can be opened with:
 - Color-coded based on your board's color scheme
 - Automatic relationship arrows between tables
 - Swimlane format with proper header structure
+
+### Annotation Badges 🏷️
+
+Display metadata badges above tables to show important information like record counts or limits:
+
+**In your board JSON:**
+```json
+{
+  "id": "Case",
+  "type": "table",
+  "data": {
+    "label": "Case",
+    "annotation": "20k",  // 👈 Add this field
+    "icon": "standard:case",
+    "color": "#00A1E0"
+  }
+}
+```
+
+**Visual Result:**
+- Creates a group wrapper containing the table and badge
+- Badge appears at the top-right with orange styling
+- Table is positioned below the badge
+- The entire group moves together as one unit
+
+**Common Use Cases:**
+- `"20k"` - Salesforce record limits
+- `"2M"` - Current record count
+- `"Beta"` - Feature status
+- `"Core"` - Categorization
 
 ### Group Zones
 - Rendered as swim lane containers

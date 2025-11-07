@@ -12,6 +12,7 @@ export interface NodeData {
   content?: string;
   icon?: string;
   color?: string;
+  annotation?: string; // Optional annotation badge (e.g., "20k" for record limits)
   Id?: string;
   table?: TableData;
   schema?: JSONSchema;
@@ -90,6 +91,8 @@ export interface DrawioCell {
   style?: string;
   vertex?: '1' | '0';
   edge?: '1' | '0';
+  connectable?: '1' | '0'; // For group cells, prevents connections to the group itself
+  movable?: '1' | '0'; // For field cells, prevents moving them
   parent?: string;
   source?: string;
   target?: string;
@@ -115,8 +118,19 @@ export interface ConversionOptions {
   fieldHeight?: number;
   maxFields?: number;
   collapseTables?: boolean; // Collapse tables by default (default: true)
+  highlightCustomFields?: boolean; // Highlight Salesforce custom fields (ending with __c) (default: false)
   primaryKeyStyle?: DrawioStyle;
   foreignKeyStyle?: DrawioStyle;
+  
+  // Diagram style options
+  diagramStyle?: 'erd' | 'uml'; // Default: 'erd'
+  
+  // UML-specific options (only applies when diagramStyle='uml')
+  umlOptions?: {
+    showVisibilityMarkers?: boolean; // Default: true (+ for public, - for private)
+    groupByVisibility?: boolean; // Default: false (group PK, normal fields, FK)
+    relationshipStyle?: 'association' | 'smart'; // Default: 'smart' (infer from relationship type)
+  };
 }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@sf-explorer/board-to-drawio",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Transform SF Explorer board templates to draw.io XML format",
   "type": "module",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "node test.js"
+    "test": "node scripts/test.js"
   },
   "keywords": [
     "salesforce",

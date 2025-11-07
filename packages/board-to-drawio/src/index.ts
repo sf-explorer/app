@@ -33,7 +33,16 @@ export function transformBoardToDrawIO(
     fieldHeight = 26,
     maxFields = 20,
     collapseTables = true,
+    diagramStyle = 'erd',
+    umlOptions = {},
   } = options;
+
+  // UML options with defaults
+  const {
+    showVisibilityMarkers = true,
+    groupByVisibility = false,
+    relationshipStyle = 'smart',
+  } = umlOptions;
 
   const cells: DrawioCell[] = [];
   
@@ -69,7 +78,10 @@ export function transformBoardToDrawIO(
 
   // First pass: Convert group zones if enabled
   if (includeGroupZones) {
-    const groupNodes = board.nodes.filter(node => node.type === 'groupZone');
+    // Sort groups by Y position (top to bottom) so overlapping elements render correctly
+    const groupNodes = board.nodes
+      .filter(node => node.type === 'groupZone')
+      .sort((a, b) => a.position.y - b.position.y);
     
     for (const node of groupNodes) {
       const cellId = getUniqueId(`group_${node.data.label || node.id}`);
@@ -81,7 +93,10 @@ export function transformBoardToDrawIO(
   }
 
   // Second pass: Convert table nodes
-  const tableNodes = board.nodes.filter(node => node.type === 'table');
+  // Sort tables by Y position (top to bottom) so overlapping tables render correctly
+  const tableNodes = board.nodes
+    .filter(node => node.type === 'table')
+    .sort((a, b) => a.position.y - b.position.y);
   
   for (const node of tableNodes) {
     const parentCellId = node.parentId && nodeIdToCellId.has(node.parentId) 
@@ -98,24 +113,59 @@ export function transformBoardToDrawIO(
       tableName = node.id.split('/').pop() || node.id.replace(/^erd\./, '');
     }
 
-    const tableCells = createTableCells(
-      node,
-      tableName,
-      parentCellId,
-      includeReadOnlyFields,
-      showFieldTypes,
-      showDescriptions,
-      tableWidth,
-      fieldHeight,
-      maxFields,
-      collapseTables,
-      fieldIdToCellId,
-      getUniqueId
-    );
+    let tableCells: DrawioCell[];
     
-    // Store the main table cell ID (first cell is the table itself)
+    if (diagramStyle === 'uml') {
+      // Use UML class shape
+      tableCells = createUmlClassCells(
+        node,
+        tableName,
+        parentCellId,
+        includeReadOnlyFields,
+        showFieldTypes,
+        showDescriptions,
+        tableWidth,
+        fieldHeight,
+        maxFields,
+        showVisibilityMarkers,
+        groupByVisibility,
+        options.highlightCustomFields || false,
+        fieldIdToCellId,
+        getUniqueId
+      );
+    } else {
+      // Use ERD swimlane style
+      tableCells = createTableCells(
+        node,
+        tableName,
+        parentCellId,
+        includeReadOnlyFields,
+        showFieldTypes,
+        showDescriptions,
+        tableWidth,
+        fieldHeight,
+        maxFields,
+        collapseTables,
+        options.highlightCustomFields || false,
+        fieldIdToCellId,
+        getUniqueId
+      );
+    }
+    
+    // Store the main table cell ID - if we have an annotation, the first cell is the group
+    // In that case, the actual table is the second cell
     if (tableCells.length > 0) {
-      nodeIdToCellId.set(node.id, tableCells[0].id);
+      if (node.data.annotation && tableCells.length > 1) {
+        // First cell is group, second cell is annotation or table
+        // Find the actual table cell (it has children/fields)
+        const tableCell = tableCells.find(c => c.id.startsWith('table_') || c.id.startsWith('uml_class_'));
+        if (tableCell) {
+          nodeIdToCellId.set(node.id, tableCell.id);
+        }
+      } else {
+        // No annotation, first cell is the table
+        nodeIdToCellId.set(node.id, tableCells[0].id);
+      }
     }
     
     cells.push(...tableCells);
@@ -123,10 +173,11 @@ export function transformBoardToDrawIO(
 
   // Third pass: Convert other node types (markdown, callout, annotation)
   // Skip types that don't render well: input, legend
+  // Sort by Y position (top to bottom) so overlapping elements render correctly
   const skipTypes = ['input', 'legend'];
-  const otherNodes = board.nodes.filter(
-    node => !['table', 'groupZone', ...skipTypes].includes(node.type)
-  );
+  const otherNodes = board.nodes
+    .filter(node => !['table', 'groupZone', ...skipTypes].includes(node.type))
+    .sort((a, b) => a.position.y - b.position.y);
 
   for (const node of otherNodes) {
     const cellId = getUniqueId(`${node.type}_${node.data.label || node.id}`);
@@ -163,7 +214,20 @@ export function transformBoardToDrawIO(
     if (sourceId && targetId) {
       const edgeName = edge.label || edge.id.split('.').slice(-2).join('_to_');
       const cellId = getUniqueId(`edge_${edgeName}`);
-      const cell = createEdgeCell(edge, cellId, sourceId, targetId);
+      
+      // Get source and target node names for tooltip
+      const sourceNode = board.nodes.find(n => n.id === edge.source);
+      const targetNode = board.nodes.find(n => n.id === edge.target);
+      const sourceName = sourceNode?.data?.label || sourceNode?.data?.table?.name || edge.source;
+      const targetName = targetNode?.data?.label || targetNode?.data?.table?.name || edge.target;
+      
+      let cell: DrawioCell;
+      if (diagramStyle === 'uml') {
+        cell = createUmlEdgeCell(edge, cellId, sourceId, targetId, relationshipStyle, sourceName, targetName);
+      } else {
+        cell = createEdgeCell(edge, cellId, sourceId, targetId, sourceName, targetName);
+      }
+      
       cells.push(cell);
     }
   }
@@ -215,6 +279,7 @@ function createGroupCell(
 
 /**
  * Creates draw.io cells for a table node (parent + field cells)
+ * Uses the same swimlane stackLayout structure as UML, but with ERD styling
  */
 function createTableCells(
   node: BoardNode,
@@ -227,11 +292,25 @@ function createTableCells(
   fieldHeight: number,
   maxFields: number,
   collapseTables: boolean,
+  highlightCustomFields: boolean,
   fieldIdToCellId: Map<string, string>,
   getUniqueId: (preferred: string) => string
 ): DrawioCell[] {
   const cells: DrawioCell[] = [];
   const color = rgbaToHex(node.data.color || '#3b82f6');
+  
+  // Check if we need to create a group wrapper for annotation
+  const hasAnnotation = !!node.data.annotation;
+  let groupCellId: string | undefined;
+  let actualParentId = parentId;
+  const annotationBadgeHeight = 34;
+  const annotationTopMargin = 20;
+  
+  if (hasAnnotation) {
+    // Create group wrapper
+    groupCellId = getUniqueId(`group_${tableName}_annotation`);
+    actualParentId = groupCellId;
+  }
 
   // Get fields from schema
   const fields: Array<{
@@ -248,15 +327,16 @@ function createTableCells(
       const isPrimaryKey = fieldName === 'Id';
       const isForeignKey = fieldProp['x-target'] !== undefined || 
                           (fieldName.endsWith('Id') && fieldName !== 'Id');
+      const isReferenceField = fieldProp['x-target'] !== undefined;
       
-      // Skip read-only fields if option is set (except primary keys)
-      if (!includeReadOnlyFields && fieldProp.readOnly && !isPrimaryKey) {
+      // Skip read-only fields if option is set (except primary keys and reference fields)
+      if (!includeReadOnlyFields && fieldProp.readOnly && !isPrimaryKey && !isReferenceField) {
         continue;
       }
 
       fields.push({
         name: fieldName,
-        type: mapTypeToDisplay(fieldProp.type, fieldProp.format, isForeignKey),
+        type: mapTypeToDisplay(fieldProp.type, fieldProp.format, isForeignKey, !!fieldProp.enum),
         isPrimary: isPrimaryKey,
         isForeign: isForeignKey,
         referencedTable: fieldProp['x-target'],
@@ -265,22 +345,32 @@ function createTableCells(
     }
   }
 
+  // Group fields: Primary key first, then reference fields (x-target), then regular fields
+  fields.sort((a, b) => {
+    if (a.isPrimary && !b.isPrimary) return -1;
+    if (!a.isPrimary && b.isPrimary) return 1;
+    if (a.referencedTable && !b.referencedTable) return -1;
+    if (!a.referencedTable && b.referencedTable) return 1;
+    return 0;
+  });
+
   // Limit the number of fields if maxFields is set
   const displayFields = fields.slice(0, maxFields);
   const hasMoreFields = fields.length > maxFields;
 
-  // Create parent table cell (container with swimlane header)
   // Get icon URL if available - if there's an icon, make header taller
   const iconUrl = node.data.icon ? getSalesforceIconUrl(node.data.icon) : undefined;
-  const headerHeight = iconUrl ? 60 : 30; // Much taller header when icon is present
+  const headerHeight = iconUrl ? 60 : 30;
   
-  const totalFields = displayFields.length + (hasMoreFields ? 1 : 0); // +1 for "... N more fields"
+  const totalFields = displayFields.length + (hasMoreFields ? 1 : 0);
   const tableHeight = headerHeight + (fieldHeight * totalFields);
   const tableCellId = getUniqueId(`table_${tableName}`);
   
+  // ERD table style using swimlane with stackLayout (same as UML, but with ERD styling)
   const tableStyle = buildStyle({
-    swimlane: 1, // Enable swimlane with header
+    swimlane: 1,
     fontStyle: 1, // Bold for table name
+    fontSize: 14, // 14px font size for table name
     childLayout: 'stackLayout',
     horizontal: 1,
     startSize: headerHeight,
@@ -297,6 +387,7 @@ function createTableCells(
     align: 'center',
     verticalAlign: 'middle',
     html: 1,
+    whiteSpace: 'wrap',
     ...(iconUrl ? {
       image: iconUrl,
     } : {}),
@@ -315,18 +406,21 @@ function createTableCells(
   const displayHeight = collapseTables ? headerHeight : tableHeight;
   const alternateHeight = collapseTables ? tableHeight : headerHeight;
   
+  // Calculate position based on whether we have a group wrapper
+  const tableX = hasAnnotation ? 0 : Math.round(node.position.x);
+  const tableY = hasAnnotation ? annotationTopMargin : Math.round(node.position.y);
+  
   cells.push({
     id: tableCellId,
     value: escapeXml(tableName),
     style: tableStyle,
     vertex: '1',
-    parent: parentId,
-    x: Math.round(node.position.x),
-    y: Math.round(node.position.y),
+    parent: actualParentId,
+    x: tableX,
+    y: tableY,
     width: tableWidth,
     height: displayHeight,
     collapsed: collapseTables ? '1' : '0',
-    // Add alternate bounds for expanded/collapsed state
     alternateBounds: {
       width: tableWidth,
       height: alternateHeight,
@@ -334,8 +428,8 @@ function createTableCells(
     tooltip: escapeXml(tableTooltip)
   });
 
-  // Create field cells
-  let currentY = headerHeight; // Start after the header
+  // Create field cells using same structure as UML
+  let currentY = headerHeight;
   for (const field of displayFields) {
     const fieldCellId = getUniqueId(`${tableName}_${field.name}`);
     
@@ -343,12 +437,21 @@ function createTableCells(
     const fieldKey = `${node.id}.${field.name}`;
     fieldIdToCellId.set(fieldKey, fieldCellId);
     
-    // Use clean API name without type annotations
-    let fieldLabel = escapeXml(field.name);
+    // Build field label with ERD prefixes
+    let fieldLabel = '';
     
-    // Only add type if explicitly requested
+    // Add ERD prefix
+    if (field.isPrimary) {
+      fieldLabel = 'PK: ';
+    } else if (field.isForeign) {
+      fieldLabel = 'FK: ';
+    }
+    
+    // Add field name
+    fieldLabel += escapeXml(field.name);
+    
+    // Add type if requested
     if (showFieldTypes) {
-      // For foreign keys, show referenced table name instead of "FK"
       if (field.isForeign && field.referencedTable) {
         fieldLabel += ` : ${escapeXml(field.referencedTable)}`;
       } else {
@@ -356,48 +459,398 @@ function createTableCells(
       }
     }
     
-    // Only add description if explicitly requested
+    // Add description if requested
     if (showDescriptions && field.description) {
       fieldLabel += `\n${escapeXml(field.description.substring(0, 80))}`;
     }
 
-    // Determine field style
-    let fieldStyle: DrawioStyle = {
+    // Check if this is a custom field (ends with __c)
+    const isCustom = field.name.endsWith('__c');
+    
+    // ERD field styling with header color differentiation
+    let fillColor = '#ffffff'; // White background for fields
+    let fontStyle = 0;
+    let strokeColor = darkenColor(color, 10);
+    let strokeWidth = 1;
+    
+    if (field.isPrimary) {
+      fillColor = lightenColor(color, 30); // Lighter shade for PK
+      fontStyle = 1; // Bold
+    }
+    // Foreign keys remain white - no special coloring
+    
+    // Highlight custom fields if option is enabled
+    if (highlightCustomFields && isCustom) {
+      fillColor = '#FFE6CC'; // Light orange for custom fields
+      strokeColor = '#FF9900'; // Orange border
+      strokeWidth = 2;
+    }
+
+    const fieldStyle = buildStyle({
       text: 1,
+      strokeColor,
+      fillColor,
       align: 'left',
-      verticalAlign: 'middle',
+      verticalAlign: 'top',
       spacingLeft: 4,
       spacingRight: 4,
       overflow: 'hidden',
       rotatable: 0,
       points: '[[0,0.5],[1,0.5]]',
       portConstraint: 'eastwest',
-      fillColor: lightenColor(color, 40),
-      strokeColor: darkenColor(color, 10),
+      whiteSpace: 'nowrap',
+      html: 1,
       fontSize: 12,
-    };
-
-    if (field.isPrimary) {
-      fieldStyle = {
-        ...fieldStyle,
-        fontStyle: 1, // bold (simplified from bold+underline)
-        fillColor: lightenColor(color, 30),
-      };
-      fieldLabel = 'PK: ' + fieldLabel;
-    } else if (field.isForeign) {
-      fieldStyle = {
-        ...fieldStyle,
-        fontStyle: 0, // normal
-        fillColor: lightenColor(color, 35),
-      };
-      fieldLabel = 'FK: ' + fieldLabel;
-    }
+      fontStyle,
+      strokeWidth,
+      bottomBorder: 1, // Add bottom border line separator
+      shadow: 0,  // No shadow on text fields
+    });
 
     const fieldCell: DrawioCell = {
       id: fieldCellId,
       value: fieldLabel,
-      style: buildStyle(fieldStyle),
+      style: fieldStyle,
       vertex: '1',
+      movable: '0', // Make field non-movable
+      parent: tableCellId,
+      x: 0,
+      y: currentY,
+      width: tableWidth,
+      height: fieldHeight,
+    };
+    
+    // Add tooltip if description exists
+    if (field.description) {
+      fieldCell.tooltip = escapeXml(field.description);
+    }
+    
+    cells.push(fieldCell);
+    
+    currentY += fieldHeight;
+  }
+
+  // Add "... N more fields" indicator if there are hidden fields
+  if (hasMoreFields) {
+    const moreCellId = getUniqueId(`${tableName}_more`);
+    const moreCount = fields.length - maxFields;
+    const moreStyle = buildStyle({
+      text: 1,
+      strokeColor: darkenColor(color, 10),
+      fillColor: lightenColor(color, 40),
+      align: 'center',
+      verticalAlign: 'top',
+      spacingLeft: 4,
+      spacingRight: 4,
+      overflow: 'hidden',
+      rotatable: 0,
+      points: '[[0,0.5],[1,0.5]]',
+      portConstraint: 'eastwest',
+      whiteSpace: 'nowrap',
+      html: 1,
+      fontSize: 11,
+      fontStyle: 2, // italic
+      bottomBorder: 0, // No bottom border on last item
+      shadow: 0,  // No shadow on text fields
+    });
+
+    cells.push({
+      id: moreCellId,
+      value: escapeXml(`... ${moreCount} more field${moreCount > 1 ? 's' : ''}`),
+      style: moreStyle,
+      vertex: '1',
+      movable: '0', // Make non-movable
+      parent: tableCellId,
+      x: 0,
+      y: currentY,
+      width: tableWidth,
+      height: fieldHeight,
+    });
+  }
+
+  // If we have an annotation, add the group wrapper and annotation badge
+  if (hasAnnotation && groupCellId) {
+    // Calculate total group height (annotation badge + margin + table)
+    const groupHeight = annotationBadgeHeight + displayHeight;
+    
+    // Create group cell (must be first in returned array)
+    const groupCell: DrawioCell = {
+      id: groupCellId,
+      value: '',
+      style: 'group',
+      vertex: '1',
+      connectable: '0',
+      parent: parentId,
+      x: Math.round(node.position.x),
+      y: Math.round(node.position.y),
+      width: tableWidth,
+      height: groupHeight,
+    };
+    
+    // Create annotation badge
+    const annotationCellId = getUniqueId(`${tableName}_annotation_badge`);
+    const annotationBadgeWidth = 60;
+    const annotationBadgeX = tableWidth - annotationBadgeWidth;
+    
+    const annotationStyle = buildStyle({
+      rounded: 1,
+      whiteSpace: 'wrap',
+      html: 1,
+      fillColor: '#ffe6cc',
+      strokeColor: '#d79b00',
+      arcSize: 9,
+    });
+    
+    const annotationCell: DrawioCell = {
+      id: annotationCellId,
+        value: escapeXml(`<b>${node.data.annotation!}</b>`),
+      style: annotationStyle,
+      vertex: '1',
+      parent: groupCellId,
+      x: annotationBadgeX,
+      y: 0,
+      width: annotationBadgeWidth,
+      height: annotationBadgeHeight,
+    };
+    
+    // Return with group first, then table and fields, then annotation on top
+    return [groupCell, ...cells, annotationCell];
+  }
+
+  return cells;
+}
+
+/**
+ * Creates a UML class box using draw.io's native UML format
+ * Uses swimlane with stackLayout and separate text cells for each field
+ */
+function createUmlClassCells(
+  node: BoardNode,
+  tableName: string,
+  parentId: string,
+  includeReadOnlyFields: boolean,
+  showFieldTypes: boolean,
+  showDescriptions: boolean,
+  tableWidth: number,
+  fieldHeight: number,
+  maxFields: number,
+  showVisibilityMarkers: boolean,
+  groupByVisibility: boolean,
+  highlightCustomFields: boolean,
+  fieldIdToCellId: Map<string, string>,
+  getUniqueId: (preferred: string) => string
+): DrawioCell[] {
+  const cells: DrawioCell[] = [];
+  const color = rgbaToHex(node.data.color || '#3b82f6');
+  
+  // Check if we need to create a group wrapper for annotation
+  const hasAnnotation = !!node.data.annotation;
+  let groupCellId: string | undefined;
+  let actualParentId = parentId;
+  const annotationBadgeHeight = 34;
+  const annotationTopMargin = 20;
+  
+  if (hasAnnotation) {
+    // Create group wrapper
+    groupCellId = getUniqueId(`group_${tableName}_annotation`);
+    actualParentId = groupCellId;
+  }
+
+  // Get fields from schema
+  const fields: Array<{
+    name: string;
+    type: string;
+    isPrimary: boolean;
+    isForeign: boolean;
+    referencedTable?: string;
+    description: string;
+    visibility: string; // + public, - private, # protected
+  }> = [];
+
+  if (node.data.schema?.properties) {
+    for (const [fieldName, fieldProp] of Object.entries(node.data.schema.properties)) {
+      const isPrimaryKey = fieldName === 'Id';
+      const isForeignKey = fieldProp['x-target'] !== undefined || 
+                          (fieldName.endsWith('Id') && fieldName !== 'Id');
+      const isReferenceField = fieldProp['x-target'] !== undefined;
+      
+      // Skip read-only fields if option is set (except primary keys and reference fields)
+      if (!includeReadOnlyFields && fieldProp.readOnly && !isPrimaryKey && !isReferenceField) {
+        continue;
+      }
+
+      // Determine visibility marker
+      let visibility = '+'; // public by default
+      if (fieldProp.readOnly && !isPrimaryKey) {
+        visibility = '-'; // private for readonly
+      }
+
+      fields.push({
+        name: fieldName,
+        type: mapTypeToDisplay(fieldProp.type, fieldProp.format, isForeignKey, !!fieldProp.enum),
+        isPrimary: isPrimaryKey,
+        isForeign: isForeignKey,
+        referencedTable: fieldProp['x-target'],
+        description: fieldProp.description || fieldProp.title || '',
+        visibility
+      });
+    }
+  }
+
+  // Group by visibility if requested (PK first, then reference fields, then normal fields)
+  if (groupByVisibility) {
+    fields.sort((a, b) => {
+      if (a.isPrimary && !b.isPrimary) return -1;
+      if (!a.isPrimary && b.isPrimary) return 1;
+      if (a.referencedTable && !b.referencedTable) return -1;
+      if (!a.referencedTable && b.referencedTable) return 1;
+      return 0;
+    });
+  } else {
+    // Default grouping: Primary key first, then reference fields (x-target), then regular fields
+    fields.sort((a, b) => {
+      if (a.isPrimary && !b.isPrimary) return -1;
+      if (!a.isPrimary && b.isPrimary) return 1;
+      if (a.referencedTable && !b.referencedTable) return -1;
+      if (!a.referencedTable && b.referencedTable) return 1;
+      return 0;
+    });
+  }
+
+  // Limit the number of fields if maxFields is set
+  const displayFields = fields.slice(0, maxFields);
+  const hasMoreFields = fields.length > maxFields;
+
+  // Get icon URL if available - if there's an icon, make header taller
+  const iconUrl = node.data.icon ? getSalesforceIconUrl(node.data.icon) : undefined;
+  const headerHeight = iconUrl ? 60 : 26;
+  
+  const totalFields = displayFields.length + (hasMoreFields ? 1 : 0);
+  const classHeight = headerHeight + (fieldHeight * totalFields);
+  
+  const tableCellId = getUniqueId(`uml_class_${tableName}`);
+  
+  // Build tooltip for class
+  let classTooltip = `${fields.length} attribute${fields.length !== 1 ? 's' : ''}`;
+  if (hasMoreFields) {
+    classTooltip += ` (showing ${displayFields.length})`;
+  }
+  if (node.data.schema?.description) {
+    classTooltip += `\n${node.data.schema.description}`;
+  }
+
+  // UML Class container using swimlane with stackLayout (native draw.io format)
+  const classStyle = buildStyle({
+    swimlane: 1,
+    fontStyle: 1, // Bold for class name
+    fontSize: 14, // 14px font size for class name
+    childLayout: 'stackLayout',
+    horizontal: 1,
+    startSize: headerHeight,
+    horizontalStack: 0,
+    resizeParent: 1,
+    resizeParentMax: 0,
+    resizeLast: 0,
+    collapsible: 1,
+    marginBottom: 0,
+    fillColor: color,
+    strokeColor: darkenColor(color, 20),
+    strokeWidth: 2,
+    align: 'center',
+    verticalAlign: 'middle',
+    whiteSpace: 'wrap',
+    html: 1,
+    ...(iconUrl ? {
+      image: iconUrl,
+    } : {}),
+  });
+
+  // Calculate position based on whether we have a group wrapper
+  const classX = hasAnnotation ? 0 : Math.round(node.position.x);
+  const classY = hasAnnotation ? annotationTopMargin : Math.round(node.position.y);
+  
+  cells.push({
+    id: tableCellId,
+    value: escapeXml(tableName),
+    style: classStyle,
+    vertex: '1',
+    parent: actualParentId,
+    x: classX,
+    y: classY,
+    width: tableWidth,
+    height: classHeight,
+    tooltip: escapeXml(classTooltip)
+  });
+
+  // Create field cells (attributes)
+  let currentY = headerHeight;
+  for (const field of displayFields) {
+    const fieldCellId = getUniqueId(`${tableName}_${field.name}`);
+    
+    // Store field cell ID for edge connections
+    const fieldKey = `${node.id}.${field.name}`;
+    fieldIdToCellId.set(fieldKey, fieldCellId);
+    
+    // Build field label
+    let fieldLabel = '';
+    
+    // Add visibility marker
+    if (showVisibilityMarkers) {
+      fieldLabel += field.visibility + ' ';
+    }
+    
+    // Add field name
+    fieldLabel += escapeXml(field.name);
+    
+    // Add type if requested
+    if (showFieldTypes) {
+      if (field.isForeign && field.referencedTable) {
+        fieldLabel += ' : ' + escapeXml(field.referencedTable);
+      } else {
+        fieldLabel += ' : ' + escapeXml(field.type);
+      }
+    }
+
+    // Check if this is a custom field (ends with __c)
+    const isCustom = field.name.endsWith('__c');
+    
+    // UML field style - text cell
+    let fillColor = '#ffffff'; // White background for fields
+    let strokeColor = darkenColor(color, 10);
+    let strokeWidth = 1;
+    
+    // Highlight custom fields if option is enabled
+    if (highlightCustomFields && isCustom) {
+      fillColor = '#FFE6CC'; // Light orange for custom fields
+      strokeColor = '#FF9900'; // Orange border
+      strokeWidth = 2;
+    }
+    
+    const fieldStyle = buildStyle({
+      text: 1,
+      strokeColor,
+      fillColor,
+      align: 'left',
+      verticalAlign: 'top',
+      spacingLeft: 4,
+      spacingRight: 4,
+      overflow: 'hidden',
+      rotatable: 0,
+      points: '[[0,0.5],[1,0.5]]',
+      portConstraint: 'eastwest',
+      whiteSpace: 'nowrap',
+      html: 1,
+      strokeWidth,
+      bottomBorder: 1, // Add bottom border line separator
+      shadow: 0,  // No shadow on text fields
+    });
+
+    const fieldCell: DrawioCell = {
+      id: fieldCellId,
+      value: fieldLabel,
+      style: fieldStyle,
+      vertex: '1',
+      movable: '0', // Make field non-movable
       parent: tableCellId,
       x: 0,
       y: currentY,
@@ -422,18 +875,21 @@ function createTableCells(
     const moreCount = fields.length - maxFields;
     const moreStyle = buildStyle({
       text: 1,
+      strokeColor: darkenColor(color, 10),
+      fillColor: '#ffffff', // White background for fields
       align: 'center',
-      verticalAlign: 'middle',
+      verticalAlign: 'top',
       spacingLeft: 4,
       spacingRight: 4,
       overflow: 'hidden',
       rotatable: 0,
       points: '[[0,0.5],[1,0.5]]',
       portConstraint: 'eastwest',
-      fillColor: lightenColor(color, 45),
-      strokeColor: darkenColor(color, 10),
-      fontSize: 11,
+      whiteSpace: 'nowrap',
+      html: 1,
       fontStyle: 2, // italic
+      bottomBorder: 0, // No bottom border on last item
+      shadow: 0,  // No shadow on text fields
     });
 
     cells.push({
@@ -441,6 +897,7 @@ function createTableCells(
       value: escapeXml(`... ${moreCount} more field${moreCount > 1 ? 's' : ''}`),
       style: moreStyle,
       vertex: '1',
+      movable: '0', // Make non-movable
       parent: tableCellId,
       x: 0,
       y: currentY,
@@ -449,11 +906,60 @@ function createTableCells(
     });
   }
 
+  // If we have an annotation, add the group wrapper and annotation badge
+  if (hasAnnotation && groupCellId) {
+    // Calculate total group height (annotation badge + margin + class)
+    const groupHeight = annotationBadgeHeight + classHeight;
+    
+    // Create group cell (must be first in returned array)
+    const groupCell: DrawioCell = {
+      id: groupCellId,
+      value: '',
+      style: 'group',
+      vertex: '1',
+      connectable: '0',
+      parent: parentId,
+      x: Math.round(node.position.x),
+      y: Math.round(node.position.y),
+      width: tableWidth,
+      height: groupHeight,
+    };
+    
+    // Create annotation badge
+    const annotationCellId = getUniqueId(`${tableName}_annotation_badge`);
+    const annotationBadgeWidth = 60;
+    const annotationBadgeX = tableWidth - annotationBadgeWidth;
+    
+    const annotationStyle = buildStyle({
+      rounded: 1,
+      whiteSpace: 'wrap',
+      html: 1,
+      fillColor: '#ffe6cc',
+      strokeColor: '#d79b00',
+      arcSize: 9,
+    });
+    
+    const annotationCell: DrawioCell = {
+      id: annotationCellId,
+        value: escapeXml(`<b>${node.data.annotation!}</b>`),
+      style: annotationStyle,
+      vertex: '1',
+      parent: groupCellId,
+      x: annotationBadgeX,
+      y: 0,
+      width: annotationBadgeWidth,
+      height: annotationBadgeHeight,
+    };
+    
+    // Return with group first, then class and fields, then annotation on top
+    return [groupCell, ...cells, annotationCell];
+  }
+
   return cells;
 }
 
 /**
- * Creates a draw.io cell for generic nodes (markdown, callout, annotation)
+ * Creates a draw.io cell for a generic node (markdown, callout, annotation)
  */
 function createGenericCell(
   node: BoardNode,
@@ -530,7 +1036,9 @@ function createEdgeCell(
   edge: BoardEdge,
   cellId: string,
   sourceId: string,
-  targetId: string
+  targetId: string,
+  sourceName: string,
+  targetName: string
 ): DrawioCell {
   const label = edge.label ? escapeXml(edge.label) : '';
   
@@ -538,6 +1046,7 @@ function createEdgeCell(
   // Using proper ERD notation
   let endArrow = 'ERone';
   let startArrow = 'ERmany';
+  let relationshipType = 'Many-to-One';
 
   if (edge.type === 'betweenTablesInverted') {
     // For inverted edges: source has FK, target is referenced table
@@ -545,17 +1054,23 @@ function createEdgeCell(
     // So we want ERmany at source, ERone at target
     endArrow = 'ERone';
     startArrow = 'ERmany';
+    relationshipType = 'Many-to-One';
   } else if (edge.type === 'betweenTables') {
     // Standard edge: source has FK, target is referenced table
     // Visual: BillingPolicy (many) → BillingTreatment (one)
     // Same as inverted: ERmany at source, ERone at target
     endArrow = 'ERone';
     startArrow = 'ERmany';
+    relationshipType = 'Many-to-One';
   } else {
     // Custom edges or other types - default behavior
     endArrow = 'ERone';
     startArrow = 'ERmany';
+    relationshipType = 'Relationship';
   }
+
+  // Read strokeWidth from edge style if available, otherwise use default
+  const strokeWidth = edge.style?.strokeWidth ?? 2;
 
   const style = buildStyle({
     edgeStyle: 'orthogonalEdgeStyle',  // Orthogonal routing for cleaner right-angle lines
@@ -568,10 +1083,26 @@ function createEdgeCell(
     startArrow,
     endFill: 0,
     startFill: 0,
-    strokeWidth: 2,
+    strokeWidth,
     strokeColor: '#6c757d',
     curved: 0,  // Ensure no curves on orthogonal lines
+    shadow: 0,  // No shadow on edges
   });
+
+  // Build informative tooltip
+  const sourceHandle = edge.sourceHandle?.replace(/-(source|target)(-inv)?$/, '') || '';
+  const targetHandle = edge.targetHandle?.replace(/-(source|target)(-inv)?$/, '') || '';
+  
+  let tooltip = `${relationshipType}: ${sourceName} → ${targetName}`;
+  if (sourceHandle) {
+    tooltip += `\nFrom: ${sourceName}.${sourceHandle}`;
+  }
+  if (targetHandle) {
+    tooltip += `\nTo: ${targetName}.${targetHandle}`;
+  }
+  if (edge.label) {
+    tooltip += `\nLabel: ${edge.label}`;
+  }
 
   return {
     id: cellId,
@@ -581,6 +1112,98 @@ function createEdgeCell(
     parent: '1',
     source: sourceId,
     target: targetId,
+    tooltip: escapeXml(tooltip),
+  };
+}
+
+/**
+ * Creates a draw.io cell for a UML relationship
+ */
+function createUmlEdgeCell(
+  edge: BoardEdge,
+  cellId: string,
+  sourceId: string,
+  targetId: string,
+  relationshipStyle: 'association' | 'smart',
+  sourceName: string,
+  targetName: string
+): DrawioCell {
+  const label = edge.label ? escapeXml(edge.label) : '';
+  
+  // Determine UML relationship type
+  let endArrow = 'open'; // Simple arrow for association
+  let startArrow = 'none';
+  let endFill = 0;
+  let startFill = 0;
+  let relationshipType = 'Association';
+  
+  if (relationshipStyle === 'smart') {
+    // Smart inference based on edge type and Salesforce relationship patterns
+    if (edge.type === 'betweenTablesInverted' || edge.type === 'betweenTables') {
+      // Foreign key relationships - use composition (strong ownership)
+      // Draw.io composition: filled diamond at the "whole" side
+      // For FK: source has FK, target is referenced (target is "whole")
+      endArrow = 'diamondThin';
+      endFill = 1; // filled diamond = composition
+      startArrow = 'none';
+      relationshipType = 'Composition';
+    } else {
+      // Default: simple association
+      endArrow = 'open';
+      startArrow = 'none';
+      relationshipType = 'Association';
+    }
+  } else {
+    // Simple association for all relationships
+    endArrow = 'open';
+    startArrow = 'none';
+    relationshipType = 'Association';
+  }
+
+  // Read strokeWidth from edge style if available, otherwise use default
+  const strokeWidth = edge.style?.strokeWidth ?? 1.5;
+
+  const style = buildStyle({
+    edgeStyle: 'orthogonalEdgeStyle',
+    rounded: 0,
+    orthogonalLoop: 1,
+    jettySize: 'auto',
+    fontSize: 11,
+    html: 1,
+    endArrow,
+    startArrow,
+    endFill,
+    startFill,
+    strokeWidth,
+    strokeColor: '#6c757d',
+    curved: 0,
+    shadow: 0,  // No shadow on edges
+  });
+
+  // Build informative tooltip
+  const sourceHandle = edge.sourceHandle?.replace(/-(source|target)(-inv)?$/, '') || '';
+  const targetHandle = edge.targetHandle?.replace(/-(source|target)(-inv)?$/, '') || '';
+  
+  let tooltip = `${relationshipType}: ${sourceName} → ${targetName}`;
+  if (sourceHandle) {
+    tooltip += `\nFrom: ${sourceName}.${sourceHandle}`;
+  }
+  if (targetHandle) {
+    tooltip += `\nTo: ${targetName}.${targetHandle}`;
+  }
+  if (edge.label) {
+    tooltip += `\nLabel: ${edge.label}`;
+  }
+
+  return {
+    id: cellId,
+    value: label,
+    style,
+    edge: '1',
+    parent: '1',
+    source: sourceId,
+    target: targetId,
+    tooltip: escapeXml(tooltip),
   };
 }
 
@@ -652,9 +1275,14 @@ function lightenColor(hex: string, percent: number): string {
 /**
  * Maps JSON Schema types to display types
  */
-function mapTypeToDisplay(type: string, format?: string, isForeign?: boolean): string {
+function mapTypeToDisplay(type: string, format?: string, isForeign?: boolean, hasEnum?: boolean): string {
   if (isForeign) {
     return 'FK';
+  }
+
+  // Check for enum constraint
+  if (hasEnum) {
+    return 'Enum';
   }
 
   if (format) {
@@ -783,6 +1411,12 @@ function buildDrawioXML(cells: any[], title: string): string {
     }
     if (cell.collapsed !== undefined) {
       cellXml += ' collapsed="' + cell.collapsed + '"';
+    }
+    if (cell.movable !== undefined) {
+      cellXml += ' movable="' + cell.movable + '"';
+    }
+    if (cell.connectable !== undefined) {
+      cellXml += ' connectable="' + cell.connectable + '"';
     }
     
     xmlParts[xmlParts.length - 1] += cellXml + '>';

@@ -1197,6 +1197,7 @@
            }
          },
          "label": "Case",
+         "annotation": "20k",
          "icon": "standard:case",
          "description": "[Service Cloud] Represents a case, which is a customer issue or problem.",
          "color": "#00A1E0",

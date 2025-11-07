@@ -5,6 +5,61 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2025-11-06
+
+### Added
+- **Edge tooltips**: Relationship arrows now have informative tooltips on hover
+  - Shows relationship type (Many-to-One, Composition, Association)
+  - Displays source and target table names (e.g., "InvoiceLine → Invoice")
+  - Shows specific field connections (e.g., "From: InvoiceLine.InvoiceId", "To: Invoice.Id")
+  - Includes edge label if present
+  - Helps understand complex diagrams with many relationships
+- **Enum type detection**: Fields with `enum` constraints now display as `Enum` type instead of `Text`
+  - More semantic information for fields with constrained values
+  - Automatically detects JSON Schema `enum` property
+  - Examples: Status fields, Type fields, Category fields with predefined options
+
+### Changed
+- **Automatic field grouping**: All tables now group fields by importance
+  - Order: Primary Key (Id) → Reference Fields (FK with x-target) → Regular Fields
+  - Makes relationships immediately visible at the top of each table
+  - Cleaner, more scannable table structure
+- **Reference fields always preserved**: Fields with `x-target` property are never skipped
+  - Even when `includeReadOnlyFields: false`, FK fields are always included
+  - Essential for maintaining relationship integrity in diagrams
+  - Primary keys and reference fields are critical structural elements
+- **Simplified field styling**: Only primary keys have colored backgrounds
+  - Primary Key (Id): Colored background + Bold text (stands out clearly)
+  - Foreign Keys: White background with "FK:" prefix (clean and readable)
+  - Regular fields: White background (clean appearance)
+  - Removed FK field coloring for less visual noise
+- **White background for all fields**: Changed from transparent to solid white
+  - Better appearance for overlapping tables
+  - More professional look with solid field rows
+  - Improved readability on any background
+  - Only PK has colored background for emphasis
+- **Selective shadows**: Shadow only applied to shape elements, not text or edges
+  - Tables, groups, and boxes have shadows (depth and 3D effect)
+  - Field rows have no shadows (clean, crisp text)
+  - Relationship arrows have no shadows (cleaner lines)
+  - Better overall visual hierarchy and readability
+- **Top-to-bottom rendering**: All elements now sorted by Y position before rendering
+  - Group zones render from top to bottom
+  - Tables render from top to bottom
+  - Other elements render from top to bottom
+  - Natural overlap behavior when elements overlap
+  - Proper z-ordering matches visual expectation
+- **Edge strokeWidth support**: Edges now respect `strokeWidth` from board data
+  - Can emphasize important relationships with thicker arrows
+  - Read from `edge.style.strokeWidth` property
+  - Falls back to default width (2 for ERD, 1.5 for UML) if not specified
+
+### Improved
+- Field organization is now more logical and consistent across all diagrams
+- Visual hierarchy is clearer with minimal use of color
+- Diagrams are cleaner and more professional looking
+- Better handling of dense diagrams with overlapping elements
+
 ## [2.0.0] - 2025-11-04
 
 ### Changed
