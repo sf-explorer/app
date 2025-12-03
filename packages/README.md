@@ -4,6 +4,33 @@ This directory contains reusable TypeScript packages for working with SF Explore
 
 ## Available Packages
 
+### [@sf-explorer/salesforce-data-models](./salesforce-data-models)
+
+Comprehensive Salesforce data models and ERD templates covering 17+ Salesforce clouds and products.
+
+**Features:**
+- 17+ pre-built Salesforce data models
+- Full TypeScript support with type definitions
+- Zero runtime dependencies
+- Lazy loading for performance optimization
+- Helper functions for filtering, searching, and categorization
+- Includes: Service Cloud, Sales Cloud, Revenue Cloud, Field Service, Financial Services, Agentforce, and more
+
+**Quick Start:**
+```typescript
+import { erdModels, getFeaturedERDs } from '@sf-explorer/salesforce-data-models';
+
+// Load a specific model
+const serviceCloud = erdModels.find(m => m.value === 'serviceCloud');
+const data = await serviceCloud.content();
+console.log(`${data.nodes.length} nodes, ${data.edges.length} edges`);
+
+// Get featured models
+const featured = getFeaturedERDs();
+```
+
+See the [full documentation](./salesforce-data-models/README.md) for more details.
+
 ### [@sf-explorer/board-to-drawdb](./board-to-drawdb)
 
 Transform SF Explorer board templates into drawDB compatible format for database design and documentation.
@@ -77,7 +104,9 @@ npm run build
 
 Build a specific package:
 ```bash
+npm run build:salesforce-data-models
 npm run build:board-to-drawdb
+npm run build:board-to-drawio
 ```
 
 Or from within a package directory:

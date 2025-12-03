@@ -1,0 +1,61 @@
+{
+  "name": "@sf-explorer/salesforce-data-models",
+  "version": "1.0.0",
+  "description": "Comprehensive Salesforce data models and ERD templates for Sales Cloud, Service Cloud, Revenue Cloud, and more",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./models/*": "./data/*.json"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "salesforce",
+    "erd",
+    "data-model",
+    "schema",
+    "service-cloud",
+    "sales-cloud",
+    "revenue-cloud",
+    "field-service",
+    "agentforce",
+    "financial-services",
+    "data-cloud",
+    "entity-relationship",
+    "database-design",
+    "diagrams"
+  ],
+  "author": "SF Explorer",
+  "license": "MIT",
+  "homepage": "https://github.com/sf-explorer/app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-explorer/app.git",
+    "directory": "packages/salesforce-data-models"
+  },
+  "bugs": {
+    "url": "https://github.com/sf-explorer/app/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
+

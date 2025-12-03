@@ -1,19 +1,20 @@
 #!/usr/bin/env node
 
 /**
- * Generate individual markdown files for each diagram with viewer URLs
+ * Generate lightweight individual markdown files for each diagram
+ * WITHOUT embedding the full viewer URLs (too large for GitHub)
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { transformBoardWithViewerUrl } from '../dist/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const boardsDir = path.join(__dirname, '../../../Boards');
 const diagramsDir = path.join(__dirname, '../docs/diagrams');
+const viewerUrlsFile = path.join(__dirname, '../docs/viewer-urls.md');
 
 // Ensure diagrams directory exists
 if (!fs.existsSync(diagramsDir)) {
@@ -25,7 +26,7 @@ const boardFiles = fs.readdirSync(boardsDir)
   .filter(file => file.endsWith('.json'))
   .sort();
 
-console.log(`📊 Generating individual diagram files for ${boardFiles.length} diagrams...\n`);
+console.log(`📊 Generating lightweight diagram files for ${boardFiles.length} diagrams...\n`);
 
 const diagrams = [];
 
@@ -46,45 +47,39 @@ for (const boardFile of boardFiles) {
     
     // Check for annotation
     const hasAnnotation = boardData.nodes.some(n => n.data?.annotation);
-    
-    // Transform and get viewer URL
-    const { xml, viewerUrl } = transformBoardWithViewerUrl(boardData, {
-      includeReadOnlyFields: false,
-      showFieldTypes: true,
-      tableWidth: 220,
-      fieldHeight: 28,
-      title: boardName
-    });
-    
-    const urlLength = viewerUrl.length;
     const displayName = boardName.replace(/([A-Z])/g, ' $1').trim().replace(/^./, str => str.toUpperCase());
     
-    // Create individual diagram file
+    // Create lightweight diagram file (WITHOUT full viewer URL)
     const diagramMarkdown = `# ${displayName}
 
 ## 📊 Diagram Information
 
-- **File:** [\`${boardName}.drawio\`](../../output/${boardName}.drawio)
 - **Nodes:** ${boardData.nodes.length} tables/entities
 - **Edges:** ${boardData.edges.length} relationships
-- **URL Size:** ${urlLength.toLocaleString()} characters (${(urlLength/1024).toFixed(1)}KB)
 ${hasAnnotation ? '- **⭐ Special:** Contains annotation badges\n' : ''}
 
-## 🚀 Quick Actions
+## 🚀 How to View
 
-### View Online
-[🔗 **Open in draw.io viewer** →](${viewerUrl})
+### Option 1: Generate Locally (Recommended)
+The best way to work with this diagram is to generate it locally:
 
-> **Note:** This diagram can be viewed directly in your browser. Click the link above to open it in the draw.io viewer.
+\`\`\`bash
+# From the package root
+npm run build
+node scripts/regenerate-all.cjs
+\`\`\`
 
-### Download & Edit
-1. Download [\`${boardName}.drawio\`](../../output/${boardName}.drawio)
-2. Open with [draw.io desktop](https://github.com/jgraph/drawio-desktop/releases) or [VS Code](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
-3. Edit and save locally
+This creates \`output/${boardName}.drawio\` which you can:
+- Open with [draw.io desktop app](https://github.com/jgraph/drawio-desktop/releases)
+- Edit in [VS Code with Draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- Upload to [app.diagrams.net](https://app.diagrams.net)
 
-### Open in App
-- [Open in draw.io web app](https://app.diagrams.net)
-- Then: File → Open → Select \`${boardName}.drawio\`
+### Option 2: View Online
+For the full viewer URL (may not work in all browsers), see:
+**[viewer-urls.md](../viewer-urls.md)** - Look for "${displayName}" section
+
+> ⚠️ **Note:** Viewer URLs are very long (embedded XML) and may not work in Firefox/Safari.  
+> GitHub also doesn't render them well. We recommend Option 1.
 
 ## 🎨 Diagram Features
 
@@ -95,35 +90,31 @@ This diagram includes:
 - ✅ **Primary keys** - Colored background and bold text
 - ✅ **Foreign keys** - Grouped at top with "FK:" prefix
 - ✅ **Enum types** - Fields with constrained values show as "Enum"
-- ✅ **Proper layering** - Clean overlapping when tables overlap
-- ✅ **Selective shadows** - Only on shapes for depth, not on text
+- ✅ **White field backgrounds** - Clean when tables overlap
+- ✅ **Selective shadows** - Only on shapes for depth
 
-## ⚠️ Browser Compatibility
+## 📊 Technical Details
 
-| Browser | Max URL Length | Can View? |
-|---------|----------------|-----------|
-| **Chrome/Edge** | ~2MB | ${urlLength < 2000000 ? '✅ Yes' : '⚠️ URL too large'} |
-| **Firefox** | ~64KB | ${urlLength < 65536 ? '✅ Yes' : '⚠️ Use local file'} |
-| **Safari** | ~80KB | ${urlLength < 81920 ? '✅ Yes' : '⚠️ Use local file'} |
-
-${urlLength > 65536 ? `
-> ⚠️ **Large Diagram Warning**  
-> This diagram's URL (${(urlLength/1024).toFixed(1)}KB) may not work in Firefox or Safari.  
-> **Recommended:** Download and open the \`.drawio\` file locally instead.
-` : ''}
+| Property | Value |
+|----------|-------|
+| Tables/Entities | ${boardData.nodes.length} |
+| Relationships | ${boardData.edges.length} |
+| Source File | \`../../Boards/${boardName}.json\` |
+| Output File | \`output/${boardName}.drawio\` |
 
 ## 📚 Related
 
 - [← Back to All Diagrams](../ALL_DIAGRAM_LINKS.md)
-- [Main Documentation](../../README.md)
-- [View All Diagrams](../../output/)
+- [Full Documentation](../../README.md)
+- [Quick Start Guide](../QUICK_START.md)
+- [Viewer URLs (Technical)](../viewer-urls.md)
 
 ---
 
-*Generated by board-to-drawio v2.1.0*
+*Generate this diagram locally for the best experience!*
 `;
 
-    // Write individual diagram file
+    // Write lightweight diagram file
     const diagramFile = path.join(diagramsDir, `${boardName}.md`);
     fs.writeFileSync(diagramFile, diagramMarkdown, 'utf-8');
     
@@ -134,7 +125,6 @@ ${urlLength > 65536 ? `
       displayName,
       nodes: boardData.nodes.length,
       edges: boardData.edges.length,
-      urlLength,
       hasAnnotation
     });
     
@@ -149,13 +139,14 @@ const indexMarkdown = `# 🔗 All Diagram Links
 **Generated:** ${new Date().toLocaleString()}  
 **Total Diagrams:** ${diagrams.length}
 
-> 📁 Each diagram has its own file with viewer URL, download links, and details.
+> 📊 **Each diagram has its own page** with generation instructions.  
+> Viewer URLs are in [viewer-urls.md](./viewer-urls.md) (but we recommend generating locally).
 
 ---
 
 ## 📋 Quick Access
 
-| # | Diagram | Nodes | Edges | Link |
+| # | Diagram | Nodes | Edges | Info |
 |---|---------|-------|-------|------|
 ${diagrams.map((d, i) => `| ${i+1} | **${d.displayName}** | ${d.nodes} | ${d.edges} | [View →](./diagrams/${d.name}.md) |`).join('\n')}
 
@@ -186,31 +177,38 @@ All diagrams include:
 
 ---
 
+## 🚀 Usage
+
+### Generate All Diagrams Locally
+The recommended way to work with these diagrams:
+
+\`\`\`bash
+npm run build
+node scripts/regenerate-all.cjs
+\`\`\`
+
+This creates all diagrams in the \`output/\` directory.
+
+### View a Specific Diagram
+1. Click on any diagram link in the table above
+2. Follow the generation instructions on the diagram page
+3. Open the generated \`.drawio\` file locally
+
+### Work with Generated Files
+After generating:
+- Open with [draw.io desktop app](https://github.com/jgraph/drawio-desktop/releases)
+- Or use [VS Code with Draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- Or upload to [app.diagrams.net](https://app.diagrams.net)
+
+---
+
 ## 📚 Documentation
 
 - **[README](../README.md)** - Main package documentation
 - **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 minutes
 - **[ANNOTATION_FEATURE.md](./ANNOTATION_FEATURE.md)** - Annotation badges
 - **[UML_FEATURE.md](./UML_FEATURE.md)** - UML class diagrams
-- **[viewer-urls.md](./viewer-urls.md)** - Technical URL details
-
----
-
-## 🚀 Usage
-
-### View a Diagram
-1. Click on any diagram link above
-2. Click "Open in draw.io viewer" button
-3. View and interact with the diagram in your browser
-
-### Download All Diagrams
-All .drawio files are available in the [../output/](../output/) directory.
-
-### Generate Fresh Files
-\`\`\`bash
-npm run build
-node scripts/generate-diagram-files.js
-\`\`\`
+- **[viewer-urls.md](./viewer-urls.md)** - Technical URL details (large file)
 
 ---
 
@@ -221,9 +219,9 @@ node scripts/generate-diagram-files.js
 fs.writeFileSync(path.join(__dirname, '../docs/ALL_DIAGRAM_LINKS.md'), indexMarkdown, 'utf-8');
 
 console.log('\n' + '='.repeat(60));
-console.log(`✅ Generated ${diagrams.length} individual diagram files`);
+console.log(`✅ Generated ${diagrams.length} lightweight diagram files`);
 console.log('='.repeat(60));
 console.log(`📄 Index: docs/ALL_DIAGRAM_LINKS.md`);
-console.log(`📁 Files: docs/diagrams/*.md`);
+console.log(`📁 Files: docs/diagrams/*.md (GitHub-friendly sizes)`);
 console.log('\n💡 View the index at docs/ALL_DIAGRAM_LINKS.md');
-
+console.log('\n⚠️  Note: viewer-urls.md contains full URLs but is too large for GitHub');

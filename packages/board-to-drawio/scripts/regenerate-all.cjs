@@ -2,8 +2,8 @@ const { transformBoardToDrawIO } = require('../dist/index.js');
 const fs = require('fs');
 const path = require('path');
 
-const boardsDir = path.join(process.cwd(), '../../../Boards');
-const outputDir = path.join(process.cwd(), 'output');
+const boardsDir = path.join(__dirname, '../../../Boards');
+const outputDir = path.join(__dirname, '../output');
 
 // Ensure output directory exists
 if (!fs.existsSync(outputDir)) {

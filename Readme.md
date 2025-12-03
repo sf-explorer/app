@@ -19,43 +19,57 @@ These diagrams serve as comprehensive data models and relationship diagrams for 
 **Collaboration:** This repository is designed for collaboration - feel free to share concepts, contribute new diagrams, or suggest other Salesforce clouds not yet covered here.
 | Board | Description | Objects | File | Open Board |
 |-------|-------------|---------|------|------------|
-| ☁️ Sales Cloud | Complete sales data model with leads, opportunities, and forecasting | 14 | [salescloud.json](./Boards/salescloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=salescloud) |
-| ☁️ Service Cloud | From case to entitlements | 19 | [serviceCloud.json](./Boards/serviceCloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=serviceCloud) |
-| 📦 RCA: Product Catalog | Product management and catalog systems | 14 | [productCatalog.json](./Boards/productCatalog.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=cpq) |
-| 💰 RCA: Invoicing Data Model | Financial management and billing systems | 15 | [billingAccounting.json](./Boards/billingAccounting.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=billingAccounting) |
-| 🛡️ FSC: Insurance Data Model | Insurance policy management | 22 | [insurancePolicy.json](./Boards/insurancePolicy.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=insurancePolicy) |
-| 🔍 FSC: Know Your Customer | Customer verification and compliance | 9 | [kyc.json](./Boards/kyc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=kyc) |
-| 🔧 FSL: Core Data Model | Field service management and operations | 15 | [fieldService.json](./Boards/fieldService.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=fieldService) |
-| ⚡ EUC: Core Data Model | Energy&Utility Cloud now on Core | 10 | [euc.json](./Boards/euc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=euc) |
-| 🔒 Shield: Available Events | Discover the 40 available event and examples of how to leverage them | 37 | [shield.json](./Boards/shield.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=shield) |
-| 🔐 Security Model | Comprehensive security covering users, profiles, permissions, and roles | 19 | [security.json](./Boards/security.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=security) |
-| ☁️ Data Cloud: SSOT Model | SSOT Data Model | 7 | [datacloud.json](./Boards/datacloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=datacloud) |
-| ⚙️ Business Rule Engine | Business rule management | 13 | [businessRuleEngine.json](./Boards/businessRuleEngine.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=businessRuleEngine) |
-| 🎯 Discovery Framework | Assessment and discovery framework for org analysis | 17 | [discoveryFramework.json](./Boards/discoveryFramework.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=discoveryFramework) |
-| 📋 Action Plan | Action plan data model with templates and task management | 7 | [actionPlan.json](./Boards/actionPlan.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=actionPlan) |
-| 🤖 Agentforce | Agent productivity and management tools | 14 | [agentForce.json](./Boards/agentForce.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentForce) |
-| 🤖 Agentforce feedback | Understand and analyze your Einstein generative AI audit and feedback data | 13 | [agentfeedback.json](./Boards/agentfeedback.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentfeedback) |
+| ☁️ Sales Cloud | Complete sales data model with leads, opportunities, and forecasting | 14 | [salescloud.json](./packages/salesforce-data-models/data/salescloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=salescloud) |
+| ☁️ Service Cloud | From case to entitlements | 19 | [serviceCloud.json](./packages/salesforce-data-models/data/serviceCloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=serviceCloud) |
+| 📦 RCA: Product Catalog | Product management and catalog systems | 14 | [productCatalog.json](./packages/salesforce-data-models/data/productCatalog.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=cpq) |
+| 💰 RCA: Invoicing Data Model | Financial management and billing systems | 15 | [billingAccounting.json](./packages/salesforce-data-models/data/billingAccounting.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=billingAccounting) |
+| 🛡️ FSC: Insurance Data Model | Insurance policy management | 22 | [insurancePolicy.json](./packages/salesforce-data-models/data/insurancePolicy.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=insurancePolicy) |
+| 🔍 FSC: Know Your Customer | Customer verification and compliance | 9 | [kyc.json](./packages/salesforce-data-models/data/kyc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=kyc) |
+| 🔧 FSL: Core Data Model | Field service management and operations | 15 | [fieldService.json](./packages/salesforce-data-models/data/fieldService.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=fieldService) |
+| ⚡ EUC: Core Data Model | Energy&Utility Cloud now on Core | 10 | [euc.json](./packages/salesforce-data-models/data/euc.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=euc) |
+| 🔒 Shield: Available Events | Discover the 40 available event and examples of how to leverage them | 37 | [shield.json](./packages/salesforce-data-models/data/shield.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=shield) |
+| 🔐 Security Model | Comprehensive security covering users, profiles, permissions, and roles | 19 | [security.json](./packages/salesforce-data-models/data/security.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=security) |
+| ☁️ Data Cloud: SSOT Model | SSOT Data Model | 7 | [datacloud.json](./packages/salesforce-data-models/data/datacloud.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=datacloud) |
+| ⚙️ Business Rule Engine | Business rule management | 13 | [businessRuleEngine.json](./packages/salesforce-data-models/data/businessRuleEngine.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=businessRuleEngine) |
+| 🎯 Discovery Framework | Assessment and discovery framework for org analysis | 17 | [discoveryFramework.json](./packages/salesforce-data-models/data/discoveryFramework.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=discoveryFramework) |
+| 📋 Action Plan | Action plan data model with templates and task management | 7 | [actionPlan.json](./packages/salesforce-data-models/data/actionPlan.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=actionPlan) |
+| 🤖 Agentforce | Agent productivity and management tools | 14 | [agentForce.json](./packages/salesforce-data-models/data/agentForce.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentForce) |
+| 🤖 Agentforce Feedback | Understand and analyze your Einstein generative AI audit and feedback data | 13 | [agentfeedback.json](./packages/salesforce-data-models/data/agentfeedback.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentfeedback) |
+| 🤖 Agent Interactions | Agent interaction tracking and conversation management | - | [agentInteractions.json](./packages/salesforce-data-models/data/agentInteractions.json) | [🔗 Open](https://app.sf-explorer.com/well-architected.html#sfe.erd?template=agentInteractions) |
 
 
-### Packages
+## NPM Packages
 
-This repository includes utility packages for working with SF Explorer board templates:
+This repository includes reusable npm packages for working with Salesforce data models:
 
-#### [@sf-explorer/board-to-drawdb](./packages/board-to-drawdb)
+### [@sf-explorer/salesforce-data-models](./packages/salesforce-data-models)
 
-Transform SF Explorer board templates into drawDB compatible format. This package allows you to:
-- Convert board templates to drawDB schema format
-- Export diagrams for use in other database design tools
-- Customize conversion options (exclude read-only fields, target different databases, etc.)
+The **source package** containing all 17+ Salesforce data models as importable npm modules. Use this package to:
+- Load pre-built Salesforce ERD models (Service Cloud, Sales Cloud, Revenue Cloud, etc.)
+- Filter and search models by category, complexity, or tags
+- Get featured models or browse by industry cloud
+- Zero dependencies, full TypeScript support
 
 ```typescript
-import { transformBoardToDrawDB } from '@sf-explorer/board-to-drawdb';
-import boardTemplate from './Boards/salescloud.json';
+import { erdModels, getFeaturedERDs } from '@sf-explorer/salesforce-data-models';
 
-const drawDBSchema = transformBoardToDrawDB(boardTemplate);
+// Load a specific model
+const serviceCloud = erdModels.find(m => m.value === 'serviceCloud');
+const data = await serviceCloud.content();
+
+// Get featured models
+const featured = getFeaturedERDs();
 ```
 
-See the [package README](./packages/board-to-drawdb/README.md) for full documentation.
+### [@sf-explorer/board-to-drawio](./packages/board-to-drawio)
+
+Convert SF Explorer board templates to Draw.io (diagrams.net) XML format with full visual fidelity.
+
+### [@sf-explorer/board-to-drawdb](./packages/board-to-drawdb)
+
+Transform SF Explorer board templates into DrawDB schema format for database design tools.
+
+See the [packages directory](./packages/) for detailed documentation on each package.
 
 ### Other Resources
 

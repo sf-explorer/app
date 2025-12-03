@@ -4,10 +4,16 @@ Transform SF Explorer board templates into draw.io (diagrams.net) XML format for
 
 ## 📊 Quick Links
 
-- **[📁 Generated Diagrams](./output/)** - All `.drawio` files ready to use
-- **[🔗 Diagram Viewer Links](./docs/ALL_DIAGRAM_LINKS.md)** - Browse and open diagrams online
+- **[🔗 View All Diagrams](./docs/ALL_DIAGRAM_LINKS.md)** - Browse and open diagrams online
 - **[📚 Documentation](./docs/)** - Full documentation and guides
 - **[🚀 Quick Start](./docs/QUICK_START.md)** - Get started in 5 minutes
+
+> 💡 **Tip:** To generate `.drawio` files locally, run:
+> ```bash
+> npm run build
+> node scripts/regenerate-all.cjs
+> ```
+> Files will be created in the `output/` directory.
 
 ## Usage
 

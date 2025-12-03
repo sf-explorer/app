@@ -1,15 +1,16 @@
 # 🔗 All Diagram Links
 
-**Generated:** 11/7/2025, 11:52:53 AM  
+**Generated:** 11/7/2025, 12:26:31 PM  
 **Total Diagrams:** 17
 
-> 📁 Each diagram has its own file with viewer URL, download links, and details.
+> 📊 **Each diagram has its own page** with generation instructions.  
+> Viewer URLs are in [viewer-urls.md](./viewer-urls.md) (but we recommend generating locally).
 
 ---
 
 ## 📋 Quick Access
 
-| # | Diagram | Nodes | Edges | Link |
+| # | Diagram | Nodes | Edges | Info |
 |---|---------|-------|-------|------|
 | 1 | **Action Plan** | 9 | 11 | [View →](./diagrams/actionPlan.md) |
 | 2 | **Agent Force** | 22 | 18 | [View →](./diagrams/agentForce.md) |
@@ -56,31 +57,38 @@ All diagrams include:
 
 ---
 
+## 🚀 Usage
+
+### Generate All Diagrams Locally
+The recommended way to work with these diagrams:
+
+```bash
+npm run build
+node scripts/regenerate-all.cjs
+```
+
+This creates all diagrams in the `output/` directory.
+
+### View a Specific Diagram
+1. Click on any diagram link in the table above
+2. Follow the generation instructions on the diagram page
+3. Open the generated `.drawio` file locally
+
+### Work with Generated Files
+After generating:
+- Open with [draw.io desktop app](https://github.com/jgraph/drawio-desktop/releases)
+- Or use [VS Code with Draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- Or upload to [app.diagrams.net](https://app.diagrams.net)
+
+---
+
 ## 📚 Documentation
 
 - **[README](../README.md)** - Main package documentation
 - **[QUICK_START.md](./QUICK_START.md)** - Get started in 5 minutes
 - **[ANNOTATION_FEATURE.md](./ANNOTATION_FEATURE.md)** - Annotation badges
 - **[UML_FEATURE.md](./UML_FEATURE.md)** - UML class diagrams
-- **[viewer-urls.md](./viewer-urls.md)** - Technical URL details
-
----
-
-## 🚀 Usage
-
-### View a Diagram
-1. Click on any diagram link above
-2. Click "Open in draw.io viewer" button
-3. View and interact with the diagram in your browser
-
-### Download All Diagrams
-All .drawio files are available in the [../output/](../output/) directory.
-
-### Generate Fresh Files
-```bash
-npm run build
-node scripts/generate-diagram-files.js
-```
+- **[viewer-urls.md](./viewer-urls.md)** - Technical URL details (large file)
 
 ---
 
