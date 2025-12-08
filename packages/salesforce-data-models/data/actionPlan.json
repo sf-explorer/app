@@ -1,1424 +1,1288 @@
 {
-   "nodes": [
-     {
-       "id": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
-       "type": "groupZone",
-       "position": {
-         "x": 224.21647288476925,
-         "y": -278.0054178945775
-       },
-       "data": {
-         "label": "Setup",
-         "content": "",
-         "icon": "standard:apps_admin",
-         "color": "rgba(107, 99, 123, 0.4)"
-       },
-       "width": 1154,
-       "height": 925
-     },
-     {
-       "id": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
-       "type": "groupZone",
-       "position": {
-         "x": 1450.6542044460232,
-         "y": -280.9028111712595
-       },
-       "data": {
-         "label": "Execution",
-         "content": "",
-         "icon": "standard:apps_admin",
-         "color": "#e3e3e3"
-       },
-       "width": 1527,
-       "height": 962
-     },
-     {
-       "id": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "type": "table",
-       "data": {
-         "label": "Action Plan",
-         "icon": "standard:hierarchy",
-         "color": "#8E44AD",
-         "Id": "EntityDefinition/ActionPlan",
-         "table": {
-           "name": "ActionPlan",
-           "label": "Action Plan",
-           "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Name",
-               "description": "Name of the action plan."
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "TargetId": {
-               "type": "string",
-               "title": "Target Record ID",
-               "x-target": "AI_Agent_Conversation_Entry__c",
-               "readOnly": true,
-               "description": ""
-             },
-             "ActionPlanTemplateVersionId": {
-               "type": "string",
-               "title": "Action Plan Template Version ID",
-               "x-target": "ActionPlanTemplateVersion",
-               "readOnly": true,
-               "description": ""
-             },
-             "ActionPlanType": {
-               "type": "string",
-               "title": "Action Plan Type",
-               "enum": [
-                 "Industries",
-                 "Retail",
-                 "Sales",
-                 null
-               ],
-               "enumNames": [
-                 "Industries",
-                 "Assessment Execution",
-                 "Sales",
-                 null
-               ],
-               "readOnly": true,
-               "description": "The action plan’s type."
-             },
-             "ActionPlanState": {
-               "type": "string",
-               "title": "Status",
-               "enum": [
-                 "Not Started",
-                 "In Progress",
-                 "Canceled",
-                 "Completed",
-                 null
-               ],
-               "enumNames": [
-                 "Not Started",
-                 "In Progress",
-                 "Canceled",
-                 "Completed",
-                 null
-               ],
-               "description": "The status of work being done for the action plan.."
-             },
-             "StartDate": {
-               "type": "string",
-               "title": "Start Date",
-               "format": "date",
-               "readOnly": true,
-               "description": "The start date of this action plan."
-             },
-             "IsUsingHolidayHours": {
-               "type": "boolean",
-               "title": "Skip Nonwork Days",
-               "readOnly": true,
-               "description": "Indicates that task completion dates have been calculated by incrementing the task offset for each non-work day, excluding recurring holidays."
-             },
-             "RecurringScheduleId": {
-               "type": "string",
-               "title": "Recurrence Schedule ID",
-               "x-target": "RecurrenceSchedule",
-               "description": ""
-             },
-             "RecordCreationType": {
-               "type": "string",
-               "title": "Record Creation Type",
-               "enum": [
-                 "Master",
-                 "Autocreated",
-                 null
-               ],
-               "enumNames": [
-                 "Master",
-                 "Autocreated",
-                 null
-               ],
-               "description": ""
-             },
-             "ScheduleFrequency": {
-               "type": "string",
-               "title": "Schedule Frequency",
-               "readOnly": true,
-               "description": ""
-             },
-             "StatusCode": {
-               "type": "string",
-               "title": "Status Code",
-               "enum": [
-                 "NotStarted",
-                 "InProgress",
-                 "Completed",
-                 "Canceled",
-                 null
-               ],
-               "enumNames": [
-                 "Not Started",
-                 "In Progress",
-                 "Completed",
-                 "Canceled",
-                 null
-               ],
-               "description": ""
-             },
-             "EndDate": {
-               "type": "string",
-               "title": "End Date",
-               "format": "date",
-               "description": ""
-             },
-             "ActualEndDate": {
-               "type": "string",
-               "title": "Actual End Date",
-               "format": "date",
-               "description": ""
-             },
-             "ActualStartDate": {
-               "type": "string",
-               "title": "Actual Start Date",
-               "format": "date",
-               "description": ""
-             }
-           }
-         },
-         "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
-         "category": "Industries",
-         "hiddenFields": [],
-         "fieldOrder": [
-           "Id",
-           "DefaultCompactLayoutId",
-           "DefaultImplementation",
-           "DeveloperName",
-           "DurableId",
-           "ExtendedBy",
-           "ExtendsInterfaces",
-           "HelpSettingPageName",
-           "ImplementedBy",
-           "ImplementsInterfaces",
-           "KeyPrefix",
-           "Label",
-           "MasterLabel",
-           "NamespacePrefix",
-           "PluralLabel",
-           "PublisherId",
-           "QualifiedApiName",
-           "RecordTypesSupported",
-           "RunningUserEntityAccessId",
-           "DeploymentStatus",
-           "ExternalSharingModel",
-           "InternalSharingModel",
-           "HasSubtypes",
-           "IsApexTriggerable",
-           "IsAutoActivityCaptureEnabled",
-           "IsCompactLayoutable",
-           "IsCustomizable",
-           "IsCustomSetting",
-           "IsDeprecatedAndHidden",
-           "IsEverCreatable",
-           "IsEverDeletable",
-           "IsEverUpdatable",
-           "IsFeedEnabled",
-           "IsIdEnabled",
-           "IsInterface",
-           "IsLayoutable",
-           "IsMruEnabled",
-           "IsProcessEnabled",
-           "IsQueryable",
-           "IsReplicateable",
-           "IsRetrieveable",
-           "IsSearchable",
-           "IsSearchLayoutable",
-           "IsSubtype",
-           "IsTriggerable",
-           "IsWorkflowEnabled",
-           "LastModifiedDate",
-           "DetailUrl",
-           "EditDefinitionUrl",
-           "EditUrl",
-           "HelpSettingPageUrl",
-           "NewUrl"
-         ],
-         "values": {
-           "Id": "ActionPlan",
-           "DurableId": "ActionPlan",
-           "QualifiedApiName": "ActionPlan",
-           "Label": "Action Plan",
-           "IsCustomizable": true,
-           "KeyPrefix": "07r",
-           "IsSearchable": true,
-           "IsQueryable": true,
-           "InternalSharingModel": "Private"
-         }
-       },
-       "position": {
-         "x": 145.23093061967393,
-         "y": 442.26536134552833
-       },
-       "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
-       "extent": "parent"
-     },
-     {
-       "id": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
-       "type": "table",
-       "position": {
-         "x": 454.4710057601137,
-         "y": 458.69001164714354
-       },
-       "data": {
-         "Id": "EntityDefinition/ActionPlanTemplateVersion",
-         "description": "[Core] ",
-         "schema": {
-           "type": "object",
-           "description": "[Core] ",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan Template Version ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Version Name",
-               "description": ""
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "ActionPlanTemplateId": {
-               "type": "string",
-               "title": "Action Plan Template ID",
-               "x-target": "ActionPlanTemplate",
-               "readOnly": true,
-               "description": ""
-             },
-             "Version": {
-               "type": "integer",
-               "title": "Version Number",
-               "readOnly": true,
-               "description": ""
-             },
-             "Status": {
-               "type": "string",
-               "title": "Status",
-               "enum": [
-                 "Draft",
-                 "Obsolete",
-                 "Final",
-                 "ReadOnly",
-                 null
-               ],
-               "enumNames": [
-                 "Draft",
-                 "Obsolete",
-                 "Published",
-                 "ReadOnly",
-                 null
-               ],
-               "description": ""
-             },
-             "ActivationDateTime": {
-               "type": "string",
-               "title": "Activation Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "InactivationDateTime": {
-               "type": "string",
-               "title": "Inactivation Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "icon": "utility:standard_objects",
-         "label": "Action Plan Template Version",
-         "category": "Core",
-         "color": "#0070D2"
-       },
-       "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
-       "extent": "parent"
-     },
-     {
-       "id": "EntityDefinition/ActionPlanTemplate_51733cc6-fcc7-4c6b-b6e2-62d7e4ef0126",
-       "type": "table",
-       "position": {
-         "x": 96.03789988955867,
-         "y": 460.22133274465887
-       },
-       "data": {
-         "Id": "EntityDefinition/ActionPlanTemplate",
-         "description": "[Industries] Represents the instance of an action plan template.",
-         "schema": {
-           "type": "object",
-           "description": "[Industries] Represents the instance of an action plan template.",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan Template ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Name",
-               "description": "The name of this action plan template."
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "ActionPlanType": {
-               "type": "string",
-               "title": "Action Plan Type",
-               "enum": [
-                 "Industries",
-                 "Retail",
-                 "Sales",
-                 null
-               ],
-               "enumNames": [
-                 "Industries",
-                 "Assessment Execution",
-                 "Sales",
-                 null
-               ],
-               "readOnly": true,
-               "description": "The action plan template’s type. Possible values are: Industries Visit Execution"
-             },
-             "TargetEntityType": {
-               "type": "string",
-               "title": "Target Object",
-               "enum": [
-                 "Account",
-                 "AI_Agent__c",
-                 "AI_Agent_Conversation_Entry__c",
-                 "Applicant",
-                 "ApplicationForm",
-                 "ApplicationFormProduct",
-                 "SDO_Service_Appointment__c",
-                 "SDO_SCOM_OOA_Approved_Domain__c",
-                 "aqi_ltng_mng__Article_Quality__c",
-                 "Assessment",
-                 "Asset",
-                 "AssetAccountParticipant",
-                 "AssetContactParticipant",
-                 "SDO_SCOM_Auction__c",
-                 "SDO_SCOM_Auction_Bid__c",
-                 "Benefit",
-                 "BenefitAssignment",
-                 "BusinessLicense",
-                 "BusinessMilestone",
-                 "Campaign",
-                 "CareBarrier",
-                 "CarePlan",
-                 "Case",
-                 "SDO_ChannelPartner_Certification__c",
-                 "ChangeRequest",
-                 "SFDC_Channel_Account_Plan__c",
-                 "ClinicalServiceRequest",
-                 "SDO_SCOM_OOA_Commerce_User_Requests__c",
-                 "Contact",
-                 "Ptnr_Onbd_Fmwk__Planned_Onboarding_Tasks__c",
-                 "SDO_Experience_ContentArticle__c",
-                 "SDO_Experience_ContentCollection__c",
-                 "Contract",
-                 "CGC_Program__c",
-                 "CGC_Exercise__c",
-                 "SDO_SFS_Field_Capacity_Transfer__c",
-                 "FinancialGoal",
-                 "GoalAssignment",
-                 "HealthCondition",
-                 "SDO_Community_Ideas_Projects__c",
-                 "Incident",
-                 "InsurancePolicy",
-                 "SDO_Sales_Invoice_Example__c",
-                 "Lead",
-                 "maps__AdvRouteDefaultValue__c",
-                 "maps__AdvRouteDefaultValuesGrouping__c",
-                 "maps__AdvRoutePromotionalPeriodConfiguration__c",
-                 "maps__AdvRoute__c",
-                 "maps__AdvRouteContinuousTravel__c",
-                 "maps__AdvRouteDataSet__c",
-                 "maps__AdvRouteOffDays__c",
-                 "maps__AdvRouteOutputType__c",
-                 "maps__AdvRoutePriority__c",
-                 "maps__AdvRouteQueryFilter__c",
-                 "maps__AdvRouteQueryFilterGrouping__c",
-                 "maps__AdvRouteRoutableObject__c",
-                 "maps__AdvRouteSettings__c",
-                 "maps__AdvRouteTemplate__c",
-                 "maps__AdvRouteTemplateUser__c",
-                 "maps__AdvRouteVisitWindows__c",
-                 "maps__AdvRouteWaypoint__c",
-                 "maps__LiveAsset__c",
-                 "maps__LiveAssetDailySummary__c",
-                 "maps__LiveAssetDailySummaryEvent__c",
-                 "maps__LiveAsyncError__c",
-                 "maps__LiveDailyDriveTrip__c",
-                 "maps__LiveDriver__c",
-                 "maps__LiveDriverAssignment__c",
-                 "maps__LiveEvent__c",
-                 "maps__LiveEventAssociation__c",
-                 "maps__LiveIoTDevice__c",
-                 "maps__LiveSummaryStateMileage__c",
-                 "maps__LiveSummaryStopRelationshipConfig__c",
-                 "CGC_Milestone__c",
-                 "CGC_Milestone_Progress__c",
-                 "SDO_Sales_ChannelPlan_Objective__c",
-                 "Ptnr_Onbd_Fmwk__Onboarding_Tasks__c",
-                 "Ptnr_Onbd_Fmwk__Onboarding__c",
-                 "Opportunity",
-                 "FSL__Optimization_Request__c",
-                 "PartyProfile",
-                 "PersonLifeEvent",
-                 "inov8__PMT_Error_Log__c",
-                 "inov8__PMT_Project__c",
-                 "inov8__PMT_Task__c",
-                 "Problem",
-                 "Program",
-                 "ProgramEnrollment",
-                 "ProgramInitiative",
-                 "RecordAlert",
-                 "SDO_Community_Training_Course__c",
-                 "et4ae5__Triggered_Send_Execution__c",
-                 "Vehicle",
-                 "Visit",
-                 "WorkOrder",
-                 "WorkOrderLineItem",
-                 "SDO_SFS_Work_Order_Volume__c",
-                 null
-               ],
-               "enumNames": [
-                 "Account",
-                 "AI Agent",
-                 "AI Agent Conversation Entry",
-                 "Applicant",
-                 "Application Form",
-                 "Application Form Product",
-                 "Appointment",
-                 "Approved Domain",
-                 "Article Quality Index",
-                 "Assessment",
-                 "Asset",
-                 "Asset Account Participant",
-                 "Asset Contact Participant",
-                 "Auction",
-                 "Auction Bid",
-                 "Benefit",
-                 "Benefit Assignment",
-                 "Business License",
-                 "Business Milestone",
-                 "Campaign",
-                 "Care Barrier",
-                 "Care Plan",
-                 "Case",
-                 "Certification",
-                 "Change Request",
-                 "Channel Plan",
-                 "Clinical Service Request",
-                 "Commerce User Request",
-                 "Contact",
-                 "Contact Onboarding Task",
-                 "Content Article",
-                 "Content Collection",
-                 "Contract",
-                 "Demo Program",
-                 "Exercise",
-                 "Field Capacity Transfer",
-                 "Financial Goal",
-                 "Goal Assignment",
-                 "Health Condition",
-                 "Idea in Action",
-                 "Incident",
-                 "Insurance Policy",
-                 "Invoice",
-                 "Lead",
-                 "Maps Advanced Default Value",
-                 "Maps Advanced Default Values Group",
-                 "Maps Advanced Promotional Period Config",
-                 "Maps Advanced Route",
-                 "Maps Advanced Route Continuous Travel",
-                 "Maps Advanced Route Data Set",
-                 "Maps Advanced Route Off Days",
-                 "Maps Advanced Route Output Type",
-                 "Maps Advanced Route Priority",
-                 "Maps Advanced Route Query Filter",
-                 "Maps Advanced Route Query Filter Group",
-                 "Maps Advanced Route Routable Object",
-                 "Maps Advanced Route Settings",
-                 "Maps Advanced Route Template",
-                 "Maps Advanced Route Template User",
-                 "Maps Advanced Route Visit Windows",
-                 "Maps Advanced Route Waypoint",
-                 "Maps Live Asset",
-                 "Maps Live Asset Daily Summary",
-                 "Maps Live Asset Daily Summary Event",
-                 "Maps Live Async Error",
-                 "Maps Live Daily Drive Trip",
-                 "Maps Live Driver",
-                 "Maps Live Driver Assignment",
-                 "Maps Live Event",
-                 "Maps Live Event Association",
-                 "Maps Live IoT Device",
-                 "Maps Live Summary State Mileage",
-                 "Maps Live Summary Stop Config",
-                 "Milestone",
-                 "Milestone Progress",
-                 "Objective",
-                 "Onboarding Task",
-                 "Onboarding Template",
-                 "Opportunity",
-                 "Optimization Request",
-                 "Party Profile",
-                 "Person Life Event",
-                 "PMT Error Log",
-                 "PMT Project",
-                 "PMT Task",
-                 "Problem",
-                 "Program",
-                 "Program Enrollment",
-                 "Program Initiative",
-                 "Record Alert",
-                 "Training Course",
-                 "Triggered Send Execution",
-                 "Vehicle",
-                 "Visit",
-                 "Work Order",
-                 "Work Order Line Item",
-                 "Work Order Volume",
-                 null
-               ],
-               "readOnly": true,
-               "description": "The parent object this action plan template relates to. Possible values are organized by the API version in which they were introduced. Values are available in all versions after introduction unless noted otherwise. API version 60.0 and later with Education Cloud ProgramEnrollment API version 58.0 and later with Health Cloud CareBarrier API version 58.0 and later with Nonprofit Cloud: Benefit Program API Version 58.0 and later with Public Sector Solution and Education Cloud: ApplicationDecision ApplicationReview Benefit Program API Version 58.0 and later with Grantmaking: ApplicationDecision ApplicationReview Benefit Budget BudgetAllocation CareBarrier FundingAward FundingAwardAmendment FundingAwardRequirement FundingDisbursement FundingOpportunity Program API Version 47.0 and later: BusinessMilestone Claim InsurancePolicy InsurancePolicyCoverage PersonLifeEvent Visit API Version 46.0 and later: Campaign—Unsupported for Grantmaking. Case Contact Contract Lead Opportunity Custom objects with activities enabled API Version 44.0 and later: Account"
-             },
-             "Description": {
-               "type": "string",
-               "title": "Description",
-               "description": "The description of this action plan template."
-             },
-             "UniqueName": {
-               "type": "string",
-               "title": "Unique Name",
-               "description": "The unique name for this action plan template. This field is unique within your organization."
-             },
-             "IsAdHocItemCreationEnabled": {
-               "type": "boolean",
-               "title": "Let users add items to action plans",
-               "description": "Indicates whether users can add tasks or other items to generated action plans (true) or not (false)."
-             },
-             "Status": {
-               "type": "string",
-               "title": "Status",
-               "enum": [
-                 "Draft",
-                 "Obsolete",
-                 "Final",
-                 "ReadOnly",
-                 null
-               ],
-               "enumNames": [
-                 "Draft",
-                 "Obsolete",
-                 "Published",
-                 "ReadOnly",
-                 null
-               ],
-               "readOnly": true,
-               "description": ""
-             },
-             "Category": {
-               "type": "string",
-               "title": "Category",
-               "enum": [
-                 null
-               ],
-               "enumNames": [
-                 null
-               ],
-               "description": ""
-             },
-             "Subcategory": {
-               "type": "string",
-               "title": "Subcategory",
-               "enum": [
-                 null
-               ],
-               "enumNames": [
-                 null
-               ],
-               "description": ""
-             },
-             "EstimatedCompletionDays": {
-               "type": "integer",
-               "title": "Estimated Completion Days",
-               "description": ""
-             },
-             "SourceType": {
-               "type": "string",
-               "title": "Source Type",
-               "enum": [
-                 null
-               ],
-               "enumNames": [
-                 null
-               ],
-               "description": ""
-             },
-             "FileBasedTemplatePath": {
-               "type": "string",
-               "title": "File Based Template Path",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "icon": "standard:hierarchy",
-         "label": "Action Plan Template",
-         "category": "Industries",
-         "color": "#8E44AD"
-       },
-       "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
-       "extent": "parent"
-     },
-     {
-       "id": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
-       "type": "table",
-       "position": {
-         "x": 788.8848995184628,
-         "y": 562.7177950848452
-       },
-       "data": {
-         "Id": "EntityDefinition/RecurrenceSchedule",
-         "description": "[Core] ",
-         "schema": {
-           "type": "object",
-           "description": "[Core] ",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Recurrence Schedule ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Name",
-               "description": ""
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "Status": {
-               "type": "string",
-               "title": "Status",
-               "enum": [
-                 "Active",
-                 "Inactive",
-                 null
-               ],
-               "enumNames": [
-                 "Active",
-                 "Inactive",
-                 null
-               ],
-               "description": ""
-             },
-             "ProcessName": {
-               "type": "string",
-               "title": "Process Name",
-               "enum": [
-                 "Industries_ActionPlan",
-                 "Industries_ProgramManagement",
-                 "Industries_PulseCheck",
-                 "Industries_VolunteerManagement",
-                 null
-               ],
-               "enumNames": [
-                 "__MISSING LABEL__ PropertyFile - val Industries_ActionPlan not found in section RecurrenceScheduleProcessName",
-                 "__MISSING LABEL__ PropertyFile - val Industries_ProgramManagement not found in section RecurrenceScheduleProcessName",
-                 "Pulse Checks",
-                 "Volunteer Management",
-                 null
-               ],
-               "description": ""
-             },
-             "ScheduleFrequency": {
-               "type": "string",
-               "title": "Schedule Frequency",
-               "enum": [
-                 "Weekly",
-                 "Biweekly",
-                 "Monthly",
-                 "Quarterly",
-                 "Halyearly",
-                 "Yearly",
-                 null
-               ],
-               "enumNames": [
-                 "Weekly",
-                 "Biweekly",
-                 "Monthly",
-                 "Quarterly",
-                 "Half Yearly",
-                 "Yearly",
-                 null
-               ],
-               "description": ""
-             },
-             "ScheduleDayValue": {
-               "type": "integer",
-               "title": "Schedule Day Value",
-               "description": ""
-             },
-             "StartDate": {
-               "type": "string",
-               "title": "Start Date",
-               "format": "date-time",
-               "description": ""
-             },
-             "EndDate": {
-               "type": "string",
-               "title": "End Date",
-               "format": "date",
-               "description": ""
-             },
-             "TotalRecurrencesCount": {
-               "type": "integer",
-               "title": "Total Recurrences Count",
-               "description": ""
-             },
-             "CompletedScheduleCount": {
-               "type": "integer",
-               "title": "Completed Schedule Count",
-               "description": ""
-             },
-             "NextScheduleDateTime": {
-               "type": "string",
-               "title": "Next Schedule Date Time",
-               "format": "date-time",
-               "description": ""
-             },
-             "ReferenceRecordId": {
-               "type": "string",
-               "title": "ReferenceRecord ID",
-               "x-target": "ActionPlan",
-               "description": ""
-             }
-           }
-         },
-         "icon": "utility:standard_objects",
-         "label": "Recurrence Schedule",
-         "category": "Core",
-         "color": "#0070D2"
-       },
-       "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
-       "extent": "parent"
-     },
-     {
-       "id": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
-       "type": "table",
-       "position": {
-         "x": 778.7587474250298,
-         "y": 112.61542891133237
-       },
-       "data": {
-         "Id": "EntityDefinition/ActionPlanTemplateItem",
-         "description": "[Industries] Represents the instance of an item on an action plan template version.",
-         "schema": {
-           "type": "object",
-           "description": "[Industries] Represents the instance of an item on an action plan template version.",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan Template Item ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Item Name",
-               "description": "The unique identifier for this action plan template item record."
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "ActionPlanTemplateVersionId": {
-               "type": "string",
-               "title": "Action Plan Template Version ID",
-               "x-target": "ActionPlanTemplateVersion",
-               "readOnly": true,
-               "description": ""
-             },
-             "DisplayOrder": {
-               "type": "integer",
-               "title": "Display Order",
-               "description": "The order in which this item is displayed within the action plan template version."
-             },
-             "ItemEntityType": {
-               "type": "string",
-               "title": "Item Entity Type",
-               "enum": [
-                 "AssessmentTask",
-                 "DocumentChecklistItem",
-                 "Event",
-                 "GenericVisitTask",
-                 "OmniAssessmentTask",
-                 "OtherComponentTask",
-                 "RecordAction",
-                 "SignatureTask",
-                 "Task",
-                 null
-               ],
-               "enumNames": [
-                 "Assessment Task",
-                 "Document Checklist Item",
-                 "Event",
-                 "Generic Visit Task",
-                 "Omni Assessment Task",
-                 "Other Component Task",
-                 "RecordAction",
-                 "Signature Task",
-                 "Task",
-                 null
-               ],
-               "description": "The type of action plan template item entity. Always set to Task. Possible values are: Assessment Task GenericVisitTask RecordAction Signature Task Task"
-             },
-             "IsRequired": {
-               "type": "boolean",
-               "title": "Required",
-               "description": "Indicates whether the task created from this template item is required."
-             },
-             "IsActive": {
-               "type": "boolean",
-               "title": "Is Active",
-               "description": "Indicates whether the task created from this template item is active."
-             },
-             "UniqueName": {
-               "type": "string",
-               "title": "Unique Name",
-               "description": "The unique name for this action plan template item. This field is unique within your organization."
-             }
-           }
-         },
-         "icon": "standard:hierarchy",
-         "label": "Action Plan Template Item",
-         "category": "Industries",
-         "color": "#8E44AD"
-       },
-       "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
-       "extent": "parent"
-     },
-     {
-       "id": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
-       "type": "table",
-       "data": {
-         "label": "Action Plan Item Dependency",
-         "icon": "utility:standard_objects",
-         "color": "#0070D2",
-         "Id": "EntityDefinition/ActionPlanItemDependency",
-         "table": {
-           "name": "ActionPlanItemDependency",
-           "label": "Action Plan Item Dependency",
-           "description": "[Core] ",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "[Core] ",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan Item Dependency ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Name",
-               "description": ""
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "ActionPlanItemId": {
-               "type": "string",
-               "title": "Action Plan Item ID",
-               "x-target": "ActionPlanItem",
-               "readOnly": true,
-               "description": ""
-             },
-             "PreviousActionPlanItemId": {
-               "type": "string",
-               "title": "Action Plan Item ID",
-               "x-target": "ActionPlanItem",
-               "description": ""
-             }
-           }
-         },
-         "description": "[Core] ",
-         "category": "Core"
-       },
-       "position": {
-         "x": 1200.6994926876976,
-         "y": 85.46291895844419
-       },
-       "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
-       "extent": "parent"
-     },
-     {
-       "id": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "type": "table",
-       "position": {
-         "x": 792.3831904647188,
-         "y": 117.28462290022969
-       },
-       "data": {
-         "Id": "EntityDefinition/ActionPlanItem",
-         "description": "[Industries] Represents the instance of an action plan item.",
-         "schema": {
-           "type": "object",
-           "description": "[Industries] Represents the instance of an action plan item.",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Action Plan Item ID",
-               "readOnly": true,
-               "description": "Globally unique string that identifies a record."
-             },
-             "Name": {
-               "type": "string",
-               "title": "Action Plan Item Name",
-               "description": "Name of this action plan item."
-             },
-             "CurrencyIsoCode": {
-               "type": "string",
-               "title": "Currency ISO Code",
-               "enum": [
-                 "USD",
-                 null
-               ],
-               "enumNames": [
-                 "U.S. Dollar",
-                 null
-               ],
-               "description": ""
-             },
-             "LastModifiedDate": {
-               "type": "string",
-               "title": "Last Modified Date",
-               "format": "date-time",
-               "readOnly": true,
-               "description": "Date and time when a user last modified this record."
-             },
-             "ActionPlanId": {
-               "type": "string",
-               "title": "Action Plan ID",
-               "x-target": "ActionPlan",
-               "readOnly": true,
-               "description": ""
-             },
-             "ItemId": {
-               "type": "string",
-               "title": "Action Plan Item ID",
-               "x-target": "AssessmentTask",
-               "readOnly": true,
-               "description": ""
-             },
-             "ItemState": {
-               "type": "string",
-               "title": "Action Plan Item State",
-               "enum": [
-                 "Pending",
-                 "InProgress",
-                 "Completed",
-                 "Canceled",
-                 "Deleted",
-                 "Skipped",
-                 null
-               ],
-               "enumNames": [
-                 "Pending",
-                 "In Progress",
-                 "Completed",
-                 "Canceled",
-                 "Deleted",
-                 "Skipped",
-                 null
-               ],
-               "description": "The action plan item’s work state."
-             },
-             "ActionPlanTemplateItemId": {
-               "type": "string",
-               "title": "Action Plan Template Item ID",
-               "x-target": "ActionPlanTemplateItem",
-               "readOnly": true,
-               "description": ""
-             },
-             "IsRequired": {
-               "type": "boolean",
-               "title": "Required",
-               "readOnly": true,
-               "description": "Indicates whether this action plan item is required."
-             },
-             "DisplayOrder": {
-               "type": "integer",
-               "title": "Display Order",
-               "description": "Order in which tasks are displayed."
-             },
-             "DependencyStatus": {
-               "type": "string",
-               "title": "Dependency Status",
-               "enum": [
-                 "None",
-                 "WaitingOnPrevious",
-                 "Created",
-                 "Error",
-                 null
-               ],
-               "enumNames": [
-                 "None",
-                 "Waiting On Previous",
-                 "Created",
-                 "Error",
-                 null
-               ],
-               "readOnly": true,
-               "description": "The dependency status of the action plan item."
-             },
-             "ItemEntityType": {
-               "type": "string",
-               "title": "Item Entity Type",
-               "enum": [
-                 "AssessmentTask",
-                 "DocumentChecklistItem",
-                 "Event",
-                 "GenericVisitTask",
-                 "OmniAssessmentTask",
-                 "OtherComponentTask",
-                 "RecordAction",
-                 "SignatureTask",
-                 "Task",
-                 null
-               ],
-               "enumNames": [
-                 "Assessment Task",
-                 "Document Checklist Item",
-                 "Event",
-                 "Generic Visit Task",
-                 "Omni Assessment Task",
-                 "Other Component Task",
-                 "RecordAction",
-                 "Signature Task",
-                 "Task",
-                 null
-               ],
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "icon": "standard:hierarchy",
-         "label": "Action Plan Item",
-         "category": "Industries",
-         "color": "#8E44AD"
-       },
-       "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
-       "extent": "parent"
-     }
-   ],
-   "edges": [
-     {
-       "id": "ActionPlan.ActionPlanTemplateVersionId.ActionPlanTemplateVersion.Id",
-       "source": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "sourceHandle": "ActionPlanTemplateVersionId-source-inv",
-       "target": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlan.RecurringScheduleId.RecurrenceSchedule.Id",
-       "source": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "sourceHandle": "RecurringScheduleId-source",
-       "target": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
-       "label": "",
-       "targetHandle": "Id-target",
-       "type": "betweenTables",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanTemplateVersion.ActionPlanTemplateId.ActionPlanTemplate.Id",
-       "source": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
-       "sourceHandle": "ActionPlanTemplateId-source-inv",
-       "target": "EntityDefinition/ActionPlanTemplate_51733cc6-fcc7-4c6b-b6e2-62d7e4ef0126",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 3,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItem.ActionPlanId.ActionPlan.Id",
-       "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "sourceHandle": "ActionPlanId-source-inv",
-       "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 3,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItem.ActionPlanTemplateItemId.ActionPlanTemplateItem.Id",
-       "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "sourceHandle": "ActionPlanTemplateItemId-source-inv",
-       "target": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "RecurrenceSchedule.ReferenceRecordId.ActionPlan.Id",
-       "source": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
-       "sourceHandle": "ReferenceRecordId-source-inv",
-       "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanTemplateItem.ActionPlanTemplateVersionId.ActionPlanTemplateVersion.Id",
-       "source": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
-       "sourceHandle": "ActionPlanTemplateVersionId-source-inv",
-       "target": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 3,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItemDependency.ActionPlanItemId.ActionPlanItem.Id",
-       "source": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
-       "sourceHandle": "ActionPlanItemId-source-inv",
-       "target": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 3,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItemDependency.PreviousActionPlanItemId.ActionPlanItem.Id",
-       "source": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
-       "sourceHandle": "PreviousActionPlanItemId-source-inv",
-       "target": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItem.ActionPlanId.ActionPlan.Id",
-       "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "sourceHandle": "ActionPlanId-source-inv",
-       "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 3,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "ActionPlanItem.ActionPlanTemplateItemId.ActionPlanTemplateItem.Id",
-       "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
-       "sourceHandle": "ActionPlanTemplateItemId-source-inv",
-       "target": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     }
-   ]
- }
+  "nodes": [
+    {
+      "id": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
+      "type": "groupZone",
+      "position": {
+        "x": 224.21647288476925,
+        "y": -278.0054178945775
+      },
+      "data": {
+        "label": "Setup",
+        "content": "",
+        "icon": "standard:apps_admin",
+        "color": "rgba(107, 99, 123, 0.4)"
+      },
+      "width": 1154,
+      "height": 925
+    },
+    {
+      "id": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
+      "type": "groupZone",
+      "position": {
+        "x": 1450.6542044460232,
+        "y": -280.9028111712595
+      },
+      "data": {
+        "label": "Execution",
+        "content": "",
+        "icon": "standard:apps_admin",
+        "color": "#e3e3e3"
+      },
+      "width": 1527,
+      "height": 962
+    },
+    {
+      "id": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "type": "table",
+      "data": {
+        "label": "Action Plan",
+        "icon": "standard:hierarchy",
+        "color": "#8E44AD",
+        "Id": "EntityDefinition/ActionPlan",
+        "table": {
+          "name": "ActionPlan",
+          "label": "Action Plan",
+          "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": "Name of the action plan."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "TargetId": {
+              "type": "string",
+              "title": "Target Record ID",
+              "x-target": "AI_Agent_Conversation_Entry__c",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionPlanTemplateVersionId": {
+              "type": "string",
+              "title": "Action Plan Template Version ID",
+              "x-target": "ActionPlanTemplateVersion",
+              "readOnly": true,
+              "description": ""
+            },
+            "ActionPlanType": {
+              "type": "string",
+              "title": "Action Plan Type",
+              "enum": [
+                "Industries",
+                "Retail",
+                "Sales",
+                null
+              ],
+              "enumNames": [
+                "Industries",
+                "Assessment Execution",
+                "Sales",
+                null
+              ],
+              "readOnly": true,
+              "description": "The action plan’s type."
+            },
+            "ActionPlanState": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Not Started",
+                "In Progress",
+                "Canceled",
+                "Completed",
+                null
+              ],
+              "enumNames": [
+                "Not Started",
+                "In Progress",
+                "Canceled",
+                "Completed",
+                null
+              ],
+              "description": "The status of work being done for the action plan.."
+            },
+            "StartDate": {
+              "type": "string",
+              "title": "Start Date",
+              "format": "date",
+              "readOnly": true,
+              "description": "The start date of this action plan."
+            },
+            "IsUsingHolidayHours": {
+              "type": "boolean",
+              "title": "Skip Nonwork Days",
+              "readOnly": true,
+              "description": "Indicates that task completion dates have been calculated by incrementing the task offset for each non-work day, excluding recurring holidays."
+            },
+            "RecurringScheduleId": {
+              "type": "string",
+              "title": "Recurrence Schedule ID",
+              "x-target": "RecurrenceSchedule",
+              "description": ""
+            },
+            "RecordCreationType": {
+              "type": "string",
+              "title": "Record Creation Type",
+              "enum": [
+                "Master",
+                "Autocreated",
+                null
+              ],
+              "enumNames": [
+                "Master",
+                "Autocreated",
+                null
+              ],
+              "description": ""
+            },
+            "ScheduleFrequency": {
+              "type": "string",
+              "title": "Schedule Frequency",
+              "readOnly": true,
+              "description": ""
+            },
+            "StatusCode": {
+              "type": "string",
+              "title": "Status Code",
+              "enum": [
+                "NotStarted",
+                "InProgress",
+                "Completed",
+                "Canceled",
+                null
+              ],
+              "enumNames": [
+                "Not Started",
+                "In Progress",
+                "Completed",
+                "Canceled",
+                null
+              ],
+              "description": ""
+            },
+            "EndDate": {
+              "type": "string",
+              "title": "End Date",
+              "format": "date",
+              "description": ""
+            },
+            "ActualEndDate": {
+              "type": "string",
+              "title": "Actual End Date",
+              "format": "date",
+              "description": ""
+            },
+            "ActualStartDate": {
+              "type": "string",
+              "title": "Actual Start Date",
+              "format": "date",
+              "description": ""
+            }
+          }
+        },
+        "description": "[Industries] Represents the instance of an action plan, a set of tasks created from an action plan template.",
+        "category": "Industries",
+        "hiddenFields": [],
+        "fieldOrder": [
+          "Id",
+          "DefaultCompactLayoutId",
+          "DefaultImplementation",
+          "DeveloperName",
+          "DurableId",
+          "ExtendedBy",
+          "ExtendsInterfaces",
+          "HelpSettingPageName",
+          "ImplementedBy",
+          "ImplementsInterfaces",
+          "KeyPrefix",
+          "Label",
+          "MasterLabel",
+          "NamespacePrefix",
+          "PluralLabel",
+          "PublisherId",
+          "QualifiedApiName",
+          "RecordTypesSupported",
+          "RunningUserEntityAccessId",
+          "DeploymentStatus",
+          "ExternalSharingModel",
+          "InternalSharingModel",
+          "HasSubtypes",
+          "IsApexTriggerable",
+          "IsAutoActivityCaptureEnabled",
+          "IsCompactLayoutable",
+          "IsCustomizable",
+          "IsCustomSetting",
+          "IsDeprecatedAndHidden",
+          "IsEverCreatable",
+          "IsEverDeletable",
+          "IsEverUpdatable",
+          "IsFeedEnabled",
+          "IsIdEnabled",
+          "IsInterface",
+          "IsLayoutable",
+          "IsMruEnabled",
+          "IsProcessEnabled",
+          "IsQueryable",
+          "IsReplicateable",
+          "IsRetrieveable",
+          "IsSearchable",
+          "IsSearchLayoutable",
+          "IsSubtype",
+          "IsTriggerable",
+          "IsWorkflowEnabled",
+          "LastModifiedDate",
+          "DetailUrl",
+          "EditDefinitionUrl",
+          "EditUrl",
+          "HelpSettingPageUrl",
+          "NewUrl"
+        ],
+        "values": {
+          "Id": "ActionPlan",
+          "DurableId": "ActionPlan",
+          "QualifiedApiName": "ActionPlan",
+          "Label": "Action Plan",
+          "IsCustomizable": true,
+          "KeyPrefix": "07r",
+          "IsSearchable": true,
+          "IsQueryable": true,
+          "InternalSharingModel": "Private"
+        }
+      },
+      "position": {
+        "x": 145.23093061967393,
+        "y": 442.26536134552833
+      },
+      "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
+      "type": "table",
+      "position": {
+        "x": 454.4710057601137,
+        "y": 458.69001164714354
+      },
+      "data": {
+        "Id": "EntityDefinition/ActionPlanTemplateVersion",
+        "description": "[Core] ",
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan Template Version ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Version Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ActionPlanTemplateId": {
+              "type": "string",
+              "title": "Action Plan Template ID",
+              "x-target": "ActionPlanTemplate",
+              "readOnly": true,
+              "description": ""
+            },
+            "Version": {
+              "type": "integer",
+              "title": "Version Number",
+              "readOnly": true,
+              "description": ""
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Obsolete",
+                "Final",
+                "ReadOnly",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Obsolete",
+                "Published",
+                "ReadOnly",
+                null
+              ],
+              "description": ""
+            },
+            "ActivationDateTime": {
+              "type": "string",
+              "title": "Activation Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "InactivationDateTime": {
+              "type": "string",
+              "title": "Inactivation Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "icon": "utility:standard_objects",
+        "label": "Action Plan Template Version",
+        "category": "Core",
+        "color": "#0070D2"
+      },
+      "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/ActionPlanTemplate_51733cc6-fcc7-4c6b-b6e2-62d7e4ef0126",
+      "type": "table",
+      "position": {
+        "x": 96.03789988955867,
+        "y": 460.22133274465887
+      },
+      "data": {
+        "Id": "EntityDefinition/ActionPlanTemplate",
+        "description": "[Industries] Represents the instance of an action plan template.",
+        "schema": {
+          "type": "object",
+          "description": "[Industries] Represents the instance of an action plan template.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan Template ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The name of this action plan template."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ActionPlanType": {
+              "type": "string",
+              "title": "Action Plan Type",
+              "enum": [
+                "Industries",
+                "Retail",
+                "Sales",
+                null
+              ],
+              "enumNames": [
+                "Industries",
+                "Assessment Execution",
+                "Sales",
+                null
+              ],
+              "readOnly": true,
+              "description": "The action plan template’s type. Possible values are: Industries Visit Execution"
+            },
+            "TargetEntityType": {
+              "type": "string",
+              "title": "Target Object",
+              "enum": [
+                "Account",
+                "AI_Agent__c",
+                "AI_Agent_Conversation_Entry__c",
+                "Applicant",
+                "ApplicationForm",
+                "ApplicationFormProduct",
+                "SDO_Service_Appointment__c",
+                "SDO_SCOM_OOA_Approved_Domain__c",
+                "aqi_ltng_mng__Article_Quality__c",
+                "Assessment",
+                "Asset",
+                "AssetAccountParticipant",
+                "AssetContactParticipant",
+                "SDO_SCOM_Auction__c",
+                "SDO_SCOM_Auction_Bid__c",
+                "Benefit",
+                "BenefitAssignment",
+                "BusinessLicense",
+                "BusinessMilestone",
+                "Campaign",
+                "CareBarrier",
+                "CarePlan",
+                "Case",
+                "SDO_ChannelPartner_Certification__c",
+                "ChangeRequest",
+                "SFDC_Channel_Account_Plan__c",
+                "ClinicalServiceRequest",
+                "SDO_SCOM_OOA_Commerce_User_Requests__c",
+                "Contact",
+                "Ptnr_Onbd_Fmwk__Planned_Onboarding_Tasks__c"
+              ],
+              "enumNames": [
+                "Account",
+                "AI Agent",
+                "AI Agent Conversation Entry",
+                "Applicant",
+                "Application Form",
+                "Application Form Product",
+                "Appointment",
+                "Approved Domain",
+                "Article Quality Index",
+                "Assessment",
+                "Asset",
+                "Asset Account Participant",
+                "Asset Contact Participant",
+                "Auction",
+                "Auction Bid",
+                "Benefit",
+                "Benefit Assignment",
+                "Business License",
+                "Business Milestone",
+                "Campaign",
+                "Care Barrier",
+                "Care Plan",
+                "Case",
+                "Certification",
+                "Change Request",
+                "Channel Plan",
+                "Clinical Service Request",
+                "Commerce User Request",
+                "Contact",
+                "Contact Onboarding Task"
+              ],
+              "readOnly": true,
+              "description": "The parent object this action plan template relates to. Possible values are organized by the API version in which they were introduced. Values are available in all versions after introduction unless noted otherwise. API version 60.0 and later with Education Cloud ProgramEnrollment API version 58.0 and later with Health Cloud CareBarrier API version 58.0 and later with Nonprofit Cloud: Benefit Program API Version 58.0 and later with Public Sector Solution and Education Cloud: ApplicationDecision ApplicationReview Benefit Program API Version 58.0 and later with Grantmaking: ApplicationDecision ApplicationReview Benefit Budget BudgetAllocation CareBarrier FundingAward FundingAwardAmendment FundingAwardRequirement FundingDisbursement FundingOpportunity Program API Version 47.0 and later: BusinessMilestone Claim InsurancePolicy InsurancePolicyCoverage PersonLifeEvent Visit API Version 46.0 and later: Campaign—Unsupported for Grantmaking. Case Contact Contract Lead Opportunity Custom objects with activities enabled API Version 44.0 and later: Account"
+            },
+            "Description": {
+              "type": "string",
+              "title": "Description",
+              "description": "The description of this action plan template."
+            },
+            "UniqueName": {
+              "type": "string",
+              "title": "Unique Name",
+              "description": "The unique name for this action plan template. This field is unique within your organization."
+            },
+            "IsAdHocItemCreationEnabled": {
+              "type": "boolean",
+              "title": "Let users add items to action plans",
+              "description": "Indicates whether users can add tasks or other items to generated action plans (true) or not (false)."
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Draft",
+                "Obsolete",
+                "Final",
+                "ReadOnly",
+                null
+              ],
+              "enumNames": [
+                "Draft",
+                "Obsolete",
+                "Published",
+                "ReadOnly",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            },
+            "Category": {
+              "type": "string",
+              "title": "Category",
+              "enum": [
+                null
+              ],
+              "enumNames": [
+                null
+              ],
+              "description": ""
+            },
+            "Subcategory": {
+              "type": "string",
+              "title": "Subcategory",
+              "enum": [
+                null
+              ],
+              "enumNames": [
+                null
+              ],
+              "description": ""
+            },
+            "EstimatedCompletionDays": {
+              "type": "integer",
+              "title": "Estimated Completion Days",
+              "description": ""
+            },
+            "SourceType": {
+              "type": "string",
+              "title": "Source Type",
+              "enum": [
+                null
+              ],
+              "enumNames": [
+                null
+              ],
+              "description": ""
+            },
+            "FileBasedTemplatePath": {
+              "type": "string",
+              "title": "File Based Template Path",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "icon": "standard:hierarchy",
+        "label": "Action Plan Template",
+        "category": "Industries",
+        "color": "#8E44AD"
+      },
+      "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
+      "type": "table",
+      "position": {
+        "x": 788.8848995184628,
+        "y": 562.7177950848452
+      },
+      "data": {
+        "Id": "EntityDefinition/RecurrenceSchedule",
+        "description": "[Core] ",
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Recurrence Schedule ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "Status": {
+              "type": "string",
+              "title": "Status",
+              "enum": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "enumNames": [
+                "Active",
+                "Inactive",
+                null
+              ],
+              "description": ""
+            },
+            "ProcessName": {
+              "type": "string",
+              "title": "Process Name",
+              "enum": [
+                "Industries_ActionPlan",
+                "Industries_ProgramManagement",
+                "Industries_PulseCheck",
+                "Industries_VolunteerManagement",
+                null
+              ],
+              "enumNames": [
+                "__MISSING LABEL__ PropertyFile - val Industries_ActionPlan not found in section RecurrenceScheduleProcessName",
+                "__MISSING LABEL__ PropertyFile - val Industries_ProgramManagement not found in section RecurrenceScheduleProcessName",
+                "Pulse Checks",
+                "Volunteer Management",
+                null
+              ],
+              "description": ""
+            },
+            "ScheduleFrequency": {
+              "type": "string",
+              "title": "Schedule Frequency",
+              "enum": [
+                "Weekly",
+                "Biweekly",
+                "Monthly",
+                "Quarterly",
+                "Halyearly",
+                "Yearly",
+                null
+              ],
+              "enumNames": [
+                "Weekly",
+                "Biweekly",
+                "Monthly",
+                "Quarterly",
+                "Half Yearly",
+                "Yearly",
+                null
+              ],
+              "description": ""
+            },
+            "ScheduleDayValue": {
+              "type": "integer",
+              "title": "Schedule Day Value",
+              "description": ""
+            },
+            "StartDate": {
+              "type": "string",
+              "title": "Start Date",
+              "format": "date-time",
+              "description": ""
+            },
+            "EndDate": {
+              "type": "string",
+              "title": "End Date",
+              "format": "date",
+              "description": ""
+            },
+            "TotalRecurrencesCount": {
+              "type": "integer",
+              "title": "Total Recurrences Count",
+              "description": ""
+            },
+            "CompletedScheduleCount": {
+              "type": "integer",
+              "title": "Completed Schedule Count",
+              "description": ""
+            },
+            "NextScheduleDateTime": {
+              "type": "string",
+              "title": "Next Schedule Date Time",
+              "format": "date-time",
+              "description": ""
+            },
+            "ReferenceRecordId": {
+              "type": "string",
+              "title": "ReferenceRecord ID",
+              "x-target": "ActionPlan",
+              "description": ""
+            }
+          }
+        },
+        "icon": "utility:standard_objects",
+        "label": "Recurrence Schedule",
+        "category": "Core",
+        "color": "#0070D2"
+      },
+      "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
+      "type": "table",
+      "position": {
+        "x": 778.7587474250298,
+        "y": 112.61542891133237
+      },
+      "data": {
+        "Id": "EntityDefinition/ActionPlanTemplateItem",
+        "description": "[Industries] Represents the instance of an item on an action plan template version.",
+        "schema": {
+          "type": "object",
+          "description": "[Industries] Represents the instance of an item on an action plan template version.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan Template Item ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Item Name",
+              "description": "The unique identifier for this action plan template item record."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ActionPlanTemplateVersionId": {
+              "type": "string",
+              "title": "Action Plan Template Version ID",
+              "x-target": "ActionPlanTemplateVersion",
+              "readOnly": true,
+              "description": ""
+            },
+            "DisplayOrder": {
+              "type": "integer",
+              "title": "Display Order",
+              "description": "The order in which this item is displayed within the action plan template version."
+            },
+            "ItemEntityType": {
+              "type": "string",
+              "title": "Item Entity Type",
+              "enum": [
+                "AssessmentTask",
+                "DocumentChecklistItem",
+                "Event",
+                "GenericVisitTask",
+                "OmniAssessmentTask",
+                "OtherComponentTask",
+                "RecordAction",
+                "SignatureTask",
+                "Task",
+                null
+              ],
+              "enumNames": [
+                "Assessment Task",
+                "Document Checklist Item",
+                "Event",
+                "Generic Visit Task",
+                "Omni Assessment Task",
+                "Other Component Task",
+                "RecordAction",
+                "Signature Task",
+                "Task",
+                null
+              ],
+              "description": "The type of action plan template item entity. Always set to Task. Possible values are: Assessment Task GenericVisitTask RecordAction Signature Task Task"
+            },
+            "IsRequired": {
+              "type": "boolean",
+              "title": "Required",
+              "description": "Indicates whether the task created from this template item is required."
+            },
+            "IsActive": {
+              "type": "boolean",
+              "title": "Is Active",
+              "description": "Indicates whether the task created from this template item is active."
+            },
+            "UniqueName": {
+              "type": "string",
+              "title": "Unique Name",
+              "description": "The unique name for this action plan template item. This field is unique within your organization."
+            }
+          }
+        },
+        "icon": "standard:hierarchy",
+        "label": "Action Plan Template Item",
+        "category": "Industries",
+        "color": "#8E44AD"
+      },
+      "parentId": "group_587bff50-9d83-486c-8e7b-a18d241c46ee",
+      "extent": "parent"
+    },
+    {
+      "id": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
+      "type": "table",
+      "data": {
+        "label": "Action Plan Item Dependency",
+        "icon": "utility:standard_objects",
+        "color": "#0070D2",
+        "Id": "EntityDefinition/ActionPlanItemDependency",
+        "table": {
+          "name": "ActionPlanItemDependency",
+          "label": "Action Plan Item Dependency",
+          "description": "[Core] ",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "[Core] ",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan Item Dependency ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ActionPlanItemId": {
+              "type": "string",
+              "title": "Action Plan Item ID",
+              "x-target": "ActionPlanItem",
+              "readOnly": true,
+              "description": ""
+            },
+            "PreviousActionPlanItemId": {
+              "type": "string",
+              "title": "Action Plan Item ID",
+              "x-target": "ActionPlanItem",
+              "description": ""
+            }
+          }
+        },
+        "description": "[Core] ",
+        "category": "Core"
+      },
+      "position": {
+        "x": 1200.6994926876976,
+        "y": 85.46291895844419
+      },
+      "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
+      "extent": "parent"
+    },
+    {
+      "id": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "type": "table",
+      "position": {
+        "x": 792.3831904647188,
+        "y": 117.28462290022969
+      },
+      "data": {
+        "Id": "EntityDefinition/ActionPlanItem",
+        "description": "[Industries] Represents the instance of an action plan item.",
+        "schema": {
+          "type": "object",
+          "description": "[Industries] Represents the instance of an action plan item.",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Action Plan Item ID",
+              "readOnly": true,
+              "description": "Globally unique string that identifies a record."
+            },
+            "Name": {
+              "type": "string",
+              "title": "Action Plan Item Name",
+              "description": "Name of this action plan item."
+            },
+            "CurrencyIsoCode": {
+              "type": "string",
+              "title": "Currency ISO Code",
+              "enum": [
+                "USD",
+                null
+              ],
+              "enumNames": [
+                "U.S. Dollar",
+                null
+              ],
+              "description": ""
+            },
+            "LastModifiedDate": {
+              "type": "string",
+              "title": "Last Modified Date",
+              "format": "date-time",
+              "readOnly": true,
+              "description": "Date and time when a user last modified this record."
+            },
+            "ActionPlanId": {
+              "type": "string",
+              "title": "Action Plan ID",
+              "x-target": "ActionPlan",
+              "readOnly": true,
+              "description": ""
+            },
+            "ItemId": {
+              "type": "string",
+              "title": "Action Plan Item ID",
+              "x-target": "AssessmentTask",
+              "readOnly": true,
+              "description": ""
+            },
+            "ItemState": {
+              "type": "string",
+              "title": "Action Plan Item State",
+              "enum": [
+                "Pending",
+                "InProgress",
+                "Completed",
+                "Canceled",
+                "Deleted",
+                "Skipped",
+                null
+              ],
+              "enumNames": [
+                "Pending",
+                "In Progress",
+                "Completed",
+                "Canceled",
+                "Deleted",
+                "Skipped",
+                null
+              ],
+              "description": "The action plan item’s work state."
+            },
+            "ActionPlanTemplateItemId": {
+              "type": "string",
+              "title": "Action Plan Template Item ID",
+              "x-target": "ActionPlanTemplateItem",
+              "readOnly": true,
+              "description": ""
+            },
+            "IsRequired": {
+              "type": "boolean",
+              "title": "Required",
+              "readOnly": true,
+              "description": "Indicates whether this action plan item is required."
+            },
+            "DisplayOrder": {
+              "type": "integer",
+              "title": "Display Order",
+              "description": "Order in which tasks are displayed."
+            },
+            "DependencyStatus": {
+              "type": "string",
+              "title": "Dependency Status",
+              "enum": [
+                "None",
+                "WaitingOnPrevious",
+                "Created",
+                "Error",
+                null
+              ],
+              "enumNames": [
+                "None",
+                "Waiting On Previous",
+                "Created",
+                "Error",
+                null
+              ],
+              "readOnly": true,
+              "description": "The dependency status of the action plan item."
+            },
+            "ItemEntityType": {
+              "type": "string",
+              "title": "Item Entity Type",
+              "enum": [
+                "AssessmentTask",
+                "DocumentChecklistItem",
+                "Event",
+                "GenericVisitTask",
+                "OmniAssessmentTask",
+                "OtherComponentTask",
+                "RecordAction",
+                "SignatureTask",
+                "Task",
+                null
+              ],
+              "enumNames": [
+                "Assessment Task",
+                "Document Checklist Item",
+                "Event",
+                "Generic Visit Task",
+                "Omni Assessment Task",
+                "Other Component Task",
+                "RecordAction",
+                "Signature Task",
+                "Task",
+                null
+              ],
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "icon": "standard:hierarchy",
+        "label": "Action Plan Item",
+        "category": "Industries",
+        "color": "#8E44AD"
+      },
+      "parentId": "group_bd40973d-39c3-4b9b-89dd-b45110be19ad",
+      "extent": "parent"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ActionPlan.ActionPlanTemplateVersionId.ActionPlanTemplateVersion.Id",
+      "source": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "sourceHandle": "ActionPlanTemplateVersionId-source-inv",
+      "target": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlan.RecurringScheduleId.RecurrenceSchedule.Id",
+      "source": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "sourceHandle": "RecurringScheduleId-source",
+      "target": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
+      "label": "",
+      "targetHandle": "Id-target",
+      "type": "betweenTables",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanTemplateVersion.ActionPlanTemplateId.ActionPlanTemplate.Id",
+      "source": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
+      "sourceHandle": "ActionPlanTemplateId-source-inv",
+      "target": "EntityDefinition/ActionPlanTemplate_51733cc6-fcc7-4c6b-b6e2-62d7e4ef0126",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItem.ActionPlanId.ActionPlan.Id",
+      "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "sourceHandle": "ActionPlanId-source-inv",
+      "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItem.ActionPlanTemplateItemId.ActionPlanTemplateItem.Id",
+      "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "sourceHandle": "ActionPlanTemplateItemId-source-inv",
+      "target": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "RecurrenceSchedule.ReferenceRecordId.ActionPlan.Id",
+      "source": "EntityDefinition/RecurrenceSchedule_e8dc8c1b-fbcf-4a18-8a17-76e67dd891f6",
+      "sourceHandle": "ReferenceRecordId-source-inv",
+      "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanTemplateItem.ActionPlanTemplateVersionId.ActionPlanTemplateVersion.Id",
+      "source": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
+      "sourceHandle": "ActionPlanTemplateVersionId-source-inv",
+      "target": "EntityDefinition/ActionPlanTemplateVersion_729fbff3-9034-4d2c-ae0a-81f08b58a412",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItemDependency.ActionPlanItemId.ActionPlanItem.Id",
+      "source": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
+      "sourceHandle": "ActionPlanItemId-source-inv",
+      "target": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItemDependency.PreviousActionPlanItemId.ActionPlanItem.Id",
+      "source": "group_389aa465-07e9-47ca-9d9e-4690d3097f4d",
+      "sourceHandle": "PreviousActionPlanItemId-source-inv",
+      "target": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItem.ActionPlanId.ActionPlan.Id",
+      "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "sourceHandle": "ActionPlanId-source-inv",
+      "target": "group_212184f4-30bc-4f5f-97db-46bff9e93c11",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 3,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "ActionPlanItem.ActionPlanTemplateItemId.ActionPlanTemplateItem.Id",
+      "source": "EntityDefinition/ActionPlanItem_5bca1fde-52f6-4a74-b5f9-ebf6ea098901",
+      "sourceHandle": "ActionPlanTemplateItemId-source-inv",
+      "target": "EntityDefinition/ActionPlanTemplateItem_48d0202d-7643-41c2-9ac4-f82ce1456c18",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    }
+  ]
+}

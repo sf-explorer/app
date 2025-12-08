@@ -9,10 +9,40 @@ import {
 } from './types.js';
 
 /**
- * Transforms a Salesforce Explorer board template into draw.io XML format
- * @param board - The board template to transform
- * @param options - Optional conversion options
- * @returns A draw.io compatible XML string
+ * Transforms a Salesforce Explorer board template into Draw.io XML format
+ * 
+ * This function converts a board template (containing nodes and edges) into a Draw.io-compatible
+ * diagram. It supports both ERD (Entity-Relationship Diagram) and UML (Unified Modeling Language)
+ * styles, with extensive customization options for field display, styling, and layout.
+ * 
+ * @param board - The board template to transform, containing nodes and edges
+ * @param options - Optional conversion options to customize the output
+ * @param options.includeReadOnlyFields - Include read-only fields in tables (default: true)
+ * @param options.includeGroupZones - Include group zones from the board (default: true)
+ * @param options.title - Title for the diagram (default: "SF Explorer Board")
+ * @param options.showFieldTypes - Show field data types (default: true)
+ * @param options.showDescriptions - Show field descriptions as tooltips (default: false)
+ * @param options.tableWidth - Width of table cells in pixels (default: 200)
+ * @param options.fieldHeight - Height of field rows in pixels (default: 26)
+ * @param options.maxFields - Maximum number of fields to display per table (default: 20)
+ * @param options.collapseTables - Collapse tables by default (default: true)
+ * @param options.highlightCustomFields - Highlight Salesforce custom fields (ending with __c) (default: false)
+ * @param options.customFieldsOnly - Show only custom fields (ending with __c) (default: false)
+ * @param options.diagramStyle - Diagram style: 'erd' or 'uml' (default: 'erd')
+ * @param options.umlOptions - UML-specific options (only applies when diagramStyle='uml')
+ * 
+ * @returns A Draw.io compatible XML string that can be imported into Draw.io
+ * 
+ * @throws {Error} If the board template is invalid (missing nodes or edges arrays)
+ * 
+ * @example
+ * ```typescript
+ * const board = {
+ *   nodes: [{ id: '1', type: 'table', position: { x: 0, y: 0 }, data: { label: 'Account' } }],
+ *   edges: []
+ * };
+ * const xml = transformBoardToDrawIO(board, { diagramStyle: 'erd' });
+ * ```
  */
 export function transformBoardToDrawIO(
   board: BoardTemplate,
@@ -35,6 +65,8 @@ export function transformBoardToDrawIO(
     collapseTables = true,
     diagramStyle = 'erd',
     umlOptions = {},
+    customFieldsOnly = false,
+    highlightCustomFields = false,
   } = options;
 
   // UML options with defaults
@@ -129,7 +161,8 @@ export function transformBoardToDrawIO(
         maxFields,
         showVisibilityMarkers,
         groupByVisibility,
-        options.highlightCustomFields || false,
+        highlightCustomFields,
+        customFieldsOnly,
         fieldIdToCellId,
         getUniqueId
       );
@@ -146,7 +179,8 @@ export function transformBoardToDrawIO(
         fieldHeight,
         maxFields,
         collapseTables,
-        options.highlightCustomFields || false,
+        highlightCustomFields,
+        customFieldsOnly,
         fieldIdToCellId,
         getUniqueId
       );
@@ -293,6 +327,7 @@ function createTableCells(
   maxFields: number,
   collapseTables: boolean,
   highlightCustomFields: boolean,
+  customFieldsOnly: boolean,
   fieldIdToCellId: Map<string, string>,
   getUniqueId: (preferred: string) => string
 ): DrawioCell[] {
@@ -328,9 +363,15 @@ function createTableCells(
       const isForeignKey = fieldProp['x-target'] !== undefined || 
                           (fieldName.endsWith('Id') && fieldName !== 'Id');
       const isReferenceField = fieldProp['x-target'] !== undefined;
+      const isCustomField = fieldName.endsWith('__c');
       
       // Skip read-only fields if option is set (except primary keys and reference fields)
       if (!includeReadOnlyFields && fieldProp.readOnly && !isPrimaryKey && !isReferenceField) {
+        continue;
+      }
+
+      // Skip non-custom fields if customFieldsOnly is set
+      if (customFieldsOnly && !isCustomField) {
         continue;
       }
 
@@ -637,6 +678,7 @@ function createUmlClassCells(
   showVisibilityMarkers: boolean,
   groupByVisibility: boolean,
   highlightCustomFields: boolean,
+  customFieldsOnly: boolean,
   fieldIdToCellId: Map<string, string>,
   getUniqueId: (preferred: string) => string
 ): DrawioCell[] {
@@ -673,9 +715,15 @@ function createUmlClassCells(
       const isForeignKey = fieldProp['x-target'] !== undefined || 
                           (fieldName.endsWith('Id') && fieldName !== 'Id');
       const isReferenceField = fieldProp['x-target'] !== undefined;
+      const isCustomField = fieldName.endsWith('__c');
       
       // Skip read-only fields if option is set (except primary keys and reference fields)
       if (!includeReadOnlyFields && fieldProp.readOnly && !isPrimaryKey && !isReferenceField) {
+        continue;
+      }
+
+      // Skip non-custom fields if customFieldsOnly is set
+      if (customFieldsOnly && !isCustomField) {
         continue;
       }
 
@@ -1469,9 +1517,21 @@ function buildDrawioXML(cells: any[], title: string): string {
 }
 
 /**
- * Generates a viewer URL for draw.io with the diagram embedded
- * @param xml - The draw.io XML content
- * @returns A URL that can be opened directly in draw.io viewer
+ * Generates a Draw.io viewer URL with the diagram embedded
+ * 
+ * This function creates a URL that can be opened directly in the Draw.io online viewer.
+ * The diagram is embedded in the URL using the #R format with URL-encoded XML.
+ * The viewer is configured with lightbox mode for full-screen viewing with edit capabilities.
+ * 
+ * @param xml - The Draw.io XML content to embed in the URL
+ * @returns A URL that opens the diagram in Draw.io viewer (viewer.diagrams.net)
+ * 
+ * @example
+ * ```typescript
+ * const xml = transformBoardToDrawIO(board);
+ * const url = generateViewerUrl(xml);
+ * console.log(url); // https://viewer.diagrams.net/?lightbox=1...#R<encoded-xml>
+ * ```
  */
 export function generateViewerUrl(xml: string): string {
   // Draw.io viewer expects direct XML URL-encoding for the #R format
@@ -1484,10 +1544,27 @@ export function generateViewerUrl(xml: string): string {
 }
 
 /**
- * Transforms a board and generates both XML and viewer URL
- * @param board - The board template to transform
- * @param options - Optional conversion options
- * @returns Object with xml and viewerUrl
+ * Transforms a board template and generates both XML and a viewer URL
+ * 
+ * This is a convenience function that combines `transformBoardToDrawIO` and `generateViewerUrl`
+ * into a single call. It returns both the Draw.io XML string and a viewer URL that can be
+ * opened directly in a browser.
+ * 
+ * @param board - The board template to transform, containing nodes and edges
+ * @param options - Optional conversion options (see `transformBoardToDrawIO` for details)
+ * @returns An object containing both the XML string and viewer URL
+ * @returns {string} xml - The Draw.io XML content
+ * @returns {string} viewerUrl - The viewer URL with embedded diagram
+ * 
+ * @example
+ * ```typescript
+ * const board = {
+ *   nodes: [{ id: '1', type: 'table', position: { x: 0, y: 0 }, data: { label: 'Account' } }],
+ *   edges: []
+ * };
+ * const { xml, viewerUrl } = transformBoardWithViewerUrl(board, { diagramStyle: 'uml' });
+ * console.log('Open in browser:', viewerUrl);
+ * ```
  */
 export function transformBoardWithViewerUrl(
   board: BoardTemplate,

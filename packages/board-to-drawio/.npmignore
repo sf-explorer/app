@@ -1,0 +1,10 @@
+docs
+output/*.drawio
+scripts
+test-*.drawio
+.github
+.vscode
+.eslintrc.json
+.prettierrc.json
+.prettierignore
+.prettierignore

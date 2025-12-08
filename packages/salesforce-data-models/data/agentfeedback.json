@@ -1,1674 +1,1674 @@
 {
-   "nodes": [
-     {
-       "position": {
-         "x": -1066.165725047081,
-         "y": 129.91588198367856
-       },
-       "id": "filter",
-       "type": "input",
-       "data": {
-         "label": "",
-         "schema": {
-           "properties": {
-             "filter": {
-               "title": "Filter",
-               "type": "string"
-             },
-             "onlyRef": {
-               "title": "Reference only",
-               "type": "boolean",
-               "default": false
-             },
-             "onlyCustom": {
-               "title": "Custom only",
-               "type": "boolean",
-               "default": false
-             },
-             "showLabel": {
-               "title": "Show Label",
-               "type": "boolean",
-               "default": true
-             },
-             "showData": {
-               "title": "Show Data",
-               "type": "boolean",
-               "default": false
-             },
-             "showChildRelation": {
-               "title": "Child Relations",
-               "type": "boolean",
-               "default": false
-             },
-             "nbFields": {
-               "title": "Nb Fields",
-               "type": "integer",
-               "default": 20
-             },
-             "user": {
-               "title": "User",
-               "objectName": "User",
-               "description": "Analyze the given access right to a given user",
-               "fields": [
-                 "Name",
-                 "Profile.Name"
-               ],
-               "loadingOptions": {
-                 "loadPermissions": true
-               }
-             }
-           }
-         }
-       },
-       "width": 250,
-       "height": 388
-     },
-     {
-       "id": "GenAIAppGeneration__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIAppGeneration__dlm",
-         "table": {
-           "name": "GenAIAppGeneration__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationId__c": {
-               "type": "string",
-               "title": "Generation Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationUpdate__c": {
-               "type": "string",
-               "title": "Generation Update",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationUpdateId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Update Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationUpdateId__c": {
-               "type": "string",
-               "title": "Generation Update Id",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIAppGeneration",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 1222.2925811648297,
-         "y": 761.3097516722974
-       }
-     },
-     {
-       "id": "GenAIContentCategory__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIContentCategory__dlm",
-         "table": {
-           "name": "GenAIContentCategory__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "category__c": {
-               "type": "string",
-               "title": "Category",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "detectorType__c": {
-               "type": "string",
-               "title": "Detector Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "value__c": {
-               "type": "string",
-               "title": "Value",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIContentCategory",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 20.043339833367583,
-         "y": -141.65201186292597
-       }
-     },
-     {
-       "id": "GenAIContentQuality__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIContentQuality__dlm",
-         "table": {
-           "name": "GenAIContentQuality__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "contentType__c": {
-               "type": "string",
-               "title": "Content Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "isToxicityDetected__c": {
-               "type": "string",
-               "title": "Is Toxicity Detected",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIContentQuality",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": -389.1049922929546,
-         "y": 183.216079972432
-       }
-     },
-     {
-       "id": "GenAIFeedbackDetail__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIFeedbackDetail__dlm",
-         "table": {
-           "name": "GenAIFeedbackDetail__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_feedbackDetailId__c": {
-               "type": "string",
-               "title": "Key Qualifier Feedback Detail Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "appFeedback__c": {
-               "type": "string",
-               "title": "App Feedback",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "feedbackDetailId__c": {
-               "type": "string",
-               "title": "Feedback Detail Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "feedbackText__c": {
-               "type": "string",
-               "title": "Feedback Text",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIFeedbackDetail",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 1213.4027634930735,
-         "y": 1114.5925578395581
-       }
-     },
-     {
-       "id": "GenAIFeedback__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIFeedback__dlm",
-         "table": {
-           "name": "GenAIFeedback__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_feedbackId__c": {
-               "type": "string",
-               "title": "Key Qualifier Feedback Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "action__c": {
-               "type": "string",
-               "title": "Action",
-               "readOnly": true,
-               "description": ""
-             },
-             "appType__c": {
-               "type": "string",
-               "title": "App Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "feedback__c": {
-               "type": "string",
-               "title": "Feedback",
-               "readOnly": true,
-               "description": ""
-             },
-             "feedbackId__c": {
-               "type": "string",
-               "title": "Feedback Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationGroupId__c": {
-               "type": "string",
-               "title": "Generation Group Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "source__c": {
-               "type": "string",
-               "title": "Source",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "userId__c": {
-               "type": "string",
-               "title": "User Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationId__c": {
-               "type": "string",
-               "title": "Generation Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationUpdateId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Update Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationUpdateId__c": {
-               "type": "string",
-               "title": "Generation Update Id",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIFeedback",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 613.6321406151915,
-         "y": 1141.4400502197113
-       }
-     },
-     {
-       "id": "GenAIGatewayRequestTag__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGatewayRequestTag__dlm",
-         "table": {
-           "name": "GenAIGatewayRequestTag__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "tag__c": {
-               "type": "string",
-               "title": "Tag",
-               "readOnly": true,
-               "description": ""
-             },
-             "tagValue__c": {
-               "type": "string",
-               "title": "Tag Value",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "x-target": "GenAIGatewayRequest__dlm",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGatewayRequestTag",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 67.20104515332432,
-         "y": 168.5579140413001
-       }
-     },
-     {
-       "id": "GenAIGatewayResponse__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGatewayResponse__dlm",
-         "table": {
-           "name": "GenAIGatewayResponse__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationResponseId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Response Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationResponseId__c": {
-               "type": "string",
-               "title": "Generation Response Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "parameters__c": {
-               "type": "string",
-               "title": "Parameters",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationRequestId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Request Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationRequestId__c": {
-               "type": "string",
-               "title": "Generation Request Id",
-               "x-target": "GenAIGatewayRequest__dlm",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGatewayResponse",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": -233.55790382761387,
-         "y": 923.5438159921739
-       }
-     },
-     {
-       "id": "GenAIGeneration__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGeneration__dlm",
-         "table": {
-           "name": "GenAIGeneration__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationId__c": {
-               "type": "string",
-               "title": "Generation Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationResponseId__c": {
-               "type": "string",
-               "title": "Generation Response Id",
-               "x-target": "GenAIGatewayResponse__dlm",
-               "readOnly": true,
-               "description": ""
-             },
-             "maskedResponseText__c": {
-               "type": "string",
-               "title": "Masked Response Text",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "responseParameters__c": {
-               "type": "string",
-               "title": "Response Parameters",
-               "readOnly": true,
-               "description": ""
-             },
-             "responseText__c": {
-               "type": "string",
-               "title": "Response Text",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_generationResponseId__c": {
-               "type": "string",
-               "title": "Key Qualifier Generation Response Id",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGeneration",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 209.4061519146265,
-         "y": 987.6396735718771
-       }
-     },
-     {
-       "id": "GenAIGtwyObjRecCitationRef__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGtwyObjRecCitationRef__dlm",
-         "table": {
-           "name": "GenAIGtwyObjRecCitationRef__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "references__c": {
-               "type": "string",
-               "title": "References",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGtwyObjRecCitationRef",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 1447.4430585496552,
-         "y": 170.96372040716113
-       }
-     },
-     {
-       "id": "GenAIGtwyObjRecord__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGtwyObjRecord__dlm",
-         "table": {
-           "name": "GenAIGtwyObjRecord__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "x-target": "GenAIGatewayRequest__dlm",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "metadata__c": {
-               "type": "string",
-               "title": "Metadata",
-               "readOnly": true,
-               "description": ""
-             },
-             "name__c": {
-               "type": "string",
-               "title": "Name",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "recordId__c": {
-               "type": "string",
-               "title": "Record Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "type__c": {
-               "type": "string",
-               "title": "Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "value__c": {
-               "type": "string",
-               "title": "Value",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGtwyObjRecord",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 1017.3118752867392,
-         "y": 290.37796664949883
-       }
-     },
-     {
-       "id": "GenAIGtwyRequestLLM__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGtwyRequestLLM__dlm",
-         "table": {
-           "name": "GenAIGtwyRequestLLM__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "endpoint__c": {
-               "type": "string",
-               "title": "Endpoint",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "genAILLM__c": {
-               "type": "string",
-               "title": "Gen AILLM",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "llmCallLatency__c": {
-               "type": "string",
-               "title": "Llm Call Latency",
-               "readOnly": true,
-               "description": ""
-             },
-             "llmCallStatus__c": {
-               "type": "string",
-               "title": "Llm Call Status",
-               "readOnly": true,
-               "description": ""
-             },
-             "llmErrorTrace__c": {
-               "type": "string",
-               "title": "Llm Error Trace",
-               "readOnly": true,
-               "description": ""
-             },
-             "metadata__c": {
-               "type": "string",
-               "title": "Metadata",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "x-target": "GenAIGatewayRequest__dlm",
-               "readOnly": true,
-               "description": ""
-             },
-             "region__c": {
-               "type": "string",
-               "title": "Region",
-               "readOnly": true,
-               "description": ""
-             },
-             "salesforceOrgId__c": {
-               "type": "string",
-               "title": "Salesforce Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGtwyRequestLLM",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": -325.1933325305905,
-         "y": 522.4024401093963
-       }
-     },
-     {
-       "id": "GenAIGtwyRequestMetadata__dlm",
-       "data": {
-         "Id": "EntityDefinition/GenAIGtwyRequestMetadata__dlm",
-         "table": {
-           "name": "GenAIGtwyRequestMetadata__dlm",
-           "columns": []
-         },
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_id__c": {
-               "type": "string",
-               "title": "Key Qualifier Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "id__c": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "metadata__c": {
-               "type": "string",
-               "title": "Metadata",
-               "readOnly": true,
-               "description": ""
-             },
-             "metadataType__c": {
-               "type": "string",
-               "title": "Metadata Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_parent__c": {
-               "type": "string",
-               "title": "Key Qualifier Parent",
-               "readOnly": true,
-               "description": ""
-             },
-             "parent__c": {
-               "type": "string",
-               "title": "Parent",
-               "x-target": "GenAIGatewayRequest__dlm",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "label": "GenAIGtwyRequestMetadata",
-         "icon": "standard:data_model",
-         "description": "(Data Cloud Data Model Object)",
-         "color": "#E91E63",
-         "category": "Data Cloud DMO"
-       },
-       "type": "table",
-       "position": {
-         "x": 743.016798792543,
-         "y": 688.8875845225008
-       }
-     },
-     {
-       "id": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "type": "table",
-       "position": {
-         "x": 398.53734163829,
-         "y": 490.49514710705154
-       },
-       "data": {
-         "Id": "EntityDefinition/GenAIGatewayRequest__dlm",
-         "description": "(Data Cloud Data Model Object)",
-         "schema": {
-           "type": "object",
-           "description": "(Data Cloud Data Model Object)",
-           "properties": {
-             "Id": {
-               "type": "string",
-               "title": "Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "KQ_gatewayRequestId__c": {
-               "type": "string",
-               "title": "Key Qualifier Gateway Request Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "appType__c": {
-               "type": "string",
-               "title": "App Type",
-               "readOnly": true,
-               "description": ""
-             },
-             "botVersionId__c": {
-               "type": "string",
-               "title": "Bot Version Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "cloud__c": {
-               "type": "string",
-               "title": "Cloud",
-               "readOnly": true,
-               "description": ""
-             },
-             "completionTokens__c": {
-               "type": "string",
-               "title": "Completion Tokens",
-               "readOnly": true,
-               "description": ""
-             },
-             "enableInputSafetyScoring__c": {
-               "type": "string",
-               "title": "Enable Input Safety Scoring",
-               "readOnly": true,
-               "description": ""
-             },
-             "enableOutputSafetyScoring__c": {
-               "type": "string",
-               "title": "Enable Output Safety Scoring",
-               "readOnly": true,
-               "description": ""
-             },
-             "enablePiiMasking__c": {
-               "type": "string",
-               "title": "Enable Pii Masking",
-               "readOnly": true,
-               "description": ""
-             },
-             "feature__c": {
-               "type": "string",
-               "title": "Feature",
-               "readOnly": true,
-               "description": ""
-             },
-             "frequencyPenalty__c": {
-               "type": "string",
-               "title": "Frequency Penalty",
-               "readOnly": true,
-               "description": ""
-             },
-             "gatewayRequestId__c": {
-               "type": "string",
-               "title": "Gateway Request Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "generationGroupId__c": {
-               "type": "string",
-               "title": "Generation Group Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "maskedPrompt__c": {
-               "type": "string",
-               "title": "Masked Prompt",
-               "readOnly": true,
-               "description": ""
-             },
-             "model__c": {
-               "type": "string",
-               "title": "Model",
-               "readOnly": true,
-               "description": ""
-             },
-             "numGenerations__c": {
-               "type": "string",
-               "title": "Num Generations",
-               "readOnly": true,
-               "description": ""
-             },
-             "orgId__c": {
-               "type": "string",
-               "title": "Org Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "parameters__c": {
-               "type": "string",
-               "title": "Parameters",
-               "readOnly": true,
-               "description": ""
-             },
-             "plannerId__c": {
-               "type": "string",
-               "title": "Planner Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "presencePenalty__c": {
-               "type": "string",
-               "title": "Presence Penalty",
-               "readOnly": true,
-               "description": ""
-             },
-             "prompt__c": {
-               "type": "string",
-               "title": "Prompt",
-               "readOnly": true,
-               "description": ""
-             },
-             "promptTemplateDevName__c": {
-               "type": "string",
-               "title": "Prompt Template Dev Name",
-               "readOnly": true,
-               "description": ""
-             },
-             "promptTemplateVersionNo__c": {
-               "type": "string",
-               "title": "Prompt Template Version No",
-               "readOnly": true,
-               "description": ""
-             },
-             "promptTokens__c": {
-               "type": "string",
-               "title": "Prompt Tokens",
-               "readOnly": true,
-               "description": ""
-             },
-             "provider__c": {
-               "type": "string",
-               "title": "Provider",
-               "readOnly": true,
-               "description": ""
-             },
-             "sessionId__c": {
-               "type": "string",
-               "title": "Session Id",
-               "readOnly": true,
-               "description": ""
-             },
-             "stopSequences__c": {
-               "type": "string",
-               "title": "Stop Sequences",
-               "readOnly": true,
-               "description": ""
-             },
-             "temperature__c": {
-               "type": "string",
-               "title": "Temperature",
-               "readOnly": true,
-               "description": ""
-             },
-             "timestamp__c": {
-               "type": "string",
-               "title": "Timestamp",
-               "format": "date-time",
-               "readOnly": true,
-               "description": ""
-             },
-             "totalTokens__c": {
-               "type": "string",
-               "title": "Total Tokens",
-               "readOnly": true,
-               "description": ""
-             },
-             "userId__c": {
-               "type": "string",
-               "title": "User Id",
-               "readOnly": true,
-               "description": ""
-             }
-           }
-         },
-         "icon": "standard:data_model",
-         "label": "GenAIGatewayRequest",
-         "category": "Data Cloud DMO",
-         "color": "#E91E63"
-       }
-     },
-     {
-       "id": "annotation_e232da61-f4b0-4a7c-8baa-5843cbf0afb3",
-       "type": "annotation",
-       "position": {
-         "x": 213.52765463779497,
-         "y": 539.7649771028221
-       },
-       "data": {
-         "label": "User request",
-         "level": "1",
-         "icon": "standard:note",
-         "color": "transparent"
-       },
-       "width": 200,
-       "height": 120
-     }
-   ],
-   "edges": [
-     {
-       "id": "GenAIAppGeneration__dlm.generationUpdateId__c.GenAIFeedback__dlm.Id",
-       "source": "GenAIAppGeneration__dlm",
-       "sourceHandle": "generationUpdateId__c-source-inv",
-       "target": "GenAIFeedback__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIContentCategory__dlm.parent__c.GenAIContentQuality__dlm.Id",
-       "source": "GenAIContentCategory__dlm",
-       "sourceHandle": "parent__c-source-inv",
-       "target": "GenAIContentQuality__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIContentQuality__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIContentQuality__dlm",
-       "sourceHandle": "parent__c-source",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target",
-       "type": "betweenTables",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIFeedbackDetail__dlm.parent__c.GenAIFeedback__dlm.Id",
-       "source": "GenAIFeedbackDetail__dlm",
-       "sourceHandle": "parent__c-source-inv",
-       "target": "GenAIFeedback__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIFeedback__dlm.generationId__c.GenAIGeneration__dlm.Id",
-       "source": "GenAIFeedback__dlm",
-       "sourceHandle": "generationId__c-source-inv",
-       "target": "GenAIGeneration__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGatewayRequestTag__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIGatewayRequestTag__dlm",
-       "sourceHandle": "parent__c-source",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target",
-       "type": "betweenTables",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGatewayResponse__dlm.generationRequestId__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIGatewayResponse__dlm",
-       "sourceHandle": "generationRequestId__c-source",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target",
-       "type": "betweenTables",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGeneration__dlm.generationResponseId__c.GenAIGatewayResponse__dlm.Id",
-       "source": "GenAIGeneration__dlm",
-       "sourceHandle": "generationResponseId__c-source-inv",
-       "target": "GenAIGatewayResponse__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGtwyObjRecCitationRef__dlm.parent__c.GenAIGtwyObjRecord__dlm.Id",
-       "source": "GenAIGtwyObjRecCitationRef__dlm",
-       "sourceHandle": "parent__c-source-inv",
-       "target": "GenAIGtwyObjRecord__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGtwyObjRecord__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIGtwyObjRecord__dlm",
-       "sourceHandle": "parent__c-source-inv",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGtwyRequestLLM__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIGtwyRequestLLM__dlm",
-       "sourceHandle": "parent__c-source",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target",
-       "type": "betweenTables",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     },
-     {
-       "id": "GenAIGtwyRequestMetadata__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
-       "source": "GenAIGtwyRequestMetadata__dlm",
-       "sourceHandle": "parent__c-source-inv",
-       "target": "EntityDefinition/GenAIGatewayRequest__dlm",
-       "label": "",
-       "targetHandle": "Id-target-inv",
-       "type": "betweenTablesInverted",
-       "selectable": true,
-       "style": {
-         "strokeWidth": 1,
-         "zIndex": 500,
-         "stroke": "rgb(var(--react-erd__secondary-color))",
-         "transition": "stroke 0.3s"
-       }
-     }
-   ]
- }
+  "nodes": [
+    {
+      "position": {
+        "x": -1066.165725047081,
+        "y": 129.91588198367856
+      },
+      "id": "filter",
+      "type": "input",
+      "data": {
+        "label": "",
+        "schema": {
+          "properties": {
+            "filter": {
+              "title": "Filter",
+              "type": "string"
+            },
+            "onlyRef": {
+              "title": "Reference only",
+              "type": "boolean",
+              "default": false
+            },
+            "onlyCustom": {
+              "title": "Custom only",
+              "type": "boolean",
+              "default": false
+            },
+            "showLabel": {
+              "title": "Show Label",
+              "type": "boolean",
+              "default": true
+            },
+            "showData": {
+              "title": "Show Data",
+              "type": "boolean",
+              "default": false
+            },
+            "showChildRelation": {
+              "title": "Child Relations",
+              "type": "boolean",
+              "default": false
+            },
+            "nbFields": {
+              "title": "Nb Fields",
+              "type": "integer",
+              "default": 20
+            },
+            "user": {
+              "title": "User",
+              "objectName": "User",
+              "description": "Analyze the given access right to a given user",
+              "fields": [
+                "Name",
+                "Profile.Name"
+              ],
+              "loadingOptions": {
+                "loadPermissions": true
+              }
+            }
+          }
+        }
+      },
+      "width": 250,
+      "height": 388
+    },
+    {
+      "id": "GenAIAppGeneration__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIAppGeneration__dlm",
+        "table": {
+          "name": "GenAIAppGeneration__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationId__c": {
+              "type": "string",
+              "title": "Generation Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationUpdate__c": {
+              "type": "string",
+              "title": "Generation Update",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationUpdateId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Update Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationUpdateId__c": {
+              "type": "string",
+              "title": "Generation Update Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIAppGeneration",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 1222.2925811648297,
+        "y": 761.3097516722974
+      }
+    },
+    {
+      "id": "GenAIContentCategory__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIContentCategory__dlm",
+        "table": {
+          "name": "GenAIContentCategory__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "category__c": {
+              "type": "string",
+              "title": "Category",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "detectorType__c": {
+              "type": "string",
+              "title": "Detector Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "value__c": {
+              "type": "string",
+              "title": "Value",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIContentCategory",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 20.043339833367583,
+        "y": -141.65201186292597
+      }
+    },
+    {
+      "id": "GenAIContentQuality__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIContentQuality__dlm",
+        "table": {
+          "name": "GenAIContentQuality__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "contentType__c": {
+              "type": "string",
+              "title": "Content Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "isToxicityDetected__c": {
+              "type": "string",
+              "title": "Is Toxicity Detected",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIContentQuality",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": -389.1049922929546,
+        "y": 183.216079972432
+      }
+    },
+    {
+      "id": "GenAIFeedbackDetail__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIFeedbackDetail__dlm",
+        "table": {
+          "name": "GenAIFeedbackDetail__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_feedbackDetailId__c": {
+              "type": "string",
+              "title": "Key Qualifier Feedback Detail Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "appFeedback__c": {
+              "type": "string",
+              "title": "App Feedback",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "feedbackDetailId__c": {
+              "type": "string",
+              "title": "Feedback Detail Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "feedbackText__c": {
+              "type": "string",
+              "title": "Feedback Text",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIFeedbackDetail",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 1213.4027634930735,
+        "y": 1114.5925578395581
+      }
+    },
+    {
+      "id": "GenAIFeedback__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIFeedback__dlm",
+        "table": {
+          "name": "GenAIFeedback__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_feedbackId__c": {
+              "type": "string",
+              "title": "Key Qualifier Feedback Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "action__c": {
+              "type": "string",
+              "title": "Action",
+              "readOnly": true,
+              "description": ""
+            },
+            "appType__c": {
+              "type": "string",
+              "title": "App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "feedback__c": {
+              "type": "string",
+              "title": "Feedback",
+              "readOnly": true,
+              "description": ""
+            },
+            "feedbackId__c": {
+              "type": "string",
+              "title": "Feedback Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationGroupId__c": {
+              "type": "string",
+              "title": "Generation Group Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "source__c": {
+              "type": "string",
+              "title": "Source",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "userId__c": {
+              "type": "string",
+              "title": "User Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationId__c": {
+              "type": "string",
+              "title": "Generation Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationUpdateId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Update Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationUpdateId__c": {
+              "type": "string",
+              "title": "Generation Update Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIFeedback",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 613.6321406151915,
+        "y": 1141.4400502197113
+      }
+    },
+    {
+      "id": "GenAIGatewayRequestTag__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGatewayRequestTag__dlm",
+        "table": {
+          "name": "GenAIGatewayRequestTag__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "tag__c": {
+              "type": "string",
+              "title": "Tag",
+              "readOnly": true,
+              "description": ""
+            },
+            "tagValue__c": {
+              "type": "string",
+              "title": "Tag Value",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "x-target": "GenAIGatewayRequest__dlm",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGatewayRequestTag",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 67.20104515332432,
+        "y": 168.5579140413001
+      }
+    },
+    {
+      "id": "GenAIGatewayResponse__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGatewayResponse__dlm",
+        "table": {
+          "name": "GenAIGatewayResponse__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationResponseId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Response Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationResponseId__c": {
+              "type": "string",
+              "title": "Generation Response Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "parameters__c": {
+              "type": "string",
+              "title": "Parameters",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationRequestId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Request Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationRequestId__c": {
+              "type": "string",
+              "title": "Generation Request Id",
+              "x-target": "GenAIGatewayRequest__dlm",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGatewayResponse",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": -233.55790382761387,
+        "y": 923.5438159921739
+      }
+    },
+    {
+      "id": "GenAIGeneration__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGeneration__dlm",
+        "table": {
+          "name": "GenAIGeneration__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationId__c": {
+              "type": "string",
+              "title": "Generation Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationResponseId__c": {
+              "type": "string",
+              "title": "Generation Response Id",
+              "x-target": "GenAIGatewayResponse__dlm",
+              "readOnly": true,
+              "description": ""
+            },
+            "maskedResponseText__c": {
+              "type": "string",
+              "title": "Masked Response Text",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "responseParameters__c": {
+              "type": "string",
+              "title": "Response Parameters",
+              "readOnly": true,
+              "description": ""
+            },
+            "responseText__c": {
+              "type": "string",
+              "title": "Response Text",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_generationResponseId__c": {
+              "type": "string",
+              "title": "Key Qualifier Generation Response Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGeneration",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 209.4061519146265,
+        "y": 987.6396735718771
+      }
+    },
+    {
+      "id": "GenAIGtwyObjRecCitationRef__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGtwyObjRecCitationRef__dlm",
+        "table": {
+          "name": "GenAIGtwyObjRecCitationRef__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "references__c": {
+              "type": "string",
+              "title": "References",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGtwyObjRecCitationRef",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 1447.4430585496552,
+        "y": 170.96372040716113
+      }
+    },
+    {
+      "id": "GenAIGtwyObjRecord__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGtwyObjRecord__dlm",
+        "table": {
+          "name": "GenAIGtwyObjRecord__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "x-target": "GenAIGatewayRequest__dlm",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "metadata__c": {
+              "type": "string",
+              "title": "Metadata",
+              "readOnly": true,
+              "description": ""
+            },
+            "name__c": {
+              "type": "string",
+              "title": "Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "recordId__c": {
+              "type": "string",
+              "title": "Record Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "type__c": {
+              "type": "string",
+              "title": "Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "value__c": {
+              "type": "string",
+              "title": "Value",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGtwyObjRecord",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 1017.3118752867392,
+        "y": 290.37796664949883
+      }
+    },
+    {
+      "id": "GenAIGtwyRequestLLM__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGtwyRequestLLM__dlm",
+        "table": {
+          "name": "GenAIGtwyRequestLLM__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "endpoint__c": {
+              "type": "string",
+              "title": "Endpoint",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "genAILLM__c": {
+              "type": "string",
+              "title": "Gen AILLM",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "llmCallLatency__c": {
+              "type": "string",
+              "title": "Llm Call Latency",
+              "readOnly": true,
+              "description": ""
+            },
+            "llmCallStatus__c": {
+              "type": "string",
+              "title": "Llm Call Status",
+              "readOnly": true,
+              "description": ""
+            },
+            "llmErrorTrace__c": {
+              "type": "string",
+              "title": "Llm Error Trace",
+              "readOnly": true,
+              "description": ""
+            },
+            "metadata__c": {
+              "type": "string",
+              "title": "Metadata",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "x-target": "GenAIGatewayRequest__dlm",
+              "readOnly": true,
+              "description": ""
+            },
+            "region__c": {
+              "type": "string",
+              "title": "Region",
+              "readOnly": true,
+              "description": ""
+            },
+            "salesforceOrgId__c": {
+              "type": "string",
+              "title": "Salesforce Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGtwyRequestLLM",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": -325.1933325305905,
+        "y": 522.4024401093963
+      }
+    },
+    {
+      "id": "GenAIGtwyRequestMetadata__dlm",
+      "data": {
+        "Id": "EntityDefinition/GenAIGtwyRequestMetadata__dlm",
+        "table": {
+          "name": "GenAIGtwyRequestMetadata__dlm",
+          "columns": []
+        },
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_id__c": {
+              "type": "string",
+              "title": "Key Qualifier Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "id__c": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "metadata__c": {
+              "type": "string",
+              "title": "Metadata",
+              "readOnly": true,
+              "description": ""
+            },
+            "metadataType__c": {
+              "type": "string",
+              "title": "Metadata Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_parent__c": {
+              "type": "string",
+              "title": "Key Qualifier Parent",
+              "readOnly": true,
+              "description": ""
+            },
+            "parent__c": {
+              "type": "string",
+              "title": "Parent",
+              "x-target": "GenAIGatewayRequest__dlm",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "label": "GenAIGtwyRequestMetadata",
+        "icon": "standard:data_model",
+        "description": "(Data Cloud Data Model Object)",
+        "color": "#E91E63",
+        "category": "Data Cloud DMO"
+      },
+      "type": "table",
+      "position": {
+        "x": 743.016798792543,
+        "y": 688.8875845225008
+      }
+    },
+    {
+      "id": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "type": "table",
+      "position": {
+        "x": 398.53734163829,
+        "y": 490.49514710705154
+      },
+      "data": {
+        "Id": "EntityDefinition/GenAIGatewayRequest__dlm",
+        "description": "(Data Cloud Data Model Object)",
+        "schema": {
+          "type": "object",
+          "description": "(Data Cloud Data Model Object)",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "title": "Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "KQ_gatewayRequestId__c": {
+              "type": "string",
+              "title": "Key Qualifier Gateway Request Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "appType__c": {
+              "type": "string",
+              "title": "App Type",
+              "readOnly": true,
+              "description": ""
+            },
+            "botVersionId__c": {
+              "type": "string",
+              "title": "Bot Version Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "cloud__c": {
+              "type": "string",
+              "title": "Cloud",
+              "readOnly": true,
+              "description": ""
+            },
+            "completionTokens__c": {
+              "type": "string",
+              "title": "Completion Tokens",
+              "readOnly": true,
+              "description": ""
+            },
+            "enableInputSafetyScoring__c": {
+              "type": "string",
+              "title": "Enable Input Safety Scoring",
+              "readOnly": true,
+              "description": ""
+            },
+            "enableOutputSafetyScoring__c": {
+              "type": "string",
+              "title": "Enable Output Safety Scoring",
+              "readOnly": true,
+              "description": ""
+            },
+            "enablePiiMasking__c": {
+              "type": "string",
+              "title": "Enable Pii Masking",
+              "readOnly": true,
+              "description": ""
+            },
+            "feature__c": {
+              "type": "string",
+              "title": "Feature",
+              "readOnly": true,
+              "description": ""
+            },
+            "frequencyPenalty__c": {
+              "type": "string",
+              "title": "Frequency Penalty",
+              "readOnly": true,
+              "description": ""
+            },
+            "gatewayRequestId__c": {
+              "type": "string",
+              "title": "Gateway Request Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "generationGroupId__c": {
+              "type": "string",
+              "title": "Generation Group Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "maskedPrompt__c": {
+              "type": "string",
+              "title": "Masked Prompt",
+              "readOnly": true,
+              "description": ""
+            },
+            "model__c": {
+              "type": "string",
+              "title": "Model",
+              "readOnly": true,
+              "description": ""
+            },
+            "numGenerations__c": {
+              "type": "string",
+              "title": "Num Generations",
+              "readOnly": true,
+              "description": ""
+            },
+            "orgId__c": {
+              "type": "string",
+              "title": "Org Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "parameters__c": {
+              "type": "string",
+              "title": "Parameters",
+              "readOnly": true,
+              "description": ""
+            },
+            "plannerId__c": {
+              "type": "string",
+              "title": "Planner Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "presencePenalty__c": {
+              "type": "string",
+              "title": "Presence Penalty",
+              "readOnly": true,
+              "description": ""
+            },
+            "prompt__c": {
+              "type": "string",
+              "title": "Prompt",
+              "readOnly": true,
+              "description": ""
+            },
+            "promptTemplateDevName__c": {
+              "type": "string",
+              "title": "Prompt Template Dev Name",
+              "readOnly": true,
+              "description": ""
+            },
+            "promptTemplateVersionNo__c": {
+              "type": "string",
+              "title": "Prompt Template Version No",
+              "readOnly": true,
+              "description": ""
+            },
+            "promptTokens__c": {
+              "type": "string",
+              "title": "Prompt Tokens",
+              "readOnly": true,
+              "description": ""
+            },
+            "provider__c": {
+              "type": "string",
+              "title": "Provider",
+              "readOnly": true,
+              "description": ""
+            },
+            "sessionId__c": {
+              "type": "string",
+              "title": "Session Id",
+              "readOnly": true,
+              "description": ""
+            },
+            "stopSequences__c": {
+              "type": "string",
+              "title": "Stop Sequences",
+              "readOnly": true,
+              "description": ""
+            },
+            "temperature__c": {
+              "type": "string",
+              "title": "Temperature",
+              "readOnly": true,
+              "description": ""
+            },
+            "timestamp__c": {
+              "type": "string",
+              "title": "Timestamp",
+              "format": "date-time",
+              "readOnly": true,
+              "description": ""
+            },
+            "totalTokens__c": {
+              "type": "string",
+              "title": "Total Tokens",
+              "readOnly": true,
+              "description": ""
+            },
+            "userId__c": {
+              "type": "string",
+              "title": "User Id",
+              "readOnly": true,
+              "description": ""
+            }
+          }
+        },
+        "icon": "standard:data_model",
+        "label": "GenAIGatewayRequest",
+        "category": "Data Cloud DMO",
+        "color": "#E91E63"
+      }
+    },
+    {
+      "id": "annotation_e232da61-f4b0-4a7c-8baa-5843cbf0afb3",
+      "type": "annotation",
+      "position": {
+        "x": 213.52765463779497,
+        "y": 539.7649771028221
+      },
+      "data": {
+        "label": "User request",
+        "level": "1",
+        "icon": "standard:note",
+        "color": "transparent"
+      },
+      "width": 200,
+      "height": 120
+    }
+  ],
+  "edges": [
+    {
+      "id": "GenAIAppGeneration__dlm.generationUpdateId__c.GenAIFeedback__dlm.Id",
+      "source": "GenAIAppGeneration__dlm",
+      "sourceHandle": "generationUpdateId__c-source-inv",
+      "target": "GenAIFeedback__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIContentCategory__dlm.parent__c.GenAIContentQuality__dlm.Id",
+      "source": "GenAIContentCategory__dlm",
+      "sourceHandle": "parent__c-source-inv",
+      "target": "GenAIContentQuality__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIContentQuality__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIContentQuality__dlm",
+      "sourceHandle": "parent__c-source",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target",
+      "type": "betweenTables",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIFeedbackDetail__dlm.parent__c.GenAIFeedback__dlm.Id",
+      "source": "GenAIFeedbackDetail__dlm",
+      "sourceHandle": "parent__c-source-inv",
+      "target": "GenAIFeedback__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIFeedback__dlm.generationId__c.GenAIGeneration__dlm.Id",
+      "source": "GenAIFeedback__dlm",
+      "sourceHandle": "generationId__c-source-inv",
+      "target": "GenAIGeneration__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGatewayRequestTag__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIGatewayRequestTag__dlm",
+      "sourceHandle": "parent__c-source",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target",
+      "type": "betweenTables",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGatewayResponse__dlm.generationRequestId__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIGatewayResponse__dlm",
+      "sourceHandle": "generationRequestId__c-source",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target",
+      "type": "betweenTables",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGeneration__dlm.generationResponseId__c.GenAIGatewayResponse__dlm.Id",
+      "source": "GenAIGeneration__dlm",
+      "sourceHandle": "generationResponseId__c-source-inv",
+      "target": "GenAIGatewayResponse__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGtwyObjRecCitationRef__dlm.parent__c.GenAIGtwyObjRecord__dlm.Id",
+      "source": "GenAIGtwyObjRecCitationRef__dlm",
+      "sourceHandle": "parent__c-source-inv",
+      "target": "GenAIGtwyObjRecord__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGtwyObjRecord__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIGtwyObjRecord__dlm",
+      "sourceHandle": "parent__c-source-inv",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGtwyRequestLLM__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIGtwyRequestLLM__dlm",
+      "sourceHandle": "parent__c-source",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target",
+      "type": "betweenTables",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    },
+    {
+      "id": "GenAIGtwyRequestMetadata__dlm.parent__c.GenAIGatewayRequest__dlm.Id",
+      "source": "GenAIGtwyRequestMetadata__dlm",
+      "sourceHandle": "parent__c-source-inv",
+      "target": "EntityDefinition/GenAIGatewayRequest__dlm",
+      "label": "",
+      "targetHandle": "Id-target-inv",
+      "type": "betweenTablesInverted",
+      "selectable": true,
+      "style": {
+        "strokeWidth": 1,
+        "zIndex": 500,
+        "stroke": "rgb(var(--react-erd__secondary-color))",
+        "transition": "stroke 0.3s"
+      }
+    }
+  ]
+}

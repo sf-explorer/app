@@ -1,6 +1,6 @@
 {
   "name": "@sf-explorer/board-to-drawio",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Transform SF Explorer board templates to draw.io XML format",
   "type": "module",
   "main": "dist/index.js",

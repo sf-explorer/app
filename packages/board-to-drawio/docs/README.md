@@ -23,26 +23,6 @@ This directory contains detailed documentation for the `@sf-explorer/board-to-dr
 - **[../CHANGELOG.md](../CHANGELOG.md)** - Complete version history
 - **[../LICENSE](../LICENSE)** - MIT License
 
-## 📦 Package Structure
-
-```
-board-to-drawio/
-├── README.md                  # Main documentation
-├── CHANGELOG.md              # Version history
-├── package.json              # Package metadata
-├── docs/                     # 📁 Documentation (you are here)
-│   ├── QUICK_START.md
-│   ├── ALL_DIAGRAM_LINKS.md
-│   ├── ANNOTATION_FEATURE.md
-│   ├── UML_FEATURE.md
-│   ├── viewer-urls.md
-│   ├── PROJECT_SUMMARY.md
-│   └── RELEASE_NOTES_*.md
-├── src/                      # TypeScript source
-├── dist/                     # Compiled output
-├── output/                   # Generated diagrams
-└── examples/                 # Example scripts
-```
 
 ## 🚀 Getting Started
 
