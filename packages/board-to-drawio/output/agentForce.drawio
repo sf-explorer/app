@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.917Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+  <diagram id="diagram1" name="agentForce">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0">
+        </mxCell>
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <UserObject label="GenAiPluginInstructionDef" tooltip="8 fields&#xa;[Agentforce] " id="table_GenAiPluginInstructionDef">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/asset_action.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="938" y="-513" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="GenAiPluginInstructionDef_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: GenAiPluginDefinitionId : GenAiPluginDefinition" tooltip="Generative AI Plugin Definition ID" id="GenAiPluginInstructionDef_GenAiPluginDefinitionId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Generative AI Plugin Instruction Definition Name" id="GenAiPluginInstructionDef_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Master Language" id="GenAiPluginInstructionDef_Language">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Generative AI Plugin Instruction Definition Master Label" id="GenAiPluginInstructionDef_MasterLabel">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="GenAiPluginInstructionDef_NamespacePrefix">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="GenAiPluginInstructionDef_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="GenAiPluginInstructionDef_Description">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginInstructionDef" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Generative AI Plugin Definition" tooltip="12 fields&#xa;[Agentforce] Represents an agent topic, which is a category of actions related to a particular job to be done by AI agents. " id="table_Generative_AI_Plugin_Definition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/topic.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="448" y="-300" width="200" height="372" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Generative_AI_Plugin_Definition_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : GenAiPlannerDefinition" tooltip="Parent Record Reference" id="Generative_AI_Plugin_Definition_ParentId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Generative AI Plugin Definition Name" id="Generative_AI_Plugin_Definition_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Master Language" id="Generative_AI_Plugin_Definition_Language">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Generative AI Plugin Definition Master Label" id="Generative_AI_Plugin_Definition_MasterLabel">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="Generative_AI_Plugin_Definition_NamespacePrefix">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Generative_AI_Plugin_Definition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Generative_AI_Plugin_Definition_Description">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PluginType : Enum" tooltip="Plugin Type" id="Generative_AI_Plugin_Definition_PluginType">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Scope : Text" tooltip="Scope" id="Generative_AI_Plugin_Definition_Scope">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsLocal : Boolean" tooltip="Is Local" id="Generative_AI_Plugin_Definition_IsLocal">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CanEscalate : Boolean" tooltip="Can Escalate" id="Generative_AI_Plugin_Definition_CanEscalate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Plugin_Definition" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="GenAiPluginFunctionDef" tooltip="4 fields&#xa;[Agentforce] " id="table_GenAiPluginFunctionDef">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1290" y="-267" width="200" height="164" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="GenAiPluginFunctionDef_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginFunctionDef" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PluginId : GenAiPluginDefinition" tooltip="Generative AI Plugin Definition ID" id="GenAiPluginFunctionDef_PluginId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginFunctionDef" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="GenAiPluginFunctionDef_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginFunctionDef" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Function : Enum" tooltip="Generative AI Function Definition ID" id="GenAiPluginFunctionDef_Function">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPluginFunctionDef" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="GenAiFunctionDefinition" tooltip="14 fields&#xa;[Agentforce] Represents an agent action." id="table_GenAiFunctionDefinition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/marketing_actions.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1285" y="-67" width="200" height="424" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="GenAiFunctionDefinition_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : GenAiPlannerFunctionDef" tooltip="Parent Record Reference" id="GenAiFunctionDefinition_ParentId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Generative AI Function Definition Name" id="GenAiFunctionDefinition_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Master Language" id="GenAiFunctionDefinition_Language">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Generative AI Function Definition Master Label" id="GenAiFunctionDefinition_MasterLabel">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="GenAiFunctionDefinition_NamespacePrefix">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="GenAiFunctionDefinition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="GenAiFunctionDefinition_Description">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="InvocationTargetType : Enum" tooltip="Generative AI Function Type Definition ID" id="GenAiFunctionDefinition_InvocationTargetType">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="InvocationTarget : Enum" tooltip="Invocation Target" id="GenAiFunctionDefinition_InvocationTarget">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsConfirmationRequired : Boolean" tooltip="Is Confirmation Required" id="GenAiFunctionDefinition_IsConfirmationRequired">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsLocal : Boolean" tooltip="Is Local" id="GenAiFunctionDefinition_IsLocal">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsIncludeInProgressIndicator : Boolean" tooltip="Is Include In Progress Indicator" id="GenAiFunctionDefinition_IsIncludeInProgressIndicat">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProgressIndicatorMessage : Text" tooltip="Progress Indicator Message" id="GenAiFunctionDefinition_ProgressIndicatorMessage">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiFunctionDefinition" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Generative AI Planner Function Definition" tooltip="4 fields&#xa;[Agentforce] Represents a relationship between the agent planner service and agent actions" id="table_Generative_AI_Planner_Function_Definition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="888" y="-50" width="200" height="164" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Generative_AI_Planner_Function_Definition_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Function_Definition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PlannerId : GenAiPlannerDefinition" tooltip="Generative AI Planner Definition ID" id="Generative_AI_Planner_Function_Definition_PlannerI">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Function_Definition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Generative_AI_Planner_Function_Definition_LastModi">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Function_Definition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Plugin : Enum" tooltip="Generative AI Plugin Definition ID" id="Generative_AI_Planner_Function_Definition_Plugin">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Function_Definition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Generative AI Planner Attribute Definition" tooltip="9 fields&#xa;[Agentforce] " id="table_Generative_AI_Planner_Attribute_Definition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1787" y="-30" width="200" height="294" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Generative_AI_Planner_Attribute_Definition_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : GenAiFunctionDefinition" tooltip="SobjectType ID" id="Generative_AI_Planner_Attribute_Definition_ParentI">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Generative AI Planner Attribute Definition Name" id="Generative_AI_Planner_Attribute_Definition_Develop">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Master Language" id="Generative_AI_Planner_Attribute_Definition_Languag">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Generative AI Planner Attribute Definition Master Label" id="Generative_AI_Planner_Attribute_Definition_MasterL">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Generative_AI_Planner_Attribute_Definition_LastMod">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Generative_AI_Planner_Attribute_Definition_Descrip">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MappingType : Enum" tooltip="Mapping Type" id="Generative_AI_Planner_Attribute_Definition_Mapping">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ParameterName : Text" tooltip="Parameter Name" id="Generative_AI_Planner_Attribute_Definition_Paramet">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Generative_AI_Planner_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="GenAiPlannerDefinition" tooltip="10 fields&#xa;[Agentforce] Represents an agent planner service that uses a large language model (LLM) and a reasoning strategy to decompose a given task into smaller subtasks, identify the most suitable actions for each subtask, and invoke them" id="table_GenAiPlannerDefinition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="152" y="96" width="200" height="320" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="GenAiPlannerDefinition_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Generative AI Planner Definition Name" id="GenAiPlannerDefinition_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Master Language" id="GenAiPlannerDefinition_Language">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Generative AI Planner Definition Master Label" id="GenAiPlannerDefinition_MasterLabel">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="GenAiPlannerDefinition_NamespacePrefix">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="GenAiPlannerDefinition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="GenAiPlannerDefinition_Description">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PlannerType : Enum" tooltip="Planner Type" id="GenAiPlannerDefinition_PlannerType">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Capabilities : Text" tooltip="Capabilities" id="GenAiPlannerDefinition_Capabilities">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AgentGraph : Text" tooltip="Agent Graph" id="GenAiPlannerDefinition_AgentGraph">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAiPlannerDefinition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Conversation Definition Event Log" tooltip="26 fields (showing 20)&#xa;[Shield] " id="table_Conversation_Definition_Event_Log">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#2196F3;strokeColor=#0063c0;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom73.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="972" y="194" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Conversation_Definition_Event_Log_Id">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#6ee3ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : ConversationDefinitionSession" tooltip="Parent Record Reference" id="Conversation_Definition_Event_Log_ParentId">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ConversationDefinitionId : BotVersion" tooltip="Conversation Definition ID" id="Conversation_Definition_Event_Log_ConversationDefi">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DialogDefinitionId : ConversationDefinitionDialog" tooltip="Dialog ID" id="Conversation_Definition_Event_Log_DialogDefinition">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PreviousEventLogId : ConversationDefinitionEventLog" tooltip="Previous Conversation Definition Event Log ID" id="Conversation_Definition_Event_Log_PreviousEventLog">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Conversation_Definition_Event_Log_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LogType : Enum" tooltip="Event Log Type" id="Conversation_Definition_Event_Log_LogType">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventUuid : Text" tooltip="Event UUID" id="Conversation_Definition_Event_Log_EventUuid">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LogLevel : Enum" tooltip="Event Log Level" id="Conversation_Definition_Event_Log_LogLevel">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PreviousEventLogUuid : Text" tooltip="Previous Event Log UUID" id="Conversation_Definition_Event_Log_PreviousEventLog_1">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventTimestamp : Text" tooltip="Event Timestamp" id="Conversation_Definition_Event_Log_EventTimestamp">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventDateTime : DateTime" tooltip="Event Datetime" id="Conversation_Definition_Event_Log_EventDateTime">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventLabel : Text" tooltip="Event Label" id="Conversation_Definition_Event_Log_EventLabel">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventTargetType : Enum" tooltip="Event Target Type" id="Conversation_Definition_Event_Log_EventTargetType">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventTarget : Enum" tooltip="Event Target" id="Conversation_Definition_Event_Log_EventTarget">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StepType : Enum" tooltip="Step Type" id="Conversation_Definition_Event_Log_StepType">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ChannelType : Enum" tooltip="Channel Type" id="Conversation_Definition_Event_Log_ChannelType">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Language" id="Conversation_Definition_Event_Log_Language">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ConversationTurn : Text" tooltip="Conversation Turn" id="Conversation_Definition_Event_Log_ConversationTurn">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EventDetails : Text" tooltip="Event Details" id="Conversation_Definition_Event_Log_EventDetails">
+          <mxCell style="text=1;strokeColor=#077cd9;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Conversation_Definition_Event_Log_more" value="... 6 more fields" style="text=1;strokeColor=#077cd9;fillColor=#87fcff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Conversation_Definition_Event_Log" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Bot" tooltip="10 fields&#xa;[Agentforce] " id="table_Bot">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-623" y="278" width="200" height="320" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Bot_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BotUserId : User" tooltip="User ID" id="Bot_BotUserId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Name" id="Bot_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Bot Definition Name" id="Bot_MasterLabel">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Bot_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Bot_Description">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" tooltip="Type" id="Bot_Type">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AgentType : Enum" tooltip="Type of Agent" id="Bot_AgentType">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AgentTemplate : Text" tooltip="Template" id="Bot_AgentTemplate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BotSource : Enum" tooltip="Type of Bot Source" id="Bot_BotSource">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bot Version" tooltip="9 fields&#xa;[Agentforce] " id="table_Bot_Version">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9C27B0;strokeColor=#69007d;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/einstein.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-180" y="307" width="200" height="294" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Bot_Version_Id">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#e974fd;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BotDefinitionId : BotDefinition" tooltip="Bot ID" id="Bot_Version_BotDefinitionId">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Object Name" id="Bot_Version_DeveloperName">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Bot_Version_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="VersionNumber : Integer" tooltip="Version Number" id="Bot_Version_VersionNumber">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status" id="Bot_Version_Status">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CopilotPrimaryLanguage : Enum" tooltip="Agent Primary Language" id="Bot_Version_CopilotPrimaryLanguage">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ToneType : Enum" tooltip="Tone Type" id="Bot_Version_ToneType">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CopilotSecondaryLanguages : Text" tooltip="Agent Secondary Languages" id="Bot_Version_CopilotSecondaryLanguages">
+          <mxCell style="text=1;strokeColor=#820d96;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Bot_Version" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Conversation Definition Dialog Daily Metric" tooltip="24 fields (showing 20)&#xa;[Core] " id="table_Conversation_Definition_Dialog_Daily_Metric">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1090" y="394" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Conversation_Definition_Dialog_Daily_Metric_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DialogDefinitionId : ConversationDefinitionDialog" tooltip="Dialog ID" id="Conversation_Definition_Dialog_Daily_Metric_Dialog">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ConversationDefinitionId : BotVersion" tooltip="Conversation Definition ID" id="Conversation_Definition_Dialog_Daily_Metric_Conver">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="Conversation_Definition_Dialog_Daily_Metric_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Conversation_Definition_Dialog_Daily_Metric_LastMo">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DialogDefinitionName : Text" tooltip="Dialog Definition Name" id="Conversation_Definition_Dialog_Daily_Metric_Dialog_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BotDefinitionName : Text" tooltip="Bot Definition Name" id="Conversation_Definition_Dialog_Daily_Metric_BotDef">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MetricType : Enum" tooltip="Metric Type" id="Conversation_Definition_Dialog_Daily_Metric_Metric">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MetricDateTime : Date" tooltip="Metric Date Time" id="Conversation_Definition_Dialog_Daily_Metric_Metric_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ChannelType : Enum" tooltip="Channel Type" id="Conversation_Definition_Dialog_Daily_Metric_Channe">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Value : Integer" tooltip="Value" id="Conversation_Definition_Dialog_Daily_Metric_Value">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SessionTransferType : Enum" tooltip="Session Transfer Type" id="Conversation_Definition_Dialog_Daily_Metric_Sessio">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsSuccessful : Boolean" tooltip="Is Successful" id="Conversation_Definition_Dialog_Daily_Metric_IsSucc">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SessionEndType : Enum" tooltip="Session End Type" id="Conversation_Definition_Dialog_Daily_Metric_Sessio_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StaticChoiceValue : Text" tooltip="Static Choice Value" id="Conversation_Definition_Dialog_Daily_Metric_Static">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Article : Text" tooltip="Article" id="Conversation_Definition_Dialog_Daily_Metric_Articl">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArticleName : Text" tooltip="Article Name" id="Conversation_Definition_Dialog_Daily_Metric_Articl_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Language" id="Conversation_Definition_Dialog_Daily_Metric_Langua">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IntegrationType : Enum" tooltip="Integration Type" id="Conversation_Definition_Dialog_Daily_Metric_Integr">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IntegrationName : Text" tooltip="Integration Name" id="Conversation_Definition_Dialog_Daily_Metric_Integr_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Conversation_Definition_Dialog_Daily_Metric_more" value="... 4 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Daily_Metric" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Dialog" tooltip="5 fields&#xa;[Core] " id="table_Dialog">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="178" y="479" width="200" height="190" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Dialog_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Dialog" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : BotVersion" tooltip="Parent ID" id="Dialog_ParentId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Dialog" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Object Name" id="Dialog_DeveloperName">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Dialog" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLabel : Text" tooltip="Label" id="Dialog_MasterLabel">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Dialog" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Dialog_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Dialog" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Agent Work" tooltip="43 fields (showing 20)&#xa;[Core] Represents a work assignment that’s been routed to an agent." id="table_Agent_Work">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-294" y="534" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Agent_Work_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UserId : User" tooltip="User ID" id="Agent_Work_UserId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkItemId : AI_Agent_Conversation_Entry__c" tooltip="WorkItem ID" id="Agent_Work_WorkItemId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceChannelId : ServiceChannel" tooltip="Service Channel ID" id="Agent_Work_ServiceChannelId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OriginalQueueId : Group" tooltip="Queue ID" id="Agent_Work_OriginalQueueId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PendingServiceRoutingId : PendingServiceRouting" tooltip="Pending Service Routing ID" id="Agent_Work_PendingServiceRoutingId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PreferredUserId : User" tooltip="User ID" id="Agent_Work_PreferredUserId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OriginalGroupId : Group" tooltip="Group ID" id="Agent_Work_OriginalGroupId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BotId : BotDefinition" tooltip="Bot ID" id="Agent_Work_BotId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TransferRequesterId : User" tooltip="User ID" id="Agent_Work_TransferRequesterId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="An automatically generated ID number that identifies the record." id="Agent_Work_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Agent_Work_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Agent_Work_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="The working status of the work item. Valid values are: Assigned – The item is assigned to the agent but hasn’t been opened. Canceled – The item no longer needs to be routed. For example: a chat visitor cancels their Omni-Channel routed chat request before it reaches an agent. Closed – The item is closed. Declined – The item was assigned to the agent but the agent explicitly declined it. DeclinedOnPushTimeout – The item was declined because push time-out is enabled and the item request timed out with the agent. Opened – The agent opened the item. Transferred–The item was transferred from an agent to another agent, queue, or skill. Unavailable – The item was assigned to the agent but the agent became unavailable (went offline or lost connection)." id="Agent_Work_Status">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CapacityWeight : Number" tooltip="The amount of an agent’s capacity for work items that’s consumed by a work item from this service channel.For example, if cases are assigned a capacity weight of 2, an agent with a capacity of 6 can accept up to 3 cases before the agent is at capacity and can’t receive new work items." id="Agent_Work_CapacityWeight">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CapacityPercentage : Text" tooltip="The percentage of an agent’s capacity for work items that’s consumed by a specific type of work item from this service channel.When an agent’s combined work items reach 100%, the agent doesn’t receive new work items until there’s enough open capacity for more work. For example, if you give phone calls a capacity percentage of 100, an agent on a call doesn’t receive new work items until the call ends." id="Agent_Work_CapacityPercentage">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RequestDateTime : DateTime" tooltip="Indicates when the work was requested." id="Agent_Work_RequestDateTime">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AcceptDateTime : DateTime" tooltip="Indicates when the work item was accepted." id="Agent_Work_AcceptDateTime">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeclineDateTime : DateTime" tooltip="Date and time when the agent declined this record." id="Agent_Work_DeclineDateTime">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CloseDateTime : DateTime" tooltip="Indicates when the work item was closed." id="Agent_Work_CloseDateTime">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Agent_Work_more" value="... 23 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Agent_Work" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Conversation Definition Dialog Hourly Metric" tooltip="26 fields (showing 20)&#xa;[Core] " id="table_Conversation_Definition_Dialog_Hourly_Metric">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1499" y="603" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Conversation_Definition_Dialog_Hourly_Metric_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : ConvDefDialogDailyMetric" tooltip="Parent Record Reference" id="Conversation_Definition_Dialog_Hourly_Metric_Paren">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DialogDefinitionId : ConversationDefinitionDialog" tooltip="Dialog ID" id="Conversation_Definition_Dialog_Hourly_Metric_Dialo">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ConversationDefinitionId : BotVersion" tooltip="Conversation Definition ID" id="Conversation_Definition_Dialog_Hourly_Metric_Conve">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="Conversation_Definition_Dialog_Hourly_Metric_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Conversation_Definition_Dialog_Hourly_Metric_LastM">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DialogDefinitionName : Text" tooltip="Dialog Definition Name" id="Conversation_Definition_Dialog_Hourly_Metric_Dialo_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BotDefinitionName : Text" tooltip="Bot Definition Name" id="Conversation_Definition_Dialog_Hourly_Metric_BotDe">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MetricType : Enum" tooltip="Metric Type" id="Conversation_Definition_Dialog_Hourly_Metric_Metri">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MetricDateTime : DateTime" tooltip="Metric Date Time" id="Conversation_Definition_Dialog_Hourly_Metric_Metri_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ChannelType : Enum" tooltip="Channel Type" id="Conversation_Definition_Dialog_Hourly_Metric_Chann">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Value : Integer" tooltip="Value" id="Conversation_Definition_Dialog_Hourly_Metric_Value">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SessionTransferType : Enum" tooltip="Session Transfer Type" id="Conversation_Definition_Dialog_Hourly_Metric_Sessi">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsSuccessful : Boolean" tooltip="Is Successful" id="Conversation_Definition_Dialog_Hourly_Metric_IsSuc">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SessionEndType : Enum" tooltip="Session End Type" id="Conversation_Definition_Dialog_Hourly_Metric_Sessi_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StaticChoiceValue : Text" tooltip="Static Choice Value" id="Conversation_Definition_Dialog_Hourly_Metric_Stati">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Article : Text" tooltip="Article" id="Conversation_Definition_Dialog_Hourly_Metric_Artic">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArticleName : Text" tooltip="Article Name" id="Conversation_Definition_Dialog_Hourly_Metric_Artic_1">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Language" id="Conversation_Definition_Dialog_Hourly_Metric_Langu">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IntegrationType : Enum" tooltip="Integration Type" id="Conversation_Definition_Dialog_Hourly_Metric_Integ">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Conversation_Definition_Dialog_Hourly_Metric_more" value="... 6 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Conversation_Definition_Dialog_Hourly_Metric" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="annotation_Instructions" value="Instructions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#cccc00;fontSize=12;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="751" y="-573" width="194" height="83" as="geometry"/>
+        </mxCell>
+        <mxCell id="markdown_Agentforce" value="Agentforce" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=40;text=1;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="96" y="-547" width="507" height="121" as="geometry"/>
+        </mxCell>
+        <mxCell id="annotation_Topics" value="Topics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#cccc00;fontSize=12;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="300" y="-375" width="154" height="87" as="geometry"/>
+        </mxCell>
+        <mxCell id="annotation_Your_agents" value="Your agents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#cccc00;fontSize=12;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="-813" y="196" width="220" height="74" as="geometry"/>
+        </mxCell>
+        <mxCell id="group_Gen_AI_Requests" value="Gen AI Requests" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=12;" vertex="1" parent="1">
+            <mxGeometry x="866" y="778" width="337" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="group_Prompt_Templates" value="Prompt Templates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=12;" vertex="1" parent="1">
+            <mxGeometry x="328" y="806" width="375" height="147" as="geometry"/>
+        </mxCell>
+        <UserObject label="" tooltip="Many-to-One: Agent Work → Bot&#xa;From: Agent Work.BotId&#xa;To: Bot.Id" id="edge_BotDefinition_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Agent_Work_BotId" target="Bot_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Bot Version → Bot&#xa;From: Bot Version.BotDefinitionId&#xa;To: Bot.Id" id="edge_BotDefinition_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Bot_Version_BotDefinitionId" target="Bot_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Dialog → Bot Version&#xa;From: Dialog.ParentId&#xa;To: Bot Version.Id" id="edge_BotVersion_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Dialog_ParentId" target="Bot_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Dialog Daily Metric → Dialog&#xa;From: Conversation Definition Dialog Daily Metric.DialogDefinitionId&#xa;To: Dialog.Id" id="edge_ConversationDefinitionDialog_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Dialog_Daily_Metric_Dialog" target="Dialog_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Dialog Daily Metric → Bot Version&#xa;From: Conversation Definition Dialog Daily Metric.ConversationDefinitionId&#xa;To: Bot Version.Id" id="edge_BotVersion_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Dialog_Daily_Metric_Conver" target="Bot_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Event Log → Bot Version&#xa;From: Conversation Definition Event Log.ConversationDefinitionId&#xa;To: Bot Version.Id" id="edge_BotVersion_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Event_Log_ConversationDefi" target="Bot_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Event Log → Dialog&#xa;From: Conversation Definition Event Log.DialogDefinitionId&#xa;To: Dialog.Id" id="edge_ConversationDefinitionDialog_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Event_Log_DialogDefinition" target="Dialog_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Dialog Hourly Metric → Conversation Definition Dialog Daily Metric&#xa;From: Conversation Definition Dialog Hourly Metric.ParentId&#xa;To: Conversation Definition Dialog Daily Metric.Id" id="edge_ConvDefDialogDailyMetric_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Dialog_Hourly_Metric_Paren" target="Conversation_Definition_Dialog_Daily_Metric_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Dialog Hourly Metric → Dialog&#xa;From: Conversation Definition Dialog Hourly Metric.DialogDefinitionId&#xa;To: Dialog.Id" id="edge_ConversationDefinitionDialog_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Dialog_Hourly_Metric_Dialo" target="Dialog_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Conversation Definition Dialog Hourly Metric → Bot Version&#xa;From: Conversation Definition Dialog Hourly Metric.ConversationDefinitionId&#xa;To: Bot Version.Id" id="edge_BotVersion_to_Id_3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Conversation_Definition_Dialog_Hourly_Metric_Conve" target="Bot_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Plugin Instruction Definition → Generative AI Plugin Definition&#xa;From: Generative AI Plugin Instruction Definition.GenAiPluginDefinitionId&#xa;To: Generative AI Plugin Definition.Id" id="edge_GenAiPluginDefinition_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAiPluginInstructionDef_GenAiPluginDefinitionId" target="Generative_AI_Plugin_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Plugin Function Definition → Generative AI Plugin Definition&#xa;From: Generative AI Plugin Function Definition.PluginId&#xa;To: Generative AI Plugin Definition.Id" id="edge_GenAiPluginDefinition_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAiPluginFunctionDef_PluginId" target="Generative_AI_Plugin_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Function Definition → Generative AI Planner Function Definition&#xa;From: Generative AI Function Definition.ParentId&#xa;To: Generative AI Planner Function Definition.Id" id="edge_GenAiPlannerFunctionDef_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAiFunctionDefinition_ParentId" target="Generative_AI_Planner_Function_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Planner Attribute Definition → Generative AI Function Definition&#xa;From: Generative AI Planner Attribute Definition.ParentId&#xa;To: Generative AI Function Definition.Id" id="edge_GenAiFunctionDefinition_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Generative_AI_Planner_Attribute_Definition_ParentI" target="GenAiFunctionDefinition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Planner Function Definition → Generative AI Planner Definition&#xa;From: Generative AI Planner Function Definition.PlannerId&#xa;To: Generative AI Planner Definition.Id" id="edge_GenAiPlannerDefinition_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Generative_AI_Planner_Function_Definition_PlannerI" target="GenAiPlannerDefinition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Generative AI Plugin Definition → Generative AI Planner Definition&#xa;From: Generative AI Plugin Definition.ParentId&#xa;To: Generative AI Planner Definition.Id" id="edge_GenAiPlannerDefinition_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Generative_AI_Plugin_Definition_ParentId" target="GenAiPlannerDefinition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Relationship: Generative AI Planner Definition → Bot Version&#xa;From: Generative AI Planner Definition.Id&#xa;To: Bot Version.Id" id="edge_xy-edge__5759f1ac-c548-463a-b672-e644915acf5f">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAiPlannerDefinition_Id" target="Bot_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Relationship: Prompt Templates → Gen AI Requests&#xa;From: Prompt Templates.source&#xa;To: Gen AI Requests.target" id="edge_ffa1c2a9-1b22-4a01-8f1f-d4e11b363a84">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="group_Prompt_Templates" target="group_Gen_AI_Requests">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

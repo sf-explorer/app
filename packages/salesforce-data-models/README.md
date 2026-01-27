@@ -2,6 +2,8 @@
 
 Comprehensive Salesforce data models and Entity Relationship Diagram (ERD) templates covering Sales Cloud, Service Cloud, Revenue Cloud, Field Service, Financial Services Cloud, and more.
 
+> **Note**: In the monorepo, this package references data files from the root `Boards/` directory. When published to npm, data files are automatically copied into the package during the publish process.
+
 ## Installation
 
 ```bash
@@ -160,25 +162,6 @@ interface ERDModel {
   content: () => Promise<ERDData>  // Lazy-loaded data
 }
 ```
-
-## Optimizations
-
-All data models are optimized for production use:
-
-- ⚡ **Lightweight Schemas** - Enum fields limited to 30 most common values (reduced from 200-2800+ values)
-- 📦 **Small Bundle Size** - 2.83 MB total (37% smaller than unoptimized)
-- 🚀 **Fast Loading** - Lazy-loaded modules for optimal performance
-- 🌳 **Tree-shakeable** - Import only what you need
-
-### Enum Optimization Details
-
-Some Salesforce fields have hundreds of possible values:
-- `TimeZoneSidKey`: 425 → 30 values
-- `Language`: 217 → 30 values
-- `SobjectType`: 2,803 → 30 values
-- Country/State codes: 240-367 → 30 values
-
-The first 30 most common values are retained. Applications needing the full list can query Salesforce APIs directly.
 
 ## Use Cases
 

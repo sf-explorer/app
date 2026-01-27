@@ -234,6 +234,15 @@ Display metadata badges above tables to show important information like record c
 - Automatic ER notation (crow's foot)
 - One-to-many and many-to-one relationships
 - Orthogonal routing for clean diagrams
+- **Edge Labels**: Display text labels on edges using `edge.label` property
+- **Edge Style Support**: Customize edge appearance via `edge.style` properties:
+  - `strokeWidth` - Line thickness (default: 2 for ERD, 1.5 for UML)
+  - `stroke` or `strokeColor` - Line color (default: '#6c757d')
+  - `strokeDasharray` - Dashed lines (e.g., "5,5" or [5, 5])
+  - `curved` - Use curved edges instead of orthogonal (boolean)
+  - `edgeStyle` - Explicit routing style ('orthogonalEdgeStyle', 'curvedEdgeStyle')
+  - `fontSize` - Label font size (default: 12 for ERD, 11 for UML)
+  - `opacity` - Edge transparency (0.0 to 1.0, converted to 0-100)
 
 ## Example Output
 
@@ -260,6 +269,49 @@ Given a board with Product and Order tables:
   "edges": []
 }
 ```
+
+### Edge Labels and Style Examples
+
+Edges support labels via the `label` property and custom styling via the `style` property:
+
+```json
+{
+  "edges": [
+    {
+      "id": "edge1",
+      "source": "Product",
+      "target": "Order",
+      "label": "contains",  // 👈 Edge label displayed on the line
+      "style": {
+        "strokeWidth": 3,
+        "strokeColor": "#ff0000",
+        "strokeDasharray": "5,5"
+      }
+    },
+    {
+      "id": "edge2",
+      "source": "Order",
+      "target": "Customer",
+      "label": "belongs to",  // 👈 Edge label
+      "style": {
+        "curved": true,
+        "strokeColor": "#0066cc",
+        "opacity": 0.7,
+        "fontSize": 14  // 👈 Label font size
+      }
+    }
+  ]
+}
+```
+
+**Supported Edge Style Properties:**
+- `strokeWidth` - Line thickness (number)
+- `stroke` or `strokeColor` - Line color (hex string)
+- `strokeDasharray` - Dashed pattern ("5,5" or array [5, 5])
+- `curved` - Use curved routing (boolean)
+- `edgeStyle` - Routing style string ('orthogonalEdgeStyle', 'curvedEdgeStyle')
+- `fontSize` - Label font size (number)
+- `opacity` - Transparency 0.0-1.0 (number)
 
 The output will be a properly formatted draw.io XML with:
 - A table box titled "Product"

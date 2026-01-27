@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.952Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+  <diagram id="diagram1" name="serviceCloud">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0">
+        </mxCell>
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <UserObject label="Knowledge" tooltip="12 fields&#xa;[Service Cloud] Provides access to the concrete object that represents a Knowledge article, the parent object for article versions." id="table_Knowledge">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="989" y="-559" width="200" height="372" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Knowledge_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ArchivedById : User" tooltip="User ID" id="Knowledge_ArchivedById">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Knowledge_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MasterLanguage : Enum" tooltip="The article&apos;s original language. Only accessible if your knowledge base supports multiple languages." id="Knowledge_MasterLanguage">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArticleNumber : Text" tooltip="The unique number automatically assigned to the article when it&apos;s created. You can&apos;t change the format or value for this field." id="Knowledge_ArticleNumber">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArchivedDate : DateTime" tooltip="The date when the article was archived." id="Knowledge_ArchivedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FirstPublishedDate : DateTime" tooltip="The date when the article was first published." id="Knowledge_FirstPublishedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastPublishedDate : DateTime" tooltip="The date when the article was last published." id="Knowledge_LastPublishedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseAssociationCount : Integer" tooltip="The number of cases attached to the article." id="Knowledge_CaseAssociationCount">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MigratedToFromArticle : Text" tooltip="The ID for the corresponding pre- or post-migration article. Contains values only in orgs that migrate from Knowledge in Salesforce Classic to Lightning Knowledge. This field is available in API version 45.0 and later." id="Knowledge_MigratedToFromArticle">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsGeneratedByLlm : Boolean" tooltip="Generated by Large Language Model" id="Knowledge_IsGeneratedByLlm">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TotalViewCount : Integer" tooltip="Total number of views for this article. This field is available in API version 39.0 and later." id="Knowledge_TotalViewCount">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Knowledge" tooltip="60 fields (showing 20)&#xa;[Service Cloud] Provides access to the concrete object that represents a Knowledge article version." id="table_Knowledge_1">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="425" y="-543" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Knowledge_Id_1">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: KnowledgeArticleId : Knowledge__ka" tooltip="Knowledge Article ID" id="Knowledge_KnowledgeArticleId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ArchivedById : User" tooltip="User ID" id="Knowledge_ArchivedById_1">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ArticleArchivedById : User" tooltip="User ID" id="Knowledge_ArticleArchivedById">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ArticleCreatedById : User" tooltip="User ID" id="Knowledge_ArticleCreatedById">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SourceId : Case" tooltip="Source" id="Knowledge_SourceId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: MasterVersionId : Knowledge__kav" tooltip="Knowledge Article Version ID" id="Knowledge_MasterVersionId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Knowledge_RecordTypeId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssignedToId : Group" tooltip="Assigned To" id="Knowledge_AssignedToId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssignedById : User" tooltip="User ID" id="Knowledge_AssignedById">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ValidationStatus : Enum" tooltip="Shows whether the content of the article has been validated. Possible values are Validated and Not Validated. The default value is Not Validated. This field is available in API version 24.0 or later." id="Knowledge_ValidationStatus">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PublishStatus : Enum" tooltip="The publication status for the article: Draft: any draft articles. Online: articles published in Salesforce Knowledge. Archived: archived articles. A user must have the “Manage Articles” permission enabled to use Online. Article queries and searches in SOQL or SOSL require that you specify either the PublishStatus or the Id field in the WHERE clause. You can search for only one publication status per article type in a single SOSL query. When searching for articles with a PublishStatus of Archived, also check that IsLatestVersion equals false in your WHERE clause." id="Knowledge_PublishStatus">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="VersionNumber : Integer" tooltip="The number assigned to a version of an article. This field is available in API version 24.0 and later." id="Knowledge_VersionNumber">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsLatestVersion : Boolean" tooltip="Indicates whether the article is the most current version. (true) or not (false). This field can be true on the online or published version, a draft version in the primary language, a draft version in a translation, and the latest archived version. However, you can’t filter by (PublishState=’Online’) and (IsLatestVersion=false) because the online version is also the latest version. This field is available in API version 24.0 and later." id="Knowledge_IsLatestVersion">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsVisibleInApp : Boolean" tooltip="Required. Indicates whether the article is visible in the Articles tab (true) or not (false)." id="Knowledge_IsVisibleInApp">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsVisibleInPkb : Boolean" tooltip="Required. Indicates whether the article is visible in the public knowledge base (true) or not (false)." id="Knowledge_IsVisibleInPkb">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsVisibleInCsp : Boolean" tooltip="Required. Indicates whether the article is visible in the Customer Portal (true) or not (false)." id="Knowledge_IsVisibleInCsp">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsVisibleInPrm : Boolean" tooltip="Required. Indicates whether the article is visible in the partner portal (true) or not (false)." id="Knowledge_IsVisibleInPrm">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Knowledge_LastModifiedDate_1">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsMasterLanguage : Boolean" tooltip="Indicates whether the article has one or more translations associated with it (true) or not (false)." id="Knowledge_IsMasterLanguage">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Knowledge_more" value="... 40 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Knowledge_1" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="CaseArticle" tooltip="7 fields&#xa;[Service Cloud] Represents the association between a Case and a KnowledgeArticle." id="table_CaseArticle">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1154" y="-373" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseArticle_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CaseId : Case" tooltip="Case ID" id="CaseArticle_CaseId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: KnowledgeArticleId : Knowledge__ka" tooltip="Article ID" id="CaseArticle_KnowledgeArticleId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: KnowledgeArticleVersionId : Knowledge__kav" tooltip="Knowledge Article Version ID" id="CaseArticle_KnowledgeArticleVersionId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArticleLanguage : Enum" tooltip="The language of the article associated with the case." id="CaseArticle_ArticleLanguage">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ArticleVersionNumber : Integer" tooltip="The number assigned to a version of an article. This field is available in API version 24.0 and later." id="CaseArticle_ArticleVersionNumber">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsSharedByEmail : Boolean" tooltip="Indicates that the article has been shared with the customer through an email." id="CaseArticle_IsSharedByEmail">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseArticle" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Swarm" tooltip="16 fields&#xa;[Service Cloud] Represents a team of agents, Salesforce users, or Slack users in a Slack channel or thread dedicated to solving a problem. This problem can be related to a support case, incident, sales opportunity, or change request." id="table_Swarm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-250" y="-291" width="200" height="476" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Swarm_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RelatedRecordId : Account" tooltip="RelatedRecord ID" id="Swarm_RelatedRecordId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CollaborationRoomId : CollaborationRoom" tooltip="Collaboration Room ID" id="Swarm_CollaborationRoomId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name of the swarm." id="Swarm_Name">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Swarm_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Swarm_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status of the swarm." id="Swarm_Status">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CollaborationTool : Enum" tooltip="Tool used for swarming." id="Swarm_CollaborationTool">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartedDateTime : DateTime" tooltip="Date and time the swarm started." id="Swarm_StartedDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndedDateTime : DateTime" tooltip="Date and time the swarm ended." id="Swarm_EndedDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CollaborationUrl : Text" tooltip="URL of the Slack channel or thread." id="Swarm_CollaborationUrl">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsDedicatedChannel : Boolean" tooltip="Indicates if the swarm is happening in a dedicated channel (true) or in an existing channel (false)." id="Swarm_IsDedicatedChannel">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UsageType : Enum" tooltip="Type of swarm." id="Swarm_UsageType">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HelpNeeded : Text" tooltip="Short description of the problem that the swarm is trying to solve." id="Swarm_HelpNeeded">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MessageKey : Text" tooltip="ID of the Slack thread or message." id="Swarm_MessageKey">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ChannelType : Enum" tooltip="Channel Type" id="Swarm_ChannelType">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Swarm" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseComment" tooltip="6 fields&#xa;[Service Cloud] Represents a comment that provides additional information about the associated Case." id="table_CaseComment">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/case_comment.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="438" y="-194" width="200" height="216" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseComment_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : Case" tooltip="Parent Record Reference" id="CaseComment_ParentId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPublished : Boolean" tooltip="Indicates whether the CaseComment is visible to customers in the Self-Service portal (true) or not (false). Label is Published. This is the only CaseComment field that can be updated via the API." id="CaseComment_IsPublished">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CommentBody : Text" tooltip="Text of the CaseComment. The maximum size of the comment body is 4,000 bytes. Label is Body." id="CaseComment_CommentBody">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CommentBodyRichtext : Text" tooltip="Rich-Text Body" id="CaseComment_CommentBodyRichtext">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CaseComment_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseComment" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseContactRole" tooltip="5 fields&#xa;[Service Cloud] Represents the role that a given Contact plays on a Case." id="table_CaseContactRole">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="846" y="-153" width="200" height="190" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseContactRole_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseContactRole" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CasesId : Case" tooltip="Case ID" id="CaseContactRole_CasesId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseContactRole" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="CaseContactRole_ContactId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseContactRole" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Role : Enum" tooltip="Name of the role played by the contact on this case, such as Technical Contact, Business Contact, Decision Maker, and so on. Must be unique—there can&apos;t be multiple records in which the CaseId, ContactId , and Role values are identical. Different contacts can play the same role on the same case. A contact can play different roles on the same case." id="CaseContactRole_Role">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseContactRole" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CaseContactRole_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseContactRole" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseTeamMember" tooltip="7 fields&#xa;[Service Cloud] Represents a case team member, who works with a team of other users to help resolve a case." id="table_CaseTeamMember">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-475" y="-127" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseTeamMember_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : Case" tooltip="Parent Record Reference" id="CaseTeamMember_ParentId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: MemberId : Contact" tooltip="Member ID" id="CaseTeamMember_MemberId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TeamTemplateMemberId : CaseTeamTemplateMember" tooltip="Team Template Member ID" id="CaseTeamMember_TeamTemplateMemberId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TeamRoleId : CaseTeamRole" tooltip="Team Role ID" id="CaseTeamMember_TeamRoleId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TeamTemplateId : CaseTeamTemplate" tooltip="Team Template ID" id="CaseTeamMember_TeamTemplateId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CaseTeamMember_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseTeamMember" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="group_Case_annotation" value="" style="group" vertex="1" parent="1" connectable="0">
+            <mxGeometry x="40" y="-50" width="200" height="640" as="geometry"/>
+        </mxCell>
+        <UserObject label="Case" tooltip="94 fields (showing 20)&#xa;[Service Cloud] Represents a case, which is a customer issue or problem." id="table_Case">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/case.svg;" vertex="1" parent="group_Case_annotation" collapsed="0">
+            <mxGeometry x="0" y="20" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Case_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="Case_ContactId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Case_AccountId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetId : Asset" tooltip="Asset ID" id="Case_AssetId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductId : Product2" tooltip="Product ID" id="Case_ProductId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: EntitlementId : Entitlement" tooltip="Entitlement ID" id="Case_EntitlementId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: FeedItemId : FeedItem" tooltip="Feed Item ID" id="Case_FeedItemId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SourceId : BusinessMilestone" tooltip="Case Source ID" id="Case_SourceId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BusinessHoursId : BusinessHours" tooltip="Business Hours ID" id="Case_BusinessHoursId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : Case" tooltip="Parent Record Reference" id="Case_ParentId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Case_RecordTypeId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetWarrantyId : AssetWarranty" tooltip="Asset Warranty ID" id="Case_AssetWarrantyId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceContractId : ServiceContract" tooltip="Service Contract ID" id="Case_ServiceContractId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Opportunity__c : Opportunity" tooltip="Opportunity" id="Case_Opportunity__c">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_Service_Territory__c : ServiceTerritory" tooltip="Service Territory" id="Case_SDO_Service_Territory__c">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseNumber : Text" tooltip="Assigned automatically when each case is inserted. It can&apos;t be set directly, and it can&apos;t be modified after the case is created." id="Case_CaseNumber">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SuppliedName : Text" tooltip="The name that was entered when the case was created. Label is Name." id="Case_SuppliedName">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SuppliedEmail : Email" tooltip="The email address that was entered when the case was created. Label is Email.If your organization has an active auto-response rule, SuppliedEmail is required when creating a case via the API. Auto-response rules use the email in the contact specified by ContactId. If no email address is in the contact record, the email specified here is used." id="Case_SuppliedEmail">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SuppliedPhone : Text" tooltip="The phone number that was entered when the case was created. Label is Phone." id="Case_SuppliedPhone">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SuppliedCompany : Text" tooltip="The company name that was entered when the case was created. Label is Company." id="Case_SuppliedCompany">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Case_more" value="... 74 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Case" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="Case_annotation_badge" value="&lt;b&gt;20k&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;arcSize=9;" vertex="1" parent="group_Case_annotation">
+            <mxGeometry x="140" y="0" width="60" height="34" as="geometry"/>
+        </mxCell>
+        <UserObject label="CaseSolution" tooltip="3 fields&#xa;[Core] " id="table_CaseSolution">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1720" y="40" width="200" height="138" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseSolution_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseSolution" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CaseId : Case" tooltip="Case ID" id="CaseSolution_CaseId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseSolution" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SolutionId : Solution" tooltip="Solution ID" id="CaseSolution_SolutionId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseSolution" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseMilestone" tooltip="28 fields (showing 20)&#xa;[Service Cloud] Represents a milestone (required step in a customer support process) on a Case." id="table_CaseMilestone">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="520" y="56" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseMilestone_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CaseId : Case" tooltip="Case ID" id="CaseMilestone_CaseId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: MilestoneTypeId : MilestoneType" tooltip="Milestone Type ID" id="CaseMilestone_MilestoneTypeId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BusinessHoursId : BusinessHours" tooltip="Business Hours ID" id="CaseMilestone_BusinessHoursId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartDate : DateTime" tooltip="The date and time the milestone started on the case." id="CaseMilestone_StartDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TargetDate : DateTime" tooltip="The date and time the milestone must be completed." id="CaseMilestone_TargetDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CompletionDate : DateTime" tooltip="The date and time the milestone was completed." id="CaseMilestone_CompletionDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsCompleted : Boolean" tooltip="Indicates whether the milestone is completed (true) or not (false)." id="CaseMilestone_IsCompleted">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsViolated : Boolean" tooltip="Indicates whether the milestone is violated (true) or not (false)." id="CaseMilestone_IsViolated">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CaseMilestone_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TargetResponseInMins : Integer" tooltip="The time to complete the milestone in minutes." id="CaseMilestone_TargetResponseInMins">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TargetResponseInHrs : Number" tooltip="The time to complete the milestone in hours." id="CaseMilestone_TargetResponseInHrs">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TargetResponseInDays : Number" tooltip="The time to complete the milestone in days." id="CaseMilestone_TargetResponseInDays">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeRemainingInMins : Text" tooltip="Time remaining to reach the milestone target. The format is minutes and seconds." id="CaseMilestone_TimeRemainingInMins">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeRemainingInHrs : Text" tooltip="Time remaining to reach the milestone target, measured in hours." id="CaseMilestone_TimeRemainingInHrs">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeRemainingInDays : Number" tooltip="Time remaining to reach the milestone target, measured in days." id="CaseMilestone_TimeRemainingInDays">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ElapsedTimeInMins : Integer" tooltip="The time required to complete a milestone in minutes." id="CaseMilestone_ElapsedTimeInMins">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ElapsedTimeInHrs : Number" tooltip="The time required to complete a milestone in hours." id="CaseMilestone_ElapsedTimeInHrs">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ElapsedTimeInDays : Number" tooltip="The time required to complete a milestone in days." id="CaseMilestone_ElapsedTimeInDays">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeSinceTargetInMins : Text" tooltip="The time elapsed since the milestone target. The format is minutes and seconds." id="CaseMilestone_TimeSinceTargetInMins">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="CaseMilestone_more" value="... 8 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_CaseMilestone" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="ServiceContract" tooltip="49 fields (showing 20)&#xa;[Field Service Lightning] Represents a customer support contract (business agreement)." id="table_ServiceContract">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_contract.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-731" y="62" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ServiceContract_Id">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="ServiceContract_AccountId">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="ServiceContract_ContactId">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Pricebook2Id : Pricebook2" tooltip="Price Book ID" id="ServiceContract_Pricebook2Id">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentServiceContractId : ServiceContract" tooltip="Parent Service Contract ID" id="ServiceContract_ParentServiceContractId">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RootServiceContractId : ServiceContract" tooltip="Root Service Contract ID" id="ServiceContract_RootServiceContractId">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name of the service contract." id="ServiceContract_Name">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="ServiceContract_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="ServiceContract_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Term : Integer" tooltip="Number of months that the service contract is valid." id="ServiceContract_Term">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartDate : Date" tooltip="The first day the service contract is in effect." id="ServiceContract_StartDate">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndDate : Date" tooltip="The last day the service contract is in effect." id="ServiceContract_EndDate">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ActivationDate : DateTime" tooltip="The initial day the service contract went into effect (whereas StartDate may include a renewal date)." id="ServiceContract_ActivationDate">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ApprovalStatus : Enum" tooltip="Approval status of the service contract." id="ServiceContract_ApprovalStatus">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description of the service contract." id="ServiceContract_Description">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BillingStreet : Text" tooltip="Billing Street" id="ServiceContract_BillingStreet">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BillingCity : Text" tooltip="Billing City" id="ServiceContract_BillingCity">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BillingState : Text" tooltip="Billing State" id="ServiceContract_BillingState">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BillingPostalCode : Text" tooltip="Billing Zip" id="ServiceContract_BillingPostalCode">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="BillingCountry : Text" tooltip="Billing Country" id="ServiceContract_BillingCountry">
+          <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="ServiceContract_more" value="... 29 more fields" style="text=1;strokeColor=#1a7ec1;fillColor=#9afeff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_ServiceContract" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Solution" tooltip="12 fields&#xa;[Core] Represents a detailed description of a customer issue and the resolution of that issue." id="table_Solution">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/solution.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1351" y="177" width="200" height="372" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Solution_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SolutionNumber : Text" tooltip="An identifying number that is assigned automatically when a solution is created. It can’t be set directly, and it can’t be modified." id="Solution_SolutionNumber">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SolutionName : Text" tooltip="Required. If a client application creates a new Solution and a value for this field is unspecified, a hyphen (-), the default value for this field, is used. Limit: 255 characters. Label is Title." id="Solution_SolutionName">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPublished : Boolean" tooltip="Indicates whether the Solution has been published (true) or not (false). A solution’s published state does not affect how it can be used, or whether you can query, update, or delete it. Label is Public. Note Prior to Spring ‘14, the label was Visible in Self-Service Portal." id="Solution_IsPublished">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPublishedInPublicKb : Boolean" tooltip="Indicates whether the Solution has been published as a Public Solution (true) or not (false). Label is Visible in Public Knowledge Base. This field only applies to solutions, not articles in the public knowledge base." id="Solution_IsPublishedInPublicKb">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Required. The status of the solution. Directly controls the IsReviewed value. To obtain the status values in the picklist, a client application can query the SolutionStatus." id="Solution_Status">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsReviewed : Boolean" tooltip="Indicates whether the Solution has been reviewed (true) or not (false). This flag can only be set indirectly via the Status picklist. Each predefined Status value implies an IsReviewed value. Label is Reviewed." id="Solution_IsReviewed">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SolutionNote : Text" tooltip="The details of the Solution record. Limit: 32,000 characters. Label is Solution Details. Note If you have HTML Solutions enabled, any HTML tags used in this field are verified before the object is created or updated. If invalid HTML is entered, an error is thrown. Any JavaScript used in this field is removed before the object is created or updated." id="Solution_SolutionNote">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Solution_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimesUsed : Integer" tooltip="Number of times this solution has been used. Label is Num Related Case." id="Solution_TimesUsed">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Solution_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsHtml : Boolean" tooltip="Indicates whether the Solution is an HTML solution (true) or not (false)." id="Solution_IsHtml">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Solution" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CategoryData" tooltip="4 fields&#xa;[Core] " id="table_CategoryData">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1731" y="253" width="200" height="164" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CategoryData_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CategoryData" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CategoryNodeId : CategoryNode" tooltip="Category Node ID" id="CategoryData_CategoryNodeId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CategoryData" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RelatedSobjectId : Solution" tooltip="sObject ID" id="CategoryData_RelatedSobjectId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CategoryData" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CategoryData_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CategoryData" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CaseRelatedIssue" tooltip="12 fields&#xa;[Core] " id="table_CaseRelatedIssue">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="371" y="264" width="200" height="372" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CaseRelatedIssue_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CaseId : Case" tooltip="Case ID" id="CaseRelatedIssue_CaseId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RelatedIssueId : Incident" tooltip="Related Issue ID" id="CaseRelatedIssue_RelatedIssueId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Case Related Issue Number" id="CaseRelatedIssue_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="CaseRelatedIssue_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CaseRelatedIssue_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RelatedEntityType : Enum" tooltip="Related Issue Type" id="CaseRelatedIssue_RelatedEntityType">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RelationshipType : Enum" tooltip="Relationship Type" id="CaseRelatedIssue_RelationshipType">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_ID__c : Text" tooltip="External ID" id="CaseRelatedIssue_External_ID__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SDO_Service_CaseOwnerId__c : Text" tooltip="Case Owner" id="CaseRelatedIssue_SDO_Service_CaseOwnerId__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SDO_Service_CasePriority__c : Text" tooltip="Priority" id="CaseRelatedIssue_SDO_Service_CasePriority__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SDO_Service_CaseStatus__c : Text" tooltip="Status" id="CaseRelatedIssue_SDO_Service_CaseStatus__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CaseRelatedIssue" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Entitlement" tooltip="24 fields (showing 20)&#xa;[Service Cloud] Represents the customer support an account or contact is eligible to receive." id="table_Entitlement">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-329" y="328" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Entitlement_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Entitlement_AccountId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceContractId : ServiceContract" tooltip="Service Contract ID" id="Entitlement_ServiceContractId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContractLineItemId : ContractLineItem" tooltip="Contract Line Item ID" id="Entitlement_ContractLineItemId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetId : Asset" tooltip="Asset ID" id="Entitlement_AssetId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SlaProcessId : SlaProcess" tooltip="Entitlement Process ID" id="Entitlement_SlaProcessId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BusinessHoursId : BusinessHours" tooltip="Business Hours ID" id="Entitlement_BusinessHoursId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SvcApptBookingWindowsId : OperatingHours" tooltip="The operating hours of the entitlement. This field is visible only if Field Service is enabled." id="Entitlement_SvcApptBookingWindowsId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetWarrantyId : AssetWarranty" tooltip="Asset Warranty ID" id="Entitlement_AssetWarrantyId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: LocationId : Location" tooltip="Location ID" id="Entitlement_LocationId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Required. Name of the entitlement." id="Entitlement_Name">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Entitlement_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Entitlement_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" tooltip="The type of entitlement, such as Web or phone support." id="Entitlement_Type">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartDate : Date" tooltip="The first date the entitlement is in effect." id="Entitlement_StartDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndDate : Date" tooltip="The last day the entitlement is in effect." id="Entitlement_EndDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPerIncident : Boolean" tooltip="Indicates whether the entitlement is limited to supporting a specific number of cases (true) or not (false)." id="Entitlement_IsPerIncident">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CasesPerEntitlement : Integer" tooltip="The total number of cases the entitlement supports." id="Entitlement_CasesPerEntitlement">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RemainingCases : Integer" tooltip="The number of cases the entitlement can support. This field decreases in value by one each time a case is created with the entitlement." id="Entitlement_RemainingCases">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status of the entitlement, such as Expired." id="Entitlement_Status">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Entitlement_more" value="... 4 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Entitlement" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="IncidentRelatedItem" tooltip="11 fields&#xa;[Core] " id="table_IncidentRelatedItem">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="499" y="427" width="200" height="346" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="IncidentRelatedItem_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: IncidentId : Incident" tooltip="Incident ID" id="IncidentRelatedItem_IncidentId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetId : Asset" tooltip="Asset ID" id="IncidentRelatedItem_AssetId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Product2Id : Product2" tooltip="Product ID" id="IncidentRelatedItem_Product2Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Incident Related Item Number" id="IncidentRelatedItem_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="IncidentRelatedItem_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="IncidentRelatedItem_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ImpactType : Enum" tooltip="Impact Type" id="IncidentRelatedItem_ImpactType">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ImpactLevel : Enum" tooltip="Impact Level" id="IncidentRelatedItem_ImpactLevel">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Comment : Text" tooltip="Comment" id="IncidentRelatedItem_Comment">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_ID__c : Text" tooltip="External ID" id="IncidentRelatedItem_External_ID__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_IncidentRelatedItem" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProblemRelatedItem" tooltip="10 fields&#xa;[Core] " id="table_ProblemRelatedItem">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="815" y="454" width="200" height="320" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ProblemRelatedItem_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProblemId : Problem" tooltip="Problem ID" id="ProblemRelatedItem_ProblemId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetId : Asset" tooltip="Asset ID" id="ProblemRelatedItem_AssetId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Problem Related Item Number" id="ProblemRelatedItem_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="ProblemRelatedItem_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="ProblemRelatedItem_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ImpactType : Enum" tooltip="Impact Type" id="ProblemRelatedItem_ImpactType">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ImpactLevel : Enum" tooltip="Impact Level" id="ProblemRelatedItem_ImpactLevel">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Comment : Text" tooltip="Comment" id="ProblemRelatedItem_Comment">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_ID__c : Text" tooltip="External ID" id="ProblemRelatedItem_External_ID__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProblemRelatedItem" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Incident" tooltip="34 fields (showing 20)&#xa;[Service Cloud] An Incident is any unplanned business interruption that has wide-sweeping impacts and requires an urgent fix. This object contains the details of the incident, documenting the history of the incident from registration to closure." id="table_Incident">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom1.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="40" y="474" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Incident_Id">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentIncidentId : Incident" tooltip="Parent Incident ID" id="Incident_ParentIncidentId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ResolvedById : User" tooltip="Resolved By ID" id="Incident_ResolvedById">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BusinessHoursId : BusinessHours" tooltip="Business Hours ID" id="Incident_BusinessHoursId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: EntitlementId : Entitlement" tooltip="Entitlement ID" id="Incident_EntitlementId">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IncidentNumber : Text" tooltip="Incident Number" id="Incident_IncidentNumber">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Incident_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Incident_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Subject : Text" tooltip="A brief description of the incident." id="Incident_Subject">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="A description of the incident. This field can store up to 32 KB of data, but only the first 255 characters appear in reports." id="Incident_Description">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DetectedDateTime : DateTime" tooltip="The date and time (in UTC) when the incident was first detected." id="Incident_DetectedDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartDateTime : DateTime" tooltip="The date and time (in UTC) when the incident began." id="Incident_StartDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndDateTime : DateTime" tooltip="The date and time (in UTC) when the incident ended." id="Incident_EndDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResolutionSummary : Text" tooltip="A description of possible steps to resolve the incident." id="Incident_ResolutionSummary">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResolutionDateTime : DateTime" tooltip="The date and time (in UTC) when the incident was resolved." id="Incident_ResolutionDateTime">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StatusCode : Enum" tooltip="The incident&apos;s status." id="Incident_StatusCode">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Any custom or granular stages a customer may want to track." id="Incident_Status">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Impact : Enum" tooltip="The incident&apos;s impact." id="Incident_Impact">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Urgency : Enum" tooltip="A measure of how long the resolution can be delayed until an incident, problem, or change has a significant business impact." id="Incident_Urgency">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Priority : Enum" tooltip="The impact and urgency of the incident." id="Incident_Priority">
+          <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Incident_more" value="... 14 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Incident" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Problem" tooltip="21 fields (showing 20)&#xa;[Core] " id="table_Problem">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1181" y="499" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Problem_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentProblemId : Problem" tooltip="Parent Problem ID" id="Problem_ParentProblemId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ResolvedById : User" tooltip="Resolved By ID" id="Problem_ResolvedById">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProblemNumber : Text" tooltip="Problem Number" id="Problem_ProblemNumber">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Problem_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Problem_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Subject : Text" tooltip="Subject" id="Problem_Subject">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Problem_Description">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StatusCode : Enum" tooltip="Status Code" id="Problem_StatusCode">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status" id="Problem_Status">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Impact : Enum" tooltip="Impact" id="Problem_Impact">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Urgency : Enum" tooltip="Urgency" id="Problem_Urgency">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Priority : Enum" tooltip="Priority" id="Problem_Priority">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PriorityOverrideReason : Text" tooltip="Priority Override Reason" id="Problem_PriorityOverrideReason">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RootCauseSummary : Text" tooltip="Root Cause Summary" id="Problem_RootCauseSummary">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Category : Enum" tooltip="Category" id="Problem_Category">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SubCategory : Enum" tooltip="Subcategory" id="Problem_SubCategory">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResolutionDateTime : DateTime" tooltip="Resolution Date" id="Problem_ResolutionDateTime">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResolutionSummary : Text" tooltip="Resolution Summary" id="Problem_ResolutionSummary">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_ID__c : Text" tooltip="External ID" id="Problem_External_ID__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Problem_more" value="... 1 more field" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Problem" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="markdown_Service_Cloud" value="Service Cloud" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=40;text=1;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="153" y="-745" width="907" height="146" as="geometry"/>
+        </mxCell>
+        <UserObject label="" tooltip="Many-to-One: Case → Entitlement&#xa;From: Case.EntitlementId&#xa;To: Entitlement.Id" id="edge_Entitlement_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Case_EntitlementId" target="Entitlement_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case → Service Contract&#xa;From: Case.ServiceContractId&#xa;To: Service Contract.Id" id="edge_ServiceContract_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Case_ServiceContractId" target="ServiceContract_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Milestone → Case&#xa;From: Case Milestone.CaseId&#xa;To: Case.Id" id="edge_Case_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseMilestone_CaseId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Entitlement → Service Contract&#xa;From: Entitlement.ServiceContractId&#xa;To: Service Contract.Id" id="edge_ServiceContract_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Entitlement_ServiceContractId" target="ServiceContract_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Incident Related Item → Incident&#xa;From: Incident Related Item.IncidentId&#xa;To: Incident.Id" id="edge_Incident_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="IncidentRelatedItem_IncidentId" target="Incident_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Problem Related Item → Problem&#xa;From: Problem Related Item.ProblemId&#xa;To: Problem.Id" id="edge_Problem_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ProblemRelatedItem_ProblemId" target="Problem_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Incident → Entitlement&#xa;From: Incident.EntitlementId&#xa;To: Entitlement.Id" id="edge_Entitlement_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Incident_EntitlementId" target="Entitlement_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Article → Case&#xa;From: Case Article.CaseId&#xa;To: Case.Id" id="edge_Case_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseArticle_CaseId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Article → Knowledge&#xa;From: Case Article.KnowledgeArticleId&#xa;To: Knowledge.Id" id="edge_Knowledge__ka_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseArticle_KnowledgeArticleId" target="Knowledge_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Article → Knowledge&#xa;From: Case Article.KnowledgeArticleVersionId&#xa;To: Knowledge.Id" id="edge_Knowledge__kav_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseArticle_KnowledgeArticleVersionId" target="Knowledge_Id_1">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Related Issue → Case&#xa;From: Case Related Issue.CaseId&#xa;To: Case.Id" id="edge_Case_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseRelatedIssue_CaseId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Related Issue → Incident&#xa;From: Case Related Issue.RelatedIssueId&#xa;To: Incident.Id" id="edge_Incident_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseRelatedIssue_RelatedIssueId" target="Incident_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Solution → Case&#xa;From: Case Solution.CaseId&#xa;To: Case.Id" id="edge_Case_to_Id_3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseSolution_CaseId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Solution → Solution&#xa;From: Case Solution.SolutionId&#xa;To: Solution.Id" id="edge_Solution_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseSolution_SolutionId" target="Solution_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Team Member → Case&#xa;From: Case Team Member.ParentId&#xa;To: Case.Id" id="edge_Case_to_Id_4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseTeamMember_ParentId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Category Data → Solution&#xa;From: Category Data.RelatedSobjectId&#xa;To: Solution.Id" id="edge_Solution_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CategoryData_RelatedSobjectId" target="Solution_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Comment → Case&#xa;From: Case Comment.ParentId&#xa;To: Case.Id" id="edge_Case_to_Id_5">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseComment_ParentId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Case Contact Role → Case&#xa;From: Case Contact Role.CasesId&#xa;To: Case.Id" id="edge_Case_to_Id_6">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CaseContactRole_CasesId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Knowledge → Knowledge&#xa;From: Knowledge.KnowledgeArticleId&#xa;To: Knowledge.Id" id="edge_Knowledge__ka_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Knowledge_KnowledgeArticleId" target="Knowledge_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Knowledge → Case&#xa;From: Knowledge.SourceId&#xa;To: Case.Id" id="edge_Case_to_Id_7">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Knowledge_SourceId" target="Case_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1117,25 +1117,80 @@ function createEdgeCell(
     relationshipType = 'Relationship';
   }
 
-  // Read strokeWidth from edge style if available, otherwise use default
-  const strokeWidth = edge.style?.strokeWidth ?? 2;
+  // Read edge style properties from edge.style if available
+  const edgeStyle = edge.style || {};
+  
+  // Extract style properties with defaults
+  const strokeWidth = edgeStyle.strokeWidth ?? 2;
+  let strokeColor = edgeStyle.stroke || edgeStyle.strokeColor || '#6c757d';
+  
+  // Sanitize CSS variables - draw.io doesn't support CSS variables like rgb(var(--variable))
+  // Replace any CSS variable references with a valid color
+  if (typeof strokeColor === 'string' && (strokeColor.includes('var(') || strokeColor.includes('--'))) {
+    strokeColor = '#6c757d'; // Default gray color
+  }
+  
+  const fontSize = edgeStyle.fontSize ?? 12;
+  const opacity = edgeStyle.opacity !== undefined ? Math.round(edgeStyle.opacity * 100) : undefined;
+  
+  // Handle dashed lines - React Flow uses strokeDasharray, Draw.io uses dashPattern
+  let dashPattern: string | undefined;
+  if (edgeStyle.strokeDasharray) {
+    // Convert strokeDasharray (e.g., "5,5" or [5, 5]) to Draw.io dashPattern format
+    if (Array.isArray(edgeStyle.strokeDasharray)) {
+      dashPattern = edgeStyle.strokeDasharray.join(',');
+    } else if (typeof edgeStyle.strokeDasharray === 'string') {
+      dashPattern = edgeStyle.strokeDasharray;
+    }
+  }
+  
+  // Determine edge routing style
+  let routingStyle = 'orthogonalEdgeStyle';
+  let curved = 0;
+  let rounded = 0;
+  
+  if (edgeStyle.curved !== undefined && edgeStyle.curved !== false) {
+    // If curved is explicitly set to true, use curved edge style
+    routingStyle = 'curvedEdgeStyle';
+    curved = 1;
+    rounded = 1;
+  } else if (edgeStyle.edgeStyle) {
+    // Allow explicit edgeStyle override
+    routingStyle = edgeStyle.edgeStyle;
+    if (edgeStyle.edgeStyle === 'curvedEdgeStyle' || edgeStyle.edgeStyle === 'curved') {
+      curved = 1;
+      rounded = 1;
+    }
+  }
 
-  const style = buildStyle({
-    edgeStyle: 'orthogonalEdgeStyle',  // Orthogonal routing for cleaner right-angle lines
-    rounded: 0,  // Sharp corners for orthogonal lines
-    orthogonalLoop: 1,
+  const styleObj: DrawioStyle = {
+    edgeStyle: routingStyle,
+    rounded,
+    orthogonalLoop: routingStyle === 'orthogonalEdgeStyle' ? 1 : 0,
     jettySize: 'auto',
-    fontSize: 12,
+    fontSize,
     html: 1,
     endArrow,
     startArrow,
     endFill: 0,
     startFill: 0,
     strokeWidth,
-    strokeColor: '#6c757d',
-    curved: 0,  // Ensure no curves on orthogonal lines
+    strokeColor,
+    curved,
     shadow: 0,  // No shadow on edges
-  });
+  };
+  
+  // Add dashPattern if provided
+  if (dashPattern) {
+    styleObj.dashPattern = dashPattern;
+  }
+  
+  // Add opacity if provided
+  if (opacity !== undefined) {
+    styleObj.opacity = opacity;
+  }
+
+  const style = buildStyle(styleObj);
 
   // Build informative tooltip
   const sourceHandle = edge.sourceHandle?.replace(/-(source|target)(-inv)?$/, '') || '';
@@ -1208,25 +1263,80 @@ function createUmlEdgeCell(
     relationshipType = 'Association';
   }
 
-  // Read strokeWidth from edge style if available, otherwise use default
-  const strokeWidth = edge.style?.strokeWidth ?? 1.5;
+  // Read edge style properties from edge.style if available
+  const edgeStyle = edge.style || {};
+  
+  // Extract style properties with defaults
+  const strokeWidth = edgeStyle.strokeWidth ?? 1.5;
+  let strokeColor = edgeStyle.stroke || edgeStyle.strokeColor || '#6c757d';
+  
+  // Sanitize CSS variables - draw.io doesn't support CSS variables like rgb(var(--variable))
+  // Replace any CSS variable references with a valid color
+  if (typeof strokeColor === 'string' && (strokeColor.includes('var(') || strokeColor.includes('--'))) {
+    strokeColor = '#6c757d'; // Default gray color
+  }
+  
+  const fontSize = edgeStyle.fontSize ?? 11;
+  const opacity = edgeStyle.opacity !== undefined ? Math.round(edgeStyle.opacity * 100) : undefined;
+  
+  // Handle dashed lines - React Flow uses strokeDasharray, Draw.io uses dashPattern
+  let dashPattern: string | undefined;
+  if (edgeStyle.strokeDasharray) {
+    // Convert strokeDasharray (e.g., "5,5" or [5, 5]) to Draw.io dashPattern format
+    if (Array.isArray(edgeStyle.strokeDasharray)) {
+      dashPattern = edgeStyle.strokeDasharray.join(',');
+    } else if (typeof edgeStyle.strokeDasharray === 'string') {
+      dashPattern = edgeStyle.strokeDasharray;
+    }
+  }
+  
+  // Determine edge routing style
+  let routingStyle = 'orthogonalEdgeStyle';
+  let curved = 0;
+  let rounded = 0;
+  
+  if (edgeStyle.curved !== undefined && edgeStyle.curved !== false) {
+    // If curved is explicitly set to true, use curved edge style
+    routingStyle = 'curvedEdgeStyle';
+    curved = 1;
+    rounded = 1;
+  } else if (edgeStyle.edgeStyle) {
+    // Allow explicit edgeStyle override
+    routingStyle = edgeStyle.edgeStyle;
+    if (edgeStyle.edgeStyle === 'curvedEdgeStyle' || edgeStyle.edgeStyle === 'curved') {
+      curved = 1;
+      rounded = 1;
+    }
+  }
 
-  const style = buildStyle({
-    edgeStyle: 'orthogonalEdgeStyle',
-    rounded: 0,
-    orthogonalLoop: 1,
+  const styleObj: DrawioStyle = {
+    edgeStyle: routingStyle,
+    rounded,
+    orthogonalLoop: routingStyle === 'orthogonalEdgeStyle' ? 1 : 0,
     jettySize: 'auto',
-    fontSize: 11,
+    fontSize,
     html: 1,
     endArrow,
     startArrow,
     endFill,
     startFill,
     strokeWidth,
-    strokeColor: '#6c757d',
-    curved: 0,
+    strokeColor,
+    curved,
     shadow: 0,  // No shadow on edges
-  });
+  };
+  
+  // Add dashPattern if provided
+  if (dashPattern) {
+    styleObj.dashPattern = dashPattern;
+  }
+  
+  // Add opacity if provided
+  if (opacity !== undefined) {
+    styleObj.opacity = opacity;
+  }
+
+  const style = buildStyle(styleObj);
 
   // Build informative tooltip
   const sourceHandle = edge.sourceHandle?.replace(/-(source|target)(-inv)?$/, '') || '';

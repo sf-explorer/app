@@ -101,6 +101,22 @@ Tests viewer URL generation.
 node scripts/test-viewer-url.js
 ```
 
+#### `test-edge-styles.js`
+Tests edge style support (strokeWidth, strokeColor, strokeDasharray, curved, opacity, fontSize).
+
+```bash
+node scripts/test-edge-styles.js
+```
+
+**Tests:**
+- Edge style properties (strokeWidth, strokeColor, strokeDasharray)
+- Curved edges
+- Opacity conversion
+- Font size
+- Edge labels
+- Default values
+- Both ERD and UML styles
+
 ### 🔄 Batch Processing
 
 #### `batch-convert.js`

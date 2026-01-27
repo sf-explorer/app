@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.925Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+  <diagram id="diagram1" name="datacloud">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0">
+        </mxCell>
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <UserObject label="Unified Link Contact Point Email R1" tooltip="7 fields&#xa;(Data Cloud Data Model Object)" id="table_Unified_Link_Contact_Point_Email_R1">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="692" y="-316" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Unified_Link_Contact_Point_Email_R1_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CreatedDate__c : DateTime" tooltip="Created Date" id="Unified_Link_Contact_Point_Email_R1_CreatedDate__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_SourceRecordId__c : Text" tooltip="Key Qualifier Id" id="Unified_Link_Contact_Point_Email_R1_KQ_SourceRecor">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PriorityBucket__c : Text" tooltip="Priority Bucket" id="Unified_Link_Contact_Point_Email_R1_PriorityBucket">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SourceRecordId__c : Text" tooltip="Contact Point Email Id" id="Unified_Link_Contact_Point_Email_R1_SourceRecordId">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="Unified_Link_Contact_Point_Email_R1_ssot__Internal">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UnifiedRecordId__c : Text" tooltip="Unified Contact Point Email Id" id="Unified_Link_Contact_Point_Email_R1_UnifiedRecordI">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unified Indv Contact Point Email R1" tooltip="5 fields&#xa;(Data Cloud Data Model Object)" id="table_Unified_Indv_Contact_Point_Email_R1">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="302" y="-185" width="200" height="190" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Unified_Indv_Contact_Point_Email_R1_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Indv_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ssot__PartyId__c : UnifiedssotIndividualR1__dlm" tooltip="Party" id="Unified_Indv_Contact_Point_Email_R1_ssot__PartyId_">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Indv_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EmailAddress__c : Text" tooltip="Email Address" id="Unified_Indv_Contact_Point_Email_R1_ssot__EmailAdd">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Indv_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="Unified Contact Point Email Id" id="Unified_Indv_Contact_Point_Email_R1_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Indv_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IsActive__c : Text" tooltip="Is Active" id="Unified_Indv_Contact_Point_Email_R1_ssot__IsActive">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Indv_Contact_Point_Email_R1" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unified Individual R1" tooltip="4 fields&#xa;(Data Cloud Data Model Object)" id="table_Unified_Individual_R1">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-9" y="-33" width="200" height="164" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Unified_Individual_R1_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Individual_R1" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__FirstName__c : Text" tooltip="First Name" id="Unified_Individual_R1_ssot__FirstName__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Individual_R1" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="Unified Individual Id" id="Unified_Individual_R1_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Individual_R1" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__LastName__c : Text" tooltip="Last Name" id="Unified_Individual_R1_ssot__LastName__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Individual_R1" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Contact Point Email" tooltip="6 fields&#xa;(Data Cloud Data Model Object)" id="table_Contact_Point_Email">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="573" y="74" width="200" height="216" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Contact_Point_Email_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ssot__Id__c : ssot__Individual__dlm" tooltip="Contact Point Email Id" id="Contact_Point_Email_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ssot__PartyId__c : ssot__Individual__dlm" tooltip="Party" id="Contact_Point_Email_ssot__PartyId__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_PartyId__c : Text" tooltip="Key Qualifier Party" id="Contact_Point_Email_KQ_PartyId__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EmailAddress__c : Text" tooltip="Email Address" id="Contact_Point_Email_ssot__EmailAddress__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IsActive__c : Text" tooltip="Is Active" id="Contact_Point_Email_ssot__IsActive__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact_Point_Email" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Unified Link Individual R1" tooltip="8 fields&#xa;(Data Cloud Data Model Object)" id="table_Unified_Link_Individual_R1">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-352" y="93" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Unified_Link_Individual_R1_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnifiedRecordId__c : UnifiedssotIndividualR1__dlm" tooltip="Unified Individual Id" id="Unified_Link_Individual_R1_UnifiedRecordId__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CreatedDate__c : DateTime" tooltip="Created Date" id="Unified_Link_Individual_R1_CreatedDate__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_SourceRecordId__c : Text" tooltip="Key Qualifier Id" id="Unified_Link_Individual_R1_KQ_SourceRecordId__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MatchKeys__c : Text" tooltip="Match Keys" id="Unified_Link_Individual_R1_MatchKeys__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PriorityBucket__c : Text" tooltip="Priority Bucket" id="Unified_Link_Individual_R1_PriorityBucket__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SourceRecordId__c : Text" tooltip="Individual Id" id="Unified_Link_Individual_R1_SourceRecordId__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="Unified_Link_Individual_R1_ssot__InternalOrganizat">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Unified_Link_Individual_R1" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Individual__dlm" tooltip="4 fields&#xa;(Data Cloud Data Model Object)" id="table_ssot__Individual__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="136" y="122" width="200" height="164" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__Individual__dlm_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Individual__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__FirstName__c : Text" tooltip="First Name" id="ssot__Individual__dlm_ssot__FirstName__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Individual__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="Individual Id" id="ssot__Individual__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Individual__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__LastName__c : Text" tooltip="Last Name" id="ssot__Individual__dlm_ssot__LastName__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Individual__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Party__dlm" tooltip="2 fields&#xa;(Data Cloud Data Model Object)" id="table_ssot__Party__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="117" y="266" width="200" height="112" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__Party__dlm_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Party__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="Party Id" id="ssot__Party__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__Party__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Individual - Latest" tooltip="8 fields&#xa;(Data Cloud Data Model Object)" id="table_Individual_-_Latest">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="442" y="298" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="Individual_-_Latest_Id">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Id__c : ssot__Individual__dlm" tooltip="Id" id="Individual_-_Latest_Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Delta_Type__c : Text" tooltip="Delta Type" id="Individual_-_Latest_Delta_Type__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Parent_Segment_Id__c : Text" tooltip="Parent Segment Id" id="Individual_-_Latest_Parent_Segment_Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Segment_Id__c : Text" tooltip="Segment Id" id="Individual_-_Latest_Segment_Id__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Snapshot_Type__c : Text" tooltip="Snapshot Type" id="Individual_-_Latest_Snapshot_Type__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Timestamp__c : DateTime" tooltip="Timestamp" id="Individual_-_Latest_Timestamp__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Version_Stamp__c : DateTime" tooltip="Version Stamp" id="Individual_-_Latest_Version_Stamp__c">
+          <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Individual_-_Latest" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Individual → Unified Link Individual R1&#xa;From: Individual.ssot__Id__c&#xa;To: Unified Link Individual R1.Id" id="edge_UnifiedLinkssotIndividualR1__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__Individual__dlm_ssot__Id__c" target="Unified_Link_Individual_R1_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Contact Point Email → Individual&#xa;From: Contact Point Email.ssot__Id__c&#xa;To: Individual.Id" id="edge_ssot__Individual__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Contact_Point_Email_ssot__Id__c" target="ssot__Individual__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Contact Point Email → Individual&#xa;From: Contact Point Email.ssot__PartyId__c&#xa;To: Individual.Id" id="edge_ssot__Individual__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Contact_Point_Email_ssot__PartyId__c" target="ssot__Individual__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Individual - Latest → Individual&#xa;From: Individual - Latest.Id__c&#xa;To: Individual.Id" id="edge_ssot__Individual__dlm_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Individual_-_Latest_Id__c" target="ssot__Individual__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Unified Link Individual R1 → Unified Individual R1&#xa;From: Unified Link Individual R1.UnifiedRecordId__c&#xa;To: Unified Individual R1.Id" id="edge_UnifiedssotIndividualR1__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Unified_Link_Individual_R1_UnifiedRecordId__c" target="Unified_Individual_R1_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Unified Link Contact Point Email R1 → Unified Indv Contact Point Email R1&#xa;From: Unified Link Contact Point Email R1.UnifiedRecordId__c&#xa;To: Unified Indv Contact Point Email R1.Id" id="edge_UnifiedssotContactPointEmailR1__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Unified_Link_Contact_Point_Email_R1_UnifiedRecordI" target="Unified_Indv_Contact_Point_Email_R1_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Unified Indv Contact Point Email R1 → Unified Individual R1&#xa;From: Unified Indv Contact Point Email R1.ssot__PartyId__c&#xa;To: Unified Individual R1.Id" id="edge_UnifiedssotIndividualR1__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Unified_Indv_Contact_Point_Email_R1_ssot__PartyId_" target="Unified_Individual_R1_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

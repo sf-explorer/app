@@ -21,9 +21,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build",
-    "slice-enums": "node scripts/slice-all-enums.cjs",
-    "slice-enums:single": "node scripts/slice-enums.cjs"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "salesforce",

@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.927Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+  <diagram id="diagram1" name="discoveryFramework">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0">
+        </mxCell>
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <mxCell id="group_Setup" value="Setup" style="swimlane=0;fillColor=#f5f5f5;strokeColor=#c2c2c2;strokeWidth=2;rounded=1;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
+            <mxGeometry x="-816" y="-828" width="1429" height="1606" as="geometry"/>
+        </mxCell>
+        <mxCell id="group_Execution" value="Execution" style="swimlane=0;fillColor=#fcfcfc;strokeColor=#c9c9c9;strokeWidth=2;rounded=1;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
+            <mxGeometry x="648" y="-817" width="1561" height="1569" as="geometry"/>
+        </mxCell>
+        <UserObject label="AssessmentQuestionResponse" tooltip="26 fields (showing 20)&#xa;[Discovery Framework] " id="table_AssessmentQuestionResponse">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="489" y="99" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentQuestionResponse_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentId : Assessment" tooltip="Assessment ID" id="AssessmentQuestionResponse_AssessmentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentQuestionId : AssessmentQuestionVersion" tooltip="Assessment Question Version ID" id="AssessmentQuestionResponse_AssessmentQuestionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentAsmtQuestionVersionId : AssessmentQuestionVersion" tooltip="Assessment Question Version ID" id="AssessmentQuestionResponse_ParentAsmtQuestionVersi">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ReviewerRoleId : CodeSet" tooltip="Reviewer Role ID" id="AssessmentQuestionResponse_ReviewerRoleId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ReviewerId : Account" tooltip="Reviewer ID" id="AssessmentQuestionResponse_ReviewerId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentQuestionResponse_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentQuestionResponse_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentQuestionResponse_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeValue : Text" tooltip="Time Value" id="AssessmentQuestionResponse_TimeValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DateValue : Date" tooltip="Date Value" id="AssessmentQuestionResponse_DateValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DateTimeValue : DateTime" tooltip="Date Time Value" id="AssessmentQuestionResponse_DateTimeValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IntegerResponseValue : Integer" tooltip="Integer Response Value" id="AssessmentQuestionResponse_IntegerResponseValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyValue : Number" tooltip="Currency Value" id="AssessmentQuestionResponse_CurrencyValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsTrueOrFalseValue : Boolean" tooltip="Boolean Value" id="AssessmentQuestionResponse_IsTrueOrFalseValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResponseText : Text" tooltip="Response Text" id="AssessmentQuestionResponse_ResponseText">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DecimalResponseValue : Number" tooltip="Decimal Response Value" id="AssessmentQuestionResponse_DecimalResponseValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ChoiceValue : Text" tooltip="Choice Value" id="AssessmentQuestionResponse_ChoiceValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResponseValue : Text" tooltip="Response Value" id="AssessmentQuestionResponse_ResponseValue">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResponseType : Text" tooltip="Response Type" id="AssessmentQuestionResponse_ResponseType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="AssessmentQuestionResponse_more" value="... 6 more fields" style="text=1;strokeColor=#1aad3f;fillColor=#9affbf;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_AssessmentQuestionResponse" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Assessment Question Version" tooltip="19 fields&#xa;[Discovery Framework] " id="table_Assessment_Question_Version">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="1121" y="371" width="200" height="554" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Assessment_Question_Version_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentQuestionId : AssessmentQuestion" tooltip="Assessment Question ID" id="Assessment_Question_Version_AssessmentQuestionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="Assessment_Question_Version_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Assessment_Question_Version_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Assessment_Question_Version_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuestionText : Text" tooltip="Question Text" id="Assessment_Question_Version_QuestionText">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DataType : Enum" tooltip="Data Type" id="Assessment_Question_Version_DataType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Assessment_Question_Version_Description">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="VersionNumber : Integer" tooltip="Version Number" id="Assessment_Question_Version_VersionNumber">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Text" tooltip="Status" id="Assessment_Question_Version_Status">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResponseValues : Text" tooltip="Response Values" id="Assessment_Question_Version_ResponseValues">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" tooltip="Active" id="Assessment_Question_Version_IsActive">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ActivationDateTime : DateTime" tooltip="Activation Date" id="Assessment_Question_Version_ActivationDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeactivationDateTime : DateTime" tooltip="Deactivation Date" id="Assessment_Question_Version_DeactivationDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsOptionSourceResponseValue : Boolean" tooltip="Option Source Response Value" id="Assessment_Question_Version_IsOptionSourceResponse">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HelpText : Text" tooltip="Help Text" id="Assessment_Question_Version_HelpText">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AdditionalInformation : Text" tooltip="Additional Information" id="Assessment_Question_Version_AdditionalInformation">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ExternalAsmtContentVersion : Text" tooltip="External Assessment Content Version" id="Assessment_Question_Version_ExternalAsmtContentVer">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="GuidanceInformation : Text" tooltip="Guidance Information" id="Assessment_Question_Version_GuidanceInformation">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment_Question_Version" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentQuestion" tooltip="19 fields&#xa;[Discovery Framework] " id="table_AssessmentQuestion">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="741" y="372" width="200" height="554" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentQuestion_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RelatedQuestionId : AssessmentQuestion" tooltip="Assessment Question ID" id="AssessmentQuestion_RelatedQuestionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ActiveVersionId : AssessmentQuestionVersion" tooltip="Assessment Question Version ID" id="AssessmentQuestion_ActiveVersionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DisclosureDefinitionVerRefId : DisclosureDefinitionVersion" tooltip="Disclosure Definition Version ID" id="AssessmentQuestion_DisclosureDefinitionVerRefId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentQuestion_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentQuestion_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentQuestion_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuestionText : Text" tooltip="Question Text" id="AssessmentQuestion_QuestionText">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="AssessmentQuestion_Description">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Developer Name" id="AssessmentQuestion_DeveloperName">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DataType : Enum" tooltip="Data Type" id="AssessmentQuestion_DataType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuestionCategory : Enum" tooltip="Category" id="AssessmentQuestion_QuestionCategory">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FormulaResponseDataType : Enum" tooltip="Formula Response Data Type" id="AssessmentQuestion_FormulaResponseDataType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Namespace : Text" tooltip="Namespace" id="AssessmentQuestion_Namespace">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SourceSystemName : Enum" tooltip="Source System Name" id="AssessmentQuestion_SourceSystemName">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ShouldExcludeFromMetadata : Boolean" tooltip="Exclude From Metadata" id="AssessmentQuestion_ShouldExcludeFromMetadata">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ShouldHideInDesigner : Boolean" tooltip="Hide In Designer" id="AssessmentQuestion_ShouldHideInDesigner">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UniqueIndex : Text" tooltip="Unique Index" id="AssessmentQuestion_UniqueIndex">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DisclosureDefinitionVer : Enum" tooltip="Disclosure Definition Version" id="AssessmentQuestion_DisclosureDefinitionVer">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestion" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentQuestionAssignment" tooltip="6 fields&#xa;[Discovery Framework] " id="table_AssessmentQuestionAssignment">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="403" y="401" width="200" height="216" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentQuestionAssignment_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentQuestionId : AssessmentQuestion" tooltip="Assessment Question ID" id="AssessmentQuestionAssignment_AssessmentQuestionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentQuestionSetId : AssessmentQuestionSet" tooltip="Assessment Question Set ID" id="AssessmentQuestionAssignment_AssessmentQuestionSet">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentQuestionAssignment_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentQuestionAssignment_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentQuestionAssignment_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionAssignment" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentQuestionSet" tooltip="7 fields&#xa;[Discovery Framework] " id="table_AssessmentQuestionSet">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="38" y="408" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentQuestionSet_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentQuestionSet_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentQuestionSet_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentQuestionSet_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text" tooltip="Developer Name" id="AssessmentQuestionSet_DeveloperName">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Namespace : Text" tooltip="Namespace" id="AssessmentQuestionSet_Namespace">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UniqueIndex : Text" tooltip="Unique Index" id="AssessmentQuestionSet_UniqueIndex">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentQuestionSet" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentSavedSession" tooltip="6 fields&#xa;[Discovery Framework] " id="table_AssessmentSavedSession">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="500" y="640" width="200" height="216" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentSavedSession_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentId : Assessment" tooltip="Assessment ID" id="AssessmentSavedSession_AssessmentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentSavedSession_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentSavedSession_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentSavedSession_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UsageType : Enum" tooltip="Usage Type" id="AssessmentSavedSession_UsageType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSavedSession" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Assessment" tooltip="23 fields (showing 20)&#xa;[Discovery Framework] " id="table_Assessment">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="60" y="686" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Assessment_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Assessment_AccountId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: CaseId : Case" tooltip="Case ID" id="Assessment_CaseId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : Assessment" tooltip="Parent Record Reference" id="Assessment_ParentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="Assessment_ContactId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ResponseContextId : AI_Agent_Conversation_Entry__c" tooltip="Response Context ID" id="Assessment_ResponseContextId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OmniProcessId : OmniProcess" tooltip="Omni Process ID" id="Assessment_OmniProcessId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ApplicantId : Applicant" tooltip="Applicant ID" id="Assessment_ApplicantId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ExternalAssessmentDefId : ExternalAssessmentDefinition" tooltip="External Assessment Definition ID" id="Assessment_ExternalAssessmentDefId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessorId : Account" tooltip="Assessor ID" id="Assessment_AssessorId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentStagedDataId : AssessmentStagedData" tooltip="Assessment Staged Data ID" id="Assessment_AssessmentStagedDataId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="Assessment_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Assessment_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Assessment_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentRating : Enum" tooltip="Assessment Rating" id="Assessment_AssessmentRating">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EffectiveDateTime : DateTime" tooltip="Effective Date" id="Assessment_EffectiveDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ExpirationDateTime : DateTime" tooltip="Expiration Date" id="Assessment_ExpirationDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentStatus : Enum" tooltip="Assessment Status" id="Assessment_AssessmentStatus">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" tooltip="Type" id="Assessment_Type">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsSavedForLater : Boolean" tooltip="Saved For Later" id="Assessment_IsSavedForLater">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Assessment_more" value="... 3 more fields" style="text=1;strokeColor=#1aad3f;fillColor=#9affbf;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Assessment" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Contact" tooltip="128 fields (showing 20)&#xa;[Core] Represents a contact, which is a person associated with an account." id="table_Contact">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/contact.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="1273" y="819" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Contact_Id">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Contact_AccountId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Contact_RecordTypeId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ReportsToId : Contact" tooltip="Reports To ID" id="Contact_ReportsToId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: IndividualId : Individual" tooltip="Individual ID" id="Contact_IndividualId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: EngagementScoreId : EngagementScore" tooltip="Behavior Score ID" id="Contact_EngagementScoreId">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_Service_Primary_Messaging_User__c : MessagingEndUser" tooltip="Primary Messaging User" id="Contact_SDO_Service_Primary_Messaging_User__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_SFS_Rider_BotContext__c : ServiceAppointment" tooltip="Rider Context" id="Contact_SDO_SFS_Rider_BotContext__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_SFS_Rider_ServiceTerritory__c : ServiceTerritory" tooltip="Rider Service Territory" id="Contact_SDO_SFS_Rider_ServiceTerritory__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Ptnr_Onbd_Fmwk__Onboarding_Plan__c : Ptnr_Onbd_Fmwk__Onboarding__c" tooltip="Onboarding Template" id="Contact_Ptnr_Onbd_Fmwk__Onboarding_Plan__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_SFS_Tracker_BotContext__c : ServiceAppointment" tooltip="Tracker BotContext" id="Contact_SDO_SFS_Tracker_BotContext__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SDO_SCOM_OOA_Approver__c : Contact" tooltip="B2B Approver" id="Contact_SDO_SCOM_OOA_Approver__c">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPersonAccount : Boolean" tooltip="Read only. Indicates whether this account has a record type of Person Account (true) or not (false). Label is Is Person Account." id="Contact_IsPersonAccount">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastName : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_LastName">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FirstName : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_FirstName">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Salutation : Enum" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_Salutation">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="OtherStreet : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherStreet">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="OtherCity : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherCity">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="OtherState : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherState">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Contact_more" value="... 108 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Contact" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="AssessmentSignature" tooltip="12 fields&#xa;[Discovery Framework] " id="table_AssessmentSignature">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="485" y="851" width="200" height="372" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentSignature_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentId : Assessment" tooltip="Assessment ID" id="AssessmentSignature_AssessmentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DigitalSignatureId : DigitalSignature" tooltip="Digital Signature ID" id="AssessmentSignature_DigitalSignatureId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: SigneeId : Contact" tooltip="Signee ID" id="AssessmentSignature_SigneeId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentSignature_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentSignature_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentSignature_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SignedBy : Text" tooltip="Signed By" id="AssessmentSignature_SignedBy">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SignedInitial : Text" tooltip="Signed Initial" id="AssessmentSignature_SignedInitial">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Place : Text" tooltip="Place" id="AssessmentSignature_Place">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DateTime : DateTime" tooltip="Date Time" id="AssessmentSignature_DateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="OmniscriptIdentifier : Text" tooltip="Omniscript Identifier" id="AssessmentSignature_OmniscriptIdentifier">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentSignature" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentTaskContentDocument" tooltip="7 fields&#xa;[Discovery Framework] " id="table_AssessmentTaskContentDocument">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1295" y="873" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentTaskContentDocument_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentTaskId : AssessmentTask" tooltip="Assessment Task ID" id="AssessmentTaskContentDocument_AssessmentTaskId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContentDocumentId : ContentDocument" tooltip="ContentDocument ID" id="AssessmentTaskContentDocument_ContentDocumentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContentContextId : AI_Agent_Conversation_Entry__c" tooltip="ContentContext ID" id="AssessmentTaskContentDocument_ContentContextId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentTaskContentDocument_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentTaskContentDocument_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentTaskContentDocument_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskContentDocument" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentTask" tooltip="16 fields&#xa;[Discovery Framework] " id="table_AssessmentTask">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="435" y="918" width="200" height="476" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentTask_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentId : Visit" tooltip="Parent Record Reference" id="AssessmentTask_ParentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentTaskDefinitionId : AssessmentTaskDefinition" tooltip="Assessment Task Definition ID" id="AssessmentTask_AssessmentTaskDefinitionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TaskDefinitionId : OtherComponentTask" tooltip="TaskDefinition ID" id="AssessmentTask_TaskDefinitionId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssignedToId : Group" tooltip="AssignedTo ID" id="AssessmentTask_AssignedToId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ReferenceRecordId : ActionPlan" tooltip="ReferenceRecord ID" id="AssessmentTask_ReferenceRecordId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentTask_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentTask_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentTask_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="AssessmentTask_Description">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TaskType : Enum" tooltip="Task Type" id="AssessmentTask_TaskType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status" id="AssessmentTask_Status">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsRequired : Boolean" tooltip="Required" id="AssessmentTask_IsRequired">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SequenceNumber : Integer" tooltip="Sequence" id="AssessmentTask_SequenceNumber">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartTime : DateTime" tooltip="Start Time" id="AssessmentTask_StartTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndTime : DateTime" tooltip="End Time" id="AssessmentTask_EndTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTask" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentTaskDefinition" tooltip="6 fields&#xa;[Discovery Framework] " id="table_AssessmentTaskDefinition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="890" y="1087" width="200" height="216" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentTaskDefinition_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentTaskDefinition_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentTaskDefinition_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentTaskDefinition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Assessment Task Definition Description" id="AssessmentTaskDefinition_Description">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TaskType : Enum" tooltip="Assessment Task Definition Task Type" id="AssessmentTaskDefinition_TaskType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskDefinition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Omni Process" tooltip="34 fields (showing 20)&#xa;[omnistudio] " id="table_Omni_Process">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#9B59B6;strokeColor=#682683;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/sales_path.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="720" y="1122" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Omni_Process_Id">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#e8a6ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="Omni_Process_Name">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Omni_Process_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Omni_Process_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" tooltip="Description" id="Omni_Process_Description">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RequiredPermission : Text" tooltip="Required Permission" id="Omni_Process_RequiredPermission">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ElementTypeComponentMapping : Text" tooltip="Element Type Component Mapping" id="Omni_Process_ElementTypeComponentMapping">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CustomJavaScript : Text" tooltip="Custom JavaScript" id="Omni_Process_CustomJavaScript">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" tooltip="Active" id="Omni_Process_IsActive">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsMetadataCacheDisabled : Boolean" tooltip="Disable Metadata Cache" id="Omni_Process_IsMetadataCacheDisabled">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResponseCacheType : Enum" tooltip="Response Cache Type" id="Omni_Process_ResponseCacheType">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsIntegrationProcedure : Boolean" tooltip="Integration Procedure" id="Omni_Process_IsIntegrationProcedure">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsOmniScriptEmbeddable : Boolean" tooltip="OmniScript Embeddable" id="Omni_Process_IsOmniScriptEmbeddable">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsWebCompEnabled : Boolean" tooltip="Web Component Enabled" id="Omni_Process_IsWebCompEnabled">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Language : Enum" tooltip="Language" id="Omni_Process_Language">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="OmniProcessKey : Text" tooltip="Omni Process Key" id="Omni_Process_OmniProcessKey">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PropertySetConfig : Text" tooltip="Property Set Configuration" id="Omni_Process_PropertySetConfig">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SubType : Enum" tooltip="Sub Type" id="Omni_Process_SubType">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CustomHtmlTemplates : Text" tooltip="Custom HTML Templates" id="Omni_Process_CustomHtmlTemplates">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" tooltip="Type" id="Omni_Process_Type">
+          <mxCell style="text=1;strokeColor=#813f9c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Omni_Process_more" value="... 14 more fields" style="text=1;strokeColor=#813f9c;fillColor=#ffbfff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Omni_Process" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="AssessmentTaskIndDefinition" tooltip="7 fields&#xa;[Discovery Framework] " id="table_AssessmentTaskIndDefinition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1347" y="1147" width="200" height="242" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentTaskIndDefinition_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentIndDefinitionId : AssessmentIndicatorDefinition" tooltip="Assessment Indicator Definition ID" id="AssessmentTaskIndDefinition_AssessmentIndDefinitio">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentTaskDefinitionId : AssessmentTaskDefinition" tooltip="Assessment Task Definition ID" id="AssessmentTaskIndDefinition_AssessmentTaskDefiniti">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentTaskIndDefinition_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentTaskIndDefinition_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentTaskIndDefinition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DisplayOrder : Integer" tooltip="Display Order" id="AssessmentTaskIndDefinition_DisplayOrder">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentTaskIndDefinition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentEnvelope" tooltip="11 fields&#xa;[Discovery Framework] " id="table_AssessmentEnvelope">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="858" y="1150" width="200" height="346" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentEnvelope_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="AssessmentEnvelope_AccountId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RequestReferenceId : Case" tooltip="Request Reference ID" id="AssessmentEnvelope_RequestReferenceId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="AssessmentEnvelope_ContactId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Envelope Name" id="AssessmentEnvelope_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentEnvelope_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentEnvelope_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ExpirationDateTime : DateTime" tooltip="Envelope Expiration Date" id="AssessmentEnvelope_ExpirationDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Envelope Status" id="AssessmentEnvelope_Status">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NotificationStatus : Enum" tooltip="Notification Status" id="AssessmentEnvelope_NotificationStatus">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="UsageType : Enum" tooltip="Usage Type" id="AssessmentEnvelope_UsageType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelope" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentEnvelopeItem" tooltip="8 fields&#xa;[Discovery Framework] " id="table_AssessmentEnvelopeItem">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Execution" collapsed="0">
+            <mxGeometry x="485" y="1176" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentEnvelopeItem_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentEnvelopeId : AssessmentEnvelope" tooltip="Assessment Envelope ID" id="AssessmentEnvelopeItem_AssessmentEnvelopeId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssessmentId : Assessment" tooltip="Assessment ID" id="AssessmentEnvelopeItem_AssessmentId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OmniProcessId : OmniProcess" tooltip="Omni Process ID" id="AssessmentEnvelopeItem_OmniProcessId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Assessment Envelope Item Name" id="AssessmentEnvelopeItem_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentEnvelopeItem_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentEnvelopeItem_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" tooltip="Status" id="AssessmentEnvelopeItem_Status">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentEnvelopeItem" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AssessmentDefinition" tooltip="13 fields&#xa;[Discovery Framework] " id="table_AssessmentDefinition">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#34C759;strokeColor=#019426;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/learner_program.svg;" vertex="1" parent="group_Setup" collapsed="0">
+            <mxGeometry x="1082" y="1230" width="200" height="398" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AssessmentDefinition_Id">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#81ffa6;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OmniProcessId : OmniProcess" tooltip="Omni Process ID" id="AssessmentDefinition_OmniProcessId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PublisherId : Account" tooltip="Publisher ID" id="AssessmentDefinition_PublisherId">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" tooltip="Name" id="AssessmentDefinition_Name">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AssessmentDefinition_CurrencyIsoCode">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AssessmentDefinition_LastModifiedDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EffectiveFromDate : DateTime" tooltip="Effective From" id="AssessmentDefinition_EffectiveFromDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="EffectiveToDate : DateTime" tooltip="Effective To" id="AssessmentDefinition_EffectiveToDate">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PerformerType : Text" tooltip="Performer Type" id="AssessmentDefinition_PerformerType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DisplayType : Enum" tooltip="Display Type" id="AssessmentDefinition_DisplayType">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastRevisedDateTime : DateTime" tooltip="Last Revised Date" id="AssessmentDefinition_LastRevisedDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Purpose : Text" tooltip="Purpose" id="AssessmentDefinition_Purpose">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ApprovalDateTime : DateTime" tooltip="Approval Date" id="AssessmentDefinition_ApprovalDateTime">
+          <mxCell style="text=1;strokeColor=#1aad3f;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AssessmentDefinition" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="annotation_Client_Data" value="Client Data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#cccc00;fontSize=12;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="734" y="-954" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <UserObject label="" tooltip="Many-to-One: Assessment → Contact&#xa;From: Assessment.ContactId&#xa;To: Contact.Id" id="edge_Contact_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Assessment_ContactId" target="Contact_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment → Omni Process&#xa;From: Assessment.OmniProcessId&#xa;To: Omni Process.Id" id="edge_OmniProcess_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Assessment_OmniProcessId" target="Omni_Process_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Definition → Omni Process&#xa;From: Assessment Definition.OmniProcessId&#xa;To: Omni Process.Id" id="edge_OmniProcess_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentDefinition_OmniProcessId" target="Omni_Process_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Envelope → Contact&#xa;From: Assessment Envelope.ContactId&#xa;To: Contact.Id" id="edge_Contact_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentEnvelope_ContactId" target="Contact_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Envelope Item → Assessment Envelope&#xa;From: Assessment Envelope Item.AssessmentEnvelopeId&#xa;To: Assessment Envelope.Id" id="edge_AssessmentEnvelope_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentEnvelopeItem_AssessmentEnvelopeId" target="AssessmentEnvelope_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Envelope Item → Assessment&#xa;From: Assessment Envelope Item.AssessmentId&#xa;To: Assessment.Id" id="edge_Assessment_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentEnvelopeItem_AssessmentId" target="Assessment_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Envelope Item → Omni Process&#xa;From: Assessment Envelope Item.OmniProcessId&#xa;To: Omni Process.Id" id="edge_OmniProcess_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentEnvelopeItem_OmniProcessId" target="Omni_Process_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question → Assessment Question Version&#xa;From: Assessment Question.ActiveVersionId&#xa;To: Assessment Question Version.Id" id="edge_AssessmentQuestionVersion_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestion_ActiveVersionId" target="Assessment_Question_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Assignment → Assessment Question&#xa;From: Assessment Question Assignment.AssessmentQuestionId&#xa;To: Assessment Question.Id" id="edge_AssessmentQuestion_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestionAssignment_AssessmentQuestionId" target="AssessmentQuestion_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Assignment → Assessment Question Set&#xa;From: Assessment Question Assignment.AssessmentQuestionSetId&#xa;To: Assessment Question Set.Id" id="edge_AssessmentQuestionSet_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestionAssignment_AssessmentQuestionSet" target="AssessmentQuestionSet_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Response → Assessment&#xa;From: Assessment Question Response.AssessmentId&#xa;To: Assessment.Id" id="edge_Assessment_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestionResponse_AssessmentId" target="Assessment_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Response → Assessment Question Version&#xa;From: Assessment Question Response.AssessmentQuestionId&#xa;To: Assessment Question Version.Id" id="edge_AssessmentQuestionVersion_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestionResponse_AssessmentQuestionId" target="Assessment_Question_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Response → Assessment Question Version&#xa;From: Assessment Question Response.ParentAsmtQuestionVersionId&#xa;To: Assessment Question Version.Id" id="edge_AssessmentQuestionVersion_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentQuestionResponse_ParentAsmtQuestionVersi" target="Assessment_Question_Version_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Saved Session → Assessment&#xa;From: Assessment Saved Session.AssessmentId&#xa;To: Assessment.Id" id="edge_Assessment_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentSavedSession_AssessmentId" target="Assessment_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Signature → Assessment&#xa;From: Assessment Signature.AssessmentId&#xa;To: Assessment.Id" id="edge_Assessment_to_Id_3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentSignature_AssessmentId" target="Assessment_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Signature → Contact&#xa;From: Assessment Signature.SigneeId&#xa;To: Contact.Id" id="edge_Contact_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentSignature_SigneeId" target="Contact_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Task → Assessment Task Definition&#xa;From: Assessment Task.AssessmentTaskDefinitionId&#xa;To: Assessment Task Definition.Id" id="edge_AssessmentTaskDefinition_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentTask_AssessmentTaskDefinitionId" target="AssessmentTaskDefinition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Task Content Document → Assessment Task&#xa;From: Assessment Task Content Document.AssessmentTaskId&#xa;To: Assessment Task.Id" id="edge_AssessmentTask_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentTaskContentDocument_AssessmentTaskId" target="AssessmentTask_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Secondary" tooltip="Many-to-One: Assessment Task Indicator Definition → Assessment Task Definition&#xa;From: Assessment Task Indicator Definition.AssessmentTaskDefinitionId&#xa;To: Assessment Task Definition.Id&#xa;Label: Secondary" id="edge_Secondary">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AssessmentTaskIndDefinition_AssessmentTaskDefiniti" target="AssessmentTaskDefinition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Version → Assessment Question&#xa;From: Assessment Question Version.AssessmentQuestionId&#xa;To: Assessment Question.Id" id="edge_AssessmentQuestion_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Assessment_Question_Version_AssessmentQuestionId" target="AssessmentQuestion_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: Assessment Question Assignment → Assessment Question Assignment&#xa;From: Assessment Question Assignment.AssessmentQuestionAssignment-top-1&#xa;To: Assessment Question Assignment.AssessmentQuestionAssignment-top-3" id="edge_xy-edge__AssessmentQuestionAssignmentAssessme">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="table_AssessmentQuestionAssignment" target="table_AssessmentQuestionAssignment">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

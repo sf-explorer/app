@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.918Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+  <diagram id="diagram1" name="agentInteractions">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0">
+        </mxCell>
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <UserObject label="ssot__AiAgentInteractionStep__dlm" tooltip="21 fields (showing 20)&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentInteractionStep__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-35" y="-955" width="200" height="606" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentInteractionStep__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentInteractionStep__dlm_ssot__StartTimes">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__TelemetryTraceSpanId__c : Text" tooltip="Telemetry Trace Span" id="ssot__AiAgentInteractionStep__dlm_ssot__TelemetryT">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentInteractionId__c : Text" tooltip="Key Qualifier AI Agent Interaction" id="ssot__AiAgentInteractionStep__dlm_KQ_AiAgentIntera">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_PrevStepId__c : Text" tooltip="Key Qualifier Previous Step" id="ssot__AiAgentInteractionStep__dlm_KQ_PrevStepId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionStepType__c : Text" tooltip="Ai Agent Interaction Step Type" id="ssot__AiAgentInteractionStep__dlm_ssot__AiAgentInt">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AttributeText__c : Text" tooltip="Attribute" id="ssot__AiAgentInteractionStep__dlm_ssot__AttributeT">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EndTimestamp__c : DateTime" tooltip="End Timestamp" id="ssot__AiAgentInteractionStep__dlm_ssot__EndTimesta">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ErrorMessageText__c : Text" tooltip="Error Message" id="ssot__AiAgentInteractionStep__dlm_ssot__ErrorMessa">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__GenAiGatewayRequestId__c : Text" tooltip="Gen AI Gateway Request" id="ssot__AiAgentInteractionStep__dlm_ssot__GenAiGatew">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__GenAiGatewayResponseId__c : Text" tooltip="Gen AI Gateway Response" id="ssot__AiAgentInteractionStep__dlm_ssot__GenAiGatew_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__GenerationId__c : Text" tooltip="Generation" id="ssot__AiAgentInteractionStep__dlm_ssot__Generation">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Interaction Step Id" id="ssot__AiAgentInteractionStep__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InputValueText__c : Text" tooltip="Input Value" id="ssot__AiAgentInteractionStep__dlm_ssot__InputValue">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentInteractionStep__dlm_ssot__InternalOr">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Name__c : Text" tooltip="Name" id="ssot__AiAgentInteractionStep__dlm_ssot__Name__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__OutputValueText__c : Text" tooltip="Output Value" id="ssot__AiAgentInteractionStep__dlm_ssot__OutputValu">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__PostStepVariableText__c : Text" tooltip="Post-step Variable" id="ssot__AiAgentInteractionStep__dlm_ssot__PostStepVa">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__PreStepVariableText__c : Text" tooltip="Pre-step Variable" id="ssot__AiAgentInteractionStep__dlm_ssot__PreStepVar">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionId__c : Text" tooltip="AI Agent Interaction" id="ssot__AiAgentInteractionStep__dlm_ssot__AiAgentInt_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="ssot__AiAgentInteractionStep__dlm_more" value="... 1 more field" style="text=1;strokeColor=#00a4b5;fillColor=#7dffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionStep__dlm" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="ssot__AiAgentInteractionMessage__dlm" tooltip="18 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentInteractionMessage__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="724" y="-663" width="200" height="528" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentInteractionMessage__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionId__c : Text" tooltip="AI Agent Interaction" id="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionMessageType__c : Text" tooltip="AI Agent Interaction Message Type" id="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionMsgContentType__c : Text" tooltip="Ai Agent Interaction Msg Content Type" id="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_2">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ContentText__c : Text" tooltip="Content" id="ssot__AiAgentInteractionMessage__dlm_ssot__Content">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Interaction Message Id" id="ssot__AiAgentInteractionMessage__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IndividualId__c : Text" tooltip="Individual" id="ssot__AiAgentInteractionMessage__dlm_ssot__Individ">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentInteractionMessage__dlm_ssot__Interna">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__MessageSentTimestamp__c : DateTime" tooltip="Message Sent Timestamp" id="ssot__AiAgentInteractionMessage__dlm_ssot__Message">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerId__c : Text" tooltip="Session Owner" id="ssot__AiAgentInteractionMessage__dlm_ssot__Session">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerObject__c : Text" tooltip="Session Owner Object" id="ssot__AiAgentInteractionMessage__dlm_ssot__Session_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentInteractionId__c : Text" tooltip="Key Qualifier AI Agent Interaction" id="ssot__AiAgentInteractionMessage__dlm_KQ_AiAgentInt">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionId__c : Text" tooltip="Key Qualifier AI Agent Session" id="ssot__AiAgentInteractionMessage__dlm_KQ_AiAgentSes">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_ParentMessageId__c : Text" tooltip="Key Qualifier Parent Message" id="ssot__AiAgentInteractionMessage__dlm_KQ_ParentMess">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionId__c : Text" tooltip="AI Agent Session" id="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_3">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ParentMessageId__c : Text" tooltip="Parent Message" id="ssot__AiAgentInteractionMessage__dlm_ssot__ParentM">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionParticipantId__c : Text" tooltip="Key Qualifier AI Agent Session Participant" id="ssot__AiAgentInteractionMessage__dlm_KQ_AiAgentSes_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionParticipantId__c : Text" tooltip="AI Agent Session Participant" id="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_4">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteractionMessage__dlm" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteraction__dlm" tooltip="17 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentInteraction__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-253" y="-356" width="200" height="502" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentInteraction__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IndividualId__c : Text" tooltip="Individual" id="ssot__AiAgentInteraction__dlm_ssot__IndividualId__">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionType__c : Text" tooltip="Ai Agent Interaction Type" id="ssot__AiAgentInteraction__dlm_ssot__AiAgentInterac">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AttributeText__c : Text" tooltip="Attribute" id="ssot__AiAgentInteraction__dlm_ssot__AttributeText_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EndTimestamp__c : DateTime" tooltip="End Timestamp" id="ssot__AiAgentInteraction__dlm_ssot__EndTimestamp__">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Interaction Id" id="ssot__AiAgentInteraction__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentInteraction__dlm_ssot__InternalOrgani">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerId__c : Text" tooltip="Session Owner" id="ssot__AiAgentInteraction__dlm_ssot__SessionOwnerId">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerObject__c : Text" tooltip="Session Owner Object" id="ssot__AiAgentInteraction__dlm_ssot__SessionOwnerOb">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentInteraction__dlm_ssot__StartTimestamp">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__TelemetryTraceId__c : Text" tooltip="Telemetry Trace" id="ssot__AiAgentInteraction__dlm_ssot__TelemetryTrace">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__TelemetryTraceSpanId__c : Text" tooltip="Telemetry Trace Span" id="ssot__AiAgentInteraction__dlm_ssot__TelemetryTrace_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__TopicApiName__c : Text" tooltip="Topic API Name" id="ssot__AiAgentInteraction__dlm_ssot__TopicApiName__">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionId__c : Text" tooltip="Key Qualifier AI Agent Session" id="ssot__AiAgentInteraction__dlm_KQ_AiAgentSessionId_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_PrevInteractionId__c : Text" tooltip="Key Qualifier Previous Interaction" id="ssot__AiAgentInteraction__dlm_KQ_PrevInteractionId">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionId__c : Text" tooltip="AI Agent Session" id="ssot__AiAgentInteraction__dlm_ssot__AiAgentSession">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__PrevInteractionId__c : Text" tooltip="Previous Interaction" id="ssot__AiAgentInteraction__dlm_ssot__PrevInteractio">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentMomentInteraction__dlm" tooltip="8 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentMomentInteraction__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="281" y="-158" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentMomentInteraction__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentInteractionId__c : Text" tooltip="Key Qualifier Interaction Id" id="ssot__AiAgentMomentInteraction__dlm_KQ_AiAgentInte">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentMomentId__c : Text" tooltip="Key Qualifier AI Agent Moment Id" id="ssot__AiAgentMomentInteraction__dlm_KQ_AiAgentMome">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentInteractionId__c : Text" tooltip="Interaction Id" id="ssot__AiAgentMomentInteraction__dlm_ssot__AiAgentI">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentMomentId__c : Text" tooltip="AI Agent Moment Id" id="ssot__AiAgentMomentInteraction__dlm_ssot__AiAgentM">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Moment Interaction Id" id="ssot__AiAgentMomentInteraction__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentMomentInteraction__dlm_ssot__Internal">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentMomentInteraction__dlm_ssot__StartTim">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMomentInteraction__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTag__dlm" tooltip="9 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentTag__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1200" y="0" width="200" height="294" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentTag__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__CreatedDate__c : DateTime" tooltip="Created Date" id="ssot__AiAgentTag__dlm_ssot__CreatedDate__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Description__c : Text" tooltip="Description" id="ssot__AiAgentTag__dlm_ssot__Description__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Tag Id" id="ssot__AiAgentTag__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentTag__dlm_ssot__InternalOrganizationId">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IsActive__c : Boolean" tooltip="Is Active" id="ssot__AiAgentTag__dlm_ssot__IsActive__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Value__c : Text" tooltip="Value" id="ssot__AiAgentTag__dlm_ssot__Value__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentTagDefinitionId__c : Text" tooltip="Key Qualifier AI Agent Tag Definition Id" id="ssot__AiAgentTag__dlm_KQ_AiAgentTagDefinitionId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagDefinitionId__c : Text" tooltip="AI Agent Tag Definition Id" id="ssot__AiAgentTag__dlm_ssot__AiAgentTagDefinitionId">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTag__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionParticipant__dlm" tooltip="16 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentSessionParticipant__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="780" y="17" width="200" height="476" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentSessionParticipant__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentApiName__c : Text" tooltip="AI Agent Api Name" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionId__c : Text" tooltip="Key Qualifier AI Agent Session" id="ssot__AiAgentSessionParticipant__dlm_KQ_AiAgentSes">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionId__c : Text" tooltip="AI Agent Session" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionParticipantRole__c : Text" tooltip="AI Agent Session Participant Role" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_2">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTemplateApiName__c : Text" tooltip="AI Agent Template Api Name" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_3">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentType__c : Text" tooltip="AI Agent Type" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_4">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentVersionApiName__c : Text" tooltip="AI Agent Version Api Name" id="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_5">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EndTimestamp__c : DateTime" tooltip="End Timestamp" id="ssot__AiAgentSessionParticipant__dlm_ssot__EndTime">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Session Participant Id" id="ssot__AiAgentSessionParticipant__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IndividualId__c : Text" tooltip="Individual" id="ssot__AiAgentSessionParticipant__dlm_ssot__Individ">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentSessionParticipant__dlm_ssot__Interna">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ParticipantAttributeText__c : Text" tooltip="Participant Attribute" id="ssot__AiAgentSessionParticipant__dlm_ssot__Partici">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ParticipantId__c : Text" tooltip="Participant" id="ssot__AiAgentSessionParticipant__dlm_ssot__Partici_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ParticipantObject__c : Text" tooltip="Participant Object" id="ssot__AiAgentSessionParticipant__dlm_ssot__Partici_2">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentSessionParticipant__dlm_ssot__StartTi">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSessionParticipant__dlm" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagAssociation__dlm" tooltip="13 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentTagAssociation__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="2251" y="172" width="200" height="398" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentTagAssociation__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentMomentId__c : Text" tooltip="Key Qualifier AI Agent Moment Id" id="ssot__AiAgentTagAssociation__dlm_KQ_AiAgentMomentI">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionId__c : Text" tooltip="Key Qualifier AI Agent Session Id" id="ssot__AiAgentTagAssociation__dlm_KQ_AiAgentSession">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentTagDefinitionAssociationId__c : Text" tooltip="Key Qualifier AI Agent Tag Definition Association Id" id="ssot__AiAgentTagAssociation__dlm_KQ_AiAgentTagDefi">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentTagId__c : Text" tooltip="Key Qualifier AI Agent Tag Id" id="ssot__AiAgentTagAssociation__dlm_KQ_AiAgentTagId__">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentMomentId__c : Text" tooltip="AI Agent Moment Id" id="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentMome">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionId__c : Text" tooltip="AI Agent Session Id" id="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentSess">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagDefinitionAssociationId__c : Text" tooltip="AI Agent Tag Definition Association Id" id="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentTagD">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagId__c : Text" tooltip="AI Agent Tag Id" id="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentTagI">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AssociationReasonText__c : Text" tooltip="Association Reason" id="ssot__AiAgentTagAssociation__dlm_ssot__Association">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__CreatedDate__c : DateTime" tooltip="Created Date" id="ssot__AiAgentTagAssociation__dlm_ssot__CreatedDate">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Tag Association Id" id="ssot__AiAgentTagAssociation__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentTagAssociation__dlm_ssot__InternalOrg">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagDefinitionAssociation__dlm" tooltip="8 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentTagDefinitionAssociation__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="1507" y="466" width="200" height="268" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentTagDefinitionAssociation__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentApiName__c : Text" tooltip="AI Agent Api Name" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__A">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagDefinitionId__c : Text" tooltip="AI Agent Tag Definition Id" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__A_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiPromptTemplateId__c : Text" tooltip="AI Prompt Template Id" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__A_2">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__CreatedDate__c : DateTime" tooltip="Created Date" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__C">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Tag Definition Association Id" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__I">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__I_1">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentTagDefinitionId__c : Text" tooltip="Key Qualifier AI Agent Tag Definition Id" id="ssot__AiAgentTagDefinitionAssociation__dlm_KQ_AiAg">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinitionAssociation__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSession__dlm" tooltip="15 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentSession__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-562" y="514" width="200" height="450" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentSession__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentChannelType__c : Text" tooltip="AI Agent Channel Type" id="ssot__AiAgentSession__dlm_ssot__AiAgentChannelType">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionEndType__c : Text" tooltip="AI Agent Session End Type" id="ssot__AiAgentSession__dlm_ssot__AiAgentSessionEndT">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EndTimestamp__c : DateTime" tooltip="End Timestamp" id="ssot__AiAgentSession__dlm_ssot__EndTimestamp__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Session Id" id="ssot__AiAgentSession__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__IndividualId__c : Text" tooltip="Individual" id="ssot__AiAgentSession__dlm_ssot__IndividualId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentSession__dlm_ssot__InternalOrganizati">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__RelatedMessagingSessionId__c : Text" tooltip="Related Messaging Session" id="ssot__AiAgentSession__dlm_ssot__RelatedMessagingSe">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__RelatedVoiceCallId__c : Text" tooltip="Related Voice Call" id="ssot__AiAgentSession__dlm_ssot__RelatedVoiceCallId">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerId__c : Text" tooltip="Session Owner" id="ssot__AiAgentSession__dlm_ssot__SessionOwnerId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SessionOwnerObject__c : Text" tooltip="Session Owner Object" id="ssot__AiAgentSession__dlm_ssot__SessionOwnerObject">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentSession__dlm_ssot__StartTimestamp__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__VariableText__c : Text" tooltip="Variable" id="ssot__AiAgentSession__dlm_ssot__VariableText__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_PreviousSessionId__c : Text" tooltip="Key Qualifier Previous Session Id" id="ssot__AiAgentSession__dlm_KQ_PreviousSessionId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__PreviousSessionId__c : Text" tooltip="Previous Session Id" id="ssot__AiAgentSession__dlm_ssot__PreviousSessionId_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentSession__dlm" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentMoment__dlm" tooltip="11 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentMoment__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="-152" y="691" width="200" height="346" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentMoment__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="KQ_AiAgentSessionId__c : Text" tooltip="Key Qualifier AI Agent Session" id="ssot__AiAgentMoment__dlm_KQ_AiAgentSessionId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentSessionId__c : Text" tooltip="AI Agent Session" id="ssot__AiAgentMoment__dlm_ssot__AiAgentSessionId__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentApiName__c : Text" tooltip="AI Agent API Name" id="ssot__AiAgentMoment__dlm_ssot__AiAgentApiName__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentVersionApiName__c : Text" tooltip="AI Agent Version API Name" id="ssot__AiAgentMoment__dlm_ssot__AiAgentVersionApiNa">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__EndTimestamp__c : DateTime" tooltip="End Timestamp" id="ssot__AiAgentMoment__dlm_ssot__EndTimestamp__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Moment Id" id="ssot__AiAgentMoment__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentMoment__dlm_ssot__InternalOrganizatio">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__RequestSummaryText__c : Text" tooltip="Request Summary Text" id="ssot__AiAgentMoment__dlm_ssot__RequestSummaryText_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__ResponseSummaryText__c : Text" tooltip="Response Summary Text" id="ssot__AiAgentMoment__dlm_ssot__ResponseSummaryText">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__StartTimestamp__c : DateTime" tooltip="Start Timestamp" id="ssot__AiAgentMoment__dlm_ssot__StartTimestamp__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentMoment__dlm" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__AiAgentTagDefinition__dlm" tooltip="9 fields&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentTagDefinition__dlm">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#17becf;strokeColor=#008b9c;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
+            <mxGeometry x="712" y="839" width="200" height="294" as="geometry">
+              <mxRectangle width="200" height="60" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" tooltip="Id" id="ssot__AiAgentTagDefinition__dlm_Id">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#64ffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__CreatedDate__c : DateTime" tooltip="Created Date" id="ssot__AiAgentTagDefinition__dlm_ssot__CreatedDate_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__DataType__c : Text" tooltip="Data Type" id="ssot__AiAgentTagDefinition__dlm_ssot__DataType__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Description__c : Text" tooltip="Description" id="ssot__AiAgentTagDefinition__dlm_ssot__Description_">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__DeveloperName__c : Text" tooltip="Developer Name" id="ssot__AiAgentTagDefinition__dlm_ssot__DeveloperNam">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Id__c : Text" tooltip="AI Agent Tag Definition Id" id="ssot__AiAgentTagDefinition__dlm_ssot__Id__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__InternalOrganizationId__c : Text" tooltip="Internal Organization" id="ssot__AiAgentTagDefinition__dlm_ssot__InternalOrga">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__Name__c : Text" tooltip="Name" id="ssot__AiAgentTagDefinition__dlm_ssot__Name__c">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssot__SourceType__c : Text" tooltip="Source Type" id="ssot__AiAgentTagDefinition__dlm_ssot__SourceType__">
+          <mxCell style="text=1;strokeColor=#00a4b5;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ssot__AiAgentTagDefinition__dlm" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Interaction Step → AI Agent Interaction&#xa;From: AI Agent Interaction Step.ssot__AiAgentInteractionId__c&#xa;To: AI Agent Interaction.Id" id="edge_ssot__AiAgentInteraction__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentInteractionStep__dlm_ssot__AiAgentInt_1" target="ssot__AiAgentInteraction__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Interaction → AI Agent Session&#xa;From: AI Agent Interaction.ssot__AiAgentSessionId__c&#xa;To: AI Agent Session.Id" id="edge_ssot__AiAgentSession__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentInteraction__dlm_ssot__AiAgentSession" target="ssot__AiAgentSession__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Interaction Message → AI Agent Interaction&#xa;From: AI Agent Interaction Message.ssot__AiAgentInteractionId__c&#xa;To: AI Agent Interaction.Id" id="edge_ssot__AiAgentInteraction__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent" target="ssot__AiAgentInteraction__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Interaction Message → AI Agent Session&#xa;From: AI Agent Interaction Message.ssot__AiAgentSessionId__c&#xa;To: AI Agent Session.Id" id="edge_ssot__AiAgentSession__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_3" target="ssot__AiAgentSession__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Interaction Message → AI Agent Session Participant&#xa;From: AI Agent Interaction Message.ssot__AiAgentSessionParticipantId__c&#xa;To: AI Agent Session Participant.Id" id="edge_ssot__AiAgentSessionParticipant__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentInteractionMessage__dlm_ssot__AiAgent_4" target="ssot__AiAgentSessionParticipant__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Moment → AI Agent Session&#xa;From: AI Agent Moment.ssot__AiAgentSessionId__c&#xa;To: AI Agent Session.Id" id="edge_ssot__AiAgentSession__dlm_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentMoment__dlm_ssot__AiAgentSessionId__c" target="ssot__AiAgentSession__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Moment Interaction → AI Agent Interaction&#xa;From: AI Agent Moment Interaction.ssot__AiAgentInteractionId__c&#xa;To: AI Agent Interaction.Id" id="edge_ssot__AiAgentInteraction__dlm_to_Id_2">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentMomentInteraction__dlm_ssot__AiAgentI" target="ssot__AiAgentInteraction__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Moment Interaction → AI Agent Moment&#xa;From: AI Agent Moment Interaction.ssot__AiAgentMomentId__c&#xa;To: AI Agent Moment.Id" id="edge_ssot__AiAgentMoment__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentMomentInteraction__dlm_ssot__AiAgentM" target="ssot__AiAgentMoment__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Session Participant → AI Agent Session&#xa;From: AI Agent Session Participant.ssot__AiAgentSessionId__c&#xa;To: AI Agent Session.Id" id="edge_ssot__AiAgentSession__dlm_to_Id_3">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentSessionParticipant__dlm_ssot__AiAgent_1" target="ssot__AiAgentSession__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag Association → AI Agent Moment&#xa;From: AI Agent Tag Association.ssot__AiAgentMomentId__c&#xa;To: AI Agent Moment.Id" id="edge_ssot__AiAgentMoment__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentMome" target="ssot__AiAgentMoment__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag Association → AI Agent Session&#xa;From: AI Agent Tag Association.ssot__AiAgentSessionId__c&#xa;To: AI Agent Session.Id" id="edge_ssot__AiAgentSession__dlm_to_Id_4">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentSess" target="ssot__AiAgentSession__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag Association → AI Agent Tag Definition Association&#xa;From: AI Agent Tag Association.ssot__AiAgentTagDefinitionAssociationId__c&#xa;To: AI Agent Tag Definition Association.Id" id="edge_ssot__AiAgentTagDefinitionAssociation__dlm_to">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentTagD" target="ssot__AiAgentTagDefinitionAssociation__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag Association → AI Agent Tag&#xa;From: AI Agent Tag Association.ssot__AiAgentTagId__c&#xa;To: AI Agent Tag.Id" id="edge_ssot__AiAgentTag__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTagAssociation__dlm_ssot__AiAgentTagI" target="ssot__AiAgentTag__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag Definition Association → AI Agent Tag Definition&#xa;From: AI Agent Tag Definition Association.ssot__AiAgentTagDefinitionId__c&#xa;To: AI Agent Tag Definition.Id" id="edge_ssot__AiAgentTagDefinition__dlm_to_Id">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTagDefinitionAssociation__dlm_ssot__A_1" target="ssot__AiAgentTagDefinition__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Many-to-One: AI Agent Tag → AI Agent Tag Definition&#xa;From: AI Agent Tag.ssot__AiAgentTagDefinitionId__c&#xa;To: AI Agent Tag Definition.Id" id="edge_ssot__AiAgentTagDefinition__dlm_to_Id_1">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ssot__AiAgentTag__dlm_ssot__AiAgentTagDefinitionId" target="ssot__AiAgentTagDefinition__dlm_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
