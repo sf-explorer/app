@@ -2146,6 +2146,176 @@ export function transformBoardWithViewerUrl(
   return { xml, viewerUrl };
 }
 
+/**
+ * Transforms a Salesforce Explorer board template into a multi-page Draw.io XML format
+ * with one page per cloud/category
+ * 
+ * This function groups nodes by their category (cloud) and creates separate pages for each cloud.
+ * Each page appears as a separate tab in draw.io with the cloud name as the tab name.
+ * 
+ * @param board - The board template to transform, containing nodes and edges
+ * @param options - Optional conversion options to customize the output
+ * @returns A Draw.io compatible XML string with multiple pages (one per cloud)
+ * 
+ * @example
+ * ```typescript
+ * const board = {
+ *   nodes: [
+ *     { id: '1', type: 'table', data: { label: 'Account', category: 'Sales Cloud' } },
+ *     { id: '2', type: 'table', data: { label: 'Case', category: 'Service Cloud' } }
+ *   ],
+ *   edges: []
+ * };
+ * const xml = transformBoardToDrawIOWithClouds(board);
+ * // Creates a draw.io file with two tabs: "Sales Cloud" and "Service Cloud"
+ * ```
+ */
+export function transformBoardToDrawIOWithClouds(
+  board: BoardTemplate,
+  options: ConversionOptions = {}
+): string {
+  // Validate input structure
+  if (!board || !Array.isArray(board.nodes) || !Array.isArray(board.edges)) {
+    throw new Error('Invalid board template: expected object with "nodes" and "edges" arrays');
+  }
+
+  // Group nodes by category (cloud)
+  const cloudGroups = new Map<string, { nodes: BoardNode[]; edges: BoardEdge[] }>();
+  
+  // Process all nodes and group by category
+  for (const node of board.nodes) {
+    // Get category from node.data.category, default to "Uncategorized"
+    const category = (node.data as any).category || 'Uncategorized';
+    
+    if (!cloudGroups.has(category)) {
+      cloudGroups.set(category, { nodes: [], edges: [] });
+    }
+    
+    cloudGroups.get(category)!.nodes.push(node);
+  }
+  
+  // Group edges by the categories of their source and target nodes
+  const nodeIdToCategory = new Map<string, string>();
+  for (const node of board.nodes) {
+    const category = (node.data as any).category || 'Uncategorized';
+    nodeIdToCategory.set(node.id, category);
+  }
+  
+  for (const edge of board.edges) {
+    const sourceCategory = nodeIdToCategory.get(edge.source) || 'Uncategorized';
+    const targetCategory = nodeIdToCategory.get(edge.target) || 'Uncategorized';
+    
+    // If both nodes are in the same category, add edge to that category
+    if (sourceCategory === targetCategory) {
+      cloudGroups.get(sourceCategory)!.edges.push(edge);
+    } else {
+      // Cross-cloud edges: add to both categories
+      if (cloudGroups.has(sourceCategory)) {
+        cloudGroups.get(sourceCategory)!.edges.push(edge);
+      }
+      if (cloudGroups.has(targetCategory)) {
+        cloudGroups.get(targetCategory)!.edges.push(edge);
+      }
+    }
+  }
+
+  // Build multi-page XML
+  const xmlParts: string[] = [];
+  
+  const {
+    metadata = {},
+  } = options;
+
+  // Build metadata attributes for mxfile
+  const metadataAttrs: string[] = [];
+  const createdDate = metadata.created 
+    ? (metadata.created instanceof Date ? metadata.created.toISOString() : metadata.created)
+    : new Date().toISOString();
+  
+  if (metadata.author) {
+    metadataAttrs.push(`author="${escapeXml(String(metadata.author))}"`);
+  }
+  
+  if (metadata.description) {
+    metadataAttrs.push(`description="${escapeXml(String(metadata.description))}"`);
+  }
+  
+  if (metadata.version) {
+    metadataAttrs.push(`diagramVersion="${escapeXml(String(metadata.version))}"`);
+  }
+  
+  if (metadata.repository) {
+    metadataAttrs.push(`repository="${escapeXml(String(metadata.repository))}"`);
+  }
+  
+  // Add any other custom metadata properties
+  for (const [key, value] of Object.entries(metadata)) {
+    if (!['author', 'description', 'version', 'created', 'repository'].includes(key) && value !== undefined) {
+      metadataAttrs.push(`${key}="${escapeXml(String(value))}"`);
+    }
+  }
+  
+  // Build mxfile opening tag with metadata
+  let mxfileTag = '<mxfile host="app.diagrams.net" modified="' + createdDate + '" agent="SF Explorer Board Converter" version="1.0.0" type="device"';
+  if (metadataAttrs.length > 0) {
+    mxfileTag += ' ' + metadataAttrs.join(' ');
+  }
+  mxfileTag += '>';
+  
+  xmlParts.push('<?xml version="1.0" encoding="UTF-8"?>');
+  xmlParts.push(mxfileTag);
+  
+  // Create one page per cloud
+  let pageIndex = 1;
+  const sortedClouds = Array.from(cloudGroups.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+  
+  for (const [cloudName, cloudBoard] of sortedClouds) {
+    // Skip empty clouds
+    if (cloudBoard.nodes.length === 0) {
+      continue;
+    }
+    
+    // Create a board template for this cloud
+    const cloudBoardTemplate: BoardTemplate = {
+      nodes: cloudBoard.nodes,
+      edges: cloudBoard.edges
+    };
+    
+    // Generate XML for this cloud using the existing transformation logic
+    const cloudOptions = {
+      ...options,
+      title: cloudName, // Use cloud name as page title
+    };
+    
+    // Use the existing transformBoardToDrawIO but extract just the diagram content
+    const cloudXml = transformBoardToDrawIO(cloudBoardTemplate, cloudOptions);
+    
+    // Extract the diagram content (everything between <diagram> and </diagram>)
+    // Use a more robust regex that handles the full diagram tag
+    const diagramMatch = cloudXml.match(/<diagram[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/diagram>/);
+    if (diagramMatch) {
+      const diagramId = `diagram${pageIndex}`;
+      const diagramContent = diagramMatch[2];
+      
+      // The content already has proper indentation from buildDrawioXML
+      // We just need to adjust it for the multi-page context (add 2 spaces)
+      const indentedContent = diagramContent.split('\n')
+        .map(line => line ? '    ' + line : line)
+        .join('\n');
+      
+      xmlParts.push(`  <diagram id="${diagramId}" name="${escapeXml(cloudName)}">`);
+      xmlParts.push(indentedContent);
+      xmlParts.push('  </diagram>');
+      
+      pageIndex++;
+    }
+  }
+  
+  xmlParts.push('</mxfile>');
+  
+  return xmlParts.join('\n');
+}
+
 // Export types for consumers
 export * from './types.js';
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-28T08:54:13.435Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2026-01-28T13:26:42.030Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
   <diagram id="diagram1" name="Product Catalog - Clean">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -11,178 +11,178 @@
         <mxCell id="group_Connect_APIs" value="Connect APIs" style="swimlane=0;fillColor=#6b637b;strokeColor=#383048;strokeWidth=2;rounded=1;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
             <mxGeometry x="2081" y="-60" width="830" height="504" as="geometry"/>
         </mxCell>
-        <UserObject label="AttributeCategoryAttribute" tooltip="5 fields&#xa;[Product Catalog] " id="table_AttributeCategoryAttribute">
+        <UserObject label="AttributeCategoryAttribute" id="table_AttributeCategoryAttribute" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributeCategoryAttribute" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeCategoryAttribute" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="1115" y="-81" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="190" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AttributeCategoryAttribute_Id">
+        <UserObject label="PK: Id : Text" id="AttributeCategoryAttribute_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Category Attribute ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeCategoryId : AttributeCategory" tooltip="Attribute Category ID" id="AttributeCategoryAttribute_AttributeCategoryId">
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory" id="AttributeCategoryAttribute_AttributeCategoryId" fieldLabel="Attribute Category ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" tooltip="Attribute Definition ID" id="AttributeCategoryAttribute_AttributeDefinitionId">
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" id="AttributeCategoryAttribute_AttributeDefinitionId" fieldLabel="Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AttributeCategoryAttribute_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="AttributeCategoryAttribute_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="External_Id__c : Text" tooltip="External Id" id="AttributeCategoryAttribute_External_Id__c">
+        <UserObject label="External_Id__c : Text" id="AttributeCategoryAttribute_External_Id__c" fieldLabel="External Id">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Attribute Category" tooltip="6 fields&#xa;[Product Catalog] " id="table_Attribute_Category">
+        <UserObject label="Attribute Category" id="table_Attribute_Category" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributeCategory" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeCategory" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="469" y="-59" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="216" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Attribute_Category_Id">
+        <UserObject label="PK: Id : Text" id="Attribute_Category_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Category ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Attribute_Category_Name">
+        <UserObject label="Name : Text" id="Attribute_Category_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Attribute_Category_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Attribute_Category_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Code : Text" tooltip="Code" id="Attribute_Category_Code">
+        <UserObject label="Code : Text" id="Attribute_Category_Code" fieldLabel="Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="Attribute_Category_Description">
+        <UserObject label="Description : Text" id="Attribute_Category_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="External_Id__c : Text" tooltip="External Id" id="Attribute_Category_External_Id__c">
+        <UserObject label="External_Id__c : Text" id="Attribute_Category_External_Id__c" fieldLabel="External Id">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Product Classification Attribute" tooltip="28 fields (showing 20)&#xa;[Product Catalog] " id="table_Product_Classification_Attribute">
+        <UserObject label="Product Classification Attribute" id="table_Product_Classification_Attribute" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductClassificationAttr" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductClassificationAttr" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="830" y="52" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Product_Classification_Attribute_Id">
+        <UserObject label="PK: Id : Text" id="Product_Classification_Attribute_Id" description="Globally unique string that identifies a record." fieldLabel="Product Classification Attribute ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ProductClassificationId : ProductClassification" tooltip="Product Classification ID" id="Product_Classification_Attribute_ProductClassifica">
+        <UserObject label="FK: ProductClassificationId : ProductClassification" id="Product_Classification_Attribute_ProductClassifica" fieldLabel="Product Classification ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" tooltip="Attribute Definition ID" id="Product_Classification_Attribute_AttributeDefiniti">
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" id="Product_Classification_Attribute_AttributeDefiniti" fieldLabel="Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeCategoryId : AttributeCategory" tooltip="Attribute Category ID" id="Product_Classification_Attribute_AttributeCategory">
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory" id="Product_Classification_Attribute_AttributeCategory" fieldLabel="Attribute Category ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="Product_Classification_Attribute_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="Product_Classification_Attribute_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Product_Classification_Attribute_Name">
+        <UserObject label="Name : Text" id="Product_Classification_Attribute_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Product_Classification_Attribute_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Product_Classification_Attribute_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="Product_Classification_Attribute_Description">
+        <UserObject label="Description : Text" id="Product_Classification_Attribute_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ValueDescription : Text" tooltip="Value Description" id="Product_Classification_Attribute_ValueDescription">
+        <UserObject label="ValueDescription : Text" id="Product_Classification_Attribute_ValueDescription" fieldLabel="Value Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="HelpText : Text" tooltip="Help Text" id="Product_Classification_Attribute_HelpText">
+        <UserObject label="HelpText : Text" id="Product_Classification_Attribute_HelpText" fieldLabel="Help Text">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsHidden : Boolean" tooltip="Is Hidden" id="Product_Classification_Attribute_IsHidden">
+        <UserObject label="IsHidden : Boolean" id="Product_Classification_Attribute_IsHidden" fieldLabel="Is Hidden">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsReadOnly : Boolean" tooltip="Is Read Only" id="Product_Classification_Attribute_IsReadOnly">
+        <UserObject label="IsReadOnly : Boolean" id="Product_Classification_Attribute_IsReadOnly" fieldLabel="Is Read Only">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsRequired : Boolean" tooltip="Is Required" id="Product_Classification_Attribute_IsRequired">
+        <UserObject label="IsRequired : Boolean" id="Product_Classification_Attribute_IsRequired" fieldLabel="Is Required">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="Product_Classification_Attribute_Status">
+        <UserObject label="Status : Enum" id="Product_Classification_Attribute_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Sequence : Integer" tooltip="Sequence" id="Product_Classification_Attribute_Sequence">
+        <UserObject label="Sequence : Integer" id="Product_Classification_Attribute_Sequence" fieldLabel="Sequence">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AttributeNameOverride : Text" tooltip="Attribute Name Override" id="Product_Classification_Attribute_AttributeNameOver">
+        <UserObject label="AttributeNameOverride : Text" id="Product_Classification_Attribute_AttributeNameOver" fieldLabel="Attribute Name Override">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DefaultValue : Text" tooltip="Default Value" id="Product_Classification_Attribute_DefaultValue">
+        <UserObject label="DefaultValue : Text" id="Product_Classification_Attribute_DefaultValue" fieldLabel="Default Value">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DisplayType : Enum" tooltip="Display Type" id="Product_Classification_Attribute_DisplayType">
+        <UserObject label="DisplayType : Enum" id="Product_Classification_Attribute_DisplayType" fieldLabel="Display Type">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsPriceImpacting : Boolean" tooltip="Is Price Impacting" id="Product_Classification_Attribute_IsPriceImpacting">
+        <UserObject label="IsPriceImpacting : Boolean" id="Product_Classification_Attribute_IsPriceImpacting" fieldLabel="Is Price Impacting">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MinimumValue : Text" tooltip="Minimum Value" id="Product_Classification_Attribute_MinimumValue">
+        <UserObject label="MinimumValue : Text" id="Product_Classification_Attribute_MinimumValue" fieldLabel="Minimum Value">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -190,109 +190,109 @@
         <mxCell id="Product_Classification_Attribute_more" value="... 8 more fields" style="text=1;strokeColor=#d98200;fillColor=#ffff78;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Product Attribute Definition" tooltip="31 fields (showing 20)&#xa;[Product Catalog] " id="table_Product_Attribute_Definition">
+        <UserObject label="Product Attribute Definition" id="table_Product_Attribute_Definition" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductAttributeDefinition" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductAttributeDefinition" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="145" y="173" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Product_Attribute_Definition_Id">
+        <UserObject label="PK: Id : Text" id="Product_Attribute_Definition_Id" description="Globally unique string that identifies a record." fieldLabel="Product Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: Product2Id : Product2" tooltip="Product ID" id="Product_Attribute_Definition_Product2Id">
+        <UserObject label="FK: Product2Id : Product2" id="Product_Attribute_Definition_Product2Id" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" tooltip="Attribute Definition ID" id="Product_Attribute_Definition_AttributeDefinitionId">
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition" id="Product_Attribute_Definition_AttributeDefinitionId" fieldLabel="Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: OverrideContextId : Product2" tooltip="Override Context ID" id="Product_Attribute_Definition_OverrideContextId">
+        <UserObject label="FK: OverrideContextId : Product2" id="Product_Attribute_Definition_OverrideContextId" fieldLabel="Override Context ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: OverriddenProductAttributeDefinitionId : ProductAttributeDefinition" tooltip="Product Attribute Definition ID" id="Product_Attribute_Definition_OverriddenProductAttr">
+        <UserObject label="FK: OverriddenProductAttributeDefinitionId : ProductAttributeDefinition" id="Product_Attribute_Definition_OverriddenProductAttr" fieldLabel="Product Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AttributeCategoryId : AttributeCategory" tooltip="Attribute Category ID" id="Product_Attribute_Definition_AttributeCategoryId">
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory" id="Product_Attribute_Definition_AttributeCategoryId" fieldLabel="Attribute Category ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ProductClassificationAttributeId : ProductClassificationAttr" tooltip="Product Classification Attribute ID" id="Product_Attribute_Definition_ProductClassification">
+        <UserObject label="FK: ProductClassificationAttributeId : ProductClassificationAttr" id="Product_Attribute_Definition_ProductClassification" fieldLabel="Product Classification Attribute ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="Product_Attribute_Definition_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="Product_Attribute_Definition_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Product_Attribute_Definition_Name">
+        <UserObject label="Name : Text" id="Product_Attribute_Definition_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Product_Attribute_Definition_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Product_Attribute_Definition_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AttributeNameOverride : Text" tooltip="Attribute Name Override" id="Product_Attribute_Definition_AttributeNameOverride">
+        <UserObject label="AttributeNameOverride : Text" id="Product_Attribute_Definition_AttributeNameOverride" fieldLabel="Attribute Name Override">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DefaultValue : Text" tooltip="Default Value" id="Product_Attribute_Definition_DefaultValue">
+        <UserObject label="DefaultValue : Text" id="Product_Attribute_Definition_DefaultValue" fieldLabel="Default Value">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ValueDescription : Text" tooltip="Value Description" id="Product_Attribute_Definition_ValueDescription">
+        <UserObject label="ValueDescription : Text" id="Product_Attribute_Definition_ValueDescription" fieldLabel="Value Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="Product_Attribute_Definition_Description">
+        <UserObject label="Description : Text" id="Product_Attribute_Definition_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="HelpText : Text" tooltip="Help Text" id="Product_Attribute_Definition_HelpText">
+        <UserObject label="HelpText : Text" id="Product_Attribute_Definition_HelpText" fieldLabel="Help Text">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsHidden : Boolean" tooltip="Is Hidden" id="Product_Attribute_Definition_IsHidden">
+        <UserObject label="IsHidden : Boolean" id="Product_Attribute_Definition_IsHidden" fieldLabel="Is Hidden">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsReadOnly : Boolean" tooltip="Is Read Only" id="Product_Attribute_Definition_IsReadOnly">
+        <UserObject label="IsReadOnly : Boolean" id="Product_Attribute_Definition_IsReadOnly" fieldLabel="Is Read Only">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsRequired : Boolean" tooltip="Is Required" id="Product_Attribute_Definition_IsRequired">
+        <UserObject label="IsRequired : Boolean" id="Product_Attribute_Definition_IsRequired" fieldLabel="Is Required">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="Product_Attribute_Definition_Status">
+        <UserObject label="Status : Enum" id="Product_Attribute_Definition_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsPriceImpacting : Boolean" tooltip="Is Price Impacting" id="Product_Attribute_Definition_IsPriceImpacting">
+        <UserObject label="IsPriceImpacting : Boolean" id="Product_Attribute_Definition_IsPriceImpacting" fieldLabel="Is Price Impacting">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -300,345 +300,345 @@
         <mxCell id="Product_Attribute_Definition_more" value="... 11 more fields" style="text=1;strokeColor=#d98200;fillColor=#ffff78;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Attribute Definition" tooltip="15 fields&#xa;[Product Catalog] Represents a product, asset, or object attribute, for example, a hardward specification or software detail." id="table_Attribute_Definition">
+        <UserObject label="Attribute Definition" id="table_Attribute_Definition" description="&#xa;[Product Catalog] Represents a product, asset, or object attribute, for example, a hardward specification or software detail." category="Product Catalog" APIName="AttributeDefinition" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeDefinition" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="1421" y="217" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="450" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Attribute_Definition_Id">
+        <UserObject label="PK: Id : Text" id="Attribute_Definition_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Definition ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="Attribute_Definition_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="Attribute_Definition_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: PicklistId : AttributePicklist" tooltip="Attribute Picklist ID" id="Attribute_Definition_PicklistId">
+        <UserObject label="FK: PicklistId : AttributePicklist" id="Attribute_Definition_PicklistId" fieldLabel="Attribute Picklist ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="The name of the attribute." id="Attribute_Definition_Name">
+        <UserObject label="Name : Text" id="Attribute_Definition_Name" description="The name of the attribute." fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Attribute_Definition_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Attribute_Definition_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Label : Text" tooltip="The label for the attribute." id="Attribute_Definition_Label">
+        <UserObject label="Label : Text" id="Attribute_Definition_Label" description="The label for the attribute." fieldLabel="Label">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description of this attribute." id="Attribute_Definition_Description">
+        <UserObject label="Description : Text" id="Attribute_Definition_Description" description="Description of this attribute." fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsActive : Boolean" tooltip="Indicates that the attribute definition is active. Active attributes definitions can be selected for assets." id="Attribute_Definition_IsActive">
+        <UserObject label="IsActive : Boolean" id="Attribute_Definition_IsActive" description="Indicates that the attribute definition is active. Active attributes definitions can be selected for assets." fieldLabel="Active">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsRequired : Boolean" tooltip="Indicates whether the attribute definition is required for an asset." id="Attribute_Definition_IsRequired">
+        <UserObject label="IsRequired : Boolean" id="Attribute_Definition_IsRequired" description="Indicates whether the attribute definition is required for an asset." fieldLabel="Required">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DefaultValue : Text" tooltip="The default value for this attribute." id="Attribute_Definition_DefaultValue">
+        <UserObject label="DefaultValue : Text" id="Attribute_Definition_DefaultValue" description="The default value for this attribute." fieldLabel="Default Value">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SourceSystemIdentifier : Text" tooltip="The identifier of the attribute definition in an external system." id="Attribute_Definition_SourceSystemIdentifier">
+        <UserObject label="SourceSystemIdentifier : Text" id="Attribute_Definition_SourceSystemIdentifier" description="The identifier of the attribute definition in an external system." fieldLabel="Source System ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ValueDescription : Text" tooltip="Value Description" id="Attribute_Definition_ValueDescription">
+        <UserObject label="ValueDescription : Text" id="Attribute_Definition_ValueDescription" fieldLabel="Value Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DefaultHelpText : Text" tooltip="Default Help Text" id="Attribute_Definition_DefaultHelpText">
+        <UserObject label="DefaultHelpText : Text" id="Attribute_Definition_DefaultHelpText" fieldLabel="Default Help Text">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Code : Text" tooltip="Code" id="Attribute_Definition_Code">
+        <UserObject label="Code : Text" id="Attribute_Definition_Code" fieldLabel="Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="External_Id__c : Text" tooltip="External Id" id="Attribute_Definition_External_Id__c">
+        <UserObject label="External_Id__c : Text" id="Attribute_Definition_External_Id__c" fieldLabel="External Id">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AttributePicklist" tooltip="8 fields&#xa;[Product Catalog] " id="table_AttributePicklist">
+        <UserObject label="AttributePicklist" id="table_AttributePicklist" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributePicklist" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributePicklist" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="1750" y="252" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="268" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AttributePicklist_Id">
+        <UserObject label="PK: Id : Text" id="AttributePicklist_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Picklist ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="AttributePicklist_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="AttributePicklist_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="AttributePicklist_Name">
+        <UserObject label="Name : Text" id="AttributePicklist_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="AttributePicklist_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="AttributePicklist_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Code : Text" tooltip="Code" id="AttributePicklist_Code">
+        <UserObject label="Code : Text" id="AttributePicklist_Code" fieldLabel="Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="AttributePicklist_Description">
+        <UserObject label="Description : Text" id="AttributePicklist_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="AttributePicklist_Status">
+        <UserObject label="Status : Enum" id="AttributePicklist_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DataType : Enum" tooltip="Data Type" id="AttributePicklist_DataType">
+        <UserObject label="DataType : Enum" id="AttributePicklist_DataType" fieldLabel="Data Type">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Product Related Component" tooltip="20 fields&#xa;[Product Catalog] Represents a product that is included in a product bundle, a set, or a product and an add-on." id="table_Product_Related_Component">
+        <UserObject label="Product Related Component" id="table_Product_Related_Component" description="&#xa;[Product Catalog] Represents a product that is included in a product bundle, a set, or a product and an add-on." category="Product Catalog" APIName="ProductRelatedComponent" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductRelatedComponent" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="829" y="295" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="580" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Product_Related_Component_Id">
+        <UserObject label="PK: Id : Text" id="Product_Related_Component_Id" description="Globally unique string that identifies a record." fieldLabel="Product Related Component ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ChildProductId : Product2" tooltip="Product ID" id="Product_Related_Component_ChildProductId">
+        <UserObject label="FK: ChildProductId : Product2" id="Product_Related_Component_ChildProductId" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ChildProductClassificationId : ProductClassification" tooltip="Product Classification ID" id="Product_Related_Component_ChildProductClassificati">
+        <UserObject label="FK: ChildProductClassificationId : ProductClassification" id="Product_Related_Component_ChildProductClassificati" fieldLabel="Product Classification ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentProductId : Product2" tooltip="Product ID" id="Product_Related_Component_ParentProductId">
+        <UserObject label="FK: ParentProductId : Product2" id="Product_Related_Component_ParentProductId" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentSellingModelId : ProductSellingModel" tooltip="Product Selling Model ID" id="Product_Related_Component_ParentSellingModelId">
+        <UserObject label="FK: ParentSellingModelId : ProductSellingModel" id="Product_Related_Component_ParentSellingModelId" fieldLabel="Product Selling Model ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ChildSellingModelId : ProductSellingModel" tooltip="Product Selling Model ID" id="Product_Related_Component_ChildSellingModelId">
+        <UserObject label="FK: ChildSellingModelId : ProductSellingModel" id="Product_Related_Component_ChildSellingModelId" fieldLabel="Product Selling Model ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ProductComponentGroupId : ProductComponentGroup" tooltip="Product Component Group ID" id="Product_Related_Component_ProductComponentGroupId">
+        <UserObject label="FK: ProductComponentGroupId : ProductComponentGroup" id="Product_Related_Component_ProductComponentGroupId" fieldLabel="Product Component Group ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ProductRelationshipTypeId : ProductRelationshipType" tooltip="Product Relationship Type ID" id="Product_Related_Component_ProductRelationshipTypeI">
+        <UserObject label="FK: ProductRelationshipTypeId : ProductRelationshipType" id="Product_Related_Component_ProductRelationshipTypeI" fieldLabel="Product Relationship Type ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="Product_Related_Component_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="Product_Related_Component_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Quantity : Number" tooltip="Quantity" id="Product_Related_Component_Quantity">
+        <UserObject label="Quantity : Number" id="Product_Related_Component_Quantity" fieldLabel="Quantity">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Sequence : Integer" tooltip="Sequence" id="Product_Related_Component_Sequence">
+        <UserObject label="Sequence : Integer" id="Product_Related_Component_Sequence" fieldLabel="Sequence">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DoesBundlePriceIncludeChild : Boolean" tooltip="Price includes component" id="Product_Related_Component_DoesBundlePriceIncludeCh">
+        <UserObject label="DoesBundlePriceIncludeChild : Boolean" id="Product_Related_Component_DoesBundlePriceIncludeCh" fieldLabel="Price includes component">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="QuantityScaleMethod : Enum" tooltip="Quantity Scaling Method" id="Product_Related_Component_QuantityScaleMethod">
+        <UserObject label="QuantityScaleMethod : Enum" id="Product_Related_Component_QuantityScaleMethod" fieldLabel="Quantity Scaling Method">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MaxQuantity : Number" tooltip="Max Quantity" id="Product_Related_Component_MaxQuantity">
+        <UserObject label="MaxQuantity : Number" id="Product_Related_Component_MaxQuantity" fieldLabel="Max Quantity">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MinQuantity : Number" tooltip="Min Quantity" id="Product_Related_Component_MinQuantity">
+        <UserObject label="MinQuantity : Number" id="Product_Related_Component_MinQuantity" fieldLabel="Min Quantity">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsComponentRequired : Boolean" tooltip="Require this component" id="Product_Related_Component_IsComponentRequired">
+        <UserObject label="IsComponentRequired : Boolean" id="Product_Related_Component_IsComponentRequired" fieldLabel="Require this component">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsQuantityEditable : Boolean" tooltip="Allow quantity changes" id="Product_Related_Component_IsQuantityEditable">
+        <UserObject label="IsQuantityEditable : Boolean" id="Product_Related_Component_IsQuantityEditable" fieldLabel="Allow quantity changes">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsDefaultComponent : Boolean" tooltip="Include component by default" id="Product_Related_Component_IsDefaultComponent">
+        <UserObject label="IsDefaultComponent : Boolean" id="Product_Related_Component_IsDefaultComponent" fieldLabel="Include component by default">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductInstanceReuse : Enum" tooltip="Product Instance Reuse" id="Product_Related_Component_ProductInstanceReuse">
+        <UserObject label="ProductInstanceReuse : Enum" id="Product_Related_Component_ProductInstanceReuse" fieldLabel="Product Instance Reuse">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="QuoteVisibility : Enum" tooltip="Quote Visibility" id="Product_Related_Component_QuoteVisibility">
+        <UserObject label="QuoteVisibility : Enum" id="Product_Related_Component_QuoteVisibility" fieldLabel="Quote Visibility">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Product" tooltip="49 fields (showing 20)&#xa;[Core] Represents a product that your company sells." id="table_Product">
+        <UserObject label="Product" id="table_Product" description="&#xa;[Core] Represents a product that your company sells." category="Core" APIName="Product2" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Product2" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="-203" y="377" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Product_Id">
+        <UserObject label="PK: Id : Text" id="Product_Id" description="Globally unique string that identifies a record." fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: TaxPolicyId : TaxPolicy" tooltip="Tax Policy ID" id="Product_TaxPolicyId">
+        <UserObject label="FK: TaxPolicyId : TaxPolicy" id="Product_TaxPolicyId" fieldLabel="Tax Policy ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: BillingPolicyId : BillingPolicy" tooltip="Billing Policy ID" id="Product_BillingPolicyId">
+        <UserObject label="FK: BillingPolicyId : BillingPolicy" id="Product_BillingPolicyId" fieldLabel="Billing Policy ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Product_RecordTypeId">
+        <UserObject label="FK: RecordTypeId : RecordType" id="Product_RecordTypeId" description="Type of record" fieldLabel="Record Type ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ExternalDataSourceId : ExternalDataSource" tooltip="External Data Source ID" id="Product_ExternalDataSourceId">
+        <UserObject label="FK: ExternalDataSourceId : ExternalDataSource" id="Product_ExternalDataSourceId" fieldLabel="External Data Source ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: BasedOnId : ProductClassification" tooltip="Product Classification ID" id="Product_BasedOnId">
+        <UserObject label="FK: BasedOnId : ProductClassification" id="Product_BasedOnId" fieldLabel="Product Classification ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" tooltip="Unit of Measure ID" id="Product_UnitOfMeasureId">
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure" id="Product_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Required. Default name of this record. Label is Product Name." id="Product_Name">
+        <UserObject label="Name : Text" id="Product_Name" description="Required. Default name of this record. Label is Product Name." fieldLabel="Product Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductCode : Text" tooltip="Default product code for this record. Your org defines the product’s code-naming pattern." id="Product_ProductCode">
+        <UserObject label="ProductCode : Text" id="Product_ProductCode" description="Default product code for this record. Your org defines the product’s code-naming pattern." fieldLabel="Product Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="A text description of this record. Label is Product Description." id="Product_Description">
+        <UserObject label="Description : Text" id="Product_Description" description="A text description of this record. Label is Product Description." fieldLabel="Product Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="QuantityScheduleType : Enum" tooltip="Quantity Schedule Type" id="Product_QuantityScheduleType">
+        <UserObject label="QuantityScheduleType : Enum" id="Product_QuantityScheduleType" fieldLabel="Quantity Schedule Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="QuantityInstallmentPeriod : Enum" tooltip="Quantity Installment Period" id="Product_QuantityInstallmentPeriod">
+        <UserObject label="QuantityInstallmentPeriod : Enum" id="Product_QuantityInstallmentPeriod" fieldLabel="Quantity Installment Period">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NumberOfQuantityInstallments : Integer" tooltip="Number Of Quantity Installments" id="Product_NumberOfQuantityInstallments">
+        <UserObject label="NumberOfQuantityInstallments : Integer" id="Product_NumberOfQuantityInstallments" fieldLabel="Number Of Quantity Installments">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RevenueScheduleType : Enum" tooltip="Revenue Schedule Type" id="Product_RevenueScheduleType">
+        <UserObject label="RevenueScheduleType : Enum" id="Product_RevenueScheduleType" fieldLabel="Revenue Schedule Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RevenueInstallmentPeriod : Enum" tooltip="Revenue Installment Period" id="Product_RevenueInstallmentPeriod">
+        <UserObject label="RevenueInstallmentPeriod : Enum" id="Product_RevenueInstallmentPeriod" fieldLabel="Revenue Installment Period">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NumberOfRevenueInstallments : Integer" tooltip="Number Of Revenue Installments" id="Product_NumberOfRevenueInstallments">
+        <UserObject label="NumberOfRevenueInstallments : Integer" id="Product_NumberOfRevenueInstallments" fieldLabel="Number Of Revenue Installments">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CanUseQuantitySchedule : Boolean" tooltip="Indicates whether the product can have a quantity schedule (true) or not (false). Label is Quantity Scheduling Enabled." id="Product_CanUseQuantitySchedule">
+        <UserObject label="CanUseQuantitySchedule : Boolean" id="Product_CanUseQuantitySchedule" description="Indicates whether the product can have a quantity schedule (true) or not (false). Label is Quantity Scheduling Enabled." fieldLabel="Quantity Scheduling Enabled">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CanUseRevenueSchedule : Boolean" tooltip="Indicates whether the product can have a revenue schedule (true) or not (false). Label is Revenue Scheduling Enabled." id="Product_CanUseRevenueSchedule">
+        <UserObject label="CanUseRevenueSchedule : Boolean" id="Product_CanUseRevenueSchedule" description="Indicates whether the product can have a revenue schedule (true) or not (false). Label is Revenue Scheduling Enabled." fieldLabel="Revenue Scheduling Enabled">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsActive : Boolean" tooltip="Indicates whether this record is active (true) or not (false). Inactive Product2 records are hidden in many areas in the user interface. You can change the IsActive flag on a Product2 object as often as necessary. Label is Active." id="Product_IsActive">
+        <UserObject label="IsActive : Boolean" id="Product_IsActive" description="Indicates whether this record is active (true) or not (false). Inactive Product2 records are hidden in many areas in the user interface. You can change the IsActive flag on a Product2 object as often as necessary. Label is Active." fieldLabel="Active">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Family : Enum" tooltip="Name of the product family associated with this record. Product families are configured as picklists in the user interface. To obtain a list of valid values, call describeSObjects() and process the result for the values associated with the Family field. Label is Product Family." id="Product_Family">
+        <UserObject label="Family : Enum" id="Product_Family" description="Name of the product family associated with this record. Product families are configured as picklists in the user interface. To obtain a list of valid values, call describeSObjects() and process the result for the values associated with the Family field. Label is Product Family." fieldLabel="Product Family">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -646,138 +646,138 @@
         <mxCell id="Product_more" value="... 29 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Tax Policy" tooltip="6 fields&#xa;[Core] A tax policy contains a group of tax treatments, where each treatment represents parameters to determine how a particular product is taxed for a transaction line item. Tax policies are related to products, which pass the policy on to the resulting order items. When you activate an order, Subscription Management assigns a tax treatment to each order item based on the tax policy&apos;s DefaultTaxTreatmentId, then uses the tax treatment to calculate tax." id="table_Tax_Policy">
+        <UserObject label="Tax Policy" id="table_Tax_Policy" description="&#xa;[Core] A tax policy contains a group of tax treatments, where each treatment represents parameters to determine how a particular product is taxed for a transaction line item. Tax policies are related to products, which pass the policy on to the resulting order items. When you activate an order, Subscription Management assigns a tax treatment to each order item based on the tax policy&apos;s DefaultTaxTreatmentId, then uses the tax treatment to calculate tax." category="Core" APIName="TaxPolicy" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/TaxPolicy" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="-545" y="410" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="216" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Tax_Policy_Id">
+        <UserObject label="PK: Id : Text" id="Tax_Policy_Id" description="Globally unique string that identifies a record." fieldLabel="Tax Policy ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: DefaultTaxTreatmentId : TaxTreatment" tooltip="Tax Treatment ID" id="Tax_Policy_DefaultTaxTreatmentId">
+        <UserObject label="FK: DefaultTaxTreatmentId : TaxTreatment" id="Tax_Policy_DefaultTaxTreatmentId" fieldLabel="Tax Treatment ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Optional user-defined name for the tax policy." id="Tax_Policy_Name">
+        <UserObject label="Name : Text" id="Tax_Policy_Name" description="Optional user-defined name for the tax policy." fieldLabel="Tax Policy Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="To calculate tax for order products, products must have an active tax policy. Tax policies are created with a Draft status before being assigned to a product or order product. After activating a tax policy, you can&apos;t edit certain policy fields." id="Tax_Policy_Status">
+        <UserObject label="Status : Enum" id="Tax_Policy_Status" description="To calculate tax for order products, products must have an active tax policy. Tax policies are created with a Draft status before being assigned to a product or order product. After activating a tax policy, you can&apos;t edit certain policy fields." fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="TreatmentSelection : Enum" tooltip="Defines how Subscription Management chooses a tax treatment to assign to order products related to this tax policy. In API version 55.0, only Default is supported." id="Tax_Policy_TreatmentSelection">
+        <UserObject label="TreatmentSelection : Enum" id="Tax_Policy_TreatmentSelection" description="Defines how Subscription Management chooses a tax treatment to assign to order products related to this tax policy. In API version 55.0, only Default is supported." fieldLabel="Treatment Selection">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Optional user-defined description for providing more information about the tax policy." id="Tax_Policy_Description">
+        <UserObject label="Description : Text" id="Tax_Policy_Description" description="Optional user-defined description for providing more information about the tax policy." fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductClassification" tooltip="6 fields&#xa;[Product Catalog] " id="table_ProductClassification">
+        <UserObject label="ProductClassification" id="table_ProductClassification" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductClassification" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductClassification" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="227" y="487" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="216" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ProductClassification_Id">
+        <UserObject label="PK: Id : Text" id="ProductClassification_Id" description="Globally unique string that identifies a record." fieldLabel="Product Classification ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Product Classification Name" id="ProductClassification_Name">
+        <UserObject label="Name : Text" id="ProductClassification_Name" fieldLabel="Product Classification Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="ProductClassification_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="ProductClassification_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Code : Text" tooltip="Code" id="ProductClassification_Code">
+        <UserObject label="Code : Text" id="ProductClassification_Code" fieldLabel="Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="ProductClassification_Status">
+        <UserObject label="Status : Enum" id="ProductClassification_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="External_Id__c : Text" tooltip="External Id" id="ProductClassification_External_Id__c">
+        <UserObject label="External_Id__c : Text" id="ProductClassification_External_Id__c" fieldLabel="External Id">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductComponentGroup" tooltip="11 fields&#xa;[Product Catalog] " id="table_ProductComponentGroup">
+        <UserObject label="ProductComponentGroup" id="table_ProductComponentGroup" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductComponentGroup" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductComponentGroup" linkTarget="_blank">
           <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
             <mxGeometry x="1277" y="519" width="200" height="60" as="geometry">
               <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ProductComponentGroup_Id">
+        <UserObject label="PK: Id : Text" id="ProductComponentGroup_Id" description="Globally unique string that identifies a record." fieldLabel="Product Component Group ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentProductId : Product2" tooltip="Product ID" id="ProductComponentGroup_ParentProductId">
+        <UserObject label="FK: ParentProductId : Product2" id="ProductComponentGroup_ParentProductId" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentGroupId : ProductComponentGroup" tooltip="Product Component Group ID" id="ProductComponentGroup_ParentGroupId">
+        <UserObject label="FK: ParentGroupId : ProductComponentGroup" id="ProductComponentGroup_ParentGroupId" fieldLabel="Product Component Group ID">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Group Name" id="ProductComponentGroup_Name">
+        <UserObject label="Name : Text" id="ProductComponentGroup_Name" fieldLabel="Group Name">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="ProductComponentGroup_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="ProductComponentGroup_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MinBundleComponents : Integer" tooltip="Min Number of Components" id="ProductComponentGroup_MinBundleComponents">
+        <UserObject label="MinBundleComponents : Integer" id="ProductComponentGroup_MinBundleComponents" fieldLabel="Min Number of Components">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MaxBundleComponents : Integer" tooltip="Max Number of Components" id="ProductComponentGroup_MaxBundleComponents">
+        <UserObject label="MaxBundleComponents : Integer" id="ProductComponentGroup_MaxBundleComponents" fieldLabel="Max Number of Components">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="ProductComponentGroup_Description">
+        <UserObject label="Description : Text" id="ProductComponentGroup_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Sequence : Integer" tooltip="Sequence" id="ProductComponentGroup_Sequence">
+        <UserObject label="Sequence : Integer" id="ProductComponentGroup_Sequence" fieldLabel="Sequence">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Code : Text" tooltip="Code" id="ProductComponentGroup_Code">
+        <UserObject label="Code : Text" id="ProductComponentGroup_Code" fieldLabel="Code">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="External_Id__c : Text" tooltip="External Id" id="ProductComponentGroup_External_Id__c">
+        <UserObject label="External_Id__c : Text" id="ProductComponentGroup_External_Id__c" fieldLabel="External Id">
           <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -790,150 +790,114 @@
 Get product details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=11;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
             <mxGeometry x="410" y="223" width="330" height="220" as="geometry"/>
         </mxCell>
-        <UserObject label="" tooltip="Many-to-One: Attribute Definition → Attribute Picklist&#xa;From: Attribute Definition.PicklistId&#xa;To: Attribute Picklist.Id" id="edge_AttributePicklist_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Attribute_Definition_PicklistId" target="AttributePicklist_Id">
+        <mxCell id="edge_AttributePicklist_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Attribute_Definition_PicklistId" target="AttributePicklist_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Component Group → Product&#xa;From: Product Component Group.ParentProductId&#xa;To: Product.Id" id="edge_Product2_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ProductComponentGroup_ParentProductId" target="Product_Id">
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ProductComponentGroup_ParentProductId" target="Product_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Attribute Category Attribute → Attribute Category&#xa;From: Attribute Category Attribute.AttributeCategoryId&#xa;To: Attribute Category.Id" id="edge_AttributeCategory_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeCategoryId" target="Attribute_Category_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeCategoryId" target="Attribute_Category_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Attribute Category Attribute → Attribute Definition&#xa;From: Attribute Category Attribute.AttributeDefinitionId&#xa;To: Attribute Definition.Id" id="edge_AttributeDefinition_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeDefinitionId" target="Attribute_Definition_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeDefinitionId" target="Attribute_Definition_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Attribute Definition → Product&#xa;From: Product Attribute Definition.Product2Id&#xa;To: Product.Id" id="edge_Product2_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_Product2Id" target="Product_Id">
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_Product2Id" target="Product_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Attribute Definition → Attribute Definition&#xa;From: Product Attribute Definition.AttributeDefinitionId&#xa;To: Attribute Definition.Id" id="edge_AttributeDefinition_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeDefinitionId" target="Attribute_Definition_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeDefinitionId" target="Attribute_Definition_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Attribute Definition → Product Classification Attribute&#xa;From: Product Attribute Definition.ProductClassificationAttributeId&#xa;To: Product Classification Attribute.Id" id="edge_ProductClassificationAttr_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_ProductClassification" target="Product_Classification_Attribute_Id">
+        </mxCell>
+        <mxCell id="edge_ProductClassificationAttr_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_ProductClassification" target="Product_Classification_Attribute_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Attribute Definition → Attribute Category&#xa;From: Product Attribute Definition.AttributeCategoryId&#xa;To: Attribute Category.Id" id="edge_AttributeCategory_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeCategoryId" target="Attribute_Category_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeCategoryId" target="Attribute_Category_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Attribute Definition → Product&#xa;From: Product Attribute Definition.OverrideContextId&#xa;To: Product.Id" id="edge_Product2_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_OverrideContextId" target="Product_Id">
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_OverrideContextId" target="Product_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Related Component → Product&#xa;From: Product Related Component.ChildProductId&#xa;To: Product.Id" id="edge_Product2_to_Id_3">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductId" target="Product_Id">
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductId" target="Product_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Related Component → Product Classification&#xa;From: Product Related Component.ChildProductClassificationId&#xa;To: Product Classification.Id" id="edge_ProductClassification_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductClassificati" target="ProductClassification_Id">
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductClassificati" target="ProductClassification_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Related Component → Product&#xa;From: Product Related Component.ParentProductId&#xa;To: Product.Id" id="edge_Product2_to_Id_4">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ParentProductId" target="Product_Id">
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ParentProductId" target="Product_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Related Component → Product Component Group&#xa;From: Product Related Component.ProductComponentGroupId&#xa;To: Product Component Group.Id" id="edge_ProductComponentGroup_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ProductComponentGroupId" target="ProductComponentGroup_Id">
+        </mxCell>
+        <mxCell id="edge_ProductComponentGroup_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ProductComponentGroupId" target="ProductComponentGroup_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Classification Attribute → Product Classification&#xa;From: Product Classification Attribute.ProductClassificationId&#xa;To: Product Classification.Id" id="edge_ProductClassification_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_ProductClassifica" target="ProductClassification_Id">
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_ProductClassifica" target="ProductClassification_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Classification Attribute → Attribute Definition&#xa;From: Product Classification Attribute.AttributeDefinitionId&#xa;To: Attribute Definition.Id" id="edge_AttributeDefinition_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeDefiniti" target="Attribute_Definition_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeDefiniti" target="Attribute_Definition_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product Classification Attribute → Attribute Category&#xa;From: Product Classification Attribute.AttributeCategoryId&#xa;To: Attribute Category.Id" id="edge_AttributeCategory_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeCategory" target="Attribute_Category_Id">
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeCategory" target="Attribute_Category_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product → Product Classification&#xa;From: Product.BasedOnId&#xa;To: Product Classification.Id" id="edge_ProductClassification_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_BasedOnId" target="ProductClassification_Id">
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_BasedOnId" target="ProductClassification_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Product → Tax Policy&#xa;From: Product.TaxPolicyId&#xa;To: Tax Policy.Id" id="edge_TaxPolicy_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_TaxPolicyId" target="Tax_Policy_Id">
+        </mxCell>
+        <mxCell id="edge_TaxPolicy_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_TaxPolicyId" target="Tax_Policy_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

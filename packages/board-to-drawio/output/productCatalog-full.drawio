@@ -1,11 +1,1104 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.4">
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-01-28T13:26:42.026Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
   <diagram id="diagram1" name="Product Catalog - Full">
-    <mxGraphModel dx="1426" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
-        <object label="Product Catalog - Full" title="Product Catalog - Full" id="0">
+        <object label="Product Catalog - Full" id="0" title="Product Catalog - Full">
           <mxCell />
         </object>
-        <mxCell id="1" parent="0" />
+        <mxCell id="1" parent="0">
+        </mxCell>
+        <mxCell id="group_Connect_APIs" value="Connect APIs
+Move nodes inside this zone to group them" style="swimlane=0;fillColor=#6b637b;strokeColor=#383048;strokeWidth=2;rounded=1;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
+            <mxGeometry x="2081" y="-60" width="830" height="504" as="geometry"/>
+        </mxCell>
+        <UserObject label="AttributeCategoryAttribute" id="table_AttributeCategoryAttribute" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributeCategoryAttribute" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeCategoryAttribute" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1115" y="-81" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="242" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="AttributeCategoryAttribute_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Category Attribute ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory
+Attribute Category ID" id="AttributeCategoryAttribute_AttributeCategoryId" fieldLabel="Attribute Category ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition
+Attribute Definition ID" id="AttributeCategoryAttribute_AttributeDefinitionId" fieldLabel="Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Name" id="AttributeCategoryAttribute_Name" fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="AttributeCategoryAttribute_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="AttributeCategoryAttribute_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_Id__c : Text
+External Id" id="AttributeCategoryAttribute_External_Id__c" fieldLabel="External Id">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributeCategoryAttribute" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Attribute Category" id="table_Attribute_Category" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributeCategory" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeCategory" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="469" y="-59" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="242" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Attribute_Category_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Category ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Name" id="Attribute_Category_Name" fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="Attribute_Category_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Attribute_Category_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Code : Text
+Code" id="Attribute_Category_Code" fieldLabel="Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description" id="Attribute_Category_Description" fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_Id__c : Text
+External Id" id="Attribute_Category_External_Id__c" fieldLabel="External Id">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Category" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Product Classification Attribute" id="table_Product_Classification_Attribute" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductClassificationAttr" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductClassificationAttr" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="830" y="52" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Product_Classification_Attribute_Id" description="Globally unique string that identifies a record." fieldLabel="Product Classification Attribute ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductClassificationId : ProductClassification
+Product Classification ID" id="Product_Classification_Attribute_ProductClassifica" fieldLabel="Product Classification ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition
+Attribute Definition ID" id="Product_Classification_Attribute_AttributeDefiniti" fieldLabel="Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory
+Attribute Category ID" id="Product_Classification_Attribute_AttributeCategory" fieldLabel="Attribute Category ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="Product_Classification_Attribute_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Name" id="Product_Classification_Attribute_Name" fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="Product_Classification_Attribute_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Product_Classification_Attribute_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description" id="Product_Classification_Attribute_Description" fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ValueDescription : Text
+Value Description" id="Product_Classification_Attribute_ValueDescription" fieldLabel="Value Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HelpText : Text
+Help Text" id="Product_Classification_Attribute_HelpText" fieldLabel="Help Text">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsHidden : Boolean
+Is Hidden" id="Product_Classification_Attribute_IsHidden" fieldLabel="Is Hidden">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsReadOnly : Boolean
+Is Read Only" id="Product_Classification_Attribute_IsReadOnly" fieldLabel="Is Read Only">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsRequired : Boolean
+Is Required" id="Product_Classification_Attribute_IsRequired" fieldLabel="Is Required">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum
+Status" id="Product_Classification_Attribute_Status" fieldLabel="Status">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sequence : Integer
+Sequence" id="Product_Classification_Attribute_Sequence" fieldLabel="Sequence">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AttributeNameOverride : Text
+Attribute Name Override" id="Product_Classification_Attribute_AttributeNameOver" fieldLabel="Attribute Name Override">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DefaultValue : Text
+Default Value" id="Product_Classification_Attribute_DefaultValue" fieldLabel="Default Value">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DisplayType : Enum
+Display Type" id="Product_Classification_Attribute_DisplayType" fieldLabel="Display Type">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPriceImpacting : Boolean
+Is Price Impacting" id="Product_Classification_Attribute_IsPriceImpacting" fieldLabel="Is Price Impacting">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Product_Classification_Attribute_more" value="... 9 more fields" style="text=1;strokeColor=#d98200;fillColor=#ffff78;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product_Classification_Attribute" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Product Attribute Definition" id="table_Product_Attribute_Definition" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductAttributeDefinition" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductAttributeDefinition" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="145" y="173" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Product_Attribute_Definition_Id" description="Globally unique string that identifies a record." fieldLabel="Product Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: Product2Id : Product2
+Product ID" id="Product_Attribute_Definition_Product2Id" fieldLabel="Product ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeDefinitionId : AttributeDefinition
+Attribute Definition ID" id="Product_Attribute_Definition_AttributeDefinitionId" fieldLabel="Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OverrideContextId : Product2
+Override Context ID" id="Product_Attribute_Definition_OverrideContextId" fieldLabel="Override Context ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OverriddenProductAttributeDefinitionId : ProductAttributeDefinition
+Product Attribute Definition ID" id="Product_Attribute_Definition_OverriddenProductAttr" fieldLabel="Product Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttributeCategoryId : AttributeCategory
+Attribute Category ID" id="Product_Attribute_Definition_AttributeCategoryId" fieldLabel="Attribute Category ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductClassificationAttributeId : ProductClassificationAttr
+Product Classification Attribute ID" id="Product_Attribute_Definition_ProductClassification" fieldLabel="Product Classification Attribute ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="Product_Attribute_Definition_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Name" id="Product_Attribute_Definition_Name" fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="Product_Attribute_Definition_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Product_Attribute_Definition_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AttributeNameOverride : Text
+Attribute Name Override" id="Product_Attribute_Definition_AttributeNameOverride" fieldLabel="Attribute Name Override">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DefaultValue : Text
+Default Value" id="Product_Attribute_Definition_DefaultValue" fieldLabel="Default Value">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ValueDescription : Text
+Value Description" id="Product_Attribute_Definition_ValueDescription" fieldLabel="Value Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description" id="Product_Attribute_Definition_Description" fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HelpText : Text
+Help Text" id="Product_Attribute_Definition_HelpText" fieldLabel="Help Text">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsHidden : Boolean
+Is Hidden" id="Product_Attribute_Definition_IsHidden" fieldLabel="Is Hidden">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsReadOnly : Boolean
+Is Read Only" id="Product_Attribute_Definition_IsReadOnly" fieldLabel="Is Read Only">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsRequired : Boolean
+Is Required" id="Product_Attribute_Definition_IsRequired" fieldLabel="Is Required">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum
+Status" id="Product_Attribute_Definition_Status" fieldLabel="Status">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Product_Attribute_Definition_more" value="... 12 more fields" style="text=1;strokeColor=#d98200;fillColor=#ffff78;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Attribute Definition" id="table_Attribute_Definition" description="&#xa;[Product Catalog] Represents a product, asset, or object attribute, for example, a hardward specification or software detail." category="Product Catalog" APIName="AttributeDefinition" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributeDefinition" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1421" y="217" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="528" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Attribute_Definition_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Definition ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="Attribute_Definition_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PicklistId : AttributePicklist
+Attribute Picklist ID" id="Attribute_Definition_PicklistId" fieldLabel="Attribute Picklist ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+The name of the attribute." id="Attribute_Definition_Name" description="The name of the attribute." fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="Attribute_Definition_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Attribute_Definition_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Label : Text
+The label for the attribute." id="Attribute_Definition_Label" description="The label for the attribute." fieldLabel="Label">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description of this attribute." id="Attribute_Definition_Description" description="Description of this attribute." fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DataType : Enum
+The data type of the attribute definition." id="Attribute_Definition_DataType" description="The data type of the attribute definition." fieldLabel="Data Type">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean
+Indicates that the attribute definition is active. Active attributes definitions" id="Attribute_Definition_IsActive" description="Indicates that the attribute definition is active. Active attributes definitions can be selected for assets." fieldLabel="Active">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsRequired : Boolean
+Indicates whether the attribute definition is required for an asset." id="Attribute_Definition_IsRequired" description="Indicates whether the attribute definition is required for an asset." fieldLabel="Required">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DefaultValue : Text
+The default value for this attribute." id="Attribute_Definition_DefaultValue" description="The default value for this attribute." fieldLabel="Default Value">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SourceSystemIdentifier : Text
+The identifier of the attribute definition in an external system." id="Attribute_Definition_SourceSystemIdentifier" description="The identifier of the attribute definition in an external system." fieldLabel="Source System ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ValueDescription : Text
+Value Description" id="Attribute_Definition_ValueDescription" fieldLabel="Value Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DefaultHelpText : Text
+Default Help Text" id="Attribute_Definition_DefaultHelpText" fieldLabel="Default Help Text">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Code : Text
+Code" id="Attribute_Definition_Code" fieldLabel="Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DeveloperName : Text
+The unique name of the attribute definition record." id="Attribute_Definition_DeveloperName" description="The unique name of the attribute definition record." fieldLabel="API Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_Id__c : Text
+External Id" id="Attribute_Definition_External_Id__c" fieldLabel="External Id">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Attribute_Definition" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="AttributePicklist" id="table_AttributePicklist" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="AttributePicklist" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AttributePicklist" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1750" y="252" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="294" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="AttributePicklist_Id" description="Globally unique string that identifies a record." fieldLabel="Attribute Picklist ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="AttributePicklist_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Name" id="AttributePicklist_Name" fieldLabel="Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="AttributePicklist_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="AttributePicklist_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Code : Text
+Code" id="AttributePicklist_Code" fieldLabel="Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description" id="AttributePicklist_Description" fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum
+Status" id="AttributePicklist_Status" fieldLabel="Status">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DataType : Enum
+Data Type" id="AttributePicklist_DataType" fieldLabel="Data Type">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AttributePicklist" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Product Related Component" id="table_Product_Related_Component" description="&#xa;[Product Catalog] Represents a product that is included in a product bundle, a set, or a product and an add-on." category="Product Catalog" APIName="ProductRelatedComponent" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductRelatedComponent" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="829" y="295" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Product_Related_Component_Id" description="Globally unique string that identifies a record." fieldLabel="Product Related Component ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ChildProductId : Product2
+Product ID" id="Product_Related_Component_ChildProductId" fieldLabel="Product ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ChildProductClassificationId : ProductClassification
+Product Classification ID" id="Product_Related_Component_ChildProductClassificati" fieldLabel="Product Classification ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentProductId : Product2
+Product ID" id="Product_Related_Component_ParentProductId" fieldLabel="Product ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentSellingModelId : ProductSellingModel
+Product Selling Model ID" id="Product_Related_Component_ParentSellingModelId" fieldLabel="Product Selling Model ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ChildSellingModelId : ProductSellingModel
+Product Selling Model ID" id="Product_Related_Component_ChildSellingModelId" fieldLabel="Product Selling Model ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductComponentGroupId : ProductComponentGroup
+Product Component Group ID" id="Product_Related_Component_ProductComponentGroupId" fieldLabel="Product Component Group ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductRelationshipTypeId : ProductRelationshipType
+Product Relationship Type ID" id="Product_Related_Component_ProductRelationshipTypeI" fieldLabel="Product Relationship Type ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="Product_Related_Component_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Product Related Component Name" id="Product_Related_Component_Name" fieldLabel="Product Related Component Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Product_Related_Component_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Quantity : Number
+Quantity" id="Product_Related_Component_Quantity" fieldLabel="Quantity">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sequence : Integer
+Sequence" id="Product_Related_Component_Sequence" fieldLabel="Sequence">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="DoesBundlePriceIncludeChild : Boolean
+Price includes component" id="Product_Related_Component_DoesBundlePriceIncludeCh" fieldLabel="Price includes component">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuantityScaleMethod : Enum
+Quantity Scaling Method" id="Product_Related_Component_QuantityScaleMethod" fieldLabel="Quantity Scaling Method">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MaxQuantity : Number
+Max Quantity" id="Product_Related_Component_MaxQuantity" fieldLabel="Max Quantity">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MinQuantity : Number
+Min Quantity" id="Product_Related_Component_MinQuantity" fieldLabel="Min Quantity">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsComponentRequired : Boolean
+Require this component" id="Product_Related_Component_IsComponentRequired" fieldLabel="Require this component">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsQuantityEditable : Boolean
+Allow quantity changes" id="Product_Related_Component_IsQuantityEditable" fieldLabel="Allow quantity changes">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsDefaultComponent : Boolean
+Include component by default" id="Product_Related_Component_IsDefaultComponent" fieldLabel="Include component by default">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Product_Related_Component_more" value="... 4 more fields" style="text=1;strokeColor=#d98200;fillColor=#ffff78;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product_Related_Component" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Product" id="table_Product" description="&#xa;[Core] Represents a product that your company sells." category="Core" APIName="Product2" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Product2" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-203" y="377" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Product_Id" description="Globally unique string that identifies a record." fieldLabel="Product ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TaxPolicyId : TaxPolicy
+Tax Policy ID" id="Product_TaxPolicyId" fieldLabel="Tax Policy ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BillingPolicyId : BillingPolicy
+Billing Policy ID" id="Product_BillingPolicyId" fieldLabel="Billing Policy ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RecordTypeId : RecordType
+Type of record" id="Product_RecordTypeId" description="Type of record" fieldLabel="Record Type ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ExternalDataSourceId : ExternalDataSource
+External Data Source ID" id="Product_ExternalDataSourceId" fieldLabel="External Data Source ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: BasedOnId : ProductClassification
+Product Classification ID" id="Product_BasedOnId" fieldLabel="Product Classification ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: UnitOfMeasureId : UnitOfMeasure
+Unit of Measure ID" id="Product_UnitOfMeasureId" fieldLabel="Unit of Measure ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Required. Default name of this record. Label is Product Name." id="Product_Name" description="Required. Default name of this record. Label is Product Name." fieldLabel="Product Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProductCode : Text
+Default product code for this record. Your org defines the product’s code-naming" id="Product_ProductCode" description="Default product code for this record. Your org defines the product’s code-naming pattern." fieldLabel="Product Code">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+A text description of this record. Label is Product Description." id="Product_Description" description="A text description of this record. Label is Product Description." fieldLabel="Product Description">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuantityScheduleType : Enum
+Quantity Schedule Type" id="Product_QuantityScheduleType" fieldLabel="Quantity Schedule Type">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="QuantityInstallmentPeriod : Enum
+Quantity Installment Period" id="Product_QuantityInstallmentPeriod" fieldLabel="Quantity Installment Period">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NumberOfQuantityInstallments : Integer
+Number Of Quantity Installments" id="Product_NumberOfQuantityInstallments" fieldLabel="Number Of Quantity Installments">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RevenueScheduleType : Enum
+Revenue Schedule Type" id="Product_RevenueScheduleType" fieldLabel="Revenue Schedule Type">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="RevenueInstallmentPeriod : Enum
+Revenue Installment Period" id="Product_RevenueInstallmentPeriod" fieldLabel="Revenue Installment Period">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="NumberOfRevenueInstallments : Integer
+Number Of Revenue Installments" id="Product_NumberOfRevenueInstallments" fieldLabel="Number Of Revenue Installments">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CanUseQuantitySchedule : Boolean
+Indicates whether the product can have a quantity schedule (true) or not (false)" id="Product_CanUseQuantitySchedule" description="Indicates whether the product can have a quantity schedule (true) or not (false). Label is Quantity Scheduling Enabled." fieldLabel="Quantity Scheduling Enabled">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CanUseRevenueSchedule : Boolean
+Indicates whether the product can have a revenue schedule (true) or not (false)." id="Product_CanUseRevenueSchedule" description="Indicates whether the product can have a revenue schedule (true) or not (false). Label is Revenue Scheduling Enabled." fieldLabel="Revenue Scheduling Enabled">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean
+Indicates whether this record is active (true) or not (false). Inactive Product2" id="Product_IsActive" description="Indicates whether this record is active (true) or not (false). Inactive Product2 records are hidden in many areas in the user interface. You can change the IsActive flag on a Product2 object as often as necessary. Label is Active." fieldLabel="Active">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Product_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Product_more" value="... 37 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Product" movable="0">
+            <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
+        </mxCell>
+        <UserObject label="Tax Policy" id="table_Tax_Policy" description="&#xa;[Core] A tax policy contains a group of tax treatments, where each treatment represents parameters to determine how a particular product is taxed for a transaction line item. Tax policies are related to products, which pass the policy on to the resulting order items. When you activate an order, Subscription Management assigns a tax treatment to each order item based on the tax policy&apos;s DefaultTaxTreatmentId, then uses the tax treatment to calculate tax." category="Core" APIName="TaxPolicy" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/TaxPolicy" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-545" y="410" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="242" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="Tax_Policy_Id" description="Globally unique string that identifies a record." fieldLabel="Tax Policy ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: DefaultTaxTreatmentId : TaxTreatment
+Tax Treatment ID" id="Tax_Policy_DefaultTaxTreatmentId" fieldLabel="Tax Treatment ID">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Optional user-defined name for the tax policy." id="Tax_Policy_Name" description="Optional user-defined name for the tax policy." fieldLabel="Tax Policy Name">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="Tax_Policy_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum
+To calculate tax for order products, products must have an active tax policy. Ta" id="Tax_Policy_Status" description="To calculate tax for order products, products must have an active tax policy. Tax policies are created with a Draft status before being assigned to a product or order product. After activating a tax policy, you can&apos;t edit certain policy fields." fieldLabel="Status">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="TreatmentSelection : Enum
+Defines how Subscription Management chooses a tax treatment to assign to order p" id="Tax_Policy_TreatmentSelection" description="Defines how Subscription Management chooses a tax treatment to assign to order products related to this tax policy. In API version 55.0, only Default is supported." fieldLabel="Treatment Selection">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Optional user-defined description for providing more information about the tax p" id="Tax_Policy_Description" description="Optional user-defined description for providing more information about the tax policy." fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Tax_Policy" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProductClassification" id="table_ProductClassification" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductClassification" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductClassification" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="227" y="487" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="242" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="ProductClassification_Id" description="Globally unique string that identifies a record." fieldLabel="Product Classification ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Product Classification Name" id="ProductClassification_Name" fieldLabel="Product Classification Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="ProductClassification_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="ProductClassification_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Code : Text
+Code" id="ProductClassification_Code" fieldLabel="Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum
+Status" id="ProductClassification_Status" fieldLabel="Status">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_Id__c : Text
+External Id" id="ProductClassification_External_Id__c" fieldLabel="External Id">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductClassification" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ProductComponentGroup" id="table_ProductComponentGroup" description="&#xa;[Product Catalog] " category="Product Catalog" APIName="ProductComponentGroup" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ProductComponentGroup" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#F39C12;strokeColor=#c06900;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/product_workspace.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1277" y="519" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="372" as="alternateBounds"/>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text
+Globally unique string that identifies a record." id="ProductComponentGroup_Id" description="Globally unique string that identifies a record." fieldLabel="Product Component Group ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffe95f;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentProductId : Product2
+Product ID" id="ProductComponentGroup_ParentProductId" fieldLabel="Product ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentGroupId : ProductComponentGroup
+Product Component Group ID" id="ProductComponentGroup_ParentGroupId" fieldLabel="Product Component Group ID">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text
+Group Name" id="ProductComponentGroup_Name" fieldLabel="Group Name">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="CurrencyIsoCode : Enum
+Currency ISO Code" id="ProductComponentGroup_CurrencyIsoCode" fieldLabel="Currency ISO Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime
+Date and time when a user last modified this record." id="ProductComponentGroup_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MinBundleComponents : Integer
+Min Number of Components" id="ProductComponentGroup_MinBundleComponents" fieldLabel="Min Number of Components">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="MaxBundleComponents : Integer
+Max Number of Components" id="ProductComponentGroup_MaxBundleComponents" fieldLabel="Max Number of Components">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text
+Description" id="ProductComponentGroup_Description" fieldLabel="Description">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sequence : Integer
+Sequence" id="ProductComponentGroup_Sequence" fieldLabel="Sequence">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Code : Text
+Code" id="ProductComponentGroup_Code" fieldLabel="Code">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <UserObject label="External_Id__c : Text
+External Id" id="ProductComponentGroup_External_Id__c" fieldLabel="External Id">
+          <mxCell style="text=1;strokeColor=#d98200;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ProductComponentGroup" movable="0">
+            <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
+          </mxCell>
+        </UserObject>
+        <mxCell id="markdown_Product_Catalog" value="Product Catalog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=40;text=1;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="526" y="-335" width="907" height="146" as="geometry"/>
+        </mxCell>
+        <mxCell id="callout_Get_product_details" value="POST /connect/cpq/products/{{product.Id}}
+
+Get product details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=11;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="410" y="223" width="330" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_AttributePicklist_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Attribute_Definition_PicklistId" target="AttributePicklist_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ProductComponentGroup_ParentProductId" target="Product_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeCategoryId" target="Attribute_Category_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AttributeCategoryAttribute_AttributeDefinitionId" target="Attribute_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_Product2Id" target="Product_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeDefinitionId" target="Attribute_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ProductClassificationAttr_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_ProductClassification" target="Product_Classification_Attribute_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_AttributeCategoryId" target="Attribute_Category_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Attribute_Definition_OverrideContextId" target="Product_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductId" target="Product_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ChildProductClassificati" target="ProductClassification_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Product2_to_Id_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ParentProductId" target="Product_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ProductComponentGroup_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Related_Component_ProductComponentGroupId" target="ProductComponentGroup_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_ProductClassifica" target="ProductClassification_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeDefinition_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeDefiniti" target="Attribute_Definition_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AttributeCategory_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_Classification_Attribute_AttributeCategory" target="Attribute_Category_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ProductClassification_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_BasedOnId" target="ProductClassification_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_TaxPolicy_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Product_TaxPolicyId" target="Tax_Policy_Id">
+            <mxGeometry as="geometry" relative="1">
+              <mxPoint as="sourcePoint"/>
+              <mxPoint as="targetPoint"/>
+            </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
