@@ -21,7 +21,7 @@ import {
  * @param options.includeGroupZones - Include group zones from the board (default: true)
  * @param options.title - Title for the diagram (default: "SF Explorer Board")
  * @param options.showFieldTypes - Show field data types (default: true)
- * @param options.showDescriptions - Show field descriptions as tooltips (default: false)
+ * @param options.showDescriptions - Show field descriptions (default: false)
  * @param options.tableWidth - Width of table cells in pixels (default: 200)
  * @param options.fieldHeight - Height of field rows in pixels (default: 26)
  * @param options.maxFields - Maximum number of fields to display per table (default: 20)
@@ -433,6 +433,7 @@ function createTableCells(
     isForeign: boolean;
     referencedTable?: string;
     description: string;
+    label: string;
   }> = [];
 
   if (node.data.schema?.properties) {
@@ -459,7 +460,8 @@ function createTableCells(
         isPrimary: isPrimaryKey,
         isForeign: isForeignKey,
         referencedTable: fieldProp['x-target'],
-        description: fieldProp.description || fieldProp.title || ''
+        description: fieldProp.description || fieldProp.title || '',
+        label: fieldProp.title || fieldName
       });
     }
   }
@@ -512,13 +514,10 @@ function createTableCells(
     } : {}),
   });
 
-  // Build tooltip for table
-  let tableTooltip = `${fields.length} field${fields.length !== 1 ? 's' : ''}`;
-  if (hasMoreFields) {
-    tableTooltip += ` (showing ${displayFields.length})`;
-  }
+  // Build description for table
+  let tableDescription = ``;
   if (node.data.schema?.description) {
-    tableTooltip += `\n${node.data.schema.description}`;
+    tableDescription += `\n${node.data.schema.description}`;
   }
 
   // When collapsed, show header height; when expanded, show full height
@@ -529,7 +528,28 @@ function createTableCells(
   const tableX = hasAnnotation ? 0 : Math.round(node.position.x);
   const tableY = hasAnnotation ? annotationTopMargin : Math.round(node.position.y);
   
-  cells.push({
+  // Get KeyPrefix and InternalSharingModel from values if available
+  const values = (node.data as any).values;
+  const KeyPrefix = values?.KeyPrefix;
+  const InternalSharingModel = values?.InternalSharingModel;
+  const category = (node.data as any).category;
+  
+  // Extract APIName from various sources:
+  // 1. QualifiedApiName from values
+  // 2. table.name
+  // 3. Extract from data.Id if it's in format "EntityDefinition/{APIName}"
+  let APIName = values?.QualifiedApiName || node.data.table?.name;
+  if (!APIName && node.data.Id) {
+    const idMatch = String(node.data.Id).match(/^EntityDefinition\/(.+)$/);
+    if (idMatch) {
+      APIName = idMatch[1];
+    }
+  }
+  
+  // Generate documentation link for Salesforce objects using APIName
+  const docLink = APIName ? `https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/${APIName}` : undefined;
+  
+  const tableCell: DrawioCell = {
     id: tableCellId,
     value: escapeXml(tableName),
     style: tableStyle,
@@ -544,8 +564,32 @@ function createTableCells(
       width: tableWidth,
       height: alternateHeight,
     },
-    tooltip: escapeXml(tableTooltip)
-  });
+    description: escapeXml(tableDescription),
+    link: docLink,
+    linkTarget: docLink ? '_blank' : undefined
+  };
+  
+  // Add KeyPrefix if available
+  if (KeyPrefix !== undefined) {
+    tableCell.KeyPrefix = String(KeyPrefix);
+  }
+  
+  // Add InternalSharingModel if available
+  if (InternalSharingModel !== undefined) {
+    tableCell.InternalSharingModel = String(InternalSharingModel);
+  }
+  
+  // Add category if available
+  if (category !== undefined) {
+    tableCell.category = String(category);
+  }
+  
+  // Add APIName if available
+  if (APIName !== undefined) {
+    tableCell.APIName = String(APIName);
+  }
+  
+  cells.push(tableCell);
 
   // Create field cells using same structure as UML
   let currentY = headerHeight;
@@ -639,9 +683,14 @@ function createTableCells(
       height: fieldHeight,
     };
     
-    // Add tooltip if description exists
-    if (field.description) {
-      fieldCell.tooltip = escapeXml(field.description);
+    // Add label if exists
+    if (field.label) {
+      fieldCell.label = escapeXml(field.label);
+    }
+    
+    // Add description only if it's different from label
+    if (field.description && field.description !== field.label) {
+      fieldCell.description = escapeXml(field.description);
     }
     
     cells.push(fieldCell);
@@ -785,6 +834,7 @@ function createUmlClassCells(
     referencedTable?: string;
     description: string;
     visibility: string; // + public, - private, # protected
+    label: string;
   }> = [];
 
   if (node.data.schema?.properties) {
@@ -818,7 +868,8 @@ function createUmlClassCells(
         isForeign: isForeignKey,
         referencedTable: fieldProp['x-target'],
         description: fieldProp.description || fieldProp.title || '',
-        visibility
+        visibility,
+        label: fieldProp.title || fieldName
       });
     }
   }
@@ -856,13 +907,13 @@ function createUmlClassCells(
   
   const tableCellId = getUniqueId(`uml_class_${tableName}`);
   
-  // Build tooltip for class
-  let classTooltip = `${fields.length} attribute${fields.length !== 1 ? 's' : ''}`;
+  // Build description for class
+  let classDescription = `${fields.length} attribute${fields.length !== 1 ? 's' : ''}`;
   if (hasMoreFields) {
-    classTooltip += ` (showing ${displayFields.length})`;
+    classDescription += ` (showing ${displayFields.length})`;
   }
   if (node.data.schema?.description) {
-    classTooltip += `\n${node.data.schema.description}`;
+    classDescription += `\n${node.data.schema.description}`;
   }
 
   // UML Class container using swimlane with stackLayout (native draw.io format)
@@ -895,7 +946,28 @@ function createUmlClassCells(
   const classX = hasAnnotation ? 0 : Math.round(node.position.x);
   const classY = hasAnnotation ? annotationTopMargin : Math.round(node.position.y);
   
-  cells.push({
+  // Get KeyPrefix and InternalSharingModel from values if available
+  const values = (node.data as any).values;
+  const KeyPrefix = values?.KeyPrefix;
+  const InternalSharingModel = values?.InternalSharingModel;
+  const category = (node.data as any).category;
+  
+  // Extract APIName from various sources:
+  // 1. QualifiedApiName from values
+  // 2. table.name
+  // 3. Extract from data.Id if it's in format "EntityDefinition/{APIName}"
+  let APIName = values?.QualifiedApiName || node.data.table?.name;
+  if (!APIName && node.data.Id) {
+    const idMatch = String(node.data.Id).match(/^EntityDefinition\/(.+)$/);
+    if (idMatch) {
+      APIName = idMatch[1];
+    }
+  }
+  
+  // Generate documentation link for Salesforce objects using APIName
+  const docLink = APIName ? `https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/${APIName}` : undefined;
+  
+  const classCell: DrawioCell = {
     id: tableCellId,
     value: escapeXml(tableName),
     style: classStyle,
@@ -905,8 +977,32 @@ function createUmlClassCells(
     y: classY,
     width: tableWidth,
     height: classHeight,
-    tooltip: escapeXml(classTooltip)
-  });
+    description: escapeXml(classDescription),
+    link: docLink,
+    linkTarget: docLink ? '_blank' : undefined
+  };
+  
+  // Add KeyPrefix if available
+  if (KeyPrefix !== undefined) {
+    classCell.KeyPrefix = String(KeyPrefix);
+  }
+  
+  // Add InternalSharingModel if available
+  if (InternalSharingModel !== undefined) {
+    classCell.InternalSharingModel = String(InternalSharingModel);
+  }
+  
+  // Add category if available
+  if (category !== undefined) {
+    classCell.category = String(category);
+  }
+  
+  // Add APIName if available
+  if (APIName !== undefined) {
+    classCell.APIName = String(APIName);
+  }
+  
+  cells.push(classCell);
 
   // Create field cells (attributes)
   let currentY = headerHeight;
@@ -984,9 +1080,14 @@ function createUmlClassCells(
       height: fieldHeight,
     };
     
-    // Add tooltip if description exists
+    // Add description if exists
     if (field.description) {
-      fieldCell.tooltip = escapeXml(field.description);
+      fieldCell.description = escapeXml(field.description);
+    }
+    
+    // Add label if exists
+    if (field.label) {
+      fieldCell.label = escapeXml(field.label);
     }
     
     cells.push(fieldCell);
@@ -1839,13 +1940,56 @@ function buildDrawioXML(cells: DrawioCell[], title: string, options: ConversionO
       continue; // Skip normal cell processing for root cell
     }
     
-    // If tooltip exists, use UserObject wrapper
-    if (cell.tooltip !== undefined) {
-      // Replace newlines with &#xa; for XML tooltips
-      const tooltipText = cell.tooltip.replace(/\n/g, '&#xa;');
+    // If description exists or label exists (for fields), use UserObject wrapper
+    if (cell.description !== undefined || cell.label !== undefined) {
       const labelText = cell.value || '';
+      let userObjectAttrs = `label="${labelText}" id="${cell.id}"`;
       
-      xmlParts.push('        <UserObject label="' + labelText + '" tooltip="' + tooltipText + '" id="' + cell.id + '">');
+      // For fields: only include description if it's different from label
+      // For tables: always include description (no label to compare)
+      if (cell.description !== undefined) {
+        // Compare raw strings before XML processing
+        const shouldIncludeDescription = cell.label === undefined || cell.description !== cell.label;
+        if (shouldIncludeDescription) {
+          const descriptionText = cell.description.replace(/\n/g, '&#xa;');
+          userObjectAttrs += ` description="${descriptionText}"`;
+        }
+      }
+      
+      // Add KeyPrefix if available
+      if (cell.KeyPrefix !== undefined) {
+        userObjectAttrs += ` KeyPrefix="${escapeXml(String(cell.KeyPrefix))}"`;
+      }
+      
+      // Add InternalSharingModel if available
+      if (cell.InternalSharingModel !== undefined) {
+        userObjectAttrs += ` InternalSharingModel="${escapeXml(String(cell.InternalSharingModel))}"`;
+      }
+      
+      // Add category if available
+      if (cell.category !== undefined) {
+        userObjectAttrs += ` category="${escapeXml(String(cell.category))}"`;
+      }
+      
+      // Add APIName if available (for objects/tables)
+      if (cell.APIName !== undefined) {
+        userObjectAttrs += ` APIName="${escapeXml(String(cell.APIName))}"`;
+      }
+      
+      // Add fieldLabel property if available (for fields) - avoids conflict with main label attribute
+      if (cell.label !== undefined) {
+        userObjectAttrs += ` fieldLabel="${escapeXml(String(cell.label))}"`;
+      }
+      
+      // Add link and linkTarget to UserObject (not mxCell)
+      if (cell.link !== undefined) {
+        userObjectAttrs += ` link="${escapeXml(cell.link)}"`;
+      }
+      if (cell.linkTarget !== undefined) {
+        userObjectAttrs += ` linkTarget="${escapeXml(cell.linkTarget)}"`;
+      }
+      
+      xmlParts.push('        <UserObject ' + userObjectAttrs + '>');
       xmlParts.push('          <mxCell');
     } else {
       xmlParts.push('        <mxCell id="' + cell.id + '"');
@@ -1882,8 +2026,15 @@ function buildDrawioXML(cells: DrawioCell[], title: string, options: ConversionO
     if (cell.connectable !== undefined) {
       cellXml += ' connectable="' + cell.connectable + '"';
     }
-    if (cell.link !== undefined) {
-      cellXml += ' link="' + escapeXml(cell.link) + '"';
+    // Note: link and linkTarget are added to UserObject, not mxCell
+    // Only add them here if this cell is NOT wrapped in a UserObject
+    if ((cell.description === undefined && cell.label === undefined)) {
+      if (cell.link !== undefined) {
+        cellXml += ' link="' + escapeXml(cell.link) + '"';
+      }
+      if (cell.linkTarget !== undefined) {
+        cellXml += ' linkTarget="' + escapeXml(cell.linkTarget) + '"';
+      }
     }
     
     xmlParts[xmlParts.length - 1] += cellXml + '>';
@@ -1919,7 +2070,7 @@ function buildDrawioXML(cells: DrawioCell[], title: string, options: ConversionO
     }
 
     // Close mxCell and UserObject if needed
-    if (cell.tooltip !== undefined) {
+    if (cell.description !== undefined || cell.label !== undefined) {
       xmlParts.push('          </mxCell>');
       xmlParts.push('        </UserObject>');
     } else {

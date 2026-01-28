@@ -1,0 +1,1298 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" author="SF Explorer" description="Salesforce data model diagram: scheduler" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app" version="29.3.4">
+  <diagram id="diagram1" name="scheduler">
+    <mxGraphModel dx="2253" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <object label="scheduler" author="SF Explorer" description="Salesforce data model diagram: scheduler" title="scheduler" id="0">
+          <mxCell />
+        </object>
+        <mxCell id="1" parent="0" />
+        <UserObject label="ServiceAppointmentAttendee" description="&#xa;[Scheduler] Represents a Lead, Contact, or Person Account who is associated with the Service Appointment of type Group." category="Scheduler" APIName="ServiceAppointmentAttendee" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServiceAppointmentAttendee" linkTarget="_blank" id="table_ServiceAppointmentAttendee">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="909" y="-619" as="geometry">
+              <mxRectangle height="216" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Service Appointment Attendee ID" id="ServiceAppointmentAttendee_Id">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#63edd2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceAppointmentId : ServiceAppointment" fieldLabel="Service Appointment ID" id="ServiceAppointmentAttendee_ServiceAppointmentId">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AttendeeId : Account" fieldLabel="Attendee ID" id="ServiceAppointmentAttendee_AttendeeId">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AttendeeIdentifier : Text" fieldLabel="Attendee Identifier" id="ServiceAppointmentAttendee_AttendeeIdentifier">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="ServiceAppointmentAttendee_LastModifiedDate">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Email : Email" description="The email of the attendee." fieldLabel="Email" id="ServiceAppointmentAttendee_Email">
+          <mxCell movable="0" parent="table_ServiceAppointmentAttendee" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Location" description="&#xa;[Core] Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders." category="Core" APIName="Location" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Location" linkTarget="_blank" id="table_Location">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/location.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1323" y="-584" as="geometry">
+              <mxRectangle height="606" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Location ID" id="Location_Id">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentLocationId : Location" fieldLabel="Parent Location ID" id="Location_ParentLocationId">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RootLocationId : Location" fieldLabel="Root Location ID" id="Location_RootLocationId">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: LogoId : ContentAsset" fieldLabel="Asset File ID" id="Location_LogoId">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="The name of the location. For example, Service Van #4." fieldLabel="Location Name" id="Location_Name">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Location_LastModifiedDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LocationType : Enum" description="Picklist of location types. It has no default values, so you must populate it before creating any location records." fieldLabel="Location Type" id="Location_LocationType">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Latitude : Number" description="The geographic location." fieldLabel="Latitude" id="Location_Latitude">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Longitude : Number" description="The geographic location." fieldLabel="Longitude" id="Location_Longitude">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Location : Text" description="The geographic location." fieldLabel="Location" id="Location_Location">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" description="A brief description of the location." fieldLabel="Description" id="Location_Description">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DrivingDirections : Text" description="Directions to the location." fieldLabel="Driving Directions" id="Location_DrivingDirections">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeZone : Enum" description="Picklist of available time zones." fieldLabel="Time Zone" id="Location_TimeZone">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PossessionDate : Date" description="The date the location was purchased." fieldLabel="Possession Date" id="Location_PossessionDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ConstructionStartDate : Date" description="Date construction began at the location." fieldLabel="Construction Start Date" id="Location_ConstructionStartDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ConstructionEndDate : Date" description="Date construction ended at the location." fieldLabel="Construction End Date" id="Location_ConstructionEndDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="OpenDate : Date" description="Date the location opened or came into service." fieldLabel="Open Date" id="Location_OpenDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CloseDate : Date" description="Date the location closed or went out of service." fieldLabel="Close Date" id="Location_CloseDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RemodelStartDate : Date" description="Date when remodel construction started at the location." fieldLabel="Remodel Start Date" id="Location_RemodelStartDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RemodelEndDate : Date" description="Date when remodel construction ended at the location." fieldLabel="Remodel End Date" id="Location_RemodelEndDate">
+          <mxCell movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="554" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Location_more" movable="0" parent="table_Location" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" value="... 5 more fields" vertex="1">
+          <mxGeometry height="26" width="200" y="580" as="geometry" />
+        </mxCell>
+        <UserObject label="AppointmentInvitee" description="&#xa;[Core] Represents information about the participant and resources required for creating an appointment invitation URL." category="Core" APIName="AppointmentInvitee" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AppointmentInvitee" linkTarget="_blank" id="table_AppointmentInvitee">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="268" y="-572" as="geometry">
+              <mxRectangle height="216" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Appointment Invitee ID" id="AppointmentInvitee_Id">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentInvitationId : AppointmentInvitation" fieldLabel="Appointment Invitation ID" id="AppointmentInvitee_AppointmentInvitationId">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParticipantServiceResourceId : ServiceResource" fieldLabel="Resource ID" id="AppointmentInvitee_ParticipantServiceResourceId">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="Auto-assigned number that identifies the appointment invitee." fieldLabel="Appointment Invitee Number" id="AppointmentInvitee_Name">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="AppointmentInvitee_LastModifiedDate">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsRequiredResource : Boolean" description="Indicates whether a service resource is required to book an appointment. The default value is false." fieldLabel="Required Resource" id="AppointmentInvitee_IsRequiredResource">
+          <mxCell movable="0" parent="table_AppointmentInvitee" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ServiceAppointment" description="&#xa;[Field Service Lightning] Represents an appointment booked through Salesforce Scheduler." category="Field Service Lightning" APIName="ServiceAppointment" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServiceAppointment" linkTarget="_blank" id="table_ServiceAppointment">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_appointment.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="360" y="-430" as="geometry">
+              <mxRectangle height="606" width="202" x="360" y="-430" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Service Appointment ID" id="ServiceAppointment_Id">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentRecordId : Account" fieldLabel="Parent Record ID" id="ServiceAppointment_ParentRecordId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" fieldLabel="Account ID" id="ServiceAppointment_AccountId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeId : WorkType" fieldLabel="Work Type ID" id="ServiceAppointment_WorkTypeId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ContactId : Contact" fieldLabel="Contact ID" id="ServiceAppointment_ContactId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceTerritoryId : ServiceTerritory" fieldLabel="Territory ID" id="ServiceAppointment_ServiceTerritoryId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentInvitationId : AppointmentInvitation" fieldLabel="Appointment Invitation ID" id="ServiceAppointment_AppointmentInvitationId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: EngagementChannelTypeId : EngagementChannelType" fieldLabel="Engagement Channel Type ID" id="ServiceAppointment_EngagementChannelTypeId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentCategoryId : AppointmentCategory" fieldLabel="Appointment Category ID" id="ServiceAppointment_AppointmentCategoryId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ReceiptOrderId : Order" fieldLabel="Order ID" id="ServiceAppointment_ReceiptOrderId">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AppointmentNumber : Text" fieldLabel="Appointment Number" id="ServiceAppointment_AppointmentNumber">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="ServiceAppointment_LastModifiedDate">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ParentRecordType : Text" description="(Read only) The type of parent record: Account." fieldLabel="Parent Record Type" id="ServiceAppointment_ParentRecordType">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Street : Text" description="The address where the appointment is taking place." fieldLabel="Street" id="ServiceAppointment_Street">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="City : Text" description="The address where the appointment is taking place." fieldLabel="City" id="ServiceAppointment_City">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="State : Text" description="The address where the appointment is taking place." fieldLabel="State/Province" id="ServiceAppointment_State">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PostalCode : Text" description="The address where the appointment is taking place." fieldLabel="Zip/Postal Code" id="ServiceAppointment_PostalCode">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Country : Text" description="The address where the appointment is taking place." fieldLabel="Country" id="ServiceAppointment_Country">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Latitude : Number" description="The address where the appointment is taking place." fieldLabel="Latitude" id="ServiceAppointment_Latitude">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Longitude : Number" description="The address where the appointment is taking place." fieldLabel="Longitude" id="ServiceAppointment_Longitude">
+          <mxCell movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="202" y="554" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="ServiceAppointment_more" movable="0" parent="table_ServiceAppointment" style="text=1;strokeColor=#1a7ec1;fillColor=#9afeff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" value="... 36 more fields" vertex="1">
+          <mxGeometry height="26" width="202" y="580" as="geometry" />
+        </mxCell>
+        <UserObject label="Service Resource" description="&#xa;[Field Service Lightning] Represents a technician or an asset." category="Field Service Lightning" APIName="ServiceResource" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServiceResource" linkTarget="_blank" id="table_Service_Resource">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1004" y="-407" as="geometry">
+              <mxRectangle height="346" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Resource ID" id="Service_Resource_Id">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: RelatedRecordId : User" fieldLabel="User ID" id="Service_Resource_RelatedRecordId">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: LocationId : Location" fieldLabel="Location ID" id="Service_Resource_LocationId">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AccountId : Account" fieldLabel="Account ID" id="Service_Resource_AccountId">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AssetId : Asset" fieldLabel="Asset ID" id="Service_Resource_AssetId">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" fieldLabel="Name" id="Service_Resource_Name">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Service_Resource_LastModifiedDate">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ResourceType : Enum" description="Indicates whether the resource is a Technician (T) or Asset (S). The default value is Technician (T). You can’t add additional resource types." fieldLabel="Resource Type" id="Service_Resource_ResourceType">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" description="The description of the resource." fieldLabel="Description" id="Service_Resource_Description">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" description="When selected, this option means that the resource can be assigned to appointments. For service tracking purposes, resources can’t be deleted, so deactivating a resource is the best way to send them into retirement.Deactivating a user doesn’t deactivate the related service resource. You can’t create a service resource that is linked to an inactive user." fieldLabel="Active" id="Service_Resource_IsActive">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsPrimary : Boolean" description="Indicate whether Salesforce Scheduler must consider the service resource record for scheduling appointments (true) or not (false). Note This field is applicable only if the Main Service Resource setting is enabled in your Salesforce org." fieldLabel="Main" id="Service_Resource_IsPrimary">
+          <mxCell movable="0" parent="table_Service_Resource" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Shift" description="&#xa;[Field Service Lightning] Represents a shift for service resource scheduling." category="Field Service Lightning" APIName="Shift" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Shift" linkTarget="_blank" id="table_Shift">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1687" y="-267" as="geometry">
+              <mxRectangle height="554" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Shift ID" id="Shift_Id">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceResourceId : ServiceResource" fieldLabel="Service Resource ID" id="Shift_ServiceResourceId">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceTerritoryId : ServiceTerritory" fieldLabel="Service Territory ID" id="Shift_ServiceTerritoryId">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeId : WorkType" fieldLabel="Work Type ID" id="Shift_WorkTypeId">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeGroupId : WorkTypeGroup" fieldLabel="Work Type Group ID" id="Shift_WorkTypeGroupId">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentCategoryId : AppointmentCategory" fieldLabel="Appointment Category ID" id="Shift_AppointmentCategoryId">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ShiftNumber : Text" fieldLabel="Shift Number" id="Shift_ShiftNumber">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Shift_LastModifiedDate">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Label : Text" description="The label that a shift is given." fieldLabel="Label" id="Shift_Label">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartTime : DateTime" description="The date and time that the shift starts." fieldLabel="Start Time" id="Shift_StartTime">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndTime : DateTime" description="The date and time that the shift ends." fieldLabel="End Time" id="Shift_EndTime">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="StatusCategory : Enum" description="Describes the status of the shift using static values. This field is derived from Status using the mapping defined in setup." fieldLabel="Status Category" id="Shift_StatusCategory">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Status : Enum" description="Describes the status of the shift. Users can create custom values." fieldLabel="Status" id="Shift_Status">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeSlotType : Enum" description="Type of time slot for the shift. The same setup values as the TimeSlot field in the OperatingHours object." fieldLabel="Time Slot Type" id="Shift_TimeSlotType">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BackgroundColor : Text" description="Sets a background color for shifts shown in the UI. Use a 3- or 6-digit hexadecimal format. For example, #FF00FF. Available in API version 55.0 and later." fieldLabel="Background Color" id="Shift_BackgroundColor">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RecurrenceStartDate : Date" description="The date when the recurrence period begins. The date must be before the Recurrence End Date. The value for this field is retrieved from the StartTime field. Don’t modify the value for this field.This field is available in API version 56.0 and later." fieldLabel="Recurrence Start Date" id="Shift_RecurrenceStartDate">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RecurrenceEndDate : Date" description="The date when the recurrence period ends. The date must be after the Recurrence Start Date. The value for this field is retrieved from the pattern defined in the RecurrencePattern field. You can define the end date by using the COUNT or UNTIL parameter in the RecurrencePattern field. If you specify a value in this field and define a recurrence pattern, Salesforce Scheduler overrides the value with the end date in the recurrence pattern.The recurrence period is limited to 180 days. This field is available in API version 56.0 and later." fieldLabel="Recurrence End Date" id="Shift_RecurrenceEndDate">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="RecurrencePattern : Text" description="The RRULE that describes the recurrence pattern for recurring shifts. Supports a subset of the RFC 5545 standard for internet calendaring and scheduling. See the Salesforce Scheduler Recurring Shifts section in this topic for usage examples. The period for the recurrence pattern is limited to 180 days. This field is available in API version 56.0 and later." fieldLabel="Recurrence Pattern" id="Shift_RecurrencePattern">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" description="Type of shift." fieldLabel="Type" id="Shift_Type">
+          <mxCell movable="0" parent="table_Shift" style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Work Type" description="&#xa;[Field Service Lightning Config] Represents a type of work to be performed in Salesforce Scheduler." category="Field Service Lightning Config" APIName="WorkType" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/WorkType" linkTarget="_blank" id="table_Work_Type">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#95A5A6;strokeColor=#627273;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1002" y="-165" as="geometry">
+              <mxRectangle height="606" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Work Type ID" id="Work_Type_Id">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#e2f2f3;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OperatingHoursId : OperatingHours" fieldLabel="Operating Hour ID" id="Work_Type_OperatingHoursId">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentCategoryId : AppointmentCategory" fieldLabel="Appointment Category ID" id="Work_Type_AppointmentCategoryId">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ProductId : Product2" fieldLabel="Product ID" id="Work_Type_ProductId">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="The name of the work type." fieldLabel="Work Type Name" id="Work_Type_Name">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Work_Type_LastModifiedDate">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" description="The description of the work type. Try to add details about the task or tasks that this work type represents." fieldLabel="Description" id="Work_Type_Description">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="EstimatedDuration : Number" description="The estimated length of the work. The estimated duration is in minutes or hours based on the value selected in the Duration Type field." fieldLabel="Estimated Duration" id="Work_Type_EstimatedDuration">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DurationType : Enum" description="The unit of the Estimated Duration: Minutes or Hours." fieldLabel="Duration Type" id="Work_Type_DurationType">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DurationInMinutes : Number" fieldLabel="Duration in Minutes" id="Work_Type_DurationInMinutes">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeframeStart : Integer" description="Specify the timeframe start to show only time slots that start after the duration that is set in Timeframe Start." fieldLabel="Timeframe Start" id="Work_Type_TimeframeStart">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeframeEnd : Integer" description="Specify the timeframe end to show only time slots that end before the duration that is set in Timeframe End." fieldLabel="Timeframe End" id="Work_Type_TimeframeEnd">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BlockTimeBeforeAppointment : Integer" description="Specify the before buffer time for the service appointment. Note In Salesforce Scheduler, during appointment scheduling, the number of available time slots is automatically adjusted to accommodate the before buffer time." fieldLabel="Block Time Before Appointment" id="Work_Type_BlockTimeBeforeAppointment">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BlockTimeAfterAppointment : Integer" description="Specify the after buffer time for the service appointment. Note In Salesforce Scheduler, during appointment scheduling, the number of available time slots is automatically adjusted to accommodate the after buffer time." fieldLabel="Block Time After Appointment" id="Work_Type_BlockTimeAfterAppointment">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DefaultAppointmentType : Enum" description="The default appointment type of the work type." fieldLabel="Default Appointment Type" id="Work_Type_DefaultAppointmentType">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeFrameStartUnit : Enum" description="Specify the unit of time for TimeFrame Start." fieldLabel="Time Frame Start Unit" id="Work_Type_TimeFrameStartUnit">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeFrameEndUnit : Enum" description="Specify the unit of time for TimeFrame End." fieldLabel="Time Frame End Unit" id="Work_Type_TimeFrameEndUnit">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BlockTimeBeforeUnit : Enum" description="Specify the unit of time for BlockTimeBeforeAppointment." fieldLabel="Block Time Before Unit" id="Work_Type_BlockTimeBeforeUnit">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BlockTimeAfterUnit : Enum" description="Specify the unit of time for BlockTimeAfterAppointment." fieldLabel="Block Time After Unit" id="Work_Type_BlockTimeAfterUnit">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ApptStartTimeIntvlInMin : Integer" description="Specify the time interval in minutes between appointment start times. For example, if you set the interval as 15, appointments can then begin at the top of the hour and at 15-minute intervals thereafter (10:00 AM, 10:15 AM, 10:30 AM). Valid values can be between 5 through 720. Note If you don’t specify a value for this field, Salesforce Scheduler considers the value specified in the default scheduling policy. This field is available in API version 57.0 and later." fieldLabel="Appointment Start Time Interval (Min)" id="Work_Type_ApptStartTimeIntvlInMin">
+          <mxCell movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="554" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Work_Type_more" movable="0" parent="table_Work_Type" style="text=1;strokeColor=#7b8b8c;fillColor=#fbffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" value="... 1 more field" vertex="1">
+          <mxGeometry height="26" width="200" y="580" as="geometry" />
+        </mxCell>
+        <UserObject label="AppointmentCategory" description="&#xa;[Core] Represents the category of work types and shifts." category="Core" APIName="AppointmentCategory" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AppointmentCategory" linkTarget="_blank" id="table_AppointmentCategory">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1318" y="-57" as="geometry">
+              <mxRectangle height="216" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Appointment Category ID" id="AppointmentCategory_Id">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="Name of the appointment category." fieldLabel="Name" id="AppointmentCategory_Name">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="AppointmentCategory_LastModifiedDate">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsScheduled : Boolean" description="Indicates whether the appointment mode is regular (true) or not (false). It also indicates whether work types and shifts support the group category." fieldLabel="Regular" id="AppointmentCategory_IsScheduled">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsDropIn : Boolean" description="Indicates whether the appointment mode is drop-in (true) or not (false)." fieldLabel="Drop In" id="AppointmentCategory_IsDropIn">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsGroup : Boolean" description="Indicates whether the appointment mode is group (true) or not (false). It also indicates whether work types and shifts support the group category." fieldLabel="Group" id="AppointmentCategory_IsGroup">
+          <mxCell movable="0" parent="table_AppointmentCategory" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Appointment Invitation" description="&#xa;[Core] Represents information about an appointment invitation that’s created for customers who can use it for booking appointments." category="Core" APIName="AppointmentInvitation" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AppointmentInvitation" linkTarget="_blank" id="table_Appointment_Invitation">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="-380" y="-24" as="geometry">
+              <mxRectangle height="424" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Appointment Invitation ID" id="Appointment_Invitation_Id">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceTerritoryId : ServiceTerritory" fieldLabel="Territory ID" id="Appointment_Invitation_ServiceTerritoryId">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: AppointmentTopicId : WorkType" fieldLabel="Appointment Topic ID" id="Appointment_Invitation_AppointmentTopicId">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: EngagementChannelTypeId : EngagementChannelType" fieldLabel="Engagement Channel Type ID" id="Appointment_Invitation_EngagementChannelTypeId">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="InvitationNumber : Text" fieldLabel="Invitation Number" id="Appointment_Invitation_InvitationNumber">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Appointment_Invitation_LastModifiedDate">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="InvitationIdentifier : Text" description="Invitation URL identifier that’s used to book an appointment in a flow." fieldLabel="Invitation Identifier" id="Appointment_Invitation_InvitationIdentifier">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BookingStartDate : Date" description="Date from which an appointment can be booked by using the appointment invitation URL.Default value: current date." fieldLabel="Booking Start Date" id="Appointment_Invitation_BookingStartDate">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="BookingEndDate : Date" description="Date until which an appointment can be booked by using the appointment invitation URL." fieldLabel="Booking End Date" id="Appointment_Invitation_BookingEndDate">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="UrlExpiryDate : Date" description="Expiration date of the appointment invitation URL." fieldLabel="URL Expiration Date" id="Appointment_Invitation_UrlExpiryDate">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" description="Indicates whether the invitation URL is available for a customer to book an appointment." fieldLabel="Active" id="Appointment_Invitation_IsActive">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="InvitationUrl : Text" description="Appointment invitation URL that’s shared with users to book appointments." fieldLabel="Invitation URL" id="Appointment_Invitation_InvitationUrl">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AppointmentTopicType : Text" description="Type of appointment topic that&#39;s related to this invitation. For example, work type or work type group." fieldLabel="Appointment Topic Type" id="Appointment_Invitation_AppointmentTopicType">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AppointmentType : Enum" description="Appointment type for the appointment invitation. This field is available in API version 57.0 and later." fieldLabel="Appointment Type" id="Appointment_Invitation_AppointmentType">
+          <mxCell movable="0" parent="table_Appointment_Invitation" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ServiceTerritoryMember" description="&#xa;[Scheduler] Represents a service resource who can be assigned to service appointments in a service territory in Salesforce Scheduler." category="Scheduler" APIName="ServiceTerritoryMember" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServiceTerritoryMember" linkTarget="_blank" id="table_ServiceTerritoryMember">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="455" y="21" as="geometry">
+              <mxRectangle height="554" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Resource Territory ID" id="ServiceTerritoryMember_Id">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#63edd2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceTerritoryId : ServiceTerritory" fieldLabel="Territory ID" id="ServiceTerritoryMember_ServiceTerritoryId">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ServiceResourceId : ServiceResource" fieldLabel="Resource ID" id="ServiceTerritoryMember_ServiceResourceId">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OperatingHoursId : OperatingHours" fieldLabel="Operating Hour ID" id="ServiceTerritoryMember_OperatingHoursId">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="MemberNumber : Text" fieldLabel="Member Number" id="ServiceTerritoryMember_MemberNumber">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="ServiceTerritoryMember_LastModifiedDate">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TerritoryType : Enum" description="Primary, Secondary, or Relocation. The primary territory is typically the territory where the resource works most often—for example, near their home base. Service resources can only have one primary territory. Secondary territories are territories where the resource can be assigned to appointments, if needed. Service resources can have multiple secondary territories. Relocation territories represent temporary moves for service resources. For example, a service resource can have the following territories: Primary territory: West Chicago Secondary territories: East Chicago South Chicago Relocation territory: Manhattan, for a three-month period" fieldLabel="Territory Type" id="ServiceTerritoryMember_TerritoryType">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="EffectiveStartDate : DateTime" description="The date when the service resource becomes a member of the service territory." fieldLabel="Start Date" id="ServiceTerritoryMember_EffectiveStartDate">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="EffectiveEndDate : DateTime" description="The date when the service resource is no longer a member of the territory. If the resource will be working in the territory for the foreseeable future, leave this field blank. This field is useful for indicating when a temporary relocation ends." fieldLabel="End Date" id="ServiceTerritoryMember_EffectiveEndDate">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Street : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Address" id="ServiceTerritoryMember_Street">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="City : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="City" id="ServiceTerritoryMember_City">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="State : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="State/Province" id="ServiceTerritoryMember_State">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PostalCode : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Zip/Postal Code" id="ServiceTerritoryMember_PostalCode">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Country : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Country" id="ServiceTerritoryMember_Country">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Latitude : Number" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Latitude" id="ServiceTerritoryMember_Latitude">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Longitude : Number" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Longitude" id="ServiceTerritoryMember_Longitude">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GeocodeAccuracy : Enum" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Geocode Accuracy" id="ServiceTerritoryMember_GeocodeAccuracy">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Address : Text" description="The member’s address. You can want to list the related service resource’s address in this field." fieldLabel="Address" id="ServiceTerritoryMember_Address">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Role : Enum" description="The role associated with the service resource." fieldLabel="Role" id="ServiceTerritoryMember_Role">
+          <mxCell movable="0" parent="table_ServiceTerritoryMember" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Engagement Channel Type" description="&#xa;[Scheduler] Represents a channel through which a customer can be reached for communication. The Engagement Channel Type object supports only the English language." category="Scheduler" APIName="EngagementChannelType" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/EngagementChannelType" linkTarget="_blank" id="table_Engagement_Channel_Type">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="-26" y="70" as="geometry">
+              <mxRectangle height="216" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Engagement Channel Type ID" id="Engagement_Channel_Type_Id">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#63edd2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="Required. Name of the communication subscription consent record." fieldLabel="Name" id="Engagement_Channel_Type_Name">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Engagement_Channel_Type_LastModifiedDate">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ContactPointType : Enum" description="The contact point type of the channel." fieldLabel="Contact Point Type" id="Engagement_Channel_Type_ContactPointType">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" description="Indicates whether the engagement channel type is active (true) or not (false). This field is available in API version 56.0 and later." fieldLabel="Active" id="Engagement_Channel_Type_IsActive">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="UsageType : Text" description="Specifies the usage of the engagement channel type. This field is available in API version 56.0 and later." fieldLabel="Usage Type" id="Engagement_Channel_Type_UsageType">
+          <mxCell movable="0" parent="table_Engagement_Channel_Type" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AppointmentTopicTimeSlot" description="&#xa;[Core] Represents a lookup to a work type or a work type group for a time slot" category="Core" APIName="AppointmentTopicTimeSlot" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AppointmentTopicTimeSlot" linkTarget="_blank" id="table_AppointmentTopicTimeSlot">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1250" y="94" as="geometry">
+              <mxRectangle height="268" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Appointment Topic Time Slot ID" id="AppointmentTopicTimeSlot_Id">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TimeSlotId : TimeSlot" fieldLabel="Time Slot ID" id="AppointmentTopicTimeSlot_TimeSlotId">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeId : WorkType" fieldLabel="Work Type ID" id="AppointmentTopicTimeSlot_WorkTypeId">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeGroupId : WorkTypeGroup" fieldLabel="Work Type Group ID" id="AppointmentTopicTimeSlot_WorkTypeGroupId">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OperatingHoursId : OperatingHours" fieldLabel="Operating Hour ID" id="AppointmentTopicTimeSlot_OperatingHoursId">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="Name or ID of the AppointmentTopicTimeSlot object." fieldLabel="Name" id="AppointmentTopicTimeSlot_Name">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="AppointmentTopicTimeSlot_LastModifiedDate">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AppointmentTopicTimeSlotKey : Text" description="Non-editable validating field used to ensure no two rows have the same time slot and work type or work type group values in an instance." fieldLabel="Appointment Topic Time Slot Key" id="AppointmentTopicTimeSlot_AppointmentTopicTimeSlotK">
+          <mxCell movable="0" parent="table_AppointmentTopicTimeSlot" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Work Type Group" description="&#xa;[Core] Represents a grouping of work types used to categorize types of appointments available in Salesforce Scheduler." category="Core" APIName="WorkTypeGroup" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/WorkTypeGroup" linkTarget="_blank" id="table_Work_Type_Group">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="1842" y="98" as="geometry">
+              <mxRectangle height="242" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Work Type Group ID" id="Work_Type_Group_Id">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="The name of this work type group." fieldLabel="Work Type Group Name" id="Work_Type_Group_Name">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Work_Type_Group_LastModifiedDate">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" description="A description of this work type group." fieldLabel="Description" id="Work_Type_Group_Description">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GroupType : Enum" description="The category of this work type group. Possible values are: Default—A non-capacity group of work types used in Salesforce Scheduler." fieldLabel="Group Type" id="Work_Type_Group_GroupType">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" description="Indicates whether this work type group can be used for appointment scheduling." fieldLabel="Active" id="Work_Type_Group_IsActive">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AdditionalInformation : Text" description="Additional information about the types of appointments this work type group represents." fieldLabel="Additional Information" id="Work_Type_Group_AdditionalInformation">
+          <mxCell movable="0" parent="table_Work_Type_Group" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Service Territory" description="&#xa;[Field Service Lightning Config] Represents a geographic or functional region in which work can be performed in Salesforce Scheduler." category="Field Service Lightning Config" APIName="ServiceTerritory" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServiceTerritory" linkTarget="_blank" id="table_Service_Territory">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#95A5A6;strokeColor=#627273;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="-20" y="145" as="geometry">
+              <mxRectangle height="606" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Territory ID" id="Service_Territory_Id">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#e2f2f3;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: ParentTerritoryId : ServiceTerritory" fieldLabel="Parent Territory ID" id="Service_Territory_ParentTerritoryId">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: TopLevelTerritoryId : ServiceTerritory" fieldLabel="Top-Level Territory ID" id="Service_Territory_TopLevelTerritoryId">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OperatingHoursId : OperatingHours" fieldLabel="Operating Hour ID" id="Service_Territory_OperatingHoursId">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: PricebookId : Pricebook2" fieldLabel="Price Book ID" id="Service_Territory_PricebookId">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" description="The name of the territory." fieldLabel="Name" id="Service_Territory_Name">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Service_Territory_LastModifiedDate">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" description="The description of the territory." fieldLabel="Description" id="Service_Territory_Description">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Street : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Address" id="Service_Territory_Street">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="City : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="City" id="Service_Territory_City">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="State : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="State/Province" id="Service_Territory_State">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PostalCode : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Zip/Postal Code" id="Service_Territory_PostalCode">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Country : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Country" id="Service_Territory_Country">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="372" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Latitude : Number" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Latitude" id="Service_Territory_Latitude">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="398" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Longitude : Number" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Longitude" id="Service_Territory_Longitude">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="424" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="GeocodeAccuracy : Enum" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Geocode Accuracy" id="Service_Territory_GeocodeAccuracy">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Address : Text" description="An address to associate with the territory. You can want to list the address of the territory’s headquarters." fieldLabel="Address" id="Service_Territory_Address">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="476" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="IsActive : Boolean" description="Indicates whether the service territory is meant to be used. If a territory is inactive, you can’t add members to it or link it to service appointments." fieldLabel="Active" id="Service_Territory_IsActive">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="502" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TypicalInTerritoryTravelTime : Number" fieldLabel="Typical In-Territory Travel Time (Minutes)" id="Service_Territory_TypicalInTerritoryTravelTime">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="528" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="SelfCheckInUrl : Text" fieldLabel="Self Check In URL" id="Service_Territory_SelfCheckInUrl">
+          <mxCell movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="554" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Service_Territory_more" movable="0" parent="table_Service_Territory" style="text=1;strokeColor=#7b8b8c;fillColor=#fbffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" value="... 1 more field" vertex="1">
+          <mxGeometry height="26" width="200" y="580" as="geometry" />
+        </mxCell>
+        <UserObject label="Operating Hours" description="&#xa;[Core] Represents the hours in which a service territory, service resource, or account is available for work in Salesforce Scheduler." category="Core" APIName="OperatingHours" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/OperatingHours" linkTarget="_blank" id="table_Operating_Hours">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="695" y="232" as="geometry">
+              <mxRectangle height="190" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Operating Hour ID" id="Operating_Hours_Id">
+          <mxCell movable="0" parent="table_Operating_Hours" style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Name : Text" fieldLabel="Name" id="Operating_Hours_Name">
+          <mxCell movable="0" parent="table_Operating_Hours" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Operating_Hours_LastModifiedDate">
+          <mxCell movable="0" parent="table_Operating_Hours" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Description : Text" fieldLabel="Description" id="Operating_Hours_Description">
+          <mxCell movable="0" parent="table_Operating_Hours" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeZone : Enum" fieldLabel="Time Zone" id="Operating_Hours_TimeZone">
+          <mxCell movable="0" parent="table_Operating_Hours" style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Time Slot" description="&#xa;[Scheduler] Represents a period of time on a specified day of the week during which work can be performed in Salesforce Scheduler. Operating hours consist of one or more time slots." category="Scheduler" APIName="TimeSlot" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/TimeSlot" linkTarget="_blank" id="table_Time_Slot">
+          <mxCell collapsed="1" parent="1" style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/service_crew_member.svg;" vertex="1">
+            <mxGeometry height="60" width="200" x="988" y="331" as="geometry">
+              <mxRectangle height="320" width="200" as="alternateBounds" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="PK: Id : Text" description="Globally unique string that identifies a record." fieldLabel="Time Slot ID" id="Time_Slot_Id">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#63edd2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: OperatingHoursId : OperatingHours" fieldLabel="Operating Hour ID" id="Time_Slot_OperatingHoursId">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="86" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="FK: WorkTypeGroupId : WorkTypeGroup" fieldLabel="Work Type Group ID" id="Time_Slot_WorkTypeGroupId">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="112" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TimeSlotNumber : Text" fieldLabel="Name" id="Time_Slot_TimeSlotNumber">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LastModifiedDate : DateTime" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date" id="Time_Slot_LastModifiedDate">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="164" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DayOfWeek : Enum" description="The day of the week when the time slot takes place." fieldLabel="Day of Week" id="Time_Slot_DayOfWeek">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Type : Enum" description="The type of time slot. Possible values are Normal and Extended. Default value must be Normal. You can choose to use Extended to represent overtime shifts." fieldLabel="Type" id="Time_Slot_Type">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="216" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="MaxAppointments : Integer" description="Maximum number of appointments for a single time slot. Available in API version 47.0 and later." fieldLabel="Maximum Appointments" id="Time_Slot_MaxAppointments">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="242" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="StartTime : Text" description="The time when the time slot starts." fieldLabel="Start Time" id="Time_Slot_StartTime">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="268" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="EndTime : Text" description="The time when the time slot ends." fieldLabel="End Time" id="Time_Slot_EndTime">
+          <mxCell movable="0" parent="table_Time_Slot" style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1">
+            <mxGeometry height="26" width="200" y="294" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="edge_AppointmentInvitation_to_Id" edge="1" parent="1" source="AppointmentInvitee_AppointmentInvitationId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" target="Appointment_Invitation_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceResource_to_Id" edge="1" parent="1" source="AppointmentInvitee_ParticipantServiceResourceId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Service_Resource_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_TimeSlot_to_Id" edge="1" parent="1" source="AppointmentTopicTimeSlot_TimeSlotId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Time_Slot_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkType_to_Id" edge="1" parent="1" source="AppointmentTopicTimeSlot_WorkTypeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Work_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkTypeGroup_to_Id" edge="1" parent="1" source="AppointmentTopicTimeSlot_WorkTypeGroupId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Work_Type_Group_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_OperatingHours_to_Id" edge="1" parent="1" source="AppointmentTopicTimeSlot_OperatingHoursId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Operating_Hours_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_OperatingHours_to_Id_1" edge="1" parent="1" source="Time_Slot_OperatingHoursId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" target="Operating_Hours_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkTypeGroup_to_Id_1" edge="1" parent="1" source="Time_Slot_WorkTypeGroupId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Work_Type_Group_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_OperatingHours_to_Id_2" edge="1" parent="1" source="Work_Type_OperatingHoursId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Operating_Hours_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AppointmentCategory_to_Id" edge="1" parent="1" source="Work_Type_AppointmentCategoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="AppointmentCategory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_OperatingHours_to_Id_3" edge="1" parent="1" source="Service_Territory_OperatingHoursId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Operating_Hours_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkType_to_Id_1" edge="1" parent="1" source="ServiceAppointment_WorkTypeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Work_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceTerritory_to_Id" edge="1" parent="1" source="ServiceAppointment_ServiceTerritoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Service_Territory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AppointmentInvitation_to_Id_1" edge="1" parent="1" source="ServiceAppointment_AppointmentInvitationId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Appointment_Invitation_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_EngagementChannelType_to_Id" edge="1" parent="1" source="ServiceAppointment_EngagementChannelTypeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Engagement_Channel_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AppointmentCategory_to_Id_1" edge="1" parent="1" source="ServiceAppointment_AppointmentCategoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="AppointmentCategory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceTerritory_to_Id_1" edge="1" parent="1" source="Appointment_Invitation_ServiceTerritoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Service_Territory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkType_to_Id_2" edge="1" parent="1" source="Appointment_Invitation_AppointmentTopicId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="Work_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_EngagementChannelType_to_Id_1" edge="1" parent="1" source="Appointment_Invitation_EngagementChannelTypeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Engagement_Channel_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_Location_to_Id" edge="1" parent="1" source="Service_Resource_LocationId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Location_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceTerritory_to_Id_2" edge="1" parent="1" source="ServiceTerritoryMember_ServiceTerritoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" target="Service_Territory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceResource_to_Id_1" edge="1" parent="1" source="ServiceTerritoryMember_ServiceResourceId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Service_Resource_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_OperatingHours_to_Id_4" edge="1" parent="1" source="ServiceTerritoryMember_OperatingHoursId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Operating_Hours_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceResource_to_Id_2" edge="1" parent="1" source="Shift_ServiceResourceId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Service_Resource_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceTerritory_to_Id_3" edge="1" parent="1" source="Shift_ServiceTerritoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Service_Territory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkType_to_Id_3" edge="1" parent="1" source="Shift_WorkTypeId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Work_Type_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_WorkTypeGroup_to_Id_2" edge="1" parent="1" source="Shift_WorkTypeGroupId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="Work_Type_Group_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_AppointmentCategory_to_Id_2" edge="1" parent="1" source="Shift_AppointmentCategoryId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" target="AppointmentCategory_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_ServiceAppointment_to_Id" edge="1" parent="1" source="ServiceAppointmentAttendee_ServiceAppointmentId" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=2;strokeColor=#d32f2f;curved=0;shadow=0;" target="ServiceAppointment_Id" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="repo_link" link="https://github.com/sf-explorer/app" parent="1" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" value="github.com/sf-explorer/app" vertex="1">
+          <mxGeometry height="20" width="600" x="-380" y="636" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

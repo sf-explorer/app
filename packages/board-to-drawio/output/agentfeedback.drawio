@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-28T08:21:54.594Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: agentfeedback" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
+<mxfile host="app.diagrams.net" modified="2026-01-28T10:20:52.038Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: agentfeedback" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
   <diagram id="diagram1" name="agentfeedback">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -8,424 +8,424 @@
         </object>
         <mxCell id="1" parent="0">
         </mxCell>
-        <UserObject label="GenAIContentCategory__dlm" tooltip="11 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIContentCategory__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="20" y="-142" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIContentCategory__dlm" id="table_GenAIContentCategory__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIContentCategory__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIContentCategory__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="20" y="-142" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIContentCategory__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIContentCategory__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIContentCategory__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIContentCategory__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="category__c : Text" tooltip="Category" id="GenAIContentCategory__dlm_category__c">
+        <UserObject label="category__c : Text" id="GenAIContentCategory__dlm_category__c" fieldLabel="Category">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIContentCategory__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIContentCategory__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="detectorType__c : Text" tooltip="Detector Type" id="GenAIContentCategory__dlm_detectorType__c">
+        <UserObject label="detectorType__c : Text" id="GenAIContentCategory__dlm_detectorType__c" fieldLabel="Detector Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIContentCategory__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIContentCategory__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIContentCategory__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIContentCategory__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parent__c : Text" tooltip="Parent" id="GenAIContentCategory__dlm_parent__c">
+        <UserObject label="parent__c : Text" id="GenAIContentCategory__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIContentCategory__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIContentCategory__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="value__c : Text" tooltip="Value" id="GenAIContentCategory__dlm_value__c">
+        <UserObject label="value__c : Text" id="GenAIContentCategory__dlm_value__c" fieldLabel="Value">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIContentCategory__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIContentCategory__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentCategory__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGatewayRequestTag__dlm" tooltip="10 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGatewayRequestTag__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="67" y="169" width="200" height="320" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGatewayRequestTag__dlm" id="table_GenAIGatewayRequestTag__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGatewayRequestTag__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGatewayRequestTag__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="67" y="169" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="320" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGatewayRequestTag__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGatewayRequestTag__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" tooltip="Parent" id="GenAIGatewayRequestTag__dlm_parent__c">
+        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" id="GenAIGatewayRequestTag__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIGatewayRequestTag__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIGatewayRequestTag__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGatewayRequestTag__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGatewayRequestTag__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIGatewayRequestTag__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIGatewayRequestTag__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGatewayRequestTag__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGatewayRequestTag__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="tag__c : Text" tooltip="Tag" id="GenAIGatewayRequestTag__dlm_tag__c">
+        <UserObject label="tag__c : Text" id="GenAIGatewayRequestTag__dlm_tag__c" fieldLabel="Tag">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="tagValue__c : Text" tooltip="Tag Value" id="GenAIGatewayRequestTag__dlm_tagValue__c">
+        <UserObject label="tagValue__c : Text" id="GenAIGatewayRequestTag__dlm_tagValue__c" fieldLabel="Tag Value">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGatewayRequestTag__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGatewayRequestTag__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIGatewayRequestTag__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIGatewayRequestTag__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequestTag__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGtwyObjRecCitationRef__dlm" tooltip="10 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGtwyObjRecCitationRef__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1447" y="171" width="200" height="320" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGtwyObjRecCitationRef__dlm" id="table_GenAIGtwyObjRecCitationRef__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGtwyObjRecCitationRef__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGtwyObjRecCitationRef__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1447" y="171" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="320" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGtwyObjRecCitationRef__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGtwyObjRecCitationRef__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIGtwyObjRecCitationRef__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGtwyObjRecCitationRef__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGtwyObjRecCitationRef__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIGtwyObjRecCitationRef__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGtwyObjRecCitationRef__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parent__c : Text" tooltip="Parent" id="GenAIGtwyObjRecCitationRef__dlm_parent__c">
+        <UserObject label="parent__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="references__c : Text" tooltip="References" id="GenAIGtwyObjRecCitationRef__dlm_references__c">
+        <UserObject label="references__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_references__c" fieldLabel="References">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGtwyObjRecCitationRef__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGtwyObjRecCitationRef__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIGtwyObjRecCitationRef__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIGtwyObjRecCitationRef__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecCitationRef__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIContentQuality__dlm" tooltip="11 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIContentQuality__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-389" y="183" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIContentQuality__dlm" id="table_GenAIContentQuality__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIContentQuality__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIContentQuality__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-389" y="183" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIContentQuality__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIContentQuality__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIContentQuality__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIContentQuality__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIContentQuality__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIContentQuality__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="contentType__c : Text" tooltip="Content Type" id="GenAIContentQuality__dlm_contentType__c">
+        <UserObject label="contentType__c : Text" id="GenAIContentQuality__dlm_contentType__c" fieldLabel="Content Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIContentQuality__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIContentQuality__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIContentQuality__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIContentQuality__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="isToxicityDetected__c : Text" tooltip="Is Toxicity Detected" id="GenAIContentQuality__dlm_isToxicityDetected__c">
+        <UserObject label="isToxicityDetected__c : Text" id="GenAIContentQuality__dlm_isToxicityDetected__c" fieldLabel="Is Toxicity Detected">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIContentQuality__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIContentQuality__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIContentQuality__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIContentQuality__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIContentQuality__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIContentQuality__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parent__c : Text" tooltip="Parent" id="GenAIContentQuality__dlm_parent__c">
+        <UserObject label="parent__c : Text" id="GenAIContentQuality__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIContentQuality__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGtwyObjRecord__dlm" tooltip="14 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGtwyObjRecord__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1017" y="290" width="200" height="424" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGtwyObjRecord__dlm" id="table_GenAIGtwyObjRecord__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGtwyObjRecord__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGtwyObjRecord__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1017" y="290" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="424" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGtwyObjRecord__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGtwyObjRecord__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" tooltip="Parent" id="GenAIGtwyObjRecord__dlm_parent__c">
+        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" id="GenAIGtwyObjRecord__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIGtwyObjRecord__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIGtwyObjRecord__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIGtwyObjRecord__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIGtwyObjRecord__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGtwyObjRecord__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGtwyObjRecord__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGtwyObjRecord__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGtwyObjRecord__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIGtwyObjRecord__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIGtwyObjRecord__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="metadata__c : Text" tooltip="Metadata" id="GenAIGtwyObjRecord__dlm_metadata__c">
+        <UserObject label="metadata__c : Text" id="GenAIGtwyObjRecord__dlm_metadata__c" fieldLabel="Metadata">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="name__c : Text" tooltip="Name" id="GenAIGtwyObjRecord__dlm_name__c">
+        <UserObject label="name__c : Text" id="GenAIGtwyObjRecord__dlm_name__c" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGtwyObjRecord__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGtwyObjRecord__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="recordId__c : Text" tooltip="Record Id" id="GenAIGtwyObjRecord__dlm_recordId__c">
+        <UserObject label="recordId__c : Text" id="GenAIGtwyObjRecord__dlm_recordId__c" fieldLabel="Record Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGtwyObjRecord__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGtwyObjRecord__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="type__c : Text" tooltip="Type" id="GenAIGtwyObjRecord__dlm_type__c">
+        <UserObject label="type__c : Text" id="GenAIGtwyObjRecord__dlm_type__c" fieldLabel="Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="value__c : Text" tooltip="Value" id="GenAIGtwyObjRecord__dlm_value__c">
+        <UserObject label="value__c : Text" id="GenAIGtwyObjRecord__dlm_value__c" fieldLabel="Value">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyObjRecord__dlm" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGatewayRequest" tooltip="31 fields (showing 20)&#xa;(Data Cloud Data Model Object)" id="table_GenAIGatewayRequest">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="399" y="490" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGatewayRequest" id="table_GenAIGatewayRequest" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGatewayRequest__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGatewayRequest__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="399" y="490" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGatewayRequest_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGatewayRequest_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_gatewayRequestId__c : Text" tooltip="Key Qualifier Gateway Request Id" id="GenAIGatewayRequest_KQ_gatewayRequestId__c">
+        <UserObject label="KQ_gatewayRequestId__c : Text" id="GenAIGatewayRequest_KQ_gatewayRequestId__c" fieldLabel="Key Qualifier Gateway Request Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="appType__c : Text" tooltip="App Type" id="GenAIGatewayRequest_appType__c">
+        <UserObject label="appType__c : Text" id="GenAIGatewayRequest_appType__c" fieldLabel="App Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="botVersionId__c : Text" tooltip="Bot Version Id" id="GenAIGatewayRequest_botVersionId__c">
+        <UserObject label="botVersionId__c : Text" id="GenAIGatewayRequest_botVersionId__c" fieldLabel="Bot Version Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGatewayRequest_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGatewayRequest_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="completionTokens__c : Text" tooltip="Completion Tokens" id="GenAIGatewayRequest_completionTokens__c">
+        <UserObject label="completionTokens__c : Text" id="GenAIGatewayRequest_completionTokens__c" fieldLabel="Completion Tokens">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="enableInputSafetyScoring__c : Text" tooltip="Enable Input Safety Scoring" id="GenAIGatewayRequest_enableInputSafetyScoring__c">
+        <UserObject label="enableInputSafetyScoring__c : Text" id="GenAIGatewayRequest_enableInputSafetyScoring__c" fieldLabel="Enable Input Safety Scoring">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="enableOutputSafetyScoring__c : Text" tooltip="Enable Output Safety Scoring" id="GenAIGatewayRequest_enableOutputSafetyScoring__c">
+        <UserObject label="enableOutputSafetyScoring__c : Text" id="GenAIGatewayRequest_enableOutputSafetyScoring__c" fieldLabel="Enable Output Safety Scoring">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="enablePiiMasking__c : Text" tooltip="Enable Pii Masking" id="GenAIGatewayRequest_enablePiiMasking__c">
+        <UserObject label="enablePiiMasking__c : Text" id="GenAIGatewayRequest_enablePiiMasking__c" fieldLabel="Enable Pii Masking">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGatewayRequest_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGatewayRequest_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="frequencyPenalty__c : Text" tooltip="Frequency Penalty" id="GenAIGatewayRequest_frequencyPenalty__c">
+        <UserObject label="frequencyPenalty__c : Text" id="GenAIGatewayRequest_frequencyPenalty__c" fieldLabel="Frequency Penalty">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="gatewayRequestId__c : Text" tooltip="Gateway Request Id" id="GenAIGatewayRequest_gatewayRequestId__c">
+        <UserObject label="gatewayRequestId__c : Text" id="GenAIGatewayRequest_gatewayRequestId__c" fieldLabel="Gateway Request Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationGroupId__c : Text" tooltip="Generation Group Id" id="GenAIGatewayRequest_generationGroupId__c">
+        <UserObject label="generationGroupId__c : Text" id="GenAIGatewayRequest_generationGroupId__c" fieldLabel="Generation Group Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="maskedPrompt__c : Text" tooltip="Masked Prompt" id="GenAIGatewayRequest_maskedPrompt__c">
+        <UserObject label="maskedPrompt__c : Text" id="GenAIGatewayRequest_maskedPrompt__c" fieldLabel="Masked Prompt">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="model__c : Text" tooltip="Model" id="GenAIGatewayRequest_model__c">
+        <UserObject label="model__c : Text" id="GenAIGatewayRequest_model__c" fieldLabel="Model">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="numGenerations__c : Text" tooltip="Num Generations" id="GenAIGatewayRequest_numGenerations__c">
+        <UserObject label="numGenerations__c : Text" id="GenAIGatewayRequest_numGenerations__c" fieldLabel="Num Generations">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGatewayRequest_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGatewayRequest_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parameters__c : Text" tooltip="Parameters" id="GenAIGatewayRequest_parameters__c">
+        <UserObject label="parameters__c : Text" id="GenAIGatewayRequest_parameters__c" fieldLabel="Parameters">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="plannerId__c : Text" tooltip="Planner Id" id="GenAIGatewayRequest_plannerId__c">
+        <UserObject label="plannerId__c : Text" id="GenAIGatewayRequest_plannerId__c" fieldLabel="Planner Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="presencePenalty__c : Text" tooltip="Presence Penalty" id="GenAIGatewayRequest_presencePenalty__c">
+        <UserObject label="presencePenalty__c : Text" id="GenAIGatewayRequest_presencePenalty__c" fieldLabel="Presence Penalty">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -433,486 +433,486 @@
         <mxCell id="GenAIGatewayRequest_more" value="... 11 more fields" style="text=1;strokeColor=#cf0449;fillColor=#ff84c9;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_GenAIGatewayRequest" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="GenAIGtwyRequestLLM__dlm" tooltip="16 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGtwyRequestLLM__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-325" y="522" width="200" height="476" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGtwyRequestLLM__dlm" id="table_GenAIGtwyRequestLLM__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGtwyRequestLLM__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGtwyRequestLLM__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-325" y="522" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="476" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGtwyRequestLLM__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGtwyRequestLLM__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" tooltip="Parent" id="GenAIGtwyRequestLLM__dlm_parent__c">
+        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" id="GenAIGtwyRequestLLM__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIGtwyRequestLLM__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIGtwyRequestLLM__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGtwyRequestLLM__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGtwyRequestLLM__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="endpoint__c : Text" tooltip="Endpoint" id="GenAIGtwyRequestLLM__dlm_endpoint__c">
+        <UserObject label="endpoint__c : Text" id="GenAIGtwyRequestLLM__dlm_endpoint__c" fieldLabel="Endpoint">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGtwyRequestLLM__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGtwyRequestLLM__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="genAILLM__c : Text" tooltip="Gen AILLM" id="GenAIGtwyRequestLLM__dlm_genAILLM__c">
+        <UserObject label="genAILLM__c : Text" id="GenAIGtwyRequestLLM__dlm_genAILLM__c" fieldLabel="Gen AILLM">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIGtwyRequestLLM__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIGtwyRequestLLM__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="llmCallLatency__c : Text" tooltip="Llm Call Latency" id="GenAIGtwyRequestLLM__dlm_llmCallLatency__c">
+        <UserObject label="llmCallLatency__c : Text" id="GenAIGtwyRequestLLM__dlm_llmCallLatency__c" fieldLabel="Llm Call Latency">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="llmCallStatus__c : Text" tooltip="Llm Call Status" id="GenAIGtwyRequestLLM__dlm_llmCallStatus__c">
+        <UserObject label="llmCallStatus__c : Text" id="GenAIGtwyRequestLLM__dlm_llmCallStatus__c" fieldLabel="Llm Call Status">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="llmErrorTrace__c : Text" tooltip="Llm Error Trace" id="GenAIGtwyRequestLLM__dlm_llmErrorTrace__c">
+        <UserObject label="llmErrorTrace__c : Text" id="GenAIGtwyRequestLLM__dlm_llmErrorTrace__c" fieldLabel="Llm Error Trace">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="metadata__c : Text" tooltip="Metadata" id="GenAIGtwyRequestLLM__dlm_metadata__c">
+        <UserObject label="metadata__c : Text" id="GenAIGtwyRequestLLM__dlm_metadata__c" fieldLabel="Metadata">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="region__c : Text" tooltip="Region" id="GenAIGtwyRequestLLM__dlm_region__c">
+        <UserObject label="region__c : Text" id="GenAIGtwyRequestLLM__dlm_region__c" fieldLabel="Region">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="salesforceOrgId__c : Text" tooltip="Salesforce Org Id" id="GenAIGtwyRequestLLM__dlm_salesforceOrgId__c">
+        <UserObject label="salesforceOrgId__c : Text" id="GenAIGtwyRequestLLM__dlm_salesforceOrgId__c" fieldLabel="Salesforce Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGtwyRequestLLM__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGtwyRequestLLM__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIGtwyRequestLLM__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIGtwyRequestLLM__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestLLM__dlm" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGtwyRequestMetadata__dlm" tooltip="11 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGtwyRequestMetadata__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="743" y="689" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGtwyRequestMetadata__dlm" id="table_GenAIGtwyRequestMetadata__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGtwyRequestMetadata__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGtwyRequestMetadata__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="743" y="689" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGtwyRequestMetadata__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGtwyRequestMetadata__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" tooltip="Parent" id="GenAIGtwyRequestMetadata__dlm_parent__c">
+        <UserObject label="FK: parent__c : GenAIGatewayRequest__dlm" id="GenAIGtwyRequestMetadata__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIGtwyRequestMetadata__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIGtwyRequestMetadata__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGtwyRequestMetadata__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGtwyRequestMetadata__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGtwyRequestMetadata__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGtwyRequestMetadata__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIGtwyRequestMetadata__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIGtwyRequestMetadata__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="metadata__c : Text" tooltip="Metadata" id="GenAIGtwyRequestMetadata__dlm_metadata__c">
+        <UserObject label="metadata__c : Text" id="GenAIGtwyRequestMetadata__dlm_metadata__c" fieldLabel="Metadata">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="metadataType__c : Text" tooltip="Metadata Type" id="GenAIGtwyRequestMetadata__dlm_metadataType__c">
+        <UserObject label="metadataType__c : Text" id="GenAIGtwyRequestMetadata__dlm_metadataType__c" fieldLabel="Metadata Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGtwyRequestMetadata__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGtwyRequestMetadata__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGtwyRequestMetadata__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGtwyRequestMetadata__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIGtwyRequestMetadata__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIGtwyRequestMetadata__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGtwyRequestMetadata__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIAppGeneration__dlm" tooltip="11 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIAppGeneration__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1222" y="761" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIAppGeneration__dlm" id="table_GenAIAppGeneration__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIAppGeneration__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIAppGeneration__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1222" y="761" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIAppGeneration__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIAppGeneration__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_id__c : Text" tooltip="Key Qualifier Id" id="GenAIAppGeneration__dlm_KQ_id__c">
+        <UserObject label="KQ_id__c : Text" id="GenAIAppGeneration__dlm_KQ_id__c" fieldLabel="Key Qualifier Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIAppGeneration__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIAppGeneration__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIAppGeneration__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIAppGeneration__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationId__c : Text" tooltip="Generation Id" id="GenAIAppGeneration__dlm_generationId__c">
+        <UserObject label="generationId__c : Text" id="GenAIAppGeneration__dlm_generationId__c" fieldLabel="Generation Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationUpdate__c : Text" tooltip="Generation Update" id="GenAIAppGeneration__dlm_generationUpdate__c">
+        <UserObject label="generationUpdate__c : Text" id="GenAIAppGeneration__dlm_generationUpdate__c" fieldLabel="Generation Update">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="id__c : Text" tooltip="Id" id="GenAIAppGeneration__dlm_id__c">
+        <UserObject label="id__c : Text" id="GenAIAppGeneration__dlm_id__c" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIAppGeneration__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIAppGeneration__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIAppGeneration__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIAppGeneration__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationUpdateId__c : Text" tooltip="Key Qualifier Generation Update Id" id="GenAIAppGeneration__dlm_KQ_generationUpdateId__c">
+        <UserObject label="KQ_generationUpdateId__c : Text" id="GenAIAppGeneration__dlm_KQ_generationUpdateId__c" fieldLabel="Key Qualifier Generation Update Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationUpdateId__c : Text" tooltip="Generation Update Id" id="GenAIAppGeneration__dlm_generationUpdateId__c">
+        <UserObject label="generationUpdateId__c : Text" id="GenAIAppGeneration__dlm_generationUpdateId__c" fieldLabel="Generation Update Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIAppGeneration__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGatewayResponse__dlm" tooltip="9 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGatewayResponse__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-234" y="924" width="200" height="294" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGatewayResponse__dlm" id="table_GenAIGatewayResponse__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGatewayResponse__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGatewayResponse__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-234" y="924" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="294" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGatewayResponse__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGatewayResponse__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: generationRequestId__c : GenAIGatewayRequest__dlm" tooltip="Generation Request Id" id="GenAIGatewayResponse__dlm_generationRequestId__c">
+        <UserObject label="FK: generationRequestId__c : GenAIGatewayRequest__dlm" id="GenAIGatewayResponse__dlm_generationRequestId__c" fieldLabel="Generation Request Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationResponseId__c : Text" tooltip="Key Qualifier Generation Response Id" id="GenAIGatewayResponse__dlm_KQ_generationResponseId_">
+        <UserObject label="KQ_generationResponseId__c : Text" id="GenAIGatewayResponse__dlm_KQ_generationResponseId_" fieldLabel="Key Qualifier Generation Response Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGatewayResponse__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGatewayResponse__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationResponseId__c : Text" tooltip="Generation Response Id" id="GenAIGatewayResponse__dlm_generationResponseId__c">
+        <UserObject label="generationResponseId__c : Text" id="GenAIGatewayResponse__dlm_generationResponseId__c" fieldLabel="Generation Response Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGatewayResponse__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGatewayResponse__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parameters__c : Text" tooltip="Parameters" id="GenAIGatewayResponse__dlm_parameters__c">
+        <UserObject label="parameters__c : Text" id="GenAIGatewayResponse__dlm_parameters__c" fieldLabel="Parameters">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGatewayResponse__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGatewayResponse__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationRequestId__c : Text" tooltip="Key Qualifier Generation Request Id" id="GenAIGatewayResponse__dlm_KQ_generationRequestId__">
+        <UserObject label="KQ_generationRequestId__c : Text" id="GenAIGatewayResponse__dlm_KQ_generationRequestId__" fieldLabel="Key Qualifier Generation Request Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGatewayResponse__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIGeneration__dlm" tooltip="12 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIGeneration__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="209" y="988" width="200" height="372" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIGeneration__dlm" id="table_GenAIGeneration__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIGeneration__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIGeneration__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="209" y="988" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="372" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIGeneration__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIGeneration__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: generationResponseId__c : GenAIGatewayResponse__dlm" tooltip="Generation Response Id" id="GenAIGeneration__dlm_generationResponseId__c">
+        <UserObject label="FK: generationResponseId__c : GenAIGatewayResponse__dlm" id="GenAIGeneration__dlm_generationResponseId__c" fieldLabel="Generation Response Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationId__c : Text" tooltip="Key Qualifier Generation Id" id="GenAIGeneration__dlm_KQ_generationId__c">
+        <UserObject label="KQ_generationId__c : Text" id="GenAIGeneration__dlm_KQ_generationId__c" fieldLabel="Key Qualifier Generation Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIGeneration__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIGeneration__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIGeneration__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIGeneration__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationId__c : Text" tooltip="Generation Id" id="GenAIGeneration__dlm_generationId__c">
+        <UserObject label="generationId__c : Text" id="GenAIGeneration__dlm_generationId__c" fieldLabel="Generation Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="maskedResponseText__c : Text" tooltip="Masked Response Text" id="GenAIGeneration__dlm_maskedResponseText__c">
+        <UserObject label="maskedResponseText__c : Text" id="GenAIGeneration__dlm_maskedResponseText__c" fieldLabel="Masked Response Text">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIGeneration__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIGeneration__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="responseParameters__c : Text" tooltip="Response Parameters" id="GenAIGeneration__dlm_responseParameters__c">
+        <UserObject label="responseParameters__c : Text" id="GenAIGeneration__dlm_responseParameters__c" fieldLabel="Response Parameters">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="responseText__c : Text" tooltip="Response Text" id="GenAIGeneration__dlm_responseText__c">
+        <UserObject label="responseText__c : Text" id="GenAIGeneration__dlm_responseText__c" fieldLabel="Response Text">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIGeneration__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIGeneration__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationResponseId__c : Text" tooltip="Key Qualifier Generation Response Id" id="GenAIGeneration__dlm_KQ_generationResponseId__c">
+        <UserObject label="KQ_generationResponseId__c : Text" id="GenAIGeneration__dlm_KQ_generationResponseId__c" fieldLabel="Key Qualifier Generation Response Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIGeneration__dlm" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIFeedbackDetail__dlm" tooltip="11 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIFeedbackDetail__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1213" y="1115" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIFeedbackDetail__dlm" id="table_GenAIFeedbackDetail__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIFeedbackDetail__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIFeedbackDetail__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1213" y="1115" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIFeedbackDetail__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIFeedbackDetail__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_feedbackDetailId__c : Text" tooltip="Key Qualifier Feedback Detail Id" id="GenAIFeedbackDetail__dlm_KQ_feedbackDetailId__c">
+        <UserObject label="KQ_feedbackDetailId__c : Text" id="GenAIFeedbackDetail__dlm_KQ_feedbackDetailId__c" fieldLabel="Key Qualifier Feedback Detail Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="appFeedback__c : Text" tooltip="App Feedback" id="GenAIFeedbackDetail__dlm_appFeedback__c">
+        <UserObject label="appFeedback__c : Text" id="GenAIFeedbackDetail__dlm_appFeedback__c" fieldLabel="App Feedback">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIFeedbackDetail__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIFeedbackDetail__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIFeedbackDetail__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIFeedbackDetail__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feedbackDetailId__c : Text" tooltip="Feedback Detail Id" id="GenAIFeedbackDetail__dlm_feedbackDetailId__c">
+        <UserObject label="feedbackDetailId__c : Text" id="GenAIFeedbackDetail__dlm_feedbackDetailId__c" fieldLabel="Feedback Detail Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feedbackText__c : Text" tooltip="Feedback Text" id="GenAIFeedbackDetail__dlm_feedbackText__c">
+        <UserObject label="feedbackText__c : Text" id="GenAIFeedbackDetail__dlm_feedbackText__c" fieldLabel="Feedback Text">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIFeedbackDetail__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIFeedbackDetail__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="parent__c : Text" tooltip="Parent" id="GenAIFeedbackDetail__dlm_parent__c">
+        <UserObject label="parent__c : Text" id="GenAIFeedbackDetail__dlm_parent__c" fieldLabel="Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIFeedbackDetail__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIFeedbackDetail__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_parent__c : Text" tooltip="Key Qualifier Parent" id="GenAIFeedbackDetail__dlm_KQ_parent__c">
+        <UserObject label="KQ_parent__c : Text" id="GenAIFeedbackDetail__dlm_KQ_parent__c" fieldLabel="Key Qualifier Parent">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedbackDetail__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GenAIFeedback__dlm" tooltip="17 fields&#xa;(Data Cloud Data Model Object)" id="table_GenAIFeedback__dlm">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="614" y="1141" width="200" height="502" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="GenAIFeedback__dlm" id="table_GenAIFeedback__dlm" description="&#xa;(Data Cloud Data Model Object)" category="Data Cloud DMO" APIName="GenAIFeedback__dlm" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/GenAIFeedback__dlm" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E91E63;strokeColor=#b60030;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/data_model.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="614" y="1141" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="502" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Id" id="GenAIFeedback__dlm_Id">
+        <UserObject label="PK: Id : Text" id="GenAIFeedback__dlm_Id" fieldLabel="Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ff6bb0;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_feedbackId__c : Text" tooltip="Key Qualifier Feedback Id" id="GenAIFeedback__dlm_KQ_feedbackId__c">
+        <UserObject label="KQ_feedbackId__c : Text" id="GenAIFeedback__dlm_KQ_feedbackId__c" fieldLabel="Key Qualifier Feedback Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="action__c : Text" tooltip="Action" id="GenAIFeedback__dlm_action__c">
+        <UserObject label="action__c : Text" id="GenAIFeedback__dlm_action__c" fieldLabel="Action">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="appType__c : Text" tooltip="App Type" id="GenAIFeedback__dlm_appType__c">
+        <UserObject label="appType__c : Text" id="GenAIFeedback__dlm_appType__c" fieldLabel="App Type">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="cloud__c : Text" tooltip="Cloud" id="GenAIFeedback__dlm_cloud__c">
+        <UserObject label="cloud__c : Text" id="GenAIFeedback__dlm_cloud__c" fieldLabel="Cloud">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feature__c : Text" tooltip="Feature" id="GenAIFeedback__dlm_feature__c">
+        <UserObject label="feature__c : Text" id="GenAIFeedback__dlm_feature__c" fieldLabel="Feature">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feedback__c : Text" tooltip="Feedback" id="GenAIFeedback__dlm_feedback__c">
+        <UserObject label="feedback__c : Text" id="GenAIFeedback__dlm_feedback__c" fieldLabel="Feedback">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="feedbackId__c : Text" tooltip="Feedback Id" id="GenAIFeedback__dlm_feedbackId__c">
+        <UserObject label="feedbackId__c : Text" id="GenAIFeedback__dlm_feedbackId__c" fieldLabel="Feedback Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationGroupId__c : Text" tooltip="Generation Group Id" id="GenAIFeedback__dlm_generationGroupId__c">
+        <UserObject label="generationGroupId__c : Text" id="GenAIFeedback__dlm_generationGroupId__c" fieldLabel="Generation Group Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="orgId__c : Text" tooltip="Org Id" id="GenAIFeedback__dlm_orgId__c">
+        <UserObject label="orgId__c : Text" id="GenAIFeedback__dlm_orgId__c" fieldLabel="Org Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="source__c : Text" tooltip="Source" id="GenAIFeedback__dlm_source__c">
+        <UserObject label="source__c : Text" id="GenAIFeedback__dlm_source__c" fieldLabel="Source">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="timestamp__c : DateTime" tooltip="Timestamp" id="GenAIFeedback__dlm_timestamp__c">
+        <UserObject label="timestamp__c : DateTime" id="GenAIFeedback__dlm_timestamp__c" fieldLabel="Timestamp">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="userId__c : Text" tooltip="User Id" id="GenAIFeedback__dlm_userId__c">
+        <UserObject label="userId__c : Text" id="GenAIFeedback__dlm_userId__c" fieldLabel="User Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationId__c : Text" tooltip="Key Qualifier Generation Id" id="GenAIFeedback__dlm_KQ_generationId__c">
+        <UserObject label="KQ_generationId__c : Text" id="GenAIFeedback__dlm_KQ_generationId__c" fieldLabel="Key Qualifier Generation Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationId__c : Text" tooltip="Generation Id" id="GenAIFeedback__dlm_generationId__c">
+        <UserObject label="generationId__c : Text" id="GenAIFeedback__dlm_generationId__c" fieldLabel="Generation Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="KQ_generationUpdateId__c : Text" tooltip="Key Qualifier Generation Update Id" id="GenAIFeedback__dlm_KQ_generationUpdateId__c">
+        <UserObject label="KQ_generationUpdateId__c : Text" id="GenAIFeedback__dlm_KQ_generationUpdateId__c" fieldLabel="Key Qualifier Generation Update Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="generationUpdateId__c : Text" tooltip="Generation Update Id" id="GenAIFeedback__dlm_generationUpdateId__c">
+        <UserObject label="generationUpdateId__c : Text" id="GenAIFeedback__dlm_generationUpdateId__c" fieldLabel="Generation Update Id">
           <mxCell style="text=1;strokeColor=#cf0449;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_GenAIFeedback__dlm" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -920,104 +920,80 @@
         <mxCell id="annotation_User_request" value="User request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#cccc00;fontSize=12;shape=note;align=left;verticalAlign=top;" vertex="1" parent="1">
             <mxGeometry x="214" y="540" width="200" height="120" as="geometry"/>
         </mxCell>
-        <UserObject label="" tooltip="Many-to-One: GenAIAppGeneration → GenAIFeedback&#xa;From: GenAIAppGeneration.generationUpdateId__c&#xa;To: GenAIFeedback.Id" id="edge_GenAIFeedback__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIAppGeneration__dlm_generationUpdateId__c" target="GenAIFeedback__dlm_Id">
+        <mxCell id="edge_GenAIFeedback__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIAppGeneration__dlm_generationUpdateId__c" target="GenAIFeedback__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIContentCategory → GenAIContentQuality&#xa;From: GenAIContentCategory.parent__c&#xa;To: GenAIContentQuality.Id" id="edge_GenAIContentQuality__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIContentCategory__dlm_parent__c" target="GenAIContentQuality__dlm_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIContentQuality__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIContentCategory__dlm_parent__c" target="GenAIContentQuality__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIContentQuality → GenAIGatewayRequest&#xa;From: GenAIContentQuality.parent__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIContentQuality__dlm_parent__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIContentQuality__dlm_parent__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIFeedbackDetail → GenAIFeedback&#xa;From: GenAIFeedbackDetail.parent__c&#xa;To: GenAIFeedback.Id" id="edge_GenAIFeedback__dlm_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIFeedbackDetail__dlm_parent__c" target="GenAIFeedback__dlm_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIFeedback__dlm_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIFeedbackDetail__dlm_parent__c" target="GenAIFeedback__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIFeedback → GenAIGeneration&#xa;From: GenAIFeedback.generationId__c&#xa;To: GenAIGeneration.Id" id="edge_GenAIGeneration__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIFeedback__dlm_generationId__c" target="GenAIGeneration__dlm_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGeneration__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIFeedback__dlm_generationId__c" target="GenAIGeneration__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGatewayRequestTag → GenAIGatewayRequest&#xa;From: GenAIGatewayRequestTag.parent__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGatewayRequestTag__dlm_parent__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGatewayRequestTag__dlm_parent__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGatewayResponse → GenAIGatewayRequest&#xa;From: GenAIGatewayResponse.generationRequestId__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGatewayResponse__dlm_generationRequestId__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGatewayResponse__dlm_generationRequestId__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGeneration → GenAIGatewayResponse&#xa;From: GenAIGeneration.generationResponseId__c&#xa;To: GenAIGatewayResponse.Id" id="edge_GenAIGatewayResponse__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGeneration__dlm_generationResponseId__c" target="GenAIGatewayResponse__dlm_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayResponse__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGeneration__dlm_generationResponseId__c" target="GenAIGatewayResponse__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGtwyObjRecCitationRef → GenAIGtwyObjRecord&#xa;From: GenAIGtwyObjRecCitationRef.parent__c&#xa;To: GenAIGtwyObjRecord.Id" id="edge_GenAIGtwyObjRecord__dlm_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyObjRecCitationRef__dlm_parent__c" target="GenAIGtwyObjRecord__dlm_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGtwyObjRecord__dlm_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyObjRecCitationRef__dlm_parent__c" target="GenAIGtwyObjRecord__dlm_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGtwyObjRecord → GenAIGatewayRequest&#xa;From: GenAIGtwyObjRecord.parent__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id_3">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyObjRecord__dlm_parent__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyObjRecord__dlm_parent__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGtwyRequestLLM → GenAIGatewayRequest&#xa;From: GenAIGtwyRequestLLM.parent__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id_4">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyRequestLLM__dlm_parent__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyRequestLLM__dlm_parent__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: GenAIGtwyRequestMetadata → GenAIGatewayRequest&#xa;From: GenAIGtwyRequestMetadata.parent__c&#xa;To: GenAIGatewayRequest.Id" id="edge_GenAIGatewayRequest__dlm_to_Id_5">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyRequestMetadata__dlm_parent__c" target="GenAIGatewayRequest_Id">
+        </mxCell>
+        <mxCell id="edge_GenAIGatewayRequest__dlm_to_Id_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="GenAIGtwyRequestMetadata__dlm_parent__c" target="GenAIGatewayRequest_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
+        </mxCell>
         <mxCell id="repo_link" value="github.com/sf-explorer/app" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1" link="https://github.com/sf-explorer/app">
-            <mxGeometry x="-389" y="1673" width="600" height="20" as="geometry"/>
+            <mxGeometry x="-389" y="1231" width="600" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>

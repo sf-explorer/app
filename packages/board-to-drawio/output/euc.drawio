@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-28T08:21:54.613Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: euc" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
+<mxfile host="app.diagrams.net" modified="2026-01-28T10:20:52.054Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: euc" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
   <diagram id="diagram1" name="euc">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -8,171 +8,171 @@
         </object>
         <mxCell id="1" parent="0">
         </mxCell>
-        <UserObject label="AccountContactRelation" tooltip="11 fields&#xa;[Sales Cloud] Represents a relationship between a contact and one or more accounts." id="table_AccountContactRelation">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom14.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-145" y="-127" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="AccountContactRelation" id="table_AccountContactRelation" description="&#xa;[Sales Cloud] Represents a relationship between a contact and one or more accounts." category="Sales Cloud" APIName="AccountContactRelation" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AccountContactRelation" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/custom/custom14.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-145" y="-127" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AccountContactRelation_Id">
+        <UserObject label="PK: Id : Text" id="AccountContactRelation_Id" description="Globally unique string that identifies a record." fieldLabel="Account Contact Relationship ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="AccountContactRelation_AccountId">
+        <UserObject label="FK: AccountId : Account" id="AccountContactRelation_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="AccountContactRelation_ContactId">
+        <UserObject label="FK: ContactId : Contact" id="AccountContactRelation_ContactId" fieldLabel="Contact ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Roles : Text" tooltip="The contact’s participating role in the account. Values are Business User, Decision Maker, Economic Buyer, Economic Decision Maker, Evaluator, Executive Sponsor, Influencer, Technical Buyer, and Other." id="AccountContactRelation_Roles">
+        <UserObject label="Roles : Text" id="AccountContactRelation_Roles" description="The contact’s participating role in the account. Values are Business User, Decision Maker, Economic Buyer, Economic Decision Maker, Evaluator, Executive Sponsor, Influencer, Technical Buyer, and Other." fieldLabel="Roles">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsDirect : Boolean" tooltip="Indicates whether the account associated with the contact is the contact&apos;s primary account (true) or not (false)." id="AccountContactRelation_IsDirect">
+        <UserObject label="IsDirect : Boolean" id="AccountContactRelation_IsDirect" description="Indicates whether the account associated with the contact is the contact&apos;s primary account (true) or not (false)." fieldLabel="Direct">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsPrimaryMember : Boolean" tooltip="Primary Member" id="AccountContactRelation_IsPrimaryMember">
+        <UserObject label="IsPrimaryMember : Boolean" id="AccountContactRelation_IsPrimaryMember" fieldLabel="Primary Member">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsActive : Boolean" tooltip="Indicates whether relationship is active (true) or not (false)." id="AccountContactRelation_IsActive">
+        <UserObject label="IsActive : Boolean" id="AccountContactRelation_IsActive" description="Indicates whether relationship is active (true) or not (false)." fieldLabel="Active">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDate : Date" tooltip="The date a relationship between a contact and account began. Use with the End Date to keep a history of the relationship." id="AccountContactRelation_StartDate">
+        <UserObject label="StartDate : Date" id="AccountContactRelation_StartDate" description="The date a relationship between a contact and account began. Use with the End Date to keep a history of the relationship." fieldLabel="Start Date">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDate : Date" tooltip="The date a relationship between a contact and account ended. Use with the Start Date to keep a history of the relationship." id="AccountContactRelation_EndDate">
+        <UserObject label="EndDate : Date" id="AccountContactRelation_EndDate" description="The date a relationship between a contact and account ended. Use with the Start Date to keep a history of the relationship." fieldLabel="End Date">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AccountContactRelation_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="AccountContactRelation_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Relationship_Strength__c : Enum" tooltip="Relationship Strength" id="AccountContactRelation_Relationship_Strength__c">
+        <UserObject label="Relationship_Strength__c : Enum" id="AccountContactRelation_Relationship_Strength__c" fieldLabel="Relationship Strength">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountContactRelation" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Asset" tooltip="58 fields (showing 20)&#xa;[Core] Represents an item of commercial value, such as a product sold by your company or a competitor, that a customer has purchased." id="table_Asset">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/proposition.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="982" y="-94" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Asset" id="table_Asset" description="&#xa;[Core] Represents an item of commercial value, such as a product sold by your company or a competitor, that a customer has purchased." category="Core" APIName="Asset" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Asset" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/proposition.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="982" y="-94" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Asset_Id">
+        <UserObject label="PK: Id : Text" id="Asset_Id" description="Globally unique string that identifies a record." fieldLabel="Asset ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ContactId : Contact" tooltip="Contact ID" id="Asset_ContactId">
+        <UserObject label="FK: ContactId : Contact" id="Asset_ContactId" fieldLabel="Contact ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Asset_AccountId">
+        <UserObject label="FK: AccountId : Account" id="Asset_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentId : Asset" tooltip="Parent Record Reference" id="Asset_ParentId">
+        <UserObject label="FK: ParentId : Asset" id="Asset_ParentId" description="Parent Record Reference" fieldLabel="Parent Asset ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RootAssetId : Asset" tooltip="Root Asset ID" id="Asset_RootAssetId">
+        <UserObject label="FK: RootAssetId : Asset" id="Asset_RootAssetId" fieldLabel="Root Asset ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: Product2Id : Product2" tooltip="Product ID" id="Asset_Product2Id">
+        <UserObject label="FK: Product2Id : Product2" id="Asset_Product2Id" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Asset_RecordTypeId">
+        <UserObject label="FK: RecordTypeId : RecordType" id="Asset_RecordTypeId" description="Type of record" fieldLabel="Record Type ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: LocationId : Location" tooltip="Location ID" id="Asset_LocationId">
+        <UserObject label="FK: LocationId : Location" id="Asset_LocationId" fieldLabel="Location ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AssetProvidedById : Account" tooltip="Asset Provided By ID" id="Asset_AssetProvidedById">
+        <UserObject label="FK: AssetProvidedById : Account" id="Asset_AssetProvidedById" fieldLabel="Asset Provided By ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AssetServicedById : Account" tooltip="Asset Serviced By ID" id="Asset_AssetServicedById">
+        <UserObject label="FK: AssetServicedById : Account" id="Asset_AssetServicedById" fieldLabel="Asset Serviced By ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ServicePoint__c : ServicePoint__c" tooltip="PRM" id="Asset_ServicePoint__c">
+        <UserObject label="FK: ServicePoint__c : ServicePoint__c" id="Asset_ServicePoint__c" fieldLabel="PRM">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: IdContratFournisseur__c : Account" tooltip="Nom du fournisseur" id="Asset_IdContratFournisseur__c">
+        <UserObject label="FK: IdContratFournisseur__c : Account" id="Asset_IdContratFournisseur__c" fieldLabel="Nom du fournisseur">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentAccount__c : Account" tooltip="Client (Client PRO)" id="Asset_ParentAccount__c">
+        <UserObject label="FK: ParentAccount__c : Account" id="Asset_ParentAccount__c" fieldLabel="Client (Client PRO)">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductCode : Text" tooltip="The product code of the related product." id="Asset_ProductCode">
+        <UserObject label="ProductCode : Text" id="Asset_ProductCode" description="The product code of the related product." fieldLabel="Product Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductFamily : Enum" tooltip="The product family of the related product." id="Asset_ProductFamily">
+        <UserObject label="ProductFamily : Enum" id="Asset_ProductFamily" description="The product family of the related product." fieldLabel="Product Family">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ProductDescription : Text" tooltip="The product description of the related product." id="Asset_ProductDescription">
+        <UserObject label="ProductDescription : Text" id="Asset_ProductDescription" description="The product description of the related product." fieldLabel="Product Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsCompetitorProduct : Boolean" tooltip="Indicates whether this Asset represents a product sold by a competitor (true) or not (false). The default value is false. Its UI label is Competitor Asset." id="Asset_IsCompetitorProduct">
+        <UserObject label="IsCompetitorProduct : Boolean" id="Asset_IsCompetitorProduct" description="Indicates whether this Asset represents a product sold by a competitor (true) or not (false). The default value is false. Its UI label is Competitor Asset." fieldLabel="Competitor Asset">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Asset_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Asset_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="(Required) Name of the asset. Label is Asset Name." id="Asset_Name">
+        <UserObject label="Name : Text" id="Asset_Name" description="(Required) Name of the asset. Label is Asset Name." fieldLabel="Asset Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SerialNumber : Text" tooltip="Serial number for this asset." id="Asset_SerialNumber">
+        <UserObject label="SerialNumber : Text" id="Asset_SerialNumber" description="Serial number for this asset." fieldLabel="Serial Number">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -180,109 +180,109 @@
         <mxCell id="Asset_more" value="... 38 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Asset" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Contact" tooltip="92 fields (showing 20)&#xa;[Sales Cloud] Represents a contact, which is a person associated with an account." id="table_Contact">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/contact.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="106" y="57" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Contact" id="table_Contact" description="&#xa;[Sales Cloud] Represents a contact, which is a person associated with an account." category="Sales Cloud" APIName="Contact" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Contact" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/contact.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="106" y="57" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Contact_Id">
+        <UserObject label="PK: Id : Text" id="Contact_Id" description="Globally unique string that identifies a record." fieldLabel="Contact ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Contact_AccountId">
+        <UserObject label="FK: AccountId : Account" id="Contact_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ReportsToId : Contact" tooltip="Reports To ID" id="Contact_ReportsToId">
+        <UserObject label="FK: ReportsToId : Contact" id="Contact_ReportsToId" fieldLabel="Reports To ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: IndividualId : Individual" tooltip="Individual ID" id="Contact_IndividualId">
+        <UserObject label="FK: IndividualId : Individual" id="Contact_IndividualId" fieldLabel="Individual ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastName : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_LastName">
+        <UserObject label="LastName : Text" id="Contact_LastName" description="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." fieldLabel="Last Name">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FirstName : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_FirstName">
+        <UserObject label="FirstName : Text" id="Contact_FirstName" description="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." fieldLabel="First Name">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Salutation : Enum" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_Salutation">
+        <UserObject label="Salutation : Enum" id="Contact_Salutation" description="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." fieldLabel="Salutation">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." id="Contact_Name">
+        <UserObject label="Name : Text" id="Contact_Name" description="Concatenation of FirstName, MiddleName, LastName, and Suffix up to 203 characters, including whitespaces." fieldLabel="Full Name">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherStreet : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherStreet">
+        <UserObject label="OtherStreet : Text" id="Contact_OtherStreet" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Street">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherCity : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherCity">
+        <UserObject label="OtherCity : Text" id="Contact_OtherCity" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other City">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherState : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherState">
+        <UserObject label="OtherState : Text" id="Contact_OtherState" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other State/Province">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherPostalCode : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherPostalCode">
+        <UserObject label="OtherPostalCode : Text" id="Contact_OtherPostalCode" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Zip/Postal Code">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherCountry : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherCountry">
+        <UserObject label="OtherCountry : Text" id="Contact_OtherCountry" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Country">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherLatitude : Number" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherLatitude">
+        <UserObject label="OtherLatitude : Number" id="Contact_OtherLatitude" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Latitude">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherLongitude : Number" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherLongitude">
+        <UserObject label="OtherLongitude : Number" id="Contact_OtherLongitude" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Longitude">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherGeocodeAccuracy : Enum" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherGeocodeAccuracy">
+        <UserObject label="OtherGeocodeAccuracy : Enum" id="Contact_OtherGeocodeAccuracy" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Geocode Accuracy">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OtherAddress : Text" tooltip="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_OtherAddress">
+        <UserObject label="OtherAddress : Text" id="Contact_OtherAddress" description="The compound form of the other address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Other Address">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MailingStreet : Text" tooltip="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_MailingStreet">
+        <UserObject label="MailingStreet : Text" id="Contact_MailingStreet" description="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Mailing Street">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MailingCity : Text" tooltip="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_MailingCity">
+        <UserObject label="MailingCity : Text" id="Contact_MailingCity" description="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Mailing City">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MailingState : Text" tooltip="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Contact_MailingState">
+        <UserObject label="MailingState : Text" id="Contact_MailingState" description="The compound form of the mailing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Mailing State/Province">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -290,109 +290,109 @@
         <mxCell id="Contact_more" value="... 72 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Contact" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Account" tooltip="89 fields (showing 20)&#xa;[Sales Cloud] Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners)." id="table_Account">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/account.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-458" y="180" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Account" id="table_Account" description="&#xa;[Sales Cloud] Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners)." category="Sales Cloud" APIName="Account" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Account" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#00A1E0;strokeColor=#006ead;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/account.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-458" y="180" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Account_Id">
+        <UserObject label="PK: Id : Text" id="Account_Id" description="Globally unique string that identifies a record." fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#4deeff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RecordTypeId : RecordType" tooltip="Type of record" id="Account_RecordTypeId">
+        <UserObject label="FK: RecordTypeId : RecordType" id="Account_RecordTypeId" description="Type of record" fieldLabel="Record Type ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentId : Account" tooltip="Parent Record Reference" id="Account_ParentId">
+        <UserObject label="FK: ParentId : Account" id="Account_ParentId" description="Parent Record Reference" fieldLabel="Parent Account ID">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Required. Label is Account Name. Name of the account. Maximum size is 255 characters. If the account has a record type of Person Account: This value is the concatenation of the FirstName, MiddleName, LastName, and Suffix of the associated person contact. You can&apos;t modify this value." id="Account_Name">
+        <UserObject label="Name : Text" id="Account_Name" description="Required. Label is Account Name. Name of the account. Maximum size is 255 characters. If the account has a record type of Person Account: This value is the concatenation of the FirstName, MiddleName, LastName, and Suffix of the associated person contact. You can&apos;t modify this value." fieldLabel="Account Name">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Type : Enum" tooltip="Type of account, for example, Customer, Competitor, or Partner." id="Account_Type">
+        <UserObject label="Type : Enum" id="Account_Type" description="Type of account, for example, Customer, Competitor, or Partner." fieldLabel="Account Type">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingStreet : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingStreet">
+        <UserObject label="BillingStreet : Text" id="Account_BillingStreet" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Street">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingCity : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingCity">
+        <UserObject label="BillingCity : Text" id="Account_BillingCity" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing City">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingState : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingState">
+        <UserObject label="BillingState : Text" id="Account_BillingState" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing State/Province">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingPostalCode : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingPostalCode">
+        <UserObject label="BillingPostalCode : Text" id="Account_BillingPostalCode" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Zip/Postal Code">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingCountry : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingCountry">
+        <UserObject label="BillingCountry : Text" id="Account_BillingCountry" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Country">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingLatitude : Number" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingLatitude">
+        <UserObject label="BillingLatitude : Number" id="Account_BillingLatitude" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Latitude">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingLongitude : Number" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingLongitude">
+        <UserObject label="BillingLongitude : Number" id="Account_BillingLongitude" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Longitude">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingGeocodeAccuracy : Enum" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingGeocodeAccuracy">
+        <UserObject label="BillingGeocodeAccuracy : Enum" id="Account_BillingGeocodeAccuracy" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Geocode Accuracy">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingAddress : Text" tooltip="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." id="Account_BillingAddress">
+        <UserObject label="BillingAddress : Text" id="Account_BillingAddress" description="The compound form of the billing address. Read-only. For details on compound address fields, see Address Compound Fields." fieldLabel="Billing Address">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingStreet : Text" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingStreet">
+        <UserObject label="ShippingStreet : Text" id="Account_ShippingStreet" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping Street">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingCity : Text" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingCity">
+        <UserObject label="ShippingCity : Text" id="Account_ShippingCity" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping City">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingState : Text" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingState">
+        <UserObject label="ShippingState : Text" id="Account_ShippingState" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping State/Province">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingPostalCode : Text" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingPostalCode">
+        <UserObject label="ShippingPostalCode : Text" id="Account_ShippingPostalCode" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping Zip/Postal Code">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingCountry : Text" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingCountry">
+        <UserObject label="ShippingCountry : Text" id="Account_ShippingCountry" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping Country">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShippingLatitude : Number" tooltip="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." id="Account_ShippingLatitude">
+        <UserObject label="ShippingLatitude : Number" id="Account_ShippingLatitude" description="The compound form of the shipping address. Read-only. See Address Compound Fields for details on compound address fields." fieldLabel="Shipping Latitude">
           <mxCell style="text=1;strokeColor=#0087c6;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -400,387 +400,387 @@
         <mxCell id="Account_more" value="... 69 more fields" style="text=1;strokeColor=#0087c6;fillColor=#66ffff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Account" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="AccountAccountRelation" tooltip="10 fields&#xa;[Financial Service Cloud] Represents a relationship between two accounts, such as between a household and a business account." id="table_AccountAccountRelation">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/buyer_account.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="91" y="233" width="200" height="320" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="AccountAccountRelation" id="table_AccountAccountRelation" description="&#xa;[Financial Service Cloud] Represents a relationship between two accounts, such as between a household and a business account." category="Financial Service Cloud" APIName="AccountAccountRelation" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/AccountAccountRelation" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/buyer_account.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="91" y="233" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="320" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="AccountAccountRelation_Id">
+        <UserObject label="PK: Id : Text" id="AccountAccountRelation_Id" description="Globally unique string that identifies a record." fieldLabel="Account Account Relationship ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="AccountAccountRelation_AccountId">
+        <UserObject label="FK: AccountId : Account" id="AccountAccountRelation_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RelatedAccountId : Account" tooltip="Related Account ID" id="AccountAccountRelation_RelatedAccountId">
+        <UserObject label="FK: RelatedAccountId : Account" id="AccountAccountRelation_RelatedAccountId" fieldLabel="Related Account ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RelatedInverseRecordId : AccountAccountRelation" tooltip="Related Inverse Record ID" id="AccountAccountRelation_RelatedInverseRecordId">
+        <UserObject label="FK: RelatedInverseRecordId : AccountAccountRelation" id="AccountAccountRelation_RelatedInverseRecordId" fieldLabel="Related Inverse Record ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: PartyRoleRelationId : PartyRoleRelation" tooltip="Party Role Relationship ID" id="AccountAccountRelation_PartyRoleRelationId">
+        <UserObject label="FK: PartyRoleRelationId : PartyRoleRelation" id="AccountAccountRelation_PartyRoleRelationId" fieldLabel="Party Role Relationship ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Auto-number identifier for the relationship. Label is Account Relation Name." id="AccountAccountRelation_Name">
+        <UserObject label="Name : Text" id="AccountAccountRelation_Name" description="Auto-number identifier for the relationship. Label is Account Relation Name." fieldLabel="Account Relationship Id">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="AccountAccountRelation_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="AccountAccountRelation_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDate : Date" tooltip="Start Date" id="AccountAccountRelation_StartDate">
+        <UserObject label="StartDate : Date" id="AccountAccountRelation_StartDate" fieldLabel="Start Date">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDate : Date" tooltip="End Date" id="AccountAccountRelation_EndDate">
+        <UserObject label="EndDate : Date" id="AccountAccountRelation_EndDate" fieldLabel="End Date">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="HierarchyType : Enum" tooltip="Hierarchy Type" id="AccountAccountRelation_HierarchyType">
+        <UserObject label="HierarchyType : Enum" id="AccountAccountRelation_HierarchyType" fieldLabel="Hierarchy Type">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_AccountAccountRelation" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Party Role Relationship" tooltip="8 fields&#xa;[Financial Service Cloud] " id="table_Party_Role_Relationship">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/buyer_account.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="691" y="305" width="200" height="268" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Party Role Relationship" id="table_Party_Role_Relationship" description="&#xa;[Financial Service Cloud] " category="Financial Service Cloud" APIName="PartyRoleRelation" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/PartyRoleRelation" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#3498DB;strokeColor=#0165a8;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/buyer_account.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="691" y="305" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="268" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Party_Role_Relationship_Id">
+        <UserObject label="PK: Id : Text" id="Party_Role_Relationship_Id" description="Globally unique string that identifies a record." fieldLabel="Party Role Relationship ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#81e5ff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RelatedInverseRecordId : PartyRoleRelation" tooltip="Related Inverse Record ID" id="Party_Role_Relationship_RelatedInverseRecordId">
+        <UserObject label="FK: RelatedInverseRecordId : PartyRoleRelation" id="Party_Role_Relationship_RelatedInverseRecordId" fieldLabel="Related Inverse Record ID">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Party Role Relationship Id" id="Party_Role_Relationship_Name">
+        <UserObject label="Name : Text" id="Party_Role_Relationship_Name" fieldLabel="Party Role Relationship Id">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Party_Role_Relationship_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Party_Role_Relationship_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RelatedRoleName : Text" tooltip="Related Role Name" id="Party_Role_Relationship_RelatedRoleName">
+        <UserObject label="RelatedRoleName : Text" id="Party_Role_Relationship_RelatedRoleName" fieldLabel="Related Role Name">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RelationshipObjectName : Enum" tooltip="Relationship Object Name" id="Party_Role_Relationship_RelationshipObjectName">
+        <UserObject label="RelationshipObjectName : Enum" id="Party_Role_Relationship_RelationshipObjectName" fieldLabel="Relationship Object Name">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShouldCreaInversRoleAuto : Boolean" tooltip="Create Inverse Role Automatically" id="Party_Role_Relationship_ShouldCreaInversRoleAuto">
+        <UserObject label="ShouldCreaInversRoleAuto : Boolean" id="Party_Role_Relationship_ShouldCreaInversRoleAuto" fieldLabel="Create Inverse Role Automatically">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RoleName : Text" tooltip="Role Name" id="Party_Role_Relationship_RoleName">
+        <UserObject label="RoleName : Text" id="Party_Role_Relationship_RoleName" fieldLabel="Role Name">
           <mxCell style="text=1;strokeColor=#1a7ec1;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Party_Role_Relationship" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EnergyServiceAgreement" tooltip="15 fields&#xa;[Core] " id="table_EnergyServiceAgreement">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="90" y="451" width="200" height="450" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="EnergyServiceAgreement" id="table_EnergyServiceAgreement" description="&#xa;[Core] " category="Core" APIName="EnergyServiceAgreement" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/EnergyServiceAgreement" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="90" y="451" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="450" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="EnergyServiceAgreement_Id">
+        <UserObject label="PK: Id : Text" id="EnergyServiceAgreement_Id" description="Globally unique string that identifies a record." fieldLabel="Energy Service Agreement ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="EnergyServiceAgreement_AccountId">
+        <UserObject label="FK: AccountId : Account" id="EnergyServiceAgreement_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ContractId : Contract" tooltip="Contract ID" id="EnergyServiceAgreement_ContractId">
+        <UserObject label="FK: ContractId : Contract" id="EnergyServiceAgreement_ContractId" fieldLabel="Contract ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: Product2Id : Product2" tooltip="Product ID" id="EnergyServiceAgreement_Product2Id">
+        <UserObject label="FK: Product2Id : Product2" id="EnergyServiceAgreement_Product2Id" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="EnergyServiceAgreement_Name">
+        <UserObject label="Name : Text" id="EnergyServiceAgreement_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="EnergyServiceAgreement_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="EnergyServiceAgreement_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ActivationDate : Date" tooltip="Activation Date" id="EnergyServiceAgreement_ActivationDate">
+        <UserObject label="ActivationDate : Date" id="EnergyServiceAgreement_ActivationDate" fieldLabel="Activation Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="BillingSchedule : Enum" tooltip="Billing Schedule" id="EnergyServiceAgreement_BillingSchedule">
+        <UserObject label="BillingSchedule : Enum" id="EnergyServiceAgreement_BillingSchedule" fieldLabel="Billing Schedule">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ExternalContractIdentifier : Text" tooltip="External Contract Identifier" id="EnergyServiceAgreement_ExternalContractIdentifier">
+        <UserObject label="ExternalContractIdentifier : Text" id="EnergyServiceAgreement_ExternalContractIdentifier" fieldLabel="External Contract Identifier">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="EnergyServiceAgreement_Status">
+        <UserObject label="Status : Enum" id="EnergyServiceAgreement_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Type : Enum" tooltip="Type" id="EnergyServiceAgreement_Type">
+        <UserObject label="Type : Enum" id="EnergyServiceAgreement_Type" fieldLabel="Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDate : Date" tooltip="End Date" id="EnergyServiceAgreement_EndDate">
+        <UserObject label="EndDate : Date" id="EnergyServiceAgreement_EndDate" fieldLabel="End Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDate : Date" tooltip="Start Date" id="EnergyServiceAgreement_StartDate">
+        <UserObject label="StartDate : Date" id="EnergyServiceAgreement_StartDate" fieldLabel="Start Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StatusReason : Text" tooltip="Status Reason" id="EnergyServiceAgreement_StatusReason">
+        <UserObject label="StatusReason : Text" id="EnergyServiceAgreement_StatusReason" fieldLabel="Status Reason">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StatusChangeDate : Date" tooltip="Status Change Date" id="EnergyServiceAgreement_StatusChangeDate">
+        <UserObject label="StatusChangeDate : Date" id="EnergyServiceAgreement_StatusChangeDate" fieldLabel="Status Change Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreement" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EnergyServiceAgreementItem" tooltip="17 fields&#xa;[Core] " id="table_EnergyServiceAgreementItem">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="715" y="452" width="200" height="502" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="EnergyServiceAgreementItem" id="table_EnergyServiceAgreementItem" description="&#xa;[Core] " category="Core" APIName="EnergyServiceAgreementItem" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/EnergyServiceAgreementItem" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="715" y="452" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="502" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="EnergyServiceAgreementItem_Id">
+        <UserObject label="PK: Id : Text" id="EnergyServiceAgreementItem_Id" description="Globally unique string that identifies a record." fieldLabel="Energy Service Agreement Item ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: EnergyServiceAgreementId : EnergyServiceAgreement" tooltip="Energy Service Agreement ID" id="EnergyServiceAgreementItem_EnergyServiceAgreementI">
+        <UserObject label="FK: EnergyServiceAgreementId : EnergyServiceAgreement" id="EnergyServiceAgreementItem_EnergyServiceAgreementI" fieldLabel="Energy Service Agreement ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: Product2Id : Product2" tooltip="Product ID" id="EnergyServiceAgreementItem_Product2Id">
+        <UserObject label="FK: Product2Id : Product2" id="EnergyServiceAgreementItem_Product2Id" fieldLabel="Product ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: LocationId : Location" tooltip="Location ID" id="EnergyServiceAgreementItem_LocationId">
+        <UserObject label="FK: LocationId : Location" id="EnergyServiceAgreementItem_LocationId" fieldLabel="Location ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AssetId : Asset" tooltip="Asset ID" id="EnergyServiceAgreementItem_AssetId">
+        <UserObject label="FK: AssetId : Asset" id="EnergyServiceAgreementItem_AssetId" fieldLabel="Asset ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ServicePointId : ServicePoint" tooltip="Service Point ID" id="EnergyServiceAgreementItem_ServicePointId">
+        <UserObject label="FK: ServicePointId : ServicePoint" id="EnergyServiceAgreementItem_ServicePointId" fieldLabel="Service Point ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="EnergyServiceAgreementItem_Name">
+        <UserObject label="Name : Text" id="EnergyServiceAgreementItem_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="EnergyServiceAgreementItem_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="EnergyServiceAgreementItem_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDate : Date" tooltip="Start Date" id="EnergyServiceAgreementItem_StartDate">
+        <UserObject label="StartDate : Date" id="EnergyServiceAgreementItem_StartDate" fieldLabel="Start Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDate : Date" tooltip="End Date" id="EnergyServiceAgreementItem_EndDate">
+        <UserObject label="EndDate : Date" id="EnergyServiceAgreementItem_EndDate" fieldLabel="End Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OneTimePrice : Number" tooltip="One Time Price" id="EnergyServiceAgreementItem_OneTimePrice">
+        <UserObject label="OneTimePrice : Number" id="EnergyServiceAgreementItem_OneTimePrice" fieldLabel="One Time Price">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RecurringPrice : Number" tooltip="Recurring Price" id="EnergyServiceAgreementItem_RecurringPrice">
+        <UserObject label="RecurringPrice : Number" id="EnergyServiceAgreementItem_RecurringPrice" fieldLabel="Recurring Price">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RecurringPriceFrequency : Enum" tooltip="Recurring Price Frequency" id="EnergyServiceAgreementItem_RecurringPriceFrequency">
+        <UserObject label="RecurringPriceFrequency : Enum" id="EnergyServiceAgreementItem_RecurringPriceFrequency" fieldLabel="Recurring Price Frequency">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsagePeriod : Enum" tooltip="Usage Period" id="EnergyServiceAgreementItem_UsagePeriod">
+        <UserObject label="UsagePeriod : Enum" id="EnergyServiceAgreementItem_UsagePeriod" fieldLabel="Usage Period">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsageQuantity : Integer" tooltip="Usage Quantity" id="EnergyServiceAgreementItem_UsageQuantity">
+        <UserObject label="UsageQuantity : Integer" id="EnergyServiceAgreementItem_UsageQuantity" fieldLabel="Usage Quantity">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsagePrice : Number" tooltip="Usage Price" id="EnergyServiceAgreementItem_UsagePrice">
+        <UserObject label="UsagePrice : Number" id="EnergyServiceAgreementItem_UsagePrice" fieldLabel="Usage Price">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsageUnitOfMeasure : Enum" tooltip="Usage Unit of Measure" id="EnergyServiceAgreementItem_UsageUnitOfMeasure">
+        <UserObject label="UsageUnitOfMeasure : Enum" id="EnergyServiceAgreementItem_UsageUnitOfMeasure" fieldLabel="Usage Unit of Measure">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_EnergyServiceAgreementItem" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Location" tooltip="43 fields (showing 20)&#xa;[Core] Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders." id="table_Location">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/location.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-131" y="757" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Location" id="table_Location" description="&#xa;[Core] Represents a warehouse, service vehicle, work site, or other element of the region where your team performs field service work. In API version 49.0 and later, you can associate activities with specific locations. Activities, such as the tasks and events related to a location, appear in the activities timeline when you view the location detail page. Also in API version 49.0 and later, Work.com users can view Employees as a related list on Location records. In API version 51.0 and later, this object is available for Omnichannel Inventory and represents physical locations where inventory is available for fulfilling orders." category="Core" APIName="Location" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Location" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/location.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-131" y="757" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Location_Id">
+        <UserObject label="PK: Id : Text" id="Location_Id" description="Globally unique string that identifies a record." fieldLabel="Location ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentLocationId : Location" tooltip="Parent Location ID" id="Location_ParentLocationId">
+        <UserObject label="FK: ParentLocationId : Location" id="Location_ParentLocationId" fieldLabel="Parent Location ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: VisitorAddressId : Address" tooltip="Address ID" id="Location_VisitorAddressId">
+        <UserObject label="FK: VisitorAddressId : Address" id="Location_VisitorAddressId" fieldLabel="Address ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: RootLocationId : Location" tooltip="Root Location ID" id="Location_RootLocationId">
+        <UserObject label="FK: RootLocationId : Location" id="Location_RootLocationId" fieldLabel="Root Location ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: LogoId : ContentAsset" tooltip="Asset File ID" id="Location_LogoId">
+        <UserObject label="FK: LogoId : ContentAsset" id="Location_LogoId" fieldLabel="Asset File ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: PropertyOwnerAccountId : Account" tooltip="Account ID" id="Location_PropertyOwnerAccountId">
+        <UserObject label="FK: PropertyOwnerAccountId : Account" id="Location_PropertyOwnerAccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: BusinessHoursId : BusinessHours" tooltip="Business Hours ID" id="Location_BusinessHoursId">
+        <UserObject label="FK: BusinessHoursId : BusinessHours" id="Location_BusinessHoursId" fieldLabel="Business Hours ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: AccountId : Account" tooltip="Account ID" id="Location_AccountId">
+        <UserObject label="FK: AccountId : Account" id="Location_AccountId" fieldLabel="Account ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="The name of the location. For example, Service Van #4." id="Location_Name">
+        <UserObject label="Name : Text" id="Location_Name" description="The name of the location. For example, Service Van #4." fieldLabel="Location Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Location_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Location_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LocationType : Enum" tooltip="Picklist of location types. It has no default values, so you must populate it before creating any location records." id="Location_LocationType">
+        <UserObject label="LocationType : Enum" id="Location_LocationType" description="Picklist of location types. It has no default values, so you must populate it before creating any location records." fieldLabel="Location Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Latitude : Number" tooltip="The geographic location." id="Location_Latitude">
+        <UserObject label="Latitude : Number" id="Location_Latitude" description="The geographic location." fieldLabel="Latitude">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Longitude : Number" tooltip="The geographic location." id="Location_Longitude">
+        <UserObject label="Longitude : Number" id="Location_Longitude" description="The geographic location." fieldLabel="Longitude">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Location : Text" tooltip="The geographic location." id="Location_Location">
+        <UserObject label="Location : Text" id="Location_Location" description="The geographic location." fieldLabel="Location">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="A brief description of the location." id="Location_Description">
+        <UserObject label="Description : Text" id="Location_Description" description="A brief description of the location." fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DrivingDirections : Text" tooltip="Directions to the location." id="Location_DrivingDirections">
+        <UserObject label="DrivingDirections : Text" id="Location_DrivingDirections" description="Directions to the location." fieldLabel="Driving Directions">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="TimeZone : Enum" tooltip="Picklist of available time zones." id="Location_TimeZone">
+        <UserObject label="TimeZone : Enum" id="Location_TimeZone" description="Picklist of available time zones." fieldLabel="Time Zone">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="PossessionDate : Date" tooltip="The date the location was purchased." id="Location_PossessionDate">
+        <UserObject label="PossessionDate : Date" id="Location_PossessionDate" description="The date the location was purchased." fieldLabel="Possession Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ConstructionStartDate : Date" tooltip="Date construction began at the location." id="Location_ConstructionStartDate">
+        <UserObject label="ConstructionStartDate : Date" id="Location_ConstructionStartDate" description="Date construction began at the location." fieldLabel="Construction Start Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ConstructionEndDate : Date" tooltip="Date construction ended at the location." id="Location_ConstructionEndDate">
+        <UserObject label="ConstructionEndDate : Date" id="Location_ConstructionEndDate" description="Date construction ended at the location." fieldLabel="Construction End Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -788,109 +788,109 @@
         <mxCell id="Location_more" value="... 23 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Location" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="ServicePoint" tooltip="28 fields (showing 20)&#xa;[EUC] " id="table_ServicePoint">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/employee.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="534" y="771" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="ServicePoint" id="table_ServicePoint" description="&#xa;[EUC] " category="EUC" APIName="ServicePoint" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ServicePoint" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#16A085;strokeColor=#006d52;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/employee.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="534" y="771" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ServicePoint_Id">
+        <UserObject label="PK: Id : Text" id="ServicePoint_Id" description="Globally unique string that identifies a record." fieldLabel="Service Point ID">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#63edd2;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: PremisesId : Location" tooltip="Location ID" id="ServicePoint_PremisesId">
+        <UserObject label="FK: PremisesId : Location" id="ServicePoint_PremisesId" fieldLabel="Location ID">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="ServicePoint_Name">
+        <UserObject label="Name : Text" id="ServicePoint_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="ServicePoint_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="ServicePoint_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ExternalIdentifier : Text" tooltip="External Identifier" id="ServicePoint_ExternalIdentifier">
+        <UserObject label="ExternalIdentifier : Text" id="ServicePoint_ExternalIdentifier" fieldLabel="External Identifier">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ServiceType : Enum" tooltip="Service Type" id="ServicePoint_ServiceType">
+        <UserObject label="ServiceType : Enum" id="ServicePoint_ServiceType" fieldLabel="Service Type">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ActivationDate : Date" tooltip="Activation Date" id="ServicePoint_ActivationDate">
+        <UserObject label="ActivationDate : Date" id="ServicePoint_ActivationDate" fieldLabel="Activation Date">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AverageMonthlyUsage : Integer" tooltip="Average Monthly Usage" id="ServicePoint_AverageMonthlyUsage">
+        <UserObject label="AverageMonthlyUsage : Integer" id="ServicePoint_AverageMonthlyUsage" fieldLabel="Average Monthly Usage">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DisconnectDate : Date" tooltip="Disconnect Date" id="ServicePoint_DisconnectDate">
+        <UserObject label="DisconnectDate : Date" id="ServicePoint_DisconnectDate" fieldLabel="Disconnect Date">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FieldServiceClass : Enum" tooltip="Field Service Class" id="ServicePoint_FieldServiceClass">
+        <UserObject label="FieldServiceClass : Enum" id="ServicePoint_FieldServiceClass" fieldLabel="Field Service Class">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="InstallationType : Enum" tooltip="Installation Type" id="ServicePoint_InstallationType">
+        <UserObject label="InstallationType : Enum" id="ServicePoint_InstallationType" fieldLabel="Installation Type">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LoadProfile : Enum" tooltip="Load Profile" id="ServicePoint_LoadProfile">
+        <UserObject label="LoadProfile : Enum" id="ServicePoint_LoadProfile" fieldLabel="Load Profile">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MarketIdentifier : Text" tooltip="Market Identifier" id="ServicePoint_MarketIdentifier">
+        <UserObject label="MarketIdentifier : Text" id="ServicePoint_MarketIdentifier" fieldLabel="Market Identifier">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsPremisesInfoOverridden : Boolean" tooltip="Premises Info Overridden" id="ServicePoint_IsPremisesInfoOverridden">
+        <UserObject label="IsPremisesInfoOverridden : Boolean" id="ServicePoint_IsPremisesInfoOverridden" fieldLabel="Premises Info Overridden">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ReconnectDate : Date" tooltip="Reconnect Date" id="ServicePoint_ReconnectDate">
+        <UserObject label="ReconnectDate : Date" id="ServicePoint_ReconnectDate" fieldLabel="Reconnect Date">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="ServicePoint_Status">
+        <UserObject label="Status : Enum" id="ServicePoint_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="TemperatureArea : Text" tooltip="Temperature Area" id="ServicePoint_TemperatureArea">
+        <UserObject label="TemperatureArea : Text" id="ServicePoint_TemperatureArea" fieldLabel="Temperature Area">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GasPressureArea : Text" tooltip="Gas Pressure Area" id="ServicePoint_GasPressureArea">
+        <UserObject label="GasPressureArea : Text" id="ServicePoint_GasPressureArea" fieldLabel="Gas Pressure Area">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AirPressureArea : Text" tooltip="Air Pressure Area" id="ServicePoint_AirPressureArea">
+        <UserObject label="AirPressureArea : Text" id="ServicePoint_AirPressureArea" fieldLabel="Air Pressure Area">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="WaterPressureArea : Text" tooltip="Water Pressure Area" id="ServicePoint_WaterPressureArea">
+        <UserObject label="WaterPressureArea : Text" id="ServicePoint_WaterPressureArea" fieldLabel="Water Pressure Area">
           <mxCell style="text=1;strokeColor=#00866b;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -898,109 +898,109 @@
         <mxCell id="ServicePoint_more" value="... 8 more fields" style="text=1;strokeColor=#00866b;fillColor=#7cffeb;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_ServicePoint" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="Address" tooltip="23 fields (showing 20)&#xa;[Core] Represents a mailing, billing, or home address." id="table_Address">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/address.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="458" y="923" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Address" id="table_Address" description="&#xa;[Core] Represents a mailing, billing, or home address." category="Core" APIName="Address" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/Address" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/address.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="458" y="923" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Address_Id">
+        <UserObject label="PK: Id : Text" id="Address_Id" description="Globally unique string that identifies a record." fieldLabel="Address ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ParentId : Location" tooltip="Parent Record Reference" id="Address_ParentId">
+        <UserObject label="FK: ParentId : Location" id="Address_ParentId" description="Parent Record Reference" fieldLabel="Parent ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name of the address." id="Address_Name">
+        <UserObject label="Name : Text" id="Address_Name" description="Name of the address." fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Address_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Address_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LocationType : Enum" tooltip="Picklist of location types. The available values are: Warehouse (default) Site Van Plant" id="Address_LocationType">
+        <UserObject label="LocationType : Enum" id="Address_LocationType" description="Picklist of location types. The available values are: Warehouse (default) Site Van Plant" fieldLabel="Location Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="AddressType : Enum" tooltip="Picklist of address types. The values are: Mailing Shipping Billing Home" id="Address_AddressType">
+        <UserObject label="AddressType : Enum" id="Address_AddressType" description="Picklist of address types. The values are: Mailing Shipping Billing Home" fieldLabel="Address Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Street : Text" tooltip="The full address." id="Address_Street">
+        <UserObject label="Street : Text" id="Address_Street" description="The full address." fieldLabel="Address">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="City : Text" tooltip="The full address." id="Address_City">
+        <UserObject label="City : Text" id="Address_City" description="The full address." fieldLabel="City">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="State : Text" tooltip="The full address." id="Address_State">
+        <UserObject label="State : Text" id="Address_State" description="The full address." fieldLabel="State/Province">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="PostalCode : Text" tooltip="The full address." id="Address_PostalCode">
+        <UserObject label="PostalCode : Text" id="Address_PostalCode" description="The full address." fieldLabel="Zip/Postal Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Country : Text" tooltip="The full address." id="Address_Country">
+        <UserObject label="Country : Text" id="Address_Country" description="The full address." fieldLabel="Country">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Latitude : Number" tooltip="The full address." id="Address_Latitude">
+        <UserObject label="Latitude : Number" id="Address_Latitude" description="The full address." fieldLabel="Latitude">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Longitude : Number" tooltip="The full address." id="Address_Longitude">
+        <UserObject label="Longitude : Number" id="Address_Longitude" description="The full address." fieldLabel="Longitude">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GeocodeAccuracy : Enum" tooltip="The full address." id="Address_GeocodeAccuracy">
+        <UserObject label="GeocodeAccuracy : Enum" id="Address_GeocodeAccuracy" description="The full address." fieldLabel="Geocode Accuracy">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Address : Text" tooltip="The full address." id="Address_Address">
+        <UserObject label="Address : Text" id="Address_Address" description="The full address." fieldLabel="Address">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="A brief description of the address." id="Address_Description">
+        <UserObject label="Description : Text" id="Address_Description" description="A brief description of the address." fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DrivingDirections : Text" tooltip="Directions to the address." id="Address_DrivingDirections">
+        <UserObject label="DrivingDirections : Text" id="Address_DrivingDirections" description="Directions to the address." fieldLabel="Driving Directions">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="TimeZone : Enum" tooltip="Picklist of available time zones." id="Address_TimeZone">
+        <UserObject label="TimeZone : Enum" id="Address_TimeZone" description="Picklist of available time zones." fieldLabel="Time Zone">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Floor : Text" tooltip="Floor" id="Address_Floor">
+        <UserObject label="Floor : Text" id="Address_Floor" fieldLabel="Floor">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="HouseNumberSupplement : Text" tooltip="House Number Supplement" id="Address_HouseNumberSupplement">
+        <UserObject label="HouseNumberSupplement : Text" id="Address_HouseNumberSupplement" fieldLabel="House Number Supplement">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -1008,192 +1008,146 @@
         <mxCell id="Address_more" value="... 3 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Address" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="" tooltip="Many-to-One: Account Contact Relationship → Account&#xa;From: Account Contact Relationship.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountContactRelation_AccountId" target="Account_Id">
+        <mxCell id="edge_Account_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountContactRelation_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Account Contact Relationship → Contact&#xa;From: Account Contact Relationship.ContactId&#xa;To: Contact.Id" id="edge_Contact_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountContactRelation_ContactId" target="Contact_Id">
+        </mxCell>
+        <mxCell id="edge_Contact_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountContactRelation_ContactId" target="Contact_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Account Account Relationship → Account&#xa;From: Account Account Relationship.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_AccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Account Account Relationship → Account&#xa;From: Account Account Relationship.RelatedAccountId&#xa;To: Account.Id" id="edge_Account_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_RelatedAccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_RelatedAccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Account Account Relationship → Party Role Relationship&#xa;From: Account Account Relationship.PartyRoleRelationId&#xa;To: Party Role Relationship.Id" id="edge_PartyRoleRelation_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_PartyRoleRelationId" target="Party_Role_Relationship_Id">
+        </mxCell>
+        <mxCell id="edge_PartyRoleRelation_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="AccountAccountRelation_PartyRoleRelationId" target="Party_Role_Relationship_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Service Point → Location&#xa;From: Service Point.PremisesId&#xa;To: Location.Id" id="edge_Location_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ServicePoint_PremisesId" target="Location_Id">
+        </mxCell>
+        <mxCell id="edge_Location_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="ServicePoint_PremisesId" target="Location_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Energy Service Agreement → Account&#xa;From: Energy Service Agreement.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id_3">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreement_AccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreement_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Energy Service Agreement Item → Energy Service Agreement&#xa;From: Energy Service Agreement Item.EnergyServiceAgreementId&#xa;To: Energy Service Agreement.Id" id="edge_EnergyServiceAgreement_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_EnergyServiceAgreementI" target="EnergyServiceAgreement_Id">
+        </mxCell>
+        <mxCell id="edge_EnergyServiceAgreement_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_EnergyServiceAgreementI" target="EnergyServiceAgreement_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Energy Service Agreement Item → Location&#xa;From: Energy Service Agreement Item.LocationId&#xa;To: Location.Id" id="edge_Location_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_LocationId" target="Location_Id">
+        </mxCell>
+        <mxCell id="edge_Location_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_LocationId" target="Location_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Energy Service Agreement Item → Asset&#xa;From: Energy Service Agreement Item.AssetId&#xa;To: Asset.Id" id="edge_Asset_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_AssetId" target="Asset_Id">
+        </mxCell>
+        <mxCell id="edge_Asset_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_AssetId" target="Asset_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Energy Service Agreement Item → Service Point&#xa;From: Energy Service Agreement Item.ServicePointId&#xa;To: Service Point.Id" id="edge_ServicePoint_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_ServicePointId" target="ServicePoint_Id">
+        </mxCell>
+        <mxCell id="edge_ServicePoint_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="EnergyServiceAgreementItem_ServicePointId" target="ServicePoint_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Contact → Account&#xa;From: Contact.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id_4">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Contact_AccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Contact_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Location → Address&#xa;From: Location.VisitorAddressId&#xa;To: Address.Id" id="edge_Address_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_VisitorAddressId" target="Address_Id">
+        </mxCell>
+        <mxCell id="edge_Address_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_VisitorAddressId" target="Address_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Location → Account&#xa;From: Location.PropertyOwnerAccountId&#xa;To: Account.Id" id="edge_Account_to_Id_5">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_PropertyOwnerAccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_PropertyOwnerAccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Location → Account&#xa;From: Location.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id_6">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_AccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Location_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Address → Location&#xa;From: Address.ParentId&#xa;To: Location.Id" id="edge_Location_to_Id_2">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Address_ParentId" target="Location_Id">
+        </mxCell>
+        <mxCell id="edge_Location_to_Id_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Address_ParentId" target="Location_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Account&#xa;From: Asset.AccountId&#xa;To: Account.Id" id="edge_Account_to_Id_7">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AccountId" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AccountId" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Contact&#xa;From: Asset.ContactId&#xa;To: Contact.Id" id="edge_Contact_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_ContactId" target="Contact_Id">
+        </mxCell>
+        <mxCell id="edge_Contact_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_ContactId" target="Contact_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Location&#xa;From: Asset.LocationId&#xa;To: Location.Id" id="edge_Location_to_Id_3">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_LocationId" target="Location_Id">
+        </mxCell>
+        <mxCell id="edge_Location_to_Id_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_LocationId" target="Location_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Account&#xa;From: Asset.AssetProvidedById&#xa;To: Account.Id" id="edge_Account_to_Id_8">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AssetProvidedById" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AssetProvidedById" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Account&#xa;From: Asset.AssetServicedById&#xa;To: Account.Id" id="edge_Account_to_Id_9">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AssetServicedById" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_AssetServicedById" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Account&#xa;From: Asset.IdContratFournisseur__c&#xa;To: Account.Id" id="edge_Account_to_Id_10">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_IdContratFournisseur__c" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_IdContratFournisseur__c" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Asset → Account&#xa;From: Asset.ParentAccount__c&#xa;To: Account.Id" id="edge_Account_to_Id_11">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_ParentAccount__c" target="Account_Id">
+        </mxCell>
+        <mxCell id="edge_Account_to_Id_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Asset_ParentAccount__c" target="Account_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
+        </mxCell>
         <mxCell id="repo_link" value="github.com/sf-explorer/app" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1" link="https://github.com/sf-explorer/app">
-            <mxGeometry x="-458" y="1559" width="600" height="20" as="geometry"/>
+            <mxGeometry x="-458" y="1013" width="600" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>

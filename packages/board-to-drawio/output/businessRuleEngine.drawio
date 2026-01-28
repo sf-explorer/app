@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-28T08:21:54.604Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: businessRuleEngine" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
+<mxfile host="app.diagrams.net" modified="2026-01-28T10:20:52.046Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: businessRuleEngine" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
   <diagram id="diagram1" name="businessRuleEngine">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -8,583 +8,583 @@
         </object>
         <mxCell id="1" parent="0">
         </mxCell>
-        <UserObject label="Decision Matrix Column" tooltip="13 fields&#xa;[Core] " id="table_Decision_Matrix_Column">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="856" y="-244" width="200" height="398" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Matrix Column" id="table_Decision_Matrix_Column" description="&#xa;[Core] " category="Core" APIName="CalculationMatrixColumn" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/CalculationMatrixColumn" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="856" y="-244" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="398" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Matrix_Column_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Matrix_Column_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Matrix Column ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: CalculationMatrixId : CalculationMatrix" tooltip="Decision Matrix ID" id="Decision_Matrix_Column_CalculationMatrixId">
+        <UserObject label="FK: CalculationMatrixId : CalculationMatrix" id="Decision_Matrix_Column_CalculationMatrixId" fieldLabel="Decision Matrix ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Decision_Matrix_Column_Name">
+        <UserObject label="Name : Text" id="Decision_Matrix_Column_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Decision_Matrix_Column_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Decision_Matrix_Column_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Matrix_Column_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Matrix_Column_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ApiName : Text" tooltip="API Name" id="Decision_Matrix_Column_ApiName">
+        <UserObject label="ApiName : Text" id="Decision_Matrix_Column_ApiName" fieldLabel="API Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ColumnType : Enum" tooltip="Column Type" id="Decision_Matrix_Column_ColumnType">
+        <UserObject label="ColumnType : Enum" id="Decision_Matrix_Column_ColumnType" fieldLabel="Column Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DataType : Enum" tooltip="Data Type" id="Decision_Matrix_Column_DataType">
+        <UserObject label="DataType : Enum" id="Decision_Matrix_Column_DataType" fieldLabel="Data Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DisplaySequence : Integer" tooltip="Display Sequence" id="Decision_Matrix_Column_DisplaySequence">
+        <UserObject label="DisplaySequence : Integer" id="Decision_Matrix_Column_DisplaySequence" fieldLabel="Display Sequence">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RangeValues : Text" tooltip="Range Values" id="Decision_Matrix_Column_RangeValues">
+        <UserObject label="RangeValues : Text" id="Decision_Matrix_Column_RangeValues" fieldLabel="Range Values">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsWildcardColumn : Boolean" tooltip="Wildcard Column" id="Decision_Matrix_Column_IsWildcardColumn">
+        <UserObject label="IsWildcardColumn : Boolean" id="Decision_Matrix_Column_IsWildcardColumn" fieldLabel="Wildcard Column">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="WildcardColumnValue : Text" tooltip="Wildcard Column Value" id="Decision_Matrix_Column_WildcardColumnValue">
+        <UserObject label="WildcardColumnValue : Text" id="Decision_Matrix_Column_WildcardColumnValue" fieldLabel="Wildcard Column Value">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Namespace : Text" tooltip="Namespace" id="Decision_Matrix_Column_Namespace">
+        <UserObject label="Namespace : Text" id="Decision_Matrix_Column_Namespace" fieldLabel="Namespace">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Decision Matrix Column Range" tooltip="8 fields&#xa;[Core] " id="table_Decision_Matrix_Column_Range">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1497" y="-242" width="200" height="268" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Matrix Column Range" id="table_Decision_Matrix_Column_Range" description="&#xa;[Core] " category="Core" APIName="CalcMatrixColumnRange" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/CalcMatrixColumnRange" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1497" y="-242" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="268" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Matrix_Column_Range_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Matrix_Column_Range_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Matrix Column Range ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: CalculationMatrixColumnId : CalculationMatrixColumn" tooltip="Decision Matrix Column ID" id="Decision_Matrix_Column_Range_CalculationMatrixColu">
+        <UserObject label="FK: CalculationMatrixColumnId : CalculationMatrixColumn" id="Decision_Matrix_Column_Range_CalculationMatrixColu" fieldLabel="Decision Matrix Column ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: CalculationMatrixVersionId : CalculationMatrixVersion" tooltip="Decision Matrix Version ID" id="Decision_Matrix_Column_Range_CalculationMatrixVers">
+        <UserObject label="FK: CalculationMatrixVersionId : CalculationMatrixVersion" id="Decision_Matrix_Column_Range_CalculationMatrixVers" fieldLabel="Decision Matrix Version ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Decision_Matrix_Column_Range_Name">
+        <UserObject label="Name : Text" id="Decision_Matrix_Column_Range_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Decision_Matrix_Column_Range_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Decision_Matrix_Column_Range_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Matrix_Column_Range_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Matrix_Column_Range_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RangeStartValue : Text" tooltip="Range Start Value" id="Decision_Matrix_Column_Range_RangeStartValue">
+        <UserObject label="RangeStartValue : Text" id="Decision_Matrix_Column_Range_RangeStartValue" fieldLabel="Range Start Value">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Occurrence : Integer" tooltip="Occurrence" id="Decision_Matrix_Column_Range_Occurrence">
+        <UserObject label="Occurrence : Integer" id="Decision_Matrix_Column_Range_Occurrence" fieldLabel="Occurrence">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Column_Range" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CalculationMatrix" tooltip="14 fields&#xa;[BRE] " id="table_CalculationMatrix">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="330" y="-70" width="200" height="424" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="CalculationMatrix" id="table_CalculationMatrix" description="&#xa;[BRE] " category="BRE" APIName="CalculationMatrix" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/CalculationMatrix" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="330" y="-70" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="424" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="CalculationMatrix_Id">
+        <UserObject label="PK: Id : Text" id="CalculationMatrix_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Matrix ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#db91fa;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: DecisionMatrixDefinitionId : DecisionMatrixDefinition" tooltip="Decision Matrix Definition ID" id="CalculationMatrix_DecisionMatrixDefinitionId">
+        <UserObject label="FK: DecisionMatrixDefinitionId : DecisionMatrixDefinition" id="CalculationMatrix_DecisionMatrixDefinitionId" fieldLabel="Decision Matrix Definition ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="CalculationMatrix_Name">
+        <UserObject label="Name : Text" id="CalculationMatrix_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="CalculationMatrix_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="CalculationMatrix_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="CalculationMatrix_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="CalculationMatrix_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="CalculationMatrix_Description">
+        <UserObject label="Description : Text" id="CalculationMatrix_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GroupKey : Text" tooltip="Group Key" id="CalculationMatrix_GroupKey">
+        <UserObject label="GroupKey : Text" id="CalculationMatrix_GroupKey" fieldLabel="Group Key">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SubGroupKey : Text" tooltip="Sub Group Key" id="CalculationMatrix_SubGroupKey">
+        <UserObject label="SubGroupKey : Text" id="CalculationMatrix_SubGroupKey" fieldLabel="Sub Group Key">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Type : Enum" tooltip="Type" id="CalculationMatrix_Type">
+        <UserObject label="Type : Enum" id="CalculationMatrix_Type" fieldLabel="Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UniqueName : Text" tooltip="Unique Name" id="CalculationMatrix_UniqueName">
+        <UserObject label="UniqueName : Text" id="CalculationMatrix_UniqueName" fieldLabel="Unique Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Namespace : Text" tooltip="Namespace" id="CalculationMatrix_Namespace">
+        <UserObject label="Namespace : Text" id="CalculationMatrix_Namespace" fieldLabel="Namespace">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DecisionMatrixType : Enum" tooltip="Decision Matrix Type" id="CalculationMatrix_DecisionMatrixType">
+        <UserObject label="DecisionMatrixType : Enum" id="CalculationMatrix_DecisionMatrixType" fieldLabel="Decision Matrix Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MigrationStatus : Text" tooltip="Migration Status" id="CalculationMatrix_MigrationStatus">
+        <UserObject label="MigrationStatus : Text" id="CalculationMatrix_MigrationStatus" fieldLabel="Migration Status">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsageType : Enum" tooltip="Usage Type" id="CalculationMatrix_UsageType">
+        <UserObject label="UsageType : Enum" id="CalculationMatrix_UsageType" fieldLabel="Usage Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_CalculationMatrix" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Decision Matrix Definition" tooltip="6 fields&#xa;[Core] " id="table_Decision_Matrix_Definition">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-243" y="-49" width="200" height="216" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Matrix Definition" id="table_Decision_Matrix_Definition" description="&#xa;[Core] " category="Core" APIName="DecisionMatrixDefinition" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/DecisionMatrixDefinition" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-243" y="-49" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="216" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Matrix_Definition_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Matrix_Definition_Id" description="Globally unique string that identifies a record." fieldLabel="DecisionMatrixDefinition ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DeveloperName : Text" tooltip="Name" id="Decision_Matrix_Definition_DeveloperName">
+        <UserObject label="DeveloperName : Text" id="Decision_Matrix_Definition_DeveloperName" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Language : Enum" tooltip="Master Language" id="Decision_Matrix_Definition_Language">
+        <UserObject label="Language : Enum" id="Decision_Matrix_Definition_Language" fieldLabel="Master Language">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MasterLabel : Text" tooltip="Label" id="Decision_Matrix_Definition_MasterLabel">
+        <UserObject label="MasterLabel : Text" id="Decision_Matrix_Definition_MasterLabel" fieldLabel="Label">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="Decision_Matrix_Definition_NamespacePrefix">
+        <UserObject label="NamespacePrefix : Text" id="Decision_Matrix_Definition_NamespacePrefix" fieldLabel="Namespace Prefix">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Matrix_Definition_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Matrix_Definition_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Definition" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Decision Matrix Version" tooltip="20 fields&#xa;[BRE] " id="table_Decision_Matrix_Version">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="862" y="-22" width="200" height="580" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Matrix Version" id="table_Decision_Matrix_Version" description="&#xa;[BRE] " category="BRE" APIName="CalculationMatrixVersion" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/CalculationMatrixVersion" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="862" y="-22" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="580" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Matrix_Version_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Matrix_Version_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Matrix Version ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#db91fa;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: CalculationMatrixId : CalculationMatrix" tooltip="Decision Matrix ID" id="Decision_Matrix_Version_CalculationMatrixId">
+        <UserObject label="FK: CalculationMatrixId : CalculationMatrix" id="Decision_Matrix_Version_CalculationMatrixId" fieldLabel="Decision Matrix ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: DecisionMatrixDefinitionVerId : DecisionMatrixDefinitionVersion" tooltip="Decision Matrix Definition Version ID" id="Decision_Matrix_Version_DecisionMatrixDefinitionVe">
+        <UserObject label="FK: DecisionMatrixDefinitionVerId : DecisionMatrixDefinitionVersion" id="Decision_Matrix_Version_DecisionMatrixDefinitionVe" fieldLabel="Decision Matrix Definition Version ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="Decision_Matrix_Version_Name">
+        <UserObject label="Name : Text" id="Decision_Matrix_Version_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Decision_Matrix_Version_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Decision_Matrix_Version_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Matrix_Version_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Matrix_Version_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDateTime : DateTime" tooltip="End Date Time" id="Decision_Matrix_Version_EndDateTime">
+        <UserObject label="EndDateTime : DateTime" id="Decision_Matrix_Version_EndDateTime" fieldLabel="End Date Time">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GroupKey : Text" tooltip="Group Key" id="Decision_Matrix_Version_GroupKey">
+        <UserObject label="GroupKey : Text" id="Decision_Matrix_Version_GroupKey" fieldLabel="Group Key">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="GroupKeyValue : Text" tooltip="Group Key Value" id="Decision_Matrix_Version_GroupKeyValue">
+        <UserObject label="GroupKeyValue : Text" id="Decision_Matrix_Version_GroupKeyValue" fieldLabel="Group Key Value">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsEnabled : Boolean" tooltip="Active" id="Decision_Matrix_Version_IsEnabled">
+        <UserObject label="IsEnabled : Boolean" id="Decision_Matrix_Version_IsEnabled" fieldLabel="Active">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MatrixType : Text" tooltip="Matrix Type" id="Decision_Matrix_Version_MatrixType">
+        <UserObject label="MatrixType : Text" id="Decision_Matrix_Version_MatrixType" fieldLabel="Matrix Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Rank : Integer" tooltip="Rank" id="Decision_Matrix_Version_Rank">
+        <UserObject label="Rank : Integer" id="Decision_Matrix_Version_Rank" fieldLabel="Rank">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDateTime : DateTime" tooltip="Start Date Time" id="Decision_Matrix_Version_StartDateTime">
+        <UserObject label="StartDateTime : DateTime" id="Decision_Matrix_Version_StartDateTime" fieldLabel="Start Date Time">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SubGroupKey : Text" tooltip="Sub Group Key" id="Decision_Matrix_Version_SubGroupKey">
+        <UserObject label="SubGroupKey : Text" id="Decision_Matrix_Version_SubGroupKey" fieldLabel="Sub Group Key">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SubGroupKeyValue : Text" tooltip="Sub Group Key Value" id="Decision_Matrix_Version_SubGroupKeyValue">
+        <UserObject label="SubGroupKeyValue : Text" id="Decision_Matrix_Version_SubGroupKeyValue" fieldLabel="Sub Group Key Value">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="VersionNumber : Integer" tooltip="Version Number" id="Decision_Matrix_Version_VersionNumber">
+        <UserObject label="VersionNumber : Integer" id="Decision_Matrix_Version_VersionNumber" fieldLabel="Version Number">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LoadProcessStatus : Enum" tooltip="Load Process Status" id="Decision_Matrix_Version_LoadProcessStatus">
+        <UserObject label="LoadProcessStatus : Enum" id="Decision_Matrix_Version_LoadProcessStatus" fieldLabel="Load Process Status">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Namespace : Text" tooltip="Namespace" id="Decision_Matrix_Version_Namespace">
+        <UserObject label="Namespace : Text" id="Decision_Matrix_Version_Namespace" fieldLabel="Namespace">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ApiName : Text" tooltip="API Name" id="Decision_Matrix_Version_ApiName">
+        <UserObject label="ApiName : Text" id="Decision_Matrix_Version_ApiName" fieldLabel="API Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DscnModelNoteExportStatus : Enum" tooltip="Decision Model and Notation Export Status" id="Decision_Matrix_Version_DscnModelNoteExportStatus">
+        <UserObject label="DscnModelNoteExportStatus : Enum" id="Decision_Matrix_Version_DscnModelNoteExportStatus" fieldLabel="Decision Model and Notation Export Status">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Version" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Decision Matrix Row" tooltip="11 fields&#xa;[BRE] Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row." id="table_Decision_Matrix_Row">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="1476" y="-16" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Matrix Row" id="table_Decision_Matrix_Row" description="&#xa;[BRE] Defines a row in a Decision Matrix. The label for this object is Decision Matrix Row." category="BRE" APIName="CalculationMatrixRow" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/CalculationMatrixRow" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="1476" y="-16" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Matrix_Row_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Matrix_Row_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Matrix Row ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#db91fa;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: CalculationMatrixVersionId : CalculationMatrixVersion" tooltip="Decision Matrix Version ID" id="Decision_Matrix_Row_CalculationMatrixVersionId">
+        <UserObject label="FK: CalculationMatrixVersionId : CalculationMatrixVersion" id="Decision_Matrix_Row_CalculationMatrixVersionId" fieldLabel="Decision Matrix Version ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="The row name." id="Decision_Matrix_Row_Name">
+        <UserObject label="Name : Text" id="Decision_Matrix_Row_Name" description="The row name." fieldLabel="HashKey">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Decision_Matrix_Row_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Decision_Matrix_Row_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Matrix_Row_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Matrix_Row_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsVersionEnabled : Boolean" tooltip="Specifies whether the associated matrix version is active. Derived from the associated Decision Matrix Version (CalculationMatrixVersion object)." id="Decision_Matrix_Row_IsVersionEnabled">
+        <UserObject label="IsVersionEnabled : Boolean" id="Decision_Matrix_Row_IsVersionEnabled" description="Specifies whether the associated matrix version is active. Derived from the associated Decision Matrix Version (CalculationMatrixVersion object)." fieldLabel="Version Enabled">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDateTime : DateTime" tooltip="The first date on which this row version is active. Applicable if IsVersionEnabled is true." id="Decision_Matrix_Row_StartDateTime">
+        <UserObject label="StartDateTime : DateTime" id="Decision_Matrix_Row_StartDateTime" description="The first date on which this row version is active. Applicable if IsVersionEnabled is true." fieldLabel="Start Date Time">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDateTime : DateTime" tooltip="The last date on which this row version is active. Applicable if IsVersionEnabled is true." id="Decision_Matrix_Row_EndDateTime">
+        <UserObject label="EndDateTime : DateTime" id="Decision_Matrix_Row_EndDateTime" description="The last date on which this row version is active. Applicable if IsVersionEnabled is true." fieldLabel="End Date Time">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="InputData : Text" tooltip="The input columns and associated values for this row of the matrix." id="Decision_Matrix_Row_InputData">
+        <UserObject label="InputData : Text" id="Decision_Matrix_Row_InputData" description="The input columns and associated values for this row of the matrix." fieldLabel="Input Data">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="OutputData : Text" tooltip="The output columns and associated values for this row of the matrix." id="Decision_Matrix_Row_OutputData">
+        <UserObject label="OutputData : Text" id="Decision_Matrix_Row_OutputData" description="The output columns and associated values for this row of the matrix." fieldLabel="Output Data">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Namespace : Text" tooltip="Namespace" id="Decision_Matrix_Row_Namespace">
+        <UserObject label="Namespace : Text" id="Decision_Matrix_Row_Namespace" fieldLabel="Namespace">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Matrix_Row" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DecisionTableParameter" tooltip="13 fields&#xa;[Core] " id="table_DecisionTableParameter">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="329" y="96" width="200" height="398" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="DecisionTableParameter" id="table_DecisionTableParameter" description="&#xa;[Core] " category="Core" APIName="DecisionTableParameter" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/DecisionTableParameter" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="329" y="96" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="398" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="DecisionTableParameter_Id">
+        <UserObject label="PK: Id : Text" id="DecisionTableParameter_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Table Parameter ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: DecisionTableId : DecisionTable" tooltip="Decision Table ID" id="DecisionTableParameter_DecisionTableId">
+        <UserObject label="FK: DecisionTableId : DecisionTable" id="DecisionTableParameter_DecisionTableId" fieldLabel="Decision Table ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="DecisionTableParameter_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="DecisionTableParameter_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FieldName : Text" tooltip="Attribute" id="DecisionTableParameter_FieldName">
+        <UserObject label="FieldName : Text" id="DecisionTableParameter_FieldName" fieldLabel="Attribute">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Operator : Enum" tooltip="Operator" id="DecisionTableParameter_Operator">
+        <UserObject label="Operator : Enum" id="DecisionTableParameter_Operator" fieldLabel="Operator">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Usage : Enum" tooltip="Type" id="DecisionTableParameter_Usage">
+        <UserObject label="Usage : Enum" id="DecisionTableParameter_Usage" fieldLabel="Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Sequence : Integer" tooltip="Sequence" id="DecisionTableParameter_Sequence">
+        <UserObject label="Sequence : Integer" id="DecisionTableParameter_Sequence" fieldLabel="Sequence">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsGroupByField : Boolean" tooltip="Group By Field" id="DecisionTableParameter_IsGroupByField">
+        <UserObject label="IsGroupByField : Boolean" id="DecisionTableParameter_IsGroupByField" fieldLabel="Group By Field">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SortType : Enum" tooltip="Sort Type" id="DecisionTableParameter_SortType">
+        <UserObject label="SortType : Enum" id="DecisionTableParameter_SortType" fieldLabel="Sort Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DataType : Enum" tooltip="Data Type" id="DecisionTableParameter_DataType">
+        <UserObject label="DataType : Enum" id="DecisionTableParameter_DataType" fieldLabel="Data Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FieldPath : Text" tooltip="Field Path" id="DecisionTableParameter_FieldPath">
+        <UserObject label="FieldPath : Text" id="DecisionTableParameter_FieldPath" fieldLabel="Field Path">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DomainObject : Text" tooltip="Domain Object" id="DecisionTableParameter_DomainObject">
+        <UserObject label="DomainObject : Text" id="DecisionTableParameter_DomainObject" fieldLabel="Domain Object">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsRequired : Boolean" tooltip="Is Required" id="DecisionTableParameter_IsRequired">
+        <UserObject label="IsRequired : Boolean" id="DecisionTableParameter_IsRequired" fieldLabel="Is Required">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableParameter" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Decision Table" tooltip="28 fields (showing 20)&#xa;[Core] " id="table_Decision_Table">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-239" y="151" width="200" height="606" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Decision Table" id="table_Decision_Table" description="&#xa;[Core] " category="Core" APIName="DecisionTable" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/DecisionTable" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-239" y="151" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="606" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Decision_Table_Id">
+        <UserObject label="PK: Id : Text" id="Decision_Table_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Table ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DeveloperName : Text" tooltip="API Name" id="Decision_Table_DeveloperName">
+        <UserObject label="DeveloperName : Text" id="Decision_Table_DeveloperName" fieldLabel="API Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Language : Enum" tooltip="Master Language" id="Decision_Table_Language">
+        <UserObject label="Language : Enum" id="Decision_Table_Language" fieldLabel="Master Language">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MasterLabel : Text" tooltip="Label" id="Decision_Table_MasterLabel">
+        <UserObject label="MasterLabel : Text" id="Decision_Table_MasterLabel" fieldLabel="Label">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="Decision_Table_NamespacePrefix">
+        <UserObject label="NamespacePrefix : Text" id="Decision_Table_NamespacePrefix" fieldLabel="Namespace Prefix">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Decision_Table_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Decision_Table_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SetupName : Text" tooltip="Name" id="Decision_Table_SetupName">
+        <UserObject label="SetupName : Text" id="Decision_Table_SetupName" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="Decision_Table_Description">
+        <UserObject label="Description : Text" id="Decision_Table_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastSyncDate : DateTime" tooltip="Last Refreshed Date" id="Decision_Table_LastSyncDate">
+        <UserObject label="LastSyncDate : DateTime" id="Decision_Table_LastSyncDate" fieldLabel="Last Refreshed Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SourceObject : Text" tooltip="Source Object" id="Decision_Table_SourceObject">
+        <UserObject label="SourceObject : Text" id="Decision_Table_SourceObject" fieldLabel="Source Object">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="Decision_Table_Status">
+        <UserObject label="Status : Enum" id="Decision_Table_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Type : Enum" tooltip="Type" id="Decision_Table_Type">
+        <UserObject label="Type : Enum" id="Decision_Table_Type" fieldLabel="Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ConditionCriteria : Text" tooltip="Condition Criteria" id="Decision_Table_ConditionCriteria">
+        <UserObject label="ConditionCriteria : Text" id="Decision_Table_ConditionCriteria" fieldLabel="Condition Criteria">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ConditionType : Enum" tooltip="Condition Type" id="Decision_Table_ConditionType">
+        <UserObject label="ConditionType : Enum" id="Decision_Table_ConditionType" fieldLabel="Condition Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DataSourceType : Enum" tooltip="Data Source Type" id="Decision_Table_DataSourceType">
+        <UserObject label="DataSourceType : Enum" id="Decision_Table_DataSourceType" fieldLabel="Data Source Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FilterResultBy : Enum" tooltip="Filter Result By" id="Decision_Table_FilterResultBy">
+        <UserObject label="FilterResultBy : Enum" id="Decision_Table_FilterResultBy" fieldLabel="Filter Result By">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CollectOperator : Enum" tooltip="Collect Operator" id="Decision_Table_CollectOperator">
+        <UserObject label="CollectOperator : Enum" id="Decision_Table_CollectOperator" fieldLabel="Collect Operator">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SourceConditionLogic : Text" tooltip="Source Condition Logic" id="Decision_Table_SourceConditionLogic">
+        <UserObject label="SourceConditionLogic : Text" id="Decision_Table_SourceConditionLogic" fieldLabel="Source Condition Logic">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsageType : Enum" tooltip="Usage Type" id="Decision_Table_UsageType">
+        <UserObject label="UsageType : Enum" id="Decision_Table_UsageType" fieldLabel="Usage Type">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="RefreshStatus : Enum" tooltip="Refresh Status" id="Decision_Table_RefreshStatus">
+        <UserObject label="RefreshStatus : Enum" id="Decision_Table_RefreshStatus" fieldLabel="Refresh Status">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -592,285 +592,285 @@
         <mxCell id="Decision_Table_more" value="... 8 more fields" style="text=1;strokeColor=#0056b8;fillColor=#66d6ff;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=11;fontStyle=2;bottomBorder=0;shadow=0;" vertex="1" parent="table_Decision_Table" movable="0">
             <mxGeometry x="0" y="580" width="200" height="26" as="geometry"/>
         </mxCell>
-        <UserObject label="DecisionTableDatasetLink" tooltip="11 fields&#xa;[Core] " id="table_DecisionTableDatasetLink">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="330" y="262" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="DecisionTableDatasetLink" id="table_DecisionTableDatasetLink" description="&#xa;[Core] " category="Core" APIName="DecisionTableDatasetLink" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/DecisionTableDatasetLink" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="330" y="262" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="DecisionTableDatasetLink_Id">
+        <UserObject label="PK: Id : Text" id="DecisionTableDatasetLink_Id" description="Globally unique string that identifies a record." fieldLabel="Decision Table Payload ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: DecisionTableId : DecisionTable" tooltip="Decision Table ID" id="DecisionTableDatasetLink_DecisionTableId">
+        <UserObject label="FK: DecisionTableId : DecisionTable" id="DecisionTableDatasetLink_DecisionTableId" fieldLabel="Decision Table ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DeveloperName : Text" tooltip="Name" id="DecisionTableDatasetLink_DeveloperName">
+        <UserObject label="DeveloperName : Text" id="DecisionTableDatasetLink_DeveloperName" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Language : Enum" tooltip="Master Language" id="DecisionTableDatasetLink_Language">
+        <UserObject label="Language : Enum" id="DecisionTableDatasetLink_Language" fieldLabel="Master Language">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MasterLabel : Text" tooltip="Label" id="DecisionTableDatasetLink_MasterLabel">
+        <UserObject label="MasterLabel : Text" id="DecisionTableDatasetLink_MasterLabel" fieldLabel="Label">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="DecisionTableDatasetLink_NamespacePrefix">
+        <UserObject label="NamespacePrefix : Text" id="DecisionTableDatasetLink_NamespacePrefix" fieldLabel="Namespace Prefix">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="DecisionTableDatasetLink_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="DecisionTableDatasetLink_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SetupName : Text" tooltip="Name" id="DecisionTableDatasetLink_SetupName">
+        <UserObject label="SetupName : Text" id="DecisionTableDatasetLink_SetupName" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="DecisionTableDatasetLink_Description">
+        <UserObject label="Description : Text" id="DecisionTableDatasetLink_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsDefault : Boolean" tooltip="Is Default" id="DecisionTableDatasetLink_IsDefault">
+        <UserObject label="IsDefault : Boolean" id="DecisionTableDatasetLink_IsDefault" fieldLabel="Is Default">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="SourceObject : Text" tooltip="Source Object" id="DecisionTableDatasetLink_SourceObject">
+        <UserObject label="SourceObject : Text" id="DecisionTableDatasetLink_SourceObject" fieldLabel="Source Object">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_DecisionTableDatasetLink" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ExpressionSet" tooltip="11 fields&#xa;[BRE] " id="table_ExpressionSet">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="-237" y="359" width="200" height="346" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="ExpressionSet" id="table_ExpressionSet" description="&#xa;[BRE] " category="BRE" APIName="ExpressionSet" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ExpressionSet" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#8E44AD;strokeColor=#5b117a;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/standard/decision.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="-237" y="359" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="346" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="ExpressionSet_Id">
+        <UserObject label="PK: Id : Text" id="ExpressionSet_Id" description="Globally unique string that identifies a record." fieldLabel="Expression Set ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#db91fa;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ExpressionSetDefinitionId : ExpressionSetDefinition" tooltip="ExpressionSetDefinition ID" id="ExpressionSet_ExpressionSetDefinitionId">
+        <UserObject label="FK: ExpressionSetDefinitionId : ExpressionSetDefinition" id="ExpressionSet_ExpressionSetDefinitionId" fieldLabel="ExpressionSetDefinition ID">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Name" id="ExpressionSet_Name">
+        <UserObject label="Name : Text" id="ExpressionSet_Name" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="ExpressionSet_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="ExpressionSet_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="ExpressionSet_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="ExpressionSet_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="ExpressionSet_Description">
+        <UserObject label="Description : Text" id="ExpressionSet_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ApiName : Text" tooltip="API Name" id="ExpressionSet_ApiName">
+        <UserObject label="ApiName : Text" id="ExpressionSet_ApiName" fieldLabel="API Name">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="UsageType : Enum" tooltip="Usage Type" id="ExpressionSet_UsageType">
+        <UserObject label="UsageType : Enum" id="ExpressionSet_UsageType" fieldLabel="Usage Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="InterfaceSourceType : Enum" tooltip="Interface Source Type" id="ExpressionSet_InterfaceSourceType">
+        <UserObject label="InterfaceSourceType : Enum" id="ExpressionSet_InterfaceSourceType" fieldLabel="Interface Source Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ExecutionScale : Enum" tooltip="Execution Scale" id="ExpressionSet_ExecutionScale">
+        <UserObject label="ExecutionScale : Enum" id="ExpressionSet_ExecutionScale" fieldLabel="Execution Scale">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ResourceInitializationType : Enum" tooltip="Resource Initialization Type" id="ExpressionSet_ResourceInitializationType">
+        <UserObject label="ResourceInitializationType : Enum" id="ExpressionSet_ResourceInitializationType" fieldLabel="Resource Initialization Type">
           <mxCell style="text=1;strokeColor=#742a93;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_ExpressionSet" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Expression Set Version" tooltip="20 fields&#xa;[Core] " id="table_Expression_Set_Version">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="329" y="456" width="200" height="580" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Expression Set Version" id="table_Expression_Set_Version" description="&#xa;[Core] " category="Core" APIName="ExpressionSetVersion" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ExpressionSetVersion" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="329" y="456" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="580" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Expression_Set_Version_Id">
+        <UserObject label="PK: Id : Text" id="Expression_Set_Version_Id" description="Globally unique string that identifies a record." fieldLabel="Expression Set Version ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ExpressionSetId : ExpressionSet" tooltip="Expression Set ID" id="Expression_Set_Version_ExpressionSetId">
+        <UserObject label="FK: ExpressionSetId : ExpressionSet" id="Expression_Set_Version_ExpressionSetId" fieldLabel="Expression Set ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ExpressionSetDefinitionVerId : ExpressionSetDefinitionVersion" tooltip="ExpressionSetDefinitionVersion ID" id="Expression_Set_Version_ExpressionSetDefinitionVerI">
+        <UserObject label="FK: ExpressionSetDefinitionVerId : ExpressionSetDefinitionVersion" id="Expression_Set_Version_ExpressionSetDefinitionVerI" fieldLabel="ExpressionSetDefinitionVersion ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Name : Text" tooltip="Version Name" id="Expression_Set_Version_Name">
+        <UserObject label="Name : Text" id="Expression_Set_Version_Name" fieldLabel="Version Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="CurrencyIsoCode : Enum" tooltip="Currency ISO Code" id="Expression_Set_Version_CurrencyIsoCode">
+        <UserObject label="CurrencyIsoCode : Enum" id="Expression_Set_Version_CurrencyIsoCode" fieldLabel="Currency ISO Code">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Expression_Set_Version_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Expression_Set_Version_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Description : Text" tooltip="Description" id="Expression_Set_Version_Description">
+        <UserObject label="Description : Text" id="Expression_Set_Version_Description" fieldLabel="Description">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="StartDateTime : DateTime" tooltip="Start Date Time" id="Expression_Set_Version_StartDateTime">
+        <UserObject label="StartDateTime : DateTime" id="Expression_Set_Version_StartDateTime" fieldLabel="Start Date Time">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="EndDateTime : DateTime" tooltip="End Date Time" id="Expression_Set_Version_EndDateTime">
+        <UserObject label="EndDateTime : DateTime" id="Expression_Set_Version_EndDateTime" fieldLabel="End Date Time">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="VersionNumber : Integer" tooltip="Version Number" id="Expression_Set_Version_VersionNumber">
+        <UserObject label="VersionNumber : Integer" id="Expression_Set_Version_VersionNumber" fieldLabel="Version Number">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="294" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Rank : Integer" tooltip="Rank" id="Expression_Set_Version_Rank">
+        <UserObject label="Rank : Integer" id="Expression_Set_Version_Rank" fieldLabel="Rank">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="320" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsActive : Boolean" tooltip="Active" id="Expression_Set_Version_IsActive">
+        <UserObject label="IsActive : Boolean" id="Expression_Set_Version_IsActive" fieldLabel="Active">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="346" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="IsLoopingEnabled : Boolean" tooltip="Looping Enabled" id="Expression_Set_Version_IsLoopingEnabled">
+        <UserObject label="IsLoopingEnabled : Boolean" id="Expression_Set_Version_IsLoopingEnabled" fieldLabel="Looping Enabled">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="372" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LoopStartVariableName : Text" tooltip="Loop Start Variable Name" id="Expression_Set_Version_LoopStartVariableName">
+        <UserObject label="LoopStartVariableName : Text" id="Expression_Set_Version_LoopStartVariableName" fieldLabel="Loop Start Variable Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="398" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LoopIncrementVariableName : Text" tooltip="Loop Increment Variable Name" id="Expression_Set_Version_LoopIncrementVariableName">
+        <UserObject label="LoopIncrementVariableName : Text" id="Expression_Set_Version_LoopIncrementVariableName" fieldLabel="Loop Increment Variable Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="424" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LoopEndVariableName : Text" tooltip="Loop End Variable Name" id="Expression_Set_Version_LoopEndVariableName">
+        <UserObject label="LoopEndVariableName : Text" id="Expression_Set_Version_LoopEndVariableName" fieldLabel="Loop End Variable Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="450" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LatestSimulationResult : Text" tooltip="Latest Simulation Result" id="Expression_Set_Version_LatestSimulationResult">
+        <UserObject label="LatestSimulationResult : Text" id="Expression_Set_Version_LatestSimulationResult" fieldLabel="Latest Simulation Result">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="476" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ApiName : Text" tooltip="API Name" id="Expression_Set_Version_ApiName">
+        <UserObject label="ApiName : Text" id="Expression_Set_Version_ApiName" fieldLabel="API Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="502" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="ShouldShowExplExternally : Boolean" tooltip="Show Explanation Externally" id="Expression_Set_Version_ShouldShowExplExternally">
+        <UserObject label="ShouldShowExplExternally : Boolean" id="Expression_Set_Version_ShouldShowExplExternally" fieldLabel="Show Explanation Externally">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="528" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DecimalScale : Integer" tooltip="Decimal Scale" id="Expression_Set_Version_DecimalScale">
+        <UserObject label="DecimalScale : Integer" id="Expression_Set_Version_DecimalScale" fieldLabel="Decimal Scale">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Version" movable="0">
             <mxGeometry x="0" y="554" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Expression Set Definition Version" tooltip="9 fields&#xa;[Core] " id="table_Expression_Set_Definition_Version">
-          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="0">
-            <mxGeometry x="83" y="607" width="200" height="294" as="geometry">
-              <mxRectangle width="200" height="60" as="alternateBounds"/>
+        <UserObject label="Expression Set Definition Version" id="table_Expression_Set_Definition_Version" description="&#xa;[Core] " category="Core" APIName="ExpressionSetDefinitionVersion" link="https://sf-explorer.github.io/sf-doc-to-json/#/cloud/all/object/ExpressionSetDefinitionVersion" linkTarget="_blank">
+          <mxCell style="swimlane;fontStyle=1;fontSize=14;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#0070D2;strokeColor=#003d9f;strokeWidth=2;rounded=0;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;image=https://unpkg.com/@salesforce-ux/design-system@2.24.5/assets/icons/utility/standard_objects.svg;" vertex="1" parent="1" collapsed="1">
+            <mxGeometry x="83" y="607" width="200" height="60" as="geometry">
+              <mxRectangle width="200" height="294" as="alternateBounds"/>
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="PK: Id : Text" tooltip="Globally unique string that identifies a record." id="Expression_Set_Definition_Version_Id">
+        <UserObject label="PK: Id : Text" id="Expression_Set_Definition_Version_Id" description="Globally unique string that identifies a record." fieldLabel="ExpressionSetDefinitionVersion ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#4dbdff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=1;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="60" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="FK: ExpressionSetDefinitionId : ExpressionSetDefinition" tooltip="ExpressionSetDefinition ID" id="Expression_Set_Definition_Version_ExpressionSetDef">
+        <UserObject label="FK: ExpressionSetDefinitionId : ExpressionSetDefinition" id="Expression_Set_Definition_Version_ExpressionSetDef" fieldLabel="ExpressionSetDefinition ID">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="86" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="DeveloperName : Text" tooltip="Name" id="Expression_Set_Definition_Version_DeveloperName">
+        <UserObject label="DeveloperName : Text" id="Expression_Set_Definition_Version_DeveloperName" fieldLabel="Name">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="112" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Language : Enum" tooltip="Master Language" id="Expression_Set_Definition_Version_Language">
+        <UserObject label="Language : Enum" id="Expression_Set_Definition_Version_Language" fieldLabel="Master Language">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="138" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="MasterLabel : Text" tooltip="Label" id="Expression_Set_Definition_Version_MasterLabel">
+        <UserObject label="MasterLabel : Text" id="Expression_Set_Definition_Version_MasterLabel" fieldLabel="Label">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="164" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="NamespacePrefix : Text" tooltip="Namespace Prefix" id="Expression_Set_Definition_Version_NamespacePrefix">
+        <UserObject label="NamespacePrefix : Text" id="Expression_Set_Definition_Version_NamespacePrefix" fieldLabel="Namespace Prefix">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="190" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="LastModifiedDate : DateTime" tooltip="Date and time when a user last modified this record." id="Expression_Set_Definition_Version_LastModifiedDate">
+        <UserObject label="LastModifiedDate : DateTime" id="Expression_Set_Definition_Version_LastModifiedDate" description="Date and time when a user last modified this record." fieldLabel="Last Modified Date">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="216" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="VersionNumber : Integer" tooltip="Version Number" id="Expression_Set_Definition_Version_VersionNumber">
+        <UserObject label="VersionNumber : Integer" id="Expression_Set_Definition_Version_VersionNumber" fieldLabel="Version Number">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="242" width="200" height="26" as="geometry"/>
           </mxCell>
         </UserObject>
-        <UserObject label="Status : Enum" tooltip="Status" id="Expression_Set_Definition_Version_Status">
+        <UserObject label="Status : Enum" id="Expression_Set_Definition_Version_Status" fieldLabel="Status">
           <mxCell style="text=1;strokeColor=#0056b8;fillColor=#ffffff;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=nowrap;html=1;fontSize=12;fontStyle=0;strokeWidth=1;bottomBorder=1;shadow=0;" vertex="1" parent="table_Expression_Set_Definition_Version" movable="0">
             <mxGeometry x="0" y="268" width="200" height="26" as="geometry"/>
           </mxCell>
@@ -878,88 +878,68 @@
         <mxCell id="markdown_Business_Rule_Engine" value="Business Rule Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfb6ff;strokeColor=#9c83cc;fontSize=14;text=1;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
             <mxGeometry x="293" y="-362" width="390" height="72" as="geometry"/>
         </mxCell>
-        <UserObject label="" tooltip="Many-to-One: Decision Table Parameter → Decision Table&#xa;From: Decision Table Parameter.DecisionTableId&#xa;To: Decision Table.Id" id="edge_DecisionTable_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="DecisionTableParameter_DecisionTableId" target="Decision_Table_Id">
+        <mxCell id="edge_DecisionTable_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="DecisionTableParameter_DecisionTableId" target="Decision_Table_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Table Dataset Link → Decision Table&#xa;From: Decision Table Dataset Link.DecisionTableId&#xa;To: Decision Table.Id" id="edge_DecisionTable_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="DecisionTableDatasetLink_DecisionTableId" target="Decision_Table_Id">
+        </mxCell>
+        <mxCell id="edge_DecisionTable_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="DecisionTableDatasetLink_DecisionTableId" target="Decision_Table_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Expression Set Version → Expression Set&#xa;From: Expression Set Version.ExpressionSetId&#xa;To: Expression Set.Id" id="edge_ExpressionSet_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Expression_Set_Version_ExpressionSetId" target="ExpressionSet_Id">
+        </mxCell>
+        <mxCell id="edge_ExpressionSet_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Expression_Set_Version_ExpressionSetId" target="ExpressionSet_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Expression Set Version → Expression Set Definition Version&#xa;From: Expression Set Version.ExpressionSetDefinitionVerId&#xa;To: Expression Set Definition Version.Id" id="edge_ExpressionSetDefinitionVersion_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Expression_Set_Version_ExpressionSetDefinitionVerI" target="Expression_Set_Definition_Version_Id">
+        </mxCell>
+        <mxCell id="edge_ExpressionSetDefinitionVersion_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Expression_Set_Version_ExpressionSetDefinitionVerI" target="Expression_Set_Definition_Version_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix → Decision Matrix Definition&#xa;From: Decision Matrix.DecisionMatrixDefinitionId&#xa;To: Decision Matrix Definition.Id" id="edge_DecisionMatrixDefinition_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CalculationMatrix_DecisionMatrixDefinitionId" target="Decision_Matrix_Definition_Id">
+        </mxCell>
+        <mxCell id="edge_DecisionMatrixDefinition_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="CalculationMatrix_DecisionMatrixDefinitionId" target="Decision_Matrix_Definition_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix Column → Decision Matrix&#xa;From: Decision Matrix Column.CalculationMatrixId&#xa;To: Decision Matrix.Id" id="edge_CalculationMatrix_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_CalculationMatrixId" target="CalculationMatrix_Id">
+        </mxCell>
+        <mxCell id="edge_CalculationMatrix_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_CalculationMatrixId" target="CalculationMatrix_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix Column Range → Decision Matrix Column&#xa;From: Decision Matrix Column Range.CalculationMatrixColumnId&#xa;To: Decision Matrix Column.Id" id="edge_CalculationMatrixColumn_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_Range_CalculationMatrixColu" target="Decision_Matrix_Column_Id">
+        </mxCell>
+        <mxCell id="edge_CalculationMatrixColumn_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_Range_CalculationMatrixColu" target="Decision_Matrix_Column_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix Column Range → Decision Matrix Version&#xa;From: Decision Matrix Column Range.CalculationMatrixVersionId&#xa;To: Decision Matrix Version.Id" id="edge_CalculationMatrixVersion_to_Id">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_Range_CalculationMatrixVers" target="Decision_Matrix_Version_Id">
+        </mxCell>
+        <mxCell id="edge_CalculationMatrixVersion_to_Id" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=1;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Column_Range_CalculationMatrixVers" target="Decision_Matrix_Version_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix Version → Decision Matrix&#xa;From: Decision Matrix Version.CalculationMatrixId&#xa;To: Decision Matrix.Id" id="edge_CalculationMatrix_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Version_CalculationMatrixId" target="CalculationMatrix_Id">
+        </mxCell>
+        <mxCell id="edge_CalculationMatrix_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Version_CalculationMatrixId" target="CalculationMatrix_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" tooltip="Many-to-One: Decision Matrix Row → Decision Matrix Version&#xa;From: Decision Matrix Row.CalculationMatrixVersionId&#xa;To: Decision Matrix Version.Id" id="edge_CalculationMatrixVersion_to_Id_1">
-          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Row_CalculationMatrixVersionId" target="Decision_Matrix_Version_Id">
+        </mxCell>
+        <mxCell id="edge_CalculationMatrixVersion_to_Id_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;fontSize=12;html=1;endArrow=ERone;startArrow=ERmany;endFill=0;startFill=0;strokeWidth=3;strokeColor=#6c757d;curved=0;shadow=0;" edge="1" parent="1" source="Decision_Matrix_Row_CalculationMatrixVersionId" target="Decision_Matrix_Version_Id">
             <mxGeometry as="geometry" relative="1">
               <mxPoint as="sourcePoint"/>
               <mxPoint as="targetPoint"/>
             </mxGeometry>
-          </mxCell>
-        </UserObject>
+        </mxCell>
         <mxCell id="repo_link" value="github.com/sf-explorer/app" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1" link="https://github.com/sf-explorer/app">
-            <mxGeometry x="-243" y="1066" width="600" height="20" as="geometry"/>
+            <mxGeometry x="-243" y="697" width="600" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>

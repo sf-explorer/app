@@ -36,6 +36,7 @@ npm install @sf-explorer/salesforce-data-models
 
 ### Field Service
 - **FSL Core Data Model** - Work orders, service appointments, and resource management
+- **Scheduler** - Appointment scheduling, work types, and resource management
 
 ### Industry Clouds
 - **Energy & Utilities Cloud** - Meters, usage tracking, and billing cycles

@@ -105,12 +105,19 @@ export interface DrawioCell {
     width: number;
     height: number;
   };
-  tooltip?: string;
+  description?: string; // Description (formerly tooltip)
   link?: string; // Clickable link URL (draw.io native link support)
+  linkTarget?: string; // Link target: '_blank' to open in new window, '_self' for same window
   // Metadata attributes (for root cell)
   author?: string;
-  description?: string;
   title?: string;
+  // Table properties
+  KeyPrefix?: string;
+  InternalSharingModel?: string;
+  category?: string;
+  APIName?: string;
+  // Field properties
+  label?: string;
   [key: string]: string | number | { width: number; height: number } | undefined; // Allow custom metadata attributes
 }
 

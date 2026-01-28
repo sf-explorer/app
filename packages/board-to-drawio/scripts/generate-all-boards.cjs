@@ -39,7 +39,7 @@ for (const boardFile of boardFiles) {
     // Generate draw.io XML with metadata
     const xml = transformBoardToDrawIO(board, {
       title: boardName,
-      collapseTables: false,
+      collapseTables: true,
       metadata: {
         author: 'SF Explorer',
         description: `Salesforce data model diagram: ${boardName}`,

@@ -119,6 +119,17 @@ export const erdModels: ERDModel[] = [
     featured: false,
     tags: ['fsl', 'work-orders', 'scheduling', 'mobile', 'resources']
   },
+  {
+    value: "scheduler",
+    label: "Scheduler",
+    content: createLazyLoader(() => import('../data/scheduler.json')),
+    icon: 'standard:event',
+    description: "Salesforce Scheduler data model for appointment scheduling, work types, and resource management",
+    category: 'field-service',
+    complexity: 'intermediate',
+    featured: false,
+    tags: ['scheduler', 'appointments', 'scheduling', 'work-types', 'resources']
+  },
 
   // Industry Clouds
   {
