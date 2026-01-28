@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "test": "npx tsx test.ts",
+    "test:all": "npx tsx test-all-boards.ts"
   },
   "keywords": [
     "salesforce",

@@ -106,6 +106,12 @@ export interface DrawioCell {
     height: number;
   };
   tooltip?: string;
+  link?: string; // Clickable link URL (draw.io native link support)
+  // Metadata attributes (for root cell)
+  author?: string;
+  description?: string;
+  title?: string;
+  [key: string]: string | number | { width: number; height: number } | undefined; // Allow custom metadata attributes
 }
 
 export interface ConversionOptions {
@@ -131,6 +137,39 @@ export interface ConversionOptions {
     showVisibilityMarkers?: boolean; // Default: true (+ for public, - for private)
     groupByVisibility?: boolean; // Default: false (group PK, normal fields, FK)
     relationshipStyle?: 'association' | 'smart'; // Default: 'smart' (infer from relationship type)
+  };
+  
+  // Diagram metadata and properties
+  metadata?: {
+    author?: string; // Author name
+    description?: string; // Diagram description
+    version?: string; // Version number
+    created?: Date | string; // Creation date (defaults to current date)
+    [key: string]: string | Date | undefined; // Additional custom properties
+  };
+  
+  // Page settings
+  pageSettings?: {
+    size?: 'A4' | 'Letter' | 'Legal' | 'Tabloid' | 'Custom'; // Page size (default: 'A4')
+    width?: number; // Custom width in pixels (only used when size='Custom')
+    height?: number; // Custom height in pixels (only used when size='Custom')
+    orientation?: 'portrait' | 'landscape'; // Page orientation (default: 'portrait')
+  };
+  
+  // Viewport and zoom settings
+  viewport?: {
+    autoFit?: boolean; // Automatically fit content to viewport (default: false)
+    initialZoom?: number; // Initial zoom level (0.1 to 4.0, default: 1.0)
+    centerContent?: boolean; // Center content in viewport (default: true when autoFit is true)
+  };
+  
+  // Title display options
+  titleDisplay?: {
+    show?: boolean; // Show title as visible text element on diagram (default: false)
+    position?: 'top-left' | 'top-center' | 'top-right'; // Title position (default: 'top-center')
+    fontSize?: number; // Title font size in pixels (default: 24)
+    fontStyle?: 'normal' | 'bold' | 'italic'; // Title font style (default: 'bold')
+    color?: string; // Title text color (default: '#000000')
   };
 }
 

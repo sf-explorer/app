@@ -157,6 +157,10 @@ const drawioXml = transformBoardToDrawIO(board, {
 | `maxFields` | number | `20` | Maximum fields to show per table. Shows "... N more fields" for truncated tables |
 | `collapseTables` | boolean | `true` | *(ERD only)* Collapse tables by default (click **+** to expand) |
 | `umlOptions` | object | `{}` | *(UML only)* UML-specific configuration (see below) |
+| `metadata` | object | `{}` | Diagram metadata (author, description, version, custom properties) |
+| `pageSettings` | object | `{}` | Page size and orientation (A4, Letter, Custom, portrait/landscape) |
+| `viewport` | object | `{}` | Viewport and zoom settings (autoFit, initialZoom, centerContent) |
+| `titleDisplay` | object | `{}` | Title display options (show as visible element, position, styling) |
 
 ### UML Options
 
@@ -167,6 +171,71 @@ When `diagramStyle: 'uml'`, you can configure:
 | `showVisibilityMarkers` | boolean | `true` | Show visibility: `+` (public), `-` (private) |
 | `groupByVisibility` | boolean | `false` | Group fields: PK first, then regular, then FK |
 | `relationshipStyle` | `'association'` \| `'smart'` | `'smart'` | Relationship arrows: simple (→) or smart (◆ for FK) |
+
+### Enhanced Features 🆕
+
+#### Metadata
+
+Add metadata to your diagrams:
+
+```typescript
+const xml = transformBoardToDrawIO(board, {
+  metadata: {
+    author: 'John Doe',
+    description: 'Salesforce org data model',
+    version: '1.0.0',
+    created: new Date(),
+    customProperty: 'Custom value', // Any custom properties
+  },
+});
+```
+
+#### Page Settings
+
+Control page size and orientation:
+
+```typescript
+const xml = transformBoardToDrawIO(board, {
+  pageSettings: {
+    size: 'Letter',        // 'A4' | 'Letter' | 'Legal' | 'Tabloid' | 'Custom'
+    orientation: 'landscape', // 'portrait' | 'landscape'
+    // For Custom: width: 1200, height: 800
+  },
+});
+```
+
+#### Viewport and Zoom
+
+Auto-fit content or set initial zoom:
+
+```typescript
+const xml = transformBoardToDrawIO(board, {
+  viewport: {
+    autoFit: true,        // Automatically fit content to viewport
+    initialZoom: 0.75,    // Initial zoom (0.1 to 4.0)
+    centerContent: true,   // Center content in viewport
+  },
+});
+```
+
+#### Visible Title
+
+Display title as a visible element on the diagram:
+
+```typescript
+const xml = transformBoardToDrawIO(board, {
+  title: 'My Diagram',
+  titleDisplay: {
+    show: true,
+    position: 'top-center', // 'top-left' | 'top-center' | 'top-right'
+    fontSize: 24,
+    fontStyle: 'bold',
+    color: '#000000',
+  },
+});
+```
+
+📚 **See [DRAWIO_IMPROVEMENTS.md](./docs/DRAWIO_IMPROVEMENTS.md) for detailed documentation.**
 
 ## Output Format
 

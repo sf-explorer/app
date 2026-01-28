@@ -14,7 +14,10 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "node scripts/test.js"
+    "test": "npm run build && node scripts/test.js",
+    "generate": "npm run build && node scripts/generate-all-boards.cjs",
+    "generate:all": "npm run build && node scripts/generate-all-boards.cjs",
+    "regenerate": "npm run build && node scripts/regenerate-all.cjs"
   },
   "keywords": [
     "salesforce",

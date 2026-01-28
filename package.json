@@ -9,7 +9,10 @@
     "build": "npm run build --workspaces",
     "build:board-to-drawdb": "npm run build --workspace=@sf-explorer/board-to-drawdb",
     "build:board-to-drawio": "npm run build --workspace=@sf-explorer/board-to-drawio",
-    "build:salesforce-data-models": "npm run build --workspace=@sf-explorer/salesforce-data-models"
+    "build:salesforce-data-models": "npm run build --workspace=@sf-explorer/salesforce-data-models",
+    "test": "npm run test --workspaces --if-present",
+    "test:board-to-drawdb": "npm run test --workspace=@sf-explorer/board-to-drawdb",
+    "test:board-to-drawio": "npm run test --workspace=@sf-explorer/board-to-drawio"
   },
   "devDependencies": {
     "typescript": "^5.3.0"

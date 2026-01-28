@@ -29,10 +29,17 @@ for (const boardFile of boardFiles) {
     const outputName = `${boardName}.drawio`;
     const outputPath = path.join(outputDir, outputName);
     
-    // Generate draw.io XML
+    // Generate draw.io XML with metadata
     const xml = transformBoardToDrawIO(board, {
       title: boardName,
       collapseTables: true,
+      metadata: {
+        author: 'SF Explorer',
+        description: `Salesforce data model diagram: ${boardName}`,
+        version: '2.2.0',
+        repository: 'https://github.com/sf-explorer/app',
+        created: new Date(),
+      },
     });
     
     fs.writeFileSync(outputPath, xml, 'utf-8');

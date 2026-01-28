@@ -30,6 +30,10 @@ import {
  * @param options.customFieldsOnly - Show only custom fields (ending with __c) (default: false)
  * @param options.diagramStyle - Diagram style: 'erd' or 'uml' (default: 'erd')
  * @param options.umlOptions - UML-specific options (only applies when diagramStyle='uml')
+ * @param options.metadata - Diagram metadata (author, description, version, created date, custom properties)
+ * @param options.pageSettings - Page size and orientation settings (A4, Letter, Custom, portrait/landscape)
+ * @param options.viewport - Viewport and zoom settings (autoFit, initialZoom, centerContent)
+ * @param options.titleDisplay - Title display options (show as visible element, position, styling)
  * 
  * @returns A Draw.io compatible XML string that can be imported into Draw.io
  * 
@@ -67,6 +71,10 @@ export function transformBoardToDrawIO(
     umlOptions = {},
     customFieldsOnly = false,
     highlightCustomFields = false,
+    metadata = {},
+    pageSettings = {},
+    viewport = {},
+    titleDisplay = {},
   } = options;
 
   // UML options with defaults
@@ -86,7 +94,7 @@ export function transformBoardToDrawIO(
       .substring(0, 50);
   };
 
-  // Add root cell
+  // Add root cell (will have metadata added during XML generation)
   cells.push({ id: '0' });
   
   // Add default parent cell
@@ -106,6 +114,18 @@ export function transformBoardToDrawIO(
     }
     usedIds.add(id);
     return id;
+  };
+  
+  // Helper function to build style (needed for repository link)
+  const buildStyle = (style: DrawioStyle): string => {
+    return Object.entries(style)
+      .map(([key, value]) => {
+        if (key === 'swimlane' && value === 1) {
+          return 'swimlane';
+        }
+        return `${key}=${value}`;
+      })
+      .join(';') + ';';
   };
 
   // First pass: Convert group zones if enabled
@@ -266,8 +286,66 @@ export function transformBoardToDrawIO(
     }
   }
 
+  // Add repository link cell if repository is provided in metadata
+  const repoMetadata = options.metadata || {};
+    if (repoMetadata.repository) {
+    const repoUrl = String(repoMetadata.repository);
+    const repoLabel = repoUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+    
+    // Calculate bounds to position the link
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    for (const cell of cells) {
+      if (cell.vertex === '1' && cell.x !== undefined && cell.y !== undefined) {
+        const x = cell.x;
+        const y = cell.y;
+        const w = cell.width || 0;
+        const h = cell.height || 0;
+        minX = Math.min(minX, x);
+        minY = Math.min(minY, y);
+        maxX = Math.max(maxX, x + w);
+        maxY = Math.max(maxY, y + h);
+      }
+    }
+    
+    if (minX !== Infinity) {
+      const repoX = minX;
+      const repoY = maxY + 30; // Position below content
+      const repoWidth = Math.max(300, Math.min(600, maxX - minX));
+      
+      const repoStyle = buildStyle({
+        text: 1,
+        html: 1,
+        align: 'left',
+        verticalAlign: 'middle',
+        fontSize: 11,
+        fontStyle: 0,
+        fontColor: '#0066cc', // Blue color for link
+        fillColor: 'none',
+        strokeColor: 'none',
+        whiteSpace: 'wrap',
+        // Note: textDecoration is not a standard draw.io style property
+        // The link attribute makes it clickable, and blue color indicates it's a link
+      });
+      
+      const repoCellId = getUniqueId('repo_link');
+      const repoCell: DrawioCell = {
+        id: repoCellId,
+        value: repoLabel,
+        style: repoStyle,
+        vertex: '1',
+        parent: '1',
+        link: repoUrl, // draw.io native link support
+        x: Math.round(repoX),
+        y: Math.round(repoY),
+        width: repoWidth,
+        height: 20,
+      };
+      cells.push(repoCell);
+    }
+  }
+
   // Build the XML document
-  return buildDrawioXML(cells, title);
+  return buildDrawioXML(cells, title, options);
 }
 
 /**
@@ -1520,19 +1598,247 @@ function escapeXml(text: string): string {
 }
 
 /**
+ * Calculates the bounding box of all content cells
+ */
+function calculateContentBounds(cells: DrawioCell[]): { minX: number; minY: number; maxX: number; maxY: number; width: number; height: number } {
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+
+  for (const cell of cells) {
+    if (cell.vertex === '1' && cell.x !== undefined && cell.y !== undefined) {
+      const x = cell.x;
+      const y = cell.y;
+      const w = cell.width || 0;
+      const h = cell.height || 0;
+      
+      minX = Math.min(minX, x);
+      minY = Math.min(minY, y);
+      maxX = Math.max(maxX, x + w);
+      maxY = Math.max(maxY, y + h);
+    }
+  }
+
+  // Default bounds if no content
+  if (minX === Infinity) {
+    minX = 0;
+    minY = 0;
+    maxX = 1000;
+    maxY = 1000;
+  }
+
+  return {
+    minX,
+    minY,
+    maxX,
+    maxY,
+    width: maxX - minX,
+    height: maxY - minY,
+  };
+}
+
+/**
+ * Gets page dimensions based on page settings
+ */
+function getPageDimensions(pageSettings: ConversionOptions['pageSettings']): { width: number; height: number } {
+  const size = pageSettings?.size || 'A4';
+  const orientation = pageSettings?.orientation || 'portrait';
+  
+  // Standard page sizes in pixels at 96 DPI
+  const pageSizes: Record<string, { width: number; height: number }> = {
+    'A4': { width: 827, height: 1169 },
+    'Letter': { width: 816, height: 1056 },
+    'Legal': { width: 816, height: 1344 },
+    'Tabloid': { width: 1056, height: 1632 },
+  };
+
+  if (size === 'Custom') {
+    return {
+      width: pageSettings?.width || 827,
+      height: pageSettings?.height || 1169,
+    };
+  }
+
+  const dimensions = pageSizes[size] || pageSizes['A4'];
+  
+  // Swap dimensions for landscape
+  if (orientation === 'landscape') {
+    return { width: dimensions.height, height: dimensions.width };
+  }
+  
+  return dimensions;
+}
+
+/**
  * Builds the complete draw.io XML document
  */
-function buildDrawioXML(cells: any[], title: string): string {
+function buildDrawioXML(cells: DrawioCell[], title: string, options: ConversionOptions = {}): string {
   const xmlParts: string[] = [];
   
+  const {
+    metadata = {},
+    pageSettings = {},
+    viewport = {},
+    titleDisplay = {},
+  } = options;
+
+  // Calculate content bounds for viewport calculation
+  const bounds = calculateContentBounds(cells);
+  
+  // Get page dimensions
+  const pageDims = getPageDimensions(pageSettings);
+  
+  // Calculate viewport (dx, dy) based on options
+  let dx = 1422; // Default offset
+  let dy = 794; // Default offset
+  
+  const autoFit = viewport.autoFit ?? false;
+  const centerContent = viewport.centerContent ?? (autoFit ? true : false);
+  
+  if (autoFit || centerContent) {
+    // Center content in viewport
+    // Assuming a default viewport size of ~2000x1500 pixels
+    const viewportWidth = 2000;
+    const viewportHeight = 1500;
+    
+    // Center the content
+    dx = Math.max(0, (viewportWidth - bounds.width) / 2 - bounds.minX);
+    dy = Math.max(0, (viewportHeight - bounds.height) / 2 - bounds.minY);
+  }
+  
+  // Get initial zoom (clamped between 0.1 and 4.0)
+  const initialZoom = Math.max(0.1, Math.min(4.0, viewport.initialZoom ?? 1.0));
+  
+  // Build metadata attributes for mxfile
+  const metadataAttrs: string[] = [];
+  const createdDate = metadata.created 
+    ? (metadata.created instanceof Date ? metadata.created.toISOString() : metadata.created)
+    : new Date().toISOString();
+  
+  if (metadata.author) {
+    metadataAttrs.push(`author="${escapeXml(String(metadata.author))}"`);
+  }
+  
+  if (metadata.description) {
+    metadataAttrs.push(`description="${escapeXml(String(metadata.description))}"`);
+  }
+  
+  // Note: Don't add version as metadata attribute since mxfile already has version="1.0.0"
+  // Use a custom attribute name instead if version tracking is needed
+  if (metadata.version) {
+    metadataAttrs.push(`diagramVersion="${escapeXml(String(metadata.version))}"`);
+  }
+  
+  // Add repository as separate attribute if provided
+  if (metadata.repository) {
+    metadataAttrs.push(`repository="${escapeXml(String(metadata.repository))}"`);
+  }
+  
+  // Add any other custom metadata properties
+  for (const [key, value] of Object.entries(metadata)) {
+    if (!['author', 'description', 'version', 'created', 'repository'].includes(key) && value !== undefined) {
+      metadataAttrs.push(`${key}="${escapeXml(String(value))}"`);
+    }
+  }
+  
+  // Build mxfile opening tag with metadata
+  // Note: version="1.0.0" is the draw.io format version, not our diagram version
+  let mxfileTag = '<mxfile host="app.diagrams.net" modified="' + createdDate + '" agent="SF Explorer Board Converter" version="1.0.0" type="device"';
+  if (metadataAttrs.length > 0) {
+    mxfileTag += ' ' + metadataAttrs.join(' ');
+  }
+  mxfileTag += '>';
+  
   xmlParts.push('<?xml version="1.0" encoding="UTF-8"?>');
-  xmlParts.push('<mxfile host="app.diagrams.net" modified="' + new Date().toISOString() + '" agent="SF Explorer Board Converter" version="1.0.0" type="device">');
+  xmlParts.push(mxfileTag);
   xmlParts.push('  <diagram id="diagram1" name="' + escapeXml(title) + '">');
-  xmlParts.push('    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">');
+  
+  // Build mxGraphModel with calculated viewport and page settings
+  const pageScale = initialZoom;
+  xmlParts.push(`    <mxGraphModel dx="${Math.round(dx)}" dy="${Math.round(dy)}" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="${pageScale}" pageWidth="${pageDims.width}" pageHeight="${pageDims.height}" math="0" shadow="1">`);
   xmlParts.push('      <root>');
+
+  // Add title element if requested
+  const showTitle = titleDisplay.show ?? false;
+  if (showTitle) {
+    const titlePosition = titleDisplay.position || 'top-center';
+    const titleFontSize = titleDisplay.fontSize || 24;
+    const titleFontStyle = titleDisplay.fontStyle || 'bold';
+    const titleColor = titleDisplay.color || '#000000';
+    
+    // Calculate title position
+    let titleX = 0;
+    const titleY = 20; // Top margin
+    const titleWidth = Math.max(400, bounds.width); // At least 400px wide
+    
+    if (titlePosition === 'top-center') {
+      titleX = bounds.minX + (bounds.width - titleWidth) / 2;
+    } else if (titlePosition === 'top-right') {
+      titleX = bounds.maxX - titleWidth;
+    } else {
+      // top-left
+      titleX = bounds.minX;
+    }
+    
+    // Build font style
+    let fontStyleValue = 0;
+    if (titleFontStyle === 'bold') {
+      fontStyleValue = 1;
+    } else if (titleFontStyle === 'italic') {
+      fontStyleValue = 2;
+    }
+    
+    const titleStyle = buildStyle({
+      text: 1,
+      html: 1,
+      align: 'center',
+      verticalAlign: 'middle',
+      fontSize: titleFontSize,
+      fontStyle: fontStyleValue,
+      fontColor: titleColor,
+      fillColor: 'none',
+      strokeColor: 'none',
+      whiteSpace: 'wrap',
+    });
+    
+    const titleCellId = 'title_' + Date.now();
+    xmlParts.push(`        <mxCell id="${titleCellId}" value="${escapeXml(title)}" style="${titleStyle}" vertex="1" parent="1">`);
+    xmlParts.push(`          <mxGeometry x="${Math.round(titleX)}" y="${titleY}" width="${titleWidth}" height="${titleFontSize + 10}" as="geometry"/>`);
+    xmlParts.push('        </mxCell>');
+  }
 
   // Add all cells
   for (const cell of cells) {
+    // Special handling for root cell (id="0") - wrap in <object> tag with metadata
+    const isRootCell = cell.id === '0';
+    
+    if (isRootCell && metadata) {
+      // Use <object> tag for root cell with metadata attributes (draw.io standard)
+      let objectAttrs = `label="${escapeXml(title)}" id="${cell.id}"`;
+      
+      if (metadata.author) {
+        objectAttrs += ` author="${escapeXml(String(metadata.author))}"`;
+      }
+      if (metadata.description) {
+        objectAttrs += ` description="${escapeXml(String(metadata.description))}"`;
+      }
+      if (title) {
+        objectAttrs += ` title="${escapeXml(title)}"`;
+      }
+      // Add any other custom metadata properties
+      for (const [key, value] of Object.entries(metadata)) {
+        if (!['author', 'description', 'version', 'created', 'repository'].includes(key) && value !== undefined) {
+          objectAttrs += ` ${key}="${escapeXml(String(value))}"`;
+        }
+      }
+      
+      xmlParts.push(`        <object ${objectAttrs}>`);
+      xmlParts.push('          <mxCell />');
+      xmlParts.push('        </object>');
+      continue; // Skip normal cell processing for root cell
+    }
+    
     // If tooltip exists, use UserObject wrapper
     if (cell.tooltip !== undefined) {
       // Replace newlines with &#xa; for XML tooltips
@@ -1575,6 +1881,9 @@ function buildDrawioXML(cells: any[], title: string): string {
     }
     if (cell.connectable !== undefined) {
       cellXml += ' connectable="' + cell.connectable + '"';
+    }
+    if (cell.link !== undefined) {
+      cellXml += ' link="' + escapeXml(cell.link) + '"';
     }
     
     xmlParts[xmlParts.length - 1] += cellXml + '>';

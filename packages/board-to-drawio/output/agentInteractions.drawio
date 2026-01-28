@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.918Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2026-01-28T08:21:54.591Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: agentInteractions" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
   <diagram id="diagram1" name="agentInteractions">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
-        <mxCell id="0">
-        </mxCell>
+        <object label="agentInteractions" id="0" author="SF Explorer" description="Salesforce data model diagram: agentInteractions" title="agentInteractions">
+          <mxCell />
+        </object>
         <mxCell id="1" parent="0">
         </mxCell>
         <UserObject label="ssot__AiAgentInteractionStep__dlm" tooltip="21 fields (showing 20)&#xa;[Data Cloud DMO] " id="table_ssot__AiAgentInteractionStep__dlm">
@@ -927,6 +928,9 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
+        <mxCell id="repo_link" value="github.com/sf-explorer/app" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1" link="https://github.com/sf-explorer/app">
+            <mxGeometry x="-562" y="1163" width="600" height="20" as="geometry"/>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

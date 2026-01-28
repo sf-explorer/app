@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-01-27T15:04:02.935Z" agent="SF Explorer Board Converter" version="1.0.0" type="device">
+<mxfile host="app.diagrams.net" modified="2026-01-28T08:21:54.622Z" agent="SF Explorer Board Converter" version="1.0.0" type="device" author="SF Explorer" description="Salesforce data model diagram: insurancePolicy" diagramVersion="2.2.0" repository="https://github.com/sf-explorer/app">
   <diagram id="diagram1" name="insurancePolicy">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
-        <mxCell id="0">
-        </mxCell>
+        <object label="insurancePolicy" id="0" author="SF Explorer" description="Salesforce data model diagram: insurancePolicy" title="insurancePolicy">
+          <mxCell />
+        </object>
         <mxCell id="1" parent="0">
         </mxCell>
         <mxCell id="group_Claim" value="Claim" style="swimlane=0;fillColor=#6b637b;strokeColor=#383048;strokeWidth=2;rounded=1;fontSize=14;fontStyle=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" vertex="1" parent="1">
@@ -2218,6 +2219,9 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
+        <mxCell id="repo_link" value="github.com/sf-explorer/app" style="text=1;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=0;fontColor=#0066cc;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="1" link="https://github.com/sf-explorer/app">
+            <mxGeometry x="-1385" y="1227" width="600" height="20" as="geometry"/>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

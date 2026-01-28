@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 // Test with productCatalog board
 console.log('Testing board-to-drawio transformer...\n');
 
-const boardPath = path.join(__dirname, '../../../Boards/productCatalog.json');
+const boardPath = path.join(__dirname, '../../salesforce-data-models/data/productCatalog.json');
 const outputDir = path.join(__dirname, '../output');
 
 // Create output directory if it doesn't exist
