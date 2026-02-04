@@ -1,5 +1,9 @@
 # @sf-explorer/salesforce-data-models
 
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/salesforce-data-models)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/salesforce-data-models)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+
 Comprehensive Salesforce data models and Entity Relationship Diagram (ERD) templates covering Sales Cloud, Service Cloud, Revenue Cloud, Field Service, Financial Services Cloud, and more.
 
 > **Note**: In the monorepo, this package references data files from the root `Boards/` directory. When published to npm, data files are automatically copied into the package during the publish process.

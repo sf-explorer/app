@@ -1,5 +1,9 @@
 # @sf-explorer/board-to-drawio
 
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/board-to-drawio)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/board-to-drawio)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+
 Transform SF Explorer board templates into draw.io (diagrams.net) XML format for easy visualization and editing in the popular diagramming tool.
 
 ## 📊 Quick Links

@@ -1,5 +1,9 @@
 # @sf-explorer/board-to-drawdb
 
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/board-to-drawdb)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/board-to-drawdb)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
+
 Transform SF Explorer board templates into drawDB compatible format.
 
 ## Overview

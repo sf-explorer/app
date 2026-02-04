@@ -45,6 +45,10 @@ This repository includes reusable npm packages for working with Salesforce data 
 
 ### [@sf-explorer/salesforce-data-models](./packages/salesforce-data-models)
 
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/salesforce-data-models)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/salesforce-data-models)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/salesforce-data-models)
+
 The **source package** containing all 17+ Salesforce data models as importable npm modules. Use this package to:
 - Load pre-built Salesforce ERD models (Service Cloud, Sales Cloud, Revenue Cloud, etc.)
 - Filter and search models by category, complexity, or tags
@@ -64,9 +68,17 @@ const featured = getFeaturedERDs();
 
 ### [@sf-explorer/board-to-drawio](./packages/board-to-drawio)
 
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/board-to-drawio)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/board-to-drawio)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/board-to-drawio)
+
 Convert SF Explorer board templates to Draw.io (diagrams.net) XML format with full visual fidelity.
 
 ### [@sf-explorer/board-to-drawdb](./packages/board-to-drawdb)
+
+[![npm version](https://img.shields.io/npm/v/@sf-explorer/board-to-drawdb)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
+[![npm downloads](https://img.shields.io/npm/dm/@sf-explorer/board-to-drawdb)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
+[![npm package](https://img.shields.io/badge/npm-package-blue)](https://www.npmjs.com/package/@sf-explorer/board-to-drawdb)
 
 Transform SF Explorer board templates into DrawDB schema format for database design tools.
 
